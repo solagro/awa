@@ -52,7 +52,8 @@
     "lint": "eslint .",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "version": "git changelog -n -t $npm_package_version && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
