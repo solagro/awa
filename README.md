@@ -1,49 +1,102 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://solagro.org/">
+    <img alt="Gatsby" src="https://avatars0.githubusercontent.com/u/55191402" width="60" />
   </a>
 </p>
+
 <h1 align="center">
-  Gatsby Material UI Starter
+  Solagro / AWA
 </h1>
 
-This starter includes [Material UI](https://material-ui.com/) boilerplate and configuration files along with the standard Gatsby configuration files. It provides a starting point for developing Gatsby apps with Material UI. 
+## Getting Started
 
-View the demo app [here](https://material-ui-starter.netlify.com/).
+### Prerequisites
 
-## Features
+To be able to work with this project, you need:
 
-- Material UI Framework
-- Roboto Typeface (self hosted)
-- SEO
-- Offline Support
-- Based on Gatsby Default Starter
+- [nodejs](https://nodejs.org) *([nvm](https://github.com/nvm-sh/nvm) does a
+  neat workthrough)*
 
-## Quick start
+### Development
 
-1.  **Create a Gatsby site.**
+```sh
+$ git clone git@github.com:solagro/awa.git
+$ cd awa
+$ npm ci    # Install all dependencies
+```
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+This will get you a copy of the project ready on your local machine.
+<!-- See deployment for notes on how to deploy the project on a live system. -->
 
-    ```sh
-    # create a new Gatsby site using the Material UI starter
-    gatsby new <project-name> https://github.com/dominicabela/gatsby-starter-material-ui
-    ```
+Start development mode with:
 
-2.  **Start developing.**
+```sh
+& npm start
+```
 
-    Navigate into your new site’s directory and start it up.
+Then open the source code and **start editing!**
 
-    ```sh
-    cd <project-name>
-    gatsby develop
-    ```
+Your site is running at [`http://localhost:8000`](http://localhost:8000)
 
-3.  **Open the source code and start editing!**
+You'll also see a second link: [`http://localhost:8000/___graphql`](http://localhost:8000/___graphql).  
+This is a tool you can use to experiment with querying your data. Learn more
+about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
 
-    Your site is now running at `http://localhost:8000`!
+## Running the tests
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+```sh
+$ npm t # Or `npm run test`
+```
 
-    Open the `<project-name>` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## Deployment
 
+- Build command will give you a `public` directory.
+- Transfert/copy this directory in a any place that will be served with `https`
+
+```sh
+$ npm run build
+$ npx serve -s public
+```
+
+You can also test locally full build by using `serve` command after building:
+
+```sh
+$ npm run build
+$ npm run serve
+
+info gatsby serve running at: http://localhost:9000/
+```
+
+## Built With
+
+- [Gatsby](https://www.gatsbyjs.org/)
+- [Material UI](https://www.gatsbyjs.org/)
+
+<!--
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of
+conduct, and the process for submitting pull requests to us.
+-->
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available,
+see the [tags on this repository](https://github.com/solagro/awa/tags).
+
+### Tools
+
+Releasing new tags requires [`git-extras`](https://github.com/tj/git-extras)
+which provide [`git changelog`](https://github.com/tj/git-extras/blob/master/Commands.md#git-changelog)
+command.
+
+This will then be used like:
+
+```sh
+$ npm version <patch|minor|major|semver>
+```
+<!--
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+-->
