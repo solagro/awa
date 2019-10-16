@@ -1,9 +1,26 @@
 {
-  "name": "gatsby-starter-material-ui",
+  "name": "awa",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and Material UI",
+  "description": "",
   "version": "0.1.0",
-  "author": "Dominic Abela <djmabela@gmail.com>",
+  "contributors": [
+    {
+      "name": "Marine Faucher",
+      "email": "marine.faucher@makina-corpus.com"
+    },
+    {
+      "name": "Marianne Lajante",
+      "email": "marianne.lajante@makina-corpus.com"
+    },
+    {
+      "name": "Benjamin Marguin",
+      "email": "benjamin.marguin@makina-corpus.com"
+    },
+    {
+      "name": "Jérémie Pardou",
+      "email": "jeremie.pardou@makina-corpus.com"
+    }
+  ],
   "dependencies": {
     "@material-ui/core": "~4.5.1",
     "@material-ui/icons": "~4.5.1",
@@ -40,9 +57,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dominicabela/gatsby-starter-material-ui"
+    "url": "https://github.com/solagro/awa"
   },
   "bugs": {
-    "url": "https://github.com/dominicabela/gatsby-starter-material-ui/issues"
+    "url": "https://github.com/solagro/awa/issues"
   }
 }
