@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const IndexPage = () => {
+const IndexPage = ({ pageContext }) => {
   const classes = useStyles();
   const [features, setFeatures] = React.useState(true);
   const [info, setInfo] = React.useState(true);
@@ -61,6 +61,7 @@ const IndexPage = () => {
             A responsive, minimalist Gatsby starter based on the world's most
             popular React UI framework.
           </h5>
+          <pre>{JSON.stringify(pageContext, null, 2)}</pre>
         </Grid>
       </Grid>
       <Divider />
