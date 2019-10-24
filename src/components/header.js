@@ -1,10 +1,12 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Link } from 'gatsby';
+import { useTranslation } from 'react-i18next';
 
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -21,6 +23,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import ListIcon from '@material-ui/icons/ViewList';
+
+import LanguageSwitcherMenu from './LanguageSwitcherMenu';
 
 const drawerWidth = 240;
 
@@ -86,6 +90,8 @@ const Header = ({ siteTitle }) => {
 
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [showLanguageSwitcher, setShowLanguageSwitcher] = React.useState(false);
+  const { t } = useTranslation();
 
   function handleDrawerOpen () {
     setOpen(true);
@@ -118,6 +124,17 @@ const Header = ({ siteTitle }) => {
           <Typography variant="h6" color="inherit">
             {siteTitle}
           </Typography>
+
+          <Button
+            variant="contained"
+            onClick={() => setShowLanguageSwitcher(true)}
+          >
+            {t('Change language')}
+          </Button>
+          <LanguageSwitcherMenu
+            open={showLanguageSwitcher}
+            onClose={() => setShowLanguageSwitcher(false)}
+          />
         </Toolbar>
       </AppBar>
       <Drawer
