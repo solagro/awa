@@ -5,3 +5,4 @@
  */
 
 require('typeface-roboto');
+require('./src/i18n');
