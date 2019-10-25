@@ -3,11 +3,11 @@ import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-import en from '../static/locales/en/translation.json';
-import de from '../static/locales/de/translation.json';
-import es from '../static/locales/es/translation.json';
-import et from '../static/locales/et/translation.json';
-import fr from '../static/locales/fr/translation.json';
+import en from './locales/en/translation.json';
+import de from './locales/de/translation.json';
+import es from './locales/es/translation.json';
+import et from './locales/et/translation.json';
+import fr from './locales/fr/translation.json';
 
 i18n
   // detect user language
