@@ -36,13 +36,16 @@ const adaptPathname = (pathname, language) => {
   }
 
   let changeDone = false;
-  return pathname.split('/').map(pathElement => {
+
+  const newPath = pathname.split('/').map(pathElement => {
     if (!changeDone && languageIds.includes(pathElement)) {
       changeDone = true;
       return language;
     }
     return pathElement;
   }).join('/');
+
+  return changeDone ? newPath : `/${language}/${pathname}`;
 };
 
 const LanguageSwitcherMenu = props => {
