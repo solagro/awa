@@ -34,7 +34,7 @@
     "gatsby-plugin-offline": "~3.0.17",
     "gatsby-plugin-react-helmet": "~3.1.13",
     "gatsby-plugin-remove-serviceworker": "~1.0.0",
-    "gatsby-plugin-sharp": "~2.2.31",
+    "gatsby-plugin-sharp": "~2.2.36",
     "gatsby-source-filesystem": "~2.1.33",
     "gatsby-transformer-sharp": "~2.2.23",
     "i18next": "~19.0.0",
