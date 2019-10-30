@@ -7,10 +7,18 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Location } from '@reach/router';
 
 import Header from './header';
 import './layout.css';
+
+import locales from '../locales/all';
+import adaptPathname from '../lib/adaptPathname';
+
+const languageIds = Object.keys(locales);
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,6 +47,19 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}, Built with
 
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+
+          <div>
+            <Location>
+              {({ location: { pathname } }) => (
+                languageIds.map(language => (
+                  <span key={language}>
+                    <Link to={adaptPathname(pathname, language)}>{language}</Link>
+                    {' '}
+                  </span>
+                ))
+              )}
+            </Location>
+          </div>
         </footer>
       </div>
     </div>
