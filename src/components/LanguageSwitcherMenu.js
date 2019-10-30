@@ -11,6 +11,8 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
 import { navigate } from 'gatsby';
 
+import adaptPathname from '../lib/adaptPathname';
+
 const languages = [
   { id: 'de', label: 'deutsch' },
   { id: 'es', label: 'español' },
@@ -18,35 +20,6 @@ const languages = [
   { id: 'fr', label: 'français' },
   { id: 'en', label: 'english' },
 ];
-
-const languageIds = languages.reduce((acc, { id }) => ([...acc, id]), []);
-
-
-/**
- * Change pathname to remplace current language path element
- * by provided language
- *
- * @param {string} pathname
- * @param {string} language
- * @returns New path
- */
-const adaptPathname = (pathname, language) => {
-  if (['/', ''].includes(pathname)) {
-    return `/${language}`;
-  }
-
-  let changeDone = false;
-
-  const newPath = pathname.split('/').map(pathElement => {
-    if (!changeDone && languageIds.includes(pathElement)) {
-      changeDone = true;
-      return language;
-    }
-    return pathElement;
-  }).join('/');
-
-  return changeDone ? newPath : `/${language}/${pathname}`;
-};
 
 const LanguageSwitcherMenu = props => {
   const { onClose, selectedValue, open } = props;
