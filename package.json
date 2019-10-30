@@ -36,7 +36,7 @@
     "gatsby-plugin-remove-serviceworker": "~1.0.0",
     "gatsby-plugin-sharp": "~2.2.36",
     "gatsby-source-filesystem": "~2.1.35",
-    "gatsby-transformer-sharp": "~2.2.23",
+    "gatsby-transformer-sharp": "~2.3.2",
     "i18next": "~19.0.0",
     "i18next-browser-languagedetector": "~4.0.1",
     "prop-types": "^15.7.2",
