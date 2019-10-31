@@ -13,7 +13,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import { Location } from '@reach/router';
 
 import Header from './header';
-import './layout.css';
+import './Layout.css';
 
 import locales from '../locales/all';
 import adaptPathname from '../lib/adaptPathname';
