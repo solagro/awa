@@ -12,7 +12,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Location } from '@reach/router';
 
-import Header from './header';
+import Header from './Header';
 import './Layout.css';
 
 import locales from '../locales/all';
