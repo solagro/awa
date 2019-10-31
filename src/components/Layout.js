@@ -8,9 +8,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useTranslation } from 'react-i18next';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Location } from '@reach/router';
+
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Header from './Header';
 import './Layout.css';
@@ -21,9 +24,10 @@ import adaptPathname from '../lib/adaptPathname';
 const languageIds = Object.keys(locales);
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
+  const { site: { siteMetadata, buildTime } } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
+        buildTime(fromNow: false, formatString: "YYYY-MM-D HH:mm (z)")
         siteMetadata {
           title
         }
@@ -31,35 +35,28 @@ const Layout = ({ children }) => {
     }
   `);
 
+  const { t } = useTranslation();
+
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#FFF' }}>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 100,
-        }}
-      >
+      <CssBaseline />
+      <Header siteTitle={siteMetadata.title} />
+      <div>
         <main>{children}</main>
+
         <footer style={{ paddingTop: 10 }}>
-          © {new Date().getFullYear()}, Built with
-
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-
-          <div>
-            <Location>
-              {({ location: { pathname } }) => (
-                languageIds.map(language => (
-                  <span key={language}>
-                    <Link to={adaptPathname(pathname, language)}>{language}</Link>
-                    {' '}
-                  </span>
-                ))
-              )}
-            </Location>
-          </div>
+          {t('Last build')} {buildTime}
+          <br />
+          <Location>
+            {({ location: { pathname } }) => (
+              languageIds.map(language => (
+                <span key={language}>
+                  <Link to={adaptPathname(pathname, language)}>{language}</Link>
+                  {' '}
+                </span>
+              ))
+            )}
+          </Location>
         </footer>
       </div>
     </div>
