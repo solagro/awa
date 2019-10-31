@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import Divider from '@material-ui/core/Divider';
 
-import SEO from '../components/seo';
+import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 
 import i18n from '../i18n';
