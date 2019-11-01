@@ -1,4 +1,4 @@
-import languages from '../locales/all';
+import languages from '../locales';
 
 const languageIds = Object.keys(languages);
 

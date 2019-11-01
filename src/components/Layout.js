@@ -22,7 +22,7 @@ import Fab from '@material-ui/core/Fab';
 import Header from './Header';
 import './Layout.css';
 
-import locales from '../locales/all';
+import locales from '../locales';
 import adaptPathname from '../lib/adaptPathname';
 
 const languageIds = Object.keys(locales);
