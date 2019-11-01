@@ -1,9 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { navigate } from 'gatsby';
-
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { Location } from '@reach/router';
 
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
@@ -12,23 +8,11 @@ import Typography from '@material-ui/core/Typography';
 import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
-import i18n from '../i18n';
-import adaptPathname from '../lib/adaptPathname';
 
-const IndexPage = ({ pageContext }) => {
+import doRedirect from '../hoc/doRedirect';
+
+const IndexPage = () => {
   const { t } = useTranslation();
-
-  if (!pageContext.language && i18n.language) {
-    return (
-      <Location>
-        {({ location: { pathname } }) => navigate(adaptPathname(pathname, i18n.language))}
-      </Location>
-    );
-  }
-
-  if (pageContext.language !== i18n.language) {
-    i18n.changeLanguage(pageContext.language);
-  }
 
   return (
     <Layout>
@@ -182,4 +166,4 @@ const IndexPage = ({ pageContext }) => {
   );
 };
 
-export default IndexPage;
+export default doRedirect(IndexPage);

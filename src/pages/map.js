@@ -5,15 +5,10 @@ import Typography from '@material-ui/core/Typography';
 
 import SEO from '../components/Seo';
 import Layout from '../components/Layout';
+import doRedirect from '../hoc/doRedirect';
 
-import i18n from '../i18n';
-
-const MapPage = ({ pageContext }) => {
+const MapPage = () => {
   const { t } = useTranslation();
-
-  if (pageContext.language !== i18n.language) {
-    i18n.changeLanguage(pageContext.language);
-  }
 
   return (
     <Layout>
@@ -37,4 +32,4 @@ const MapPage = ({ pageContext }) => {
   );
 };
 
-export default MapPage;
+export default doRedirect(MapPage);
