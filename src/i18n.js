@@ -19,6 +19,7 @@ i18n
     resources,
 
     fallbackLng: 'en',
+    whitelist: Object.keys(resources),
     debug: (process.env.NODE_ENV === 'development'),
 
     interpolation: {
