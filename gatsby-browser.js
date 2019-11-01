@@ -6,3 +6,14 @@
 
 require('typeface-roboto');
 require('./src/i18n');
+
+const React = require('react');
+const { ThemeProvider } = require('@material-ui/core/styles');
+
+const theme = require('./src/lib/theme').default;
+
+exports.wrapRootElement = ({ element }) => (
+  <ThemeProvider theme={theme}>
+    {element}
+  </ThemeProvider>
+);
