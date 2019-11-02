@@ -11,15 +11,16 @@ import { createMuiTheme } from '@material-ui/core';
  */
 const theme = createMuiTheme({
   palette: {
-    primary: {
-      main: '#8a2542',
-    },
+    primary: { main: '#8a2542' },
     secondary: {
       main: '#dca817',
+      contrastText: 'white',
     },
-    tertiary: {
-      main: '#acd9e9',
-    },
+  },
+  typography: {
+    h1: { color: '#8a2542' },
+    h2: { color: '#8a2542' },
+    h3: { color: '#8a2542' },
   },
 });
 

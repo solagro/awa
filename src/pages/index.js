@@ -69,7 +69,7 @@ const IndexPage = () => {
         tenetur quis eius molestiae hic laudantium itaque.
       </Typography>
 
-      <Button variant="contained" color="primary" component={Link} to="/quizz">
+      <Button variant="contained" color="secondary" component={Link} to="/quizz">
         {t('Start quizz')}
       </Button>
 
@@ -101,7 +101,7 @@ const IndexPage = () => {
         magni nostrum quis autem sapiente quia sequi.
       </Typography>
 
-      <Button variant="contained" color="primary" component={Link} to="/quizz">
+      <Button variant="contained" color="secondary" component={Link} to="/quizz">
         {t('Go to the map')}
       </Button>
 
@@ -130,7 +130,7 @@ const IndexPage = () => {
         inventore. Doloribus expedita reprehenderit.
       </Typography>
 
-      <Button variant="contained" color="primary" component={Link} to="/quizz">
+      <Button variant="contained" color="secondary" component={Link} to="/quizz">
         {t('See mesures')}
       </Button>
 
@@ -159,7 +159,7 @@ const IndexPage = () => {
         minus quis. Non placeat dolor aut eos a officiis sunt omnis.
       </Typography>
 
-      <Button variant="contained" color="primary" component={Link} to="/quizz">
+      <Button variant="contained" color="secondary" component={Link} to="/quizz">
         {t('Start quizz')}
       </Button>
     </Layout>
