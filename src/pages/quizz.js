@@ -8,11 +8,12 @@ import Layout from '../components/Layout';
 import doRedirect from '../hoc/doRedirect';
 
 const QuizzPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Layout>
-      <SEO title="Quizz" />
+      <SEO title={t('Quizz')} lang={i18n.language} />
+
       <Typography variant="h1" gutterBottom>
         {t('Main title of quizz page')}
       </Typography>

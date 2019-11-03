@@ -101,7 +101,7 @@ const Layout = ({ children }) => {
             {({ location: { pathname } }) => (
               languageIds.map(language => (
                 <span key={language}>
-                  <Link to={adaptPathname(pathname, language)}>{language}</Link>
+                  <Link to={adaptPathname(pathname, language)} lang={language}>{language}</Link>
                   {' '}
                 </span>
               ))

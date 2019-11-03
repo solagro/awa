@@ -8,11 +8,11 @@ import Layout from '../components/Layout';
 import doRedirect from '../hoc/doRedirect';
 
 const AdaptationsPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Layout>
-      <SEO title="Adaptations" />
+      <SEO title={t('Adaptations')} lang={i18n.language} />
       <Typography variant="h1" gutterBottom>
         {t('Main title of adaptations page')}
       </Typography>

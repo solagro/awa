@@ -12,13 +12,12 @@ import Link from '../components/Link';
 import doRedirect from '../hoc/doRedirect';
 
 const IndexPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title={t('Home')} lang={i18n.language} />
 
-      <SEO title="Quizz" />
       <Typography variant="h1">
         {t('Main title of home page')}
       </Typography>
@@ -69,7 +68,13 @@ const IndexPage = () => {
         tenetur quis eius molestiae hic laudantium itaque.
       </Typography>
 
-      <Button variant="contained" color="secondary" component={Link} to="/quizz">
+      <Button
+        variant="contained"
+        color="secondary"
+        component={Link}
+        to="/quizz"
+        lang={i18n.language}
+      >
         {t('Start quizz')}
       </Button>
 
@@ -101,7 +106,13 @@ const IndexPage = () => {
         magni nostrum quis autem sapiente quia sequi.
       </Typography>
 
-      <Button variant="contained" color="secondary" component={Link} to="/quizz">
+      <Button
+        variant="contained"
+        color="secondary"
+        component={Link}
+        to="/quizz"
+        lang={i18n.language}
+      >
         {t('Go to the map')}
       </Button>
 
@@ -130,7 +141,13 @@ const IndexPage = () => {
         inventore. Doloribus expedita reprehenderit.
       </Typography>
 
-      <Button variant="contained" color="secondary" component={Link} to="/quizz">
+      <Button
+        variant="contained"
+        color="secondary"
+        component={Link}
+        to="/quizz"
+        lang={i18n.language}
+      >
         {t('See mesures')}
       </Button>
 
@@ -159,7 +176,13 @@ const IndexPage = () => {
         minus quis. Non placeat dolor aut eos a officiis sunt omnis.
       </Typography>
 
-      <Button variant="contained" color="secondary" component={Link} to="/quizz">
+      <Button
+        variant="contained"
+        color="secondary"
+        component={Link}
+        to="/quizz"
+        lang={i18n.language}
+      >
         {t('Start quizz')}
       </Button>
     </Layout>
