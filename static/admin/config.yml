@@ -1,0 +1,73 @@
+backend:
+  # name: test-repo
+  name: github
+  repo: solagro/awa
+media_folder: 'static/media/uploads'
+public_folder: '/media/uploads'
+
+.common:
+  - &quizz {
+    name: 'quizz',
+    extension: 'json',
+    label: 'Quizz question/answer',
+    folder: 'content/quizz',
+    create: false,
+    delete: true,
+    editor: { preview: false },
+    slug: '{{theme}}-{{slug}}',
+    fields: [
+      { label: 'Theme', name: 'theme', widget: 'select', options: ['nord', 'atlantique', 'continental', 'meridonial', 'common'] },
+      { label: 'Title (used only for technical references', name: 'title', widget: 'string' },
+      { label: 'Question (en)', name: 'question', widget: 'markdown' },
+      {
+        label: 'Question translations', name: 'question-i18n', widget: 'list',
+        fields: [
+          { label: 'Language', name: 'language', widget: 'select', options: ['fr', 'de', 'et', 'es'] },
+          { label: 'Question', name: 'question', widget: 'markdown' },
+        ]
+      },
+      { label: 'Answers (en)', name: 'answers', widget: 'text' },
+      {
+        label: 'Answer translations', name: 'answer-i18n', widget: 'list',
+        fields: [
+          { label: 'Language', name: 'language', widget: 'select', options: ['fr', 'de', 'et', 'es'] },
+          { label: 'Answers', name: 'answers', widget: 'text' }
+        ]
+      },
+      { label: 'Explanation', name: 'explanation', widget: 'markdown' },
+      {
+        label: 'Explanation translations', name: 'explanation-i18n', widget: 'list',
+        fields: [
+          { label: 'Language', name: 'language', widget: 'select', options: ['fr', 'de', 'et', 'es'] },
+          { label: 'Explanation', name: 'explanation', widget: 'markdown' },
+        ]
+      },
+    ]
+  }
+
+collections:
+  - <<: *quizz
+    name: 'quizz'
+    label: 'Quizz: All questions'
+    create: true
+  - <<: *quizz
+    name: 'quizz-n'
+    label: 'Quizz: Nord'
+    filter: { field: 'theme', value: 'nord' }
+  - <<: *quizz
+    name: 'quizz-a'
+    label: 'Quizz: Atlantique'
+    filter: { field: 'theme', value: 'atlantique' }
+  - <<: *quizz
+    name: 'quizz-c'
+    label: 'Quizz: Continental'
+    filter: { field: 'theme', value: 'continental' }
+  - <<: *quizz
+    name: 'quizz-m'
+    label: 'Quizz: Meridional'
+    filter: { field: 'theme', value: 'meridional' }
+  - <<: *quizz
+    name: 'quizz-common'
+    label: 'Quizz: Unspecific'
+    filter: { field: 'theme', value: 'common' }
+
