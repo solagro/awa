@@ -1,12 +1,12 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import Helmet from 'react-helmet';
 
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Location } from '@reach/router';
 
 import i18n from '../i18n';
 import adaptPathname from '../lib/adaptPathname';
+import NoScript from '../components/NoScript';
 
 const isLive = typeof window !== 'undefined';
 
@@ -24,11 +24,7 @@ const doRedirect = WrappedComponent => props => {
             return null;
           }
 
-          return (
-            <Helmet>
-              <meta httpEquiv="refresh" content={`0;url=${target}`} />
-            </Helmet>
-          );
+          return <NoScript />;
         }}
       </Location>
     );
