@@ -1,4 +1,17 @@
 
+0.4.0 / 2019-11-05
+==================
+
+  * Create custom Link component for localized links
+  * Create map & adaptations pages
+  * Create quizz page
+  * Setup basic nav bar
+  * Simplify and cleanup Header and Layout components
+  * Apply standard case to Seo component file
+  * Apply standard case to Image component file
+  * Apply standard case to Header component file
+  * Apply standard case to Layout component files
+
 0.3.0 / 2019-11-05
 ==================
 
