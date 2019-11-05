@@ -1,4 +1,9 @@
 
+0.6.1 / 2019-11-06
+==================
+
+  * Replace meta refresh by a NoScript component
+
 0.6.0 / 2019-11-05
 ==================
 
