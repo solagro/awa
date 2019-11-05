@@ -1,0 +1,25 @@
+{
+  "theme": "nord",
+  "title": "First test question for zone Nord",
+  "question": "This is the first example question.\n\nText could be multiline and have **some _formatting_**.",
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "See on esimene näide küsimusest.\n\nTeksti saab _vormindada_ **mitmerealisena**."
+    }
+  ],
+  "answers": "X First wrong answer\nX Second wrong answer\nV First good answer\nX Last wrong answer",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Esimene vale vastus\nX Teine vale vastus\nV Esimene õige vastus\nX Viimane vale vastus"
+    }
+  ],
+  "explanation": "Explanation of the result.",
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Tulemuse selgitus."
+    }
+  ]
+}
