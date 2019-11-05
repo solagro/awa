@@ -1,4 +1,17 @@
 
+0.6.0 / 2019-11-05
+==================
+
+  * Transform quizz question nodes to enable markdown to html conversion
+  * Rename path var to avoid colision
+  * Setup gatsby-source-filesystem plugin to load quizz question files
+  * Load gatsby-transformer-json and gatsby-transformer-remark plugins
+  * Add gatsby-transformer-json and gatsby-transformer-remark dependencies
+  * Create NetlifyCMS config for editing quizz questions
+  * Create example quizz question files
+  * Create styleguide page
+  * Add .nvmrc file to bind NodeJS version to use
+
 0.5.0 / 2019-11-05
 ==================
 
