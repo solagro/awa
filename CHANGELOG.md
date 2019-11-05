@@ -1,4 +1,18 @@
 
+0.5.0 / 2019-11-05
+==================
+
+  * Add lang attribute to html tag and links
+  * Fix colors in theme and button variant for home page
+  * Move theme file to src directory
+  * Call MUI Theme also for pre-rendering (ssr)
+  * Setup Material UI theme customisation
+  * Rename locales aggregator
+  * Use available locales as language detector whitelist
+  * Move localized redirection mechanism to a HOC
+  * Add Gatsby plugin for Netlify CMS
+  * Add Gatsby plugin for Netlify hosting
+
 0.4.0 / 2019-11-05
 ==================
 
