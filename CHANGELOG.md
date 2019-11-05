@@ -1,4 +1,15 @@
 
+0.3.0 / 2019-11-05
+==================
+
+  * Upgrade gatsby its plugins
+  * Upgrade react react-dom
+  * Upgrade react-i18next and its dependencies
+  * Upgrade @material-ui/core @material-ui/styles
+  * Add a static language menu in layout footer
+  * Move adaptPathname function to a dedicated lib
+  * Manage pathname with no language prefix
+
 0.2.0 / 2019-10-30
 ==================
 
