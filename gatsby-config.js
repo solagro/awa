@@ -56,6 +56,7 @@ module.exports = {
         locales: ['en', 'de', 'es', 'et', 'fr'],
       },
     },
+    'gatsby-transformer-quizz-markdown',
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues
     'gatsby-plugin-remove-serviceworker',
     // this (optional) plugin enables Progressive Web App + Offline functionality
