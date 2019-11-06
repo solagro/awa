@@ -50,6 +50,12 @@ module.exports = {
       },
       // 'gatsby-plugin-styled-components',
     },
+    {
+      resolve: 'gatsby-i18n-pages',
+      options: {
+        locales: ['en', 'de', 'es', 'et', 'fr'],
+      },
+    },
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues
     'gatsby-plugin-remove-serviceworker',
     // this (optional) plugin enables Progressive Web App + Offline functionality
