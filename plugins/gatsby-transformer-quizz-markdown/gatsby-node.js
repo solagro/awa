@@ -1,5 +1,7 @@
 const path = require('path');
 
+const capitalize = ([f, ...rest]) => `${f.toUpperCase()}${rest.join``}`;
+
 /**
  * Transform JSON nodes created through gatsby-transformer-json
  * to multiple text/markdown nodes that will be then transformed
@@ -18,49 +20,51 @@ exports.onCreateNode = async ({
 }) => {
   if (node.internal.type === 'QuizzJson') {
     ['question', 'explanation'].forEach(element => {
-      if (node[element]) {
-        const id = `${node.id}-Markdown${element}`;
+      const content = node[element];
+
+      if (content) {
+        const id = `${node.id}-Markdown${capitalize(element)}En`;
 
         createNode({
           id,
           parent: node.id,
           dir: path.resolve('./'),
           internal: {
-            type: `${node.internal.type}Markdown${element}`,
+            type: `${node.internal.type}Markdown${capitalize(element)}En`,
             mediaType: 'text/markdown',
-            content: node[element],
-            contentDigest: createContentDigest(node[element]),
+            content,
+            contentDigest: createContentDigest(content),
           },
         });
 
         // Create relation between source node created node
         createNodeField({
           node,
-          name: `markdown${element}___NODE`,
+          name: `markdown${capitalize(element)}En___NODE`,
           value: id,
         });
       }
 
       if (node[`${element}-i18n`].length) {
-        node[`${element}-i18n`].forEach(({ language, [element]: text }) => {
-          const id = `${node.id}-Markdown${element}${language}`;
+        node[`${element}-i18n`].forEach(({ language, [element]: contentInt }) => {
+          const id = `${node.id}-Markdown${capitalize(element)}${capitalize(language)}`;
 
           createNode({
             id,
             parent: node.id,
             dir: path.resolve('./'),
             internal: {
-              type: `${node.internal.type}Markdown${element}${language}`,
+              type: `${node.internal.type}Markdown${capitalize(element)}${capitalize(language)}`,
               mediaType: 'text/markdown',
-              content: text,
-              contentDigest: createContentDigest(text),
+              content: contentInt,
+              contentDigest: createContentDigest(contentInt),
             },
           });
 
           // Create relation between source node created node
           createNodeField({
             node,
-            name: `markdown${element}${language}___NODE`,
+            name: `markdown${capitalize(element)}${capitalize(language)}___NODE`,
             value: id,
           });
         });
