@@ -90,6 +90,7 @@ exports.createPages = async (
         language,
         theme,
         id,
+        slug: slugify(title),
       },
     })))));
 
