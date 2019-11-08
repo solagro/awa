@@ -1,4 +1,5 @@
 const path = require('path');
+const slugify = require('slugify');
 
 const capitalize = ([f, ...rest]) => `${f.toUpperCase()}${rest.join``}`;
 
@@ -19,6 +20,13 @@ exports.onCreateNode = async ({
   actions: { createNode, createNodeField },
 }) => {
   if (node.internal.type === 'QuizzJson') {
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slugify(node.title),
+    });
+
+
     ['question', 'explanation'].forEach(element => {
       const content = node[element];
 
