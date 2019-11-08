@@ -1,6 +1,7 @@
 {
   "theme": "atlantique",
   "title": "First test question",
+  "order": 2,
   "question": "This is the first example question.\n\nText could be multiline and have **some _formatting_**.",
   "question-i18n": [
     {

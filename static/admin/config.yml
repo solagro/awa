@@ -18,6 +18,7 @@ public_folder: '/media/uploads'
     fields: [
       { label: 'Theme', name: 'theme', widget: 'select', options: ['nord', 'atlantique', 'continental', 'meridonial', 'common'] },
       { label: 'Title (used only for technical references', name: 'title', widget: 'string' },
+      { label: 'Order', name: 'order', widget: 'number' },
       { label: 'Question (en)', name: 'question', widget: 'markdown' },
       {
         label: 'Question translations', name: 'question-i18n', widget: 'list',
