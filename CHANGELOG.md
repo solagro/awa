@@ -1,4 +1,18 @@
 
+0.7.0 / 2019-11-09
+==================
+
+  * Add question list on theme page
+  * Add question slug to question node
+  * Add order field to questions
+  * Update all dependencies
+  * Add buttons to quizz themes on quizz main page
+  * Add process for creating quizz content pages
+  * Add dependency to slugify
+  * Add language suffix and capitalization to all quizz related nodes
+  * Move JSON to Markdown nodes processing to a dedicated local plugin
+  * Move localized pages creation process to a dedicated local plugin
+
 0.6.1 / 2019-11-06
 ==================
 
