@@ -16,6 +16,9 @@ const generatePagesInfos = (
     path: `/${language}${pathPath}`,
   }));
 
+/**
+ * Create main localized page
+ */
 exports.onCreatePage = async (
   { page, actions: { createPage } },
   // plugin options
@@ -25,4 +28,69 @@ exports.onCreatePage = async (
 
   // Create custom i18n pages
   i18nPages.map(i18nPage => createPage(i18nPage));
+};
+
+const path = require('path');
+const slugify = require('slugify');
+
+/**
+ * Create all quizz content pages
+ */
+exports.createPages = async (
+  { graphql, actions },
+  // plugin options
+  { locales = [] },
+) => {
+  const { createPage } = actions;
+
+  const { data: { results: { questions } } } = await graphql(`
+    query {
+      results: allQuizzJson {
+        questions: nodes {
+          id
+          theme
+          title
+        }
+      }
+    }
+  `);
+
+  const questionsByTheme = questions.reduce((acc, { theme, title }) => {
+    return {
+      ...acc,
+      [theme]: [...(acc[theme] || []), title],
+    };
+  }, {});
+
+  const themes = Object.keys(questionsByTheme);
+
+  /**
+   * Create page for each theme:
+   *  /{lng}/quizz/{theme}
+   */
+  await Promise.all(locales.map(language =>
+    Promise.all(themes.map(theme => createPage({
+      path: `/${language}/quizz/${theme}`,
+      component: path.resolve('./src/components/QuizzTheme.js'),
+      context: {
+        language,
+        theme,
+      },
+    })))));
+
+  /**
+   * Create page for each question:
+   *  /{lng}/quizz/{theme}/{title-slug}
+   */
+  await Promise.all(locales.map(language =>
+    Promise.all(questions.map(({ title, theme, id }) => createPage({
+      path: `/${language}/quizz/${theme}/${slugify(title)}`,
+      component: path.resolve('./src/components/Debug.js'),
+      context: {
+        language,
+        theme,
+        id,
+      },
+    })))));
+
 };
