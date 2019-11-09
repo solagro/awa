@@ -27,7 +27,7 @@ const QuizzThemePage = ({ pageContext: { theme }, data, location: { pathname } }
 
       <ul>
         {questions.map(({ title, fields: { slug } }) => (
-          <li>
+          <li key={slug}>
             <Link to={`${pathname}/${slug}`}>{title}</Link>
           </li>
         ))}
