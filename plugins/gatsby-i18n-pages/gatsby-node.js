@@ -55,12 +55,10 @@ exports.createPages = async (
     }
   `);
 
-  const questionsByTheme = questions.reduce((acc, { theme, title }) => {
-    return {
-      ...acc,
-      [theme]: [...(acc[theme] || []), title],
-    };
-  }, {});
+  const questionsByTheme = questions.reduce((acc, { theme, title }) => ({
+    ...acc,
+    [theme]: [...(acc[theme] || []), title],
+  }), {});
 
   const themes = Object.keys(questionsByTheme);
 
@@ -93,5 +91,4 @@ exports.createPages = async (
         slug: slugify(title),
       },
     })))));
-
 };
