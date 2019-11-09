@@ -85,7 +85,7 @@ exports.createPages = async (
   await Promise.all(locales.map(language =>
     Promise.all(questions.map(({ title, theme, id }) => createPage({
       path: `/${language}/quizz/${theme}/${slugify(title)}`,
-      component: path.resolve('./src/components/Debug.js'),
+      component: path.resolve('./src/components/QuizzQuestion.js'),
       context: {
         language,
         theme,
