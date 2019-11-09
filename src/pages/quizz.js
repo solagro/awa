@@ -10,21 +10,32 @@ import Link from '../components/Link';
 import Layout from '../components/Layout';
 import doRedirect from '../hoc/doRedirect';
 
-const QuizzPage = () => {
+const QuizzPage = ({ location: { pathname } }) => {
   const { t, i18n } = useTranslation();
 
-  const { results: { questions } } = useStaticQuery(graphql`
-    query {
-      results: allQuizzJson {
+  const { results: { questions = [] } = {} } = useStaticQuery(graphql`
+    {
+      results: allQuizzJson(sort: {fields: order}) {
         questions: nodes {
           theme
+          fields {
+            slug
+          }
         }
       }
     }
   `);
 
-  const themes = questions.reduce((acc, { theme }) =>
-    (!acc.includes(theme) ? [...acc, theme] : acc), []);
+  /**
+   * Get first question of each theme
+   */
+  const firstQuestions = questions.reduce((acc, { theme, fields: { slug } }) =>
+    (acc[theme] ? acc : { ...acc, [theme]: slug }), {});
+
+  /**
+   * Build array of themes
+   */
+  const themes = Object.keys(firstQuestions);
 
   return (
     <Layout>
@@ -48,7 +59,7 @@ const QuizzPage = () => {
         <Button
           key={theme}
           component={Link}
-          to={`/quizz/${theme}`}
+          to={`${pathname}/${theme}/${firstQuestions[theme]}`}
           variant="outlined"
         >
           {theme}
