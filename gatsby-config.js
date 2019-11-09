@@ -51,7 +51,7 @@ module.exports = {
       // 'gatsby-plugin-styled-components',
     },
     {
-      resolve: 'gatsby-i18n-pages',
+      resolve: 'gatsby-plugin-solagro-awa',
       options: {
         locales: ['en', 'de', 'es', 'et', 'fr'],
       },
