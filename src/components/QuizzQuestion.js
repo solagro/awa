@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 import QuizzButton from './QuizzButton';
 import SEO from './Seo';
@@ -13,23 +14,60 @@ import doRedirect from '../hoc/doRedirect';
 const capitalize = text => text[0].toUpperCase() + text.slice(1);
 
 const QuizzQuestion = ({
-  pageContext,
   pageContext: { id, theme },
   data: {
     questionSeries: { questions = [] } = {},
     question: {
-      answers,
+      answers: answersEn,
       answer_i18n: answersI18n,
       fields,
     },
   },
-  // data,
 }) => {
   const { t, i18n } = useTranslation();
 
   const currentIndex = questions.findIndex(({ id: currId }) => (currId === id));
   const previousQuestion = questions[currentIndex - 1];
   const nextQuestion = questions[currentIndex + 1];
+
+  const allAnswers = [
+    { language: 'en', answers: answersEn },
+    ...answersI18n,
+  ].reduce((acc, curr) => ({ ...acc, [curr.language]: curr.answers }), {});
+
+  const allTexts = ['en', 'fr', 'es', 'et', 'de'].reduce((acc, lang) => {
+    return fields[`markdownQuestion${capitalize(lang)}`]
+      ? {
+        ...acc,
+        [lang]: {
+          question: fields[`markdownQuestion${capitalize(lang)}`].childMarkdownRemark.html,
+          explanation: fields[`markdownExplanation${capitalize(lang)}`].childMarkdownRemark.html,
+          answers: allAnswers[lang],
+        },
+      } : acc;
+  }, {});
+
+  const question = (allTexts[i18n.language] && allTexts[i18n.language].question)
+    ? allTexts[i18n.language].question
+    : allTexts.en.question;
+
+  const rawAnswers = (allTexts[i18n.language] && allTexts[i18n.language].answers)
+    ? allTexts[i18n.language].answers
+    : allTexts.en.answers;
+
+  const explanation = (allTexts[i18n.language] && allTexts[i18n.language].explanation)
+    ? allTexts[i18n.language].explanation
+    : allTexts.en.explanation;
+
+  const answers = rawAnswers.split('\n').map(rawAnswer => {
+    const firstSpaceIndex = rawAnswer.indexOf(' ');
+    const valid = rawAnswer.substr(0, firstSpaceIndex) === 'V';
+    const text = rawAnswer.substr(firstSpaceIndex + 1);
+    return {
+      valid,
+      text,
+    };
+  });
 
   return (
     <Layout>
@@ -39,6 +77,34 @@ const QuizzQuestion = ({
         {t('Quizz question page')}
       </Typography>
 
+      <Typography variant="h3" component="h2">
+        {t('Question')}
+      </Typography>
+
+      <Typography
+        variant="body1"
+        dangerouslySetInnerHTML={{ __html: question }}
+      />
+
+      <Typography variant="h4" component="h3">
+        {t('Proposals')}
+      </Typography>
+
+      <Typography variant="body1">
+        {answers.map(({ text }, index) => (
+          <Button key={index} variant="contained">{text}</Button>
+        ))}
+      </Typography>
+
+      <Typography variant="h3" component="h2">
+        {t('Explanation')}
+      </Typography>
+
+      <Typography
+        variant="body1"
+        dangerouslySetInnerHTML={{ __html: explanation }}
+      />
+
       <QuizzButton theme={theme} question={previousQuestion}>
         {t('Previous question')}
       </QuizzButton>
@@ -46,10 +112,6 @@ const QuizzQuestion = ({
       <QuizzButton theme={theme} question={nextQuestion}>
         {t('Next question')}
       </QuizzButton>
-
-      <pre>
-        {JSON.stringify(pageContext, null, 2)}
-      </pre>
     </Layout>
   );
 };
