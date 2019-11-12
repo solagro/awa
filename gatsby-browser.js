@@ -4,15 +4,16 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-require('typeface-roboto');
-require('./src/i18n');
+import React from 'react';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-const React = require('react');
-const { ThemeProvider } = require('@material-ui/core/styles');
+import 'typeface-roboto';
+import theme from './src/theme';
 
-const theme = require('./src/theme').default;
+import './src/i18n';
 
-exports.wrapRootElement = ({ element }) => (
+// eslint-disable-next-line import/prefer-default-export
+export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={theme}>
     {element}
   </ThemeProvider>
