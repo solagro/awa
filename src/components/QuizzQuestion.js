@@ -13,6 +13,14 @@ import doRedirect from '../hoc/doRedirect';
 
 const capitalize = text => text[0].toUpperCase() + text.slice(1);
 
+const parseQuestions = rawAnswers => rawAnswers.split('\n').map(rawAnswer => {
+  const firstSpaceIndex = rawAnswer.indexOf(' ');
+
+  const valid = rawAnswer.substr(0, firstSpaceIndex) === 'V';
+  const text = rawAnswer.substr(firstSpaceIndex + 1);
+  return { valid, text };
+});
+
 const QuizzQuestion = ({
   pageContext: { id, theme },
   data: {
@@ -47,27 +55,14 @@ const QuizzQuestion = ({
       } : acc;
   }, {});
 
-  const question = (allTexts[i18n.language] && allTexts[i18n.language].question)
-    ? allTexts[i18n.language].question
-    : allTexts.en.question;
+  const [question, rawAnswers, explanation] = ['question', 'answers', 'explanation']
+    .map(textElement => (
+      (allTexts[i18n.language] && allTexts[i18n.language][textElement])
+        ? allTexts[i18n.language][textElement]
+        : allTexts.en[textElement]
+    ));
 
-  const rawAnswers = (allTexts[i18n.language] && allTexts[i18n.language].answers)
-    ? allTexts[i18n.language].answers
-    : allTexts.en.answers;
-
-  const explanation = (allTexts[i18n.language] && allTexts[i18n.language].explanation)
-    ? allTexts[i18n.language].explanation
-    : allTexts.en.explanation;
-
-  const answers = rawAnswers.split('\n').map(rawAnswer => {
-    const firstSpaceIndex = rawAnswer.indexOf(' ');
-    const valid = rawAnswer.substr(0, firstSpaceIndex) === 'V';
-    const text = rawAnswer.substr(firstSpaceIndex + 1);
-    return {
-      valid,
-      text,
-    };
-  });
+  const answers = parseQuestions(rawAnswers);
 
   return (
     <Layout>
