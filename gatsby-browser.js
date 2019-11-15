@@ -10,11 +10,14 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import 'typeface-roboto';
 import theme from './src/theme';
 
+import GlobalContextProvider from './src/components/GlobalContextProvider';
 import './src/i18n';
 
 // eslint-disable-next-line import/prefer-default-export
 export const wrapRootElement = ({ element }) => (
-  <ThemeProvider theme={theme}>
-    {element}
-  </ThemeProvider>
+  <GlobalContextProvider>
+    <ThemeProvider theme={theme}>
+      {element}
+    </ThemeProvider>
+  </GlobalContextProvider>
 );

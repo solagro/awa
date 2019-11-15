@@ -10,6 +10,7 @@ import SEO from './Seo';
 import Layout from './Layout';
 
 import doRedirect from '../hoc/doRedirect';
+import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
 
 const capitalize = text => text[0].toUpperCase() + text.slice(1);
 
@@ -33,6 +34,11 @@ const QuizzQuestion = ({
   },
 }) => {
   const { t, i18n } = useTranslation();
+
+  const dispatch = React.useContext(GlobalDispatchContext);
+  const { answers: { [theme]: givenAnswers } } = React.useContext(GlobalStateContext);
+
+  const isAnswered = !!givenAnswers && (typeof givenAnswers[id] !== 'undefined');
 
   const currentIndex = questions.findIndex(({ id: currId }) => (currId === id));
   const previousQuestion = questions[currentIndex - 1];
@@ -85,11 +91,20 @@ const QuizzQuestion = ({
         {t('Proposals')}
       </Typography>
 
-      <Typography variant="body1">
-        {answers.map(({ text }, index) => (
-          <Button key={index} variant="contained">{text}</Button>
-        ))}
-      </Typography>
+      {answers.map(({ text, valid }, index) => (
+        <div key={text}>
+          <Button
+            variant="contained"
+            onClick={() => dispatch({
+              type: 'ANSWER',
+              payload: { id, theme, index, valid },
+            })}
+            disabled={isAnswered}
+          >
+            {text}
+          </Button>
+        </div>
+      ))}
 
       <Typography variant="h3" component="h2">
         {t('Explanation')}
