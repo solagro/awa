@@ -11,26 +11,13 @@ import Layout from './Layout';
 
 import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
-
-const capitalize = text => text[0].toUpperCase() + text.slice(1);
-
-const parseQuestions = rawAnswers => rawAnswers.split('\n').map(rawAnswer => {
-  const firstSpaceIndex = rawAnswer.indexOf(' ');
-
-  const valid = rawAnswer.substr(0, firstSpaceIndex) === 'V';
-  const text = rawAnswer.substr(firstSpaceIndex + 1);
-  return { valid, text };
-});
+import { processQuizzTexts } from '../lib/quizzHelpers';
 
 const QuizzQuestion = ({
   pageContext: { id, theme },
   data: {
     questionSeries: { questions = [] } = {},
-    question: {
-      answers: answersEn,
-      answer_i18n: answersI18n,
-      fields,
-    },
+    question: rawQuestion,
   },
 }) => {
   const { t, i18n } = useTranslation();
@@ -44,31 +31,7 @@ const QuizzQuestion = ({
   const previousQuestion = questions[currentIndex - 1];
   const nextQuestion = questions[currentIndex + 1];
 
-  const allAnswers = [
-    { language: 'en', answers: answersEn },
-    ...answersI18n,
-  ].reduce((acc, curr) => ({ ...acc, [curr.language]: curr.answers }), {});
-
-  const allTexts = ['en', 'fr', 'es', 'et', 'de'].reduce((acc, lang) => {
-    return fields[`markdownQuestion${capitalize(lang)}`]
-      ? {
-        ...acc,
-        [lang]: {
-          question: fields[`markdownQuestion${capitalize(lang)}`].childMarkdownRemark.html,
-          explanation: fields[`markdownExplanation${capitalize(lang)}`].childMarkdownRemark.html,
-          answers: allAnswers[lang],
-        },
-      } : acc;
-  }, {});
-
-  const [question, rawAnswers, explanation] = ['question', 'answers', 'explanation']
-    .map(textElement => (
-      (allTexts[i18n.language] && allTexts[i18n.language][textElement])
-        ? allTexts[i18n.language][textElement]
-        : allTexts.en[textElement]
-    ));
-
-  const answers = parseQuestions(rawAnswers);
+  const { question, answers, explanation } = processQuizzTexts(rawQuestion, i18n);
 
   return (
     <Layout>
