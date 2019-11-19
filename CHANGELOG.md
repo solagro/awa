@@ -1,4 +1,20 @@
 
+0.8.0 / 2019-11-19
+==================
+
+  * Adapt quizz button style according given answer and its validity
+  * Add lorem quizz questions
+  * Extract Quizz texts processing to a dedicated function
+  * Setup global state storage and management
+  * Cleanup quizz texts management
+  * Add question and answer texts processing
+  * Create QuizzButton component
+  * Create generic question file with all translations
+  * Rename local plugin as is became project specific
+  * Declare slugify as peerDependency of local plugins
+  * Create QuizzQuestion page component
+  * Set quizz buttons to target first theme question
+
 0.7.0 / 2019-11-09
 ==================
 
