@@ -23,7 +23,9 @@ const QuizzQuestion = ({
   const { t, i18n } = useTranslation();
 
   const dispatch = React.useContext(GlobalDispatchContext);
-  const { answers: { [theme]: givenAnswers } } = React.useContext(GlobalStateContext);
+  const {
+    answers: { [theme]: givenAnswers } = {},
+  } = React.useContext(GlobalStateContext) || {};
 
   const isAnswered = !!givenAnswers && (typeof givenAnswers[id] !== 'undefined');
 
