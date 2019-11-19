@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
+import clsx from 'clsx';
 
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
 
 import QuizzButton from './QuizzButton';
 import SEO from './Seo';
@@ -13,6 +15,25 @@ import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
 import { processQuizzTexts } from '../lib/quizzHelpers';
 
+const useStyles = makeStyles({
+  answer: {
+    margin: '.25em auto',
+    padding: '1em',
+    width: 400,
+    border: '4px solid transparent',
+    transition: 'border 2500ms ease',
+  },
+  valid: {
+    borderColor: 'green',
+  },
+  invalid: {
+    borderColor: 'red',
+  },
+  userChoice: {
+    backgroundColor: 'silver',
+  },
+});
+
 const QuizzQuestion = ({
   pageContext: { id, theme },
   data: {
@@ -21,6 +42,7 @@ const QuizzQuestion = ({
   },
 }) => {
   const { t, i18n } = useTranslation();
+  const classes = useStyles();
 
   const dispatch = React.useContext(GlobalDispatchContext);
   const {
@@ -28,6 +50,7 @@ const QuizzQuestion = ({
   } = React.useContext(GlobalStateContext) || {};
 
   const isAnswered = !!givenAnswers && (typeof givenAnswers[id] !== 'undefined');
+  const givenAnswer = givenAnswers && givenAnswers[id] && givenAnswers[id].index;
 
   const currentIndex = questions.findIndex(({ id: currId }) => (currId === id));
   const previousQuestion = questions[currentIndex - 1];
@@ -57,14 +80,22 @@ const QuizzQuestion = ({
       </Typography>
 
       {answers.map(({ text, valid }, index) => (
-        <div key={text}>
+        <div
+          key={text}
+          className={clsx({
+            [classes.answer]: true,
+            [classes.valid]: isAnswered && valid,
+            [classes.invalid]: isAnswered && !valid,
+            [classes.userChoice]: givenAnswer === index,
+          })}
+        >
           <Button
             variant="contained"
             onClick={() => dispatch({
               type: 'ANSWER',
               payload: { id, theme, index, valid },
             })}
-            disabled={isAnswered}
+            // disabled={isAnswered}
           >
             {text}
           </Button>
