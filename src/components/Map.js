@@ -1,5 +1,8 @@
 import React from 'react';
+import { navigate } from 'gatsby';
 import ReactMapboxGl, { GeoJSONLayer } from 'react-mapbox-gl';
+import { useTranslation } from 'react-i18next';
+
 import { useTheme } from '@material-ui/core/styles';
 
 const isLive = typeof window !== 'undefined';
@@ -32,8 +35,45 @@ const resetCursor = map => {
   map.getCanvas().style.cursor = 'grab';
 };
 
+/**
+ * @function
+ * Returns the grid code of the first given feature list
+ *
+ * @param {Array} [feature] Array of features
+ * @returns {string} The gris code
+ */
+const getFirstGridCode = ([feature]) => {
+  if (feature && feature.properties && feature.properties.Grid_Code) {
+    return feature.properties.Grid_Code;
+  }
+
+  return undefined;
+};
+
+/**
+ * @function
+ * Navigate to first feature page
+ *
+ * @param {string} lng Language used as localized route prefix
+ * @param {Map} map MapboxGL map instance
+ * @param {Object} event.point Mapbox Point instance
+ */
+const gotoGridCode = lng => (map, { point }) => {
+  const features = map.queryRenderedFeatures(point);
+  const gridCode = getFirstGridCode(features);
+
+  if (gridCode) {
+    navigate(`/${lng}/map/${gridCode}`);
+  }
+};
+
+/**
+ * Map component
+ */
 const Map = () => {
   const theme = useTheme();
+  const { i18n } = useTranslation();
+
   return (
     <MapboxGL
       style="mapbox://styles/mapbox/streets-v8" // eslint-disable-line react/style-prop-object
@@ -41,6 +81,7 @@ const Map = () => {
       center={[9, 50]}
       zoom={[4]}
       onMouseMove={resetCursor}
+      onClick={gotoGridCode(i18n.language)}
     >
       <GeoJSONLayer
         data="/data/map.geojson"
