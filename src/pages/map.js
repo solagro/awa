@@ -30,8 +30,6 @@ const MapPage = () => {
       </Typography>
 
       <Map />
-
-      <pre>map</pre>
     </Layout>
   );
 };
