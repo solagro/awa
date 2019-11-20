@@ -24,6 +24,13 @@ module.exports = {
         path: `${__dirname}/content/quizz`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'gridpoint',
+        path: `${__dirname}/content/map`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
