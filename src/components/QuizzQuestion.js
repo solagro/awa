@@ -7,9 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
+
 import QuizzButton from './QuizzButton';
 import SEO from './Seo';
 import Layout from './Layout';
+import Link from './Link';
 
 import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
@@ -118,6 +122,18 @@ const QuizzQuestion = ({
       <QuizzButton theme={theme} question={nextQuestion}>
         {t('Next question')}
       </QuizzButton>
+
+      <div>
+        {questions.map(({ id: qId, fields: { slug } }) => (
+          <span key={qId}>
+            <Link to={`/quizz/${theme}/${slug}`}>
+              {qId === id
+                ? <RadioButtonCheckedIcon />
+                : <RadioButtonUncheckedIcon />}
+            </Link>
+          </span>
+        ))}
+      </div>
     </Layout>
   );
 };
