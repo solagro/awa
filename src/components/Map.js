@@ -11,53 +11,29 @@ const MapboxGL = isLive
   : () => null;
 
 const Map = () => {
-  const [geojson, setGeojson] = React.useState(undefined);
   const theme = useTheme();
-
-  React.useEffect(() => {
-    let isMounted = true;
-    const fetchData = async () => {
-      const rawData = await fetch('/data/map.geojson');
-      const data = await rawData.json();
-
-      if (!isMounted) {
-        return;
-      }
-
-      setGeojson(data);
-    };
-
-    fetchData();
-    return () => {
-      isMounted = false;
-    };
-  }, []);
-
   return (
     <MapboxGL
-      // eslint-disable-next-line react/style-prop-object
-      style="mapbox://styles/mapbox/streets-v8"
+      style="mapbox://styles/mapbox/streets-v8" // eslint-disable-line react/style-prop-object
       containerStyle={{ height: 500 }}
       center={[9, 50]}
       zoom={[4]}
     >
-      {geojson && (
-        <GeoJSONLayer
-          data={geojson}
-          lineLayout={{
-            'line-join': 'round',
-            'line-cap': 'round',
-          }}
-          fillPaint={{
-            'fill-opacity': 0.8,
-            'fill-color': theme.palette.secondary.main,
-          }}
-          linePaint={{
-            'line-color': theme.palette.secondary.light,
-            'line-width': 3,
-          }}
-        />
-      )}
+      <GeoJSONLayer
+        data="/data/map.geojson"
+        lineLayout={{
+          'line-join': 'round',
+          'line-cap': 'round',
+        }}
+        fillPaint={{
+          'fill-opacity': 0.8,
+          'fill-color': theme.palette.secondary.main,
+        }}
+        linePaint={{
+          'line-color': theme.palette.secondary.light,
+          'line-width': 3,
+        }}
+      />
     </MapboxGL>
   );
 };
