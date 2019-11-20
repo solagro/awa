@@ -76,3 +76,16 @@ exports.createPages = async (
       },
     })))));
 };
+
+/**
+ * Alter webpack config to avoid loading Mapbox for pre-build/SSR
+ */
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === 'build-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [{ test: /react-mapbox-gl/, use: loaders.null() }],
+      },
+    });
+  }
+};

@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import doRedirect from '../hoc/doRedirect';
+import Map from '../components/Map';
 
 const MapPage = () => {
   const { t, i18n } = useTranslation();
@@ -27,6 +28,8 @@ const MapPage = () => {
           Introduction or description of map
         </Trans>
       </Typography>
+
+      <Map />
 
       <pre>map</pre>
     </Layout>
