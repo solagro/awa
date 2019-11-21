@@ -1,6 +1,4 @@
 {
   "name": "gatsby-plugin-solagro-awa",
-  "peerDependencies": {
-    "slugify": "~1.3.6"
-  }
+  "peerDependencies": {}
 }

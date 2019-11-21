@@ -1,0 +1,6 @@
+{
+  "name": "gatsby-plugin-solagro-awa-quizz",
+  "peerDependencies": {
+    "slugify": "~1.3.6"
+  }
+}

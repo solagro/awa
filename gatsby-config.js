@@ -59,6 +59,7 @@ module.exports = {
       // 'gatsby-plugin-styled-components',
     },
     'gatsby-plugin-solagro-awa',
+    'gatsby-plugin-solagro-awa-quizz',
     'gatsby-plugin-solagro-awa-map',
     'gatsby-transformer-quizz-markdown',
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues
