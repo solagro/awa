@@ -63,6 +63,7 @@ module.exports = {
         locales: ['en', 'de', 'es', 'et', 'fr'],
       },
     },
+    'gatsby-plugin-solagro-awa-map',
     'gatsby-transformer-quizz-markdown',
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues
     'gatsby-plugin-remove-serviceworker',
