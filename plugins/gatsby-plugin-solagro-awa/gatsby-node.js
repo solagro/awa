@@ -1,7 +1,57 @@
 const path = require('path');
 const slugify = require('slugify');
+const csvtojson = require('csvtojson');
+const camelcase = require('camelcase');
 
 const { generatePagesInfos } = require('./lib/generatePages.js');
+const { removeNumberPrefix } = require('./lib/helpers');
+
+
+exports.onCreateNode = async ({
+  node,
+  loadNodeContent,
+  createContentDigest,
+  actions: { createNode, createParentChildLink },
+}) => {
+  /**
+   * Create nodes for each grid point dataset
+   */
+  if (node.sourceInstanceName === 'gridpoint' && node.extension === 'csv') {
+    const { relativeDirectory, name } = node;
+    const [, dir] = relativeDirectory.split('/');
+
+    const nodeType = camelcase(removeNumberPrefix(dir));
+    const csv = await loadNodeContent(node);
+    const cleanName = camelcase(removeNumberPrefix(name));
+
+    const json = await csvtojson({
+      delimiter: ';',
+    }).fromString(csv);
+
+    json.forEach(csvLine => {
+      const newNode = {
+        id: `${cleanName}-${csvLine.year}-${csvLine.id}`,
+        category: cleanName,
+        gridCode: csvLine.id,
+        year: +csvLine.year,
+
+        allData: csvLine,
+
+        parent: node.id,
+        internal: {
+          contentDigest: createContentDigest(csvLine),
+          type: nodeType,
+        },
+      };
+
+      createNode(newNode);
+      createParentChildLink({
+        parent: node,
+        child: newNode,
+      });
+    });
+  }
+};
 
 /**
  * Create main localized page
