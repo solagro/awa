@@ -1,4 +1,4 @@
-id;year;Average temperature Winter (¡C);Average temperature Spring (¡C);Average temperature Summer (¡C);Average temperature Fall (¡C)
+id;year;Average temperature Winter (°C);Average temperature Spring (°C);Average temperature Summer (°C);Average temperature Fall (°C)
 73081;1987;5,34;15,01;21,38;10,75
 73081;1988;8,16;15,94;19,92;10,34
 73081;1989;8,32;15,97;21,08;12,16
