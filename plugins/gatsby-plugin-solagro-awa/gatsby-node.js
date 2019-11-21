@@ -1,5 +1,5 @@
 
-const { generatePagesInfos } = require('./lib/generatePages.js');
+const { generatePagesInfos } = require('./lib/helpers.js');
 
 /**
  * Create main localized page
