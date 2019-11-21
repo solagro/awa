@@ -1,4 +1,24 @@
 
+0.9.0 / 2019-11-21
+==================
+
+  * Setup gatsby-plugin-web-font-loader dependency & load Abel font from Google fonts
+  * Add description comments to localized page creation process
+  * Setup locales through siteMetadata instead of plugin config
+  * Put quizz creation in a dedicated plugin
+  * Put data processing for map in a dedicated plugin
+  * Create nodes for each grid point dataset
+  * Fix CSV files consistency
+  * Add data for 2 gridpoints and setup Gatsby for loading data directory
+  * Redirect to gridCode page on feature click
+  * Change cursor according hovered feature
+  * Let GeoJSON fetching be done by MapboxGL itself
+  * Draw GeoJSON data on map
+  * Add geojson for all grid points
+  * Add basic Map element
+  * Add react-mapbox-gl as dependency
+  * Add question series progress bar
+
 0.8.0 / 2019-11-19
 ==================
 
