@@ -3,6 +3,7 @@ module.exports = {
     title: 'AWA',
     description: '',
     author: '@makinacorpus',
+    locales: ['en', 'de', 'es', 'et', 'fr'],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -57,12 +58,7 @@ module.exports = {
       },
       // 'gatsby-plugin-styled-components',
     },
-    {
-      resolve: 'gatsby-plugin-solagro-awa',
-      options: {
-        locales: ['en', 'de', 'es', 'et', 'fr'],
-      },
-    },
+    'gatsby-plugin-solagro-awa',
     'gatsby-plugin-solagro-awa-map',
     'gatsby-transformer-quizz-markdown',
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues

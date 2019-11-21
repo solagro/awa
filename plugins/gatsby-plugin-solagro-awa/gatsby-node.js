@@ -6,11 +6,8 @@ const { generatePagesInfos } = require('./lib/generatePages.js');
 /**
  * Create main localized page
  */
-exports.onCreatePage = async (
-  { page, actions: { createPage } },
-  // plugin options
-  { locales },
-) => {
+exports.onCreatePage = async ({ page, actions: { createPage }, store }) => {
+  const { config: { siteMetadata: { locales } } } = store.getState();
   const i18nPages = generatePagesInfos(page, locales);
 
   // Create custom i18n pages
@@ -20,20 +17,27 @@ exports.onCreatePage = async (
 /**
  * Create all quizz content pages
  */
-exports.createPages = async (
-  { graphql, actions },
-  // plugin options
-  { locales = [] },
-) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const { data: { results: { questions } } } = await graphql(`
+  const {
+    data: {
+      results: { questions },
+      site: { siteMetadata: { locales } },
+    },
+  } = await graphql(`
     query {
       results: allQuizzJson {
         questions: nodes {
           id
           theme
           title
+        }
+      }
+
+      site {
+        siteMetadata {
+          locales
         }
       }
     }
