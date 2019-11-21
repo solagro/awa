@@ -18,9 +18,20 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    h1: { color: '#8a2542' },
-    h2: { color: '#8a2542' },
+    h1: {
+      color: '#8a2542',
+      fontSize: 48,
+    },
+    h2: {
+      color: '#8a2542',
+      fontSize: 18,
+      lineHeight: 32,
+    },
     h3: { color: '#8a2542' },
+    fontSize: 14,
+    lineHeight: 27,
+  },
+  overrides: {
   },
 });
 
