@@ -32,10 +32,6 @@ const useStyles = makeStyles(theme => ({
     width: 64,
     marginRight: theme.spacing(2),
   },
-  module__title_picto: {
-    width: '48px',
-    marginRight: '24px',
-  },
   module__button: {
     paddingTop: theme.spacing(7),
   },
