@@ -1,10 +1,12 @@
 const path = require('path');
 const slugify = require('slugify');
 
+const REPORTER_PREFIX = '[solagro-awa-quizz] ';
+
 /**
  * Create all quizz content pages
  */
-exports.createPages = async ({ graphql, actions: { createPage } }) => {
+exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => {
   const {
     data: {
       results: { questions },
@@ -36,6 +38,16 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   const themes = Object.keys(questionsByTheme);
 
   /**
+   * Output debug message to console when building
+   */
+  if (!questions.length) {
+    reporter.warn(`${REPORTER_PREFIX}No question found.`);
+  } else {
+    reporter.info(`${REPORTER_PREFIX}${questions.length} questions found.`);
+    reporter.info(`${REPORTER_PREFIX}Creating langing pages for ${themes.length} themes. (${themes.join(', ')})`);
+  }
+
+  /**
    * Create page for each theme:
    *  /{lng}/quizz/{theme}
    */
@@ -48,6 +60,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         theme,
       },
     })))));
+
+  reporter.info(`${REPORTER_PREFIX}${locales.length * themes.length} theme landing pages created`);
 
   /**
    * Create page for each question:
@@ -64,4 +78,6 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         slug: slugify(title),
       },
     })))));
+
+  reporter.info(`${REPORTER_PREFIX}${locales.length * questions.length} question pages created`);
 };
