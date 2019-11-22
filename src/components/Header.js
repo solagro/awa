@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   header: {
-    height: 100,
+    height: 88,
   },
   logo: {
     width: 112,

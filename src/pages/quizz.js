@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: theme.spacing(10),
   },
   module__title: {
-    justifyContent: 'center',
+    textAlign: 'center',
   },
   category__title: {
     display: 'flex',

@@ -14,7 +14,6 @@ const QuizzButton = ({ question: { fields: { slug } = {} } = {}, theme, ...rest 
       key={slug}
       component={Link}
       to={`/quizz/${theme}/${slug}`}
-      variant="outlined"
       {...rest}
     />
   );
