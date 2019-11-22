@@ -204,6 +204,8 @@ const IndexPage = () => {
         Ut rerum sed a ipsam ut ut voluptates quibusdam voluptas. Consequuntur
         minus quis. Non placeat dolor aut eos a officiis sunt omnis.
         </Typography>
+        <Typography variant="h2">Agriadapt roadmap for adaptation </Typography>
+        <img src={`../images/roadmaps/roadmap-${i18n.language}.svg`} alt={t('Agriadapt roadmap for adaptation')} />
         <Grid container className={classes.module__button} justify="center">
           <Button
             variant="contained"
