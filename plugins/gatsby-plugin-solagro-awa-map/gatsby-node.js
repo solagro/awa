@@ -57,7 +57,7 @@ exports.onCreateNode = async ({
   }
 };
 
-exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => {
+exports.createPages = async ({ reporter, graphql, actions: { createPage, createRedirect } }) => {
   /**
    * Get all available grid codes from raw data
    */
@@ -94,21 +94,50 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     reporter.info(`${REPORTER_PREFIX}${gridCodes.length} grid code found.`);
   }
 
+  const gridPointSubpages = [
+    {
+      slug: 'yield-compilation',
+      sourceType: 'yieldCompilation',
+      component: path.resolve('./src/components/YieldCompilation.js'),
+    },
+    {
+      slug: 'climate-observation',
+      sourceType: 'climateObservation',
+      component: path.resolve('./src/components/ClimateObservation.js'),
+    },
+    {
+      slug: 'climate-projections',
+      sourceType: 'climateProjections',
+      component: path.resolve('./src/components/ClimateProjection.js'),
+    },
+  ];
+
   /**
    * Create page for each grid point:
    *  /{lng}/map/{gridCode}
    */
-  await Promise.all(locales.map(language =>
-    Promise.all(gridCodes.map(gridCode => createPage({
-      path: `/${language}/map/${gridCode}`,
-      component: path.resolve('./src/components/GridCode.js'),
-      context: {
-        language,
-        gridCode,
-      },
-    })))));
+  locales.forEach(language =>
+    gridCodes.forEach(gridCode => {
+      createRedirect({
+        fromPath: `/${language}/map/${gridCode}`,
+        toPath: `/${language}/map/${gridCode}/${gridPointSubpages[0].slug}`,
+        isPermanent: true,
+        redirectInBrowser: true,
+      });
 
-  reporter.info(`${REPORTER_PREFIX}${locales.length * gridCodes.length} grid point pages created.`);
+      gridPointSubpages.forEach(({ slug, component, sourceType }) => createPage({
+        path: `/${language}/map/${gridCode}/${slug}`,
+        component,
+        context: {
+          language,
+          gridCode,
+          slug,
+          sourceType,
+        },
+      }));
+    }));
+
+  reporter.info(`${REPORTER_PREFIX}${locales.length}(locales)×${gridCodes.length}(gridPoints)×${gridPointSubpages.length}(tabs) grid point pages created.`);
 };
 
 /**

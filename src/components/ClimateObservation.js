@@ -8,7 +8,7 @@ import Layout from './Layout';
 
 import doRedirect from '../hoc/doRedirect';
 
-const GridCode = ({
+const ClimateObservation = ({
   pageContext: { gridCode },
   data,
 }) => {
@@ -37,15 +37,14 @@ const GridCode = ({
 };
 
 export const query = graphql`
-  query ($gridCode: String) {
-    allGridPointData(filter: {gridCode: {eq: $gridCode}}) {
+  query ($gridCode: String, $sourceType: String) {
+    allGridPointData(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
       nodes {
         year
-        sourceType
         dataType
       }
     }
   }
 `;
 
-export default doRedirect(GridCode);
+export default doRedirect(ClimateObservation);
