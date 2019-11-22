@@ -21,11 +21,12 @@ const theme = createMuiTheme({
     h1: {
       color: '#8a2542',
       fontSize: 48,
+      fontFamily: 'abel, helvetica, arial, sans-serif',
     },
     h2: {
       color: '#8a2542',
       fontSize: 18,
-      lineHeight: 32,
+      lineHeight: 4,
     },
     h3: { color: '#8a2542' },
     fontSize: 14,
