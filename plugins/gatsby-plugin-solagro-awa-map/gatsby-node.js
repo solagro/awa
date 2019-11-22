@@ -58,21 +58,20 @@ exports.onCreateNode = async ({
 };
 
 exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => {
-  const { data: { site: { siteMetadata: { locales } } } } = await graphql(`
+  /**
+   * Get all available grid codes from raw data
+   */
+  const { data: {
+    site: { siteMetadata: { locales } },
+    allGridPointData: { group: allGridCodes },
+  } } = await graphql(`
     query {
       site {
         siteMetadata {
           locales
         }
       }
-    }
-  `);
 
-  /**
-   * Get all available grid codes from raw data
-   */
-  const { data: { allGridPointData: { group: rawGridCodes } } } = await graphql(`
-    query {
       allGridPointData {
         group(field: gridCode) {
           gridCode: fieldValue
@@ -84,7 +83,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
   /**
    * Extract all grid codes from query result
    */
-  const gridCodes = rawGridCodes.map(({ gridCode }) => gridCode);
+  const gridCodes = allGridCodes.map(({ gridCode }) => gridCode);
 
   /**
    * Output debug message to console when building
