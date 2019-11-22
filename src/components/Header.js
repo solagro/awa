@@ -8,6 +8,9 @@ import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
+  header: {
+    height: 100,
+  },
   logo: {
     width: 112,
   },
@@ -18,7 +21,7 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
   const { i18n } = useTranslation();
 
   return (
-    <Grid container direction="row" justify="space-between">
+    <Grid container direction="row" justify="space-between" className={classes.header}>
       <Link href={parentSite} onClick={preventDefault}>
         <img className={classes.logo} src={logo} alt={siteTitle} />
       </Link>
