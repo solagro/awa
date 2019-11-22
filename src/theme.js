@@ -25,23 +25,29 @@ const theme = createMuiTheme({
     },
     h2: {
       color: '#8a2542',
-      fontSize: 36,
-      lineHeight: 4,
+      fontSize: 32,
+      lineHeight: 2,
       fontFamily: 'roboto, helvetica, arial, sans-serif',
     },
     h3: {
-      color: '#8a2542',
       fontSize: 18,
       lineHeight: 4,
+      fontWeight: 500,
       fontFamily: 'roboto, helvetica, arial, sans-serif',
     },
     subtitle1: {
       color: '#757575',
-      fontSize: '18px',
+      fontSize: 18,
       fontFamily: 'roboto, helvetica, arial, sans-serif',
       fontWeight: 500,
       lineHeight: 1.5,
       textAlign: 'center',
+    },
+    body2: {
+      color: '#757575',
+    },
+    body1: {
+      color: '#212121',
     },
     fontSize: 14,
     lineHeight: 1,
