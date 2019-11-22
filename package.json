@@ -64,6 +64,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build:run": "gatsby build && gatsby serve",
     "clean": "gatsby clean",
     "cy:open": "cypress open",
     "develop": "gatsby develop",
@@ -71,7 +72,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "test:e2e": "start-server-and-test build:run http://localhost:9000 cy:open",
+    "test:e2e:ci": "start-server-and-test build:run http://localhost:9000 cy:open",
     "version": "git changelog -n -t $npm_package_version && git add CHANGELOG.md"
   },
   "repository": {
