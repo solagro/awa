@@ -6,6 +6,8 @@ const REPORTER_PREFIX = '[solagro-awa-quizz-map] ';
 
 const { removeNumberPrefix } = require('./lib/helpers');
 
+const cleanName = str => camelcase(removeNumberPrefix(str));
+
 exports.onCreateNode = async ({
   node,
   loadNodeContent,
@@ -17,20 +19,23 @@ exports.onCreateNode = async ({
    */
   if (node.sourceInstanceName === 'gridpoint' && node.extension === 'csv') {
     const { relativeDirectory, name } = node;
+
+    /**
+     * XXXXX/XX_source_type/
+     */
     const [, dir] = relativeDirectory.split('/');
 
-    const nodeType = camelcase(removeNumberPrefix(dir));
-    const csv = await loadNodeContent(node);
-    const cleanName = camelcase(removeNumberPrefix(name));
+    const sourceType = cleanName(dir);
+    const dataType = cleanName(name);
 
-    const json = await csvtojson({
-      delimiter: ';',
-    }).fromString(csv);
+    const csv = await loadNodeContent(node);
+    const json = await csvtojson({ delimiter: ';' }).fromString(csv);
 
     json.forEach(csvLine => {
       const newNode = {
-        id: `${cleanName}-${csvLine.year}-${csvLine.id}`,
-        category: cleanName,
+        id: `${dataType}-${csvLine.year}-${csvLine.id}`,
+        sourceType,
+        dataType,
         gridCode: csvLine.id,
         year: +csvLine.year,
 
@@ -39,7 +44,7 @@ exports.onCreateNode = async ({
         parent: node.id,
         internal: {
           contentDigest: createContentDigest(csvLine),
-          type: nodeType,
+          type: 'gridPointData',
         },
       };
 
@@ -66,21 +71,9 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
   /**
    * Get all available grid codes from raw data
    */
-  const { data } = await graphql(`
+  const { data: { allGridPointData: { group: rawGridCodes } } } = await graphql(`
     query {
-      allYieldCompilation {
-        group(field: gridCode) {
-          gridCode: fieldValue
-        }
-      }
-
-      allClimateObservation {
-        group(field: gridCode) {
-          gridCode: fieldValue
-        }
-      }
-
-      allClimateProjections {
+      allGridPointData {
         group(field: gridCode) {
           gridCode: fieldValue
         }
@@ -91,16 +84,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
   /**
    * Extract all grid codes from query result
    */
-  const duplicatedGridCodes = Object.values(data)
-    .reduce((acc, curr) => ([
-      ...acc,
-      ...curr.group.map(({ gridCode }) => gridCode),
-    ]), []);
-
-  /**
-   * Dedup grid codes
-   */
-  const gridCodes = Array.from(new Set(duplicatedGridCodes));
+  const gridCodes = rawGridCodes.map(({ gridCode }) => gridCode);
 
   /**
    * Output debug message to console when building

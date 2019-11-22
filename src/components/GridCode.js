@@ -38,10 +38,11 @@ const GridCode = ({
 
 export const query = graphql`
   query ($gridCode: String) {
-    allClimateObservation(filter: {gridCode: {eq: $gridCode}}) {
+    allGridPointData(filter: {gridCode: {eq: $gridCode}}) {
       nodes {
         year
-        category
+        sourceType
+        dataType
       }
     }
   }
