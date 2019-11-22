@@ -51,6 +51,7 @@ const useStyles = makeStyles(theme => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
+    marginLeft: drawerWidth,
   },
 }));
 
@@ -82,56 +83,53 @@ const Layout = ({ children }) => {
       alignItems="center"
       alignContent="center"
     >
-      <Grid item xs={12} md={9} xl={8}>
-        <CssBaseline />
+      <CssBaseline />
 
-        <Drawer
-          className={classes.drawer}
-          variant="permanent"
-          classes={{ paper: classes.drawerPaper }}
-          anchor="left"
-        >
-          {tableOfContent.map(({ label, path }) => (
-            <Tooltip title={label} placement="right">
-              <Fab
-                color="primary"
-                aria-label="add"
-                className={classes.fab}
-                key={path}
-                to={`/${i18n.language}${path}`}
-                component={Link}
-                size="small"
-                boxShadow={10}
-              >
-                <EmojiNatureIcon />
-              </Fab>
-            </Tooltip>
-          ))}
-        </Drawer>
+      <Drawer
+        className={classes.drawer}
+        variant="permanent"
+        classes={{ paper: classes.drawerPaper }}
+        anchor="left"
+      >
+        {tableOfContent.map(({ label, path }) => (
+          <Tooltip title={label} placement="right">
+            <Fab
+              color="primary"
+              aria-label="add"
+              className={classes.fab}
+              key={path}
+              to={`/${i18n.language}${path}`}
+              component={Link}
+              size="small"
+            >
+              <EmojiNatureIcon />
+            </Fab>
+          </Tooltip>
+        ))}
+      </Drawer>
 
-        <div className={classes.content}>
-          <Header
-            siteTitle={siteMetadata.title}
-            parentSite="https://agriadapt.eu/"
-            logo="/images/agriAdapt-logo.svg"
-          />
-          <main>{children}</main>
+      <Grid item className={classes.content} xs={12} md={9} xl={8}>
+        <Header
+          siteTitle={siteMetadata.title}
+          parentSite="https://agriadapt.eu/"
+          logo="/images/agriAdapt-logo.svg"
+        />
+        <main>{children}</main>
 
-          <footer style={{ paddingTop: 10 }}>
-            {t('Last build')} {buildTime}
-            <br />
-            <Location>
-              {({ location: { pathname } }) => (
-                languageIds.map(language => (
-                  <span key={language}>
-                    <Link to={adaptPathname(pathname, language)} lang={language}>{language}</Link>
-                    {' '}
-                  </span>
-                ))
-              )}
-            </Location>
-          </footer>
-        </div>
+        <footer style={{ paddingTop: 10 }}>
+          {t('Last build')} {buildTime}
+          <br />
+          <Location>
+            {({ location: { pathname } }) => (
+              languageIds.map(language => (
+                <span key={language}>
+                  <Link to={adaptPathname(pathname, language)} lang={language}>{language}</Link>
+                  {' '}
+                </span>
+              ))
+            )}
+          </Location>
+        </footer>
       </Grid>
     </Grid>
   );
