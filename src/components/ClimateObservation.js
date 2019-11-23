@@ -10,7 +10,12 @@ import doRedirect from '../hoc/doRedirect';
 
 const ClimateObservation = ({
   pageContext: { gridCode },
-  data,
+  data: {
+    allGridPointDataCell: {
+      allKeys,
+      allYears,
+    },
+  },
 }) => {
   const { t, i18n } = useTranslation();
 
@@ -29,7 +34,11 @@ const ClimateObservation = ({
       <pre>
         {JSON.stringify({
           gridCode,
-          data,
+          allKeys: allKeys.map(({ fieldValue }) => fieldValue),
+          allYears: allYears.map(({ nodes, ...rest }) => ({
+            ...rest,
+            nodes: nodes.map(({ value }) => value),
+          })),
         }, null, 2)}
       </pre>
     </Layout>
@@ -38,10 +47,11 @@ const ClimateObservation = ({
 
 export const query = graphql`
   query ($gridCode: String, $sourceType: String) {
-    allGridPointData: allGridPointDataLine(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
-      nodes {
-        year
-        dataType
+    allGridPointDataCell(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
+      allKeys: group(field: key) { fieldValue }
+      allYears: group(field: year) {
+        fieldValue
+        nodes { value }
       }
     }
   }
