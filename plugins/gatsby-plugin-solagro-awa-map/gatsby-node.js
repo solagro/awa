@@ -150,7 +150,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage, createR
   locales.forEach(language =>
     gridCodes.forEach(gridCode => {
       createRedirect({
-        fromPath: `/${language}/map/${gridCode}`,
+        fromPath: `/${language}/map/${gridCode}/`,
         toPath: `/${language}/map/${gridCode}/${gridPointSubpages[0].slug}`,
         isPermanent: true,
         redirectInBrowser: true,
