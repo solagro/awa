@@ -2,14 +2,13 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
-import Typography from '@material-ui/core/Typography';
-import SEO from './Seo';
+import CustomDataTable from './CustomDataTable';
 import Layout from './Layout';
+import SEO from './Seo';
 
 import doRedirect from '../hoc/doRedirect';
 
 const ClimateObservation = ({
-  pageContext: { gridCode },
   data: {
     allGridPointDataCell: {
       allKeys,
@@ -23,24 +22,10 @@ const ClimateObservation = ({
     <Layout>
       <SEO title={t('Active site detailed information card')} lang={i18n.language} />
 
-      <Typography variant="h1" gutterBottom>
-        {t('Active site detailed information card')}
-      </Typography>
-
-      <Typography variant="h3" component="h2">
-        {t('Question')}
-      </Typography>
-
-      <pre>
-        {JSON.stringify({
-          gridCode,
-          allKeys: allKeys.map(({ fieldValue }) => fieldValue),
-          allYears: allYears.map(({ nodes, ...rest }) => ({
-            ...rest,
-            nodes: nodes.map(({ value }) => value),
-          })),
-        }, null, 2)}
-      </pre>
+      <CustomDataTable
+        keys={allKeys}
+        years={allYears}
+      />
     </Layout>
   );
 };
