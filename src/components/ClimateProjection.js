@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
 import CustomDataTable from './CustomDataTable';
+import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
 import SEO from './Seo';
 
 import doRedirect from '../hoc/doRedirect';
 
 const ClimateProjection = ({
+  pageContext: { sourceType, gridCode },
   data: {
     allGridPointDataCell: {
       allKeys,
@@ -21,6 +23,8 @@ const ClimateProjection = ({
   return (
     <Layout>
       <SEO title={t('Active site detailed information card')} lang={i18n.language} />
+
+      <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
       <CustomDataTable
         keys={allKeys}
