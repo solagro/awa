@@ -57,15 +57,16 @@ exports.onCreateNode = async ({
         child: lineNode,
       });
 
-      Object.entries(csvLineData).forEach(([key, value], index) => {
+      Object.entries(csvLineData).forEach(([key, value], colIndex) => {
         const cellNode = {
-          id: `${dataType}-${gridCode}-${year}-${index}`,
+          id: `${dataType}-${gridCode}-${year}-${colIndex}`,
           sourceType,
           dataType,
           gridCode,
           year,
           key,
           value: +(value.replace(',', '.')),
+          colIndex,
 
           parent: lineNode.id,
           internal: {
