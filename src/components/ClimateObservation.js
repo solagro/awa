@@ -38,7 +38,7 @@ const ClimateObservation = ({
 
 export const query = graphql`
   query ($gridCode: String, $sourceType: String) {
-    allGridPointData(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
+    allGridPointData: allGridPointDataLine(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
       nodes {
         year
         dataType

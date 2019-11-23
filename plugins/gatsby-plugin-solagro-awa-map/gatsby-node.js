@@ -31,27 +31,57 @@ exports.onCreateNode = async ({
     const csv = await loadNodeContent(node);
     const json = await csvtojson({ delimiter: ';' }).fromString(csv);
 
-    json.forEach(csvLine => {
-      const newNode = {
-        id: `${dataType}-${csvLine.year}-${csvLine.id}`,
+    json.forEach(({ id: gridCode, year, ...csvLineData }) => {
+      const lineNode = {
+        id: `${dataType}-${gridCode}-${year}`,
         sourceType,
         dataType,
-        gridCode: csvLine.id,
-        year: +csvLine.year,
-
-        allData: csvLine,
+        gridCode,
+        year,
+        keys: Object.keys(csvLineData),
+        values: Object.values(csvLineData),
 
         parent: node.id,
         internal: {
-          contentDigest: createContentDigest(csvLine),
-          type: 'gridPointData',
+          contentDigest: createContentDigest(csvLineData),
+          type: 'gridPointDataLine',
         },
       };
 
-      createNode(newNode);
+      /**
+       * Create graphql node for each CSV line
+       */
+      createNode(lineNode);
       createParentChildLink({
         parent: node,
-        child: newNode,
+        child: lineNode,
+      });
+
+      Object.entries(csvLineData).forEach(([key, value], index) => {
+        const cellNode = {
+          id: `${dataType}-${gridCode}-${year}-${index}`,
+          sourceType,
+          dataType,
+          gridCode,
+          year,
+          key,
+          value: +(value.replace(',', '.')),
+
+          parent: lineNode.id,
+          internal: {
+            contentDigest: createContentDigest({ key, value }),
+            type: 'gridPointDataCell',
+          },
+        };
+
+        /**
+         * Create graphql node for each CSV cell
+         */
+        createNode(cellNode);
+        createParentChildLink({
+          parent: lineNode,
+          child: cellNode,
+        });
       });
     });
   }
@@ -72,7 +102,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage, createR
         }
       }
 
-      allGridPointData {
+      allGridPointData: allGridPointDataLine {
         group(field: gridCode) {
           gridCode: fieldValue
         }
