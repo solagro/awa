@@ -2,10 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Location } from '@reach/router';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
+
+import adaptPathname from '../lib/adaptPathname';
+import locales from '../locales';
+
+const languageIds = Object.keys(locales);
 
 const useStyles = makeStyles({
   header: {
@@ -26,9 +34,23 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
         <img className={classes.logo} src={logo} alt={siteTitle} />
       </Link>
 
-      <Typography variant="h6" component="div">
+
+      <Grid item>
+        <Typography variant="subtitle1" component="div">
         ({i18n.language})
-      </Typography>
+        </Typography>
+        <Location>
+          {({ location: { pathname } }) => (
+            languageIds.map(language => (
+              <span key={language}>
+                <Link to={adaptPathname(pathname, language)} lang={language}>{language}</Link>
+                {'  '}
+              </span>
+            ))
+          )}
+        </Location>
+      </Grid>
+
     </Grid>
   );
 };

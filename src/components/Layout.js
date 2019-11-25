@@ -10,9 +10,6 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { Location } from '@reach/router';
-
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
@@ -22,11 +19,6 @@ import Fab from '@material-ui/core/Fab';
 import Grid from '@material-ui/core/Grid';
 import Header from './Header';
 import './Layout.css';
-
-import locales from '../locales';
-import adaptPathname from '../lib/adaptPathname';
-
-const languageIds = Object.keys(locales);
 
 const drawerWidth = 64;
 
@@ -119,16 +111,6 @@ const Layout = ({ children }) => {
         <footer style={{ paddingTop: 10 }}>
           {t('Last build')} {buildTime}
           <br />
-          <Location>
-            {({ location: { pathname } }) => (
-              languageIds.map(language => (
-                <span key={language}>
-                  <Link to={adaptPathname(pathname, language)} lang={language}>{language}</Link>
-                  {' '}
-                </span>
-              ))
-            )}
-          </Location>
         </footer>
       </Grid>
     </Grid>
