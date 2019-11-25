@@ -13,14 +13,14 @@ import Done from '@material-ui/icons/Done';
 import Clear from '@material-ui/icons/Clear';
 import { makeStyles } from '@material-ui/core/styles';
 
-import QuizzButton from './QuizzButton';
+import QuizButton from './QuizButton';
 import SEO from './Seo';
 import Layout from './Layout';
 import Link from './Link';
 
 import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
-import { processQuizzTexts } from '../lib/quizzHelpers';
+import { processQuizTexts } from '../lib/quizHelpers';
 
 const useStyles = makeStyles(theme => ({
   module: {
@@ -112,7 +112,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const QuizzQuestion = ({
+const QuizQuestion = ({
   pageContext: { id, theme },
   data: {
     questionSeries: { questions = [] } = {},
@@ -135,11 +135,11 @@ const QuizzQuestion = ({
   const previousQuestion = questions[currentIndex - 1];
   const nextQuestion = questions[currentIndex + 1];
 
-  const { question, answers, explanation } = processQuizzTexts(rawQuestion, i18n);
+  const { question, answers, explanation } = processQuizTexts(rawQuestion, i18n);
 
   return (
     <Layout>
-      <SEO title={t('Quizz')} lang={i18n.language} />
+      <SEO title={t('Quiz')} lang={i18n.language} />
       <Grid
         container
         justify="center"
@@ -255,7 +255,7 @@ const QuizzQuestion = ({
           <div className={classes.progress}>
             {questions.map(({ id: qId, fields: { slug } }) => (
               <span key={qId}>
-                <Link to={`/quizz/${theme}/${slug}`}>
+                <Link to={`/quiz/${theme}/${slug}`}>
                   <div className={clsx({
                     [classes.progress__bullet]: true,
                     [classes.progress__bullet_answered]: isAnswered && qId === id,
@@ -275,23 +275,23 @@ const QuizzQuestion = ({
             spacing={2}
           >
             <Grid item>
-              <QuizzButton
+              <QuizButton
                 theme={theme}
                 question={previousQuestion}
                 variant="outlined"
               >
                 {t('Previous question')}
-              </QuizzButton>
+              </QuizButton>
             </Grid>
             <Grid item>
-              <QuizzButton
+              <QuizButton
                 theme={theme}
                 question={nextQuestion}
                 variant="contained"
                 color="secondary"
               >
                 {t('Next question')}
-              </QuizzButton>
+              </QuizButton>
             </Grid>
           </Grid>
         </Grid>
@@ -302,7 +302,7 @@ const QuizzQuestion = ({
 
 export const query = graphql`
   query ($theme: String, $id: String) {
-    questionSeries: allQuizzJson(
+    questionSeries: allQuizJson(
       filter: {theme: {eq: $theme}},
       sort: {fields: order, order: ASC}
     ) {
@@ -313,7 +313,7 @@ export const query = graphql`
       }
     }
 
-    question: quizzJson(id: {eq: $id}) {
+    question: quizJson(id: {eq: $id}) {
       answers
       answer_i18n { answers language }
 
@@ -334,4 +334,4 @@ export const query = graphql`
   }
 `;
 
-export default doRedirect(QuizzQuestion);
+export default doRedirect(QuizQuestion);

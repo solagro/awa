@@ -10,17 +10,17 @@ import Link from './Link';
 import Layout from './Layout';
 import doRedirect from '../hoc/doRedirect';
 
-const QuizzThemePage = ({ pageContext: { theme }, data, location: { pathname } }) => {
+const QuizThemePage = ({ pageContext: { theme }, data, location: { pathname } }) => {
   const { t, i18n } = useTranslation();
 
-  const { allQuizzJson: { questions = [] } = {} } = data;
+  const { allQuizJson: { questions = [] } = {} } = data;
 
   return (
     <Layout>
-      <SEO title={t('Quizz')} lang={i18n.language} />
+      <SEO title={t('Quiz')} lang={i18n.language} />
 
       <Typography variant="h1" gutterBottom>
-        {t('Quizz theme page')}
+        {t('Quiz theme page')}
         {' '}
         {theme}
       </Typography>
@@ -38,7 +38,7 @@ const QuizzThemePage = ({ pageContext: { theme }, data, location: { pathname } }
 
 export const query = graphql`
   query questionsQuery($theme: String) {
-    allQuizzJson(
+    allQuizJson(
       filter: {theme: {eq: $theme}},
       sort: {fields: order, order: ASC}
     ) {
@@ -55,4 +55,4 @@ export const query = graphql`
 
 `;
 
-export default doRedirect(QuizzThemePage);
+export default doRedirect(QuizThemePage);

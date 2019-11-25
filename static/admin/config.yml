@@ -6,11 +6,11 @@ media_folder: 'static/media/uploads'
 public_folder: '/media/uploads'
 
 .common:
-  - &quizz {
-    name: 'quizz',
+  - &quiz {
+    name: 'quiz',
     extension: 'json',
-    label: 'Quizz question/answer',
-    folder: 'content/quizz',
+    label: 'Quiz question/answer',
+    folder: 'content/quiz',
     create: false,
     delete: true,
     editor: { preview: false },
@@ -47,28 +47,28 @@ public_folder: '/media/uploads'
   }
 
 collections:
-  - <<: *quizz
-    name: 'quizz'
-    label: 'Quizz: All questions'
+  - <<: *quiz
+    name: 'quiz'
+    label: 'Quiz: All questions'
     create: true
-  - <<: *quizz
-    name: 'quizz-n'
-    label: 'Quizz: Nord'
+  - <<: *quiz
+    name: 'quiz-n'
+    label: 'Quiz: Nord'
     filter: { field: 'theme', value: 'nord' }
-  - <<: *quizz
-    name: 'quizz-a'
-    label: 'Quizz: Atlantique'
+  - <<: *quiz
+    name: 'quiz-a'
+    label: 'Quiz: Atlantique'
     filter: { field: 'theme', value: 'atlantique' }
-  - <<: *quizz
-    name: 'quizz-c'
-    label: 'Quizz: Continental'
+  - <<: *quiz
+    name: 'quiz-c'
+    label: 'Quiz: Continental'
     filter: { field: 'theme', value: 'continental' }
-  - <<: *quizz
-    name: 'quizz-m'
-    label: 'Quizz: Meridional'
+  - <<: *quiz
+    name: 'quiz-m'
+    label: 'Quiz: Meridional'
     filter: { field: 'theme', value: 'meridional' }
-  - <<: *quizz
-    name: 'quizz-common'
-    label: 'Quizz: Unspecific'
+  - <<: *quiz
+    name: 'quiz-common'
+    label: 'Quiz: Unspecific'
     filter: { field: 'theme', value: 'common' }
 

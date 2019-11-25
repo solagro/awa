@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
   const { t, i18n } = useTranslation();
   const tableOfContent = [
     { label: t('Home page'), path: '/' },
-    { label: t('Quiz'), path: '/quizz' },
+    { label: t('Quiz'), path: '/quiz' },
     { label: t('Observations'), path: '/map' },
     { label: t('Adaptations'), path: '/adaptations' },
   ];

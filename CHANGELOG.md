@@ -5,7 +5,7 @@
   * Setup gatsby-plugin-web-font-loader dependency & load Abel font from Google fonts
   * Add description comments to localized page creation process
   * Setup locales through siteMetadata instead of plugin config
-  * Put quizz creation in a dedicated plugin
+  * Put quiz creation in a dedicated plugin
   * Put data processing for map in a dedicated plugin
   * Create nodes for each grid point dataset
   * Fix CSV files consistency
@@ -22,18 +22,18 @@
 0.8.0 / 2019-11-19
 ==================
 
-  * Adapt quizz button style according given answer and its validity
-  * Add lorem quizz questions
-  * Extract Quizz texts processing to a dedicated function
+  * Adapt quiz button style according given answer and its validity
+  * Add lorem quiz questions
+  * Extract Quiz texts processing to a dedicated function
   * Setup global state storage and management
-  * Cleanup quizz texts management
+  * Cleanup quiz texts management
   * Add question and answer texts processing
-  * Create QuizzButton component
+  * Create QuizButton component
   * Create generic question file with all translations
   * Rename local plugin as is became project specific
   * Declare slugify as peerDependency of local plugins
-  * Create QuizzQuestion page component
-  * Set quizz buttons to target first theme question
+  * Create QuizQuestion page component
+  * Set quiz buttons to target first theme question
 
 0.7.0 / 2019-11-09
 ==================
@@ -42,10 +42,10 @@
   * Add question slug to question node
   * Add order field to questions
   * Update all dependencies
-  * Add buttons to quizz themes on quizz main page
-  * Add process for creating quizz content pages
+  * Add buttons to quiz themes on quiz main page
+  * Add process for creating quiz content pages
   * Add dependency to slugify
-  * Add language suffix and capitalization to all quizz related nodes
+  * Add language suffix and capitalization to all quiz related nodes
   * Move JSON to Markdown nodes processing to a dedicated local plugin
   * Move localized pages creation process to a dedicated local plugin
 
@@ -57,13 +57,13 @@
 0.6.0 / 2019-11-05
 ==================
 
-  * Transform quizz question nodes to enable markdown to html conversion
+  * Transform quiz question nodes to enable markdown to html conversion
   * Rename path var to avoid colision
-  * Setup gatsby-source-filesystem plugin to load quizz question files
+  * Setup gatsby-source-filesystem plugin to load quiz question files
   * Load gatsby-transformer-json and gatsby-transformer-remark plugins
   * Add gatsby-transformer-json and gatsby-transformer-remark dependencies
-  * Create NetlifyCMS config for editing quizz questions
-  * Create example quizz question files
+  * Create NetlifyCMS config for editing quiz questions
+  * Create example quiz question files
   * Create styleguide page
   * Add .nvmrc file to bind NodeJS version to use
 
@@ -86,7 +86,7 @@
 
   * Create custom Link component for localized links
   * Create map & adaptations pages
-  * Create quizz page
+  * Create quiz page
   * Setup basic nav bar
   * Simplify and cleanup Header and Layout components
   * Apply standard case to Seo component file

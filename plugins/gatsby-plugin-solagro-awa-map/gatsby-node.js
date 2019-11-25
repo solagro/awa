@@ -2,7 +2,7 @@ const path = require('path');
 const csvtojson = require('csvtojson');
 const camelcase = require('camelcase');
 
-const REPORTER_PREFIX = '[solagro-awa-quizz-map] ';
+const REPORTER_PREFIX = '[solagro-awa-quiz-map] ';
 
 const { removeNumberPrefix } = require('./lib/helpers');
 
