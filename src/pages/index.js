@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import { useTranslation } from 'react-i18next';
 
 import Button from '@material-ui/core/Button';
@@ -221,7 +221,4 @@ const IndexPage = () => {
   );
 };
 
-Layout.propTypes = {
-  theme: PropTypes.node.isRequired,
-};
 export default doRedirect(IndexPage);
