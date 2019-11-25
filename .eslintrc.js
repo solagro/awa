@@ -17,5 +17,11 @@ module.exports = {
     // 'react/no-this-in-sfc':              [error],
     // 'react/no-access-state-in-setstate': [error],
     // 'import/no-cycle':                   [off],
+  },
+  globals: {
+    assert: true,
+    context: true,
+    cy: true,
+    Cypress: true,
   }
 };
