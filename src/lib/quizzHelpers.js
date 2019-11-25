@@ -1,5 +1,11 @@
 const capitalize = text => text[0].toUpperCase() + text.slice(1);
 
+/**
+ * Transform raw questions String into array of qualified answers
+ *
+ * @param {*} rawAnswers Raw answers texts with EOL (\n) as separator
+ * @returns {Array} Array of answers
+ */
 const parseQuestions = rawAnswers => rawAnswers.split('\n').map(rawAnswer => {
   const firstSpaceIndex = rawAnswer.indexOf(' ');
 
@@ -16,13 +22,32 @@ export const processQuizzTexts = (
   },
   i18n,
 ) => {
+  /**
+   * Create an unique object with all answers translations
+   */
   const allAnswers = [
     { language: 'en', answers: answersEn },
     ...answersI18n,
   ].reduce((acc, curr) => ({ ...acc, [curr.language]: curr.answers }), {});
 
-  const allTexts = ['en', 'fr', 'es', 'et', 'de'].reduce((acc, lang) => {
-    return fields[`markdownQuestion${capitalize(lang)}`]
+  /**
+   * Get Markdown version of each text:
+   * {
+   *   en: {
+   *     question: markdownQuestionEn,
+   *     explanation: markdownQuestionEn,
+   *     answers: rawAnswersEn
+   *   },
+   *   fr: {
+   *     question: markdownQuestionFr,
+   *     explanation: markdownQuestionFr,
+   *     answers: rawAnswersFr
+   *   },
+   *   ...
+   * }
+   */
+  const allTexts = ['en', 'fr', 'es', 'et', 'de']
+    .reduce((acc, lang) => (fields[`markdownQuestion${capitalize(lang)}`]
       ? {
         ...acc,
         [lang]: {
@@ -30,9 +55,11 @@ export const processQuizzTexts = (
           explanation: fields[`markdownExplanation${capitalize(lang)}`].childMarkdownRemark.html,
           answers: allAnswers[lang],
         },
-      } : acc;
-  }, {});
+      } : acc), {});
 
+  /**
+   * Get right texts according current language and available translations.
+   */
   const [question, rawAnswers, explanation] = ['question', 'answers', 'explanation']
     .map(textElement => (
       (allTexts[i18n.language] && allTexts[i18n.language][textElement])
