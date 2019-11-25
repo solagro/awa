@@ -8,9 +8,10 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import Link from '../components/Link';
+import Roadmap from '../components/Roadmap';
+import SEO from '../components/Seo';
 
 import doRedirect from '../hoc/doRedirect';
 
@@ -201,7 +202,9 @@ const IndexPage = () => {
         minus quis. Non placeat dolor aut eos a officiis sunt omnis.
         </Typography>
         <Typography variant="h2">Agriadapt roadmap for adaptation </Typography>
-        <img src={`../images/roadmaps/roadmap-${i18n.language}.svg`} alt={t('Agriadapt roadmap for adaptation')} />
+
+        <Roadmap />
+
         <Grid container className={classes.module__button} justify="center">
           <Button
             variant="contained"
