@@ -1,10 +1,10 @@
 const path = require('path');
 const slugify = require('slugify');
 
-const REPORTER_PREFIX = '[solagro-awa-quizz] ';
+const REPORTER_PREFIX = '[solagro-awa-quiz] ';
 
 /**
- * Create all quizz content pages
+ * Create all quiz content pages
  */
 exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => {
   const {
@@ -14,7 +14,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     },
   } = await graphql(`
     query {
-      results: allQuizzJson {
+      results: allQuizJson {
         questions: nodes {
           id
           theme
@@ -49,12 +49,12 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
 
   /**
    * Create page for each theme:
-   *  /{lng}/quizz/{theme}
+   *  /{lng}/quiz/{theme}
    */
   await Promise.all(locales.map(language =>
     Promise.all(themes.map(theme => createPage({
-      path: `/${language}/quizz/${theme}`,
-      component: path.resolve('./src/components/QuizzTheme.js'),
+      path: `/${language}/quiz/${theme}`,
+      component: path.resolve('./src/components/QuizTheme.js'),
       context: {
         language,
         theme,
@@ -65,12 +65,12 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
 
   /**
    * Create page for each question:
-   *  /{lng}/quizz/{theme}/{title-slug}
+   *  /{lng}/quiz/{theme}/{title-slug}
    */
   await Promise.all(locales.map(language =>
     Promise.all(questions.map(({ title, theme, id }) => createPage({
-      path: `/${language}/quizz/${theme}/${slugify(title)}`,
-      component: path.resolve('./src/components/QuizzQuestion.js'),
+      path: `/${language}/quiz/${theme}/${slugify(title)}`,
+      component: path.resolve('./src/components/QuizQuestion.js'),
       context: {
         language,
         theme,

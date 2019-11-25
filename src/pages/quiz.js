@@ -60,13 +60,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const QuizzPage = ({ location: { pathname } }) => {
+const QuizPage = ({ location: { pathname } }) => {
   const { t, i18n } = useTranslation();
   const classes = useStyles();
 
   const { results: { questions = [] } = {} } = useStaticQuery(graphql`
     {
-      results: allQuizzJson(sort: {fields: order}) {
+      results: allQuizJson(sort: {fields: order}) {
         questions: nodes {
           theme
           fields {
@@ -90,7 +90,7 @@ const QuizzPage = ({ location: { pathname } }) => {
 
   return (
     <Layout>
-      <SEO title={t('Quizz')} lang={i18n.language} />
+      <SEO title={t('Quiz')} lang={i18n.language} />
       <Grid container justify="center" className={classes.module}>
 
         <Typography className={classes.module__title} variant="h1" gutterBottom>
@@ -143,4 +143,4 @@ const QuizzPage = ({ location: { pathname } }) => {
   );
 };
 
-export default doRedirect(QuizzPage);
+export default doRedirect(QuizPage);

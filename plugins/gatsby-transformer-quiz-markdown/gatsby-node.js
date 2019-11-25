@@ -19,7 +19,7 @@ exports.onCreateNode = async ({
   createContentDigest,
   actions: { createNode, createNodeField },
 }) => {
-  if (node.internal.type === 'QuizzJson') {
+  if (node.internal.type === 'QuizJson') {
     createNodeField({
       node,
       name: 'slug',

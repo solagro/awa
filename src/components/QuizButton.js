@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 
 import Link from './Link';
 
-const QuizzButton = ({ question: { fields: { slug } = {} } = {}, theme, ...rest }) => {
+const QuizButton = ({ question: { fields: { slug } = {} } = {}, theme, ...rest }) => {
   if (!slug) {
     return null;
   }
@@ -13,10 +13,10 @@ const QuizzButton = ({ question: { fields: { slug } = {} } = {}, theme, ...rest 
     <Button
       key={slug}
       component={Link}
-      to={`/quizz/${theme}/${slug}`}
+      to={`/quiz/${theme}/${slug}`}
       {...rest}
     />
   );
 };
 
-export default QuizzButton;
+export default QuizButton;

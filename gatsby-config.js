@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'quizz',
-        path: `${__dirname}/content/quizz`,
+        name: 'quiz',
+        path: `${__dirname}/content/quiz`,
       },
     },
     {
@@ -67,9 +67,9 @@ module.exports = {
       // 'gatsby-plugin-styled-components',
     },
     'gatsby-plugin-solagro-awa',
-    'gatsby-plugin-solagro-awa-quizz',
+    'gatsby-plugin-solagro-awa-quiz',
     'gatsby-plugin-solagro-awa-map',
-    'gatsby-transformer-quizz-markdown',
+    'gatsby-transformer-quiz-markdown',
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues
     'gatsby-plugin-remove-serviceworker',
     // this (optional) plugin enables Progressive Web App + Offline functionality

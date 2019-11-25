@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-transformer-quizz-markdown",
+  "name": "gatsby-transformer-quiz-markdown",
   "peerDependencies": {
     "slugify": "~1.3.6"
   }

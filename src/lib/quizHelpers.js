@@ -14,7 +14,7 @@ const parseQuestions = rawAnswers => rawAnswers.split('\n').map(rawAnswer => {
   return { valid, text };
 });
 
-export const processQuizzTexts = (
+export const processQuizTexts = (
   {
     answers: answersEn,
     answer_i18n: answersI18n,
@@ -76,4 +76,4 @@ export const processQuizzTexts = (
   };
 };
 
-export default processQuizzTexts;
+export default processQuizTexts;

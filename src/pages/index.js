@@ -69,7 +69,7 @@ const IndexPage = () => {
         enim.
         </Typography>
       </Grid>
-      {/* Quizz block */}
+      {/* Quiz block */}
       <Grid container justify="center" className={classes.module}>
         <Box className={classes.module__title}>
           <img className={classes.module__title_picto} src="/images/pictos/quiz.svg" alt="quiz" />
@@ -96,7 +96,7 @@ const IndexPage = () => {
             variant="contained"
             color="secondary"
             component={Link}
-            to="/quizz"
+            to="/quiz"
             lang={i18n.language}
           >
             {t('Start quiz')}
@@ -172,7 +172,7 @@ const IndexPage = () => {
             variant="contained"
             color="secondary"
             component={Link}
-            to="/quizz"
+            to="/quiz"
             lang={i18n.language}
           >
             {t('See mesures')}
@@ -210,7 +210,7 @@ const IndexPage = () => {
             variant="contained"
             color="secondary"
             component={Link}
-            to="/quizz"
+            to="/quiz"
             lang={i18n.language}
           >
             {t('Start quiz')}
