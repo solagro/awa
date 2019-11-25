@@ -84,7 +84,7 @@ const Layout = ({ children }) => {
         anchor="left"
       >
         {tableOfContent.map(({ label, path }) => (
-          <Tooltip title={label} placement="right">
+          <Tooltip key={label} title={label} placement="right">
             <Fab
               color="primary"
               aria-label="add"
