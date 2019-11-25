@@ -135,7 +135,7 @@ const IndexPage = () => {
             variant="contained"
             color="secondary"
             component={Link}
-            to="/quizz"
+            to="/map"
             lang={i18n.language}
           >
             {t('Go to the map')}
