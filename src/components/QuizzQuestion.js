@@ -9,6 +9,8 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
+import Done from '@material-ui/icons/Done';
+import Clear from '@material-ui/icons/Clear';
 import { makeStyles } from '@material-ui/core/styles';
 
 import QuizzButton from './QuizzButton';
@@ -20,7 +22,7 @@ import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
 import { processQuizzTexts } from '../lib/quizzHelpers';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   module: {
     display: 'flex',
     flexDirection: 'column',
@@ -59,8 +61,22 @@ const useStyles = makeStyles({
     borderRadius: '7px',
     backgroundColor: '#ef9a9a',
   },
+  answer__type: {
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(2),
+    display: 'flex',
+    alignItems: 'center',
+  },
+  answer__type__icon: {
+    marginRight: theme.spacing(1),
+  },
+  answer__type__icon_correct: {
+    color: '#a5d6a7',
+  },
+  answer__type__icon_wrong: {
+    color: '#ef9a9a',
+  },
   card: {
-    marginTop: 48,
     backgroundColor: '#acd9e933',
   },
   card__actions: {
@@ -94,7 +110,7 @@ const useStyles = makeStyles({
     position: 'fixed',
     bottom: theme.spacing(4),
   },
-});
+}));
 
 const QuizzQuestion = ({
   pageContext: { id, theme },
@@ -113,6 +129,7 @@ const QuizzQuestion = ({
 
   const isAnswered = !!givenAnswers && (typeof givenAnswers[id] !== 'undefined');
   const givenAnswer = givenAnswers && givenAnswers[id] && givenAnswers[id].index;
+  const isGivenAnsweredValid = givenAnswers && givenAnswers[id] && givenAnswers[id].valid;
 
   const currentIndex = questions.findIndex(({ id: currId }) => (currId === id));
   const previousQuestion = questions[currentIndex - 1];
@@ -178,12 +195,36 @@ const QuizzQuestion = ({
             </Grid>
           ))}
         </Grid>
+        {isAnswered && (
         <Grid
           container
           direction="column"
           justify="center"
           alignItems="center"
+          wrap="nowrap"
         >
+          <Grid item className={classes.answer__type}>
+            {isGivenAnsweredValid ? (
+              <Done
+                fontSize="large"
+                className={clsx({
+                  [classes.answer__type__icon]: true,
+                  [classes.answer__type__icon_correct]: isGivenAnsweredValid,
+                })}
+              />
+            ) : (
+              <Clear
+                fontSize="large"
+                className={clsx({
+                  [classes.answer__type__icon]: true,
+                  [classes.answer__type__icon_wrong]: !isGivenAnsweredValid,
+                })}
+              />
+            )}
+            <Typography variant="h1" color="textPrimary">
+              {isGivenAnsweredValid ? 'Correct !' : 'Wrong'}
+            </Typography>
+          </Grid>
           <Grid item xs={12} md={9} xl={8}>
             <Card className={classes.card} elevation={6}>
               <CardContent>
@@ -201,8 +242,8 @@ const QuizzQuestion = ({
               </CardActions>
             </Card>
           </Grid>
-
         </Grid>
+        )}
         <Grid
           container
           className={classes.quiz__nav_buttons}
