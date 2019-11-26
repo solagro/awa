@@ -63,7 +63,7 @@ const gotoGridCode = lng => (map, { point }) => {
   const gridCode = getFirstGridCode(features);
 
   if (gridCode) {
-    navigate(`/${lng}/map/${gridCode}`);
+    navigate(`/${lng}/map/${gridCode}/yield-compilation/`);
   }
 };
 
