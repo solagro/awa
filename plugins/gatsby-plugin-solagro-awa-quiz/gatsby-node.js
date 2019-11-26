@@ -51,15 +51,15 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
    * Create page for each theme:
    *  /{lng}/quiz/{theme}
    */
-  await Promise.all(locales.map(language =>
-    Promise.all(themes.map(theme => createPage({
+  locales.forEach(language =>
+    themes.forEach(theme => createPage({
       path: `/${language}/quiz/${theme}`,
       component: path.resolve('./src/components/QuizTheme.js'),
       context: {
         language,
         theme,
       },
-    })))));
+    })));
 
   reporter.info(`${REPORTER_PREFIX}${locales.length * themes.length} theme landing pages created`);
 
@@ -67,8 +67,8 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
    * Create page for each question:
    *  /{lng}/quiz/{theme}/{title-slug}
    */
-  await Promise.all(locales.map(language =>
-    Promise.all(questions.map(({ title, theme, id }) => createPage({
+  locales.forEach(language =>
+    questions.forEach(({ title, theme, id }) => createPage({
       path: `/${language}/quiz/${theme}/${slugify(title)}`,
       component: path.resolve('./src/components/QuizQuestion.js'),
       context: {
@@ -77,7 +77,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
         id,
         slug: slugify(title),
       },
-    })))));
+    })));
 
   reporter.info(`${REPORTER_PREFIX}${locales.length * questions.length} question pages created`);
 };
