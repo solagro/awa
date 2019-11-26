@@ -27,6 +27,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignContent: 'center',
     background: 'url("/images/awa-background.svg") center -10% / cover no-repeat',
+    minHeight: '100vh',
   },
   drawer: {
     width: drawerWidth,
