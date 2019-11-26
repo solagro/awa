@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
 
 const Footer = ({ buildTime }) => {
   const classes = useStyles();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Grid
@@ -73,7 +73,7 @@ const Footer = ({ buildTime }) => {
         </Typography>
       </Grid>
       <Grid item xs={12} xl={4}>
-        <Link to="/#">
+        <Link to={`/${i18n.language}/legal`}>
           <Typography variant="h2">{t('Legal')}</Typography>
         </Link>
         <span>{t('Last build ')}{buildTime}</span>
