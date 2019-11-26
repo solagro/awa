@@ -120,12 +120,12 @@ const Layout = ({ children, isHomepage }) => {
       />
       )}
       <Grid item className={classes.content} xs={12} md={9} xl={8}>
-        {isHomepage ? <main>{children}</main>
-          : (
-            <Paper elevation={4} square className={classes.content__paper}>
-              <main>{children}</main>
-            </Paper>
-          )}
+        {isHomepage && <main>{children}</main>}
+        {!isHomepage && (
+        <Paper elevation={4} square className={classes.content__paper}>
+          <main>{children}</main>
+        </Paper>
+        )}
       </Grid>
       {isHomepage && <Footer buildTime={buildTime} />}
     </Grid>
