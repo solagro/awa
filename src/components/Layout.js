@@ -15,11 +15,15 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
 import Fab from '@material-ui/core/Fab';
 import Grid from '@material-ui/core/Grid';
+
 import Header from './Header';
 import Footer from './Footer';
+import HomepagePicto from './HomepagePicto';
+import QuizPicto from './QuizPicto';
+import ObservationsPicto from './ObservationsPicto';
+import AdaptationsPicto from './AdaptationsPicto';
 import './Layout.css';
 
 const drawerWidth = 64;
@@ -45,6 +49,9 @@ const useStyles = makeStyles(theme => ({
   fab: {
     marginTop: theme.spacing(3),
   },
+  fab__picto: {
+    maxWidth: '70%',
+  },
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
@@ -67,10 +74,10 @@ const Layout = ({ children, isHomepage }) => {
   const classes = useStyles();
   const { t, i18n } = useTranslation();
   const tableOfContent = [
-    { label: t('Home page'), path: '/' },
-    { label: t('Quiz'), path: '/quiz' },
-    { label: t('Observations'), path: '/map' },
-    { label: t('Adaptations'), path: '/adaptations' },
+    { label: t('Home page'), path: '/', picto: <HomepagePicto /> },
+    { label: t('Quiz'), path: '/quiz', picto: <QuizPicto /> },
+    { label: t('Observations'), path: '/map', picto: <ObservationsPicto /> },
+    { label: t('Adaptations'), path: '/adaptations', picto: <AdaptationsPicto /> },
   ];
   return (
     <Grid
@@ -91,7 +98,7 @@ const Layout = ({ children, isHomepage }) => {
         classes={{ paper: classes.drawerPaper }}
         anchor="left"
       >
-        {tableOfContent.map(({ label, path }) => (
+        {tableOfContent.map(({ label, path, picto }) => (
           <Tooltip key={label} title={label} placement="right">
             <Fab
               color="primary"
@@ -100,9 +107,14 @@ const Layout = ({ children, isHomepage }) => {
               key={path}
               to={`/${i18n.language}${path}`}
               component={Link}
-              size="small"
+              size="medium"
             >
-              <EmojiNatureIcon />
+              {picto}
+              {/* <img
+                className={classes.fab__picto}
+                src={`/images/pictos/${picto}-white.svg`}
+                alt={picto}
+              /> */}
             </Fab>
           </Tooltip>
         ))}

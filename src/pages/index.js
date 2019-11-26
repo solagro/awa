@@ -106,7 +106,7 @@ const IndexPage = () => {
       {/* Map block */}
       <Grid container justify="center" className={classes.module}>
         <Box className={classes.module__title}>
-          <img className={classes.module__title_picto} src="/images/pictos/observation.svg" alt="observation" />
+          <img className={classes.module__title_picto} src="/images/pictos/observations.svg" alt="observations" />
           <Typography variant="h1" gutterBottom>{t('Yield & Climate (observations and projections)')}</Typography>
         </Box>
         <Typography variant="body1" paragraph>
@@ -145,7 +145,7 @@ const IndexPage = () => {
       {/* Adaptations block */}
       <Grid container justify="center" className={classes.module}>
         <Box className={classes.module__title}>
-          <img className={classes.module__title_picto} src="/images/pictos/measures.svg" alt="measures" />
+          <img className={classes.module__title_picto} src="/images/pictos/adaptations.svg" alt="adaptations" />
           <Typography variant="h1" gutterBottom>{t('Sustainable adaptation measures')}</Typography>
         </Box>
 
