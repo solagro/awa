@@ -53,7 +53,7 @@ exports.onCreateNode = async ({
         });
       }
 
-      if (node[`${element}-i18n`].length) {
+      if (node[`${element}-i18n`] && node[`${element}-i18n`].length) {
         node[`${element}-i18n`].forEach(({ language, [element]: contentInt }) => {
           const id = `${node.id}-Markdown${capitalize(element)}${capitalize(language)}`;
 
