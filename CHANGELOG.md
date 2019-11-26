@@ -1,4 +1,42 @@
 
+0.10.0 / 2019-11-26
+===================
+
+  * Early null render map for pre-renderering
+  * Display map labels according current i18n language
+  * Set map background tiles to Mapbox "satellite with streets"
+  * Use `<a />` for external link in header
+  * Add Zoom and Rotation controls to map
+  * Add horizontal scroll to grid point data tables
+  * Fix gridPoint link on map
+  * Remove double Z to 'quiz'
+  * Fix homepage link to map page
+  * Use right link for language selector
+  * Put Roadmap picture into a dedicated component
+  * Add doc comments to quizzHelpers
+  * Display user answer validity when an answer is chosen
+  * Move language selector from general Layout to Header
+  * Style quizz answers
+  * Adjust header height
+  * Style quiz page
+  * Change h1 font family
+  * Add roadmap as picture in summary
+  * Add SVG pictures for main navigation and background
+  * Add navigation tabs in grid point pages
+  * Fix grid point root page redirection to first tab
+  * Add temporary data table on each grid point page
+  * Provide data to all three grid point pages
+  * Add column index to cell data
+  * Create graphql node for each CSV cell
+  * Fix CSV headers special chars
+  * Create 3 tabs for each grid point
+  * Merge grid point pages creation graphql query
+  * Optimize grid point data storage as a single data type
+  * Fix wrong grid code in map data
+  * Generate page for each grid point
+  * Add some debug output to local plugins
+  * Disable i18next default debug mode
+
 0.9.0 / 2019-11-21
 ==================
 
