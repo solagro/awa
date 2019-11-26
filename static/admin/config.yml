@@ -16,7 +16,7 @@ public_folder: '/media/uploads'
     editor: { preview: false },
     slug: '{{theme}}-{{slug}}',
     fields: [
-      { label: 'Theme', name: 'theme', widget: 'select', options: ['nord', 'atlantique', 'continental', 'meridonial', 'common'] },
+      { label: 'Theme', name: 'theme', widget: 'select', options: ['north', 'atlantic', 'continental', 'meridional', 'common'] },
       { label: 'Title (used only for technical references', name: 'title', widget: 'string' },
       { label: 'Order', name: 'order', widget: 'number' },
       { label: 'Question (en)', name: 'question', widget: 'markdown' },
@@ -54,11 +54,11 @@ collections:
   - <<: *quiz
     name: 'quiz-n'
     label: 'Quiz: Nord'
-    filter: { field: 'theme', value: 'nord' }
+    filter: { field: 'theme', value: 'north' }
   - <<: *quiz
     name: 'quiz-a'
     label: 'Quiz: Atlantique'
-    filter: { field: 'theme', value: 'atlantique' }
+    filter: { field: 'theme', value: 'atlantic' }
   - <<: *quiz
     name: 'quiz-c'
     label: 'Quiz: Continental'

@@ -39,13 +39,13 @@ const useStyles = makeStyles(theme => ({
   theme__button_image: {
     maxHeight: 200,
   },
-  atlantique: {
+  atlantic: {
     minWidth: '50%',
     order: 2,
     textAlign: 'right',
     alignSelf: 'center',
   },
-  nord: {
+  north: {
     minWidth: '100%',
     margin: 'auto',
     order: 1,

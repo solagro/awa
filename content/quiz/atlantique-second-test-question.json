@@ -1,5 +1,5 @@
 {
-  "theme": "atlantique",
+  "theme": "atlantic",
   "title": "Second test question",
   "order": 5,
   "question": "This is the second example question.\n\nText could be multiline and have **some _formatting_**.",

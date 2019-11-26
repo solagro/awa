@@ -1,5 +1,5 @@
 {
-  "theme": "nord",
+  "theme": "north",
   "title": "First test question for zone Nord",
   "order": 10,
   "question": "This is the first example question.\n\nText could be multiline and have **some _formatting_**.",

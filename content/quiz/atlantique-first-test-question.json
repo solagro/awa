@@ -1,5 +1,5 @@
 {
-  "theme": "atlantique",
+  "theme": "atlantic",
   "title": "First test question",
   "order": 2,
   "question": "This is the first example question.\n\nText could be multiline and have **some _formatting_**.",
