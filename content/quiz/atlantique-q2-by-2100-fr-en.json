@@ -1,0 +1,26 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "D'ici 2100, si l’on ne change rien en termes d’émissions de gaz à effet de serre, la température moyenne globale pourrait augmenter de près de?"
+    }
+  ],
+  "question": "By 2100, if we do not change anything in terms of greenhouse gas emissions, the average global temperature could increase by?",
+  "theme": "atlantique",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X 2°C\nV 5°C\nX 1°C\nX 3°C"
+    }
+  ],
+  "order": 10,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Le GIEC a identifié quatre évolutions de températures possibles au cours du XXIe siècle, fonction de quatre scénarii d’émissions de gaz à effet de serre. L’une d’entre elles montre que si nous continuons sur le rythme actuel d’émissions de gaz à effet de serre, la température moyenne globale pourrait augmenter de 4,8°C d’ici à la fin du XXIe siècle, par rapport à la température moyenne de la fin du XXe siècle.\n\nhttps://www.ipcc.ch/"
+    }
+  ],
+  "answers": "X 2°C\nV 5°C\nX 1°C\nX 3°C",
+  "title": "Q2 by 2100 fr-en",
+  "explanation": "The IPCC has identified four possible temperature trends in the 21st century, based on four scenarios of greenhouse gas emissions. One of them shows that if we continue with the current rate of greenhouse gas emissions, the global average temperature could increase by 4.8 ° C by the end of the 21st century, compared to at the average temperature of the late twentieth century.\n\nhttps://www.ipcc.ch/"
+}
