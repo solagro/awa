@@ -1,5 +1,5 @@
 import React from 'react';
-import { navigate } from 'gatsby';
+import { navigate, useStaticQuery, graphql } from 'gatsby';
 import ReactMapboxGl, { MapContext, GeoJSONLayer, ZoomControl, RotationControl } from 'react-mapbox-gl';
 import { useTranslation } from 'react-i18next';
 
@@ -58,12 +58,19 @@ const getFirstGridCode = ([feature]) => {
  * @param {Map} map MapboxGL map instance
  * @param {Object} event.point Mapbox Point instance
  */
-const gotoGridCode = lng => (map, { point }) => {
+const gotoGridCode = (lng, availableGridPoints = []) => (map, { point }) => {
+  if (!availableGridPoints || !availableGridPoints.length) {
+    return;
+  }
+
   const features = map.queryRenderedFeatures(point);
   const gridCode = getFirstGridCode(features);
 
-  if (gridCode) {
+  if (gridCode && availableGridPoints.includes(gridCode)) {
     navigate(`/${lng}/map/${gridCode}/yield-compilation/`);
+  } else {
+    // eslint-disable-next-line no-console
+    console.info('No page available for gridCode:', gridCode);
   }
 };
 
@@ -73,6 +80,17 @@ const gotoGridCode = lng => (map, { point }) => {
 const Map = () => {
   const theme = useTheme();
   const { i18n } = useTranslation();
+
+  const { allGridPointDataLine: { group: gridPoints } } = useStaticQuery(graphql`
+    query {
+      allGridPointDataLine {
+        group(field: gridCode) {
+          gridCode: fieldValue
+        }
+      }
+    }
+  `);
+  const availableGridPoints = gridPoints.map(({ gridCode }) => +gridCode);
 
   if (!isLive) {
     return null;
@@ -85,7 +103,7 @@ const Map = () => {
       center={[9, 50]}
       zoom={[4]}
       onMouseMove={resetCursor}
-      onClick={gotoGridCode(i18n.language)}
+      onClick={gotoGridCode(i18n.language, availableGridPoints)}
     >
       <MapContext.Consumer>
         {map => {
