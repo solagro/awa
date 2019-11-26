@@ -8,26 +8,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import { useTranslation } from 'react-i18next';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import Fab from '@material-ui/core/Fab';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
 import Header from './Header';
+import MainNav from './MainNav';
 import Footer from './Footer';
-import HomepagePicto from './HomepagePicto';
-import QuizPicto from './QuizPicto';
-import ObservationsPicto from './ObservationsPicto';
-import AdaptationsPicto from './AdaptationsPicto';
-import Link from './Link';
-import './Layout.css';
 
-const drawerWidth = 64;
+import './Layout.css';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,21 +26,6 @@ const useStyles = makeStyles(theme => ({
     alignContent: 'center',
     background: 'url("/images/awa-background.svg") center -10% / cover no-repeat',
     minHeight: '100vh',
-  },
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  fab: {
-    marginTop: theme.spacing(3),
-  },
-  fab__picto: {
-    maxWidth: '70%',
   },
   content: {
     flexGrow: 1,
@@ -73,13 +49,7 @@ const Layout = ({ children, isHomepage }) => {
   `);
 
   const classes = useStyles();
-  const { t } = useTranslation();
-  const tableOfContent = [
-    { label: t('Home page'), path: '/', picto: <HomepagePicto /> },
-    { label: t('Quiz'), path: '/quiz', picto: <QuizPicto /> },
-    { label: t('Observations'), path: '/map', picto: <ObservationsPicto /> },
-    { label: t('Adaptations'), path: '/adaptations', picto: <AdaptationsPicto /> },
-  ];
+
   return (
     <Grid
       container
@@ -90,28 +60,7 @@ const Layout = ({ children, isHomepage }) => {
     >
       <CssBaseline />
 
-      <Drawer
-        className={classes.drawer}
-        variant="permanent"
-        classes={{ paper: classes.drawerPaper }}
-        anchor="left"
-      >
-        {tableOfContent.map(({ label, path, picto }) => (
-          <Tooltip key={label} title={label} placement="right">
-            <Fab
-              color="primary"
-              aria-label="add"
-              className={classes.fab}
-              key={path}
-              to={`/${path}`}
-              component={Link}
-              size="medium"
-            >
-              {picto}
-            </Fab>
-          </Tooltip>
-        ))}
-      </Drawer>
+      <MainNav />
 
       {isHomepage && (
         <Header
