@@ -112,21 +112,24 @@ const Layout = ({ children, isHomepage }) => {
           </Tooltip>
         ))}
       </Drawer>
+
       {isHomepage && (
-      <Header
-        siteTitle={siteMetadata.title}
-        parentSite="https://agriadapt.eu/"
-        logo="/images/agriAdapt-logo.svg"
-      />
+        <Header
+          siteTitle={siteMetadata.title}
+          parentSite="https://agriadapt.eu/"
+          logo="/images/agriAdapt-logo.svg"
+        />
       )}
+
       <Grid item className={classes.content} xs={12} md={9} xl={8}>
         {isHomepage && <main>{children}</main>}
         {!isHomepage && (
-        <Paper elevation={4} square className={classes.content__paper}>
-          <main>{children}</main>
-        </Paper>
+          <Paper elevation={4} square className={classes.content__paper}>
+            <main>{children}</main>
+          </Paper>
         )}
       </Grid>
+
       {isHomepage && <Footer buildTime={buildTime} />}
     </Grid>
   );
