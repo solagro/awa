@@ -107,8 +107,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#ef9a9a',
   },
   quiz__nav_buttons: {
-    position: 'fixed',
-    bottom: theme.spacing(4),
+    marginTop: theme.spacing(4),
   },
 }));
 
@@ -275,6 +274,7 @@ const QuizQuestion = ({
             alignItems="center"
             spacing={2}
           >
+            {previousQuestion && (
             <Grid item>
               <QuizButton
                 theme={theme}
@@ -284,6 +284,8 @@ const QuizQuestion = ({
                 {t('Previous question')}
               </QuizButton>
             </Grid>
+            )}
+            {nextQuestion && (
             <Grid item>
               <QuizButton
                 theme={theme}
@@ -294,6 +296,7 @@ const QuizQuestion = ({
                 {t('Next question')}
               </QuizButton>
             </Grid>
+            )}
           </Grid>
         </Grid>
       </Grid>
