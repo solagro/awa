@@ -78,5 +78,9 @@
   },
   "bugs": {
     "url": "https://github.com/solagro/awa/issues"
+  },
+  "devDependencies": {
+    "cypress": "~3.6.1",
+    "start-server-and-test": "~1.10.6"
   }
 }
