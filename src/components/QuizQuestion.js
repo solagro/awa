@@ -282,27 +282,28 @@ const QuizQuestion = ({
             spacing={2}
           >
             {previousQuestion && (
-            <Grid item>
-              <QuizButton
-                theme={theme}
-                question={previousQuestion}
-                variant="outlined"
-              >
-                {t('Previous question')}
-              </QuizButton>
-            </Grid>
+              <Grid item>
+                <QuizButton
+                  theme={theme}
+                  question={previousQuestion}
+                  variant="outlined"
+                >
+                  {t('Previous question')}
+                </QuizButton>
+              </Grid>
             )}
+
             {nextQuestion && (
-            <Grid item>
-              <QuizButton
-                theme={theme}
-                question={nextQuestion}
-                variant="contained"
-                color="secondary"
-              >
-                {t('Next question')}
-              </QuizButton>
-            </Grid>
+              <Grid item>
+                <QuizButton
+                  theme={theme}
+                  question={nextQuestion}
+                  variant="contained"
+                  color="secondary"
+                >
+                  {t('Next question')}
+                </QuizButton>
+              </Grid>
             )}
 
             {!nextQuestion && (
