@@ -135,6 +135,7 @@ const QuizQuestion = ({
   const previousQuestion = questions[currentIndex - 1];
   const nextQuestion = questions[currentIndex + 1];
 
+  const { category } = rawQuestion;
   const { question, answers, explanation } = processQuizTexts(rawQuestion, i18n);
 
   return (
@@ -153,7 +154,7 @@ const QuizQuestion = ({
         </Typography>
 
         <Typography className={classes.category__title} variant="h2" gutterBottom>
-          {t('Question')}
+          {category ? t(category) : t('Question')}
         </Typography>
 
         <Typography
@@ -314,6 +315,8 @@ export const query = graphql`
     }
 
     question: quizJson(id: {eq: $id}) {
+      category
+
       answers
       answer_i18n { answers language }
 
