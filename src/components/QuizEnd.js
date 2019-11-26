@@ -150,6 +150,7 @@ const QuizQuestion = ({ pageContext: { theme } }) => {
           color="primary"
           component={Link}
           to="/quiz"
+          onClick={() => dispatch({ type: 'ANSWER_RESET' })}
         >
           {t('Try another quiz')}
         </Button>
