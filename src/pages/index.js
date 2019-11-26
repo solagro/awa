@@ -43,7 +43,7 @@ const IndexPage = () => {
   const classes = useStyles();
 
   return (
-    <Layout isHomepage>
+    <Layout header footer paper={false}>
       <SEO title={t('Home')} lang={i18n.language} />
 
       {/* Project block */}
