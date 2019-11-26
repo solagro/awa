@@ -1,0 +1,26 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Sur quelle période minimale l'évolution du climat se mesure - t –elle ?"
+    }
+  ],
+  "question": "On what periods is climate change measured?",
+  "theme": "atlantique",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X 10 ans\nV 30 ans\nX 50 ans\nX 100 ans"
+    }
+  ],
+  "order": 1,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "La notion de climat renvoie à l’ensemble des éléments qui caractérisent l’état moyen de l’atmosphère. Elle se définit à partir de statistiques sur une longue période (souvent trente ans) alors que la notion de « temps qu’il fait » renvoie aux conditions météorologiques d’un instant donné ou d’une courte période (une journée, une semaine, etc.)."
+    }
+  ],
+  "answers": "X 10 years\nV 30 years\nX 50 years\nX 100 years",
+  "title": "Q1 Climate change (fr-en)",
+  "explanation": "The notion of \"climate\" refers to all the elements that characterize the average state of the atmosphere. It is defined from statistics over a long period (often thirty years) while the notion of \"weather\" refers to the weather conditions of a given moment or a short period (a day, a week, etc.)."
+}
