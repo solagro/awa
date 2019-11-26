@@ -304,6 +304,20 @@ const QuizQuestion = ({
               </QuizButton>
             </Grid>
             )}
+
+            {!nextQuestion && (
+              <Grid item>
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  component={Link}
+                  to={`/quiz/${theme}/end`}
+                >
+                  {t('View result')}
+                </Button>
+              </Grid>
+            )}
+
           </Grid>
         </Grid>
       </Grid>
