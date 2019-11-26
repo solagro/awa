@@ -62,6 +62,9 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '7px',
     backgroundColor: '#ef9a9a',
   },
+  answer__button: {
+    textTransform: 'capitalize',
+  },
   answer__type: {
     marginTop: theme.spacing(4),
     marginBottom: theme.spacing(2),
@@ -185,6 +188,7 @@ const QuizQuestion = ({
               })}
             >
               <Button
+                className={classes.answer__button}
                 variant="outlined"
                 onClick={() => dispatch({
                   type: 'ANSWER',
@@ -260,8 +264,10 @@ const QuizQuestion = ({
                   <div className={clsx({
                     [classes.progress__bullet]: true,
                     [classes.progress__bullet_answered]: isAnswered && qId === id,
-                    [classes.progress__bullet_answered_valid]: isAnswered && qId === id && isGivenAnsweredValid,
-                    [classes.progress__bullet_answered_invalid]: isAnswered && qId === id && !isGivenAnsweredValid,
+                    [classes.progress__bullet_answered_valid]:
+                      isAnswered && qId === id && isGivenAnsweredValid,
+                    [classes.progress__bullet_answered_invalid]:
+                      isAnswered && qId === id && !isGivenAnsweredValid,
                   })}
                   />
                 </Link>
