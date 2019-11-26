@@ -55,6 +55,12 @@ const theme = createMuiTheme({
     fontFamily: 'roboto, helvetica, arial, sans-serif',
   },
   overrides: {
+    MuiSvgIcon: {
+      root: {
+        width: '1.5em',
+        height: '1.5em',
+      },
+    },
   },
 });
 
