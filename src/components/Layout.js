@@ -8,6 +8,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import clsx from 'clsx';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
@@ -42,6 +43,8 @@ const Layout = ({
   paper = true,
   navigation = true,
   children,
+  className,
+  ...rest
 }) => {
   const { site: { siteMetadata, buildTime } } = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -59,10 +62,11 @@ const Layout = ({
   return (
     <Grid
       container
-      className={classes.root}
+      className={clsx(classes.root, className)}
       justify="center"
       alignItems="center"
       alignContent="center"
+      {...rest}
     >
       <CssBaseline />
 
