@@ -9,6 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
+import clsx from 'clsx';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -27,6 +28,8 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
     alignContent: 'center',
+  },
+  root__homepage: {
     background: 'url("/images/awa-background.svg") center -10% / cover no-repeat',
     minHeight: '100vh',
   },
@@ -49,7 +52,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isHomepage }) => {
   const { site: { siteMetadata, buildTime } } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -72,7 +75,10 @@ const Layout = ({ children }) => {
   return (
     <Grid
       container
-      className={classes.root}
+      className={clsx({
+        [classes.root]: true,
+        [classes.root__homepage]: isHomepage,
+      })}
       justify="center"
       alignItems="center"
       alignContent="center"
@@ -109,7 +115,7 @@ const Layout = ({ children }) => {
       <Grid item className={classes.content} xs={12} md={9} xl={8}>
         <main>{children}</main>
       </Grid>
-      <Footer buildTime={buildTime} />
+      {isHomepage && <Footer buildTime={buildTime} />}
     </Grid>
   );
 };
