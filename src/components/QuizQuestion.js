@@ -39,16 +39,17 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'flex-start',
   },
   answer: {
-    margin: '.5em auto',
+    margin: '.1em auto',
     minWidth: 400,
-    borderRadius: '5px',
+    borderRadius: '7px',
+    border: '4px solid transparent',
   },
   valid: {
-    border: 'none',
+    border: '4px solid #fafafa',
     backgroundColor: '#a5d6a7',
   },
   invalid: {
-    border: 'none',
+    border: '4px solid #fafafa',
     backgroundColor: '#ef9a9a',
   },
   validUserChoice: {
