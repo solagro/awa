@@ -7,11 +7,11 @@ const reducer = (state, { type, payload }) => {
         return state;
       }
 
-      const { id, theme, index, valid } = payload;
+      const { id, theme, ...rest } = payload;
 
       return merge(state, {
         answers: {
-          [theme]: { [id]: { index, valid } },
+          [theme]: { [id]: rest },
         },
       });
     }

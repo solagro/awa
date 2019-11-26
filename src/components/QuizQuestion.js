@@ -192,7 +192,7 @@ const QuizQuestion = ({
                 variant="outlined"
                 onClick={() => dispatch({
                   type: 'ANSWER',
-                  payload: { id, theme, index, valid },
+                  payload: { id, theme, index, valid, category },
                 })}
               >
                 {text}
