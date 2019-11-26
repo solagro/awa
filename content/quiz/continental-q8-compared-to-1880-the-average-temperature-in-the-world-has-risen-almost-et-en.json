@@ -1,0 +1,20 @@
+{
+  "theme": "continental",
+  "title": "Q8 Compared to 1880, the average temperature in the world has risen almost (et-en)",
+  "order": 8,
+  "question": "Compared to 1880, the average temperature in the world has risen almost:",
+  "answers": "X 0.5°c\nV 1°c\nX 1.5°c\nX 2°c",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X 0,5 °C võrra\nV 1,0 °C võrra\nX 1,5 °C võrra\nX 2,0 °C võrra\n"
+    }
+  ],
+  "explanation": "According to scientists, human activity is the main cause of the global climate change that began with the 1880 Industrial Revolution. Greenhouse gases have caused the global average temperature to rise by almost 1 ° C, which, in turn, causes a number of changes around the globe. That is why the plural refers to \"climate change\".",
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "1880. a tööstusrevolutsiooniga hoo sisse saanud globaalsete kliimamuutuste peamiseks põhjustajaks on teadlaste hinnangul inimtegevus. Kasvuhoonegaasid on põhjustanud globaalse keskmise temperatuuri tõusu pea  1° C võrra, mis põhjustab aga omakorda hulgaliselt muutusi üle maakera. Sestap räägitaksegi mitmuses \"kliimamuutustest\"."
+    }
+  ]
+}
