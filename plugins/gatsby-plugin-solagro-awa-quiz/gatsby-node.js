@@ -52,14 +52,28 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
    *  /{lng}/quiz/{theme}
    */
   locales.forEach(language =>
-    themes.forEach(theme => createPage({
-      path: `/${language}/quiz/${theme}`,
-      component: path.resolve('./src/components/QuizTheme.js'),
-      context: {
-        language,
-        theme,
-      },
-    })));
+    themes.forEach(theme => {
+      createPage({
+        path: `/${language}/quiz/${theme}`,
+        component: path.resolve('./src/components/QuizTheme.js'),
+        context: {
+          language,
+          theme,
+        },
+      });
+
+      /**
+       * Create "end of quiz" page
+       */
+      createPage({
+        path: `/${language}/quiz/${theme}/end`,
+        component: path.resolve('./src/components/QuizEnd.js'),
+        context: {
+          language,
+          theme,
+        },
+      });
+    }));
 
   reporter.info(`${REPORTER_PREFIX}${locales.length * themes.length} theme landing pages created`);
 
