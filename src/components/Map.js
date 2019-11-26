@@ -1,6 +1,6 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import ReactMapboxGl, { GeoJSONLayer } from 'react-mapbox-gl';
+import ReactMapboxGl, { GeoJSONLayer, ZoomControl, RotationControl } from 'react-mapbox-gl';
 import { useTranslation } from 'react-i18next';
 
 import { useTheme } from '@material-ui/core/styles';
@@ -83,6 +83,8 @@ const Map = () => {
       onMouseMove={resetCursor}
       onClick={gotoGridCode(i18n.language)}
     >
+      <ZoomControl />
+      <RotationControl />
       <GeoJSONLayer
         data="/data/map.geojson"
         lineLayout={{
