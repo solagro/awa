@@ -1,11 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'gatsby';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
+import Link from './Link';
 
 const useStyles = makeStyles(theme => ({
   footer: {
@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
 
 const Footer = ({ buildTime }) => {
   const classes = useStyles();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Grid
@@ -30,10 +30,10 @@ const Footer = ({ buildTime }) => {
       className={classes.footer}
       spacing={3}
     >
-      <Grid item xs={12} xl={4}>
+      <Grid item xs={12} md={4}>
         <Typography variant="h2">{t('Partnership')}</Typography>
       </Grid>
-      <Grid item xs={12} xl={4}>
+      <Grid item xs={12} md={4}>
         <Typography variant="h2">
           {t('Contacts')}
         </Typography>
@@ -72,8 +72,8 @@ const Footer = ({ buildTime }) => {
           Nicolas Métayer : Nicolas.metayer@solagro.asso.fr
         </Typography>
       </Grid>
-      <Grid item xs={12} xl={4}>
-        <Link to={`/${i18n.language}/legal`}>
+      <Grid item xs={12} md={4}>
+        <Link to="/legal">
           <Typography variant="h2">{t('Legal')}</Typography>
         </Link>
         <span>{t('Last build ')}{buildTime}</span>
