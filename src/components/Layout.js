@@ -28,6 +28,10 @@ const useStyles = makeStyles(theme => ({
     background: 'url("/images/awa-background.svg") center -10% / cover no-repeat',
     minHeight: '100vh',
   },
+  maximize: {
+    flex: '1',
+    height: '100vh',
+  },
   content: {
     flexGrow: 1,
   },
@@ -42,6 +46,7 @@ const Layout = ({
   footer = false,
   paper = true,
   navigation = true,
+  maximize = false,
   children,
   className,
   ...rest
@@ -82,17 +87,26 @@ const Layout = ({
         />
       )}
 
-      <Grid item className={classes.content} xs={12} md={9} xl={8}>
-        {!paper && (
-          <main>{children}</main>
-        )}
-
-        {paper && (
-          <Paper elevation={4} square className={classes.content__paper}>
+      {!maximize && (
+        <Grid item className={classes.content} xs={12} md={9} xl={8}>
+          {!paper && (
             <main>{children}</main>
-          </Paper>
-        )}
-      </Grid>
+          )}
+
+          {paper && (
+            <Paper elevation={4} square className={classes.content__paper}>
+              <main>{children}</main>
+            </Paper>
+          )}
+        </Grid>
+      )}
+
+      {maximize && (
+        <main className={classes.maximize}>
+          {children}
+        </main>
+      )}
+
 
       {footer && (
         <Footer buildTime={buildTime} />
