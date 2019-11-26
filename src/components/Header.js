@@ -30,9 +30,9 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
 
   return (
     <Grid container direction="row" justify="space-between" className={classes.header}>
-      <Link href={parentSite} onClick={preventDefault}>
+      <a href={parentSite} onClick={preventDefault}>
         <img className={classes.logo} src={logo} alt={siteTitle} />
-      </Link>
+      </a>
 
 
       <Grid item>
