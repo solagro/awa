@@ -31,6 +31,24 @@ export const processQuizTexts = (
   ].reduce((acc, curr) => ({ ...acc, [curr.language]: curr.answers }), {});
 
   /**
+   * Avoid to throw when field does not exists
+   */
+  const getHtmlFromNodeFields = (object, type, lang) => {
+    try {
+      const key = `markdown${capitalize(type)}${capitalize(lang)}`;
+      const mainNode = object[key];
+      const remarkNode = mainNode.childMarkdownRemark;
+      return remarkNode.html;
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.error(`No "${type}" for current node`, object);
+      // eslint-disable-next-line no-console
+      console.error(e);
+      return undefined;
+    }
+  };
+
+  /**
    * Get Markdown version of each text:
    * {
    *   en: {
@@ -51,8 +69,8 @@ export const processQuizTexts = (
       ? {
         ...acc,
         [lang]: {
-          question: fields[`markdownQuestion${capitalize(lang)}`].childMarkdownRemark.html,
-          explanation: fields[`markdownExplanation${capitalize(lang)}`].childMarkdownRemark.html,
+          question: getHtmlFromNodeFields(fields, 'question', lang),
+          explanation: getHtmlFromNodeFields(fields, 'explanation', lang),
           answers: allAnswers[lang],
         },
       } : acc), {});
