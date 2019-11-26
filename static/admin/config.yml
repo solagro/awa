@@ -16,7 +16,7 @@ public_folder: '/media/uploads'
     editor: { preview: false },
     slug: '{{theme}}-{{slug}}',
     fields: [
-      { label: 'Theme', name: 'theme', widget: 'select', options: ['north', 'atlantic', 'continental', 'meridional', 'common'] },
+      { label: 'Theme', name: 'theme', widget: 'select', options: ['north', 'atlantic', 'continental', 'meridional'] },
       { label: 'Category', name: 'category', widget: 'select', options: ['climate-change', 'agricultural-impacts', 'adaptation'] },
       { label: 'Title (used only for technical references', name: 'title', widget: 'string' },
       { label: 'Order', name: 'order', widget: 'number' },
