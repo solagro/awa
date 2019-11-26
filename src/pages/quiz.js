@@ -38,6 +38,7 @@ const useStyles = makeStyles(theme => ({
   },
   theme__button_image: {
     maxHeight: 200,
+    margin: 0,
   },
   atlantic: {
     maxWidth: '30%',
@@ -48,15 +49,15 @@ const useStyles = makeStyles(theme => ({
   north: {
     minWidth: '100%',
     margin: 'auto',
+    marginBottom: theme.spacing(4),
     order: 1,
     textAlign: 'center',
     alignSelf: 'center',
   },
   common: {
-    maxWidth: '30%',
+    maxWidth: 200,
+    padding: 0,
     order: 3,
-    textAlign: 'center',
-    alignSelf: 'center',
   },
   continental: {
     maxWidth: '30%',
@@ -67,6 +68,7 @@ const useStyles = makeStyles(theme => ({
   meridional: {
     minWidth: '100%',
     margin: 'auto',
+    marginTop: theme.spacing(4),
     order: 5,
     textAlign: 'center',
     alignSelf: 'center',
@@ -139,7 +141,6 @@ const QuizPage = ({ location: { pathname } }) => {
             >
               <Tooltip
                 title={t(`${theme} region. Available languages: English standard or ${i18n.language} by changing the language of the site`)}
-                placement="left-start"
               >
                 <ButtonBase
                   key={theme}
