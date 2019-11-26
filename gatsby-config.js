@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'gridpoint',
+        name: 'gridPointCSV',
         path: `${__dirname}/content/map`,
       },
     },

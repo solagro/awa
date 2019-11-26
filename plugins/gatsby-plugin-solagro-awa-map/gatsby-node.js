@@ -17,7 +17,7 @@ exports.onCreateNode = async ({
   /**
    * Create nodes for each grid point dataset
    */
-  if (node.sourceInstanceName === 'gridpoint' && node.extension === 'csv') {
+  if (node.sourceInstanceName === 'gridPointCSV' && node.extension === 'csv') {
     const { relativeDirectory, name } = node;
 
     /**
