@@ -7,7 +7,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
@@ -24,6 +24,7 @@ import HomepagePicto from './HomepagePicto';
 import QuizPicto from './QuizPicto';
 import ObservationsPicto from './ObservationsPicto';
 import AdaptationsPicto from './AdaptationsPicto';
+import Link from './Link';
 import './Layout.css';
 
 const drawerWidth = 64;
@@ -72,7 +73,7 @@ const Layout = ({ children, isHomepage }) => {
   `);
 
   const classes = useStyles();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const tableOfContent = [
     { label: t('Home page'), path: '/', picto: <HomepagePicto /> },
     { label: t('Quiz'), path: '/quiz', picto: <QuizPicto /> },
@@ -105,16 +106,11 @@ const Layout = ({ children, isHomepage }) => {
               aria-label="add"
               className={classes.fab}
               key={path}
-              to={`/${i18n.language}${path}`}
+              to={`/${path}`}
               component={Link}
               size="medium"
             >
               {picto}
-              {/* <img
-                className={classes.fab__picto}
-                src={`/images/pictos/${picto}-white.svg`}
-                alt={picto}
-              /> */}
             </Fab>
           </Tooltip>
         ))}
