@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
     maxHeight: 200,
   },
   atlantic: {
-    minWidth: '50%',
+    maxWidth: '30%',
     order: 2,
     textAlign: 'right',
     alignSelf: 'center',
@@ -53,9 +53,22 @@ const useStyles = makeStyles(theme => ({
     alignSelf: 'center',
   },
   common: {
-    minWidth: '50%',
-    order: 2,
+    maxWidth: '30%',
+    order: 3,
+    textAlign: 'center',
+    alignSelf: 'center',
+  },
+  continental: {
+    maxWidth: '30%',
+    order: 4,
     textAlign: 'left',
+    alignSelf: 'center',
+  },
+  meridional: {
+    minWidth: '100%',
+    margin: 'auto',
+    order: 5,
+    textAlign: 'center',
     alignSelf: 'center',
   },
 }));
