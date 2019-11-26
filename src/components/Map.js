@@ -76,7 +76,7 @@ const Map = () => {
 
   return (
     <MapboxGL
-      style="mapbox://styles/mapbox/streets-v8" // eslint-disable-line react/style-prop-object
+      style="mapbox://styles/mapbox/satellite-streets-v9" // eslint-disable-line react/style-prop-object
       containerStyle={{ height: 500 }}
       center={[9, 50]}
       zoom={[4]}
