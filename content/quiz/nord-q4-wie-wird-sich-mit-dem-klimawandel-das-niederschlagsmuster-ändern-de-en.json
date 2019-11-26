@@ -1,0 +1,26 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Wie wird sich mit dem Klimawandel das Niederschlagsmuster ändern?"
+    }
+  ],
+  "question": "How will climate change affect precipitation patterns?",
+  "theme": "nord",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "X Es wird keine Änderungen geben\nX Der Niederschlag wird im Sommer zunehmen\nV Es wird eine Umverteilung des Niederschlags von den Sommermonaten in die Wintermonate geben\t\nX Der Niederschlag wird im Winter abnehmen\n"
+    }
+  ],
+  "order": 4,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Die Jahresniederschlagssumme wird sich in den meisten Regionen kaum ändern, dagegen jedoch die Verteilung der Niederschläge. Die meisten Projektionen gehen davon aus, dass die Niederschläge im Sommerhalbjahr abnehmen werden, während im Winter mehr Niederschläge zu erwarten sind."
+    }
+  ],
+  "answers": "X There will be no changes\nX The rainfall will increase in summer\nV There will be a redistribution of precipitation from the summer months to the winter months\nX The rainfall will decrease in winter",
+  "title": "Q4 Wie wird sich mit dem Klimawandel das Niederschlagsmuster ändern? (de-en)",
+  "explanation": "The annual precipitation will hardly change in most regions, but the distribution of rainfall will be. Most projections suggest that rainfall will decrease in the summer months, while more rainfall is expected in winter."
+}
