@@ -9,7 +9,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
-import clsx from 'clsx';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Tooltip from '@material-ui/core/Tooltip';
