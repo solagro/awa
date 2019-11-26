@@ -36,7 +36,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Layout = ({ children, isHomepage }) => {
+const Layout = ({
+  header = false,
+  footer = false,
+  paper = true,
+  navigation = true,
+  children,
+}) => {
   const { site: { siteMetadata, buildTime } } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -60,9 +66,11 @@ const Layout = ({ children, isHomepage }) => {
     >
       <CssBaseline />
 
-      <MainNav />
+      {navigation && (
+        <MainNav />
+      )}
 
-      {isHomepage && (
+      {header && (
         <Header
           siteTitle={siteMetadata.title}
           parentSite="https://agriadapt.eu/"
@@ -71,15 +79,20 @@ const Layout = ({ children, isHomepage }) => {
       )}
 
       <Grid item className={classes.content} xs={12} md={9} xl={8}>
-        {isHomepage && <main>{children}</main>}
-        {!isHomepage && (
+        {!paper && (
+          <main>{children}</main>
+        )}
+
+        {paper && (
           <Paper elevation={4} square className={classes.content__paper}>
             <main>{children}</main>
           </Paper>
         )}
       </Grid>
 
-      {isHomepage && <Footer buildTime={buildTime} />}
+      {footer && (
+        <Footer buildTime={buildTime} />
+      )}
     </Grid>
   );
 };
