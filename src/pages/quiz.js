@@ -114,6 +114,7 @@ const QuizPage = ({ location: { pathname } }) => {
         >
           {themes.map(theme => (
             <Grid
+              key={theme}
               item
               className={clsx({
                 [classes.theme__button]: true,
