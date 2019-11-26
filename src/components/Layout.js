@@ -17,6 +17,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Fab from '@material-ui/core/Fab';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -33,8 +34,6 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
     alignContent: 'center',
-  },
-  root__homepage: {
     background: 'url("/images/awa-background.svg") center -10% / cover no-repeat',
     minHeight: '100vh',
   },
@@ -55,8 +54,10 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
+  },
+  content__paper: {
     padding: theme.spacing(3),
-    marginLeft: drawerWidth,
+    height: '100vh',
   },
 }));
 
@@ -83,10 +84,7 @@ const Layout = ({ children, isHomepage }) => {
   return (
     <Grid
       container
-      className={clsx({
-        [classes.root]: true,
-        [classes.root__homepage]: isHomepage,
-      })}
+      className={classes.root}
       justify="center"
       alignItems="center"
       alignContent="center"
@@ -115,13 +113,20 @@ const Layout = ({ children, isHomepage }) => {
           </Tooltip>
         ))}
       </Drawer>
+      {isHomepage && (
       <Header
         siteTitle={siteMetadata.title}
         parentSite="https://agriadapt.eu/"
         logo="/images/agriAdapt-logo.svg"
       />
+      )}
       <Grid item className={classes.content} xs={12} md={9} xl={8}>
-        <main>{children}</main>
+        {isHomepage ? <main>{children}</main>
+          : (
+            <Paper elevation={4} square className={classes.content__paper}>
+              <main>{children}</main>
+            </Paper>
+          )}
       </Grid>
       {isHomepage && <Footer buildTime={buildTime} />}
     </Grid>
