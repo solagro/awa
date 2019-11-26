@@ -15,14 +15,17 @@ import locales from '../locales';
 
 const languageIds = Object.keys(locales);
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   header: {
     height: 88,
+    marginLeft: theme.spacing(10),
+    marginTop: theme.spacing(2),
+    marginRight: theme.spacing(2),
   },
   logo: {
     width: 112,
   },
-});
+}));
 
 const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
   const classes = useStyles();

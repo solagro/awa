@@ -18,6 +18,7 @@ import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
 import Fab from '@material-ui/core/Fab';
 import Grid from '@material-ui/core/Grid';
 import Header from './Header';
+import Footer from './Footer';
 import './Layout.css';
 
 const drawerWidth = 64;
@@ -100,20 +101,15 @@ const Layout = ({ children }) => {
           </Tooltip>
         ))}
       </Drawer>
-
+      <Header
+        siteTitle={siteMetadata.title}
+        parentSite="https://agriadapt.eu/"
+        logo="/images/agriAdapt-logo.svg"
+      />
       <Grid item className={classes.content} xs={12} md={9} xl={8}>
-        <Header
-          siteTitle={siteMetadata.title}
-          parentSite="https://agriadapt.eu/"
-          logo="/images/agriAdapt-logo.svg"
-        />
         <main>{children}</main>
-
-        <footer style={{ paddingTop: 10 }}>
-          {t('Last build')} {buildTime}
-          <br />
-        </footer>
       </Grid>
+      <Footer buildTime={buildTime} />
     </Grid>
   );
 };
