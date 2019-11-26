@@ -6,7 +6,7 @@ const capitalize = text => text[0].toUpperCase() + text.slice(1);
  * @param {*} rawAnswers Raw answers texts with EOL (\n) as separator
  * @returns {Array} Array of answers
  */
-const parseQuestions = rawAnswers => rawAnswers.split('\n').map(rawAnswer => {
+const parseQuestions = rawAnswers => rawAnswers.trim().split('\n').map(rawAnswer => {
   const firstSpaceIndex = rawAnswer.indexOf(' ');
 
   const valid = rawAnswer.substr(0, firstSpaceIndex) === 'V';
