@@ -1,6 +1,6 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import ReactMapboxGl, { GeoJSONLayer, ZoomControl, RotationControl } from 'react-mapbox-gl';
+import ReactMapboxGl, { MapContext, GeoJSONLayer, ZoomControl, RotationControl } from 'react-mapbox-gl';
 import { useTranslation } from 'react-i18next';
 
 import { useTheme } from '@material-ui/core/styles';
@@ -83,6 +83,15 @@ const Map = () => {
       onMouseMove={resetCursor}
       onClick={gotoGridCode(i18n.language)}
     >
+      <MapContext.Consumer>
+        {map => {
+          const { layers } = map.getStyle();
+          const labelLayers = layers.filter(({ id }) => id.includes('label'));
+          labelLayers.forEach(({ id }) => {
+            map.setLayoutProperty(id, 'text-field', ['get', `name_${i18n.language}`]);
+          });
+        }}
+      </MapContext.Consumer>
       <ZoomControl />
       <RotationControl />
       <GeoJSONLayer
