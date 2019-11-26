@@ -74,6 +74,10 @@ const Map = () => {
   const theme = useTheme();
   const { i18n } = useTranslation();
 
+  if (!isLive) {
+    return null;
+  }
+
   return (
     <MapboxGL
       style="mapbox://styles/mapbox/satellite-streets-v9" // eslint-disable-line react/style-prop-object
@@ -92,6 +96,7 @@ const Map = () => {
           });
         }}
       </MapContext.Consumer>
+
       <ZoomControl />
       <RotationControl />
       <GeoJSONLayer
