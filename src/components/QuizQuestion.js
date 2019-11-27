@@ -157,7 +157,10 @@ const QuizQuestion = ({
         </Typography>
 
         <Typography className={classes.category__title} variant="h2" gutterBottom>
-          {category ? t(category) : t('Question')}
+          {category
+            ? t(category) // i18next-extract-disable-line
+            : t('Question')
+          }
         </Typography>
 
         <Typography
