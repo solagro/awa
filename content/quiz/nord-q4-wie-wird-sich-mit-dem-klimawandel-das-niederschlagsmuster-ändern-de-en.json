@@ -13,7 +13,7 @@
       "answers": "X Es wird keine Änderungen geben\nX Der Niederschlag wird im Sommer zunehmen\nV Es wird eine Umverteilung des Niederschlags von den Sommermonaten in die Wintermonate geben\t\nX Der Niederschlag wird im Winter abnehmen\n"
     }
   ],
-  "order": 132,
+  "order": 112,
   "explanation-i18n": [
     {
       "language": "fr",
@@ -21,7 +21,7 @@
     }
   ],
   "answers": "X There will be no changes\nX The rainfall will increase in summer\nV There will be a redistribution of precipitation from the summer months to the winter months\nX The rainfall will decrease in winter",
-  "title": "132change affect precipitation patterns",
+  "title": "112change affect precipitation patterns",
   "explanation": "The annual precipitation will hardly change in most regions, but the distribution of rainfall will be. Most projections suggest that rainfall will decrease in the summer months, while more rainfall is expected in winter.",
   "category": "climate-change"
 }
