@@ -21,6 +21,9 @@ i18n
     fallbackLng: 'en',
     whitelist: Object.keys(resources),
 
+    keySeparator: '::',
+    nsSeparator: ':::',
+
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
