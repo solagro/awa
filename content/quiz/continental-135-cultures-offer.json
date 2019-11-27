@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche Chancen bietet der Anbau „neuer“ Kulturen?"
+    }
+  ],
+  "question": "What opportunities does the cultivation of \"new\" cultures offer?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Yield stability through climate-adapted crops\nV Neue Vermarktungsmöglichkeiten\nX Vermindertes Einkommen\nX Risikostreuung"
+    }
+  ],
+  "order": 135,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Der Anbau wärmeliebender aber auch hitze- und trockentoleranterer Kulturen wie z.B. Soja, Leindotter, Sonnenblumen, Hirse, Miscanthus reduziert das Anbaurisiko und kann die bisherige Fruchtfolge auflockern. Bei gegebenen Absatz- bzw. Verwertungsmöglichkeiten können neue Kulturen betriebswirtschaftlich reizvoll sein."
+    }
+  ],
+  "answers": "V Yield stability through climate-adapted crops\nV New marketing opportunities\nX Reduced income\nX risk spreading",
+  "title": "135 cultures offer",
+  "explanation": "The cultivation of heat-loving but also heat and dry-tolerant crops such as e.g. Soy, camelina, sunflower, millet, miscanthus reduce the risk of cultivation and can loosen up the previous crop rotation. For given sales or utilization possibilities, new cultures can be economically attractive.",
+  "category": "adaptation"
+}
