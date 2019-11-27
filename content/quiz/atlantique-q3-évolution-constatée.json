@@ -13,7 +13,7 @@
       "answers": "V Une hausse des températures et des vagues de chaleurs\nV Une stabilité des précipitations\nV Une diminution de la durée de l’enneigement en montagne\nX Une stabilité des phénomènes de sécheresses\n"
     }
   ],
-  "order": 3,
+  "order": 101,
   "explanation-i18n": [
     {
       "language": "fr",
@@ -21,6 +21,7 @@
     }
   ],
   "answers": "V Rising temperatures and heat waves\nV Precipitation stability\nV A decrease in the duration of snow in the mountains\nX Stability of drought phenomena",
-  "title": "Q3 évolution constatée fr-en",
-  "explanation": "There has been an increase in average temperatures in France of 1.4 ° C since 1900, the cumulative rainfall remains stable at the country level but contrasting evolutions appear according to the regions and the seasons, the duration of snow falls in mountain and the intensity of droughts increases."
+  "title": " observed evolution of the climate ",
+  "explanation": "There has been an increase in average temperatures in France of 1.4 ° C since 1900, the cumulative rainfall remains stable at the country level but contrasting evolutions appear according to the regions and the seasons, the duration of snow falls in mountain and the intensity of droughts increases.",
+  "category": "climate-change"
 }
