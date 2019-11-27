@@ -132,14 +132,14 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage, createR
       component: path.resolve('./src/components/YieldCompilation.js'),
     },
     {
-      slug: 'climate-observation',
-      sourceType: 'climateObservation',
-      component: path.resolve('./src/components/ClimateObservation.js'),
+      slug: 'climate-observations',
+      sourceType: 'climateObservations',
+      component: path.resolve('./src/components/ClimateObservations.js'),
     },
     {
       slug: 'climate-projections',
       sourceType: 'climateProjections',
-      component: path.resolve('./src/components/ClimateProjection.js'),
+      component: path.resolve('./src/components/ClimateProjections.js'),
     },
   ];
 

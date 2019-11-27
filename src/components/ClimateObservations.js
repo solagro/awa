@@ -9,7 +9,7 @@ import SEO from './Seo';
 
 import doRedirect from '../hoc/doRedirect';
 
-const ClimateProjection = ({
+const ClimateObservations = ({
   pageContext: { sourceType, gridCode },
   data: {
     allGridPointDataCell: {
@@ -46,4 +46,4 @@ export const query = graphql`
   }
 `;
 
-export default doRedirect(ClimateProjection);
+export default doRedirect(ClimateObservations);

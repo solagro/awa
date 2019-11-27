@@ -13,8 +13,8 @@ const links = [
     id: 'yieldCompilation',
   },
   {
-    path: 'climate-observation',
-    id: 'climateObservation',
+    path: 'climate-observations',
+    id: 'climateObservations',
   },
   {
     path: 'climate-projections',
