@@ -31,7 +31,7 @@ const GridPointTabs = ({ sourceType, gridCode }) => {
         {links.map(({ id, path }) => (
           <Tab
             key={id}
-            label={t(id)}
+            label={t(id)} // i18next-extract-disable-line
             value={id}
             component={Link}
             to={`/map/${gridCode}/${path}`}
