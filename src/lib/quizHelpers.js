@@ -1,4 +1,5 @@
 const capitalize = text => text[0].toUpperCase() + text.slice(1);
+const isLive = typeof window !== 'undefined';
 
 /**
  * Transform raw questions String into array of qualified answers
@@ -40,10 +41,12 @@ export const processQuizTexts = (
       const remarkNode = mainNode.childMarkdownRemark;
       return remarkNode.html;
     } catch (e) {
-      // eslint-disable-next-line no-console
-      console.error(`No "${type}" for current node`, object);
-      // eslint-disable-next-line no-console
-      console.error(e);
+      if (isLive) {
+        // eslint-disable-next-line no-console
+        console.error(`No "${type}" for current node`, object);
+        // eslint-disable-next-line no-console
+        console.error(e);
+      }
       return undefined;
     }
   };
