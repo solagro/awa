@@ -13,7 +13,7 @@
       "answers": "X süsinikdioksiid (CO2)\nV ammoniaak (NH3)\nX metaan (CH4)\nX dilämmastikoksiid (N2O)\n"
     }
   ],
-  "order": 9,
+  "order": 142,
   "explanation-i18n": [
     {
       "language": "et",
@@ -21,6 +21,7 @@
     }
   ],
   "answers": "X carbon dioxide (CO2)\nV ammonia (NH3)\nX methane (CH4)\nX nitrous oxide (N2O)",
-  "title": "Q9 Millist loetelus nimetatud gaasi ei peeta kasvuhoonegaasiks? (et-en)",
-  "explanation": "Greenhouse gases are atmospheric gaseous molecules composed of more than two atoms of the same element or atoms of different elements. The most important greenhouse gases are water vapor, carbon dioxide, nitrogen oxides, ozone and methane. In total, there are 40 different gases that are considered as greenhouse gases. Ammonia is not considered a greenhouse gas."
+  "title": "142greenhouse gas",
+  "explanation": "Greenhouse gases are atmospheric gaseous molecules composed of more than two atoms of the same element or atoms of different elements. The most important greenhouse gases are water vapor, carbon dioxide, nitrogen oxides, ozone and methane. In total, there are 40 different gases that are considered as greenhouse gases. Ammonia is not considered a greenhouse gas.",
+  "category": "agricultural-impacts"
 }
