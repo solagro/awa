@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   },
   content__paper: {
     padding: theme.spacing(3),
-    height: '100vh',
+    minHeight: '100vh',
   },
 }));
 
