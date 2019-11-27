@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Aastal 2013 ületas atmosfääri süsihappegaasi kontsentratsioon maailmas\n\npöördumatute muutuste lävendiks peetava 400 ppm (osakest miljoni kohta) piiri. Milline on atmosfääri süsihappegaasi kontsentratsioon aastal 2019?"
+    }
+  ],
+  "question": "In 2013, global atmospheric carbon dioxide concentrations exceeded\n\na threshold of 400 ppm (particle per million), considered to be the threshold for irreversible change. What is the concentration of carbon dioxide in the atmosphere in 2019?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X alla 400 ppm\nX 400 ppm\nX 410 ppm\nV üle 410 ppm\n\n\n"
+    }
+  ],
+  "order": 260,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Esimest korda mõõdeti 410 ppm’i ületav CO2 kontsentratsioon aprillis 2017, kui Hawaii Mauna Loa observatooriumi mõõdikud näitasid numbrit 410,28. Vaid aasta möödudes oli ka kuu keskmine kontsentratsioon nii kõrgele jõudnud."
+    }
+  ],
+  "answers": "X less than 400 ppm\nX 400 ppm\nX 410 ppm\nV üle 410 ppm",
+  "title": "260 global atmospheric carbon dioxide concentrations ",
+  "explanation": "For the first time, CO2 concentrations above 410 ppm were measured in April 2017, when the Hawaii Mauna Loa Observatory metrics showed 410.28. Only a year later, the monthly average concentration had reached such a high level.",
+  "category": "agricultural-impacts"
+}
