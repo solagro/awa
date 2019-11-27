@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "V Was sind die Auswirkungen des Klimawandels auf das Grünland?\n\nX Pure grasslands benefit more than mixtures with herbs and legumes\n\nX A deep cut promotes the renewal of grassland\n\nV Less precipitation during the summer months reduces yields and can lead to failure of a cut"
+    }
+  ],
+  "question": "What are the effects of climate change on grassland?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Grünlandflächen können durch längere Vegetationszeit und CO2-Zunahme in der Atmosphäre höhere Erträge ermöglichen\nX Reine Grasstandorte profitieren mehr als Mischungen mit Kräutern und Leguminosen\nX Ein tiefer Schnitt fördert den Neuaustrieb des Grünlands\nV Weniger Niederschläge im Sommerhalbjahr verringern die Erträge und können zum Ausfall eines Schnitts führen\n"
+    }
+  ],
+  "order": 125,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Grünland könnte durch die längere Vegetationsperiode und eine höhere CO2 –Konzentration in der Luft vom Klimawandel profitieren - eine ausreichende Wasserversorgung vorausgesetzt. Zunehmende Extremwetter wie Dürre und eine höhere Niederschlagsvariabilität mindern jedoch die Erwartungen in Qualität und Ertrag."
+    }
+  ],
+  "answers": "Grassland can provide higher yields through longer growing season and increased CO2 in the atmosphere\n\n\n",
+  "title": "grassland",
+  "explanation": "Grassland could benefit from climate change as a result of the longer growing season and a higher CO2 concentration in the air - assuming adequate water supply is available. Increasing extreme weather such as drought and higher rainfall variability, however, reduce expectations in terms of quality and yield.",
+  "category": "agricultural-impacts"
+}
