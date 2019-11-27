@@ -13,7 +13,7 @@
       "answers": "X No hay diferencias, es lo mismo \nX El tiempo o predicción meteorológica se refiere al clima que hará en el futuro y el clima se refiere a la descripción física de una serie de variables como temperatura, viento, precipitación, etc. en un momento determinado\nV El tiempo es el estado de la atmósfera en un instante dado, definido por los diversos elementos meteorológicos. El clima, es la síntesis de las condiciones meteorológicas en un lugar determinado, caracterizada por estadísticas a largo plazo de los elementos meteorológicos en dicho lugar\nX El tiempo mide cuánto tardan en darse determinadas condiciones meteorológicas. El clima establece la situación atmosférica que se presenta dependiendo de varios factores (temperatura, viento, presión atmosférica, nubes)\n"
     }
   ],
-  "order": 6,
+  "order": 104,
   "explanation-i18n": [
     {
       "language": "es",
@@ -21,6 +21,7 @@
     }
   ],
   "answers": "X There are no differences, it's the same\nX The weather or weather forecast refers to the weather it will make in the future and the weather refers to the physical description of a series of variables such as temperature, wind, precipitation, etc. on a certain moment\nV Time is the state of the atmosphere at a given moment, defined by the various meteorological elements. Climate is the synthesis of weather conditions in a given place, characterized by long-term statistics of the meteorological elements in that place\nX Time measures how long it takes for certain weather conditions to occur. The weather establishes the atmospheric situation that occurs depending on several factors (temperature, wind, atmospheric pressure, clouds)\n\n",
-  "title": "Q6 ¿Cuál es la diferencia entre el “tiempo” y el clima?  (es- en)",
-  "explanation": "It is important to know how to distinguish between the moment and weather trends. For example, a punctual moment of extreme cold does not mean that there is no global warming, since this will be determined by long-term climate trends."
+  "title": "difference between \"weather\" ",
+  "explanation": "It is important to know how to distinguish between the moment and weather trends. For example, a punctual moment of extreme cold does not mean that there is no global warming, since this will be determined by long-term climate trends.",
+  "category": "climate-change"
 }
