@@ -1,0 +1,31 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Texte de la question"
+    },
+    {
+      "language": "es",
+      "question": "Pregunta text"
+    }
+  ],
+  "question": "Question **text**",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X Un\nV deux\nX trois\nV quatre"
+    }
+  ],
+  "order": 1,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "L'explication"
+    }
+  ],
+  "answers": "X first\nV second\nX third\nV last",
+  "title": "dans l'url",
+  "explanation": "The explanation",
+  "category": "climate-change"
+}
