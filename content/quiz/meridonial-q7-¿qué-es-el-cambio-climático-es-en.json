@@ -13,7 +13,7 @@
       "answers": "X Variación normal del tiempo que se da en un momento determinado, por ejemplo, olas de calor, etc.\nV Variación global del clima de la Tierra. Es debido a causas naturales y también a la acción del hombre, y se produce a muy diversas escalas de tiempo y sobre todos los parámetros climáticos: temperatura, precipitaciones, nubosidad, etc.\nX Pequeño incremento de temperatura que tendrá lugar en el futuro lejano debido a fenómenos naturales como el efecto invernadero\nX El cambio climático son las variaciones del tiempo que hace en un momento determinado en un lugar determinado\n"
     }
   ],
-  "order": 7,
+  "order": 122,
   "explanation-i18n": [
     {
       "language": "es",
@@ -21,6 +21,7 @@
     }
   ],
   "answers": "X Normal variation of the time given at a given time, for example, heat waves, etc.\nV Global variation of the Earth's climate. It is due to natural causes and also to the action of man, and occurs at very different time scales and on all climatic parameters: temperature, rainfall, cloudiness, etc.\nX Small temperature increase that will take place in the distant future due to natural phenomena such as the greenhouse effect\nX Climate change is the variations of the weather at a given time in a given place\n\n\n\n",
-  "title": "Q7 ¿Qué es el cambio climático? (es-en)",
-  "explanation": "The variation of the climate affects the Earth as a whole and all climatic parameters.\n\nhttps://www.miteco.gob.es/es/cambio-climatico/temas/que-es-el-cambio-climatico-y-como-nos-afecta/"
+  "title": "122 What is climate change",
+  "explanation": "The variation of the climate affects the Earth as a whole and all climatic parameters.\n\nhttps://www.miteco.gob.es/es/cambio-climatico/temas/que-es-el-cambio-climatico-y-como-nos-afecta/",
+  "category": "climate-change"
 }
