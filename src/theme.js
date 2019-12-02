@@ -1,4 +1,5 @@
 import { createMuiTheme } from '@material-ui/core';
+import { spacing } from '@material-ui/system';
 
 /**
  * https://material-ui.com/customization/default-theme/
@@ -59,6 +60,22 @@ const theme = createMuiTheme({
         height: '1.5em',
       },
     },
+    MuiAppBar: {
+      colorPrimary: {
+        marginBottom: 64,
+      },
+    },
+    MuiTabs: {
+      flexContainer: {
+        justifyContent: 'space-around',
+        marginBottom: 64,
+      },
+      indicator: {
+        height: 8,
+        width: 8,
+      },
+    },
+
   },
 });
 
