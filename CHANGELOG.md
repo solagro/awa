@@ -1,4 +1,45 @@
 
+1.0.0 / 2019-12-03
+==================
+
+  * Add missing S in Projection's' and Observation's'
+  * Delete fake questions
+  * Do not limit paper (background) height
+  * Generate translation files with automatic extraction from source code
+  * Load i18next-extract as babel plugin
+  * Add dependency to i18next-extract plugin for babel
+  * Define key & namespace separators for translation keys
+  * Do not output some error on build (missing explanation)
+  * Show maximized map on map page
+  * Add maximized mode to Layout component
+  * Allow Layout component to forward custom props
+  * Use multiple props for Layout component
+  * Move main nav to MainNav component
+  * Provide question category when storing user answer
+  * Reset given answers when leaving quiz result page
+  * Create page for quiz end
+  * Remove "common" theme from quiz
+  * Improve quiz themes layout
+  * Change answers button case
+  * Resolve move effect on answers
+  * Resolve question nav buttons style problems
+  * Avoid to throw when question does not have explanation
+  * Add category field to question display
+  * Add category field to question form in admin
+  * Avoid empty answer in case of extraneous EOL
+  * Avoid error at node creation when question has no translation
+  * Create legal page
+  * Change menu pictos and rename image files
+  * Add conditional layout
+  * Add footer and adapt layout
+  * Change favicon
+  * Rename gridPoint CSV type for filesystem plugin
+  * Add debug information for non-existing grid point pages
+  * Avoid navigating to non-existing grid point page
+  * Do all available dependency updates
+  * Do all dependency patch updates through `npm upgrade`
+  * Ensure background cover full page height
+
 0.10.0 / 2019-11-26
 ===================
 
