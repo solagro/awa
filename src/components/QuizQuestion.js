@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#ef9a9a',
   },
   answer__button: {
-    textTransform: 'capitalize',
+    textTransform: 'none',
   },
   answer__type: {
     marginTop: theme.spacing(4),
