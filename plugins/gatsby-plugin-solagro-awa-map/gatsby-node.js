@@ -65,7 +65,7 @@ exports.onCreateNode = async ({
           gridCode,
           year,
           key,
-          value: +(value.replace(',', '.')),
+          value,
           colIndex,
 
           parent: lineNode.id,

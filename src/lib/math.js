@@ -49,6 +49,10 @@ export const getCentiles = values =>
  * @returns {number} The who's ownging the value
  */
 export const getQuantileGroup = (value, quantiles = []) => {
+  if (Number.isNaN(value)) {
+    return null;
+  }
+
   if (value >= [...quantiles].pop()) {
     return quantiles.length + 1;
   }

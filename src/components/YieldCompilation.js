@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
+import clsx from 'clsx';
 
 import TableCell from '@material-ui/core/TableCell';
 import { makeStyles } from '@material-ui/core';
@@ -21,7 +22,10 @@ const useStyles = makeStyles({
   quart2: { background: '#c6d799' },
   quart3: { background: '#dac5a0' },
   quart4: { background: '#dea8a8' },
+  cell: { textAlign: 'right' },
 });
+
+const toNumber = str => (str ? Number(str.replace(/,/, '.')) : undefined);
 
 const YieldCompilation = ({
   pageContext: { sourceType, gridCode },
@@ -45,12 +49,13 @@ const YieldCompilation = ({
         keys={allKeys}
         years={allYears}
         renderCell={({ key, value, col }) => {
-          const quartiles = getQuartiles(col);
-          const groupe = getQuantileGroup(value, quartiles);
+          const asNumbers = col.map(toNumber);
+          const quartiles = getQuartiles(asNumbers);
+          const groupe = getQuantileGroup(toNumber(value), quartiles);
           const className = classes[`quart${groupe}`];
 
           return (
-            <TableCell key={key} className={className}>
+            <TableCell key={key} className={clsx(className, classes.cell)}>
               {value}
             </TableCell>
           );
