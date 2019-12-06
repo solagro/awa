@@ -16,9 +16,15 @@ const useStyles = makeStyles({
   },
 });
 
-const CustomDataTable = ({ keys = [], years = [] }) => {
+const CustomDataTable = ({
+  keys = [],
+  years = [],
+  renderCell = ({ key, value }) => <TableCell key={key}>{value}</TableCell>,
+}) => {
   const { t } = useTranslation();
   const classes = useStyles();
+
+  const byCol = keys.map((key, index) => years.map(({ nodes }) => nodes[index].value));
 
   return (
     <div className={classes.root}>
@@ -30,12 +36,13 @@ const CustomDataTable = ({ keys = [], years = [] }) => {
               <TableCell key={key}>{key}</TableCell>)}
           </TableRow>
         </TableHead>
+
         <TableBody>
           {years.map(({ fieldValue: year, nodes }) => (
             <TableRow key={year} hover>
               <TableCell component="th" scope="row">{year}</TableCell>
               {nodes.map(({ value }, index) =>
-                <TableCell key={index}>{value}</TableCell>)}
+                renderCell({ key: index, value, col: byCol[index] }))}
             </TableRow>
           ))}
         </TableBody>
