@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
   north: {
     minWidth: '100%',
     margin: 'auto',
-    marginBottom: theme.spacing(4),
+    marginBottom: 0,
     order: 1,
     textAlign: 'center',
     alignSelf: 'center',
@@ -68,7 +68,7 @@ const useStyles = makeStyles(theme => ({
   meridional: {
     minWidth: '100%',
     margin: 'auto',
-    marginTop: theme.spacing(4),
+    marginTop: 0,
     order: 5,
     textAlign: 'center',
     alignSelf: 'center',
