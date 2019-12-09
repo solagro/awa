@@ -12,6 +12,7 @@ import Link from './Link';
 
 import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
+import Roadmap from './Roadmap';
 
 const useStyles = makeStyles(theme => ({
   module: {
@@ -131,21 +132,40 @@ const QuizQuestion = ({ pageContext: { theme } }) => {
         <Typography className={classes.category__title} variant="h2" gutterBottom>
           {t('Results')}
         </Typography>
-
-
         <pre>
           {JSON.stringify(givenAnswers, null, 2)}
         </pre>
-
-        <Button
-          variant="contained"
-          color="primary"
-          component={Link}
-          to="/quiz"
-          onClick={() => dispatch({ type: 'ANSWER_RESET' })}
+        <Typography variant="h2">Agriadapt roadmap for adaptation </Typography>
+        <Roadmap />
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          spacing={2}
         >
-          {t('Try another quiz')}
-        </Button>
+          <Grid item>
+            <Button
+              variant="outlined"
+              component={Link}
+              to="/quiz"
+              onClick={() => dispatch({ type: 'ANSWER_RESET' })}
+            >
+              {t('Try another quiz')}
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button
+              variant="contained"
+              color="secondary"
+              component={Link}
+              to="/map"
+              lang={i18n.language}
+            >
+              {t('Go to the map')}
+            </Button>
+          </Grid>
+        </Grid>
       </Grid>
     </Layout>
   );
