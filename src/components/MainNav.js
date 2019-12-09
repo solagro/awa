@@ -27,6 +27,14 @@ const useStyles = makeStyles(theme => ({
   },
   fab: {
     marginTop: theme.spacing(3),
+    color: theme.palette.primary.main,
+    backgroundColor: '#fff',
+    boxShadow: 'none',
+  },
+  fab__active: {
+    backgroundColor: theme.palette.primary.main,
+    color: '#fff',
+    boxShadow: '4px 4px 4px #e0e0e0',
   },
 }));
 
@@ -34,11 +42,13 @@ const MainNav = () => {
   const { t } = useTranslation();
   const classes = useStyles();
 
+
   const tableOfContent = [
     {
       label: t('Home page'),
       path: '/',
       picto: <HomepagePicto />,
+      isHomePage: true,
     },
     {
       label: t('Quiz'),
@@ -64,16 +74,17 @@ const MainNav = () => {
       classes={{ paper: classes.drawerPaper }}
       anchor="left"
     >
-      {tableOfContent.map(({ label, path, picto }) => (
+      {tableOfContent.map(({ label, path, picto, isHomePage }) => (
         <Tooltip key={label} title={label} placement="right">
           <Fab
-            color="primary"
             aria-label="add"
             className={classes.fab}
             key={path}
             to={`/${path}`}
             component={Link}
             size="medium"
+            activeClassName={classes.fab__active}
+            partiallyActive={!isHomePage}
           >
             {picto}
           </Fab>
