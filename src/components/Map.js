@@ -67,7 +67,7 @@ const gotoGridCode = (lng, availableGridPoints = []) => (map, { point }) => {
   const gridCode = getFirstGridCode(features);
 
   if (gridCode && availableGridPoints.includes(gridCode)) {
-    navigate(`/${lng}/map/${gridCode}/yield-compilation/`);
+    navigate(`/${lng}/map/${gridCode}/yield-compilation/`, { state: { modal: true } });
   } else {
     // eslint-disable-next-line no-console
     console.info('No page available for gridCode:', gridCode);
