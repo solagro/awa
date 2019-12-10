@@ -1548,16 +1548,11 @@
         ]
       },
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "description": "null",
+        "description": null,
         "Grid_Code": 71079,
         "Country": "France",
         "Partner": "SOLAGRO",
-        "Statut": "CERTAIN",
-        "pif": "paf"
+        "Statut": "CERTAIN"
       }
     },
     {
@@ -2015,16 +2010,11 @@
         ]
       },
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "description": "null",
+        "description": null,
         "Grid_Code": 73081,
         "Country": "France",
         "Partner": "SOLAGRO",
-        "Statut": "CERTAIN",
-        "pif": "paf"
+        "Statut": "CERTAIN"
       }
     },
     {
@@ -2314,12 +2304,7 @@
         ]
       },
       "properties": {
-        "stroke": "#ff0000",
-        "stroke-width": 3,
-        "stroke-opacity": 1,
-        "fill": "#ff0000",
-        "fill-opacity": 0.5,
-        "description": "null",
+        "description": null,
         "Grid_Code": 98083,
         "Country": "France",
         "Partner": "SOLAGRO",
@@ -7700,6 +7685,2568 @@
         "Country": "Romania",
         "Partner": "LCF",
         "Statut": "CERTAIN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -8.721119,
+              42.689671,
+              0
+            ],
+            [
+              -9.018035,
+              42.63344,
+              0
+            ],
+            [
+              -8.947056,
+              42.415793,
+              0
+            ],
+            [
+              -8.651126,
+              42.471786,
+              0
+            ],
+            [
+              -8.721119,
+              42.689671,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 72048,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -7.628445,
+              42.197083,
+              0
+            ],
+            [
+              -7.923814,
+              42.14414,
+              0
+            ],
+            [
+              -7.857783,
+              41.925455,
+              0
+            ],
+            [
+              -7.563396,
+              41.978176,
+              0
+            ],
+            [
+              -7.628445,
+              42.197083,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 69051,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.502743,
+              37.496626,
+              0
+            ],
+            [
+              -5.779271,
+              37.45051,
+              0
+            ],
+            [
+              -5.728049,
+              37.228835,
+              0
+            ],
+            [
+              -5.452352,
+              37.274779,
+              0
+            ],
+            [
+              -5.502743,
+              37.496626,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 47054,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.566435,
+              42.839416,
+              0
+            ],
+            [
+              -6.86562,
+              42.789518,
+              0
+            ],
+            [
+              -6.802325,
+              42.570169,
+              0
+            ],
+            [
+              -6.504167,
+              42.619853,
+              0
+            ],
+            [
+              -6.566435,
+              42.839416,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 71055,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -5.319975,
+              41.661311,
+              0
+            ],
+            [
+              -5.614324,
+              41.615248,
+              0
+            ],
+            [
+              -5.557575,
+              41.394689,
+              0
+            ],
+            [
+              -5.264217,
+              41.440561,
+              0
+            ],
+            [
+              -5.319975,
+              41.661311,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 65058,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -4.415272,
+              40.422717,
+              0
+            ],
+            [
+              -4.704501,
+              40.37947,
+              0
+            ],
+            [
+              -4.652823,
+              40.157967,
+              0
+            ],
+            [
+              -4.364546,
+              40.20104,
+              0
+            ],
+            [
+              -4.415272,
+              40.422717,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 59060,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -4.191034,
+              42.058288,
+              0
+            ],
+            [
+              -4.48791,
+              42.015517,
+              0
+            ],
+            [
+              -4.43464,
+              41.794301,
+              0
+            ],
+            [
+              -4.138787,
+              41.836892,
+              0
+            ],
+            [
+              -4.191034,
+              42.058288,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 66062,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.356906,
+              39.658096,
+              0
+            ],
+            [
+              -3.643329,
+              39.618053,
+              0
+            ],
+            [
+              -3.596347,
+              39.395674,
+              0
+            ],
+            [
+              -3.310856,
+              39.435558,
+              0
+            ],
+            [
+              -3.356906,
+              39.658096,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 55063,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.842574,
+              41.87861,
+              0
+            ],
+            [
+              -4.138787,
+              41.836892,
+              0
+            ],
+            [
+              -4.087052,
+              41.615408,
+              0
+            ],
+            [
+              -3.791858,
+              41.656951,
+              0
+            ],
+            [
+              -3.842574,
+              41.87861,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 65063,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.945518,
+              42.321671,
+              0
+            ],
+            [
+              -4.243797,
+              42.279597,
+              0
+            ],
+            [
+              -4.191034,
+              42.058288,
+              0
+            ],
+            [
+              -3.893792,
+              42.100184,
+              0
+            ],
+            [
+              -3.945518,
+              42.321671,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 67063,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.070178,
+              39.697297,
+              0
+            ],
+            [
+              -3.356906,
+              39.658096,
+              0
+            ],
+            [
+              -3.310856,
+              39.435558,
+              0
+            ],
+            [
+              -3.025064,
+              39.474604,
+              0
+            ],
+            [
+              -3.070178,
+              39.697297,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 55064,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.255007,
+              40.587194,
+              0
+            ],
+            [
+              -3.545564,
+              40.547355,
+              0
+            ],
+            [
+              -3.49772,
+              40.325173,
+              0
+            ],
+            [
+              -3.208132,
+              40.36485,
+              0
+            ],
+            [
+              -3.255007,
+              40.587194,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 59064,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.603609,
+              43.511128,
+              0
+            ],
+            [
+              -3.908003,
+              43.469932,
+              0
+            ],
+            [
+              -3.854724,
+              43.248684,
+              0
+            ],
+            [
+              -3.551429,
+              43.2897,
+              0
+            ],
+            [
+              -3.603609,
+              43.511128,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 72065,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.097584,
+              42.664525,
+              0
+            ],
+            [
+              -3.398001,
+              42.624928,
+              0
+            ],
+            [
+              -3.347872,
+              42.403175,
+              0
+            ],
+            [
+              -3.048519,
+              42.442602,
+              0
+            ],
+            [
+              -3.097584,
+              42.664525,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 68066,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.796818,
+              42.703232,
+              0
+            ],
+            [
+              -3.097584,
+              42.664525,
+              0
+            ],
+            [
+              -3.048519,
+              42.442602,
+              0
+            ],
+            [
+              -2.748822,
+              42.481142,
+              0
+            ],
+            [
+              -2.796818,
+              42.703232,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 68067,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.639334,
+              43.407349,
+              0
+            ],
+            [
+              -2.943727,
+              43.369034,
+              0
+            ],
+            [
+              -2.894264,
+              43.147177,
+              0
+            ],
+            [
+              -2.590976,
+              43.185324,
+              0
+            ],
+            [
+              -2.639334,
+              43.407349,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 71068,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.194265,
+              42.777971,
+              0
+            ],
+            [
+              -2.495709,
+              42.741048,
+              0
+            ],
+            [
+              -2.448787,
+              42.518796,
+              0
+            ],
+            [
+              -2.148423,
+              42.55556,
+              0
+            ],
+            [
+              -2.194265,
+              42.777971,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 68069,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.847734,
+              42.591433,
+              0
+            ],
+            [
+              -2.148423,
+              42.55556,
+              0
+            ],
+            [
+              -2.103036,
+              42.333073,
+              0
+            ],
+            [
+              -1.803422,
+              42.368792,
+              0
+            ],
+            [
+              -1.847734,
+              42.591433,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 67070,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.703449,
+              41.35415,
+              0
+            ],
+            [
+              -0.998687,
+              41.321796,
+              0
+            ],
+            [
+              -0.958968,
+              41.098424,
+              0
+            ],
+            [
+              -0.664758,
+              41.130644,
+              0
+            ],
+            [
+              -0.703449,
+              41.35415,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 61073,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.374428,
+              42.14644,
+              0
+            ],
+            [
+              0.074965,
+              42.117223,
+              0
+            ],
+            [
+              0.11162,
+              41.893535,
+              0
+            ],
+            [
+              0.410009,
+              41.922628,
+              0
+            ],
+            [
+              0.374428,
+              42.14644,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 64077,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.810125,
+              41.278645,
+              0
+            ],
+            [
+              0.51466,
+              41.250795,
+              0
+            ],
+            [
+              0.548862,
+              41.026716,
+              0
+            ],
+            [
+              0.843289,
+              41.05445,
+              0
+            ],
+            [
+              0.810125,
+              41.278645,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 60078,
+        "Country": "Spain",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.840851,
+              44.839511,
+              0
+            ],
+            [
+              7.525372,
+              44.832524,
+              0
+            ],
+            [
+              7.535257,
+              44.607272,
+              0
+            ],
+            [
+              7.849479,
+              44.614226,
+              0
+            ],
+            [
+              7.840851,
+              44.839511,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 74102,
+        "Country": "Italy",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.018156,
+              48.671002,
+              0
+            ],
+            [
+              7.678985,
+              48.664441,
+              0
+            ],
+            [
+              7.689374,
+              48.439663,
+              0
+            ],
+            [
+              8.027029,
+              48.44619,
+              0
+            ],
+            [
+              8.018156,
+              48.671002,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 91103,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.349962,
+              48.901348,
+              0
+            ],
+            [
+              8.009181,
+              48.895792,
+              0
+            ],
+            [
+              8.018156,
+              48.671002,
+              0
+            ],
+            [
+              8.357402,
+              48.676529,
+              0
+            ],
+            [
+              8.349962,
+              48.901348,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 92104,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.684834,
+              49.130686,
+              0
+            ],
+            [
+              8.342437,
+              49.126146,
+              0
+            ],
+            [
+              8.349962,
+              48.901348,
+              0
+            ],
+            [
+              8.690806,
+              48.905864,
+              0
+            ],
+            [
+              8.684834,
+              49.130686,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 93105,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.672682,
+              49.580273,
+              0
+            ],
+            [
+              8.327122,
+              49.575685,
+              0
+            ],
+            [
+              8.334824,
+              49.350925,
+              0
+            ],
+            [
+              8.678793,
+              49.355489,
+              0
+            ],
+            [
+              8.672682,
+              49.580273,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 95105,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.048876,
+              48.009769,
+              0
+            ],
+            [
+              8.714025,
+              48.006364,
+              0
+            ],
+            [
+              8.719668,
+              47.781432,
+              0
+            ],
+            [
+              9.05305,
+              47.78482,
+              0
+            ],
+            [
+              9.048876,
+              48.009769,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 88106,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.022815,
+              49.359001,
+              0
+            ],
+            [
+              8.678793,
+              49.355489,
+              0
+            ],
+            [
+              8.684834,
+              49.130686,
+              0
+            ],
+            [
+              9.027283,
+              49.13418,
+              0
+            ],
+            [
+              9.022815,
+              49.359001,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 94106,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.386466,
+              47.787193,
+              0
+            ],
+            [
+              9.05305,
+              47.78482,
+              0
+            ],
+            [
+              9.057177,
+              47.559846,
+              0
+            ],
+            [
+              9.38914,
+              47.562208,
+              0
+            ],
+            [
+              9.386466,
+              47.787193,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 87107,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.383761,
+              48.012154,
+              0
+            ],
+            [
+              9.048876,
+              48.009769,
+              0
+            ],
+            [
+              9.05305,
+              47.78482,
+              0
+            ],
+            [
+              9.386466,
+              47.787193,
+              0
+            ],
+            [
+              9.383761,
+              48.012154,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 88107,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.366875,
+              49.361462,
+              0
+            ],
+            [
+              9.022815,
+              49.359001,
+              0
+            ],
+            [
+              9.027283,
+              49.13418,
+              0
+            ],
+            [
+              9.36977,
+              49.136628,
+              0
+            ],
+            [
+              9.366875,
+              49.361462,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 94107,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.719904,
+              47.788552,
+              0
+            ],
+            [
+              9.386466,
+              47.787193,
+              0
+            ],
+            [
+              9.38914,
+              47.562208,
+              0
+            ],
+            [
+              9.721125,
+              47.56356,
+              0
+            ],
+            [
+              9.719904,
+              47.788552,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 87108,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.718669,
+              48.01352,
+              0
+            ],
+            [
+              9.383761,
+              48.012154,
+              0
+            ],
+            [
+              9.386466,
+              47.787193,
+              0
+            ],
+            [
+              9.719904,
+              47.788552,
+              0
+            ],
+            [
+              9.718669,
+              48.01352,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 88108,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.71742,
+              48.238465,
+              0
+            ],
+            [
+              9.381026,
+              48.237092,
+              0
+            ],
+            [
+              9.383761,
+              48.012154,
+              0
+            ],
+            [
+              9.718669,
+              48.01352,
+              0
+            ],
+            [
+              9.71742,
+              48.238465,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 89108,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.716157,
+              48.463388,
+              0
+            ],
+            [
+              9.37826,
+              48.462008,
+              0
+            ],
+            [
+              9.381026,
+              48.237092,
+              0
+            ],
+            [
+              9.71742,
+              48.238465,
+              0
+            ],
+            [
+              9.716157,
+              48.463388,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 90108,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.712281,
+              49.13803,
+              0
+            ],
+            [
+              9.36977,
+              49.136628,
+              0
+            ],
+            [
+              9.372633,
+              48.911775,
+              0
+            ],
+            [
+              9.713588,
+              48.913169,
+              0
+            ],
+            [
+              9.712281,
+              49.13803,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 93108,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.053587,
+              48.013867,
+              0
+            ],
+            [
+              9.718669,
+              48.01352,
+              0
+            ],
+            [
+              9.719904,
+              47.788552,
+              0
+            ],
+            [
+              10.053352,
+              47.788897,
+              0
+            ],
+            [
+              10.053587,
+              48.013867,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 88109,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.053825,
+              48.238814,
+              0
+            ],
+            [
+              9.71742,
+              48.238465,
+              0
+            ],
+            [
+              9.718669,
+              48.01352,
+              0
+            ],
+            [
+              10.053587,
+              48.013867,
+              0
+            ],
+            [
+              10.053825,
+              48.238814,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 89109,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.388503,
+              48.013194,
+              0
+            ],
+            [
+              10.053587,
+              48.013867,
+              0
+            ],
+            [
+              10.053352,
+              47.788897,
+              0
+            ],
+            [
+              10.386798,
+              47.788228,
+              0
+            ],
+            [
+              10.388503,
+              48.013194,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 88110,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.400996,
+              49.587357,
+              0
+            ],
+            [
+              10.05531,
+              49.588055,
+              0
+            ],
+            [
+              10.055056,
+              49.363229,
+              0
+            ],
+            [
+              10.39915,
+              49.362535,
+              0
+            ],
+            [
+              10.400996,
+              49.587357,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 95110,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10.681983,
+              44.859561,
+              0
+            ],
+            [
+              10.366256,
+              44.861142,
+              0
+            ],
+            [
+              10.364792,
+              44.635757,
+              0
+            ],
+            [
+              10.679256,
+              44.634184,
+              0
+            ],
+            [
+              10.681983,
+              44.859561,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 74111,
+        "Country": "Italy",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.314736,
+              53.386126,
+              0
+            ],
+            [
+              11.939151,
+              53.392712,
+              0
+            ],
+            [
+              11.92906,
+              53.168149,
+              0
+            ],
+            [
+              12.302694,
+              53.161603,
+              0
+            ],
+            [
+              12.314736,
+              53.386126,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 112115,
+        "Country": "Germany",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.297202,
+              45.73812,
+              0
+            ],
+            [
+              11.976504,
+              45.74458,
+              0
+            ],
+            [
+              11.968396,
+              45.519416,
+              0
+            ],
+            [
+              12.28778,
+              45.512987,
+              0
+            ],
+            [
+              12.297202,
+              45.73812,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 78116,
+        "Country": "Italy",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.576251,
+              50.431476,
+              0
+            ],
+            [
+              13.224694,
+              50.441902,
+              0
+            ],
+            [
+              13.209443,
+              50.217386,
+              0
+            ],
+            [
+              13.559344,
+              50.207017,
+              0
+            ],
+            [
+              13.576251,
+              50.431476,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 99119,
+        "Country": "Czech-republic",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.991415,
+              47.173577,
+              0
+            ],
+            [
+              15.662652,
+              47.191258,
+              0
+            ],
+            [
+              15.63842,
+              46.966943,
+              0
+            ],
+            [
+              15.965791,
+              46.949349,
+              0
+            ],
+            [
+              15.991415,
+              47.173577,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 85127,
+        "Country": "Austria",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.17898,
+              48.742221,
+              0
+            ],
+            [
+              15.840037,
+              48.760541,
+              0
+            ],
+            [
+              15.813834,
+              48.536451,
+              0
+            ],
+            [
+              16.151273,
+              48.518225,
+              0
+            ],
+            [
+              16.17898,
+              48.742221,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 92127,
+        "Country": "Austria",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.396852,
+              49.726747,
+              0
+            ],
+            [
+              18.051866,
+              49.75188,
+              0
+            ],
+            [
+              18.01464,
+              49.528612,
+              0
+            ],
+            [
+              18.358065,
+              49.503613,
+              0
+            ],
+            [
+              18.396852,
+              49.726747,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 97133,
+        "Country": "Czech-republic",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.426634,
+              40.745613,
+              0
+            ],
+            [
+              17.132908,
+              40.767309,
+              0
+            ],
+            [
+              17.107516,
+              40.542247,
+              0
+            ],
+            [
+              17.400214,
+              40.52064,
+              0
+            ],
+            [
+              17.426634,
+              40.745613,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 57134,
+        "Country": "Italy",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.506238,
+              48.362015,
+              0
+            ],
+            [
+              18.170661,
+              48.387389,
+              0
+            ],
+            [
+              18.134437,
+              48.16403,
+              0
+            ],
+            [
+              18.46856,
+              48.138785,
+              0
+            ],
+            [
+              18.506238,
+              48.362015,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 91134,
+        "Country": "Slovakia",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.62894,
+              52.344679,
+              0
+            ],
+            [
+              19.264613,
+              52.373774,
+              0
+            ],
+            [
+              19.218076,
+              52.15119,
+              0
+            ],
+            [
+              19.580625,
+              52.122262,
+              0
+            ],
+            [
+              19.62894,
+              52.344679,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 109135,
+        "Country": "Poland",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.232707,
+              54.245866,
+              0
+            ],
+            [
+              20.85304,
+              54.280066,
+              0
+            ],
+            [
+              20.795005,
+              54.058333,
+              0
+            ],
+            [
+              21.172722,
+              54.024341,
+              0
+            ],
+            [
+              21.232707,
+              54.245866,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 118138,
+        "Country": "Poland",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.798155,
+              47.933858,
+              0
+            ],
+            [
+              20.466427,
+              47.966144,
+              0
+            ],
+            [
+              20.420649,
+              47.743742,
+              0
+            ],
+            [
+              20.750979,
+              47.711617,
+              0
+            ],
+            [
+              20.798155,
+              47.933858,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 90141,
+        "Country": "Hungary",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.8919,
+              46.789647,
+              0
+            ],
+            [
+              20.567376,
+              46.822119,
+              0
+            ],
+            [
+              20.522713,
+              46.599609,
+              0
+            ],
+            [
+              20.845914,
+              46.567294,
+              0
+            ],
+            [
+              20.8919,
+              46.789647,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 85142,
+        "Country": "Hungary",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.075667,
+              46.089451,
+              0
+            ],
+            [
+              20.755416,
+              46.122417,
+              0
+            ],
+            [
+              20.710889,
+              45.899893,
+              0
+            ],
+            [
+              21.029864,
+              45.867083,
+              0
+            ],
+            [
+              21.075667,
+              46.089451,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 82143,
+        "Country": "Romania",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.002104,
+              48.717344,
+              0
+            ],
+            [
+              21.665904,
+              48.753344,
+              0
+            ],
+            [
+              21.613674,
+              48.531665,
+              0
+            ],
+            [
+              21.948435,
+              48.495848,
+              0
+            ],
+            [
+              22.002104,
+              48.717344,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 94144,
+        "Country": "Slovakia",
+        "Partner": "LCF",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.631753,
+              39.984119,
+              0
+            ],
+            [
+              22.343279,
+              40.021206,
+              0
+            ],
+            [
+              22.300286,
+              39.798195,
+              0
+            ],
+            [
+              22.587804,
+              39.761257,
+              0
+            ],
+            [
+              22.631753,
+              39.984119,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 56152,
+        "Country": "Greece",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              23.246637,
+              41.502754,
+              0
+            ],
+            [
+              22.951547,
+              41.541796,
+              0
+            ],
+            [
+              22.90452,
+              41.31952,
+              0
+            ],
+            [
+              23.198596,
+              41.280641,
+              0
+            ],
+            [
+              23.246637,
+              41.502754,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 63153,
+        "Country": "Bulgaria",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.810364,
+              37.901178,
+              0
+            ],
+            [
+              22.530716,
+              37.938619,
+              0
+            ],
+            [
+              22.489463,
+              37.715108,
+              0
+            ],
+            [
+              22.768236,
+              37.67781,
+              0
+            ],
+            [
+              22.810364,
+              37.901178,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 47154,
+        "Country": "Greece",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              24.371558,
+              41.116473,
+              0
+            ],
+            [
+              24.078831,
+              41.15881,
+              0
+            ],
+            [
+              24.02827,
+              40.937116,
+              0
+            ],
+            [
+              24.320012,
+              40.894953,
+              0
+            ],
+            [
+              24.371558,
+              41.116473,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 62157,
+        "Country": "Greece",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              26.537642,
+              42.384454,
+              0
+            ],
+            [
+              26.24021,
+              42.433333,
+              0
+            ],
+            [
+              26.179847,
+              42.21343,
+              0
+            ],
+            [
+              26.476266,
+              42.164757,
+              0
+            ],
+            [
+              26.537642,
+              42.384454,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 69163,
+        "Country": "Bulgaria",
+        "Partner": "FGN",
+        "Statut": "OPTION"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              25.373239,
+              35.21444,
+              0
+            ],
+            [
+              25.104806,
+              35.259156,
+              0
+            ],
+            [
+              25.058525,
+              35.036272,
+              0
+            ],
+            [
+              25.326195,
+              34.991714,
+              0
+            ],
+            [
+              25.373239,
+              35.21444,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "description": null,
+        "Grid_Code": 37165,
+        "Country": "Greece",
+        "Partner": "FGN",
+        "Statut": "OPTION"
       }
     }
   ]
