@@ -1,0 +1,89 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+import { Link } from 'gatsby';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { Location } from '@reach/router';
+
+import { makeStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import MenuItem from '@material-ui/core/MenuItem';
+import Menu from '@material-ui/core/Menu';
+import Paper from '@material-ui/core/Paper';
+
+import adaptPathname from '../lib/adaptPathname';
+import locales from '../locales';
+
+const languageIds = Object.keys(locales);
+
+const useStyles = makeStyles(theme => ({
+  language__container: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  language__select_list: {
+    padding: 0,
+  },
+  language__select_menu: {
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
+  },
+  language__select_picto: {
+    margin: 0,
+    marginRight: theme.spacing(2),
+  },
+}));
+
+const LanguageSwitcher = () => {
+  const classes = useStyles();
+  const { i18n, t } = useTranslation();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClickListItem = event => setAnchorEl(event.currentTarget);
+
+  const handleClose = () => setAnchorEl(null);
+
+  return (
+    <div className={classes.language__container}>
+      <img className={classes.language__select_picto} src="/images/language.svg" alt={t('language')} />
+      <List component="nav" aria-label={t('language selector')}>
+        <ListItem
+          className={classes.language__select_list}
+          button
+          aria-haspopup="true"
+          aria-controls="language_selector"
+          aria-label={t('choose your language')}
+          onClick={handleClickListItem}
+        >
+          <Paper className={classes.language__select_menu} elevation={4}>
+            <ListItemText primary={t(i18n.language)} /* i18next-extract-disable-line */ />
+          </Paper>
+        </ListItem>
+      </List>
+
+      <Location>
+        {({ location: { pathname } }) => (
+          <Menu
+            id="language_selector"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            {languageIds.map(language => (
+              <MenuItem value={language} key={language}>
+                <Link to={adaptPathname(pathname, language)} lang={language}>
+                  {t(language) /* i18next-extract-disable-line */}
+                </Link>
+              </MenuItem>
+            ))}
+          </Menu>
+        )}
+      </Location>
+    </div>
+  );
+};
+
+export default LanguageSwitcher;
