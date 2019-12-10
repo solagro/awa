@@ -34,6 +34,9 @@ const useStyles = makeStyles(theme => ({
     flex: '1',
     height: '100vh',
   },
+  modal: {
+    padding: '1em',
+  },
   content: {
     flexGrow: 1,
   },
@@ -51,7 +54,7 @@ const Layout = ({
   maximize = false,
   children,
   className,
-  modalProps: { modal: isModal },
+  modalProps: { modal },
   ...rest
 }) => {
   const { site: { siteMetadata, buildTime } } = useStaticQuery(graphql`
@@ -66,6 +69,14 @@ const Layout = ({
   `);
 
   const classes = useStyles();
+
+  if (modal) {
+    return (
+      <main className={classes.modal}>
+        {children}
+      </main>
+    );
+  }
 
   return (
     <Grid
