@@ -1,4 +1,28 @@
 
+1.1.0 / 2019-12-10
+==================
+
+  * Adjust Layout for modal display
+  * Forward modal state of page through tabs
+  * Create HOC for consuming props of modal context
+  * Setup map links to open map links into modal window
+  * Add gatsby-plugin-modal-routing as dependency
+  * Add translation for main logo alternative text
+  * Extract LanguageSwitcher to a dedicated component
+  * Pull Location component a level higher in language switcher
+  * Add missing iterator key into language switcher
+  * Add missing grid points to map.geojson
+  * Fix translation extraction through i18next-extract babel plugin
+  * Add comments for i18next-extract exceptions
+  * Keep input CSV values as strings
+  * Colorize YieldCompilation data table according quartiles
+  * Add ability to customize CustomDataTable cells rendering through a render prop
+  * Improve main nav style and interaction
+  * Resolve footer width problem
+  * Add roadmap to quiz end page and change buttons
+  * Change answers case
+  * Design language selectors
+
 1.0.0 / 2019-12-03
 ==================
 
