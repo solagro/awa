@@ -6,6 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 import Link from './Link';
+import withModalContext from '../hoc/withModalRoutingContext';
 
 const links = [
   {
@@ -22,7 +23,7 @@ const links = [
   },
 ];
 
-const GridPointTabs = ({ sourceType, gridCode }) => {
+const GridPointTabs = ({ sourceType, gridCode, modalProps: { modal } }) => {
   const { t } = useTranslation();
 
   return (
@@ -35,6 +36,7 @@ const GridPointTabs = ({ sourceType, gridCode }) => {
             value={id}
             component={Link}
             to={`/map/${gridCode}/${path}`}
+            state={{ modal }}
           />
         ))}
       </Tabs>
@@ -42,4 +44,4 @@ const GridPointTabs = ({ sourceType, gridCode }) => {
   );
 };
 
-export default GridPointTabs;
+export default withModalContext(GridPointTabs);
