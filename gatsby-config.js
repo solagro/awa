@@ -11,7 +11,16 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-transformer-json',
     'gatsby-transformer-remark',
-    'gatsby-plugin-modal-routing',
+    {
+      resolve: 'gatsby-plugin-modal-routing',
+      options: {
+        modalProps: {
+          style: { content: {
+            left: 104,
+          } },
+        },
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
