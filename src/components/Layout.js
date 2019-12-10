@@ -19,6 +19,8 @@ import Header from './Header';
 import MainNav from './MainNav';
 import Footer from './Footer';
 
+import withModalContext from '../hoc/withModalRoutingContext';
+
 import './Layout.css';
 
 const useStyles = makeStyles(theme => ({
@@ -49,6 +51,7 @@ const Layout = ({
   maximize = false,
   children,
   className,
+  modalProps: { modal: isModal },
   ...rest
 }) => {
   const { site: { siteMetadata, buildTime } } = useStaticQuery(graphql`
@@ -119,4 +122,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default withModalContext(Layout);
