@@ -76,7 +76,7 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
             onClick={handleClickListItem}
           >
             <Paper className={classes.language__select_menu} elevation={4}>
-              <ListItemText primary={t(i18n.language)} />
+              <ListItemText primary={t(i18n.language)} /* i18next-extract-disable-line */ />
             </Paper>
           </ListItem>
         </List>
@@ -91,7 +91,9 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
             {({ location: { pathname } }) => (
               languageIds.map(language => (
                 <MenuItem value={language}>
-                  <Link to={adaptPathname(pathname, language)} lang={language}>{t(language)}</Link>
+                  <Link to={adaptPathname(pathname, language)} lang={language}>
+                    {t(language) /* i18next-extract-disable-line */}
+                  </Link>
                 </MenuItem>
               ))
             )}
