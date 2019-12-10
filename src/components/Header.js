@@ -80,6 +80,7 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
             </Paper>
           </ListItem>
         </List>
+
         <Menu
           id="language_selector"
           anchorEl={anchorEl}
@@ -90,7 +91,7 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
           <Location>
             {({ location: { pathname } }) => (
               languageIds.map(language => (
-                <MenuItem value={language}>
+                <MenuItem value={language} key={language}>
                   <Link to={adaptPathname(pathname, language)} lang={language}>
                     {t(language) /* i18next-extract-disable-line */}
                   </Link>

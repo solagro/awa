@@ -17,7 +17,7 @@ const languageNames = {
 const NoScript = () => (
   <ul>
     {languages.map(language => (
-      <li>
+      <li key={language}>
         <Link component={GatsbyLink} to={adaptPathname('/', language)}>
           {`Browse the site in ${languageNames[language]}`}
         </Link>
