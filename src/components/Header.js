@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -20,12 +21,18 @@ const useStyles = makeStyles(theme => ({
 
 const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
   const classes = useStyles();
+  const { t } = useTranslation();
 
   return (
     <Grid container direction="row" justify="space-between" alignItems="flex-start" className={classes.header}>
       <a href={parentSite} onClick={preventDefault}>
-        <img className={classes.logo} src={logo} alt={siteTitle} />
+        <img
+          className={classes.logo}
+          src={logo}
+          alt={t(siteTitle)} // i18next-extract-disable-line
+        />
       </a>
+
       <LanguageSwitcher />
     </Grid>
   );
