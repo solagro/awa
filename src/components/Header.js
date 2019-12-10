@@ -81,25 +81,25 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
           </ListItem>
         </List>
 
-        <Menu
-          id="language_selector"
-          anchorEl={anchorEl}
-          keepMounted
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-        >
-          <Location>
-            {({ location: { pathname } }) => (
-              languageIds.map(language => (
+        <Location>
+          {({ location: { pathname } }) => (
+            <Menu
+              id="language_selector"
+              anchorEl={anchorEl}
+              keepMounted
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+            >
+              {languageIds.map(language => (
                 <MenuItem value={language} key={language}>
                   <Link to={adaptPathname(pathname, language)} lang={language}>
                     {t(language) /* i18next-extract-disable-line */}
                   </Link>
                 </MenuItem>
-              ))
-            )}
-          </Location>
-        </Menu>
+              ))}
+            </Menu>
+          )}
+        </Location>
       </div>
     </Grid>
   );
