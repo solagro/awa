@@ -45,15 +45,15 @@
   "Year": "Year",
   "Yield & Climate (observations and projections)": "Yield & Climate (observations and projections)",
   "choose your language": "choose your language",
+  "de": "Deutsch",
+  "en": "English",
+  "es": "Spanish",
+  "et": "Estonian",
+  "fr": "French",
   "language": "language",
   "language selector": "language selector",
   "pif": "pif-en",
   "pouf": "pouf-en",
   "zone selection": "zone selection",
-  "{{theme}} region. Available languages: English standard or {{lang}} by changing the language of the site": "{{theme}} region. Available languages: English standard or {{lang}} by changing the language of the site",
-  "de": "Deutsch",
-  "en": "English",
-  "es": "Spanish",
-  "et": "Estonian",
-  "fr": "French"
+  "{{theme}} region. Available languages: English standard or {{lang}} by changing the language of the site": "{{theme}} region. Available languages: English standard or {{lang}} by changing the language of the site"
 }
