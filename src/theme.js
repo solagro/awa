@@ -27,12 +27,10 @@ const theme = createMuiTheme({
     h2: {
       color: '#8a2542',
       fontSize: 32,
-      lineHeight: 2,
       fontFamily: 'roboto, helvetica, arial, sans-serif',
     },
     h3: {
       fontSize: 18,
-      lineHeight: 4,
       fontWeight: 500,
       fontFamily: 'roboto, helvetica, arial, sans-serif',
     },

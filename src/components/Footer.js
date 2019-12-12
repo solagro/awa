@@ -16,6 +16,23 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(2),
     marginRight: theme.spacing(0),
   },
+  footer__partnership: {
+    display: 'flex',
+    direction: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space around',
+  },
+  footer__partnership_life: {
+    display: 'flex',
+    direction: 'row',
+    paddingTop: theme.spacing(1),
+  },
+  footer__logo: {
+    width: theme.spacing(20),
+    height: '100%',
+    marginRight: theme.spacing(4),
+  },
 }));
 
 const Footer = ({ buildTime }) => {
@@ -32,10 +49,22 @@ const Footer = ({ buildTime }) => {
       spacing={3}
     >
       <Grid item xs={12} md={4}>
-        <Typography variant="h2">{t('Partnership')}</Typography>
+        <div className={classes.footer__partnership_life}>
+          <img className={classes.footer__logo} src="../images/logos/Life.jpg" alt="life logo" />
+          <Typography variant="body1" paragraph>
+            With the contribution of the LIFE financial instrument of the European Union
+          </Typography>
+        </div>
+        <Typography variant="h2" gutterBottom>{t('Partnership')} </Typography>
+        <div className={classes.footer__partnership}>
+          <img className={classes.footer__logo} src="../images/logos/LCF.jpg" alt="LCF logo" />
+          <img className={classes.footer__logo} src="../images/logos/EMU.jpg" alt="EMU logo" />
+          <img className={classes.footer__logo} src="../images/logos/FGN.jpg" alt="FGN logo" />
+          <img className={classes.footer__logo} src="../images/logos/Solagro.jpg" alt="Solagro logo" />
+        </div>
       </Grid>
       <Grid item xs={12} md={4}>
-        <Typography variant="h2">
+        <Typography variant="h2" gutterBottom>
           {t('Contacts')}
         </Typography>
         <Typography variant="body1" paragraph>
@@ -75,7 +104,7 @@ const Footer = ({ buildTime }) => {
       </Grid>
       <Grid item xs={12} md={4}>
         <Link to="/legal">
-          <Typography variant="h2">{t('Legal')}</Typography>
+          <Typography variant="h2" gutterBottom>{t('Legal')}</Typography>
         </Link>
         <span>{t('Last build ')}{buildTime}</span>
       </Grid>

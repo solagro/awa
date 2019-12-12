@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
+    marginLeft: theme.spacing(8),
   },
   content__paper: {
     padding: theme.spacing(3),
@@ -97,7 +98,7 @@ const Layout = ({
         <Header
           siteTitle={siteMetadata.title}
           parentSite="https://agriadapt.eu/"
-          logo="/images/agriAdapt-logo.svg"
+          logo="/images/logos/agriAdapt-logo.svg"
         />
       )}
 
