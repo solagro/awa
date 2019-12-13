@@ -191,7 +191,7 @@ const contentPage = [
     hrefBefore: '#mapPresentation',
     hrefAfter: '#summaryPresentation',
     to: '/adaptations',
-    buttonText: 'See mesures',
+    buttonText: 'See measures',
     content:
   <>
     <Typography variant="body1" paragraph>
