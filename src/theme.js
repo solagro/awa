@@ -1,5 +1,4 @@
 import { createMuiTheme } from '@material-ui/core';
-import { spacing } from '@material-ui/system';
 
 /**
  * https://material-ui.com/customization/default-theme/

@@ -27,7 +27,7 @@ const links = [
   },
 ];
 
-const GridPointTabs = ({ sourceType, gridCode, modalProps: { modal } }) => {
+const GridPointTabs = ({ sourceType, gridCode, modalProps: { modal, closeTo } }) => {
   const { t } = useTranslation();
   const classes = useStyles();
 
@@ -41,7 +41,7 @@ const GridPointTabs = ({ sourceType, gridCode, modalProps: { modal } }) => {
             value={id}
             component={Link}
             to={`/map/${gridCode}/${path}`}
-            state={{ modal }}
+            state={{ modal, closeTo }}
           />
         ))}
       </Tabs>

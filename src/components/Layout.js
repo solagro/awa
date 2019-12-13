@@ -13,6 +13,8 @@ import clsx from 'clsx';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
+import CloseIcon from '@material-ui/icons/Close';
+import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
@@ -36,7 +38,15 @@ const useStyles = makeStyles(theme => ({
     height: '100vh',
   },
   modal: {
-    padding: '1em',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+  },
+  modal__button: {
+    position: 'absolute',
+    right: theme.spacing(1),
   },
   content: {
     flexGrow: 1,
@@ -76,7 +86,11 @@ const Layout = ({
   if (modal) {
     return (
       <main className={classes.modal}>
-        <Link to={closeTo}>{t('Close')}</Link>
+        <Link to={closeTo}>
+          <IconButton size="small" aria-label={t('close')} className={classes.modal__button}>
+            <CloseIcon />
+          </IconButton>
+        </Link>
         {children}
       </main>
     );
