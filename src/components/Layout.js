@@ -6,8 +6,9 @@
  */
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import clsx from 'clsx';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -55,7 +56,7 @@ const Layout = ({
   maximize = false,
   children,
   className,
-  modalProps: { modal },
+  modalProps: { modal, closeTo },
   ...rest
 }) => {
   const { site: { siteMetadata, buildTime } } = useStaticQuery(graphql`
@@ -70,10 +71,12 @@ const Layout = ({
   `);
 
   const classes = useStyles();
+  const { t } = useTranslation();
 
   if (modal) {
     return (
       <main className={classes.modal}>
+        <Link to={closeTo}>{t('Close')}</Link>
         {children}
       </main>
     );
