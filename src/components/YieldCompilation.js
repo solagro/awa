@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import clsx from 'clsx';
 
 import TableCell from '@material-ui/core/TableCell';
+import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core';
 
 import CustomDataTable from './CustomDataTable';
@@ -42,7 +43,7 @@ const YieldCompilation = ({
   return (
     <Layout>
       <SEO title={t('Active site detailed information card')} lang={i18n.language} />
-
+      <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
       <CustomDataTable

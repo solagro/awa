@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
+import Typography from '@material-ui/core/Typography';
+
 import CustomDataTable from './CustomDataTable';
 import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
@@ -23,7 +25,7 @@ const ClimateProjections = ({
   return (
     <Layout>
       <SEO title={t('Active site detailed information card')} lang={i18n.language} />
-
+      <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
       <CustomDataTable
