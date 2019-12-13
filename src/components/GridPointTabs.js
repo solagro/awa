@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -13,27 +12,26 @@ const links = [
   {
     path: 'yield-compilation',
     id: 'yieldCompilation',
-    label: 'Yield compilation',
+    label: 'Yield Compilation',
   },
   {
     path: 'climate-observations',
     id: 'climateObservations',
-    label: 'Climate observations',
+    label: 'Climate Observations',
   },
   {
     path: 'climate-projections',
     id: 'climateProjections',
-    label: 'Climate projections',
+    label: 'Climate Projections',
   },
 ];
 
 const GridPointTabs = ({ sourceType, gridCode, modalProps: { modal, closeTo } }) => {
   const { t } = useTranslation();
-  const classes = useStyles();
 
   return (
     <AppBar position="static">
-      <Tabs value={sourceType} className={classes.menu}>
+      <Tabs value={sourceType}>
         {links.map(({ id, path, label }) => (
           <Tab
             key={id}

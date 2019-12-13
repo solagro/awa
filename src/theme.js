@@ -61,20 +61,25 @@ const theme = createMuiTheme({
     },
     MuiAppBar: {
       colorPrimary: {
-        marginBottom: 64,
+        marginBottom: 48,
       },
     },
     MuiTabs: {
       flexContainer: {
         justifyContent: 'space-around',
-        marginBottom: 64,
+        marginBottom: 24,
+        marginTop: 24,
       },
       indicator: {
         height: 8,
         width: 8,
       },
     },
-
+    MuiTab: {
+      root: {
+        textTransform: 'none',
+      },
+    },
   },
 });
 
