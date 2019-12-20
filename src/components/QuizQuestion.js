@@ -230,7 +230,7 @@ const QuizQuestion = ({
               />
             )}
             <Typography variant="h1" color="textPrimary">
-              {isGivenAnsweredValid ? t('Correct !') : t('Wrong')}
+              {isGivenAnsweredValid ? t('Correct !') : t('Not correct')}
             </Typography>
           </Grid>
           <Grid item xs={12} md={9} xl={8}>
