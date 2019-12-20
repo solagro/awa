@@ -135,7 +135,7 @@ const QuizQuestion = ({ pageContext: { theme } }) => {
         <pre>
           {JSON.stringify(givenAnswers, null, 2)}
         </pre>
-        <Typography variant="h2">Agriadapt roadmap for adaptation </Typography>
+        <Typography variant="h2" gutterBottom>Agriadapt roadmap for adaptation </Typography>
         <Roadmap />
         <Grid
           container
