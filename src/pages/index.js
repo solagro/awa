@@ -269,7 +269,15 @@ const IndexPage = () => {
         buttonText,
         content,
       }) => (
-        <Grid container alignItems="center" alignContent="center" className={classes.module} id={id} component="section">
+        <Grid
+          container
+          alignItems="center"
+          alignContent="center"
+          className={classes.module}
+          id={id}
+          key={id}
+          component="section"
+        >
           {hrefBefore && (
           <Box
             className={clsx({
