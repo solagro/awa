@@ -15,6 +15,7 @@ import Paper from '@material-ui/core/Paper';
 
 import adaptPathname from '../lib/adaptPathname';
 import locales from '../locales';
+import languages from '../locales/languages';
 
 const languageIds = Object.keys(locales);
 
@@ -58,7 +59,7 @@ const LanguageSwitcher = () => {
           onClick={handleClickListItem}
         >
           <Paper className={classes.language__select_menu} elevation={4}>
-            <ListItemText primary={t(i18n.language)} /* i18next-extract-disable-line */ />
+            <ListItemText primary={languages[i18n.language].ownName} />
           </Paper>
         </ListItem>
       </List>
@@ -75,7 +76,7 @@ const LanguageSwitcher = () => {
             {languageIds.map(language => (
               <MenuItem value={language} key={language}>
                 <Link to={adaptPathname(pathname, language)} lang={language}>
-                  {t(language) /* i18next-extract-disable-line */}
+                  {languages[language].ownName}
                 </Link>
               </MenuItem>
             ))}
