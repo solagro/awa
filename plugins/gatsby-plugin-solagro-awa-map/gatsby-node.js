@@ -69,7 +69,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage, createR
         }
       }
 
-      allGridPointData: allGridPointDataLine {
+      allGridPointData: allGridPointData {
         group(field: gridCode) {
           gridCode: fieldValue
         }
