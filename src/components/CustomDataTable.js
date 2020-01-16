@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -17,32 +16,27 @@ const useStyles = makeStyles({
 });
 
 const CustomDataTable = ({
-  keys = [],
-  years = [],
+  data = [],
   renderCell = ({ key, value }) => <TableCell key={key}>{value}</TableCell>,
 }) => {
   const { t } = useTranslation();
   const classes = useStyles();
 
-  const byCol = keys.map((key, index) => years.map(({ nodes }) => nodes[index].value));
+  const headers = data.reduce((acc, curr) => ([...new Set([...acc, ...Object.keys(curr)])]), []);
 
   return (
     <div className={classes.root}>
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>{t('Year')}</TableCell>
-            {keys.map(({ fieldValue: key }) =>
-              <TableCell key={key}>{key}</TableCell>)}
+            {headers.map(header => <TableCell key={header}>{t(header)}</TableCell>)}
           </TableRow>
         </TableHead>
 
         <TableBody>
-          {years.map(({ fieldValue: year, nodes }) => (
-            <TableRow key={year} hover>
-              <TableCell component="th" scope="row">{year}</TableCell>
-              {nodes.map(({ value }, index) =>
-                renderCell({ key: index, value, col: byCol[index] }))}
+          {data.map(line => (
+            <TableRow key={line.year} hover>
+              {headers.map(header => renderCell({ key: header, value: line[header] }))}
             </TableRow>
           ))}
         </TableBody>

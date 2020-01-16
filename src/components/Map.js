@@ -81,9 +81,9 @@ const Map = () => {
   const theme = useTheme();
   const { i18n } = useTranslation();
 
-  const { allGridPointDataLine: { group: gridPoints } } = useStaticQuery(graphql`
+  const { allGridPointData: { group: gridPoints } } = useStaticQuery(graphql`
     query {
-      allGridPointDataLine {
+      allGridPointData {
         group(field: gridCode) {
           gridCode: fieldValue
         }
