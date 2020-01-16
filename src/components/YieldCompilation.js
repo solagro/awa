@@ -22,10 +22,10 @@ import {
 } from '../lib/math';
 
 const useStyles = makeStyles({
-  quart1: { background: '#97d492' },
-  quart2: { background: '#c6d799' },
-  quart3: { background: '#dac5a0' },
-  quart4: { background: '#dea8a8' },
+  quart1: { background: '#dea8a8' },
+  quart2: { background: '#dac5a0' },
+  quart3: { background: '#c6d799' },
+  quart4: { background: '#97d492' },
   cell: { textAlign: 'right' },
 });
 
