@@ -80,6 +80,13 @@ const theme = createMuiTheme({
         textTransform: 'none',
       },
     },
+    MuiFab: {
+      root: {
+        '&:hover': {
+          backgroundColor: 'rgba(138,37,66,0.30)',
+        },
+      },
+    },
   },
 });
 
