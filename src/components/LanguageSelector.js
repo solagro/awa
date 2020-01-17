@@ -6,6 +6,7 @@ import { Link } from 'gatsby';
 import { Location } from '@reach/router';
 
 import { makeStyles } from '@material-ui/core/styles';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -13,6 +14,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Paper from '@material-ui/core/Paper';
 
+import LangagePicto from './LangagePicto';
 import adaptPathname from '../lib/adaptPathname';
 import locales from '../locales';
 import languages from '../locales/languages';
@@ -30,10 +32,14 @@ const useStyles = makeStyles(theme => ({
   language__select_menu: {
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: theme.spacing(18),
   },
   language__select_picto: {
     margin: 0,
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
 }));
 
@@ -48,7 +54,7 @@ const LanguageSwitcher = () => {
 
   return (
     <div className={classes.language__container}>
-      <img className={classes.language__select_picto} src="/images/language.svg" alt={t('language')} />
+      <LangagePicto className={classes.language__select_picto} style={{ color: '#ACD9E9' }} />
       <List component="nav" aria-label={t('language selector')}>
         <ListItem
           className={classes.language__select_list}
@@ -60,6 +66,7 @@ const LanguageSwitcher = () => {
         >
           <Paper className={classes.language__select_menu} elevation={4}>
             <ListItemText primary={languages[i18n.language].ownName} />
+            <ArrowDropDownIcon style={{ fontSize: 16 }} />
           </Paper>
         </ListItem>
       </List>

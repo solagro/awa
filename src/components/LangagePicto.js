@@ -1,0 +1,10 @@
+import React from 'react';
+import SvgIcon from '@material-ui/core/SvgIcon';
+
+const LangagePicto = props => (
+  <SvgIcon {...props} viewBox="0 0 42 40">
+    <path d="M8,12 L19,12 C23.418278,12 27,15.581722 27,20 L27,22.2127016 C27,26.4066139 23.6001623,29.8064516 19.40625,29.8064516 L19.40625,29.8064516 L19.40625,29.8064516 L13.078125,36 L13.078125,29.8064516 L8,29.8064516 C3.581722,29.8064516 5.41083001e-16,26.2247296 0,21.8064516 L0,20 C-5.41083001e-16,15.581722 3.581722,12 8,12 Z" />
+  </SvgIcon>
+);
+
+export default LangagePicto;
