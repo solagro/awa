@@ -17,13 +17,13 @@ import doRedirect from '../hoc/doRedirect';
 const ClimateObservations = ({
   pageContext: { sourceType, gridCode },
   data: {
-    allGridPointDataCell: {
-      allKeys,
-      allYears,
-    },
+    allGridPointData: { nodes },
+    allDataTypes,
   },
 }) => {
   const { t, i18n } = useTranslation();
+
+  const dataTypes = allDataTypes.group.map(({ dataType }) => dataType);
 
   return (
     <Layout>
@@ -31,10 +31,15 @@ const ClimateObservations = ({
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
-      <CustomDataTable
-        keys={allKeys}
-        years={allYears}
-      />
+      {dataTypes.map(currentDataType => (
+        <div key={currentDataType}>
+          <h3>{currentDataType}</h3>
+          <CustomDataTable
+            data={JSON.parse(nodes.find(({ dataType }) => (currentDataType === dataType)).json)}
+          />
+        </div>
+      ))}
+
       <Grid
         container
         direction="row"
@@ -69,11 +74,15 @@ const ClimateObservations = ({
 
 export const query = graphql`
   query ($gridCode: String, $sourceType: String) {
-    allGridPointDataCell(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
-      allKeys: group(field: key) { fieldValue }
-      allYears: group(field: year) {
-        fieldValue
-        nodes { value }
+    allGridPointData(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
+      nodes {
+        dataType
+        json
+      }
+    }
+    allDataTypes: allGridPointData(filter: {sourceType: {eq: $sourceType}}) {
+      group(field: dataType) {
+        dataType: fieldValue
       }
     }
   }

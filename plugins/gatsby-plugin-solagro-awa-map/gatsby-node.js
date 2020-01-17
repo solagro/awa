@@ -23,67 +23,33 @@ exports.onCreateNode = async ({
     /**
      * XXXXX/XX_source_type/
      */
-    const [, dir] = relativeDirectory.split('/');
+    const [gridPoint, dir] = relativeDirectory.split('/');
 
     const sourceType = cleanName(dir);
     const dataType = cleanName(name);
 
     const csv = await loadNodeContent(node);
-    const json = await csvtojson({ delimiter: ';' }).fromString(csv);
+    const data = await csvtojson({ delimiter: ';' }).fromString(csv);
+    const json = JSON.stringify(data);
 
-    json.forEach(({ id: gridCode, year, ...csvLineData }) => {
-      const lineNode = {
-        id: `${dataType}-${gridCode}-${year}`,
-        sourceType,
-        dataType,
-        gridCode,
-        year,
-        keys: Object.keys(csvLineData),
-        values: Object.values(csvLineData),
+    const tableNode = {
+      id: `${gridPoint}-${dataType}`,
+      sourceType,
+      dataType,
+      gridCode: gridPoint,
+      json,
+      data,
+      parent: node.id,
+      internal: {
+        contentDigest: createContentDigest(data),
+        type: 'gridPointData',
+      },
+    };
 
-        parent: node.id,
-        internal: {
-          contentDigest: createContentDigest(csvLineData),
-          type: 'gridPointDataLine',
-        },
-      };
-
-      /**
-       * Create graphql node for each CSV line
-       */
-      createNode(lineNode);
-      createParentChildLink({
-        parent: node,
-        child: lineNode,
-      });
-
-      Object.entries(csvLineData).forEach(([key, value], colIndex) => {
-        const cellNode = {
-          id: `${dataType}-${gridCode}-${year}-${colIndex}`,
-          sourceType,
-          dataType,
-          gridCode,
-          year,
-          key,
-          value,
-          colIndex,
-
-          parent: lineNode.id,
-          internal: {
-            contentDigest: createContentDigest({ key, value }),
-            type: 'gridPointDataCell',
-          },
-        };
-
-        /**
-         * Create graphql node for each CSV cell
-         */
-        createNode(cellNode);
-        createParentChildLink({
-          parent: lineNode,
-          child: cellNode,
-        });
-      });
+    createNode(tableNode);
+    createParentChildLink({
+      parent: node,
+      child: tableNode,
     });
   }
 };
@@ -103,7 +69,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage, createR
         }
       }
 
-      allGridPointData: allGridPointDataLine {
+      allGridPointData: allGridPointData {
         group(field: gridCode) {
           gridCode: fieldValue
         }

@@ -71,21 +71,22 @@ const contentPage = [
     id: 'projectPresentation',
     title: 'Project',
     hrefAfter: '#quizPresentation',
-    content:
-  <>
-    <Typography variant="body1" paragraph>
-      Laudantium dolores voluptatum debitis tempora molestiae praesentium
-      omnis nihil modi. Consequuntur qui laboriosam nostrum ratione voluptatum
-      enim ut esse sit. Iste corporis non cupiditate est itaque laudantium
-      recusandae sapiente. Harum sequi voluptatem deserunt distinctio modi
-      ratione. Et accusantium voluptatem architecto.
-    </Typography>
+    content: (
+      <>
+        <Typography variant="body1" paragraph>
+          Laudantium dolores voluptatum debitis tempora molestiae praesentium
+          omnis nihil modi. Consequuntur qui laboriosam nostrum ratione voluptatum
+          enim ut esse sit. Iste corporis non cupiditate est itaque laudantium
+          recusandae sapiente. Harum sequi voluptatem deserunt distinctio modi
+          ratione. Et accusantium voluptatem architecto.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Culpa fugiat nobis ut. Laborum velit est id cupiditate maxime aut.
-      Incidunt illo provident sed.
-    </Typography>
-  </>,
+        <Typography variant="body1" paragraph>
+          Culpa fugiat nobis ut. Laborum velit est id cupiditate maxime aut.
+          Incidunt illo provident sed.
+        </Typography>
+      </>
+    ),
   }, {
     id: 'quizPresentation',
     title: 'Farm vulnerability and adaptation Quiz',
@@ -95,25 +96,26 @@ const contentPage = [
     hrefAfter: '#mapPresentation',
     to: '/quiz',
     buttonText: 'Start quiz',
-    content:
-  <>
-    <Typography variant="body1" paragraph>
-      Et et corrupti nihil saepe voluptas cumque nihil. Aut nesciunt minima.
-      Minima modi unde sunt deleniti laborum.
-    </Typography>
+    content: (
+      <>
+        <Typography variant="body1" paragraph>
+          Et et corrupti nihil saepe voluptas cumque nihil. Aut nesciunt minima.
+          Minima modi unde sunt deleniti laborum.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Sunt eius autem optio itaque. Facilis consequatur inventore eligendi
-      voluptates. Magnam est enim eos voluptas error dolore ut facere.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Sunt eius autem optio itaque. Facilis consequatur inventore eligendi
+          voluptates. Magnam est enim eos voluptas error dolore ut facere.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Occaecati quia culpa. Ad eum ut voluptate pariatur error odio quae. Eos
-      doloremque et qui. Ab voluptas labore maiores non pariatur voluptas fuga
-      ea nihil. Adipisci nesciunt tempore quisquam aut qui sint. Iure facilis
-      tenetur quis eius molestiae hic laudantium itaque.
-    </Typography>
-  </>,
+        <Typography variant="body1" paragraph>
+          Occaecati quia culpa. Ad eum ut voluptate pariatur error odio quae. Eos
+          doloremque et qui. Ab voluptas labore maiores non pariatur voluptas fuga
+          ea nihil. Adipisci nesciunt tempore quisquam aut qui sint. Iure facilis
+          tenetur quis eius molestiae hic laudantium itaque.
+        </Typography>
+      </>
+    ),
   }, {
     id: 'mapPresentation',
     title: 'Yield & Climate (observations and projections)',
@@ -123,66 +125,67 @@ const contentPage = [
     hrefAfter: '#adaptationsPresentation',
     to: '/map',
     buttonText: 'Go to the map',
-    content:
-  <>
-    <Typography variant="body1" paragraph>
-      Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
-      Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
-      consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
-      esse amet id. Exercitationem ut consequatur.
-    </Typography>
+    content: (
+      <>
+        <Typography variant="body1" paragraph>
+          Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
+          Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
+          consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
+          esse amet id. Exercitationem ut consequatur.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
-      sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
-      ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
-      eum aut qui. Corrupti doloremque ut officiis error.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
+          sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
+          ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
+          eum aut qui. Corrupti doloremque ut officiis error.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Labore est omnis illum dolor praesentium aut tempora libero.
-      Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
-      hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
-      dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
-      magni nostrum quis autem sapiente quia sequi.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Labore est omnis illum dolor praesentium aut tempora libero.
+          Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
+          hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
+          dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
+          magni nostrum quis autem sapiente quia sequi.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
-      Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
-      consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
-      esse amet id. Exercitationem ut consequatur.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
+          Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
+          consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
+          esse amet id. Exercitationem ut consequatur.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
-      sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
-      ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
-      eum aut qui. Corrupti doloremque ut officiis error.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
+          sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
+          ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
+          eum aut qui. Corrupti doloremque ut officiis error.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Labore est omnis illum dolor praesentium aut tempora libero.
-      Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
-      hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
-      dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
-      magni nostrum quis autem sapiente quia sequi.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Labore est omnis illum dolor praesentium aut tempora libero.
+          Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
+          hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
+          dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
+          magni nostrum quis autem sapiente quia sequi.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
-      Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
-      consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
-      esse amet id. Exercitationem ut consequatur.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
+          Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
+          consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
+          esse amet id. Exercitationem ut consequatur.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
-      sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
-      ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
-      eum aut qui. Corrupti doloremque ut officiis error.
-    </Typography>
-  </>,
+        <Typography variant="body1" paragraph>
+          Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
+          sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
+          ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
+          eum aut qui. Corrupti doloremque ut officiis error.
+        </Typography>
+      </>
+    ),
   }, {
     id: 'adaptationsPresentation',
     title: 'Sustainable adaptation measures',
@@ -192,30 +195,31 @@ const contentPage = [
     hrefAfter: '#summaryPresentation',
     to: '/adaptations',
     buttonText: 'See measures',
-    content:
-  <>
-    <Typography variant="body1" paragraph>
-      Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
-      Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
-      consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
-      esse amet id. Exercitationem ut consequatur.
-    </Typography>
+    content: (
+      <>
+        <Typography variant="body1" paragraph>
+          Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
+          Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
+          consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
+          esse amet id. Exercitationem ut consequatur.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
-      sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
-      ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
-      eum aut qui. Corrupti doloremque ut officiis error.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
+          sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
+          ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
+          eum aut qui. Corrupti doloremque ut officiis error.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Labore est omnis illum dolor praesentium aut tempora libero.
-      Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
-      hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
-      dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
-      magni nostrum quis autem sapiente quia sequi.
-    </Typography>
-  </>,
+        <Typography variant="body1" paragraph>
+          Labore est omnis illum dolor praesentium aut tempora libero.
+          Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
+          hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
+          dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
+          magni nostrum quis autem sapiente quia sequi.
+        </Typography>
+      </>
+    ),
   },
   {
     id: 'summaryPresentation',
@@ -223,31 +227,32 @@ const contentPage = [
     hrefBefore: '#adaptationsPresentation',
     to: '/quiz',
     buttonText: 'Start quiz',
-    content:
-  <>
-    <Typography variant="body1" paragraph>
-      Qui consequatur sit nesciunt omnis voluptatem consequatur error ut
-      placeat. Rerum accusantium sed est at aut rerum. Totam rem accusamus
-      consequatur assumenda quo voluptatem dolorem excepturi. Ut voluptas eos
-      voluptas laboriosam iure laboriosam qui. Est sed libero quia ut magni
-      vitae aut minus.
-    </Typography>
+    content: (
+      <>
+        <Typography variant="body1" paragraph>
+          Qui consequatur sit nesciunt omnis voluptatem consequatur error ut
+          placeat. Rerum accusantium sed est at aut rerum. Totam rem accusamus
+          consequatur assumenda quo voluptatem dolorem excepturi. Ut voluptas eos
+          voluptas laboriosam iure laboriosam qui. Est sed libero quia ut magni
+          vitae aut minus.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Quod totam consequatur incidunt pariatur. Eum et sed quasi cumque
-      tempore. Totam modi cupiditate pariatur aspernatur soluta qui. Minus
-      quae vitae fugiat.
-    </Typography>
+        <Typography variant="body1" paragraph>
+          Quod totam consequatur incidunt pariatur. Eum et sed quasi cumque
+          tempore. Totam modi cupiditate pariatur aspernatur soluta qui. Minus
+          quae vitae fugiat.
+        </Typography>
 
-    <Typography variant="body1" paragraph>
-      Ut rerum sed a ipsam ut ut voluptates quibusdam voluptas. Consequuntur
-      minus quis. Non placeat dolor aut eos a officiis sunt omnis.
-    </Typography>
-    <Typography variant="h2">Agriadapt roadmap for adaptation </Typography>
-    <Grid container style={{ maxWidth: '75%', margin: '2em auto' }}>
-      <Roadmap />
-    </Grid>
-  </>,
+        <Typography variant="body1" paragraph>
+          Ut rerum sed a ipsam ut ut voluptates quibusdam voluptas. Consequuntur
+          minus quis. Non placeat dolor aut eos a officiis sunt omnis.
+        </Typography>
+        <Typography variant="h2">Agriadapt roadmap for adaptation </Typography>
+        <Grid container style={{ maxWidth: '75%', margin: '2em auto' }}>
+          <Roadmap />
+        </Grid>
+      </>
+    ),
   },
 ];
 
@@ -269,7 +274,15 @@ const IndexPage = () => {
         buttonText,
         content,
       }) => (
-        <Grid container alignItems="center" alignContent="center" className={classes.module} id={id} component="section">
+        <Grid
+          container
+          alignItems="center"
+          alignContent="center"
+          className={classes.module}
+          id={id}
+          key={id}
+          component="section"
+        >
           {hrefBefore && (
           <Box
             className={clsx({
