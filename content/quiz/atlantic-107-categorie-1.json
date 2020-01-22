@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Selon vous, un climat plus chaud sur Terre induit-il ?"
+    }
+  ],
+  "question": "According to you, a “hotter” climate induces …?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X Beaucoup moins d’eau en circulation\nX Un peu moins d’eau en circulation\nX Autant d’eau qu’auparavant en circulation\nV Plus d’eau en circulation"
+    }
+  ],
+  "order": 107,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Il est attendu une augmentation de l’eau en circulation à l’échelle de la Terre, avec cependant une répartition spatiale plus hétérogène."
+    }
+  ],
+  "answers": "X Much less water in circulation\nX Slightly less water in circulation\nX As much water in circulation\nV More water in circulation",
+  "title": "107 Categorie 1",
+  "explanation": "It is expected that the circulating water will increase across the Earth, however with a more heterogeneous spatial distribution.",
+  "category": "climate-change"
+}
