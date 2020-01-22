@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "¿Qué es el efecto invernadero y por qué se ha convertido en un problema?"
+    }
+  ],
+  "question": "What is the greenhouse effect, and Why has it become a problem?",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V El efecto invernadero es la absorción por parte de la atmósfera de la radiación de la superficie terrestre, impidiendo que salga hacia el espacio y calentando el globo terráqueo\nX Su efecto está disminuyendo y la temperatura en la superficie está disminuyendo peligrosamente\nX Nuestro planeta se está quedando sin oxígeno\nX Debido al efecto lupa, podemos sufrir daños en la piel"
+    }
+  ],
+  "order": 103,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "La atmósfera terrestre deja pasar la luz solar que calienta la superficie terrestre. La superficie entonces emite radiación infrarroja que absorbe la atmósfera sin dejar que salga al espacio, calentando el globo terráqueo y haciendo el planeta habitable."
+    }
+  ],
+  "answers": "V The absorption of the radiation of the Earth’s surface by the atmosphere, preventing it from going into space and warming up the Earth\nX Its effect is diminishing and the temperature of the Earth’s surface is diminishing dangerously \nX The Earth is running out of oxygen\nX Due to the loop effect, humans can suffer from skin damage",
+  "title": "103 Categorie 1",
+  "explanation": "Earth’s atmosphere allows the sunlight to pass, warming up the Earth’s Surface. Then the surface emits infrared radiation which is absorbed by the atmosphere, warming up the Earth and making the planet inhabitable.",
+  "category": "climate-change"
+}
