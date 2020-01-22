@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Un des effets attendus du changement climatique, est l’avancée de la dernière date de gel au printemps, qui aura lieu plus tôt dans l’année. Dans le futur proche, cette avancée :"
+    }
+  ],
+  "question": "One of the expected effects of climate change is the advance of the last frost date in spring, which will take place earlier during the year. For the Near Future, this advance:",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X Réduirait l’impact du gel du les arbres fruitiers ? \nX Augmenterait l’impact du gel sur les arbres fruitiers ? \nV Ne changerait pas les impacts du gel sur les arbres fruitiers ? \nX Ferait disparaître les impacts du gel sur les fruitiers ? "
+    }
+  ],
+  "order": 206,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Même si la date du dernier jour de gel était plus précoce, l’impact de ce gel dit « tardif » sur les arbres fruitiers resterait en identique. En effet, ce phénomène serait couplé à une augmentation des températures et donc une avancée des stades de développement. Donc au final, en moyenne les 2 phénomènes se neutraliseraient."
+    }
+  ],
+  "answers": "X Would reduce the impact of frost on fruit trees?\nX would increase the impact of frost on fruit trees?\nV Would not change the impacts of frost on fruit trees?\nX Would cancel the impacts of frost on fruit trees?",
+  "title": "206 Categorie 2",
+  "explanation": "Even if the date of the last frost day would be earlier, the impact of this so-called \"late\" frost on fruit trees would remain the same. Indeed, this phenomenon is coupled with increased temperatures and thus an advanced stage of development. Thus, on average the 2 phenomena would neutralize each other.",
+  "category": "agricultural-impacts"
+}
