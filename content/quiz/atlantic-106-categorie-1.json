@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "D'ici 2100, si l’on ne change rien en termes d’émissions de gaz à effet de serre, la température moyenne sur Terre pourrait augmenter de près de ?"
+    }
+  ],
+  "question": "In 2100, what could be the increase of average temperature on Earth if things remain the same?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X 1°C\nV 5°C\nX 2°C\nX 3°C"
+    }
+  ],
+  "order": 106,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Parmi les différents scénarios climatiques proposés par le GIEC, celui basé sur une continuité des émissions de gaz à effet de serre sur le rythme actuel, la température moyenne globale laisse présager une augmentation de 4,8°C d’ici à la fin du XXIe siècle, par rapport à la température moyenne de la fin du XXe siècle."
+    }
+  ],
+  "answers": "X 1°C\nV 5°C\nX 2°C\nX 3°C",
+  "title": "106 Categorie 1",
+  "explanation": "Among the different IPCC climate scenarios p, the one based on a continuity of greenhouse gas emissions at the current rate, the average global temperature could increase of 4.8 ° C by the end of the 21st century. century, compared to the average temperature of the late 20th century.",
+  "category": "climate-change"
+}
