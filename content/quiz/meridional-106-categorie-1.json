@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "¿Cuál podría ser el aumento de la temperatura media en la Tierra si no se realizan cambios en las emisiones de gases de efecto invernadero?"
+    }
+  ],
+  "question": "What could be the increase of average temperature on Earth if things remain the same?",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Las proyecciones climáticas resumidas en el quinto informe del IPCC  AR5 indican que la temperatura global aumentará a mediados de siglo (2046–2065 en relación con 1986–2005), en 0.9–2.0 ° C  para el escenario de emisiones intermedio (RCP4.5)\nX Las proyecciones climáticas resumidas en 5º Informe del IPCC (AR5) indican que la temperatura global disminuirá a mediados de siglo (2046–2065 en relación con 1986–2005) ya que las emisiones de gases de efecto invernadero deberían disminuir\nV Los modelos climáticos proyectan aumentos adicionales en la temperatura media global durante el siglo XXI (para el período 2081–2100 en relación con 1986–2005) de entre 0.3 ° C y 1.7 ° C para el escenario de emisiones más bajo  (RCP2.6) y entre 2.6 ° C y 4.8 ° C para el escenario de emisiones más alto (RCP8.5)\nX La temperatura media global se mantendrá por debajo de 2ºC por encima de los niveles preindustriales si las emisiones siguen siendo las mismas"
+    }
+  ],
+  "order": 106,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "La temperatura media global continuará aumentando a lo largo de este siglo como resultado de mayores aumentos proyectados en las concentraciones de gases de efecto invernadero."
+    }
+  ],
+  "answers": "V The climate projections summarised in the IPCC AR5 [7] project that global temperature will increase by mid-century (2046–2065 relative to 1986–2005), by 0.9–2.0 °C for the middle pathway (RCP4.5)\nX The climate projections summarised in the IPCC AR5 [7] project that global temperature will decrease by mid-century (2046–2065 relative to 1986–2005) since greenhouse gas emmissions should decrease\nV Climate models project further increases in global average temperature over the 21st century (for the period 2081–2100 relative to 1986–2005) of between 0.3 °C and 1.7 °C for the lowest emissions scenario (Representative Concentration Pathway (RCP) 2.6) and between 2.6 °C and 4.8 °C for the highest emissions scenario (RCP8.5)\nV The global average temperature will stay below 2ºC above pre-industrial levels if emissions remain the same",
+  "title": "106 Categorie 1",
+  "explanation": "The global average temperature will continue to increase throughout this century as a result of projected further increases in greenhouse gas concentrations. RCP",
+  "category": "climate-change"
+}
