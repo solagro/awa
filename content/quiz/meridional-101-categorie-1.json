@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "¿Qué es el cambio climático?"
+    }
+  ],
+  "question": "What is climate change?",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X Variación normal del tiempo que se da en un momento determinado, por ejemplo, olas de calor, etc.\nV Variación global del clima de la Tierra. Actualmente la causa del cambio climático es la emisión, como resultado de la actividad humana, de los denominados “gases de efecto invernadero”. \nX Pequeño incremento de temperatura que tendrá lugar en el futuro lejano debido a fenómenos naturales como el efecto invernadero\nX El cambio climático son las variaciones del tiempo que hace en un momento determinado en un lugar determinado"
+    }
+  ],
+  "order": 101,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "La variación del clima afecta a la Tierra en su conjunto y a todos los parámetros climáticos. Existe un consenso científico, sobre  que nuestro modo de producción y consumo energético está generando una alteración climática global, que provocará, a su vez, serios impactos tanto sobre la tierra como sobre los sistemas socioeconómicos."
+    }
+  ],
+  "answers": "X A normal variation of the weather given at a determined time, for example, heat waves. \nV The variation of the global climate of the Earth. Actually, the main cause of climate change is the emission, as a result of anthropic activities, of greenhouse gases \nX Small increase in temperature taking place in a far future due to natural phenomena such as the greenhouse effect \nX Climate change is the variation of weather in a determined place and time",
+  "title": "101 Categorie 1",
+  "explanation": "Climate variation affects Earth as a whole and all climatic parameters. There is a scientific consensus that our model of production and energy consumption is generating a global climatic alteration, which will, in turn, cause serious impacts both on the land and on the socioeconomic systems.",
+  "category": "climate-change"
+}
