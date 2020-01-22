@@ -28,7 +28,7 @@ export const processQuizTexts = (
    */
   const allAnswers = [
     { language: 'en', answers: answersEn },
-    ...answersI18n,
+    ...(answersI18n || []),
   ].reduce((acc, curr) => ({ ...acc, [curr.language]: curr.answers }), {});
 
   /**
