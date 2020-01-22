@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En 2050, en el peor escenario climático, ¿cuál podría ser la nueva localización geográfica de Madrid entre las diferentes propuestas?"
+    }
+  ],
+  "question": "In 2050, under the worst climate scenario what could be the new geographical localization of Madrid among the different propositions?",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Marrakesh\nX Sevilla\nX Tánger\nX Fez"
+    }
+  ],
+  "order": 108,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Para 2050, el clima de Madrid será más similar al actual de Marrakesh. Es probable que la temperatura máxima del mes más cálido aumente en 6.4 ° C, lo que resulta en un cambio de temperatura anual promedio de 2.1 ° C."
+    }
+  ],
+  "answers": "V Marrakesh\nX Sevilla\nX Tánger\nX Fez",
+  "title": "108 Categorie 1",
+  "explanation": "By 2050, the climate of Madrid will be most similar to that of current-day of Marrakesh. The maximum temperature of the warmest month is likely to increase by 6.4°C, resulting in a mean annual temperature change of 2.1°C.",
+  "category": "climate-change"
+}
