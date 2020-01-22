@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "Las actividades humanas son las principales responsables del cambio climático. Pero, ¿cuál es la principal fuente de emisiones de gases de efecto invernadero en Europa?"
+    }
+  ],
+  "question": "Human activities is mainly responsible of climate change. But what is the main source of greenhouse gas emissions on Europe?",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V La energía es responsable del 80,7% de las emisiones de gases de efecto invernadero en 2017 en Europa, de las que el transporte supone un tercio.\nV El dióxido de carbono (CO2) es el gas de efecto invernadero que suele expulsarse con más frecuencia a la atmósfera como consecuencia de distintas actividades humanas.\nV Otros gases que aunque se emiten en cantidades más pequeñas tienen un efecto aún más nocivo porque absorben con más facilidad la radiación térmica que emite la superficie planetaria.\nV Las emisiones de gases de efecto invernadero de la agricultura contribuyen con un 10,1%, los procesos industriales y el uso de productos con un 8,72% y la gestión de residuos con un 2,75%."
+    }
+  ],
+  "order": 105,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Según el quinto informe de evaluación del Panel Intergubernamental sobre el Cambio Climático (IPCC), es muy probable que las actividades humanas de los últimos 50 años hayan contribuido al calentamiento global. Estas actividades incluyen, por ejemplo, la quema de carbón, petróleo y gas, la deforestación y la agricultura."
+    }
+  ],
+  "answers": "V Energy is responsible for 80.7% of greenhouse gas emissions in 2017, of which transport accounts for about a third. \nV CO2 is the greenhouse gas that is emitted the most. It is commonly produced by human activities. \nV Other greenhouse gases are emitted in smaller quantities, but they trap heat far more effectively than CO2, and in some cases are thousands of times stronger\nV Greenhouse gas emissions from agriculture contribute with 8.72%, industrial processes and product use with 7.82% and the management of waste with 2.75%.",
+  "title": "105 Categorie 1",
+  "explanation": "According to the fifth assessment report by the Intergovernmental Panel on Climate Change (IPCC), it is extremely likely that human activities over the past 50 years have warmed our planet. These activities include for example the burning of coal, oil and gas, deforestation and farming.",
+  "category": "climate-change"
+}
