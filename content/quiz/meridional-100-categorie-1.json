@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "¿Cuál es la diferencia entre el “tiempo” (predicción meteorológica) y el clima?"
+    }
+  ],
+  "question": "What is the difference between weather and climate?",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X No hay diferencias, es lo mismo \nX El tiempo o predicción meteorológica se refiere al clima que hará en el futuro y el clima se refiere a la descripción física de una serie de variables como temperatura, viento, precipitación, etc. en un momento determinado\nV El tiempo es el estado de la atmósfera en un instante dado, definido por los diversos elementos meteorológicos. El clima, es la síntesis de las condiciones meteorológicas en un lugar determinado, caracterizada por estadísticas a largo plazo de los elementos meteorológicos en dicho lugar\nX El tiempo mide cuánto tardan en darse determinadas condiciones meteorológicas. El clima establece la situación atmosférica que se presenta dependiendo de varios factores (temperatura, viento, presión atmosférica, nubes)"
+    }
+  ],
+  "order": 100,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Es importante saber distinguir entre el momento puntual y las tendencias climáticas. Por ejemplo, un momento puntual de frío extremo no significa que no exista un calentamiento global, ya que éste vendrá determinado por tendencias climáticas a largo plazo."
+    }
+  ],
+  "answers": "\nX There is no difference, they are just the same\nX Weather refers to the future climate. Climate refers to the physical description of a series of variables such as temperature, wind, precipitations, etc. at a given time\nV Weather is the state of the atmosphere at a given time, defined by the meteorological elements. Climate is the synthesis of the meteorological conditions in a determined place, characterized by long-term statistics of the meteorological elements in that place \nX Weather measures how long it takes for determined meteorological conditions to take place. Climate stablishes the existing atmospheric situation depending on several factors (temperature, wind, atmospheric pressure, clouds) ",
+  "title": "100 Categorie 1",
+  "explanation": "It is important to know the difference between an occasional moment and climate trends. For example, an occasional moment of extreme cold does not mean that no global warming does not exist, since this will be determined by long-term climatic trends.",
+  "category": "climate-change"
+}
