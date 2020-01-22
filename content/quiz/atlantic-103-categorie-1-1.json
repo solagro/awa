@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Parmi les propositions suivantes, quels facteurs naturels peuvent aussi influencer notre climat ?"
+    }
+  ],
+  "question": "Which natural factors can also have an influence our climate?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "V Les éruptions volcaniques \nX La lune\nV Les courants marins\nV L’activité solaire"
+    }
+  ],
+  "order": 103,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Les éruptions volcaniques, les courants marins et l’activité solaire sont trois facteurs naturels ayant une influence sur la variabilité de notre climat. La lune n'a pas, sauf à des échéances très longues, d'influence significative sur la météo ou le climat."
+    }
+  ],
+  "answers": "V Volcanic eruptions\nX The moon \nV Sea currents\nV Solar activity",
+  "title": "103 Categorie 1",
+  "explanation": "Volcanic eruptions, ocean currents and solar activity are three natural factors that influence the variability of our climate. Except for very long periods of times, the moon has no significant influence on the weather or climate.",
+  "category": "climate-change"
+}
