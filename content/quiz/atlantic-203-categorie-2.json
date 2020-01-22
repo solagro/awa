@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "En 2050, quelles seront les 2 grandes rivières de France métropolitaine les plus affectées par le changement climatique ?"
+    }
+  ],
+  "question": "In 2050, what will be the 2 major rivers of France affected by climate change?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "V La Seine \nX La Loire \nV La Garonne \nX Le Rhône "
+    }
+  ],
+  "order": 203,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Une augmentation importante des températures moyennes va entrainer une hausse significative de l’évapotranspiration, combinée avec des précipitations constantes voire réduite, va entrainer une réduction des débits moyens annuelles pouvant atteindre 40% pour la Seine et la Garonne."
+    }
+  ],
+  "answers": "V Seine river\nX Loire river\nV Garonne river\nX Rhône river",
+  "title": "203 Categorie 2",
+  "explanation": "A significant increase in average temperatures will lead to a significant increase in evapotranspiration, combined with constant or even reduced precipitation, will cause a reduction in average annual flows of up to 40% for the Seine and the Garonne.",
+  "category": "agricultural-impacts"
+}
