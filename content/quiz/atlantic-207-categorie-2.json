@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "La zone de confort thermique des bovins se situe entre 10 et 20°C. Quel serait l’impact d’une vague de chaleur modérée sur la production de lait ?"
+    }
+  ],
+  "question": "The thermal comfort zone for cattle is between 10 and 20 °C. What would be the impact of a moderate heat wave on milk production?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X Pas d’impact \nX Réduction de la production de moins de10%\nX Réduction de la production de 10 à 20%\nV Réduction de la production de 20 à 30%"
+    }
+  ],
+  "order": 207,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Une vague de chaleur modérée (5 jours consécutifs à plus de 30°C.) peut entrainer une baisse de 20 à 30% de la production journalière de lait. En cas de stress thermique les ruminants vont chercher en premier lieu à réduire leur métabolisme alimentaire (producteur de beaucoup de chaleur) et par la même réduiront leur production de lait."
+    }
+  ],
+  "answers": "X No impact\nX Reduction of production less than 10%\nX Reduction of production from 10 to 20%\nV Reduction of production by 20 to 30%",
+  "title": "207 Categorie 2",
+  "explanation": "A moderate heat wave (5 consecutive days above 30 °C.) can cause a 20 to 30% drop in daily milk production. In case of thermal stress, ruminants will first seek to reduce their food metabolism (as it also induces a lot of heat production for the animal) and by the same will reduce their milk production.",
+  "category": "agricultural-impacts"
+}
