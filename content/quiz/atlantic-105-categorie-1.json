@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "D’après vous, la quantité de CO2 dans l’atmosphère a augmenté de quel pourcentage par rapport à l’ère préindustrielle ?"
+    }
+  ],
+  "question": "How much is the increase (in %) of CO2 emissions in the atmosphere since pre-industrial period?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X 5%\nX 25%\nV 40%\nX 50%"
+    }
+  ],
+  "order": 105,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "L’atmosphère est le réservoir le plus affecté par les activités anthropiques : la quantité de carbone absorbée a augmenté de près de 40 % par rapport à l’ère préindustrielle."
+    }
+  ],
+  "answers": "X 5%\nX 25%\nV 40%\nX 50%",
+  "title": "105 Categorie 1",
+  "explanation": "The atmosphere is the most affected tank by anthropogenic activities: the amount of carbon absorbed has increased by almost 40% compared to the pre-industrial era.",
+  "category": "climate-change"
+}
