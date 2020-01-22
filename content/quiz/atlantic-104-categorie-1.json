@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Les activités humaines sont responsables d’une partie significative des changements climatiques. Mais quelle est la principale cause des émissions de GES anthropiques dans le monde ?"
+    }
+  ],
+  "question": "Human activities is mainly responsible of climate change. But what is the main source of greenhouse gas emissions on the Earth?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X L’agriculture\nX La déforestation\nV La combustion des énergies fossiles\nX Les zones humides"
+    }
+  ],
+  "order": 104,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Si des facteurs naturels peuvent expliquer certaines évolutions du climat, les variations récentes sont dues en très grande partie aux activités humaines. La première cause des émissions de gaz à effet de serre est la combustion des énergies fossiles."
+    }
+  ],
+  "answers": "X Agriculture\nX Deforestation\nV Burning of fossil fuels\nX Wetlands",
+  "title": "104 Categorie 1",
+  "explanation": "While natural factors may explain certain changes in the climate, variations in recent past are largely due to human activities emissions. The primary cause of greenhouse gas emissions is the burning of fossil fuels.",
+  "category": "climate-change"
+}
