@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "La dynamique de la croissance de l’herbe en France aujourd’hui est majoritairement celle d’un climat océanique. Dans le futur proche la croissance de l’herbe se rapprochera davantage de quelle dynamique ?"
+    }
+  ],
+  "question": "Currently, the dynamics of grass growth in France is mainly close of an oceanic climate one. For the Near Future, grass growth for French grasslands is expected to look to what kind of dynamic?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X Maintien de la dynamique océanique ? \nX Vers une influence continentale plus marquée ? \nV Vers une influence méditerranéenne plus marquée ? \nX Vers une influence montagnarde plus marquée ? "
+    }
+  ],
+  "order": 208,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Dans le futur proche, une part plus grande des prairies françaises verront leur dynamique de croissance de l’herbe devenir de plus en plus méditerranéenne avec notamment un ralentissement (voire un arrêt) de la pousse de l’herbe en période estivale, et globalement une baisse de la production annuelle."
+    }
+  ],
+  "answers": "X Remaining close to an ocean dynamic?\nX Trend towards a more marked continental influence?\nV Trend towards a more marked Mediterranean influence?\nX Trend towards a more marked mountain influence?",
+  "title": "208 Categorie 2",
+  "explanation": "For the Near Future, a larger share of French grasslands will see their grass growth dynamics familiar to a Mediterranean dynamic, with in particular a slowing down (or even stopping) of the growth of the grass in summer, and overall a decrease in the annual total production of dry matter.",
+  "category": "agricultural-impacts"
+}
