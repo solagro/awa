@@ -5,7 +5,7 @@
       "question": "Quelle est l’évolution constatée du climat en France métropolitaine ?"
     }
   ],
-  "question": "What is the observed evolution of the climate in metropolitan France?",
+  "question": "What is concretely climate change in France?",
   "theme": "atlantic",
   "answer-i18n": [
     {
@@ -20,8 +20,8 @@
       "explanation": "Il est observé une hausse des températures moyennes en France de 1,4°C depuis 1900, le cumul des précipitations demeure stable à l’échelle du pays mais des évolutions contrastées apparaissent selon les régions et les saisons, la durée d’enneigement recule en montagne et l’intensité des sécheresses s’accentue."
     }
   ],
-  "answers": "V Rising temperatures and heat waves\nV Precipitation stability\nV A decrease in the duration of snow in the mountains\nX Stability of drought phenomena",
-  "title": "101 observed evolution of the climate ",
-  "explanation": "There has been an increase in average temperatures in France of 1.4 ° C since 1900, the cumulative rainfall remains stable at the country level but contrasting evolutions appear according to the regions and the seasons, the duration of snow falls in mountain and the intensity of droughts increases.",
+  "answers": "V Rising of temperatures and heat weaves\nV Stable precipitation\nV Reduction of the duration of snow cover in mountains\nX Stability of drought hazards",
+  "title": "101 Categorie 1",
+  "explanation": "In France, an increase of the average temperature of 1.4 ° C has been observed since 1900, cumulative precipitation remains stable at the country level but contrasting trends appear according to regions and seasons, the duration of snow cover decreases in mountain and the intensity of droughts is increasing.",
   "category": "climate-change"
 }
