@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "En France métropolitaine et pour un horizon proche (2021-2050), les phénomènes de vagues de chaleur sont-ils susceptibles de toucher ?"
+    }
+  ],
+  "question": "In France and for Near Future (2020-2050), heatwaves will impact which part of the country?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "V L’ensemble du territoire métropolitain\nX Le Sud et l’Est\nX Tout le territoire métropolitain en dehors du Nord.\nX Seulement l’extrême Sud"
+    }
+  ],
+  "order": 108,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Pour les deux scénarios considérés dans le rapport Jean Jouzel 2014, l'ensemble des modèles simule une augmentation du nombre de jours de vagues de chaleur en moyenne sur les mois d'été. L’augmentation est modérée, allant de 0 à 5 jours sur l'ensemble du territoire, voire de 5 à 10 jours pour le scénario RCP4.5 dans des régions du quart Sud-Est."
+    }
+  ],
+  "answers": "V The whole metropolitan territory\nX South and East\nX All metropolitan territory except the North\nX Only the very South",
+  "title": "108 Categorie 1",
+  "explanation": "For the two scenarios considered in the 2014 Jean Jouzel report, all the models show an increase in the number of heat wave average duration over the summer period. The increase is moderate, ranging from 0 to 5 days throughout the territory, or even 5 to 10 days for the RCP4.5 scenario in regions of the South-East.",
+  "category": "climate-change"
+}
