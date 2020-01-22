@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "L’échaudage est un stress majeur pour les céréales à paille. Dans les 30 prochaines années, comment cet aléa pourrait évoluer ?"
+    }
+  ],
+  "question": "Shrivelling (thermal stress) is a major stress for straw cereals. In the next 30 years, how could be the trend of this climate hazard?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X Diminuer de 25%\nX Rester identique \nX Augmenter de 25% \nV Augmenter de 50% "
+    }
+  ],
+  "order": 201,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Toutes choses égales par ailleurs (variétés, date de semis, …), le risque d’échaudage augmenterait de plus 50% en France. Cela se traduirait par une importante augmentation du nombre de jours chauds (température > 25°C.) en fin de cycle des céréales."
+    }
+  ],
+  "answers": "X Reduction by 25%\nX Stability\nX Increase by 25%\nV Increase by 50%",
+  "title": "201 Categorie 2",
+  "explanation": "All farming practices being equal (varieties, sowing date, etc.), the risk of shrivelling would increase by more than 50% in France. This would result in a significant increase in the number of hot days (temperature > 25 ° C.) at the end of the crop cycle.",
+  "category": "agricultural-impacts"
+}
