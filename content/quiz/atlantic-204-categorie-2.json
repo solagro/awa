@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "L’augmentation moyenne de la température accélère la maturation des grains, des fruits et des baies. Entre 1980 et 2010, de combien de jours la date de vendange a-t-elle été avancée ?"
+    }
+  ],
+  "question": "The average increase in temperature accelerates the ripening of grains, fruits and berries. Between 1980 and 2010, how many days earlier was the harvest for vineyard?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X 30 jours  \nV 20 jours \nX 10 jours \nX 5 jours "
+    }
+  ],
+  "order": 204,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Pour la très grande majorité des vignobles de France, la date des vendanges a avancée de près de 20 jours entre 1980 à 2010. Cette avancée est due à l’augmentation moyenne des températures d’environ 0,3°C. par décennie (soit 1,2°C. sur une période de 30 ans)."
+    }
+  ],
+  "answers": "X 30 days\nV 20 days\nX 10 days\nX 5 days",
+  "title": "204 Categorie 2",
+  "explanation": "For the vast majority of vineyards in France, the harvest date advanced by nearly 20 days between 1980 to 2010. This advance is due to the average temperature increase of around 0.3 ° C. per decade (i.e. 1.2 ° C. over a period of 30 years).",
+  "category": "agricultural-impacts"
+}
