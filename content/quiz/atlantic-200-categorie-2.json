@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Au cours des 20 derniers années, le rendement moyen du blé tendre en France :"
+    }
+  ],
+  "question": "Over the last 20 years, what was the trend of the average yield of common wheat?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X a augmenté de 10% ? \nX a Augmenté de 5% ?\nV n’a pas augmenté? \nX a baissé de 10% ? "
+    }
+  ],
+  "order": 200,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Les deux dernières décennies voient le déclin de la tendance à la hausse du rendement céréalier dans de nombreux pays européens. Le changement climatique (stress thermique, sécheresse) étant l’un des facteurs explicatifs majeur. Récemment, l’année 2016 vient compléter la liste des années ou le climat a affecté sévèrement les rendements."
+    }
+  ],
+  "answers": "X increased by 10%\nX Increased by 5% \nV Stagnation\nX Reduced by 10%",
+  "title": "200 Categorie 2",
+  "explanation": "The past two decades have seen a decline in the upward trend in cereal yields in many European countries. Climate change (heat stress, drought) being one of the major explanatory factors. The harvest 2016 being one of the worst years in recent past, in which climate severely impacted yields.",
+  "category": "agricultural-impacts"
+}
