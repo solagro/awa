@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "L’avancée des dates de vendanges est un impact connu du changement climatique sur la vigne. Sur quelles autres composantes de la vigne et du vin, les changements climatiques auront-ils des impacts ?"
+    }
+  ],
+  "question": "The advance of harvest dates is a well-known impact of climate change on the vine. On which other components of the vine and wine, will climate change also have an impact?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "V Les rendements ? \nV Le degré d’alcool et l’acidité ? \nV L’arôme et la couleur ? \nX L’effervescence ? "
+    }
+  ],
+  "order": 205,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Les changements climatiques (augmentation de la concentration en CO2, de la température moyenne, de la fréquence et la sévérité des stress thermiques et hydriques) affecteront négativement et positivement les rendements, le degré d’alcool, l’acidité, l’arôme et la couleur. Les effets dépendront des cépages et des régions."
+    }
+  ],
+  "answers": "V Yields?\nV The degree of alcohol and acidity?\nV Aroma and color?\nX Effervescence? ",
+  "title": "205 Categorie 2",
+  "explanation": "Climate change (increase in CO2 concentration, average temperature, frequency and severity of thermal and water stress) will negatively and positively affect yields, alcohol content, acidity, aroma and color. The effects will depend on the grape varieties and the regions.",
+  "category": "agricultural-impacts"
+}
