@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Quels seront les effets de l’élévation de la concentration en CO2 atmosphérique sur la qualité nutritionnelle des végétaux ?"
+    }
+  ],
+  "question": "What will be the effects of increasing atmospheric CO2 concentration on the nutritional quality of plants (and grains)?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "V 15-20% de protéines en moins ?\nX 15-20% de protéines en plus ? \nV 20-30% de sucres en plus ? \nV 5-10% de fer et de zinc en moins ?"
+    }
+  ],
+  "order": 209,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Des études récentes ont montré que des plantes (en C3) conduites dans des atmosphères enrichies en CO2 (conformément à la concentration attendue en 2050) avait des concentrations en fer, zinc et protéines réduites. A contrario, ces plantes avaient des teneurs en sucre plus élevées. Les mécanismes expliquant ces phénomènes sont encore mal connus."
+    }
+  ],
+  "answers": "V 15 to 20% less protein?\nX 15 to 20% more protein?\nV 20 to 30% more sugar?\nV 5 to 10% less iron and zinc?",
+  "title": "209 Categorie 2",
+  "explanation": "Recent studies have shown that plants (C3) conducted in CO2-enriched atmospheres (in accordance with the expected concentration in 2050) had concentrations of iron, zinc and protein reduced. Conversely, these plants had higher sugar contents. The mechanisms explaining these phenomena are still poorly understood.",
+  "category": "agricultural-impacts"
+}
