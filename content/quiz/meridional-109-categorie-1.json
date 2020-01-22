@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "¿Cómo afectará el cambio climático a la salud humana?"
+    }
+  ],
+  "question": "How will climate change affect human health?",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X El cambio climático no tiene ningún efecto directo o indirecto sobre la salud humana, tan solo la calidad del aire puede tener impacto\nV El cambio climático ha modificado la distribución de algunos vectores de enfermedades infecciosas.\nV El cambio climático provocará un aumento de las víctimas de olas de calor, inundaciones, incendios y sequías.\nV El cambio climático provocará mayor alteración de la distribución y alcance de algunos vectores de enfermedades infecciosas."
+    }
+  ],
+  "order": 109,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "El cambio climático afecta a la salud humana, ya sea de manera directa como respuesta a los cambios en patrones del clima como la temperatura, la  precipitación y la ocurrencia de eventos extremos o indirecta asociados a cambios en el agua, al aire, la alimentación, los ecosistemas, …, consecuencia de las circunstancias climáticas."
+    }
+  ],
+  "answers": "X Climate change has no direct or indirect effect on human health, only air quality can have an impact\nV Climate change has modified the distribution of some vectors of infectious diseases.\nV Climate change will cause an increase in victims of heat waves, floods, fires and droughts.\nV Climate change will cause greater alteration of the distribution and scope of some vectors of infectious diseases.",
+  "title": "109 Categorie 1",
+  "explanation": "Climate change affects human health, either directly in response to changes in weather patterns such as temperature, precipitation and the occurrence of extreme or indirect events associated with changes in water, air, food, the ecosystems, the industry and the urbanization…, consequence of the climatic circumstances.",
+  "category": "climate-change"
+}
