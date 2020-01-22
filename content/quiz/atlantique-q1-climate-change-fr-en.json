@@ -5,7 +5,7 @@
       "question": "Sur quelle période minimale l'évolution du climat se mesure - t –elle ?"
     }
   ],
-  "question": "On what periods is climate change measured?",
+  "question": "How long is the minimum period to talk about climate?",
   "theme": "atlantic",
   "answer-i18n": [
     {
@@ -21,7 +21,7 @@
     }
   ],
   "answers": "X 10 years\nV 30 years\nX 50 years\nX 100 years",
-  "title": "100 Periode climate change",
-  "explanation": "The notion of \"climate\" refers to all the elements that characterize the average state of the atmosphere. It is defined from statistics over a long period (often thirty years) while the notion of \"weather\" refers to the weather conditions of a given moment or a short period (a day, a week, etc.).",
+  "title": "100 Categorie 1",
+  "explanation": "The concept of climate refers to all of the variables that characterize the average state of the atmosphere. It is defined on the basis of statistics over a long period (often thirty years) while the concept of \"weather forecast\" refers to the weather conditions of a given instant or a short period (a day, a week, etc.).",
   "category": "climate-change"
 }
