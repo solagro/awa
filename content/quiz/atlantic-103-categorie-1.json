@@ -13,7 +13,7 @@
       "answers": "V Le méthane (CH4)\nV Le protoxyde d’azote (N2O)\nV Le dioxyde de Carbone (CO2)\nX L’ammoniac (NH3)"
     }
   ],
-  "order": 103,
+  "order": 102,
   "explanation-i18n": [
     {
       "language": "fr",
@@ -21,7 +21,7 @@
     }
   ],
   "answers": "V Methane (CH4)\nV Nitrous oxide (N2O)\nV Carbon dioxide (CO2)\nX Ammonia (NH3)",
-  "title": "103 Categorie 1",
+  "title": "102 Categorie 1",
   "explanation": "There are four main categories of greenhouse gases (GHGs): carbon dioxide, methane, nitrous oxide and fluorinated gases. Ammonia is an air pollutant mainly emitted by the agricultural sector (emissions from animals or nitrogen fertilization), but it does not directly contribute to global warming.",
   "category": "climate-change"
 }
