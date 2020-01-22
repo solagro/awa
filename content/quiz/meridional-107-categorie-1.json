@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "Los países que firmaron el Acuerdo de París acordaron el objetivo de mantener el incremento de temperatura global a finales del S. XXI con respecto al periodo pre-industrial por debajo de:"
+    }
+  ],
+  "question": "Countries signing the Paris Agreement agreed to work on the goal of keeping the increase in global temperature at the end of the 21st century compared to the pre-industrial era below:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X 1º C\nV 2º C\nX 4º C\nX 10º C"
+    }
+  ],
+  "order": 107,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Un incremento de 2º C ya tiene consecuencias muy graves para el clima en la Tierra. Por encima de 2º C, muchas especies más estarían abocadas a la extinción y los sistemas agrarios tendrían serios problemas para poder suministrar el alimento necesario para una población creciente, debido a los impactos negativos sobre la agricultura y la ganadería."
+    }
+  ],
+  "answers": "X 1 degree Celsius\nV 2 degrees Celsius\nX 4 degrees Celsius\nX 10 degrees Celsius",
+  "title": "107 Categorie 1",
+  "explanation": "An increase of 2 degrees Celsius has already serious consequences for the Earth’s climate. Above 2 degrees Celsius, many species would be lead to extinction and our agrarian systems will find it very difficult to provide enough food for a rising population, due to the negative impacts on agriculture and livestock husbandry",
+  "category": "climate-change"
+}
