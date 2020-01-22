@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Parmi les propositions suivantes, quels gaz sont des gaz à effet de serre ?"
+    }
+  ],
+  "question": "Among the following gases, which one are responsible of greenhouse gas emission?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "V Le méthane (CH4)\nV Le protoxyde d’azote (N2O)\nV Le dioxyde de Carbone (CO2)\nX L’ammoniac (NH3)"
+    }
+  ],
+  "order": 103,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "On distingue quatre grandes catégories de gaz à effet de serre (GES) : le dioxyde de carbone, le méthane, le protoxyde d’azote et les gaz fluorés. L’ammoniac est un polluant de l’air principalement émis par le secteur agricole (émissions par les animaux ou la fertilisation azotée), mais il ne contribue pas directement au réchauffement climatique."
+    }
+  ],
+  "answers": "V Methane (CH4)\nV Nitrous oxide (N2O)\nV Carbon dioxide (CO2)\nX Ammonia (NH3)",
+  "title": "103 Categorie 1",
+  "explanation": "There are four main categories of greenhouse gases (GHGs): carbon dioxide, methane, nitrous oxide and fluorinated gases. Ammonia is an air pollutant mainly emitted by the agricultural sector (emissions from animals or nitrogen fertilization), but it does not directly contribute to global warming.",
+  "category": "climate-change"
+}
