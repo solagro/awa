@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Selon vous, si on ne change rien aux émissions actuelles de GES, quelle pourrait être la localisation géographiquement de Paris en 2100 en termes d’équivalence climatique ?"
+    }
+  ],
+  "question": "According to you, in 2100 and under the worst climate scenario, what could be the new geographical localisation of Paris among the different propositions?",
+  "theme": "atlantic",
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "X Clermont-Ferrand\nV Badajoz (Espagne)\nX Toulouse\nX Barcelone"
+    }
+  ],
+  "order": 109,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "La réponse attendue est ici Badajoz, dans le sud-est de l’Espagne. Cependant, une certaine variabilité liée aux modèles et scénarios climatiques pourrait induire une réponse différente (voir catégorie En savoir plus)."
+    }
+  ],
+  "answers": "X Clermont-Ferrand\nV Badajoz (Spain)\nX Toulouse\nX Barcelona",
+  "title": "109 Categorie 1",
+  "explanation": "The expected answer is here Badajoz, in the South-East of Spain. However, a certain variability related to climate models and scenarios could induce a different response (see Learn More).",
+  "category": "climate-change"
+}
