@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Öökülmade ja põua stress võib tõusta. Kas:"
+    }
+  ],
+  "question": "The projections foresee possible increase in late frosts and droughts. Whether:",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Biostimulaatorite kasvuaegne tarvitamine aitab vähendada põuastressi.\nV Taimekaitsevahendite ja teiste agrokemikaalide kasutamine tekitab taimele ohtlikku lisastressi\nX Taimekaitsevahendite ja teiste agrokemikaalide kasutamine suurendab taimede vastupidavust ja leevendab stressi.\nX Taimekaitsevahendid ei mõjuta taimede vastupidavust põua või külmastressis."
+    }
+  ],
+  "order": 300,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Agrokemikaalide kasutamist tuleb taimedele ebaoptimaalsetes ilmastikuoludes vältida nendest tingitud lisastressi tõttu. Vaatamata sellele, et biostimulaatorite mõju ei pruugi olla negatiivne, pole praeguseks veel piisavalt tõenduspõhist infot, et nende kasutamine põllutingimustes mõjuks positiivselt."
+    }
+  ],
+  "answers": "X Application of biostimulants during the growth helps to reduce the drought stress\nV Application of pesticides and other agrochemicals may harm plants due to additional stress\nX Pesticides and other agrochemicals increase the plant resistance and alleviates the stress\nX Pesticides have no effect on plant fitness neither in drought nor in frost stress.",
+  "title": "300 Categorie 3",
+  "explanation": "In suboptimal climate conditions, application of any agrochemicals shall be avoided due to additional stress caused by them. Despite the fact there may be no negative effect of biostimulants in such conditions, the absence of sufficient scientific evidence can’t confirm their positive effect in field.",
+  "category": "adaptation"
+}
