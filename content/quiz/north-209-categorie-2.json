@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kas kliimamuutused võivad pakkuda positiivseid võimalusi püsikultuuride kasvatamisel Eestis?"
+    }
+  ],
+  "question": "Can climate change offer positive opportunities for growing permanent crops in Estonia?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Jah, kõrgem temperatuur võimaldab kasvatada soojema kliimaga kohastunud sorte .\nX Ei, kliimamuutused halvendavad püsikultuuride kasvutingimusi.\nV Jah, kõrgem temperatuur võimaldab lauaviinamarju kasvatada välitingimustes\nX Jah, kõrgem temperatuur ja suurem sademete hulk talvisel perioodil lühendab püsikultuuride puhkeperioodi ja nad hakkavad varem kasvama."
+    }
+  ],
+  "order": 209,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Kõrgem temperatuur ja pikem vegetatsiooniperiood võimaldab kasvatada soojema kliimaga kohastunud õunasorte (nt ’Royal Gala’, ’Red Prince’) ja viinamarjasorte."
+    }
+  ],
+  "answers": "V Yes, higher temperatures make it possible to grow varieties adapted to warmer climate.\nX No, climate change is worsening the growing conditions for permanent crops\nV Yes, higher temperatures allow table grapes to be grown outdoors\nX Yes, higher temperatures and higher rainfall during the winter period shorten the dormancy period of permanent crops and start growing earlier",
+  "title": "209 Categorie 2",
+  "explanation": "Higher temperatures and longer vegetation period allow the cultivation of grape and apple cultivars (eg 'Royal Gala', 'Red Prince') adapted to warmer climate.",
+  "category": "agricultural-impacts"
+}
