@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Ein mäßiger Hitzestress bei Milchkühen (z.B. 70%rel. Feuchte und 24-29°C) kann zu … führen."
+    }
+  ],
+  "question": "A moderate heat stress in dairy cows (e.g. 70% rel. moisture and 24-29°C) can lead to ....",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V …erhöhtem Wasserbedarf…\nX …erhöhter Milchleistung…\nV …Beeinträchtigung der Fruchtbarkeit…\nV …Abnahme der Milchmenge und erhöhter Zellzahl…"
+    }
+  ],
+  "order": 205,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Höhere Temperaturen führen dazu, dass die Kuh Energie für die Kühlung ihres Körpers aufbringen muss. Gleichzeitig sinkt die Futteraufnahme. Je höher die Luftfeuchtigkeit, desto früher beginnt mit steigenden Temperaturen der Hitzestress. Dies kann nicht nur die Milchleistung reduzieren, sondern auch die Gesundheit und Fruchtbarkeit der Tiere."
+    }
+  ],
+  "answers": "V …increased water demand\nX …increased milk yields\nV …fertility impairment\nV …decrease in milk quantity and increased cell count",
+  "title": "205 Categorie 2",
+  "explanation": "Higher temperatures mean that the cow has to expend energy to cool its body. At the same time, the feed intake decreases. The higher the humidity, the earlier the heat stress begins with rising temperatures. This can not only reduce the milk yield, but also the health and fertility of the animals.",
+  "category": "agricultural-impacts"
+}
