@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "El bajo laboreo (menos pases anuales a un máximo de 20 cm de profundidad) conlleva:"
+    }
+  ],
+  "question": "Low tillage (fewer tillage operations and at a maximum of 20 cm depth) entails:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X Peor estructura del suelo\nX Menor capacidad de retención de agua del suelo\nV Mejor estructura del suelo \nX Mayor erosión"
+    }
+  ],
+  "order": 307,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Un laboreo superficial sin volteo (ej. chísel), mejora la estructura del suelo evitando que se mezclen diferentes horizontes y dejando que se desarrollen organismos beneficiosos como artrópodos o lombrices, que favorecen la formación de poros y aireación del suelo. Una reducción en el número de pases por año reduce la compactación del suelo."
+    }
+  ],
+  "answers": "X Worse soil structure\nX Less water retention capacity of the soil\nV Better soil structure \nX More erosion",
+  "title": "307 Categorie 3",
+  "explanation": "A superficial tillage without turning the soil over helps to improve soil structure preventing different soil horizons from mixing and enhancing the development of diverse beneficial organisms such as arthropods or worms, which enhance pores formation and aeration. A reduction in the number of operations per year reduces soil compaction.",
+  "category": "adaptation"
+}
