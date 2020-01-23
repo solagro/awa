@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En cultivos de lenteja, un mayor número de días con temperaturas por encima de los 30º C entre abril y junio puede causar:"
+    }
+  ],
+  "question": "In lentil crops, a higher number of days with temperatures above 30 degrees Celsius between April and June can cause:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Menos flores y rendimientos más bajos\nX Incremento de rendimientos \nX Incremento en la fertiliadd de las flores \nX Las respuestas 2 y 3 son correctas"
+    }
+  ],
+  "order": 208,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "La menor producción de flores en lenteja debido al estrés térmico viene asociada inevitablemente con una caída en los rendimientos."
+    }
+  ],
+  "answers": "V Fewer flowers and lower yields\nX Increase in yields \nX Higher fertility of flowers \nX Answers 2 and 3 are both correct",
+  "title": "208 Categorie 2",
+  "explanation": "The lower flower production in lentils due to the thermal stress comes along inevitably with lower yields.",
+  "category": "agricultural-impacts"
+}
