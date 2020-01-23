@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "Menos heladas tardías en abril y mayo pueden desembocar en:"
+    }
+  ],
+  "question": "Fewer late frosts in April and May can lead to:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Menos daños por congelación en hojas jóvenes en viñedo\nV Ataques de plagas más frecuentes en viñedo\nX Reducción de los rendimientos en cereal\nX Problemas en la fase de llenado del grano"
+    }
+  ],
+  "order": 202,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Menos heladas tardías en la fase de desborre de yemas e inicio del crecimiento vegetativo en cultivos permanentes evitará daños por congelación al cultivo. Sin embargo, menos episodios de heladas también influirán en una mayor incidencia de plagas, al no disponer de bajas temperaturas que controlen sus poblaciones."
+    }
+  ],
+  "answers": "V Less frost damage in young leaves in vineyards \nV More frequent pest attacks in vineyards\nX Reduction of yields in cereals\nX Problems during the grain-filling phase",
+  "title": "202 Categorie 2",
+  "explanation": "Fewer late frosts in the bud-bursting phase and the beginning of the growing phase in permanent crops will avoid frost damage. However, fewer late frosts will also lead to more frequent pest attacks since no low temperatures will be controlling their populations.",
+  "category": "agricultural-impacts"
+}
