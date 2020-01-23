@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kliimariskide vähendamisele aitab kaasa:"
+    }
+  ],
+  "question": "Reduction of climate risks may be enchanced by:",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Monokultuuri kasvatamine\nX kui kasvatada võimalikult laia valikut ühe kultuuri erinevaid sorte\nX kui kasvatada võimalikult laia valikut erinevaid kultuure, igast ühte sorti\nV kui kasvatada võimalikult laia kultuuride valikut esindatud optimaalse sortide hulgaga"
+    }
+  ],
+  "order": 301,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Kultuuride ja sortide mitmekesisus aitab kaasa nii ilmastikust tingitud riskide maandamisele (osad sordid põuakindlamad, osad kultuurid valmivad enne sügisest vihmaperioodi jms) kui tööprotsessi pingete maandamisele koristuskonveieri optimeerimise teel."
+    }
+  ],
+  "answers": "X Cultivation of monoculture\nX Cultivation of wide range of varieties of a single crop\nX Cultivation of wide range of crops, each one variety\nV Cultivation of a range of crops represented by optimal range of varieties",
+  "title": "301 Categorie 3",
+  "explanation": "Diversification of crops and varieties helps to lower certain weather risks (certain cultivars are more drought resistant, certain crops mature before the autumn rains etc.), as well as reduce the pressure on labour intensity by optimization of harvesting sequence.",
+  "category": "adaptation"
+}
