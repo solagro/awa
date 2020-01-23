@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Mit welchen nachhaltigen Anpassungsmaßnahmen kann man gut auf die Anforderungen bei der Grünlandbewirtschaftung reagieren?"
+    }
+  ],
+  "question": "What sustainable adaptation measures can be taken to respond well to the requirements of grassland management?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Nachsaat mit standortangepassten Mischungen mit Leguminosen (da Leguminosen weniger sensibel auf Trockenheit reagieren)\nV Reduzierung des nicht-klimatischen Stresses wie Bearbeitungsfehler, d.h. angepasste Schnitthöhe, bedarfsgerechte Düngung, Nachsaaten \nV Tiefen Schnitt (bzw. Biss bei Weide) vermeiden \nX Gräser aussamen lassen"
+    }
+  ],
+  "order": 305,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Gefordert sind vor allem Maßnahmen, um zunehmender Sommertrockenheit und Starkniederschlägen zu begegnen wie z.B. vielseitige Grünlandzusammensetzungen, in denen auch trockenheitsverträglichere Leguminosen vertreten sind und ein gutes Grünlandmanagement."
+    }
+  ],
+  "answers": "V Re-seeding with site-adapted mixtures with legumes (as legumes are less sensitive to drought)\nV Reduction of non-climatic stress such as processing errors, i.e. adapted cutting height, needs-based fertilisation, re-sowing\nV Avoiding a deep cut \nX Let the grasses reseed",
+  "title": "305 Categorie 3",
+  "explanation": "What is needed above all, are measures to counter increasing summer drought and heavy precipitation, such as versatile grassland compositions in which more drought-resistant legumes are also present and good grassland management.",
+  "category": "adaptation"
+}
