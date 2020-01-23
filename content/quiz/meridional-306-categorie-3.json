@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "Mayor diversidad de cultivos a nivel de explotación agraria conlleva:"
+    }
+  ],
+  "question": "More crop diversity at farm level leads to:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X Mayores riesgos de incidencia de plagas y enfermedades\nV Menores riesgos económicos\nX Menos biodiversidad\nX Las respuestas 2 y 3 son correctas"
+    }
+  ],
+  "order": 306,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Siempre que el tamaño de la explotación lo permita, diversificar los cultivos ayuda a sortear las condiciones de un mercado cambiante y el impacto de determinados eventos climáticos que no afectarán a todos los cultivos por igual, evitando pérdidas de rendimiento muy acentuadas a nivel global."
+    }
+  ],
+  "answers": "X Higher risks of pests and diseases attacks\nV Lower economic risks\nX Less biodiversity\nX Answers 2 and 3 are both correct",
+  "title": "306 Categorie 3",
+  "explanation": "If the size of the farm allows it, crop diversification helps to overcome the changing conditions of the market. Also, the impact of certain climatic events won’t affect all crops equally, avoiding high yield losses at farm level.",
+  "category": "adaptation"
+}
