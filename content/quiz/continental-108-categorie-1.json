@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Wie wirkt sich der Klimawandel auf die Vegetationsperiode in Deutschland aus?"
+    }
+  ],
+  "question": "How does climate change affect the vegetation period in Germany?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Die Vegetationsperiode wird tendenziell länger. \nV Der biologische Frühling startet früher.\nX Der Winter setzt zunehmend früher ein.\nX Die Vegetationsperiode verschiebt sich innerhalb des Jahres nach vorne."
+    }
+  ],
+  "order": 108,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Das Wachstum von Pflanzen beginnt ab einer bestimmten Temperatur.  Durch die steigenden Temperaturen kann bereits eine Verfrühung des ersten Austriebs beobachtet werden, zum anderen bleibt es im Herbst länger warm. Beobachtungen zeigen, dass der Vegetationsbeginn seit 1961 in Deutschland sich um ca. 2 Wochen vorverlegt hat."
+    }
+  ],
+  "answers": "V The vegetation period tends to get longer \nV Spring starts earlier in the year\nX Winter starts earlier every year \nX The vegetation period shifts forward within the year",
+  "title": "108 Categorie 1",
+  "explanation": "The plant growth begins at a certain temperature.  Due to the rising temperatures, early growth of the first shoots can already be observed, on the other hand it stays longer warm in autumn. Observations show that the beginning of the vegetation period in Germany since 1961 has advanced by about 2 weeks.",
+  "category": "climate-change"
+}
