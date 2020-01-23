@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche Auswirkungen hat das vermehrte Auftreten von Trockenheitsperioden, die zudem zunehmend länger andauern, auf die Landwirtschaft?"
+    }
+  ],
+  "question": "What are the effects on agriculture of the increased occurrence of droughts, which also last increasingly longer?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "X Die Getreideerträge steigen\nV Bewässerung gewinnt an Bedeutung\nX Die Nährstoffverfügbarkeit steigt\nV Höhere Ertragsverluste "
+    }
+  ],
+  "order": 207,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Vermehrte Trockenperioden, oftmals einhergehend mit hohen Temperaturen, reduzieren Wachstum und Entwicklung der Kulturpflanzen, was zu höheren Ertrags- und Qualitätseinbußen führen kann. Zudem reduziert sich mit zunehmender Trockenheit auch die Nährstoffverfügbarkeit im Boden. Im Grünland, besonders im Sommer, können ganze Schnitte ausfallen."
+    }
+  ],
+  "answers": "X The cereal yields are increasing\nV Irrigation gains in importance\nX The availability of nutrients increases\nV Higher yield losses ",
+  "title": "207 Categorie 2",
+  "explanation": "Increased dry periods, often accompanied by high temperatures, reduce growth and development of crops, which can lead to higher yield and quality losses. In addition, increasing drought also reduces the availability of nutrients in the soil. In grassland, especially in summer, entire cuts can be lost.",
+  "category": "agricultural-impacts"
+}
