@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Rahvusvaheliselt on kokku lepitud, et kliimanäitajate rehkendamise perioodi minimaalne pikkus on:"
+    }
+  ],
+  "question": "What is the minimum period to define a climate ?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X 10 aastat\nV 30 aastat\nX 50 aastat\nX 100 aastat"
+    }
+  ],
+  "order": 103,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Ilm on lühiajaline atmosfääri seisund, kliima aga pikaajaline ilmade režiim. Üksikud ilmastiku kõrvalekalded, näiteks põuane suvi, ei tähenda veel kliima muutumist. Kliimanäitajate rehkendamise perioodi minimaalne pikkus on kolmkümmend aastat. Arvestades pikaajalisi ilmastikuolude kõikumisi, on soovitatav kasutada veelgi pikemat ajavahemikku."
+    }
+  ],
+  "answers": "X 10 years\nV 30 years\nX 50 years\nX 100 years",
+  "title": "103 Categorie 1",
+  "explanation": "Climate in a narrow sense is usually defined as the average weather, or more rigorously, as the statistical description in terms of the mean and variability of relevant quantities over a period of time ranging from months to thousands or millions of years. The classical period for averaging these variables is 30 years.",
+  "category": "climate-change"
+}
