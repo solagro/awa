@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Millised loetletud meetmetest on sobivad, et tagada loomadele piisavalt sööta ka põuastel aastatel?"
+    }
+  ],
+  "question": "Which of the following measures are appropriate to ensure that animals have enough feed also during drought years?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Rohumaid tuleb igapäevaselt ja korralikult kasta\nV Söödakultuuridena tuleb kasvatada erinevaid liike ja sorte\nX Põuaperioodil tuleb söödakultuure rohkem väetada\nX Ükski loetletud meedetest ei sobi"
+    }
+  ],
+  "order": 307,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Et vähendada ja hajutada ilmastikust tulenevaid riske, on vajalik kasvatada erinevaid söödakultuure. Kui rohumaade saak põua tõttu väheneb ja muid söödakultuure ettevõttes ei kasvatata, siis võib suure tõenäosusega tekkida söödapuudus."
+    }
+  ],
+  "answers": "X Grasslands should be daily and properly irrigated\nV Different species and varieties must be grown as fodder plants\nX In the drought period, forage crops must be more fertilized\nX None of the measures listed above is appropriate",
+  "title": "307 Categorie 3",
+  "explanation": "In order to reduce and disperse the risks posed by the weather, it is necessary to grow different forage crops. If the yield of grassland decreases due to drought and other forage crops are not grown on the farm, then there is a high probability that fodder shortage will occur.",
+  "category": "adaptation"
+}
