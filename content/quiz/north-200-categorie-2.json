@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kliimamuutustega prognoositakse Eestis kevadiste temperatuuride tõusu. Kuidas mõjutab see kartulisortide saagikust?"
+    }
+  ],
+  "question": "The climate change scenarios indicate higher spring temperatures in Estonia.",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Ei mõjuta\nX Varaste sortide saagipotentsiaal tõuseb\nV Hiliste sortide saagipotentsiaal tõuseb\nX Nii varaste kui hiliste sortide saagipotentsiaal langeb"
+    }
+  ],
+  "order": 200,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Kõrgematel temperatuuridel kiireneb taimede füsioloogiline areng ja taimed läbivad kasvufaasid lühema ajaga. Kõrged temperatuurid võivad mugulate moodustumist pärssida. Taimede võrsumisvõime ja mugulate moodustumine väheneb eelkõige varastel sortidel."
+    }
+  ],
+  "answers": "X No effect\nX Increase in yield potential of early varieties\nV Increase in yield potential of late varieties\nX Yield potential of both early and late maturing varieties is decreasing.\n",
+  "title": "200 Categorie 2",
+  "explanation": "Higher temperatures cause plants complete their physiological development faster, hence less time for growth phases. Too high temperatures may inhibit the formation of tubers. First of all, the early varieties reduce the number of shoots and tubers.",
+  "category": "agricultural-impacts"
+}
