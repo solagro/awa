@@ -1,4 +1,6 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import Button from '@material-ui/core/Button';
 import Chip from '@material-ui/core/Chip';
 import { makeStyles } from '@material-ui/core/styles';
@@ -39,6 +41,7 @@ const CSVGenerator = () => {
   const [sourceFiles, setSourceFiles] = React.useState([]);
   const [zip, setZip] = React.useState();
   const [zipname, setZipname] = React.useState('default.zip');
+  const { t } = useTranslation();
 
   /* Generate CSVs */
   React.useEffect(() => {
@@ -59,7 +62,11 @@ const CSVGenerator = () => {
 
   return (
     <div>
-      <FileDrop className={classes.drop} onDrop={setSourceFiles}>
+      <FileDrop
+        className={classes.drop}
+        onDrop={setSourceFiles}
+        dropText={t('Drag \'n\' drop all workbook files, or click to select files')}
+      >
         <div className={classes.chipContainer}>
           {sourceFiles.map(({ name }) => (
             <Chip key={name} label={name} />
