@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En explotaciones ganaderas, el confort de los animales puede mejorarse mediante:"
+    }
+  ],
+  "question": "In livestock farms, animal comfort can be improved by:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Estructuras flexibles que puedan abrirse y cerrarse para mejorar la ventilación\nV El uso de ventiladores\nV El uso de aspersores\nV Buen acceso a puntos de agua"
+    }
+  ],
+  "order": 308,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "El estrés térmico en el ganado provoca una reducción de rendimientos, por ejemplo, en la producción de leche. Elementos para asistir la ventilación activa y pasiva, así como aspersores para refrescar al ganado son de gran ayuda."
+    }
+  ],
+  "answers": "V Flexible structures that can be opened or closed to improve ventilation \nV The use of fans\nV The use of sprinklers\nV A good access to water points",
+  "title": "308 Categorie 3",
+  "explanation": "Thermal stress in livestock leads to a reduction of yields, for example, with less milk production. Elements to enhance active and passive ventilation, as well as sprinklers to cool down the animals are of great help.",
+  "category": "adaptation"
+}
