@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Montreali protokoll tõestas, et maailm võib kokku tulla ja võtta kasutusele mõjuvaid meetmed kliimamuutuste pidurdamiseks. Milline on selle protokolli raames sõlmitud kokkulepe?"
+    }
+  ],
+  "question": "The Montreal Protocol proved that the world can come together and take effective action to combat climate change. What kind of agreement was signed under this protocol?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Sõlmiti kokkulepe, mis piiras lennutranspordi kasutamist ulatuslikul määral\nX Sõlmiti kokkulepe, mis piiras maismaatranspordi kasutamist ulatuslikul määral\nX Sõlmiti kokkulepe, mis piiras fossiilsete kütuste tootmist ja kasutamist ulatuslikul määral\nV Sõlmiti kokkulepe, mis piiras osoonikihti kahandavate ainete tootmist ja kasutamist ulatuslikul määral"
+    }
+  ],
+  "order": 109,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Montreali protokoll on rahvusvaheline kokkulepe, mis käsitleb osoonikihti kahandavate ainete tootmise ja kasutamise vähendamise või lõpetamise tähtaegu ja reguleerib nende ainetega kauplemist riikide vahel. Protokoll võeti vastu 1987. aastal ehk rohkem kui 30 aastat tagasi ja tänaseks on käibelt kõrvaldatud ca 99% osoonikihti kahandavatest ainetest."
+    }
+  ],
+  "answers": "X An agreement restricting the use of air transportation to a large extent\nX An agreement restricting the use of land transportation to a large extent\nX An agreement restricting the production and use of fossil fuels to a large extent\nV An agreement restricting the production and use of ozone depleting substances to a large extent",
+  "title": "109 Categorie 1",
+  "explanation": "The Montreal Protocol is an international agreement on time limits for the reduction or cessation of production and use of ozone-depleting substances and regulates trade of these substances between countries. Protocol was adopted in 1987, more than 30 years ago, and today about 99% of ozone-depleting substances have been withdrawn from circulation.",
+  "category": "climate-change"
+}
