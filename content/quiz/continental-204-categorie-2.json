@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welchen Einfluss hat der Klimawandel auf die Pflanzengesundheit?"
+    }
+  ],
+  "question": "What impact does climate change have on plant health?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Längere Vegetationszeiten und mildere Winter können dazu führen, dass hier neue Schadinsekten und Unkräuter heimisch werden\nX Feldmäuse werden durch den Klimawandel zurückgedrängt \nV Es gibt einen länger andauernden Schädlingsdruck\nX Viele Pilzkrankheiten werden aussterben"
+    }
+  ],
+  "order": 204,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Längere Vegetationszeiten ermöglichen mehrere Generationen bestimmter Schadinsekten und damit einen länger andauernden Schädlingsdruck. Darüber hinaus siedeln sich neue, wärmeliebende Schaderreger an. Gleichzeitig kann Hitze- und Trockenheitsstress die Kulturpflanzen schwächen und somit die Anfälligkeit für Schädigungen erhöhen."
+    }
+  ],
+  "answers": "V Longer vegetation periods and milder winters can lead to new insect pests and weeds becoming native \nX Field mice are being pushed back by climate change\nV There is a prolonged pest pressure\nX Many fungal diseases will die out",
+  "title": "204 Categorie 2",
+  "explanation": "Longer vegetation periods allow several generations of certain insect pests and thus a longer lasting pest pressure. In addition, new, heat-loving pests settle. At the same time, heat and drought stress can weaken crops and thus increase their susceptibility to damage.",
+  "category": "agricultural-impacts"
+}
