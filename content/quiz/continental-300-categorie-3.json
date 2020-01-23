@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche der folgenden Maßnahmen können umgesetzt werden, um Feuchtigkeit im Boden besser zu speichern?"
+    }
+  ],
+  "question": "Which of the following measures can be implemented to better store moisture in the soil?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Anbau einer vielfältigen Zwischenfruchtmischung\nV Anbau von Leguminosen \nX Einsatz des Pflugs \nX Fruchtfolge mit wenigen Fruchtfolgegliedern"
+    }
+  ],
+  "order": 300,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Ein fruchtbarer humoser Boden mit guter Krümelstruktur ist stabiler gegen Verschlämmung, nimmt Wasser schneller auf und kann es besser speichern. Maßnahmen, die zum Aufbau der Bodenfruchtbarkeit dienen, fördern die Wasserhaltefähigkeit des Bodens und sind geeignete Maßnahmen zur Anpassung an den Klimawandel."
+    }
+  ],
+  "answers": "V Cultivation of a diverse intercropping mixture\nV Cultivation of legumes \nX Use of the plough \nX Crop rotation with fewer crops in the crop rotation",
+  "title": "300 Categorie 3",
+  "explanation": "A fertile humus-rich soil with a good crumb structure is more resilient against silting up, absorbs water faster and can store it better. Measures to improve soil fertility promote soil water retention and are suitable measures for adapting to climate change.",
+  "category": "adaptation"
+}
