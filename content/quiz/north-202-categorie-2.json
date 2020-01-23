@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kuidas muutub talikultuuride olukord kliimamuutuste tagajärjel, kui väheneb püsiv lumekate ja sagenevad külmumis- ja sulamistsüklid?"
+    }
+  ],
+  "question": "What is going to change in winter crops, due to reducing permanent snow cover and increasing number of freeze and thaw cycles?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Suureneb lumiseene risk\nX Väheneb külmakergituste oht\nV Taimed eksponeeritakse külmakahjustusele elutegevuse intensiivistumise faasis\nX Taim kulutab intensiivselt toitaineid ja kevadeks jäävad taimed nõrgaks"
+    }
+  ],
+  "order": 202,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Prognoositakse, et tulevikus püsivat lumikatet peaaegu ei esine. Maapinna vahelduv külmumine ja sulamine toob kaasa külmakerked. Paljaskülm on eriti ränk kevadel, kui päike käivitab elutegevuse taime maapealsetes osades päevasel ajal, kuid pinnas on veel jäätunud ja juured ei omasta mullast niiskust. Füsioloogilise põua tagajärjel taimed kuivavad."
+    }
+  ],
+  "answers": "X The risk of snow mold increases\nX The risk of frost heaving is reducing\nV Plants get exposed to frost damage in the period of beginning of growth and vital functions.\nX Plant intensifies the active use of nutrients thus remaining weak by spring",
+  "title": "202 Categorie 2",
+  "explanation": "The projections foresee almost no permanent snow cover for the future. Changing conditions of freezing and thawing cause higher risk of frost heaving. Snowless frost can severely damage in spring, when the sunshine has restarted the active vital processes in aboveground parts of plants, but the frozen soil allows no moisture for the root system. Plants wither and die due to the physiological drought.",
+  "category": "agricultural-impacts"
+}
