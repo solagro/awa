@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Wie wirkt sich das veränderte Niederschlagsmuster auf die Landwirtschaft aus?"
+    }
+  ],
+  "question": "How does the altered rainfall pattern affect agriculture?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Erhöhte Gefahr von Überschwemmungen\nX Der Regen kommt dann, wenn er gebraucht wird\nV Erhöhte Gefahr von Erosion und Nährstoffverlusten\nX Es gibt kein verändertes Niederschlagsmuster"
+    }
+  ],
+  "order": 200,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Geringere Niederschläge im (Früh-)Sommer zur Wachstums-/Entwicklungszeit der Pflanzen können zu geringeren Erträgen führen. Vermehrte Niederschläge im Winterhalbjahr stellen ein Risiko für Quantität und Qualität der Ernte dar. Durch die Niederschläge zur Wachstumsruhe steigt die Gefahr für Erosion und Nährstoffverluste."
+    }
+  ],
+  "answers": "V Higher risk for floods\nX The rain comes when it is needed \nV Higher risk for erosion and nutrient loss\nX There is no altered rainfall pattern",
+  "title": "200 Categorie 2",
+  "explanation": "Less rainfall in (early) summer during the growth/development period of the plants can lead to lower yields. Increased precipitation in the winter months presents a risk for the quantity and quality of the harvest. The risk of erosion and nutrient loss increases as a result of precipitation for dormant growth.",
+  "category": "agricultural-impacts"
+}
