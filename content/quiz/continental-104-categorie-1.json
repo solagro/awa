@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche Aussage(n) zu Hitzewellen im Sommer ist korrekt?"
+    }
+  ],
+  "question": "Which statement(s) about heat waves in summer is (are) correct?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Hitzewellen werden häufiger auftreten und länger anhalten\nX Hitzewellen werden seltener aber länger auftreten\nX Hitzewelle nennt man eine Phase mehrerer Tage mit mehr als 25°C\nV Die Eintrittswahrscheinlichkeit von Hitzewellen hat sich in einigen Gegenden jetzt schon mehr als verdoppelt"
+    }
+  ],
+  "order": 104,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "In Mitteleuropa spricht man von einer Hitzewelle, wenn an min. drei Tagen in Folge die Maximaltemperatur von 30 °C überschritten wird und hält so lange an, wie die Maximaltemperatur über 30 °C bleibt und an keinem Tag eine Maximaltemperatur von 25 °C unterschritten wird. Stabile Hitzewellen können zu langen Hitze- /Dürreperioden führen."
+    }
+  ],
+  "answers": "V Heat waves will occur more frequently and last longer \nX Heat waves will occur less often but last longer\nX A heat wave is a phase of several days with more than 25°C\nV The probability of a heat wave occurring has more than doubled in some areas.",
+  "title": "104 Categorie 1",
+  "explanation": "In Central Europe, a heat wave occurs when the maximum temperature of 30 °C is exceeded for at least three consecutive days, lasts as long as the maximum temperature remains above 30 °C and never falls below a maximum temperature of 25 °C on a single day. Long lasting heat waves can lead to long heat / drought periods.",
+  "category": "climate-change"
+}
