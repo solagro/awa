@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En explotaciones ganaderas, temperaturas más altas de abril a septiembre pueden causar:"
+    }
+  ],
+  "question": "In livestock farms, higher temperatures between April and September can cause:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Reducción en la producción de forraje y autosuficiencia\nV Reducción en el nivel de confort térmico del ganado\nV Reducción en la producción de grano y autosuficiencia\nX Reducción en la ración nutricional"
+    }
+  ],
+  "order": 205,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Altas temperaturas de abril a septiembre pueden tener efectos negativos en producción de flores, su fertilidad y  llenado del grano, y provocar mayores tasas de evapotranspiración. Por ello, la autosuficiencia en producción de grano y forraje se puede ver comprometida. Pueden causar aumento del estrés térmico de animales, con bajada de producción."
+    }
+  ],
+  "answers": "V Lower fodder production and self-sufficiency \nV Lower thermal comfort of the animals\nV Lower grain production and self-sufficiency\nX Lower nutrition feed needs",
+  "title": "205 Categorie 2",
+  "explanation": "Higher temperatures between April and September can have negative effects in the production of flowers, their fertility and the grain filling phase, apart from leading to higher evapotranspiration rates. Also, they can cause a higher thermal stress of the animals, entailing lower yields associated.",
+  "category": "agricultural-impacts"
+}
