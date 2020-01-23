@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kuidas kaitsta loomi kuumastressi tekkimise eest?"
+    }
+  ],
+  "question": "How to protect animals from heat stress?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Loomi on vaja sagedamini pügada\nX Tuleb suurendada allapanu kogust\nV Laudas peavad olema ventilatsiooni-/jahutusseadmed, karjamaal pevad olema looduslikud ja/või tehislikud varjualused\nX Loomi ei ole vaja kaitsta, sest põhjamaises kliimas esine neil kuumastressi"
+    }
+  ],
+  "order": 305,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Uute lautade rajamisel tuleb need  võimaluse korral ehitada tuultele avatud kohta, et tagada hea looduslik ventilatsioon. Lauda räästakõrgused kavandatakse nii, et võimalik on suur õhu sissevool. Peale selle tuleb suvekuudel mõnes laudas mõelda mehaanilise toetava ventilatsiooni paigaldamisele koos täiendava jahutusega."
+    }
+  ],
+  "answers": "X Animals need to be sheared more often\nX The amount of bedding must be increased\nV Ventilation/cooling equipment must be provided in the barn, natural and/or artificial sheds must be provided on the pastures\nX There is no need to protect animals from heat stress in the Nordic climate",
+  "title": "305 Categorie 3",
+  "explanation": "Whenever new barns are being constructed, they should, where possible, be built in open areas to allow good natural ventilation. The eaves heights of the roof are designed in such a way that good air inflow is possible. In addition, mechanical ventilation to provide additional cooling should be considered in some barns during the summer months.",
+  "category": "adaptation"
+}
