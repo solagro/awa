@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En viñedo, la poda en verde durante la fase de crecimiento conlleva:"
+    }
+  ],
+  "question": "In vineyards, green pruning during the growing phase entails:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X Menos resistencia al estrés hídrico\nV Mejor equilibrio del ratio hoja/fruto y mayor resistencia al estrés hídrico\nX Menor calidad de la uva\nX Racimos más pequeños"
+    }
+  ],
+  "order": 309,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "En condiciones de sequía y estrés térmico, una menor superficie foliar reduce la evapotranspiración del cultivo y le permite adaptarse a la escasez de agua. Esta superficie foliar estará, asimismo, equilibrada con la cantidad de uva que la viña puede producir en unas condiciones determinadas."
+    }
+  ],
+  "answers": "X Lower resistance against water stress\nV Better balance between leaf and fruit rates and more resistance against water stress \nX Lower grape quality\nX Smaller bunches",
+  "title": "309 Categorie 3",
+  "explanation": "In dry and thermal stress conditions, a smaller leaf surface reduces the evapotranspiration of the crop and allows it to adapt to water scarcity conditions. This leaf surface will be balanced as well with the amount of grapes that the vine is able to produce in certain conditions.",
+  "category": "adaptation"
+}
