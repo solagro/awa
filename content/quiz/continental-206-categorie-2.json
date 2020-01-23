@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Wie wirkt sich eine längere Vegetationsperiode auf die Landwirtschaft in Deutschland aus?"
+    }
+  ],
+  "question": "How does a longer vegetation period affect agriculture in Germany?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Die Blütenfrostgefahr für Obstbäume steigt.\nX Eine längere Vegetationsperiode ermöglicht den Anbau anderer Sorten und Pflanzen mit niedrigerem Temperatursummenbedarf.\nV Eine längere Vegetationsperiode kann den Schädlingsdruck erhöhen z.B. durch weitere Entwicklungszyklen.\nX Eine längere Vegetationsperiode führt zu mehr Niederschlägen im Herbst."
+    }
+  ],
+  "order": 206,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Eine längere Vegetationsperiode bietet auch Chancen für den Obst- und vor allem Weinbau durch den Anbau neuer, wärmeliebender (Rotwein-)Sorten bzw. den Anbau in bisher kühleren, höheren Lagen."
+    }
+  ],
+  "answers": "V The danger of flower frost for fruit trees increases\nX A longer vegetation period enables the cultivation of other varieties and plants with a lower total temperature requirement\nV A longer vegetation period can increase the pest pressure e.g. by further development cycles\nX A longer vegetation period leads to more precipitation in autumn",
+  "title": "206 Categorie 2",
+  "explanation": "A longer vegetation period also offers opportunities for fruit-growing and above all viticulture through the cultivation of new, warm-loving (red wine) varieties or cultivation in up to now cooler and higher altitudes.",
+  "category": "agricultural-impacts"
+}
