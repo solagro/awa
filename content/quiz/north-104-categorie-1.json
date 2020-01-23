@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kliimamuutuste prognoosimiseks on koostatud mitmeid mudeleid ja stsenaariumeid. Milliseid RCP stsenaariume on kasutatud kliimamuutuste prognoosimiseks Eestis?"
+    }
+  ],
+  "question": "Several models and scenarios have been developed to predict climate change. What RCP scenarios have been used to predict climate change in Estonia?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X RCP2.6 – väga optimistlik, hea riikidevaheline koostöö, arenenud süsinikupüüdmise tehnoloogiad.\nX RCP 4,5 – mõõdukas, riikide poolt olulisi leevendavaid meetmeid eeldavad.\nX RCP 8,5 – pessimistlik, nõrk riikidevaheline koostöö, valdavalt süsinikul põhinev majandus. \nV RCP 4,5 ja RCP 8,5"
+    }
+  ],
+  "order": 104,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Riikliku kliimamuutustega kohanemise arengukava väljatöötamisel on teadusliku alusena kasutatud aruannet „Eesti tuleviku kliimastsenaariumid aastani 2100“. Nimetatud aruanne on alusmaterjaliks atmosfääri seisundist mõjutatud valdkondade hindamisel. Eesti kliimaprojektsioonid on koostatud globaalsete kliimastsenaariumite RCP4.5 ja RCP8.5 põhjal."
+    }
+  ],
+  "answers": "X RCP2.6 - Very optimistic, good transnational cooperation, advanced carbon capture technologies.\nX RCP 4.5 - Moderate, requiring significant mitigation action by states.\nX RCP 8.5 - Pessimistic, weak transnational cooperation, predominantly carbon based economy.\nV RCP 4,5 and RCP 8,5",
+  "title": "104 Categorie 1",
+  "explanation": "The report \"Future Climate Scenarios for Estonia until 2100\" has been used as the scientific basis for the development of the National Climate Change Adaptation Plan. This report is the basis for evaluating the areas affected by atmospheric conditions. Estonian climate projections are based on the global climate scenarios RCP4.5 and RCP8.5.",
+  "category": "climate-change"
+}
