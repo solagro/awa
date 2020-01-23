@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Milliste põllumajandusloomade kasvatamisel on pikkade põuaperioodide mõju kõige suurem?"
+    }
+  ],
+  "question": "Which farm animals are most affected by long drought periods?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Munakanade\nV Taimtoiduliste loomade\nX Broilerite\nX Sigade"
+    }
+  ],
+  "order": 207,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Taimtoiduliste loomade (sh veiste, lammaste, kitsede, hobuste jt) söödabaasi moodustavad eelkõige rohusöödad, mille importimine põuavabadest piirkondadest on keerukam ja kulukam. Põuaperioodidest tingitud söödanappuse tõttu on paljud tootjad pidanud osa loomi lihakombinaati saatma."
+    }
+  ],
+  "answers": "X Laying hens\nV Herbivorous animals\nX Broilers\nX Pigs",
+  "title": "207 Categorie 2",
+  "explanation": "The feeding of herbivorous animals (including cattle, sheep, goats, horses, etc.) is based on grass/forage, which is more difficult and expensive to import from drought-free areas. Due to a shortage of feed as a result of longer drought period, many producers have had to send some animals to slaughterhouse.",
+  "category": "agricultural-impacts"
+}
