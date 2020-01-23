@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Sademete hulka prognoositakse tõusmas. Kas see tulevikus ühtlustab sademete jaotuse vegetatsiooniperioodil?"
+    }
+  ],
+  "question": "The sum of precipitation is projected to be increasing locally. Does it cause the even distribution of moisture during the vegetative period?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Ei, suurenemine toimub lühiajaliste tugevate hoovihmade arvel.\nX Jah, sademed jagunevad ühtlaselt kõigile suvekuudele.\nX Jah, suureneb kevadiste sademete hulk ja kevadine põuarisk väheneb.\nX Sademete jaotus ei muutu."
+    }
+  ],
+  "order": 107,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Sademete hulga suurenemine  (aasta keskmiselt ca 20% rohkem) on prognoositud pms talveperioodile. Mudelid prognoosivad äärmuslike sademete juhtumite hulga suurenemist, kuid arvestades selle väga väikest esinemise tõenäosust suuremal osal aastast, on see oluline vaid suvel. Sellest tuleneb suurem koormus hüdroloogilistele süsteemidele."
+    }
+  ],
+  "answers": "V No, the increase has been projected on account of short heavy showers.\nX Yes, there will be plenty of rain in every summer month.\nX Yes, the precipitation is increasing in spring which reduces the drought risk.\nX No changes in distribution of precipitation is occurring.",
+  "title": "107 Categorie 1",
+  "explanation": "Increase of the sum of precipitation (in average + 20%) has been projected to occur mostly in the winter season. Various models indicate increasing extreme heavy rains; however, due to low probability, they might be significant only in summer period. Thus, the workload of hydrological systems may increase.",
+  "category": "climate-change"
+}
