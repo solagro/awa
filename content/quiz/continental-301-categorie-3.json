@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche Vorteile bietet eine vielfältige Fruchtfolge in Hinblick auf den Klimawandel?"
+    }
+  ],
+  "question": "Which advantages does a diverse crop rotation offer in terms of climate change?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Eine höhere Vielfalt verringert das Risiko von Ernteausfällen \nV Eine vielfältige Fruchtfolge ermöglicht, Unkraut- und Krankheitsdruck strategisch zu reduzieren\nX Man kann Zitronenbäume anbauen\nX Es gibt keine Vorteile"
+    }
+  ],
+  "order": 301,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Jede Kultur hat unterschiedliche Anbaueigenschaften bzw. Anforderungen. So verteilt sich das Anbaurisiko, das u.a. durch das Wetter, Schädlinge oder Pflanzenkrankheiten beeinflusst wird, auf mehrere Kulturen. Zudem wirken sich vielfältige Fruchtfolgen positiv auf die Bodenfruchtbarkeit aus und somit die Wasserhaltefähigkeit des Bodens."
+    }
+  ],
+  "answers": "V Greater diversity reduces the risk of crop failures\nV A diverse crop rotation allows us to strategically reduce weed and disease pressure\nX You can grow lemon trees\nX There are no advantages",
+  "title": "301 Categorie 3",
+  "explanation": "Each crop has different cultivation characteristics or requirements. The cultivation risk, which is influenced by the weather, pests or plant diseases, is spread over several crops. In addition, various crop rotations have a positive effect on soil fertility and thus on the soil's ability to retain water.",
+  "category": "adaptation"
+}
