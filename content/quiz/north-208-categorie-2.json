@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kuidas mõjutavad kliimamuutused puuvilja- ja viinamarjakasvatust?"
+    }
+  ],
+  "question": "How is climate change affecting fruit and grape production?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Saagikus suureneb oluliselt\nX Kliimamuutused ei mõjuta puuvilja- ja viinamarjakasvatust\nV Ekstreemsete ilmastikunähtuste sagenemine võib põhjustada saagikadu ja halvendada kvaliteeti.\nV Kahjurite ja haigustekitajate surve suureneb "
+    }
+  ],
+  "order": 208,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Ekstreemsete ilmastikunähtuste sagenemine nt. rahekahjustused võivad põhjustada kvaliteedi kadu; tootmiskulu suurendab vajadus kasutada katteid, mis kaitsevad rahe- ja talvekahjustuste eest.\n\nSuurenenud kahjurite ja haiguste arvukus  ning uute kahjurite ja haigustekitajate avaldumine võivad põhjustada otsest või kaudset saagikadu."
+    }
+  ],
+  "answers": "X Yields increase significantly\nX Climate change does not affect fruit and grape production\nV Increasing extreme weather events can result crop loss and quality degradation\nV The pressure of pests and pathogens will increase",
+  "title": "208 Categorie 2",
+  "explanation": "Increase in extreme weather events ( ie.  hail damage) may cause loss of quality, and the need to use protective winter or hail covers would increase direct production costs. Increased abundance of pests and diseases - higher pest pressure, introduction of new emerging pests and pathogens may result in direct and indirect crop losses.",
+  "category": "agricultural-impacts"
+}
