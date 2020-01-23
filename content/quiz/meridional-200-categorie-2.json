@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En la región meridional, los episodios de lluvia en un futuro cercano serán:"
+    }
+  ],
+  "question": "In the Southern region, rainfall episodes in a near future will be:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Más intensos pero menos frecuentes\nX Menos intensos pero más frecuentes\nX Menos intensos y menos frecuentes\nX No sufrirán cambios con respecto al periodo actual"
+    }
+  ],
+  "order": 200,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "En la región meridional, lluvias más intensas y menos frecuentes provocarán más inundaciones y mayores tasas de erosión. Asimismo, el suelo deberá estar preparado para infiltrar y almacenar el agua de la manera más efectiva posible, acumulándola y haciendo que esté disponible para el cultivo hasta que la siguiente lluvia vuelva a tener lugar."
+    }
+  ],
+  "answers": "V More intense but less frequent\nX Less intense but more frequent\nX Less intense and less frequent\nX They won’t change compared to the current period",
+  "title": "200 Categorie 2",
+  "explanation": "In the Southern region, more frequent and less intense rainfalls will lead to more flood events and higher erosion rates. Soil must be prepared to infiltrate and store water more effectively, making it available for the crop until the next rainfall event takes place.",
+  "category": "agricultural-impacts"
+}
