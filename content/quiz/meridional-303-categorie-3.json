@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En cultivos herbáceos para forraje, la asociación de leguminosas y cereales puede:"
+    }
+  ],
+  "question": "In fodder arable crops, the association of legumes and cereals can:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Mejorar los rendimientos\nX Disminuir la fertilidad del suelo\nX Aumentar los ataques de plagas y enfermedades\nX Empeorar la estructura del suelo"
+    }
+  ],
+  "order": 303,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Las leguminosas son capaces de fijar el nitrógeno atmosférico mediante la asociación de sus raíces con bacterias del suelo, nitrógeno que puede ser aprovechado por el cereal. Asimismo, el cereal ofrece un tallo erguido en el cual la leguminosa puede apoyarse para un crecimiento más erguido."
+    }
+  ],
+  "answers": "V Improve yields\nX Reduce soil fertility\nX Increase pests and diseases attacks\nX Worsen soil structure",
+  "title": "303 Categorie 3",
+  "explanation": "Legumes are able to fix atmospheric nitrogen through the association of their roots with soil bacteria which can be used by the cereal. Also, cereals offer their stalk for legumes to climb and grow larger.",
+  "category": "adaptation"
+}
