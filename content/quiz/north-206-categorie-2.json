@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kuidas väljendub lehmadel kuumastress?"
+    }
+  ],
+  "question": "How are the cows affected by heat stress?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X väheneb söömus ja suureneb veetarve\nX toimuvad muutused ainevahetuses ja toitainete tarbes\nX  suureneb vedelikukaotus ning hingamissagedus\nV kuumastress väljendub kõikidel eelpool loetletud viisidel"
+    }
+  ],
+  "order": 206,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Lehmadel väljendub kuumastress mitmel viisil: väheneb söömus ja suureneb veetarve, toimuvad muutused ainevahetuses ja toitainete tarbes, suureneb vedelikukaotus ning hingamissagedus, tõuseb kehatemperatuur ja leiavad aset muutused veres leiduvate hormoonide sisalduses."
+    }
+  ],
+  "answers": "X Feed intake reduces and water intake increases\nX Changes in metabolism and nutrient requirements\nX Increased body fluid loss and respiratory rate\nV Heat stress is expressed in all of the ways listed above",
+  "title": "206 Categorie 2",
+  "explanation": "In cows, heat stress is manifested in many ways: decreased feed intake and increased water intake, changes in metabolism and nutrient intake, increased body fluid loss and respiratory rate, increased body temperature and changes in blood hormones.",
+  "category": "agricultural-impacts"
+}
