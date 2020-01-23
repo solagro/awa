@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Millised agrotehnilised võtted soodustavad paremat talvitumist?"
+    }
+  ],
+  "question": "Which agrotechnical measures improve the overwintering of plants?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Ribakülv\nX Intensiivne aktiivsete tööorganite kasutamine nt. freesid\nV Otsekülvi kastutamine talikultuuridel\nX Kasvuregulaatoritest hoidumine sügisperioodil"
+    }
+  ],
+  "order": 304,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Talvitumist aitavad parandada mh minimeeritud, otsekülvi ja ribakülvi kasutamine. Eelneva kultuuri kõrretüü aitab lund koguda ja suuremate miinuskraadide juures talvitumine parem. Täiuslikumate mullaharimisriistade ja külvikute kasutamine soodustab mulda kobestades parema juurekava."
+    }
+  ],
+  "answers": "V Strip-till\nX Rotary tillers and other intensive soil processing machinery\nV No-till appliances in winter crops\nX Avoiding growth regulators in the autumn",
+  "title": "304 Categorie 3",
+  "explanation": "Overwintering of the winter crops can be improved by no-till, reduced tillage and strip-till. The stubble from previous crops may assist in gathering the snow, which buffers the extreme cold. More advanced tillage equipment reduces the number of operations in the field, and by aeration of the soil, better root system will develop.",
+  "category": "adaptation"
+}
