@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche Folgen können geringere Wintertemperaturen haben?"
+    }
+  ],
+  "question": "What consequences can lower winter temperatures have?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Der Schädlings-, Krankheits-, Unkrautdruck steigt\nX Wühlmauspopulationen werden verringert\nX Nährstoffmineralisierung wird gestoppt\nX Sommergetreide kann im Herbst ausgesät werden"
+    }
+  ],
+  "order": 208,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Schädlinge, Unkräuter und Krankheitserreger profitieren von milden Wintertemperaturen und können im Frühjahr mit einer stärkeren Anfangspopulation starten. Hohe Wintertemperaturen können sich negativ auf die Kälteresistenz der Pflanzen auswirken und damit Schädigungen durch Winterfröste fördern. Fehlender Frost vermindert die Frostgare des Bodens."
+    }
+  ],
+  "answers": "V The pressure of pests, diseases and weeds increases\nX Vole populations are reduced\nX Nutrient mineralization is stopped\nX Summer cereals can be sown in autumn",
+  "title": "208 Categorie 2",
+  "explanation": "Pests, weeds and pathogens benefit from mild winter temperatures and can start in spring with a stronger initial population. High winter temperatures can have a negative effect on the cold resistance of plants and thus promote damage caused by winter frosts. A lack of frost reduces the frost browning of the soil.",
+  "category": "agricultural-impacts"
+}
