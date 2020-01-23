@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kuidas on võimalik parandada viinapuude talvekindlust?"
+    }
+  ],
+  "question": "How is it possible to improve winter-hardiness of grapes?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Oksad tuleb maha painutada ning katta aiamulla või kuuseokstega\nV Võib kasutada talvekatteid\nX Lõigatakse ära kogu viinapuu maapealne osa\nX Viinapuu on täiesti talvekindel ja teda ei pea talveks üldse katma"
+    }
+  ],
+  "order": 308,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Et vähendada talvekahjustusi tuleks viinapuu oksad talveks maapinna lähedale painutada ning katta aiamulla või kuuseokstega. Kui oksi ei saa hästi painutada, siis võib kasutada ka talvekatteid. Üksikud sordid on ka talvekindlad ning neid ei pea katma."
+    }
+  ],
+  "answers": "V The branches should be bent down and covered with garden soil or spruce branches\nV Winter covers can be used\nX The whole part of the vine above the ground is cut off\nX The vine is completely winter resistant and there is no need to use any covers",
+  "title": "308 Categorie 3",
+  "explanation": "In order to minimize winter damage, the vine branches should be bent close to the ground for the winter and covered with garden soil or spruce branches. If the branches cannot be bent well, winter coverings may also be used. Some cultivars are also winter resistant and do not need to be covered.",
+  "category": "adaptation"
+}
