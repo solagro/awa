@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Äärmuslike kliimasündmuste sagenemine (nt. tugev tuul, tormid, tromb jm) suurendab elektrikatkestusi ja automaatikaseadmete töö häired. Kuidas peaksid loomakasvatusettevõtted end selliste probleemide vastu kindlustama?"
+    }
+  ],
+  "question": "Increasing frequency of extreme climatic events (eg strong winds, storms, clot, etc.) increases power failures and malfunctions of automation equipment. How should livestock farms ensure themselves against such problems?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Vältima või vähendama laudahoonetes elektri- ja automaatikaseadmete kasutamist\nX Elektrikatkestuse puhul tuleb viivitamatult helistada elektri tarnijale ja nõuda kiiret elektriühenduse taastamist\nV Soetama omale piisava jõudlusega varugeneraatori, mis tagab tähtsamate seadmete töö kuni elektrikatkestuse likvideerimiseni \nX Äärmuslikud kliimasündmused ei valmista loomakasvatusettevõtetele mingeid tõsisemaid probleeme"
+    }
+  ],
+  "order": 306,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Kõik loomakasvatusettevõtted, kus loomade pidamise, hooldamise ja tervisliku seisundi tagamine sõltub otseselt elektrisedamete tööst, peavad soetama omale piisava jõudlusega varugeneraatori, mis tagab tähtsamate seadmete töö kuni elektrikatkestuse likvideerimiseni."
+    }
+  ],
+  "answers": "X Avoid or reduce the use of electrical and automation equipment in the stable buildings\nX In the event of a power failure, you must immediately call your electricity supplier and request an immediate re-connection\nV Purchase a backup power generator with sufficient performance to ensure the operation of major equipment until the end of power failure\nX Extreme climate events do not pose any major problems for livestock farms",
+  "title": "306 Categorie 3",
+  "explanation": "All livestock farms where the keeping, care and health of the animals are directly dependent on the operation of the electrical equipment must have a backup generator with sufficient capacity to ensure the operation of the essential equipment until the power failure is eliminated.",
+  "category": "adaptation"
+}
