@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kõige suurem osa Eestis õhku paisatavatest kasvuhoonegaasidest pärineb:"
+    }
+  ],
+  "question": "Most of the greenhouse gases emitted in Estonia come from:",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Transpordisektorist\nX Keemiasektorist\nX Põllumajandussektorist\nV Energeetikasektorist"
+    }
+  ],
+  "order": 102,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Suur osa Eestis õhku paisatavast kasvuhoonegaasidest pärineb energeetikasektorist. Näiteks 2016. aastal tekkis sooja- ja elektritootmise kõrvalsaadusena 12,3 miljonit tonni süsihappegaasi, mis moodustas Eesti kogu CO2 heitmest umbes 63 protsenti."
+    }
+  ],
+  "answers": "X Transport sector\nX Chemical sector\nX Agricultural sector\nV Energy sector",
+  "title": "102 Categorie 1",
+  "explanation": "The Energy sector accounted for 88.74% of total GHG emissions in 2017, followed by Agriculture (6.6%), Industrial processes and product use (3.08%) (including indirect CO2) and Waste (1.58%).",
+  "category": "climate-change"
+}
