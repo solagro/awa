@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "Temperaturas mínimas más altas en septiembre pueden causar:"
+    }
+  ],
+  "question": "Higher minimum temperatures in September can cause:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Impacto negativo en el color y el aroma de las uvas\nX Mayor disponibilidad hídrica\nX Menos ataques de plagas\nX Las respuestas 1 y 3 son correctas"
+    }
+  ],
+  "order": 204,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "En viñedos, son necesarias ciertas temperaturas mínimas en septiembre para asegurar la calidad de la uva, es el conocido como Índice de Frescor Nocturno. Si la temperatura mínima es más elevada, pueden encontrarse problemas de calidad."
+    }
+  ],
+  "answers": "V Negative impact on the color and aroma of the grapes\nX More water availability\nX Fewer pest attacks\nX Answers 1 and 3 are both correct",
+  "title": "204 Categorie 2",
+  "explanation": "In vineyards, certain minimum temperatures in September are necessary to ensure the quality of the grapes. This is known as the Cool Night Index. If minimum temperatures are high, we can find some quality issues.",
+  "category": "agricultural-impacts"
+}
