@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En cultivos de maíz, temperaturas por encima de los 35º C entre junio y septiembre pueden causar:"
+    }
+  ],
+  "question": "In maize crops, temperatures above 35 degrees Celsius between June and September can cause:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X Impactos negativos en la fase de floración\nX Impactos negativos en la fase de llenado del grano\nX Impactos negativos en la fase de desarrollo del grano\nV Todas son correctas"
+    }
+  ],
+  "order": 207,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Las altas temperaturas por encima de los 35º C influyen negativamente en la fase de floración, la fertilidad de las flores, el desarrollo del grano y su llenado, derivando todo esto en problemas de pérdida de rendimientos."
+    }
+  ],
+  "answers": "X Negative impacts in the flowering phase\nX Negative impacts in the grain filling phase\nX Negative impacts in the growing phase\nV All of them are correct",
+  "title": "207 Categorie 2",
+  "explanation": "High temperatures above 35 degrees Celsius affect negatively the flowering phase, the fertility of the flowers, grain development and its filling, causing lower yields.",
+  "category": "agricultural-impacts"
+}
