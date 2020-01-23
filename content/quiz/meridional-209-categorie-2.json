@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En viñedo, fuertes eventos de lluvia en agosto pueden desembocar en:"
+    }
+  ],
+  "question": "In vineyards, strong rainfall events in August can lead to:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Daños en la uva y menores rendimientos\nX Menos enfermedades fúngicas y más rendimientos\nX Mayor déficit hídrico\nX Menores tasas de erosión"
+    }
+  ],
+  "order": 209,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Ya sea por el agua que se acumula entre las uvas y fomenta problemas de origen fúngico o por el daño mecánico provocado por precipitaciones en forma de granizo, los daños en la uva y la caída de los rendimientos pueden ser acusados durante esta época del año."
+    }
+  ],
+  "answers": "V Damage of grapes and lower yields\nX Fewer fungal diseases and higher yields\nX Higher water deficit\nX Lower erosion rates",
+  "title": "209 Categorie 2",
+  "explanation": "Either due to the water accumulated between the grapes that causes fungal diseases, or mechanical damage due to hail, yield losses can be very high in this period.",
+  "category": "agricultural-impacts"
+}
