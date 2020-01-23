@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche Folgen können weniger Spätfrost im April und Mai haben?"
+    }
+  ],
+  "question": "What are the consequences of less late frost in April and May?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Weniger Frostschäden an jungen Blättern in Weinbergen und an den Obstblüten\nX Vermehrte Aromabildung in den Weintrauben\nX Späteres Abreifen der Apfelernte\nX Verringerung der Getreideerträge"
+    }
+  ],
+  "order": 209,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Weniger Spätfrost in der Knospenphase und zu Beginn des vegetativen Wachstums in Dauerkulturen vermindert Schäden durch Einfrieren der Pflanze. Weniger Spätfrosttage erfordern weniger Aufwand zur Schadensverhinderung. \n\nDer tendenziell frühere Vegetationsbeginn und somit frühere Blühbeginn erhöht jedoch das Schadenspotential bei Spätfrostereignissen."
+    }
+  ],
+  "answers": "V Less frost damage to young leaves in vineyards and fruit blossoms\nX Increased aroma formation in the grapes\nX Later ripening of the apples\nX Reduction of cereal yields",
+  "title": "209 Categorie 2",
+  "explanation": "Less late frost in the bud phase and at the beginning of vegetative growth in permanent crops reduces damage from freezing of the plants. Fewer late frost days require less effort to prevent damage. \n\nHowever, the tendency of an earlier vegetation start and thus earlier flowering increases the damage potential during late frost events.",
+  "category": "agricultural-impacts"
+}
