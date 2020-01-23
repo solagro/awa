@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Was sind Treibhausgase?"
+    }
+  ],
+  "question": "What are greenhouse gases?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "X Gase in der Atmosphäre, die verhindern, dass Sonnenstrahlung die Oberfläche unseres Planeten erreicht, wie Methan und Kohlendioxid.\nX Gase in der Atmosphäre, die Strahlung absorbieren und emittieren, wie beispielsweise Sauerstoff.\nX Gase in der Atmosphäre, die Strahlung absorbieren und emittieren, wie Ozon und Helium.\nV Gase in der Atmosphäre, die die von der Erde zurückgehende (terrestrische) Strahlung absorbieren, wie Kohlendioxid, Lachgas und Methan."
+    }
+  ],
+  "order": 101,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Diese Gase lassen das Sonnenlicht die Erdoberfläche erreichen und erwärmen. Die Erdoberfläche gibt dann Energie in Form von Infrarotstrahlung zurück, die von Treibhausgasen wie Kohlendioxid (CO2), Methan (MH4) oder Ozon (unter anderem) absorbiert wird. Sauerstoff und Helium sind keine Treibhausgase."
+    }
+  ],
+  "answers": "X Gases in the atmosphere that prevent solar radiation from reaching the surface of our planet, such as methane and carbon dioxide.\nX Gases in the atmosphere that absorb and emit radiation, such as oxygen.\nX Gases in the atmosphere that absorb and emit radiation, such as ozone and helium.\nV Gases in the atmosphere that absorb the  radiation returning from the Earth (terrestrial), such as carbon dioxide, nitrous oxide and methane.",
+  "title": "101 Categorie 1",
+  "explanation": "These gases allow sunlight to reach and warm the Earth's surface. The Earth's surface then returns energy in the form of infrared radiation, which is absorbed by greenhouse gases such as carbon dioxide, methane or ozone (among others). Oxygen and helium are not greenhouse gases.",
+  "category": "climate-change"
+}
