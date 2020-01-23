@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Millest on tingitud talvise pinnakatte vajadus kliimasoojenemise aspektist?"
+    }
+  ],
+  "question": "What elicits the need for winter soil cover, from the perspective of climate change?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Taimetoitainete väljaleostumise vähendamiseks\nV CO2 emissioonide vähendamiseks\nX Mulla orgaanilise aine lagundamiseks\nX Taimeeritiste ja laguproduktide mõju suurendamiseks"
+    }
+  ],
+  "order": 203,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Kui maapind ei külmu, aktiveeruvad bioloogilised protsessid. Sellega rikastub mullalahus toitainetega ja kuna sulas mullas vesi infiltreerub, siis sellega võib osa toitaineid välja leostuda. Talvine pinnakate aitab siduda vabanenud toitaineid. Kui ei kasvatata talikultuure, siis üheks võimaluseks on selleks ka talviste vahekultuuride kasvatamine."
+    }
+  ],
+  "answers": "V Reduction of nutrient leaching\nV Reduction of emission of CO2\nX Decomposition of soil organics\nX Increasing effect of plant exudates and breakdown products",
+  "title": "203 Categorie 2",
+  "explanation": "In unfrozen soil, biological processes remain active. Thus, soil water becomes enriched with nutrients and some of the nutrients may drift away. Winter soil cover binds the free nutrients. In fields without winter cash crops, alternative cover crop can be cultivated in winter season.",
+  "category": "agricultural-impacts"
+}
