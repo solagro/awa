@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Die Zunahme der Anzahl an heißen Tagen (>30°C)…"
+    }
+  ],
+  "question": "The increase in the number of hot days (>30°C)…",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "X …lässt Getreide höher wachsen\nV …im Mai kann den Befruchtungserfolg von Getreide negativ beeinträchtigen und Mindererträge verursachen\nX …fördert die Fotosynthese\nV …kann zu Notreife im Getreide führen"
+    }
+  ],
+  "order": 201,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Bei den meisten Getreidearten wirken sich Temperaturen von über 30°C um die Blütezeit schädlich auf den Ertrag aus durch Verminderung der Körnerzahl aufgrund ausbleibender Befruchtung. Sehr hohe Temperaturen verhindern eine optimale Kornfüllung, es entstehen kleinere Körner, vor allem in Verbindung mit Trockenheit."
+    }
+  ],
+  "answers": "X … makes cereals grow taller\nV ...in May can negatively affect the fertilisation success of cereals and cause lower yields.\nX …promotes photosynthesis\nV …can lead to emergency ripening in the grain",
+  "title": "201 Categorie 2",
+  "explanation": "For most cereals, temperatures above 30°C around the flowering period have a detrimental effect on the yield by reducing the number of grains due to lack of fertilisation. Very high temperatures prevent an optimal grain filling, smaller grains are produced, especially when dry.",
+  "category": "agricultural-impacts"
+}
