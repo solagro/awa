@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "Las temperaturas máximas por encima de 30º C en mayo pueden causar:"
+    }
+  ],
+  "question": "Maximum temperatures above 30 degrees Celsius in May can cause:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Asurado del grano en el cereal\nX Impacto negativo en el engorde de las pipas de girasol\nX Mayores tasas de polinización en cultivos permanentes\nX Todas son correctas"
+    }
+  ],
+  "order": 201,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Temperaturas máximas por encima de los 30º C en la fase de llenado del grano en cereal puede provocar que se arrugue, tenga un peso menor y dé problemas de bajos rendimientos, en un fenómeno que se conoce como asurado."
+    }
+  ],
+  "answers": "V Shrivelling of the grain in cereals\nX Negative impact on the fattening of the pipes in sunflower \nX Higher pollination rates in permanent crops \nX All of them are correct",
+  "title": "201 Categorie 2",
+  "explanation": "Maximum temperatures above 30 degrees Celsius during the grain-filling phase in cereals may lead to wrinkled grains, lower weight and low yields, a phenomena known as shrivelling.",
+  "category": "agricultural-impacts"
+}
