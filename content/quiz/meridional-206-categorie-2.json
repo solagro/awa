@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En pastos, periodos de sequía entre abril y junio pueden desembocar en:"
+    }
+  ],
+  "question": "In pastures, drought periods between April and June can lead to:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X Mayor desarrollo de especies  de la familia de las leguminosas \nV Menor desarrollo de especies de la familia de las leguminosas \nX Mayor producción de biomasa\nX Mejor tasa de germinación"
+    }
+  ],
+  "order": 206,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Ciertas leguminosas de raíz más superficial que se desarrollan en los pastos de la región meridional presentan un crecimiento sobre todo primaveral. Estas leguminosas son muy importantes para aumentar el contenido en proteína del pasto. En condiciones de sequía se desarrollarán menos, con un impacto negativo en la nutrición de los animales."
+    }
+  ],
+  "answers": "X More development of legume species \nV Less development of legume species\nX More biomass production\nX Better germination rate ",
+  "title": "206 Categorie 2",
+  "explanation": "Certain legumes with a more superficial root system in pastures of the Southern region grow mostly during the Spring. These legumes are very important to increase the protein content of the pasture. In dry periods, they will grow less, with a negative impact on animal nutrition.",
+  "category": "agricultural-impacts"
+}
