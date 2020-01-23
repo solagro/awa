@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Millist loetelus nimetatud gaasi ei peeta kasvuhoonegaasiks?"
+    }
+  ],
+  "question": "Which of the listed gases are not considered as greenhouse gas?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Süsinikdioksiid (CO2)\nV Ammoniaak (NH3)\nX Metaan (CH4)\nX Dilämmastikoksiid (N2O)"
+    }
+  ],
+  "order": 101,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Kasvuhoonegaasid on rohkem kui kahest sama elemendi aatomist või erinevate elementide aatomeist koosnevad atmosfääris esinevad gaasilised molekulid. Olulisemad kasvuhoonegaasid on veeaur, süsinikdioksiid, lämmastikoksiidid, osoon ja metaan. Kokku on 40 erinevat gaasi, mida loetakse kasvuhoonegaasideks. Ammoniaaki ei loeta kasvuhoonegaasiks."
+    }
+  ],
+  "answers": "X Carbon dioxide (CO2)\nV Ammonia (NH3)\nX Methane (CH4)\nX Nitrous oxide (N2O)",
+  "title": "101 Categorie 1",
+  "explanation": "Greenhouse gases are atmospheric gaseous molecules composed of more than two atoms of the same element or atoms of different elements. The most important greenhouse gases are water vapor, carbon dioxide, nitrogen oxides, ozone and methane. There are a total of 40 different gases that are considered greenhouse gases. Ammonia is not considered a greenhouse gas.",
+  "category": "climate-change"
+}
