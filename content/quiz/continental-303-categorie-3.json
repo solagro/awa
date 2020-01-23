@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Inwiefern kann eine Untersaat in Mais oder Getreide bei der Anpassung an den Klimawandel unterstützen?"
+    }
+  ],
+  "question": "To what extent can undersowing in maize or cereals help to adapt to climate change",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "X Untersaaten verursachen unnötige Kosten für Saatgut\nV Die Bodenbedeckung verbessert die Befahrbarkeit zur Ernte \nV Der Boden ist stets bedeckt, Wasser und Nährstoffe werden fixiert, Erosion vermindert\nX Untersaat ist in diesen Kulturen absolut unüblich und bringt auch nichts"
+    }
+  ],
+  "order": 303,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Der Anbau von Untersaaten kann z.B. in Getreide, Raps oder Mais erfolgen. Die Vorteile liegen in der Stabilisierung der Bodenstruktur und damit einer verbesserten Tragfähigkeit z.B. während der Ernte der Deckfrucht. Der Boden ist auch nach deren Ernte bedeckt, das Erosionsrisiko gesenkt und die verbleibenden Nährstoffe können aufgenommen werden."
+    }
+  ],
+  "answers": "X Undersowing causes unnecessary costs for seeds\nV Soil cover improves passability for harvesting\nV The soil is always covered, water and nutrients are fixed, erosion is reduced\nX Undersowing is absolutely uncommon in these cultures and also does not help",
+  "title": "303 Categorie 3",
+  "explanation": "Undersown seeds can be grown, for example, in cereals, rapeseed or maize. The advantages lie in the stabilisation of the soil structure and thus an improved bearing capacity, e.g. during the harvest of the cover crop. The soil is also covered after harvesting, the risk of erosion is reduced and the remaining nutrients can be absorbed.",
+  "category": "adaptation"
+}
