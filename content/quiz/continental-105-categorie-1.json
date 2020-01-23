@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Wie wirkt sich der Klimawandel auf Extremniederschläge aus?"
+    }
+  ],
+  "question": "How does climate change affect heavy precipitation?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Extremniederschläge werden häufiger\nX Extremniederschläge werden seltener\nX Extremniederschläge treten vor allem im Herbst auf\nV Extremniederschläge werden heftiger"
+    }
+  ],
+  "order": 105,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Bei der Wettervorhersage hat zum Beispiel der Deutsche Wetterdienst (DWD) die Warnkriterien für Starkniederschlag auf Niederschlag von 25 mm in einer Stunde und 35 mm in 6 Stunden festgelegt. Höhere Verdunstung und gleichzeitig eine höhere Wasseraufnahmekapazität der wärmeren Luft können zu verstärkten Niederschlägen führen."
+    }
+  ],
+  "answers": "V Heavy precipitation events will increase\nX Heavy precipitation events will decrease\nX Heavy precipitation events will occur especially in autumn\nV Heavy precipitation events will become more extreme",
+  "title": "105 Categorie 1",
+  "explanation": "For the weather forecast, the German Weather Service (DWD) set the warning criteria for heavy precipitation to 25 mm in one hour and 35 mm in 6 hours. Higher evaporation and a higher water absorption capacity of the warmer air can lead to increased precipitation.",
+  "category": "climate-change"
+}
