@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "Incrementar las aplicaciones de materia orgánica puede ayudar a:"
+    }
+  ],
+  "question": "Increasing organic matter applications can help to:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "V Mejorar la fertilidad del suelo\nV Mejorar la capacidad de retención de agua del suelo\nX Incrementar las tasas de erosión\nX Aumentar la cantidad de malas hierbas"
+    }
+  ],
+  "order": 209,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Mayor contenido en materia orgánica permite una mejora de la fertilidad física, química y biológica del suelo. Con el incremento de hongos y bacterias, aumentará la disponibilidad de nutrientes para el cultivo. A más materia orgánica, mejor estructura, fomentando la formación de agregados y aumentando su capacidad de retención de agua."
+    }
+  ],
+  "answers": "V Improve soil fertility\nV Improve the water storing capacity of the soil\nX Increase erosion rates\nX Increase weeds",
+  "title": "300 Categorie 3",
+  "explanation": "A higher organic matter content leads to a better chemical, physical and biological fertility of the soil. Certain organisms that are enhanced, such as fungi and bacteria, will increase nutrient availability for the crop. Also, a higher organic matter content increases the water retention capacity of the soil.",
+  "category": "adaptation"
+}
