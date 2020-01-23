@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Wie wirkt sich der Klimawandel auf die Anzahl der heißen Tage (>30°C) in der kontinentalen Region aus?"
+    }
+  ],
+  "question": "How does climate change affect the number of hot days (>30°C) in the continental region?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "X Die Anzahl der heißen Tage wird abnehmen \nX Die Anzahl der heißen Tage wird gleich bleiben\nV Die Anzahl der heißen Tage hat sich gegenüber dem Referenzzeitraum von 1961-1990 mehr als verdoppelt\nV Die Anzahl der heißen Tage wird weiter zunehmen"
+    }
+  ],
+  "order": 103,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Die Anzahl heißer Tage über ganz Deutschland gemittelt, ist seit dem Referenzzeitraum von 1961-1990 von 4,2 Tagen im Jahr auf derzeit durchschnittlich neun Tage im Jahr angestiegen. Im Jahr 2018 gab es im bundesdeutschen Durchschnitt sogar über 20 heiße Tage."
+    }
+  ],
+  "answers": "X The number of hot days will decrease \nX The number of hot days has remained the same\nV The number of hot days has more than doubled compared to the reference period 1961-1990.\nV The number of hot days will increase further",
+  "title": "103 Categorie 1",
+  "explanation": "The average number of hot days over the whole of Germany has increased since the reference period 1961-1990 from 4.2 days per year to an average of nine days per year. In 2018, there were even more than 20 hot days in average in Germany.",
+  "category": "climate-change"
+}
