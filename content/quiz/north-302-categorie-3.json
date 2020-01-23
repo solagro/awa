@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kas orgaanilise aine muldaviimine:"
+    }
+  ],
+  "question": "Whether the incorporation of the organic matter into the soil would:",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Suurendab mullaviljakust\nX Suurendab mullaerosiooni\nV Parandab mulla veemahutavust\nX Suurendab mulla lasuvustihedust"
+    }
+  ],
+  "order": 302,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Orgaanilise aine muldaviimine suurendab mullaviljakust:\n\n* Paraneb mulla filtreerimis- ja puhverdusvõime\n* Poorsus suureneb\n* Veemahutavus suureneb (orgaanilise aine vee sidumisvõime on tunduvalt suurem, kui mulla mineraalosal)"
+    }
+  ],
+  "answers": "V Increases the soil fertility\nX Increases soil erosion\nV Increases the soil water capacity\nX Increases the bulk density of soil",
+  "title": "302 Categorie 3",
+  "explanation": "Incorporation of soil organics:\n\n* improves the filtration and buffering capacity of soil,\n* increases the porosity\n* increases the soil water capacity, since the water capacity of organic matter is better than that of mineral particles of the soil.",
+  "category": "adaptation"
+}
