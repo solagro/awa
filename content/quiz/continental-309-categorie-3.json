@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche Vorteile hat ein Gemengeanbau?"
+    }
+  ],
+  "question": "What are the advantages of meslin cultivation?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Ernterisiko wird gestreut\nV Gemengepartner ergänzen sich in Nährstoff-/Wasseransprüchen\nV Erhöhung der Biodiversität\nX Es gibt keine Vorteile"
+    }
+  ],
+  "order": 309,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Durch den Gemengeanbau wird die Bodenstruktur gefördert und eine höhere Ertragsstabilität erzielt. Die Gemengepartner haben unterschiedliche Ansprüche an die Wachstumsfaktoren wie Wasser, Nährstoffe und Licht. Sie durchwurzeln den Boden unterschiedlich und scheiden individuelle Wurzelexsudate aus."
+    }
+  ],
+  "answers": "V The harvest risk is spread\nV The different components complement each other in nutrient / water requirements\nV Increasing biodiversity\nX There are no advantages",
+  "title": "309 Categorie 3",
+  "explanation": "The cultivation of meslins promotes the soil structure and achieves a higher yield stability. The components have different demands for water, nutrients and light. They have different rooting properties and excrete individual root exudates.",
+  "category": "adaptation"
+}
