@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Welche der folgenden Möglichkeiten halten Sie für geeignet, um sich an den Klimawandel anzupassen?"
+    }
+  ],
+  "question": "Which of the following options do you consider appropriate for adapting to climate change?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "X Spezialisierung auf einen bestimmten Produktionsbereich\nV Diversifizierung des Betriebes z.B. durch den Anbau verschiedener Kulturen und damit Risikostreuung\nV Aufbau weiterer Einkommensstandbeine (Direktvermarktung, Urlaub auf dem Bauernhof)\nX Intensivierung von maximal 3 Hauptkulturen"
+    }
+  ],
+  "order": 306,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Da auch im Zuge des Klimawandels jährlich ändernde Wetterverhältnisse auftreten können mit Tendenz zu extremeren Ausprägungen ist die Risikostreuung eine wesentliche Anpassungsmaßnahme, die sowohl auf der Fläche als auch auf Betriebsebene umgesetzt werden kann (diverse Fruchtfolge, verschiedene Einkommensstandbeine)."
+    }
+  ],
+  "answers": "X Specialization in a specific production area\nV Diversification of the farm e.g. through the cultivation of different crops and thus risk diversification\nV Development of further income pillars (direct marketing, holidays on the farm)\nX Intensive crop production with a maximum of 3 main crops",
+  "title": "306 Categorie 3",
+  "explanation": "Since climate change can also lead to annually changing weather conditions with a tendency towards more extreme forms, risk diversification is an essential adaptation measure that can be implemented both on the land and at farm level (diverse crop rotation, different income levels).",
+  "category": "adaptation"
+}
