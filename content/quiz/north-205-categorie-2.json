@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Globaalses mastaabis loetakse loomakasvatust, eriti just veiseliha tootmist, suureks riskifaktoriks magevee resurssidele. Millest sõltub (otsesed ja kaudsed tegurid summaarselt) ühe kilo veiseliha tootmiseks vajamineva vee kogus kõige enam?"
+    }
+  ],
+  "question": "On a global scale, livestock production, especially beef production, is considered a major risk factor for freshwater resources. On what does the amount of water needed to produce one kilo of beef depend most (directly and indirectly)?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "X Loomade tõust\nX Pidamisviisist\nX Liha töötlemise viisist \nV Regioonist (kliimavöötmest), kus loomi peetakse"
+    }
+  ],
+  "order": 205,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Kui joogivee tarbimise ning tehnoloogilise vee kulu variatsioon globaalses mastaabis on suhteliselt väike, siis söötade tootmiseks kasutatava vee koguse erinevus kliimavöötmete lõikes on hiiglaslik."
+    }
+  ],
+  "answers": "X On the breed of the  animals\nX On the keeping technology \nX On the way the meat is processed\nV On the region (climate zone) where the animals are kept",
+  "title": "205 Categorie 2",
+  "explanation": "While the variation in drinking water consumption and technological water consumption is relatively small on a global scale, the difference in the amount of water used for feed production across climate zones is enormous.",
+  "category": "agricultural-impacts"
+}
