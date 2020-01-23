@@ -81,7 +81,10 @@ const QuizPage = ({ location: { pathname } }) => {
 
   const { results: { questions = [] } = {} } = useStaticQuery(graphql`
     {
-      results: allQuizJson(sort: {fields: order}) {
+      results: allQuizJson(
+        filter: {theme: {ne: "dummy"}},
+        sort: {fields: order}
+      ) {
         questions: nodes {
           theme
           fields {

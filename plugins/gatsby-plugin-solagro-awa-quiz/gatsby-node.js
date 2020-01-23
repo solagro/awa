@@ -14,7 +14,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     },
   } = await graphql(`
     query {
-      results: allQuizJson {
+      results: allQuizJson(filter: {theme: {ne: "dummy"}}) {
         questions: nodes {
           id
           theme
@@ -30,10 +30,11 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     }
   `);
 
-  const questionsByTheme = questions.reduce((acc, { theme, title }) => ({
-    ...acc,
-    [theme]: [...(acc[theme] || []), title],
-  }), {});
+  const questionsByTheme = questions
+    .reduce((acc, { theme, title }) => ({
+      ...acc,
+      [theme]: [...(acc[theme] || []), title],
+    }), {});
 
   const themes = Object.keys(questionsByTheme);
 

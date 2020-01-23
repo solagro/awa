@@ -1,0 +1,27 @@
+{
+  "theme": "dummy",
+  "title": "z Please, do not delete this",
+  "category": "dummy",
+  "order": 9999,
+  "question": "This file ensures that GraphQL schema is properly generated with all fields",
+  "question-i18n": [
+    { "language": "de", "question": "dummy" },
+    { "language": "es", "question": "dummy" },
+    { "language": "et", "question": "dummy" },
+    { "language": "fr", "question": "dummy" }
+  ],
+  "answers": "dummy",
+  "answer-i18n": [
+    { "language": "de", "answers": "dummy" },
+    { "language": "es", "answers": "dummy" },
+    { "language": "et", "answers": "dummy" },
+    { "language": "fr", "answers": "dummy" }
+  ],
+  "explanation": "dummy",
+  "explanation-i18n": [
+    { "language": "de", "explanation": "dummy" },
+    { "language": "es", "explanation": "dummy" },
+    { "language": "et", "explanation": "dummy" },
+    { "language": "fr", "explanation": "dummy" }
+  ]
+}
