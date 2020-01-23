@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Millised loetletud meetmetest on sobivad, et tagada viinamarjade kvaliteetne saak igal aastal?"
+    }
+  ],
+  "question": "Which of the following measures are appropriate to ensure a high-quality grape harvest every year?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Kasutada viinapuudel avamaal ajutisi katteid kevadel ja sügisel\nV Kasvatada viinapuid kiletunnel kasvuhoonetes\nX Kasvatada ainult kõige külmakindlamaid viinamarjasorte\nX Ükski loetletud meedetest ei sobi"
+    }
+  ],
+  "order": 309,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Eesti Maaülikooli aianduse õppetooli prof Kadri Karp annab videointervjuus ülevaate missuguste probleemidega seisavad silmitsi viinamarjakasvatajad põhjamaades. Ta selgitab kuidas Eesti kliimatingimused mõjutavad viinamarjade kasvu ja arengut ning missuguste agrotehniliste võtetega on võimalik vähendada öökülmadest tingitud ohtusid viinapuudele."
+    }
+  ],
+  "answers": "V Use temporary coverings for outdoor grapes in the spring and autumn\nV Grow grapes in a plastic tunnel greenhouses\nX Only the most frost-resistant grape cultivars should be grown\nX None of the listed measure is appropriate",
+  "title": "309 Categorie 3",
+  "explanation": "In the video, Professor Kadri Karp from the Chair of Horticulture of the Estonian University of Life Sciences gives an overview about problems of grape growers from the Nordic countries. She explains how climate conditions in Estonia affect the growth and development of grapes, and which agrotechnical approaches can be used to mitigate the risks of early and late frosts to grape growing.",
+  "category": "adaptation"
+}
