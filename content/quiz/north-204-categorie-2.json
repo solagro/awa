@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Vegetatsiooniperiood pikeneb nii kevade- kui sügise poole. Kuidas see mõjutab rohusööda baasi?"
+    }
+  ],
+  "question": "The vegetation period extends to both spring and autumn. How does it affect the forage?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Positiivselt. Suureneb niidete arv.\nX Negatiivselt. Väheneb niidete arv.\nX Positiivselt. Tõuseb sööda kvaliteet.\nV Negatiivselt. Langeb sööda kvaliteet."
+    }
+  ],
+  "order": 204,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Taimekasv kiireneb, väheneb lehe/varre suhe ja suurenevad NDF, ADF, ligiini sisaldused –seeduvus väheneb; N väheneb (esineb erandeid). Kuumades ja kuivades tingimustes on tavaolukorras limiteerivaks CO2. Üldiselt arvatakse, et saak suureneb (võimalik 3-4 niide), aga viimase niite kvaliteet halveneb."
+    }
+  ],
+  "answers": "V Positively. The number of cuts/year increases.\nX Negatively. The number of cuts/year decreases.\nX Positively. The quality of forage increases.\nV Negatively. The quality of forage decreases.",
+  "title": "204 Categorie 2",
+  "explanation": "Plant growth accelerates, leaves / stems ratio decreases and NDF, ADF, lignin levels increase - digestibility decreases; N decreases (with exceptions). In hot and dry conditions, CO2 is normally limiting. It is generally believed that the yield will increase (3-4 cuts possible), but the quality of the last cut will decrease.",
+  "category": "agricultural-impacts"
+}
