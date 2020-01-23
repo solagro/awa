@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "En cultivos herbáceos, dejar el rastrojo o los restos del cultivo anterior sobre el suelo (o incorporados en los primeros 20 cm del mismo) después de la cosecha conlleva:"
+    }
+  ],
+  "question": "In arable crops, leaving the stubble or previous crop residues on the soil (or incorporated in the first 20 cm) after harvesting leads to:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X Menor fertilidad\nX Mayores tasa de evaporación\nV Menores tasas de erosión\nX Menos biodiversidad"
+    }
+  ],
+  "order": 305,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Un suelo cubierto o con cierta cantidad de biomasa en los primeros centímetros es menos vulnerable a la erosión, evitando que las gotas de lluvia impacten sobre el suelo o lo arrastre por escorrentía sin oponer resistencia."
+    }
+  ],
+  "answers": "X Less fertility\nX Higher evapotranspiration rates\nV Lower erosion rates\nX Less biodiversity",
+  "title": "305 Categorie 3",
+  "explanation": "A soil covered or with a certain amount of biomass in the first layer is less vulnerable to erosion, minimizing the impact of raindrops on the soil and run-off events.",
+  "category": "adaptation"
+}
