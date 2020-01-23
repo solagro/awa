@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "de",
+      "question": "Mit welchen Maßnahmen kann man die Bodenstruktur verbessern (verbesserte Wasseraufnahme und –speicherung)?"
+    }
+  ],
+  "question": "What measures can be taken to improve soil structure (improved water uptake and storage)?",
+  "theme": "continental",
+  "answer-i18n": [
+    {
+      "language": "de",
+      "answers": "V Reduzierte Bodenbearbeitung, Mulchsaat, geringere Pflugtiefe\nX Tiefes Pflügen\nV Organische Düngung, Kompostgaben\nX „Winterfurche“ (gepflügter Acker bleibt über den Winter unbedeckt)"
+    }
+  ],
+  "order": 304,
+  "explanation-i18n": [
+    {
+      "language": "de",
+      "explanation": "Im Vordergrund steht die Förderung des Bodenlebens, das zu einer guten Bodenstruktur beiträgt. Dazu trägt die Zufuhr organischer Masse wie Pflanzenreste, eingearbeitete Zwischenfruchtmischungen oder Untersaaten oder Kompostgaben bei. Der Boden sollte möglichst ganzjährig bedeckt sein. Zudem sollte das Bodengefüge möglichst wenig gestört werden."
+    }
+  ],
+  "answers": "V Reduced soil tillage, mulch sowing, reduced ploughing depth\nX Deep ploughing\nV Organic fertilization, compost application\nX \"Winter furrow\" (ploughed field remains uncovered over the winter)",
+  "title": "304 Categorie 3",
+  "explanation": "The focus is on promoting soil life, which contributes to a good soil structure. The supply of organic matter such as plant residues, incorporated intercropping mixtures or underplanting or composting contributes to this. The soil should be covered all year round if possible. In addition, the soil structure should be disturbed as little as possible.",
+  "category": "adaptation"
+}
