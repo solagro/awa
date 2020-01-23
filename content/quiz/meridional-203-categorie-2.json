@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "es",
+      "question": "Temperaturas mínimas más altas durante el invierno pueden provocar:"
+    }
+  ],
+  "question": "Higher minimum temperatures during the winter can cause:",
+  "theme": "meridional",
+  "answer-i18n": [
+    {
+      "language": "es",
+      "answers": "X Ataques de plagas menos frecuentes\nX Mayor disponibilidad hídrica\nX Menor producción de biomasa en pastos\nV Brotación irregular en cultivos permanentes"
+    }
+  ],
+  "order": 203,
+  "explanation-i18n": [
+    {
+      "language": "es",
+      "explanation": "Los cultivos permanentes precisan de unas determinadas horas de frío durante el invierno para ser capaces de iniciar el ciclo de crecimiento con fuerza. Menos horas de frío pueden desembocar en una brotación más débil, en yemas que no desborran y en un peor desarrollo de la floración y, por tanto, peores rendimientos."
+    }
+  ],
+  "answers": "X Less frequent pest attacks\nX More water availability\nX Less biomass production in pastures\nV Irregular bud-bursting in permanent crops",
+  "title": "203 Categorie 2",
+  "explanation": "Permanent crops need certain cold hours during the Winter in order to be able to begin their growing cycle with strength. Fewer cold hours can lead to weak bud-bursting, buds that do not burst and a worse blossom development, resulting in lower yields.",
+  "category": "agricultural-impacts"
+}
