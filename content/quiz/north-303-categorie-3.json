@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kuidas mõjutab mulda liblikõieliste kultuuride kasvatamine?"
+    }
+  ],
+  "question": "What is the effect of legume crops on soil?",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Suurendab mulla lämmastiku- ja süsinikuvaru\nX Suurendab mulla tihedust\nX Vähendab mulla veeläbilaskvust\nX Pärsib mullaelustiku mitmekesisust "
+    }
+  ],
+  "order": 303,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Liblikõieliste võime siduda sümbiontsete bakterite abil õhulämmastikku, võimaldab vähendada sünteetiliste väetiste kasutamist."
+    }
+  ],
+  "answers": "V Increasing Nitrogen and Carbon storage\nX Increasing the density of the soil\nX Reducing the permeability of soil by water\nX Inhibits the diversity of soil microbiota ",
+  "title": "303 Categorie 3",
+  "explanation": "A strategy to reduce dependence on synthetic fertilizers is cultivation of legume crops, which fix atmospheric nitrogen by symbiosis with nitrogen-fixing bacteria.",
+  "category": "adaptation"
+}
