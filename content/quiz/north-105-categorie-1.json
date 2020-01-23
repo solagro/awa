@@ -2,26 +2,26 @@
   "question-i18n": [
     {
       "language": "et",
-      "question": "Üheks oluliseks antropogeense (inimtekkelise) metaani emissiooni allikaks loetakse karjakasvatust (metaani emissioon loomade, eriti mäletsejaliste seedesüsteemist ning sõnniku käitlemisel). Milline on teine, globaalses mastaabis suure tähtsusega põllumajandusharu, millega kaasneb suur metaani emissioon?"
+      "question": "Milline on teadlaste arvates temperatuuri tõusu maksimaalne lävi võrreldes tööstuseelse ajastuga, mille ületamisel tekib palju suurem oht, et maakera keskkonnas leiavad aset ohtlikud muutused."
     }
   ],
-  "question": "One important source of anthropogenic methane emissions is considered to be livestock production (methane emissions from the digestive system of animals, especially ruminants, and manure management). What is another, globally important, agricultural sector with high methane emissions?",
+  "question": "According to scientists, what is the maximum threshold for temperature rise compared to the pre-industrial era, above which there is a much greater risk of dangerous changes in the earth's environment.",
   "theme": "north",
   "answer-i18n": [
     {
       "language": "et",
-      "answers": "X Tsitruseliste kasvatus\nX Metsade raadamine põllumaaks\nX Palmiõli tootmine\nV Riisikasvatus"
+      "answers": "V 1,5 °C\nX 2,0 °C\nX 2,5 °C\nX 3,0 °C"
     }
   ],
-  "order": 105,
+  "order": 106,
   "explanation-i18n": [
     {
       "language": "et",
-      "explanation": "Metaan tekib spetsiifiliste metanobakterite elutegevuse tulemusena. Metanobakterid hapniku ei talu, s.t selleks, et metanobakter toimiks peab keskkond olema hapnikuvaba e. anaeroobne. Kirjeldatud tingimused on täidetud näiteks soodes ja rabades (olulised loodusliku metaanitekke allikad), kuid ka loomade soolestikus ning ka  riisipõldudel."
+      "explanation": "IPCC 2018. a koostatud raportist nähtub, et temperatuuri tõusu tuleks hoida alla 1,5°C, kuna üksnes selle piires on võimalik paljusid tulevase soojenemise tõsiseid tagajärgi ära hoida. Pool kraadi soojenemist tähendab suurt erinevust."
     }
   ],
-  "answers": "X Citrus production\nX Deforestation to increase arable land\nX Palm oil production\nV Rice cultivation",
-  "title": "105 Categorie 1",
-  "explanation": "Methane is formed as a result of the activity of specific methanobacteria. Methanobacteria do not tolerate oxygen, i.e., in order for methanobacteria to function, the environment must be oxygen-free (anaerobic). These conditions are met, for example, in bogs (important sources of natural methane formation), but also in the intestines of animals and in rice fields.",
+  "answers": "V 1,5 °C\nX 2,0 °C\nX 2,5 °C\nX 3,0 °C",
+  "title": "106 Categorie 1",
+  "explanation": "A 2018 report by the IPCC shows that rising temperatures should be kept below 1.5°C, since only within this range can many of the serious consequences of future warming be prevented. Half degrees warming makes a big difference.",
   "category": "climate-change"
 }
