@@ -1,0 +1,27 @@
+{
+  "question-i18n": [
+    {
+      "language": "et",
+      "question": "Kliima muudab liikide levikuareaale. Kas:"
+    }
+  ],
+  "question": "Climate affects the distribution area of species. If:",
+  "theme": "north",
+  "answer-i18n": [
+    {
+      "language": "et",
+      "answers": "V Kahjurite arvukus suureneb lõunapoolsete liikide sisserände tagajärjel\nX Kahjurite arvukus suureneb põhjapoolsete liikide sisserände tagajärjel\nX Kahjurite arvukus väheneb kohalike liikide põhjapoole levimise tagajärjel\nV Kahjurite arvukus tõuseb tänu kiirenevale arengule ja suuremale põlvkondade arvule\n"
+    }
+  ],
+  "order": 201,
+  "explanation-i18n": [
+    {
+      "language": "et",
+      "explanation": "Kiireneb putukkahjurite areng ja teatavad liigid võivad anda ühe põlvkonna asemel mitu. Teistel liikidel põlvkondade arv aastas ei suurene; küll aga võivad arenguoptimumile lähedased temperatuurid kaasa tuua viljakuse kasvu. Lõunapoolsed liigid võivad leida Eestis sobivad tingimused ja siin kohastuda."
+    }
+  ],
+  "answers": "V The abundance of crop pests will be increasing on account of the influx of Southern species?\nX The abundance of crop pests will be increasing on account of the influx of Northern species?\nX The abundance of crop pests will be decreasing on account of the outflux of local species to the North?\nV The abundance of crop pests will be increasing due to faster development and higher fertility/fecundity of generations?",
+  "title": "201 Categorie 2",
+  "explanation": "The insect pests undergo faster development with certain species turning from monovoltine into multivoltine (several generations per year). Others will not change voltinism, but temperatures closer to developmental optimum cause an increase in fitness. Southern species may adapt in northern area if fitting conditions can be found.",
+  "category": "agricultural-impacts"
+}
