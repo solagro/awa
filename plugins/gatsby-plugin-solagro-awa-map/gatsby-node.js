@@ -1,6 +1,9 @@
 const path = require('path');
+const XLSX = require('xlsx');
 const csvtojson = require('csvtojson');
 const camelcase = require('camelcase');
+
+const gridcodeTemplate = require('./gridcode.json');
 
 const REPORTER_PREFIX = '[solagro-awa-quiz-map] ';
 
@@ -148,4 +151,19 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       },
     });
   }
+};
+
+/**
+ * Generate template workbook used to contribute gridpoint data
+ */
+exports.onPostBuild = async () => {
+  const workbook = XLSX.utils.book_new();
+
+  gridcodeTemplate.forEach(({ name, aoa }) => {
+    const worksheet = XLSX.utils.aoa_to_sheet(aoa);
+    XLSX.utils.book_append_sheet(workbook, worksheet, name);
+  });
+
+  XLSX.writeFile(workbook, './public/gridcode.ods');
+  XLSX.writeFile(workbook, './public/gridcode.xlsx');
 };
