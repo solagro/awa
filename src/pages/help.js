@@ -13,7 +13,10 @@ import Layout from '../components/Layout';
 import CSVGenerator from '../components/CSVGenerator';
 import doRedirect from '../hoc/doRedirect';
 
-const templateLink = 'gridcode.xlsx';
+const templateLinks = {
+  ods: '/gridcode.ods',
+  xlsx: '/gridcode.xlsx',
+};
 const githubUploadLink = 'https://github.com/solagro/awa/upload/master/content/map';
 
 const HelpPage = () => {
@@ -27,18 +30,18 @@ const HelpPage = () => {
         {t('Help')}
       </Typography>
 
-      <Typography variant="h2" gutterBottom>
-        {t('Tips & tools for using site website.')}
-      </Typography>
-
       <Typography variant="body1" gutterBottom>
         <Trans>
           Introduction or description of help page
         </Trans>
       </Typography>
 
-      <Typography variant="h3" gutterBottom>
+      <Typography variant="h2" gutterBottom>
         {t('Map data')}
+      </Typography>
+
+      <Typography variant="h3" gutterBottom>
+        {t('Updating data')}
       </Typography>
 
       <Typography variant="body1" gutterBottom>
@@ -57,8 +60,9 @@ const HelpPage = () => {
             <List dense>
               <ListItem>
                 <ListItemText>
-                  Create and rename a copy of <a href={templateLink}><tt>gridcode.xlsx</tt></a>{' '}
-                  for each grid point to create/update. <em>(i.e. 12345.xlsx, 43215.xlsx,…)</em>
+                  Create and rename a copy of <a href={templateLinks.ods}><samp>gridcode.ods</samp></a>{' '}
+                  or <a href={templateLinks.xlsx}><samp>gridcode.xlsx</samp></a> for
+                  each grid point to create/update. <em>(i.e. 12345.ods, 43215.xlsx,…)</em>
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -76,13 +80,14 @@ const HelpPage = () => {
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  Download and extract generated zip file on local computer.
+                  Download and extract generated <samp>zip</samp> file on local
+                  computer.
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
                   Use <a href={githubUploadLink}>Github interface to upload</a>{' '}
-                  every gridpoint directories at once.
+                  <strong>every gridpoint directories at once</strong>.
                 </ListItemText>
               </ListItem>
             </List>
@@ -90,7 +95,24 @@ const HelpPage = () => {
         </Grid>
       </Grid>
 
-      <pre>legal menu</pre>
+      <Typography variant="h3" gutterBottom>
+        {t('CSV files structure')}
+      </Typography>
+
+      <Trans>
+        <Typography variant="body1" gutterBottom>
+          First row cells are used as header (technical) name. The content of
+          these cells is processed through translation mechanism.
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          For each <strong>data line</strong>, first column cells should be
+          a <var>year</var> value.
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          The first row with no content in first cell is used as comment for
+          column headers.
+        </Typography>
+      </Trans>
     </Layout>
   );
 };
