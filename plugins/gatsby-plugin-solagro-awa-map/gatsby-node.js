@@ -7,9 +7,11 @@ const gridcodeTemplate = require('./gridcode.json');
 
 const REPORTER_PREFIX = '[solagro-awa-quiz-map] ';
 
-const { removeNumberPrefix } = require('./lib/helpers');
-
-const cleanName = str => camelcase(removeNumberPrefix(str));
+const sourceTypes = {
+  yc: 'yieldCompilation',
+  co: 'climateObservations',
+  cp: 'climateProjections',
+};
 
 exports.onCreateNode = async ({
   node,
@@ -21,25 +23,21 @@ exports.onCreateNode = async ({
    * Create nodes for each grid point dataset
    */
   if (node.sourceInstanceName === 'gridPointCSV' && node.extension === 'csv') {
-    const { relativeDirectory, name } = node;
+    const { relativeDirectory: gridCode, name } = node;
 
-    /**
-     * XXXXX/XX_source_type/
-     */
-    const [gridPoint, dir] = relativeDirectory.split('/');
-
-    const sourceType = cleanName(dir);
-    const dataType = cleanName(name);
+    const shortSourceType = name.split('-')[0];
+    const sourceType = sourceTypes[shortSourceType];
+    const dataType = camelcase(name.substr(3));
 
     const csv = await loadNodeContent(node);
-    const data = await csvtojson({ delimiter: ';' }).fromString(csv);
+    const data = await csvtojson({ delimiter: ',' }).fromString(csv);
     const json = JSON.stringify(data);
 
     const tableNode = {
-      id: `${gridPoint}-${dataType}`,
+      id: `${gridCode}-${dataType}`,
       sourceType,
       dataType,
-      gridCode: gridPoint,
+      gridCode,
       json,
       data,
       parent: node.id,
