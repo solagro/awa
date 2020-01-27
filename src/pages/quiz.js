@@ -13,7 +13,7 @@ import SEO from '../components/Seo';
 import Link from '../components/Link';
 import Layout from '../components/Layout';
 import doRedirect from '../hoc/doRedirect';
-
+import themesConfig from '../lib/themes';
 
 const useStyles = makeStyles(theme => ({
   module: {
@@ -143,7 +143,7 @@ const QuizPage = ({ location: { pathname } }) => {
               xl={4}
             >
               <Tooltip
-                title={t('{{theme}} region. Available languages: English standard or {{lang}} by changing the language of the site', { theme, lang: i18n.language })}
+                title={t('{{country}}. Available languages: English standard or {{language}} by changing the language of the site', { country: themesConfig[theme].mainCountry, theme, language: themesConfig[theme].mainLanguage, lang: i18n.language })}
               >
                 <ButtonBase
                   key={theme}
