@@ -7,7 +7,8 @@
         "nsSeparator": ":::",
         "locales": ["en", "fr", "et", "es", "de"],
         "outputPath": "src/locales/{{locale}}/{{ns}}.json",
-        "keyAsDefaultValue": true
+        "keyAsDefaultValue": true,
+        "removeUnusedKeys": true
       }
     ]
   ],

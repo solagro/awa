@@ -310,6 +310,7 @@ const IndexPage = () => {
                 alt={altPicto}
               />
               )}
+              { /* i18next-extract-disable-next-line */}
               <Typography variant="h1" gutterBottom>{t(title)}</Typography>
             </Box>
             <Grid container className={classes.module__content__text} justify="flex-start">
@@ -324,6 +325,7 @@ const IndexPage = () => {
                 to={to}
                 lang={i18n.language}
               >
+                { /* i18next-extract-disable-next-line */}
                 {t(buttonText)}
               </Button>
             </Grid>
