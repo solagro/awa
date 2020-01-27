@@ -12,12 +12,16 @@ import SEO from '../components/Seo';
 import Layout from '../components/Layout';
 import CSVGenerator from '../components/CSVGenerator';
 import doRedirect from '../hoc/doRedirect';
+import Divider from '@material-ui/core/Divider';
 
 const templateLinks = {
   ods: '/gridcode.ods',
   xlsx: '/gridcode.xlsx',
 };
-const githubUploadLink = 'https://github.com/solagro/awa/upload/master/content/map';
+const githubUpload = {
+  csv: 'https://github.com/solagro/awa/upload/master/content/map',
+  geojson: 'https://github.com/solagro/awa/upload/master/static/data',
+};
 
 const HelpPage = () => {
   const { t, i18n } = useTranslation();
@@ -37,11 +41,65 @@ const HelpPage = () => {
       </Typography>
 
       <Typography variant="h2" gutterBottom>
-        {t('Map data')}
+        {t('Update gridpoints on map')}
       </Typography>
 
+      <Trans>
+        <List dense>
+          <ListItem>
+            <ListItemText>
+              Go to <a href="https://geojson.io">geojson.io</a>.{' '}
+              <em>(deny recovering previous map)</em>
+            </ListItemText>
+          </ListItem>
+          <Divider variant="middle" component="li" />
+          <ListItem>
+            <ListItemText>
+              Use <strong>File</strong> item from <strong>Open</strong> menu.
+              <br />
+              Then select <samp>.kml</samp> or <samp>.kmz</samp> file from local
+              computer.
+            </ListItemText>
+          </ListItem>
+          <Divider variant="middle" component="li" />
+          <ListItem>
+            <ListItemText>
+              Visually check on map everything is correct.
+            </ListItemText>
+          </ListItem>
+          <Divider variant="middle" component="li" />
+          <ListItem>
+            <ListItemText>
+              Use <strong>GeoJSON</strong> item from <strong>Save</strong> menu
+              to save a local copy of generated <samp>map.geojson</samp> file.
+            </ListItemText>
+          </ListItem>
+          <Divider variant="middle" component="li" />
+          <ListItem>
+            <ListItemText>
+              Use <a href={githubUpload.geojson}>Github interface</a> to upload{' '}
+              <samp>map.geojson</samp> into <samp>static/data</samp> directory.
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Trans>
+
       <Typography variant="h3" gutterBottom>
-        {t('Updating data')}
+        {t('KML/KMZ files structure')}
+      </Typography>
+
+      <Typography variant="body1" gutterBottom>
+        <Trans>
+          Each geometry inside <samp>.kml/.kmz</samp> file <strong>must</strong> have
+          a <samp>Grid_Code</samp> property matching the ID number of corresponding
+          gridpoint.
+        </Trans>
+      </Typography>
+
+      <Divider style={{ margin: '2em 0' }} />
+
+      <Typography variant="h2" gutterBottom>
+        {t('Update data for gridpoints')}
       </Typography>
 
       <Typography variant="body1" gutterBottom>
@@ -65,12 +123,14 @@ const HelpPage = () => {
                   each grid point to create/update. <em>(i.e. 12345.ods, 43215.xlsx,…)</em>
                 </ListItemText>
               </ListItem>
+              <Divider variant="middle" component="li" />
               <ListItem>
                 <ListItemText>
                   Contribute data for each spreadsheet of the workbook.{' '}
                   <em>Warning: Do not rename spreadsheets (tabs).</em>
                 </ListItemText>
               </ListItem>
+              <Divider variant="middle" component="li" />
               <ListItem>
                 <ListItemText>
                   Use the widget below cons to generate a zip file containing
@@ -78,16 +138,19 @@ const HelpPage = () => {
                   named after orignal files.
                 </ListItemText>
               </ListItem>
+              <Divider variant="middle" component="li" />
               <ListItem>
                 <ListItemText>
                   Download and extract generated <samp>zip</samp> file on local
                   computer.
                 </ListItemText>
               </ListItem>
+              <Divider variant="middle" component="li" />
               <ListItem>
                 <ListItemText>
-                  Use <a href={githubUploadLink}>Github interface to upload</a>{' '}
-                  <strong>every gridpoint directories at once</strong>.
+                  Use <a href={githubUpload.csv}>Github interface</a> to upload{' '}
+                  <strong>every gridpoint directories at once</strong> into{' '}
+                  <samp>content/map</samp> directory.
                 </ListItemText>
               </ListItem>
             </List>
