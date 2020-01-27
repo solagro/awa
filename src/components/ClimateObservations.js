@@ -6,8 +6,9 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-import CustomDataTable from './CustomDataTable';
 import GridPointTabs from './GridPointTabs';
+import ClimateObservationsTabs from './ClimateObservationsTabs';
+import ClimateObservationsPanel from './ClimateObservationsPanel';
 import Layout from './Layout';
 import Link from './Link';
 import SEO from './Seo';
@@ -25,19 +26,32 @@ const ClimateObservations = ({
 
   const dataTypes = allDataTypes.group.map(({ dataType }) => dataType);
 
+  const [value, setValue] = React.useState(0);
+
+  const getCurrentDataType = (currentDataType, val) => (currentDataType.includes(val) && val);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const getDataTypeJson = currentDataType => (
+    JSON.parse(nodes.find(({ dataType }) => (currentDataType === dataType)).json)
+  );
   return (
     <Layout>
       <SEO title={t('Active site detailed information card')} lang={i18n.language} />
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
-
+      <ClimateObservationsTabs
+        dataTypes={dataTypes}
+        handleChange={handleChange}
+        gridCode={gridCode}
+      />
       {dataTypes.map(currentDataType => (
-        <div key={currentDataType}>
-          <h3>{currentDataType}</h3>
-          <CustomDataTable
-            data={JSON.parse(nodes.find(({ dataType }) => (currentDataType === dataType)).json)}
-          />
-        </div>
+        <ClimateObservationsPanel
+          currentDataType={getCurrentDataType(currentDataType, value)}
+          data={getDataTypeJson(currentDataType)}
+        />
       ))}
 
       <Grid
