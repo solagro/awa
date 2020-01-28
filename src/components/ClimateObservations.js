@@ -6,30 +6,18 @@ import Typography from '@material-ui/core/Typography';
 
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import AppBar from '@material-ui/core/AppBar';
-import Box from '@material-ui/core/Box';
+
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
 import SEO from './Seo';
+import TabPanel from './TabPanel';
 import TabsFooter from './TabsFooter';
 
 import doRedirect from '../hoc/doRedirect';
 import { parseData } from '../lib/dataTable';
-
-const TabPanel = ({ children, value, index, ...props }) => (
-  <Typography
-    component="div"
-    role="tabpanel"
-    hidden={value !== index}
-    id={`simple-tabpanel-${index}`}
-    aria-labelledby={`simple-tab-${index}`}
-    {...props}
-  >
-    {value === index && <Box p={3}>{children}</Box>}
-  </Typography>
-);
 
 const ClimateObservations = ({
   pageContext: { sourceType, gridCode },
