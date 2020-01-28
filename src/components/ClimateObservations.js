@@ -27,15 +27,33 @@ const ClimateObservations = ({
   const groupTabs = [
     {
       label: t('average-temperature'),
-      charts: ['averageTemperatureAnnual', 'averageTemperatureSeasonal'],
+      charts: [
+        'averageTemperatureAnnual',
+        {
+          dataType: 'averageTemperatureSeasonal',
+          colors: ['#749eb6', '#88b42d', '#db5630', '#79454a'],
+        },
+      ],
     },
     {
       label: t('precipitation'),
-      charts: ['precipitationAnnual', 'precipitationSeasonal'],
+      charts: [
+        'precipitationAnnual',
+        {
+          dataType: 'precipitationSeasonal',
+          colors: ['#749eb6', '#88b42d', '#db5630', '#79454a'],
+        },
+      ],
     },
     {
       label: t('hydric-deficit'),
-      charts: ['hydricDeficitAnnual', 'hydricDeficitSeasonal'],
+      charts: [
+        'hydricDeficitAnnual',
+        {
+          dataType: 'hydricDeficitSeasonal',
+          colors: ['#749eb6', '#88b42d', '#db5630', '#79454a'],
+        },
+      ],
     },
     {
       label: t('frozen-days'),

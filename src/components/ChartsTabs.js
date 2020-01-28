@@ -35,7 +35,13 @@ export default ({ groupTabs, dataCharts = [] }) => {
 
       {groups.map(({ label, charts }, index) => (
         <TabPanel value={currentTab} index={index} key={label}>
-          {charts.map(currentDataType => {
+          {charts.map(chart => {
+            const currentDataType = (typeof chart === 'string')
+              ? chart
+              : chart.dataType;
+
+            const { colors = ['#8a2542'] } = chart;
+
             const { dataType, data, headers } = dataCharts
               .find(({ dataType: dt }) => dt === currentDataType);
 
@@ -51,13 +57,16 @@ export default ({ groupTabs, dataCharts = [] }) => {
                   }}
                 >
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="year" />
+                  <XAxis dataKey="year" scale="time" />
                   <YAxis />
                   {/* i18next-extract-disable-next-line */}
                   <Tooltip formatter={(value, name) => ([value, t(name)])} />
-                  {headers.map(key => (
-                    <Line type="monotone" key={key} dataKey={key} stroke="#8a2542" />
-                  ))}
+                  {headers.map((key, idx) => {
+                    const color = colors[idx % colors.length];
+                    return (
+                      <Line type="monotone" key={key} dataKey={key} stroke={color} />
+                    );
+                  })}
                 </LineChart>
               </div>
             );
