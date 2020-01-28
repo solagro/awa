@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
 import Link from '../components/Link';
 import Layout from '../components/Layout';
@@ -20,6 +22,17 @@ const githubUpload = {
   csv: 'https://github.com/solagro/awa/upload/master/content/map',
   geojson: 'https://github.com/solagro/awa/upload/master/static/data',
 };
+
+const TemplateButton = props => (
+  <Button
+    color="secondary"
+    variant="contained"
+    style={{ textTransform: 'none' }}
+    size="small"
+    endIcon={<GetAppIcon />}
+    {...props}
+  />
+);
 
 const HelpPage = () => (
   <Layout>
@@ -97,9 +110,18 @@ const HelpPage = () => (
         <List dense>
           <ListItem>
             <ListItemText>
-              Create and rename a copy of <a href={templateLinks.ods}><samp>gridcode.ods</samp></a>{' '}
-              or <a href={templateLinks.xlsx}><samp>gridcode.xlsx</samp></a> for
+              Create and rename a copy of <strong>workbook template</strong>{' '}
+              <em>(<samp>xlsx</samp> or <samp>ods</samp>)</em> for
               each grid point to create/update. <em>(i.e. 12345.ods, 43215.xlsx,…)</em>
+            </ListItemText>
+          </ListItem>
+          <ListItem>
+            <ListItemText>
+              Workbook templates :<br />
+              {' '}
+              <TemplateButton href={templateLinks.ods}>gridcode.ods</TemplateButton>
+              {' '}
+              <TemplateButton href={templateLinks.xlsx}>gridcode.xlsx</TemplateButton>
             </ListItemText>
           </ListItem>
           <Divider variant="middle" component="li" />
