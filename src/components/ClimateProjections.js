@@ -4,24 +4,25 @@ import { graphql } from 'gatsby';
 
 import Typography from '@material-ui/core/Typography';
 
-import CustomDataTable from './CustomDataTable';
+import ChartsTabs from './ChartsTabs';
 import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
 import SEO from './Seo';
 import TabsFooter from './TabsFooter';
 
 import doRedirect from '../hoc/doRedirect';
+import { parseData } from '../lib/dataTable';
 
 const ClimateProjections = ({
   pageContext: { sourceType, gridCode },
-  data: {
-    allGridPointData: { nodes },
-    allDataTypes,
-  },
+  data: { allGridPointData: { nodes } },
 }) => {
   const { t, i18n } = useTranslation();
 
-  const dataTypes = allDataTypes.group.map(({ dataType }) => dataType);
+  const dataCharts = nodes.map(({ dataType, json }) => ({
+    dataType,
+    ...parseData(json),
+  }));
 
   return (
     <Layout>
@@ -29,14 +30,7 @@ const ClimateProjections = ({
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
-      {dataTypes.map(currentDataType => (
-        <div key={currentDataType}>
-          <h3>{currentDataType}</h3>
-          <CustomDataTable
-            data={JSON.parse(nodes.find(({ dataType }) => (currentDataType === dataType)).json)}
-          />
-        </div>
-      ))}
+      <ChartsTabs dataCharts={dataCharts} />
 
       <TabsFooter />
     </Layout>

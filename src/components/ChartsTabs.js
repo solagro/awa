@@ -8,17 +8,21 @@ import Tab from '@material-ui/core/Tab';
 
 import TabPanel from './TabPanel';
 
-export default ({ groupTabs, dataCharts }) => {
+export default ({ groupTabs, dataCharts = [] }) => {
   const { t } = useTranslation();
 
   const [currentTab, setCurrentTab] = React.useState(0);
   const handleTabChange = (event, newValue) => setCurrentTab(newValue);
 
+  const groups = groupTabs || dataCharts.map(
+    ({ dataType }) => ({ label: dataType, charts: [dataType] }),
+  );
+
   return (
     <>
       <AppBar position="static">
         <Tabs value={currentTab} onChange={handleTabChange}>
-          {groupTabs.map(({ charts, ...tabProps }, index) => (
+          {groups.map(({ charts, ...tabProps }, index) => (
             <Tab
               key={tabProps.label}
               id={`simple-tab-${index}`}
@@ -29,7 +33,7 @@ export default ({ groupTabs, dataCharts }) => {
         </Tabs>
       </AppBar>
 
-      {groupTabs.map(({ label, charts }, index) => (
+      {groups.map(({ label, charts }, index) => (
         <TabPanel value={currentTab} index={index} key={label}>
           {charts.map(currentDataType => {
             const { dataType, data, headers } = dataCharts
