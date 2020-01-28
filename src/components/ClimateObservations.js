@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
-import CustomDataTable from './CustomDataTable';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
 import Link from './Link';
@@ -14,16 +14,27 @@ import SEO from './Seo';
 
 import doRedirect from '../hoc/doRedirect';
 
+const toNumber = str => (str ? Number(str.replace(/,/, '.')) : undefined);
+
 const ClimateObservations = ({
   pageContext: { sourceType, gridCode },
   data: {
     allGridPointData: { nodes },
-    allDataTypes,
   },
 }) => {
   const { t, i18n } = useTranslation();
 
-  const dataTypes = allDataTypes.group.map(({ dataType }) => dataType);
+  const parseData = json => {
+    const data = JSON.parse(json);
+    return data.map(({ year, id, ...rest }) => ({
+      year,
+      value: toNumber(Object.values(rest)[0]),
+    }));
+  };
+  const numericData = nodes.map(({ dataType, json }) => ({
+    dataType,
+    data: parseData(json),
+  }));
 
   return (
     <Layout>
@@ -31,12 +42,23 @@ const ClimateObservations = ({
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
-      {dataTypes.map(currentDataType => (
-        <div key={currentDataType}>
-          <h3>{currentDataType}</h3>
-          <CustomDataTable
-            data={JSON.parse(nodes.find(({ dataType }) => (currentDataType === dataType)).json)}
-          />
+      {numericData.map(({ dataType, data }) => (
+        <div key={dataType}>
+          <h3>{dataType}</h3>
+          <LineChart
+            width={764}
+            height={364}
+            data={data}
+            margin={{
+              top: 16, right: 32, left: 32, bottom: 32,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="year" />
+            <YAxis />
+            <Tooltip />
+            <Line type="monotone" dataKey="value" stroke="#8a2542" />
+          </LineChart>
         </div>
       ))}
 
