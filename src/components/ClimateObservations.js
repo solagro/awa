@@ -13,27 +13,18 @@ import Link from './Link';
 import SEO from './Seo';
 
 import doRedirect from '../hoc/doRedirect';
+import { parseData } from '../lib/dataTable';
 
-const toNumber = str => (str ? Number(str.replace(/,/, '.')) : undefined);
 
 const ClimateObservations = ({
   pageContext: { sourceType, gridCode },
-  data: {
-    allGridPointData: { nodes },
-  },
+  data: { allGridPointData: { nodes } },
 }) => {
   const { t, i18n } = useTranslation();
 
-  const parseData = json => {
-    const data = JSON.parse(json);
-    return data.map(({ year, id, ...rest }) => ({
-      year,
-      value: toNumber(Object.values(rest)[0]),
-    }));
-  };
-  const numericData = nodes.map(({ dataType, json }) => ({
+  const dataCharts = nodes.map(({ dataType, json }) => ({
     dataType,
-    data: parseData(json),
+    ...parseData(json),
   }));
 
   return (
@@ -42,7 +33,7 @@ const ClimateObservations = ({
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
-      {numericData.map(({ dataType, data }) => (
+      {dataCharts.map(({ dataType, data, headers }) => (
         <div key={dataType}>
           <h3>{dataType}</h3>
           <LineChart
@@ -56,8 +47,11 @@ const ClimateObservations = ({
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="year" />
             <YAxis />
-            <Tooltip />
-            <Line type="monotone" dataKey="value" stroke="#8a2542" />
+            {/* i18next-extract-disable-next-line */}
+            <Tooltip formatter={(value, name) => ([value, t(name)])} />
+            {headers.map(key => (
+              <Line type="monotone" key={key} dataKey={key} stroke="#8a2542" />
+            ))}
           </LineChart>
         </div>
       ))}

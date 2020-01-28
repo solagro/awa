@@ -30,3 +30,25 @@ export const byColumn = (data = []) => {
 
   return dataByColumn;
 };
+
+export const columnsWithNumericValues = columns => Object.entries(columns)
+  .reduce((acc, [columnHeader, value]) => ({
+    ...acc,
+    [columnHeader]: toNumber(value),
+  }), {});
+
+export const parseData = json => {
+  const rawData = JSON.parse(json);
+  const validData = rawData.filter(({ year }) => year);
+  const numericData = validData.map(({ year, id, ...columns }) => ({
+    year,
+    ...columnsWithNumericValues(columns),
+  }));
+
+  const [firstItem] = numericData;
+  const headers = Object.keys(firstItem).filter(key => (key !== 'year'));
+  return {
+    data: numericData,
+    headers,
+  };
+};
