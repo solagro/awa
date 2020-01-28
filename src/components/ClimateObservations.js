@@ -4,16 +4,10 @@ import { graphql } from 'gatsby';
 
 import Typography from '@material-ui/core/Typography';
 
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
-import AppBar from '@material-ui/core/AppBar';
-
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-
+import ChartsTabs from './ChartsTabs';
 import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
 import SEO from './Seo';
-import TabPanel from './TabPanel';
 import TabsFooter from './TabsFooter';
 
 import doRedirect from '../hoc/doRedirect';
@@ -24,8 +18,6 @@ const ClimateObservations = ({
   data: { allGridPointData: { nodes } },
 }) => {
   const { t, i18n } = useTranslation();
-  const [currentTab, setCurrentTab] = React.useState(0);
-  const handleTabChange = (event, newValue) => setCurrentTab(newValue);
 
   const dataCharts = nodes.map(({ dataType, json }) => ({
     dataType,
@@ -61,49 +53,7 @@ const ClimateObservations = ({
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
-      <AppBar position="static">
-        <Tabs value={currentTab} onChange={handleTabChange}>
-          {groupTabs.map(({ charts, ...tabProps }, index) => (
-            <Tab
-              key={tabProps.label}
-              id={`simple-tab-${index}`}
-              aria-controls={`simple-tabpanel-${index}`}
-              {...tabProps}
-            />
-          ))}
-        </Tabs>
-      </AppBar>
-      {groupTabs.map(({ label, charts }, index) => (
-        <TabPanel value={currentTab} index={index} key={label}>
-          {charts.map(currentDataType => {
-            const { dataType, data, headers } = dataCharts
-              .find(({ dataType: dt }) => dt === currentDataType);
-
-            return (
-              <div key={dataType}>
-                <h3>{dataType}</h3>
-                <LineChart
-                  width={764}
-                  height={364}
-                  data={data}
-                  margin={{
-                    top: 16, right: 32, left: 32, bottom: 32,
-                  }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="year" />
-                  <YAxis />
-                  {/* i18next-extract-disable-next-line */}
-                  <Tooltip formatter={(value, name) => ([value, t(name)])} />
-                  {headers.map(key => (
-                    <Line type="monotone" key={key} dataKey={key} stroke="#8a2542" />
-                  ))}
-                </LineChart>
-              </div>
-            );
-          })}
-        </TabPanel>
-      ))}
+      <ChartsTabs groupTabs={groupTabs} dataCharts={dataCharts} />
 
       <TabsFooter />
     </Layout>
