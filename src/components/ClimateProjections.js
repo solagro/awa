@@ -2,15 +2,13 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 import CustomDataTable from './CustomDataTable';
 import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
-import Link from './Link';
 import SEO from './Seo';
+import TabsFooter from './TabsFooter';
 
 import doRedirect from '../hoc/doRedirect';
 
@@ -40,34 +38,7 @@ const ClimateProjections = ({
         </div>
       ))}
 
-      <Grid
-        container
-        direction="row"
-        justify="center"
-        alignItems="center"
-        spacing={2}
-      >
-        <Grid item>
-          <Button
-            variant="outlined"
-            component={Link}
-            to="/adaptations"
-          >
-            {t('See measures')}
-          </Button>
-        </Grid>
-
-        <Grid item>
-          <Button
-            variant="contained"
-            color="secondary"
-            component={Link}
-            to="/map"
-          >
-            {t('Return to map')}
-          </Button>
-        </Grid>
-      </Grid>
+      <TabsFooter />
     </Layout>
   );
 };
