@@ -5,7 +5,7 @@
       "question": "Welche Aussagen zum Anstieg der Jahresdurchschnittstemperatur sind richtig?"
     }
   ],
-  "question": "Which statements on the increase in the annual average temperature are correct?",
+  "question": "Which statements on the increase of the annual average temperature are correct?",
   "theme": "continental",
   "answer-i18n": [
     {
@@ -20,8 +20,8 @@
       "explanation": "Der allergrößte Teil der gesamten Energie, die durch menschliche Aktivitäten zwischen 1971 und 2010 in das Klimasystem gelangt ist und die das Erdsystem erwärmt hat, wurde vom Ozean aufgenommen (über 90 %). Dies bedeutet auch, dass die Lufterwärmung über den Ozeanen geringer ausfällt als über den Landflächen."
     }
   ],
-  "answers": "V The global mean surface temperature has risen by about 0.8 degrees Celsius since the start of the weather recording.\nV The 20 warmest measured years are in the last 22 years (as of 2018).\nV The winters will become milder\nX The average annual temperature will not increase any further",
+  "answers": "V The global mean surface temperature has risen by about 0.8 degrees Celsius since the start of the weather recording\nV The 20 warmest years measured are in the last 22 years (as of 2018)\nV The winters will become milder\nX The average annual temperature will not increase any further",
   "title": "107 Categorie 1",
-  "explanation": "The greatest amount of the total energy that entered the climate system through human activity between 1971 and 2010 and that warmed the earth was absorbed by the ocean (over 90%). This means that the warming of the air above the oceans is not as strong as above the land.",
+  "explanation": "Most of the energy that was produced through human activity between 1971 and 2010 and caused global warming, was absorbed by the ocean (over 90 %). This means that the increase of air temperature above the oceans is not as strong as above land.",
   "category": "climate-change"
 }

@@ -10,18 +10,18 @@
   "answer-i18n": [
     {
       "language": "de",
-      "answers": "X Eine normale Veränderung des Wetters, die zu einem bestimmten Zeitpunkt auftritt, z.B. Hitzewellen im Juli, etc.\nV Globale Abweichung des Erdklimas. Dies ist sowohl auf natürliche Ursachen zurückzuführen, vor allem aber auch auf das Handeln des Menschen und tritt in sehr unterschiedlichen Zeitskalen und auf allen klimatischen Parametern auf: Temperatur, Niederschlag, Bewölkung usw.\nX Geringer Temperaturanstieg, der in ferner Zukunft aufgrund von Naturphänomenen wie dem Treibhauseffekt stattfinden wird.\nX Der Klimawandel ist die Schwankung des Wetters, die zu einem bestimmten Zeitpunkt an einem bestimmten Ort entsteht."
+      "answers": "X Eine normale Veränderung des Wetters, die zu einem bestimmten Zeitpunkt auftritt, z.B. Hitzewellen im Juli, etc.\nV Globale Abweichung des Erdklimas. Dies ist sowohl auf natürliche Ursachen zurückzuführen, vor allem aber auch auf das Handeln des Menschen und tritt in sehr unterschiedlichen Zeitskalen und bei auf allen klimatischen Parametern auf: Temperatur, Niederschlag, Bewölkung usw.\nX Geringer Temperaturanstieg, der in ferner Zukunft aufgrund von Naturphänomenen wie dem Treibhauseffekt stattfinden wird.\nX Der Klimawandel ist die Schwankung des Wetters, die zu einem bestimmten Zeitpunkt an einem bestimmten Ort entsteht."
     }
   ],
-  "order": 102,
+  "order": 100,
   "explanation-i18n": [
     {
       "language": "de",
-      "explanation": "Fest steht, dass das Klima hauptsächlich durch den Einfluss des Menschen verändert wird. Entscheidend ist dabei der Ausstoß von sogenannten Treibhausgasen (THG), die zur stetigen Erwärmung der Atmosphäre beitragen."
+      "explanation": "Fest steht, dass der schnell voranschreitende Klimawandel durch den Einfluss des Menschen verursacht wird. Entscheidend ist dabei der Ausstoß von sogenannten Treibhausgasen (THG), die zur stetigen Erwärmung der Atmosphäre beitragen."
     }
   ],
-  "answers": "X A normal change in the weather that occurs at a certain time, e.g. heat waves in July.\nV A global deviation of the earth's climate. This is due both to natural causes and, above all, to human activity and occurs in very different time scales and on all climatic parameters: Temperature, precipitation, cloud cover etc.\nX A small rise in temperature that will occur in the distant future due to natural phenomena such as the greenhouse effect.\nX Climate change is the fluctuation of the weather that occurs at a certain time in a certain place.",
+  "answers": "X A normal change in the weather that occurs at a certain time, e.g. heat waves in July.\nV A global deviation of the earth's climate. This is due both to natural causes and, above all, to human activity and occurs in very different time scales and on all climatic parameters: temperature, precipitation, cloud cover etc.\nX A small rise in temperature that will occur in the distant future due to natural phenomena such as the greenhouse effect.\nX Climate change is the fluctuation of the weather that occurs at a certain time in a certain place.",
   "title": "102 Categorie 1",
-  "explanation": "It is certain that the climate is mainly altered by human influence. A significant factor is the emission of so-called greenhouse gases (GHG), which contribute to the steady warming of the atmosphere.",
+  "explanation": "It is certain that the rapidly changing climate is mainly altered by human influence. A significant factor is the emission of so-called greenhouse gases (GHG), which contribute to the steady warming of the atmosphere.",
   "category": "climate-change"
 }

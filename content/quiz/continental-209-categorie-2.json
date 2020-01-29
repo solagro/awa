@@ -13,7 +13,7 @@
       "answers": "V Weniger Frostschäden an jungen Blättern in Weinbergen und an den Obstblüten\nX Vermehrte Aromabildung in den Weintrauben\nX Späteres Abreifen der Apfelernte\nX Verringerung der Getreideerträge"
     }
   ],
-  "order": 209,
+  "order": 205,
   "explanation-i18n": [
     {
       "language": "de",
@@ -22,6 +22,6 @@
   ],
   "answers": "V Less frost damage to young leaves in vineyards and fruit blossoms\nX Increased aroma formation in the grapes\nX Later ripening of the apples\nX Reduction of cereal yields",
   "title": "209 Categorie 2",
-  "explanation": "Less late frost in the bud phase and at the beginning of vegetative growth in permanent crops reduces damage from freezing of the plants. Fewer late frost days require less effort to prevent damage. \n\nHowever, the tendency of an earlier vegetation start and thus earlier flowering increases the damage potential during late frost events.",
+  "explanation": "Less late frost in the bud phase and at the beginning of vegetative growth in permanent crops, reduces damage from freezing of the plants. Fewer late frost days require less effort to prevent damage. \n\nHowever, the tendency of an earlier vegetation start and thus earlier flowering increases the damage potential during late frost events.",
   "category": "agricultural-impacts"
 }

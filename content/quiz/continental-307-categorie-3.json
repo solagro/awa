@@ -17,10 +17,10 @@
   "explanation-i18n": [
     {
       "language": "de",
-      "explanation": "Eine Ausrichtung auf Maximierung der Erträge weniger Kulturen mit hohem Input macht das System Landwirtschaft anfällig für unregelmäßigere, aber auch extremere Wetterbedingungen, die durch den Klimawandel zunehmen werden. Eine betriebliche Risikostreuung kann Ausfälle verringert und zu stabileren, wenn auch etwas reduzierteren Erträgen führen."
+      "explanation": "Eine Ausrichtung auf Maximierung der Erträge weniger Kulturen mit hohem Input macht das System Landwirtschaft anfällig für unregelmäßigere, aber auch extremere Wetterbedingungen, die durch den Klimawandel zunehmen werden. Eine betriebliche Risikostreuung kann Ausfälle verringernt und zu stabileren, wenn auch etwas reduzierteren Erträgen führen."
     }
   ],
-  "answers": "X Profit maximisation by exploiting the maximum yield potential in climatically favourable years\nV Target stable good yields over long-term average (e.g. 10 years) as operating target\nX You can't react because the weather will be different every year\nX Insurances for relevant crops",
+  "answers": "X Profit maximisation by exploiting the maximum yield potential in climatically favourable years\nV Target stable good yields over long-term average (e.g. 10 years) as operating target\nX You can't react because the weather will be different every year\nV Insurances for relevant crops",
   "title": "307 Categorie 3",
   "explanation": "A focus on maximising the yields of a few high-input crops makes the agricultural system vulnerable to more irregular but also more extreme weather conditions, which will increase due to climate change. Farm risk diversification can reduce losses and lead to more stable, albeit somewhat reduced, yields.",
   "category": "adaptation"

@@ -17,11 +17,11 @@
   "explanation-i18n": [
     {
       "language": "de",
-      "explanation": "Bei den meisten Getreidearten wirken sich Temperaturen von über 30°C um die Blütezeit schädlich auf den Ertrag aus durch Verminderung der Körnerzahl aufgrund ausbleibender Befruchtung. Sehr hohe Temperaturen verhindern eine optimale Kornfüllung, es entstehen kleinere Körner, vor allem in Verbindung mit Trockenheit."
+      "explanation": "Bei den meisten Getreidearten wirken sich Temperaturen von über 30°C um die Blütezeit aufgrund geringerer Befruchtungsrate und somit verminderter Körnerzahl negativ auf den Ertrag aus.  schädlich auf den Ertrag aus durch Verminderung der Körnerzahl aufgrund ausbleibender Befruchtung. Sehr hohe Temperaturen verhindern eine optimale Kornfüllung, es entstehen kleinere Körner, vor allem in Verbindung mit Trockenheit."
     }
   ],
-  "answers": "X … makes cereals grow taller\nV ...in May can negatively affect the fertilisation success of cereals and cause lower yields.\nX …promotes photosynthesis\nV …can lead to emergency ripening in the grain",
+  "answers": "X … makes cereals grow taller\nV ...in May can negatively affect the fertilisation success of cereals and cause lower yields\nX …promotes photosynthesis\nV …can lead to emergency ripening in the grain",
   "title": "201 Categorie 2",
-  "explanation": "For most cereals, temperatures above 30°C around the flowering period have a detrimental effect on the yield by reducing the number of grains due to lack of fertilisation. Very high temperatures prevent an optimal grain filling, smaller grains are produced, especially when dry.",
+  "explanation": "For most cereals, temperatures above 30°C around the flowering period have a detrimental effect on the yield, by reducing the number of grains due to lack of fertilisation. Very high temperatures prevent an optimal grain filling, smaller grains are produced, especially when dry.",
   "category": "agricultural-impacts"
 }

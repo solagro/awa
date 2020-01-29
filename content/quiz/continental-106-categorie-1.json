@@ -10,7 +10,7 @@
   "answer-i18n": [
     {
       "language": "de",
-      "answers": "X Durch den Klimawandel werden alle Sommer heißer\nV Der Klimawandel verschärft die Wetterextreme. Trockenphasen können länger andauern, Starkniederschläge führen zu mehr Niederschlagswasser in kürzerer Zeit.  \nX Der Meeresspiegel steigt langsamer als noch vor fünfzig Jahren\nX Das Klima ändert sich deutlich langsamer als bisherige Modellrechnungen vermuten ließen."
+      "answers": "X Durch den Klimawandel werden alle Sommer heißer.\nV Der Klimawandel verschärft die Wetterextreme. Trockenphasen können länger andauern, Starkniederschläge führen zu mehr Niederschlagswasser in kürzerer Zeit.  \nX Der Meeresspiegel steigt langsamer als noch vor fünfzig Jahren.\nX Das Klima ändert sich deutlich langsamer als bisherige Modellrechnungen vermuten ließen."
     }
   ],
   "order": 106,
@@ -20,7 +20,7 @@
       "explanation": "In den meisten Regionen steigt die Bedrohung durch längere Hitzeperioden, Starkniederschläge, Überschwemmungen u.a.. Die anhaltende Erwärmung der Atmosphäre beeinflusst verschiedenste, klimarelevante Faktoren."
     }
   ],
-  "answers": "X Through climate change, all summers will become hotter\nV Climate change is exacerbating weather extremes. Dry periods can last longer, heavy precipitation leads to more rainfall in less time.  \nX The sea-level is rising slower than fifty years ago\nX The climate is changing much slower than previous model calculations suggested.",
+  "answers": "X Through climate change, all summers will become hotter\nV Climate change is exacerbating weather extremes. Dry periods can last longer, heavy precipitation leads to more rainfall in less time\nX The sea-level is rising slower than fifty years ago\nX The climate is changing much slower than previous model calculations suggested",
   "title": "106 Categorie 1",
   "explanation": "In most regions, however, the threat of longer heat periods, heavy precipitation, flooding, etc. is increasing. The continuing warming of the atmosphere influences a wide range of climate-relevant factors.",
   "category": "climate-change"

@@ -13,14 +13,14 @@
       "answers": "X Schließen der Fenster und Tore\nV Überdachter Auslauf\nV Ausreichend Wasserstellen mit ausreichend hohem Durchlauf\nX Kuh-Pool"
     }
   ],
-  "order": 302,
+  "order": 303,
   "explanation-i18n": [
     {
       "language": "de",
       "explanation": "Durch den Hitzestress reduziert die Kuh die Futteraufnahme, die Speichelproduktion wird dadurch reduziert und die Schweißproduktion wird erhöht. Maßnahmen wie z.B. ausreichende Wasserversorgung, Einsatz von Ventilatoren und Sprinklern, Öffnung des Stalles können den Hitzestress reduzieren."
     }
   ],
-  "answers": "X Closing windows and gates\nV Covered outlet\nX Sufficient water points with a sufficiently high flow rate\nX Cow-pool",
+  "answers": "X Closing windows and gates\nV Covered outlet\nV Sufficient water points with a sufficiently high flow rate\nX Cow-pool",
   "title": "302 Categorie 3",
   "explanation": "Heat stress reduces the cow's feed intake, saliva production is reduced and sweat production is increased. Measures such as sufficient water supply, use of fans and sprinklers and opening of the barn can reduce heat stress.",
   "category": "adaptation"

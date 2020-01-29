@@ -17,11 +17,11 @@
   "explanation-i18n": [
     {
       "language": "de",
-      "explanation": "Bei der Wettervorhersage hat zum Beispiel der Deutsche Wetterdienst (DWD) die Warnkriterien für Starkniederschlag auf Niederschlag von 25 mm in einer Stunde und 35 mm in 6 Stunden festgelegt. Höhere Verdunstung und gleichzeitig eine höhere Wasseraufnahmekapazität der wärmeren Luft können zu verstärkten Niederschlägen führen."
+      "explanation": "Höhere Verdunstung und gleichzeitig eine höhere Wasseraufnahmekapazität der wärmeren Luft können zu häufigeren bzw. zu verstärkten Niederschlägen führen. Bei der Wettervorhersage hat zum Beispiel der Deutsche Wetterdienst (DWD) die Warnkriterien für Starkniederschlag folgendermaßen festgelegt: auf Niederschlag von 25 mm in 1 einerStunde und 35 mm in 6 Stunden."
     }
   ],
   "answers": "V Heavy precipitation events will increase\nX Heavy precipitation events will decrease\nX Heavy precipitation events will occur especially in autumn\nV Heavy precipitation events will become more extreme",
   "title": "105 Categorie 1",
-  "explanation": "For the weather forecast, the German Weather Service (DWD) set the warning criteria for heavy precipitation to 25 mm in one hour and 35 mm in 6 hours. Higher evaporation and a higher water absorption capacity of the warmer air can lead to increased precipitation.",
+  "explanation": "Higher evaporation and a higher water absorption capacity of the warmer air can lead to increased and heavier precipitation. For the weather forecast, the German Weather Service (DWD) has set the warning criteria for heavy precipitation as follows: to 25 mm in 1 one hour and 35 mm in 6 hours.",
   "category": "climate-change"
 }

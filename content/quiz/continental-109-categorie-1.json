@@ -10,17 +10,17 @@
   "answer-i18n": [
     {
       "language": "de",
-      "answers": "X Der Anstieg der Luftfeuchtigkeit durch starke Regenfälle\nV Die Absorption von Strahlung von der Erdoberfläche durch die Atmosphäre, die verhindert, dass sie in den Weltraum gelangt und die Erde erwärmt.\nX Die Atmosphäre eines Planeten, die Sonnenlicht bündelt und einen Lupeneffekt erzeugt. \nX Der Treibhauseffekt ist der Anstieg der Jahresdurchschnittstemperatur durch den menschenverursachten Anstieg an CO2."
+      "answers": "X Der Anstieg der Luftfeuchtigkeit durch starke Regenfälle.\nV Die in der Atmosphäre vorhandenen Treibhausgase verhindern, dass die von der Erdoberfläche zurückgestrahlte Wärme komplett in den Weltraum abgegeben wird.\nX Die Atmosphäre eines Planeten, die Sonnenlicht bündelt und einen Lupeneffekt erzeugt. \nX Der Treibhauseffekt ist der Anstieg der Jahresdurchschnittstemperatur durch den menschenverursachten Anstieg an CO2."
     }
   ],
-  "order": 109,
+  "order": 101,
   "explanation-i18n": [
     {
       "language": "de",
       "explanation": "Die Erdatmosphäre lässt kurzwelliges Sonnenlicht eindringen, das die Erdoberfläche erwärmt. Die Erde reflektiert daraufhin langwellige Strahlung, die nur z.T. die Atmosphäre durchdringt.  Die zurück gehaltene natürliche Strahlung erwärmt die Erde."
     }
   ],
-  "answers": "X The increase of air humidity due to heavy rainfalls \nV The absorption of radiation from the Earth's surface by the atmosphere, which prevents it from entering space and heating the Earth\nX The atmosphere of a planet that focuses sunlight and creates a magnifying glass effect\nX The greenhouse effect is the increase in annual average temperature caused by the human-induced increase in CO2",
+  "answers": "X The increase of air humidity due to heavy rainfalls \nV The greenhouse gases in the earth´s atmosphere prevent the complete loss of reflected warmth from the earth´s surface into space\nX The atmosphere of a planet that focuses sunlight and creates a magnifying glass effect\nX The greenhouse effect is the increase in annual average temperature caused by the human-induced increase in CO2",
   "title": "109 Categorie 1",
   "explanation": "The Earth's atmosphere allows short-waved sunlight to penetrate, warming the Earth's surface. The earth then reflects long-waved radiation, which only partially penetrates the atmosphere.  The retained natural radiation warms the earth.",
   "category": "climate-change"
