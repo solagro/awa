@@ -6,12 +6,12 @@ export default {
     ownName: 'English',
   },
   es: {
-    ownName: 'español',
+    ownName: 'Español',
   },
   et: {
-    ownName: 'eesti',
+    ownName: 'Eesti',
   },
   fr: {
-    ownName: 'français',
+    ownName: 'Français',
   },
 };
