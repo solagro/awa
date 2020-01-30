@@ -101,9 +101,11 @@ const ClimateProjections = ({
       {Object.keys(groups).map((group, index) => (
         <TabPanel value={currentTab} index={index} key={group}>
           {dataCharts[group].headers.map(header => (
-            <div key={header}>
-              {/* i18next-extract-disable-line */}
-              <Typography variant="h3">{t(header)}</Typography>
+            <div key={header} style={{ marginTop: '2em' }}>
+              <Typography variant="subtitle1">
+                {/* i18next-extract-disable-next-line */}
+                IAC - {t(header)} - {t(dataCharts[group].meta[header])}
+              </Typography>
               <Chart1 {...dataCharts[group]} key={header} dataKeys={[header]} type="step" />
             </div>
           ))}

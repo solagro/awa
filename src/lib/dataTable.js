@@ -47,8 +47,10 @@ export const parseData = json => {
 
   const [firstItem] = numericData;
   const headers = Object.keys(firstItem).filter(key => (key !== 'year'));
+  const meta = rawData.find(({ year }) => !year);
   return {
     data: numericData,
     headers,
+    meta,
   };
 };

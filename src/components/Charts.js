@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Typography from '@material-ui/core/Typography';
+
 import {
   ComposedChart,
   Line,
@@ -53,4 +55,24 @@ export const Chart1 = ({
   </DefaultComposedChart>
 );
 
-export const paf = 'paf';
+export const ChartLegend = ({
+  meta = [],
+  colors = [],
+}) => (
+  <ul style={{ listStyleType: 'none' }}>
+    {Object.entries(meta).map(([key, value], index) => {
+      if (!value) return null;
+      const color = colors[index] || '#8a2542';
+      return (
+        <Typography
+          key={key}
+          variant="caption"
+          component="li"
+          style={{ textAlign: 'center', color }}
+        >
+          {key} {value}
+        </Typography>
+      );
+    })}
+  </ul>
+);
