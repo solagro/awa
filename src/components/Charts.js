@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Typography from '@material-ui/core/Typography';
 
 import {
+  Bar,
   ComposedChart,
   Line,
   XAxis,
@@ -35,7 +36,34 @@ export const DefaultComposedChart = ({
   </ComposedChart>
 );
 
-export const Chart1 = ({
+export const CustomStackedBarChart = ({
+  data,
+  headers = [],
+  dataKeys = headers,
+  color = '#8a2542',
+  colors = [color],
+}) => {
+  const { t } = useTranslation();
+
+  return (
+    <DefaultComposedChart
+      data={data}
+      style={{ margin: '0 auto' }}
+      tooltipProps={{
+        // i18next-extract-disable-next-line
+        formatter: (value, name) => ([value, t(name)]),
+      }}
+    >
+      {dataKeys.map((key, idx) => {
+        const chartColor = colors[idx % colors.length];
+
+        return <Bar stackId="a" key={key} dataKey={key} fill={chartColor} />;
+      })}
+    </DefaultComposedChart>
+  );
+};
+
+export const CustomLineChart = ({
   data,
   headers = [],
   dataKeys = headers,
@@ -62,7 +90,7 @@ export const Chart1 = ({
         return <Line type={chartType} key={key} dataKey={key} stroke={chartColor} />;
       })}
     </DefaultComposedChart>
-  )
+  );
 };
 
 export const ChartLegend = ({

@@ -14,7 +14,7 @@ import SEO from './Seo';
 import TabPanel from './TabPanel';
 import TabsFooter from './TabsFooter';
 
-import { Chart1, ChartLegend } from './Charts';
+import { CustomLineChart, ChartLegend, CustomStackedBarChart } from './Charts';
 
 import doRedirect from '../hoc/doRedirect';
 import { parseData } from '../lib/dataTable';
@@ -102,37 +102,40 @@ const ClimateObservations = ({
 
       <TabPanel value={currentTab} index={0}>
         <Typography variant="subtitle1">{t('averageTemperatureAnnual')}</Typography>
-        <Chart1 {...dataCharts.averageTemperatureAnnual} type="step" />
+        <CustomLineChart {...dataCharts.averageTemperatureAnnual} type="step" />
 
         <Typography variant="subtitle1">{t('averageTemperatureSeasonal')}</Typography>
-        <Chart1 {...dataCharts.averageTemperatureSeasonal} type="step" colors={seasonsColors} />
+        <CustomLineChart {...dataCharts.averageTemperatureSeasonal} type="step" colors={seasonsColors} />
         <ChartLegend meta={dataCharts.averageTemperatureSeasonal.meta} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={1}>
         <Typography variant="subtitle1">{t('precipitationAnnual')}</Typography>
-        <Chart1 {...dataCharts.precipitationAnnual} type="step" />
+        <CustomLineChart {...dataCharts.precipitationAnnual} type="step" />
 
         <Typography variant="subtitle1">{t('precipitationSeasonal')}</Typography>
-        <Chart1 {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
+        <CustomLineChart {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
+
+        <Typography variant="subtitle1">{t('precipitationSeasonal')}</Typography>
+        <CustomStackedBarChart {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={2}>
         <Typography variant="subtitle1">{t('hydricDeficitAnnual')}</Typography>
-        <Chart1 {...dataCharts.hydricDeficitAnnual} type="step" />
+        <CustomLineChart {...dataCharts.hydricDeficitAnnual} type="step" />
 
         <Typography variant="subtitle1">{t('hydricDeficitSeasonal')}</Typography>
-        <Chart1 {...dataCharts.hydricDeficitSeasonal} colors={seasonsColors} />
+        <CustomLineChart {...dataCharts.hydricDeficitSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={3}>
         <Typography variant="subtitle1">{t('frozenDays')}</Typography>
-        <Chart1 {...dataCharts.frozenDays} type="step" />
+        <CustomLineChart {...dataCharts.frozenDays} type="step" />
       </TabPanel>
 
       <TabPanel value={currentTab} index={4}>
         <Typography variant="subtitle1">{t('estivalDays')}</Typography>
-        <Chart1 {...dataCharts.estivalDays} type="step" />
+        <CustomLineChart {...dataCharts.estivalDays} type="step" />
       </TabPanel>
 
       <TabsFooter />
