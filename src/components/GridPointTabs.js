@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -26,14 +27,39 @@ const links = [
   },
 ];
 
+const CustomAppBar = withStyles(theme => ({
+  colorPrimary: {
+    backgroundColor: 'none',
+    marginBottom: theme.spacing(6),
+    marginTop: theme.spacing(3),
+  },
+}))(props => <AppBar {...props} />);
+
+const CustomTabs = withStyles({
+  flexContainer: {
+    justifyContent: 'space-around',
+  },
+  indicator: {
+    height: 6,
+  },
+})(props => <Tabs {...props} centered indicatorColor="secondary" />);
+
+const CustomTab = withStyles(theme => ({
+  root: {
+    textTransform: 'none',
+    height: theme.spacing(9),
+  },
+  selected: {},
+}))(props => <Tab {...props} />);
+
 const GridPointTabs = ({ sourceType, gridCode, modalProps: { modal, closeTo } }) => {
   const { t } = useTranslation();
 
   return (
-    <AppBar position="static">
-      <Tabs value={sourceType}>
+    <CustomAppBar position="static">
+      <CustomTabs value={sourceType}>
         {links.map(({ id, path, label }) => (
-          <Tab
+          <CustomTab
             key={id}
             label={t(label)} // i18next-extract-disable-line
             value={id}
@@ -42,8 +68,8 @@ const GridPointTabs = ({ sourceType, gridCode, modalProps: { modal, closeTo } })
             state={{ modal, closeTo }}
           />
         ))}
-      </Tabs>
-    </AppBar>
+      </CustomTabs>
+    </CustomAppBar>
   );
 };
 
