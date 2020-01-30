@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Typography from '@material-ui/core/Typography';
 
@@ -16,8 +17,6 @@ const stdProps1 = {
   height: 400,
   margin: { top: 8, right: 16, left: 0, bottom: 8 },
 };
-
-// const formatter = (value, name) => ([value, t(name)]);
 
 export const DefaultComposedChart = ({
   children,
@@ -44,16 +43,27 @@ export const Chart1 = ({
   colors = [color],
   type = 'monotone',
   types = [type],
-}) => (
-  <DefaultComposedChart data={data} style={{ margin: '0 auto' }}>
-    {dataKeys.map((key, idx) => {
-      const chartColor = colors[idx % colors.length];
-      const chartType = types[idx % types.length];
+}) => {
+  const { t } = useTranslation();
 
-      return <Line type={chartType} key={key} dataKey={key} stroke={chartColor} />;
-    })}
-  </DefaultComposedChart>
-);
+  return (
+    <DefaultComposedChart
+      data={data}
+      style={{ margin: '0 auto' }}
+      tooltipProps={{
+        // i18next-extract-disable-next-line
+        formatter: (value, name) => ([value, t(name)]),
+      }}
+    >
+      {dataKeys.map((key, idx) => {
+        const chartColor = colors[idx % colors.length];
+        const chartType = types[idx % types.length];
+
+        return <Line type={chartType} key={key} dataKey={key} stroke={chartColor} />;
+      })}
+    </DefaultComposedChart>
+  )
+};
 
 export const ChartLegend = ({
   meta = [],
