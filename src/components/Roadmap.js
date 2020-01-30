@@ -9,6 +9,7 @@ const Roadmap = () => {
     <img
       src={src}
       alt={t('Agriadapt roadmap for adaptation')}
+      style={{ margin: '2rem auto' }}
     />
   );
 };

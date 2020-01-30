@@ -20,6 +20,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
     paddingBottom: theme.spacing(10),
+    minHeight: '96vh',
   },
   module__title: {
     display: 'flex',
@@ -29,83 +30,24 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-start',
+    marginBottom: theme.spacing(4),
+  },
+  category__block: {
+    display: 'flex',
+    flexDirection: 'column',
+    flexGrow: 2,
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(4),
   },
   category__subtitle: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
+    margin: theme.spacing(2),
   },
-  answer: {
-    margin: '.5em auto',
-    minWidth: 400,
-    borderRadius: '5px',
+  category__subtitle_cat: {
+    display: 'inline',
+    fontSize: '1.2rem',
   },
-  valid: {
-    border: 'none',
-    backgroundColor: '#a5d6a7',
-  },
-  invalid: {
-    border: 'none',
-    backgroundColor: '#ef9a9a',
-  },
-  validUserChoice: {
-    border: '4px solid #4caf50',
-    borderRadius: '7px',
-    backgroundColor: '#a5d6a7',
-  },
-  invalidUserChoice: {
-    border: '4px solid #f44336',
-    borderRadius: '7px',
-    backgroundColor: '#ef9a9a',
-  },
-  answer__type: {
-    marginTop: theme.spacing(4),
-    marginBottom: theme.spacing(2),
-    display: 'flex',
-    alignItems: 'center',
-  },
-  answer__type__icon: {
-    marginRight: theme.spacing(1),
-  },
-  answer__type__icon_correct: {
-    color: '#a5d6a7',
-  },
-  answer__type__icon_wrong: {
-    color: '#ef9a9a',
-  },
-  card: {
-    backgroundColor: '#acd9e933',
-  },
-  card__actions: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  progress: {
-    // display: 'flex',
-    display: 'none',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 32,
-  },
-  progress__bullet: {
-    width: 16,
-    height: 16,
-    borderRadius: '50%',
-    border: 'none',
-    backgroundColor: '#e0e0e0',
-    margin: '0 8px',
-  },
-  progress__bullet_answered_valid: {
-    backgroundColor: '#a5d6a7',
-  },
-  progress__bullet_answered_invalid: {
-    backgroundColor: '#ef9a9a',
-  },
-  quiz__nav_buttons: {
-    position: 'fixed',
-    bottom: theme.spacing(4),
+  nav_buttons: {
+    marginTop: theme.spacing(8),
   },
 }));
 
@@ -128,7 +70,8 @@ const QuizQuestion = ({ pageContext: { theme } }) => {
   } = React.useContext(GlobalStateContext) || {};
   const answersData = Object.values(givenAnswers || {});
   const categories = Object.entries(groupByCategories(answersData, 'category'));
-
+  const hasValidAnswers = category =>
+    category[1].filter(response => response.valid).length;
   return (
     <Layout>
       <SEO title={t('Quiz')} lang={i18n.language} />
@@ -144,19 +87,37 @@ const QuizQuestion = ({ pageContext: { theme } }) => {
         <Typography className={classes.module__title} variant="h1" gutterBottom>
           {t('Farm vulnerability and adaptation Quiz')}
         </Typography>
-
-        <Typography className={classes.category__title} variant="h2" gutterBottom>
-          {t('Results')}
-        </Typography>
-        {categories.map(category => (
-          <Typography className={classes.category__subtitle} variant="h3" gutterBottom display="inline">
-            {`${category[0]} : 
-            ${category[1].filter(respons => respons.valid).length} ${t('good answer(s)')}`}
+        <div className={classes.category__block}>
+          <Typography className={classes.category__title} variant="h2" gutterBottom>
+            {t('Results')}
           </Typography>
-        ))}
-        <Typography variant="h2" gutterBottom>Agriadapt roadmap for adaptation </Typography>
+          {categories.map(category => (
+            <Grid
+              className={classes.category__subtitle}
+              container
+              justify="flex-start"
+              alignItems="baseline"
+              spacing={1}
+            >
+              <Grid item>
+                <Typography className={classes.category__subtitle_cat} variant="h3">
+                  {`${category[0]} - `}
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography className={classes.category__subtitle_score} variant="p">
+                  {`${hasValidAnswers(category)} 
+                  ${hasValidAnswers(category) > 1 ? t('good answers') : t('good answer')}`}
+                </Typography>
+              </Grid>
+            </Grid>
+          ))}
+        </div>
+
+        <Typography variant="h2" gutterBottom>{t('Agriadapt roadmap for adaptation')}</Typography>
         <Roadmap />
         <Grid
+          className={classes.nav_buttons}
           container
           direction="row"
           justify="center"

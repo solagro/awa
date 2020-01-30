@@ -28,6 +28,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
     paddingBottom: theme.spacing(10),
+    minHeight: '96vh',
   },
   module__title: {
     display: 'flex',
@@ -37,6 +38,9 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-start',
+  },
+  answers__group: {
+    flexGrow: 2,
   },
   answer: {
     margin: '.1em auto',
