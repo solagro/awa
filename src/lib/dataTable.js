@@ -41,7 +41,7 @@ export const parseData = json => {
   const rawData = JSON.parse(json);
   const validData = rawData.filter(({ year }) => year);
   const numericData = validData.map(({ year, id, ...columns }) => ({
-    year,
+    year: toNumber(year),
     ...columnsWithNumericValues(columns),
   }));
 
