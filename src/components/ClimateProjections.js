@@ -77,11 +77,11 @@ const ClimateProjections = ({
   }), {});
 
   const groups = {
+    generalities: t('generalities'),
     crops: t('crops'),
     fodder: t('fodder'),
-    generalities: t('generalities'),
-    vineyardFruit: t('vineyardFruit'),
     animal: t('animal'),
+    vineyardFruit: t('vineyardFruit'),
   };
 
   return (
@@ -106,7 +106,7 @@ const ClimateProjections = ({
                 {/* i18next-extract-disable-next-line */}
                 IAC - {t(header)} - {t(dataCharts[group].meta[header])}
               </Typography>
-              <CustomLineChart {...dataCharts[group]} key={header} dataKeys={[header]} type="step" />
+              <CustomLineChart {...dataCharts[group]} key={header} dataKeys={[header]} />
             </div>
           ))}
         </TabPanel>

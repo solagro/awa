@@ -102,19 +102,16 @@ const ClimateObservations = ({
 
       <TabPanel value={currentTab} index={0}>
         <Typography variant="subtitle1">{t('averageTemperatureAnnual')}</Typography>
-        <CustomLineChart {...dataCharts.averageTemperatureAnnual} type="step" />
+        <CustomLineChart {...dataCharts.averageTemperatureAnnual} />
 
         <Typography variant="subtitle1">{t('averageTemperatureSeasonal')}</Typography>
-        <CustomLineChart {...dataCharts.averageTemperatureSeasonal} type="step" colors={seasonsColors} />
+        <CustomLineChart {...dataCharts.averageTemperatureSeasonal} colors={seasonsColors} />
         {/* <ChartLegend meta={dataCharts.averageTemperatureSeasonal.meta} /> */}
       </TabPanel>
 
       <TabPanel value={currentTab} index={1}>
         <Typography variant="subtitle1">{t('precipitationAnnual')}</Typography>
-        <CustomLineChart {...dataCharts.precipitationAnnual} type="step" />
-
-        <Typography variant="subtitle1">{t('precipitationSeasonal')}</Typography>
-        <CustomLineChart {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
+        <CustomLineChart {...dataCharts.precipitationAnnual} />
 
         <Typography variant="subtitle1">{t('precipitationSeasonal')}</Typography>
         <CustomStackedBarChart {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
@@ -122,20 +119,20 @@ const ClimateObservations = ({
 
       <TabPanel value={currentTab} index={2}>
         <Typography variant="subtitle1">{t('hydricDeficitAnnual')}</Typography>
-        <CustomLineChart {...dataCharts.hydricDeficitAnnual} type="step" />
+        <CustomLineChart {...dataCharts.hydricDeficitAnnual} />
 
         <Typography variant="subtitle1">{t('hydricDeficitSeasonal')}</Typography>
-        <CustomLineChart {...dataCharts.hydricDeficitSeasonal} colors={seasonsColors} />
+        <CustomStackedBarChart {...dataCharts.hydricDeficitSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={3}>
         <Typography variant="subtitle1">{t('frozenDays')}</Typography>
-        <CustomLineChart {...dataCharts.frozenDays} type="step" />
+        <CustomLineChart {...dataCharts.frozenDays} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={4}>
         <Typography variant="subtitle1">{t('estivalDays')}</Typography>
-        <CustomLineChart {...dataCharts.estivalDays} type="step" />
+        <CustomLineChart {...dataCharts.estivalDays} />
       </TabPanel>
 
       <TabsFooter />
