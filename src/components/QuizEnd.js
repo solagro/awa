@@ -30,6 +30,11 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     alignItems: 'flex-start',
   },
+  category__subtitle: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+  },
   answer: {
     margin: '.5em auto',
     minWidth: 400,
@@ -104,6 +109,15 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const groupByCategories = (answered, cat) => answered.reduce((acc, question) => {
+  const cle = question[cat];
+  if (!acc[cle]) {
+    acc[cle] = [];
+  }
+  acc[cle].push(question);
+  return acc;
+}, {});
+
 const QuizQuestion = ({ pageContext: { theme } }) => {
   const { t, i18n } = useTranslation();
   const classes = useStyles();
@@ -112,6 +126,8 @@ const QuizQuestion = ({ pageContext: { theme } }) => {
   const {
     answers: { [theme]: givenAnswers } = {},
   } = React.useContext(GlobalStateContext) || {};
+  const answersData = Object.values(givenAnswers || {});
+  const categories = Object.entries(groupByCategories(answersData, 'category'));
 
   return (
     <Layout>
@@ -132,9 +148,12 @@ const QuizQuestion = ({ pageContext: { theme } }) => {
         <Typography className={classes.category__title} variant="h2" gutterBottom>
           {t('Results')}
         </Typography>
-        <pre>
-          {JSON.stringify(givenAnswers, null, 2)}
-        </pre>
+        {categories.map(category => (
+          <Typography className={classes.category__subtitle} variant="h3" gutterBottom display="inline">
+            {`${category[0]} : 
+            ${category[1].filter(respons => respons.valid).length} ${t('good answer(s)')}`}
+          </Typography>
+        ))}
         <Typography variant="h2" gutterBottom>Agriadapt roadmap for adaptation </Typography>
         <Roadmap />
         <Grid
