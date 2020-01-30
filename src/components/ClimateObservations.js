@@ -106,7 +106,7 @@ const ClimateObservations = ({
 
         <Typography variant="subtitle1">{t('averageTemperatureSeasonal')}</Typography>
         <CustomLineChart {...dataCharts.averageTemperatureSeasonal} type="step" colors={seasonsColors} />
-        <ChartLegend meta={dataCharts.averageTemperatureSeasonal.meta} />
+        {/* <ChartLegend meta={dataCharts.averageTemperatureSeasonal.meta} /> */}
       </TabPanel>
 
       <TabPanel value={currentTab} index={1}>
