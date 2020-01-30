@@ -32,6 +32,16 @@ const ClimateObservations = ({
     [dataType]: parseData(json),
   }), {});
 
+  const groups = {
+    'average-temperature': t('average-temperature'),
+    'precipitation': t('precipitation'), // eslint-disable-line quote-props
+    'hydric-deficit': t('hydric-deficit'),
+    'frozen-days': t('frozen-days'),
+    'estival-days': t('estival-days'),
+  };
+
+  const seasonsColors = ['#749eb6', '#88b42d', '#db5630', '#79454a'];
+
   return (
     <Layout>
       <SEO title={t('Active site detailed information card')} lang={i18n.language} />
@@ -40,13 +50,7 @@ const ClimateObservations = ({
 
       <AppBar position="static">
         <Tabs value={currentTab} onChange={handleTabChange}>
-          {[
-            t('average-temperature'),
-            t('precipitation'),
-            t('hydric-deficit'),
-            t('frozen-days'),
-            t('estival-days'),
-          ].map((label, idx) => (
+          {Object.values(groups).map((label, idx) => (
             <Tab label={label} key={label} id={`simple-tab-${idx}`} aria-controls={`simple-tabpanel-${idx}`} />
           ))}
         </Tabs>
@@ -54,17 +58,17 @@ const ClimateObservations = ({
 
       <TabPanel value={currentTab} index={0}>
         <Chart1 {...dataCharts.averageTemperatureAnnual} type="step" />
-        <Chart1 {...dataCharts.averageTemperatureSeasonal} type="step" />
+        <Chart1 {...dataCharts.averageTemperatureSeasonal} type="step" colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={1}>
         <Chart1 {...dataCharts.precipitationAnnual} type="step" />
-        <Chart1 {...dataCharts.precipitationSeasonal} />
+        <Chart1 {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={2}>
         <Chart1 {...dataCharts.hydricDeficitAnnual} type="step" />
-        <Chart1 {...dataCharts.hydricDeficitSeasonal} />
+        <Chart1 {...dataCharts.hydricDeficitSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={3}>
