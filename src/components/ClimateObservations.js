@@ -18,6 +18,7 @@ import {
   CustomLineChart,
   CustomStackedBarChart,
   CustomAreaChart,
+  ChartTitle,
 } from './Charts';
 
 import doRedirect from '../hoc/doRedirect';
@@ -105,32 +106,36 @@ const ClimateObservations = ({
       </SecondaryAppBar>
 
       <TabPanel value={currentTab} index={0}>
-        <Typography variant="subtitle1">{t('averageTemperatureAnnual')}</Typography>
+        {/* i18next-extract-disable-next-line */}
+        <ChartTitle main={t('averageTemperatureAnnual')} />
         <CustomLineChart {...dataCharts.averageTemperatureAnnual} />
 
-        <Typography variant="subtitle1">{t('averageTemperatureSeasonal')}</Typography>
+        {/* i18next-extract-disable-next-line */}
+        <ChartTitle main={t('averageTemperatureSeasonal')} />
         <CustomLineChart {...dataCharts.averageTemperatureSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={1}>
-        <Typography variant="subtitle1">{t('precipitationAnnual')}</Typography>
+        {/* i18next-extract-disable-next-line */}
+        <ChartTitle main={t('precipitationAnnual')} />
         <CustomLineChart {...dataCharts.precipitationAnnual} />
 
-        <Typography variant="subtitle1">{t('precipitationSeasonal')}</Typography>
+        {/* i18next-extract-disable-next-line */}
+        <ChartTitle main={t('precipitationSeasonal')} />
         <CustomStackedBarChart {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={2}>
-        <Typography variant="subtitle1">{t('hydricDeficitAnnual')}</Typography>
+        {/* i18next-extract-disable-next-line */}
+        <ChartTitle main={t('hydricDeficitAnnual')} />
         <CustomAreaChart {...dataCharts.hydricDeficitAnnual} />
 
-        <Typography variant="subtitle1">{t('hydricDeficitSeasonal')}</Typography>
+        {/* i18next-extract-disable-next-line */}
+        <ChartTitle main={t('hydricDeficitSeasonal')} />
         {dataCharts.hydricDeficitSeasonal.headers.map((header, idx) => (
           <div key={header} style={{ marginTop: '2em' }}>
-            <Typography variant="subtitle1">
-              {/* i18next-extract-disable-next-line */}
-              IAC - {t(header)} - {t(dataCharts.hydricDeficitSeasonal.meta[header])}
-            </Typography>
+            {/* i18next-extract-disable-next-line */}
+            <ChartTitle main={`IAC - ${t(header)} - ${t(dataCharts.hydricDeficitSeasonal.meta[header])}`} />
             <CustomAreaChart
               {...dataCharts.hydricDeficitSeasonal}
               key={header}
@@ -143,12 +148,14 @@ const ClimateObservations = ({
       </TabPanel>
 
       <TabPanel value={currentTab} index={3}>
-        <Typography variant="subtitle1">{t('frozenDays')}</Typography>
+        {/* i18next-extract-disable-next-line */}
+        <ChartTitle main={t('frozenDays')} />
         <CustomLineChart {...dataCharts.frozenDays} />
       </TabPanel>
 
       <TabPanel value={currentTab} index={4}>
-        <Typography variant="subtitle1">{t('estivalDays')}</Typography>
+        {/* i18next-extract-disable-next-line */}
+        <ChartTitle main={t('estivalDays')} />
         <CustomLineChart {...dataCharts.estivalDays} />
       </TabPanel>
 

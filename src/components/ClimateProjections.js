@@ -14,7 +14,7 @@ import SEO from './Seo';
 import TabPanel from './TabPanel';
 import TabsFooter from './TabsFooter';
 
-import { CustomLineChart } from './Charts';
+import { CustomLineChart, ChartTitle } from './Charts';
 
 import doRedirect from '../hoc/doRedirect';
 import { parseData } from '../lib/dataTable';
@@ -102,10 +102,8 @@ const ClimateProjections = ({
         <TabPanel value={currentTab} index={index} key={group}>
           {dataCharts[group].headers.map(header => (
             <div key={header} style={{ marginTop: '2em' }}>
-              <Typography variant="subtitle1">
-                {/* i18next-extract-disable-next-line */}
-                IAC - {t(header)} - {t(dataCharts[group].meta[header])}
-              </Typography>
+              {/* i18next-extract-disable-next-line */}
+              <ChartTitle main={`IAC - ${t(header)}`} sub={t(dataCharts[group].meta[header])} />
               <CustomLineChart {...dataCharts[group]} key={header} dataKeys={[header]} />
             </div>
           ))}

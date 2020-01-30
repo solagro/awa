@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Typography from '@material-ui/core/Typography';
+
 import {
   Area,
   Bar,
@@ -128,4 +130,18 @@ export const CustomAreaChart = ({
       );
     })}
   </DefaultComposedChart>
+);
+
+export const ChartTitle = ({ main, sub }) => (
+  <>
+    <Typography variant="subtitle1">{main}</Typography>
+    {sub && (
+      <Typography
+        variant="subtitle2"
+        style={{ fontSize: '0.85em', textAlign: 'center', opacity: 0.5 }}
+      >
+        {sub}
+      </Typography>
+    )}
+  </>
 );
