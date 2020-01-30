@@ -47,7 +47,7 @@ const HelpPage = () => (
     <List dense>
       <ListItem>
         <ListItemText>
-          Go to <a href="https://geojson.io">geojson.io</a>.{' '}
+          Go to <a href="https://geojson.net">geojson.net</a>.{' '}
           <em>(deny recovering previous map)</em>
         </ListItemText>
       </ListItem>
