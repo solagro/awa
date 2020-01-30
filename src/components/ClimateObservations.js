@@ -14,7 +14,11 @@ import SEO from './Seo';
 import TabPanel from './TabPanel';
 import TabsFooter from './TabsFooter';
 
-import { CustomLineChart, ChartLegend, CustomStackedBarChart } from './Charts';
+import {
+  CustomLineChart,
+  CustomStackedBarChart,
+  CustomAreaChart,
+} from './Charts';
 
 import doRedirect from '../hoc/doRedirect';
 import { parseData } from '../lib/dataTable';
@@ -106,7 +110,6 @@ const ClimateObservations = ({
 
         <Typography variant="subtitle1">{t('averageTemperatureSeasonal')}</Typography>
         <CustomLineChart {...dataCharts.averageTemperatureSeasonal} colors={seasonsColors} />
-        {/* <ChartLegend meta={dataCharts.averageTemperatureSeasonal.meta} /> */}
       </TabPanel>
 
       <TabPanel value={currentTab} index={1}>
@@ -119,10 +122,24 @@ const ClimateObservations = ({
 
       <TabPanel value={currentTab} index={2}>
         <Typography variant="subtitle1">{t('hydricDeficitAnnual')}</Typography>
-        <CustomLineChart {...dataCharts.hydricDeficitAnnual} />
+        <CustomAreaChart {...dataCharts.hydricDeficitAnnual} />
 
         <Typography variant="subtitle1">{t('hydricDeficitSeasonal')}</Typography>
-        <CustomStackedBarChart {...dataCharts.hydricDeficitSeasonal} colors={seasonsColors} />
+        {dataCharts.hydricDeficitSeasonal.headers.map((header, idx) => (
+          <div key={header} style={{ marginTop: '2em' }}>
+            <Typography variant="subtitle1">
+              {/* i18next-extract-disable-next-line */}
+              IAC - {t(header)} - {t(dataCharts.hydricDeficitSeasonal.meta[header])}
+            </Typography>
+            <CustomAreaChart
+              {...dataCharts.hydricDeficitSeasonal}
+              key={header}
+              dataKeys={[header]}
+              color={seasonsColors[idx]}
+            />
+          </div>
+        ))}
+
       </TabPanel>
 
       <TabPanel value={currentTab} index={3}>

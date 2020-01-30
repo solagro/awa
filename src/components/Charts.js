@@ -1,11 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import Typography from '@material-ui/core/Typography';
-
 import {
+  Area,
   Bar,
   ComposedChart,
+  Legend,
   Line,
   XAxis,
   YAxis,
@@ -13,28 +13,38 @@ import {
   Tooltip,
 } from 'recharts';
 
-const stdProps1 = {
-  width: 900,
-  height: 400,
-  margin: { top: 8, right: 16, left: 0, bottom: 8 },
-};
-
 export const DefaultComposedChart = ({
   children,
   tooltipProps = {},
   gridProps = {},
+  xAxisProps = {},
+  yAxisProps = {},
   ...props
-}) => (
-  <ComposedChart {...stdProps1} {...props}>
-    <CartesianGrid {...gridProps} />
-    <Tooltip {...tooltipProps} />
+}) => {
+  const { t } = useTranslation();
 
-    <XAxis dataKey="year" type="number" scale="time" domain={['dataMin', 'dataMax']} />
-    <YAxis />
+  return (
+    <ComposedChart
+      width={900}
+      height={400}
+      margin={{ top: 8, right: 16, left: 0, bottom: 8 }}
+      style={{ margin: '0 auto' }}
+      {...props}
+    >
+      {/* i18next-extract-disable-next-line */}
+      <Tooltip formatter={(value, name) => ([value, t(name)])} {...tooltipProps} />
+      {/* i18next-extract-disable-next-line */}
+      <Legend formatter={value => t(value)} />
 
-    {children}
-  </ComposedChart>
-);
+      <CartesianGrid {...gridProps} />
+      <XAxis dataKey="year" type="number" scale="time" domain={['dataMin', 'dataMax']} {...xAxisProps} />
+      <YAxis {...yAxisProps} />
+
+
+      {children}
+    </ComposedChart>
+  );
+};
 
 export const CustomStackedBarChart = ({
   data,
@@ -42,26 +52,27 @@ export const CustomStackedBarChart = ({
   dataKeys = headers,
   color = '#8a2542',
   colors = [color],
-}) => {
-  const { t } = useTranslation();
+  ...props
+}) => (
+  <DefaultComposedChart
+    data={data}
+    xAxisProps={{ domain: [dataMin => (dataMin - 1), dataMax => (dataMax + 1)] }}
+    {...props}
+  >
+    {dataKeys.map((key, idx) => {
+      const chartColor = colors[idx % colors.length];
 
-  return (
-    <DefaultComposedChart
-      data={data}
-      style={{ margin: '0 auto' }}
-      tooltipProps={{
-        // i18next-extract-disable-next-line
-        formatter: (value, name) => ([value, t(name)]),
-      }}
-    >
-      {dataKeys.map((key, idx) => {
-        const chartColor = colors[idx % colors.length];
-
-        return <Bar stackId="a" key={key} dataKey={key} fill={chartColor} />;
-      })}
-    </DefaultComposedChart>
-  );
-};
+      return (
+        <Bar
+          key={key}
+          stackId="a"
+          dataKey={key}
+          fill={chartColor}
+        />
+      );
+    })}
+  </DefaultComposedChart>
+);
 
 export const CustomLineChart = ({
   data,
@@ -71,46 +82,50 @@ export const CustomLineChart = ({
   colors = [color],
   type = 'monotone',
   types = [type],
-}) => {
-  const { t } = useTranslation();
-
-  return (
-    <DefaultComposedChart
-      data={data}
-      style={{ margin: '0 auto' }}
-      tooltipProps={{
-        // i18next-extract-disable-next-line
-        formatter: (value, name) => ([value, t(name)]),
-      }}
-    >
-      {dataKeys.map((key, idx) => {
-        const chartColor = colors[idx % colors.length];
-        const chartType = types[idx % types.length];
-
-        return <Line type={chartType} key={key} dataKey={key} stroke={chartColor} />;
-      })}
-    </DefaultComposedChart>
-  );
-};
-
-export const ChartLegend = ({
-  meta = [],
-  colors = [],
+  ...props
 }) => (
-  <ul style={{ listStyleType: 'none' }}>
-    {Object.entries(meta).map(([key, value], index) => {
-      if (!value) return null;
-      const color = colors[index] || '#8a2542';
+  <DefaultComposedChart data={data} {...props}>
+    {dataKeys.map((key, idx) => {
+      const chartColor = colors[idx % colors.length];
+      const chartType = types[idx % types.length];
+
       return (
-        <Typography
+        <Line
           key={key}
-          variant="caption"
-          component="li"
-          style={{ textAlign: 'center', color }}
-        >
-          {key} {value}
-        </Typography>
+          type={chartType}
+          dataKey={key}
+          stroke={chartColor}
+          strokeWidth={2}
+        />
       );
     })}
-  </ul>
+  </DefaultComposedChart>
+);
+
+export const CustomAreaChart = ({
+  data,
+  headers = [],
+  dataKeys = headers,
+  color = '#8a2542',
+  colors = [color],
+  type = 'monotone',
+  types = [type],
+  ...props
+}) => (
+  <DefaultComposedChart data={data} {...props}>
+    {dataKeys.map((key, idx) => {
+      const chartColor = colors[idx % colors.length];
+      const chartType = types[idx % types.length];
+
+      return (
+        <Area
+          key={key}
+          type={chartType}
+          dataKey={key}
+          fill={chartColor}
+          stroke={chartColor}
+        />
+      );
+    })}
+  </DefaultComposedChart>
 );
