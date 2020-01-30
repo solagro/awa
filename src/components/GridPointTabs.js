@@ -35,19 +35,27 @@ const CustomAppBar = withStyles(theme => ({
   },
 }))(props => <AppBar {...props} />);
 
-const CustomTabs = withStyles({
+const CustomTabs = withStyles(theme => ({
   flexContainer: {
     justifyContent: 'space-around',
   },
   indicator: {
-    height: 6,
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: 'transparent',
+    height: theme.spacing(1),
+    '& > div': {
+      maxWidth: theme.spacing(9),
+      width: '100%',
+      backgroundColor: theme.palette.secondary.main,
+    },
   },
-})(props => <Tabs {...props} centered indicatorColor="secondary" />);
+}))(props => <Tabs {...props} centered TabIndicatorProps={{ children: <div /> }} />);
 
 const CustomTab = withStyles(theme => ({
   root: {
     textTransform: 'none',
-    height: theme.spacing(9),
+    height: theme.spacing(12),
   },
   selected: {},
 }))(props => <Tab {...props} />);

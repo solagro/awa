@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
+import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
@@ -17,6 +18,49 @@ import { Chart1 } from './Charts';
 
 import doRedirect from '../hoc/doRedirect';
 import { parseData } from '../lib/dataTable';
+
+const SecondaryAppBar = withStyles(theme => ({
+  colorPrimary: {
+    backgroundColor: 'transparent',
+    marginBottom: theme.spacing(6),
+    marginTop: theme.spacing(3),
+    boxShadow: 'none',
+    color: theme.palette.text.primary,
+  },
+}))(props => <AppBar {...props} />);
+
+const SecondaryTabs = withStyles(theme => ({
+  root: {
+    marginBottom: theme.spacing(4),
+  },
+  flexContainer: {
+    marginBottom: theme.spacing(0),
+  },
+  indicator: {
+    height: 3,
+  },
+}))(props => <Tabs {...props} centered />);
+
+const SecondaryTab = withStyles(theme => ({
+  root: {
+    fontSize: '.8rem',
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
+    '&:hover': {
+      fontWeight: 700,
+      opacity: 1,
+    },
+    '&$selected': {
+      color: '#000',
+      opacity: 1,
+    },
+    '&:focus': {
+      color: '#000',
+      opacity: 1,
+    },
+  },
+  selected: {},
+}))(props => <Tab disableRipple {...props} />);
 
 const ClimateProjections = ({
   pageContext: { sourceType, gridCode },
@@ -46,13 +90,13 @@ const ClimateProjections = ({
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
-      <AppBar position="static">
-        <Tabs value={currentTab} onChange={handleTabChange}>
+      <SecondaryAppBar position="static">
+        <SecondaryTabs value={currentTab} onChange={handleTabChange}>
           {Object.values(groups).map((label, idx) => (
-            <Tab label={label} key={label} id={`simple-tab-${idx}`} aria-controls={`simple-tabpanel-${idx}`} />
+            <SecondaryTab label={label} key={label} id={`simple-tab-${idx}`} aria-controls={`simple-tabpanel-${idx}`} />
           ))}
-        </Tabs>
-      </AppBar>
+        </SecondaryTabs>
+      </SecondaryAppBar>
 
       {Object.keys(groups).map((group, index) => (
         <TabPanel value={currentTab} index={index} key={group}>
