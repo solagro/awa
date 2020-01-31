@@ -1,5 +1,6 @@
 {
   "404: Not found": "404: Page non trouvée",
+  "<0>NOT FOUND</0><1>You just hit a route that doesn&#39;t exist... the sadness.</1>": "<0>NOT FOUND</0><1>You just hit a route that doesn&#39;t exist... the sadness.</1>",
   "A1": "ITH Stress",
   "A2": "Besoin en chauffage",
   "A3": "Besoin en climatisation",
@@ -37,6 +38,8 @@
   "Go to the map": "Aller à la carte",
   "Home": "Accueil",
   "Home page": "Page d'accueil",
+  "Introduction or description of adaptations": "Introduction or description of adaptations",
+  "Introduction or description of legal": "Introduction or description of legal",
   "Last build ": "Last build ",
   "Learn More": "En savoir plus",
   "Legal": "Mention légales",
@@ -51,6 +54,7 @@
   "Not correct": "Incorrect",
   "Observations": "Observations",
   "Partnership": "Partenariat",
+  "Please select the area in which you would like to test your knowledge": "Please select the area in which you would like to test your knowledge",
   "Previous question": "Previous question",
   "Primary App Bar": "Primary App Bar",
   "Question": "Question",
@@ -82,7 +86,6 @@
   "average-temperature-spring": "Température moyenne printemps",
   "average-temperature-summer": "Température moyenne été",
   "average-temperature-winter": "Température moyenne hiver",
-  "averageTemperature": "Température moyenne",
   "averageTemperatureAnnual": "Température moyenne par an",
   "averageTemperatureSeasonal": "Température moyenne par saison",
   "bean": "Haricot",
@@ -95,7 +98,6 @@
   "choose your language": "Choisissez votre langue",
   "close": "fermer",
   "crops": "céréales",
-  "en": "FR",
   "estival-days": "estival-days",
   "estivalDays": "estivalDays",
   "field-peas": "Pois",
@@ -115,7 +117,6 @@
   "hydric-deficit-spring": "Déficit hydrique printemps",
   "hydric-deficit-summer": "Déficit hydrique été",
   "hydric-deficit-winter": "Déficit hydrique hiver",
-  "hydricDeficit": "Déficit hydrique",
   "hydricDeficitAnnual": "Déficit hydrique par an",
   "hydricDeficitSeasonal": "Déficit hydrique par saison",
   "language selector": "Sélecteur de langue",
@@ -179,5 +180,5 @@
   "winter-wheat": "Blé dur",
   "year": "année",
   "zone selection": "Sélection de zone",
-  "{{theme}} region. Available languages: English standard or {{lang}} by changing the language of the site": "{{theme}} region. Available languages: English standard or {{lang}} by changing the language of the site"
+  "{{country}}. Available languages: English standard or {{language}} by changing the language of the site": "{{country}}. Available languages: English standard or {{language}} by changing the language of the site"
 }
