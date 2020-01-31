@@ -1,17 +1,5 @@
 {
-  "plugins": [
-    [
-      "i18next-extract",
-      {
-        "keySeparator": "::",
-        "nsSeparator": ":::",
-        "locales": ["en", "fr", "et", "es", "de"],
-        "outputPath": "src/locales/{{locale}}/{{ns}}.json",
-        "keyAsDefaultValue": true,
-        "removeUnusedKeys": false
-      }
-    ]
-  ],
+  "plugins": [],
   "presets": [
     [
       "babel-preset-gatsby"
