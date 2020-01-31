@@ -74,7 +74,9 @@
     "lint": "eslint .",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "translate": "npm run translate:parse && npm run translate:sort",
+    "translate:parse": "i18next src/**/*.js",
+    "translate:sort": "node sort-translations.js",
     "version": "git changelog -n -t $npm_package_version && git add CHANGELOG.md"
   },
   "repository": {
