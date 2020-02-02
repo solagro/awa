@@ -28,7 +28,7 @@ const YieldCompilation = ({
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
-      <CustomDataTable data={data} quartiles />
+      <CustomDataTable data={data} quartiles min max average />
 
       <Grid
         container

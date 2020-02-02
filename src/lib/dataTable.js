@@ -23,8 +23,17 @@ export const byColumn = (data = []) => {
   // eslint-disable-next-line no-restricted-syntax
   for (const header in dataByColumn) {
     if (header && !['id', 'year'].includes(header)) {
-      dataByColumn[header].quartiles = getQuartiles(dataByColumn[header].values);
-      dataByColumn[header].deciles = getDeciles(dataByColumn[header].values);
+      const { values } = dataByColumn[header];
+      const cleanValues = values.filter(value =>
+        (typeof value !== 'undefined' && !Number.isNaN(value)));
+
+      dataByColumn[header].quartiles = getQuartiles(values);
+      dataByColumn[header].deciles = getDeciles(values);
+
+      dataByColumn[header].min = Math.min(...cleanValues);
+      dataByColumn[header].max = Math.max(...cleanValues);
+      dataByColumn[header].average = cleanValues
+        .reduce((acc, curr) => (acc + curr)) / cleanValues.length;
     }
   }
 

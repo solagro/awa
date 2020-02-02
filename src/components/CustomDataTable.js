@@ -27,7 +27,29 @@ const useStyles = makeStyles({
   },
 });
 
-const CustomDataTable = ({ data = [], quartiles = false, deciles = false }) => {
+const ComputedRow = ({
+  headers = [],
+  dataByColumn = {},
+  method = 'average',
+  formatter = v => v,
+  ...props
+}) => (
+  <TableRow>
+    <TableCell {...props}>{method}</TableCell>
+    {headers.map(header => (
+      <TableCell {...props}>{formatter(dataByColumn[header][method])}</TableCell>
+    ))}
+  </TableRow>
+);
+
+const CustomDataTable = ({
+  data = [],
+  quartiles = false,
+  deciles = false,
+  min = false,
+  max = false,
+  average = false,
+}) => {
   const { t } = useTranslation();
   const classes = useStyles();
 
@@ -67,6 +89,34 @@ const CustomDataTable = ({ data = [], quartiles = false, deciles = false }) => {
               ))}
             </TableRow>
           ))}
+
+          {min && (
+            <ComputedRow
+              headers={headers}
+              dataByColumn={dataByColumn}
+              className={classes.tableCell}
+              method="min"
+            />
+          )}
+
+          {max && (
+            <ComputedRow
+              headers={headers}
+              dataByColumn={dataByColumn}
+              className={classes.tableCell}
+              method="max"
+            />
+          )}
+
+          {average && (
+            <ComputedRow
+              headers={headers}
+              dataByColumn={dataByColumn}
+              className={classes.tableCell}
+              method="average"
+              formatter={value => value.toFixed(2)}
+            />
+          )}
         </TableBody>
       </Table>
     </div>
