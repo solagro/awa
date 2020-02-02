@@ -31,7 +31,10 @@ const CustomDataTable = ({ data = [], quartiles = false, deciles = false }) => {
   const { t } = useTranslation();
   const classes = useStyles();
 
-  const headers = data.reduce((acc, curr) => ([...new Set([...acc, ...Object.keys(curr)])]), []);
+  const headers = data
+    .reduce((acc, curr) => ([...new Set([...acc, ...Object.keys(curr)])]), [])
+    .filter(header => header !== 'year');
+
   const dataByColumn = byColumn(data);
 
   return (
@@ -39,6 +42,7 @@ const CustomDataTable = ({ data = [], quartiles = false, deciles = false }) => {
       <Table size="small" className="percentiles">
         <TableHead>
           <TableRow>
+            <TableCell>{t('year')}</TableCell>
             {headers.map(header =>
               // i18next-extract-disable-next-line
               <TableCell key={header} className={classes.tableHeader}>{t(header)}</TableCell>)}
@@ -48,6 +52,7 @@ const CustomDataTable = ({ data = [], quartiles = false, deciles = false }) => {
         <TableBody>
           {data.map(line => (
             <TableRow key={line.year} hover>
+              <TableCell className={classes.tableHeader}>{line.year}</TableCell>
               {headers.map(header => (
                 <TableCell
                   key={header}
