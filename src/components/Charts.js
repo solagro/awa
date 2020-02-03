@@ -1,7 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+
 import Typography from '@material-ui/core/Typography';
+
+import { getDomainOfDataByKey } from 'recharts/lib/util/ChartUtils';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { getNiceTickValues } from 'recharts-scale';
 
 import {
   Area,
@@ -14,6 +19,14 @@ import {
   CartesianGrid,
   Tooltip,
 } from 'recharts';
+
+const getChartDomain = (data, keys) => Object.values(keys.reduce((store, key) => {
+  const [min, max] = getDomainOfDataByKey(data, key, 'number');
+  return {
+    min: Math.min(store.min, min),
+    max: Math.max(store.max, max),
+  };
+}, { min: +Infinity, max: -Infinity }));
 
 export const DefaultComposedChart = ({
   children,
@@ -85,24 +98,30 @@ export const CustomLineChart = ({
   type = 'monotone',
   types = [type],
   ...props
-}) => (
-  <DefaultComposedChart data={data} {...props}>
-    {dataKeys.map((key, idx) => {
-      const chartColor = colors[idx % colors.length];
-      const chartType = types[idx % types.length];
+}) => {
+  const chartDomain = getChartDomain(data, dataKeys);
+  const ticksDomain = [Math.min(0, chartDomain[0]), chartDomain[1]];
+  const ticks = getNiceTickValues(ticksDomain, 11, false);
 
-      return (
-        <Line
-          key={key}
-          type={chartType}
-          dataKey={key}
-          stroke={chartColor}
-          strokeWidth={2}
-        />
-      );
-    })}
-  </DefaultComposedChart>
-);
+  return (
+    <DefaultComposedChart data={data} yAxisProps={{ ticks }} {...props}>
+      {dataKeys.map((key, idx) => {
+        const chartColor = colors[idx % colors.length];
+        const chartType = types[idx % types.length];
+
+        return (
+          <Line
+            key={key}
+            type={chartType}
+            dataKey={key}
+            stroke={chartColor}
+            strokeWidth={2}
+          />
+        );
+      })}
+    </DefaultComposedChart>
+  );
+};
 
 export const CustomAreaChart = ({
   data,
@@ -113,24 +132,30 @@ export const CustomAreaChart = ({
   type = 'monotone',
   types = [type],
   ...props
-}) => (
-  <DefaultComposedChart data={data} {...props}>
-    {dataKeys.map((key, idx) => {
-      const chartColor = colors[idx % colors.length];
-      const chartType = types[idx % types.length];
+}) => {
+  const chartDomain = getChartDomain(data, dataKeys);
+  const ticksDomain = [Math.min(0, chartDomain[0]), Math.max(0, chartDomain[1])];
+  const ticks = getNiceTickValues(ticksDomain, 11, false);
 
-      return (
-        <Area
-          key={key}
-          type={chartType}
-          dataKey={key}
-          fill={chartColor}
-          stroke={chartColor}
-        />
-      );
-    })}
-  </DefaultComposedChart>
-);
+  return (
+    <DefaultComposedChart data={data} yAxisProps={{ ticks }} {...props}>
+      {dataKeys.map((key, idx) => {
+        const chartColor = colors[idx % colors.length];
+        const chartType = types[idx % types.length];
+
+        return (
+          <Area
+            key={key}
+            type={chartType}
+            dataKey={key}
+            fill={chartColor}
+            stroke={chartColor}
+          />
+        );
+      })}
+    </DefaultComposedChart>
+  );
+};
 
 export const ChartTitle = ({ main, sub }) => (
   <>
