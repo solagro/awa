@@ -33,14 +33,18 @@ const ComputedRow = ({
   method = 'average',
   formatter = v => v,
   ...props
-}) => (
-  <TableRow>
-    <TableCell {...props}>{method}</TableCell>
-    {headers.map(header => (
-      <TableCell {...props}>{formatter(dataByColumn[header][method])}</TableCell>
-    ))}
-  </TableRow>
-);
+}) => {
+  const { t } = useTranslation();
+
+  return (
+    <TableRow>
+      <TableCell {...props}>{t(method)}</TableCell>
+      {headers.map(header => (
+        <TableCell {...props}>{formatter(dataByColumn[header][method])}</TableCell>
+      ))}
+    </TableRow>
+  );
+};
 
 const CustomDataTable = ({
   data = [],
