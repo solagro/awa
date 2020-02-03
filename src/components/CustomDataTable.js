@@ -40,7 +40,7 @@ const ComputedRow = ({
     <TableRow>
       <TableCell {...props}>{t(method)}</TableCell>
       {headers.map(header => (
-        <TableCell {...props}>{formatter(dataByColumn[header][method])}</TableCell>
+        <TableCell key={header} {...props}>{formatter(dataByColumn[header][method])}</TableCell>
       ))}
     </TableRow>
   );
