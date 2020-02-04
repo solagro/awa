@@ -73,7 +73,7 @@ const ClimateObservations = ({
 }) => {
   const { t, i18n } = useTranslation();
 
-  const [currentTab, setCurrentTab] = React.useState(0);
+  const [currentTab, setCurrentTab] = React.useState('average-temperature');
   const handleTabChange = (event, newValue) => setCurrentTab(newValue);
 
   const dataCharts = nodes.reduce((acc, { dataType, json }) => ({
@@ -99,13 +99,19 @@ const ClimateObservations = ({
 
       <SecondaryAppBar position="static">
         <SecondaryTabs value={currentTab} onChange={handleTabChange}>
-          {Object.values(groups).map((label, idx) => (
-            <SecondaryTab label={label} key={label} id={`simple-tab-${idx}`} aria-controls={`simple-tabpanel-${idx}`} />
+          {Object.entries(groups).map(([key, label]) => (
+            <SecondaryTab
+              label={label}
+              key={key}
+              value={key}
+              id={`simple-tab-${key}`}
+              aria-controls={`simple-tabpanel-${key}`}
+            />
           ))}
         </SecondaryTabs>
       </SecondaryAppBar>
 
-      <TabPanel value={currentTab} index={0}>
+      <TabPanel value={currentTab} index="average-temperature">
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('averageTemperatureAnnual')} />
         <CustomLineChart {...dataCharts.averageTemperatureAnnual} />
@@ -115,7 +121,7 @@ const ClimateObservations = ({
         <CustomLineChart {...dataCharts.averageTemperatureSeasonal} colors={seasonsColors} />
       </TabPanel>
 
-      <TabPanel value={currentTab} index={1}>
+      <TabPanel value={currentTab} index="precipitation">
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('precipitationAnnual')} />
         <CustomLineChart {...dataCharts.precipitationAnnual} />
@@ -125,7 +131,7 @@ const ClimateObservations = ({
         <CustomStackedBarChart {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
       </TabPanel>
 
-      <TabPanel value={currentTab} index={2}>
+      <TabPanel value={currentTab} index="hydric-deficit">
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('hydricDeficitAnnual')} />
         <CustomAreaChart {...dataCharts.hydricDeficitAnnual} />
@@ -147,13 +153,13 @@ const ClimateObservations = ({
 
       </TabPanel>
 
-      <TabPanel value={currentTab} index={3}>
+      <TabPanel value={currentTab} index="frozen-days">
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('frozenDays')} />
         <CustomLineChart {...dataCharts.frozenDays} />
       </TabPanel>
 
-      <TabPanel value={currentTab} index={4}>
+      <TabPanel value={currentTab} index="estival-days">
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('estivalDays')} />
         <CustomLineChart {...dataCharts.estivalDays} />
