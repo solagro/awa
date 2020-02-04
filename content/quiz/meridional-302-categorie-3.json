@@ -10,7 +10,7 @@
   "answer-i18n": [
     {
       "language": "es",
-      "answers": "X Una mejor estructura del suelo\nX Una mayor fertilidad del suelo\nX Menos ataques de plagas y enfermedades\nV Todas son correctas"
+      "answers": "V Una mejor estructura del suelo\nV Una mayor fertilidad del suelo\nV Menos ataques de plagas y enfermedades\nX Mayor cantidad de hierbas adventicias o “malas hierbas\""
     }
   ],
   "order": 302,
@@ -20,7 +20,7 @@
       "explanation": "Cultivos con diferentes sistemas de raíces mejoran la estructura del suelo y la infiltración de agua. Además, algunos cultivos (leguminosas) pueden fijar nitrógeno atmosférico en el suelo, mejorando su fertilidad. Una buena rotación también ayuda a romper los ciclos de plagas y enfermedades, que permite al agricultor ahorrar en fitosanitarios."
     }
   ],
-  "answers": "X A better soil structure\nX A higher soil fertility\nX Fewer pests and diseases attacks\nV All of them are correct",
+  "answers": "V A better soil structure\nV A higher soil fertility\nV Fewer pests and diseases attacks\nV Most adventitious herbs or \"weeds\"",
   "title": "302 Categorie 3",
   "explanation": "Crops with different root systems improve soil structure, enhancing water infiltration. Also, some crops (legumes) are able to fix atmospheric nitrogen into the soil, improving soil fertility. A good rotation also helps to break pests and diseases cycles, allowing the farmer to save in plant protection products.",
   "category": "adaptation"
