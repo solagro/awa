@@ -14,7 +14,7 @@ import SEO from './Seo';
 import TabPanel from './TabPanel';
 import TabsFooter from './TabsFooter';
 
-import { CustomLineChart, ChartTitle } from './Charts';
+import { CustomLineChart, ChartTitle, ChartText } from './Charts';
 
 import doRedirect from '../hoc/doRedirect';
 import { parseData } from '../lib/dataTable';
@@ -64,14 +64,17 @@ const SecondaryTab = withStyles(theme => ({
 
 const ClimateProjections = ({
   pageContext: { sourceType, gridCode },
-  data: { allGridPointData: { nodes } },
+  data: {
+    allGridPointData: { nodes: chartNodes },
+    allTexts: { nodes: textNodes },
+  },
 }) => {
   const { t, i18n } = useTranslation();
 
   const [currentTab, setCurrentTab] = React.useState('generalities');
   const handleTabChange = (event, newValue) => setCurrentTab(newValue);
 
-  const dataCharts = nodes.reduce((acc, { dataType, json }) => ({
+  const dataCharts = chartNodes.reduce((acc, { dataType, json }) => ({
     ...acc,
     [dataType]: parseData(json),
   }), {});
@@ -83,6 +86,15 @@ const ClimateProjections = ({
     animal: t('animal'),
     vineyardFruit: t('vineyardFruit'),
   };
+
+  const textNodesByGroup = textNodes.reduce((acc, { html, frontmatter: { dataType } }) => {
+    const prevTexts = acc[dataType] || [];
+
+    return {
+      ...acc,
+      [dataType]: [...prevTexts, html],
+    };
+  }, {});
 
   return (
     <Layout>
@@ -106,6 +118,8 @@ const ClimateProjections = ({
 
       {Object.keys(groups).map(group => (
         <TabPanel value={currentTab} index={group} key={group}>
+          <ChartText contents={textNodesByGroup[group]} />
+
           {dataCharts[group].headers.map(header => (
             <div key={header} style={{ marginTop: '2em' }}>
               {/* i18next-extract-disable-next-line */}
@@ -122,7 +136,7 @@ const ClimateProjections = ({
 };
 
 export const query = graphql`
-  query ($gridCode: String, $sourceType: String) {
+  query ($gridCode: String, $sourceType: String, $language: String) {
     allGridPointData(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
       nodes {
         dataType
@@ -132,6 +146,20 @@ export const query = graphql`
     allDataTypes: allGridPointData(filter: {sourceType: {eq: $sourceType}}) {
       group(field: dataType) {
         dataType: fieldValue
+      }
+    }
+
+    allTexts: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          sourceType: { eq: $sourceType},
+          locale: { eq: $language}
+        }
+      }
+    ) {
+      nodes {
+        html
+        frontmatter { dataType }
       }
     }
   }

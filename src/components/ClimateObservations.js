@@ -19,6 +19,7 @@ import {
   CustomStackedBarChart,
   CustomAreaChart,
   ChartTitle,
+  ChartText,
 } from './Charts';
 
 import doRedirect from '../hoc/doRedirect';
@@ -69,14 +70,17 @@ const SecondaryTab = withStyles(theme => ({
 
 const ClimateObservations = ({
   pageContext: { sourceType, gridCode },
-  data: { allGridPointData: { nodes } },
+  data: {
+    allGridPointData: { nodes: chartNodes },
+    allTexts: { nodes: textNodes },
+  },
 }) => {
   const { t, i18n } = useTranslation();
 
   const [currentTab, setCurrentTab] = React.useState('average-temperature');
   const handleTabChange = (event, newValue) => setCurrentTab(newValue);
 
-  const dataCharts = nodes.reduce((acc, { dataType, json }) => ({
+  const dataCharts = chartNodes.reduce((acc, { dataType, json }) => ({
     ...acc,
     [dataType]: parseData(json),
   }), {});
@@ -90,6 +94,15 @@ const ClimateObservations = ({
   };
 
   const seasonsColors = ['#749eb6', '#88b42d', '#db5630', '#79454a'];
+
+  const textNodesByGroup = textNodes.reduce((acc, { html, frontmatter: { dataType } }) => {
+    const prevTexts = acc[dataType] || [];
+
+    return {
+      ...acc,
+      [dataType]: [...prevTexts, html],
+    };
+  }, {});
 
   return (
     <Layout>
@@ -112,6 +125,8 @@ const ClimateObservations = ({
       </SecondaryAppBar>
 
       <TabPanel value={currentTab} index="average-temperature">
+        <ChartText contents={textNodesByGroup['average-temperature']} />
+
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('averageTemperatureAnnual')} />
         <CustomLineChart {...dataCharts.averageTemperatureAnnual} />
@@ -122,6 +137,8 @@ const ClimateObservations = ({
       </TabPanel>
 
       <TabPanel value={currentTab} index="precipitation">
+        <ChartText contents={textNodesByGroup['precipitation']} /> {/* eslint-disable-line dot-notation */}
+
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('precipitationAnnual')} />
         <CustomLineChart {...dataCharts.precipitationAnnual} />
@@ -132,6 +149,8 @@ const ClimateObservations = ({
       </TabPanel>
 
       <TabPanel value={currentTab} index="hydric-deficit">
+        <ChartText contents={textNodesByGroup['hydric-deficit']} />
+
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('hydricDeficitAnnual')} />
         <CustomAreaChart {...dataCharts.hydricDeficitAnnual} />
@@ -154,12 +173,16 @@ const ClimateObservations = ({
       </TabPanel>
 
       <TabPanel value={currentTab} index="frozen-days">
+        <ChartText contents={textNodesByGroup['frozen-days']} />
+
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('frozenDays')} />
         <CustomLineChart {...dataCharts.frozenDays} />
       </TabPanel>
 
       <TabPanel value={currentTab} index="estival-days">
+        <ChartText contents={textNodesByGroup['estival-days']} />
+
         {/* i18next-extract-disable-next-line */}
         <ChartTitle main={t('estivalDays')} />
         <CustomLineChart {...dataCharts.estivalDays} />
@@ -171,16 +194,31 @@ const ClimateObservations = ({
 };
 
 export const query = graphql`
-  query ($gridCode: String, $sourceType: String) {
+  query ($gridCode: String, $sourceType: String, $language: String) {
     allGridPointData(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
       nodes {
         dataType
         json
       }
     }
+
     allDataTypes: allGridPointData(filter: {sourceType: {eq: $sourceType}}) {
       group(field: dataType) {
         dataType: fieldValue
+      }
+    }
+
+    allTexts: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          sourceType: { eq: $sourceType},
+          locale: { eq: $language}
+        }
+      }
+    ) {
+      nodes {
+        html
+        frontmatter { dataType }
       }
     }
   }

@@ -16,7 +16,10 @@ import doRedirect from '../hoc/doRedirect';
 
 const YieldCompilation = ({
   pageContext: { sourceType, gridCode },
-  data: { gridPointData: { json } },
+  data: {
+    gridPointData: { json },
+    markdownRemark: { html } = {},
+  },
 }) => {
   const { t, i18n } = useTranslation();
 
@@ -27,6 +30,8 @@ const YieldCompilation = ({
       <SEO title={t('Active site detailed information card')} lang={i18n.language} />
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
+
+      {html && <Typography variant="body2" dangerouslySetInnerHTML={{ __html: html }} />}
 
       <CustomDataTable data={data} quartiles min max average />
 
@@ -63,12 +68,21 @@ const YieldCompilation = ({
 };
 
 export const query = graphql`
-  query ($gridCode: String, $sourceType: String) {
+  query ($gridCode: String, $sourceType: String, $language: String) {
     gridPointData(
       gridCode: { eq: $gridCode },
       sourceType: { eq: $sourceType }
     ) {
       json
+    }
+
+    markdownRemark(
+      frontmatter: {
+        sourceType: { eq: $sourceType},
+        locale: { eq: $language}
+      }
+    ) {
+      html
     }
   }
 `;

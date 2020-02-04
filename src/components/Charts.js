@@ -170,3 +170,23 @@ export const ChartTitle = ({ main, sub }) => (
     )}
   </>
 );
+
+export const ChartText = ({
+  content,
+  contents = [content],
+  ...props
+}) => {
+  if (!contents[0]) {
+    return null;
+  }
+
+  return contents.map(text => (
+    <Typography
+      key={text.substr(0, 128)}
+      variant="body2"
+      dangerouslySetInnerHTML={{ __html: text }}
+      paragraph
+      {...props}
+    />
+  ));
+};
