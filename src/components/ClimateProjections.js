@@ -68,7 +68,7 @@ const ClimateProjections = ({
 }) => {
   const { t, i18n } = useTranslation();
 
-  const [currentTab, setCurrentTab] = React.useState(0);
+  const [currentTab, setCurrentTab] = React.useState('generalities');
   const handleTabChange = (event, newValue) => setCurrentTab(newValue);
 
   const dataCharts = nodes.reduce((acc, { dataType, json }) => ({
@@ -92,14 +92,20 @@ const ClimateProjections = ({
 
       <SecondaryAppBar position="static">
         <SecondaryTabs value={currentTab} onChange={handleTabChange}>
-          {Object.values(groups).map((label, idx) => (
-            <SecondaryTab label={label} key={label} id={`simple-tab-${idx}`} aria-controls={`simple-tabpanel-${idx}`} />
+          {Object.entries(groups).map(([key, label]) => (
+            <SecondaryTab
+              label={label}
+              key={key}
+              value={key}
+              id={`simple-tab-${key}`}
+              aria-controls={`simple-tabpanel-${key}`}
+            />
           ))}
         </SecondaryTabs>
       </SecondaryAppBar>
 
-      {Object.keys(groups).map((group, index) => (
-        <TabPanel value={currentTab} index={index} key={group}>
+      {Object.keys(groups).map(group => (
+        <TabPanel value={currentTab} index={group} key={group}>
           {dataCharts[group].headers.map(header => (
             <div key={header} style={{ marginTop: '2em' }}>
               {/* i18next-extract-disable-next-line */}
