@@ -17,11 +17,11 @@
   "explanation-i18n": [
     {
       "language": "es",
-      "explanation": "Las emisiones humanas alteran el equilibrio natural, elevando el CO2 a niveles no vistos en al menos 800.000 años. De hecho, los humanos emiten 26 gigatoneladas de CO2 por año, mientras que el CO2 en la atmósfera aumenta en solo 15 gigatoneladas por año; gran parte de las emisiones de CO2 derivadas de la actividad humana es absorbida por los sumideros naturales."
+      "explanation": "Las emisiones humanas alteran el equilibrio natural, elevando el CO2 a niveles no vistos en al menos 800.000 años. De hecho, los humanos emiten 29 gigatoneladas de CO2 por año, mientras que el CO2 en la atmósfera aumenta en solo 15 gigatoneladas por año; gran parte de las emisiones de CO2 derivadas de la actividad humana es absorbida por los sumideros naturales."
     }
   ],
   "answers": "X Human CO2 is a tiny % of CO2 emissions\nV The CO2 that nature emits (from the ocean and vegetation) is balanced by natural absorptions (again by the ocean and vegetation). Therefore human emissions upset the natural balance, rising CO2 to levels not seen in at least 800,000 years. \nX The oceans contain 37,400 billion tons (GT) of suspended carbon, land biomass has 2000-3000 GT. The atpmosphere contains 720 billion tons of  CO2 and humans contribute only 6 GT additional load on this balance.\nX The oceans, land and atmosphere exchange CO2 continuously so the additional load by humans is incredibly small. A small shift in the balance between oceans and air would cause a CO2 much more severe rise than anything we could produce.",
   "title": "104 Categorie 1",
-  "explanation": "Human emissions upset the natural balance, rising CO2 to levels not seen in at least 800,000 years. In fact, human emit 26 gigatonnes of CO2 per year while CO2 in the atmosphere is rising by only 15 gigatonnes per year - much of human CO2 emissions is being absorbed by natural sinks.",
+  "explanation": "Human emissions upset the natural balance, rising CO2 to levels not seen in at least 800,000 years. In fact, human emit 29 gigatonnes of CO2 per year while CO2 in the atmosphere is rising by only 15 gigatonnes per year - much of human CO2 emissions is being absorbed by natural sinks.",
   "category": "climate-change"
 }
