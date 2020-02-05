@@ -67,7 +67,7 @@ export const buildData = (files = []) =>
 
     const csvFiles = SheetNames.map(sheetname => ({
       sheetname,
-      csv: XLSX.utils.sheet_to_csv(Sheets[sheetname]),
+      csv: XLSX.utils.sheet_to_csv(Sheets[sheetname], { strip: true }),
     }));
 
     return {
