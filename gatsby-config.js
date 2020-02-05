@@ -57,6 +57,13 @@ module.exports = {
         path: `${__dirname}/content/map`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'adaptations',
+        path: `${__dirname}/content/adaptations`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

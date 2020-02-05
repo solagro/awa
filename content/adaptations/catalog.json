@@ -1,0 +1,82 @@
+{
+  "weather-event": [
+    {
+      "id": "1",
+      "name": "drought"
+    },
+    {
+      "id": "2",
+      "name": "floods-heavy-rainfall"
+    },
+    {
+      "id": "3",
+      "name": "very-high-temperatures-heat-wave"
+    },
+    {
+      "id": "4",
+      "name": "intense-frost-late-frost"
+    },
+    {
+      "id": "5",
+      "name": "snow"
+    },
+    {
+      "id": "6",
+      "name": "hail"
+    },
+    {
+      "id": "7",
+      "name": "wind-storms"
+    },
+    {
+      "id": "8",
+      "name": "all-extreme-weather-events"
+    }
+  ],
+  "climate-risk-region": [
+    {
+      "id": "1",
+      "name": "northern"
+    },
+    {
+      "id": "2",
+      "name": "atlantic"
+    },
+    {
+      "id": "3",
+      "name": "continental"
+    },
+    {
+      "id": "4",
+      "name": "southern"
+    },
+    {
+      "id": "5",
+      "name": "northern-atlantic-continental-southern"
+    },
+    {
+      "id": "6",
+      "name": "northern-continental-southern"
+    },
+    {
+      "id": "7",
+      "name": "continental-southern"
+    },
+    {
+      "id": "8",
+      "name": "atlantic-continental-southern"
+    },
+    {
+      "id": "9",
+      "name": "northern-southern"
+    },
+    {
+      "id": "10",
+      "name": "northern-atlantic-southern"
+    },
+    {
+      "id": "11",
+      "name": "northern-continental"
+    }
+  ]
+}
