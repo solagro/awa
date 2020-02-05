@@ -128,12 +128,12 @@ const ClimateObservations = ({
         <ChartText contents={textNodesByGroup['average-temperature']} />
 
         {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('averageTemperatureAnnual')} />
-        <CustomLineChart {...dataCharts.averageTemperatureAnnual} />
+        <ChartTitle main={t('averageTempAnnual')} />
+        <CustomLineChart {...dataCharts.averageTempAnnual} />
 
         {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('averageTemperatureSeasonal')} />
-        <CustomLineChart {...dataCharts.averageTemperatureSeasonal} colors={seasonsColors} />
+        <ChartTitle main={t('averageTempSeasonal')} />
+        <CustomLineChart {...dataCharts.averageTempSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index="precipitation">
