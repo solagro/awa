@@ -90,6 +90,7 @@ module.exports = {
       },
       // 'gatsby-plugin-styled-components',
     },
+    'gatsby-plugin-solagro-awa-adaptations',
     'gatsby-plugin-solagro-awa',
     'gatsby-plugin-solagro-awa-quiz',
     'gatsby-plugin-solagro-awa-map',
