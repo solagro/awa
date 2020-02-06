@@ -1,6 +1,6 @@
 const { generatePagesInfos } = require('./lib/helpers.js');
 
-const REPORTER_PREFIX = '[solagro-awa] ';
+const REPORTER_PREFIX = '[solagro-awa-i18n-routes] ';
 
 /**
  * Create main localized page
