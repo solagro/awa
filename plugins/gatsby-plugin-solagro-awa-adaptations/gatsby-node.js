@@ -17,6 +17,56 @@ const getValueFrom = catalog => (sectionName = '', id = '') => {
   return item.name || id;
 };
 
+exports.onCreateNode = async ({
+  node,
+  loadNodeContent,
+  createContentDigest,
+  actions: { createNode, createParentChildLink, createNodeField },
+}) => {
+  /**
+   * Create nodes for each adaptation measure
+   */
+  if (node.sourceInstanceName === 'adaptations' && node.extension === 'csv') {
+    const csv = await loadNodeContent(node);
+    const allLines = await csvtojson({ delimiter: ',' }).fromString(csv);
+
+    const cleanLines = allLines
+      // remove lines with no index
+      .filter(({ index }) => Boolean(index))
+      // generate slug for farming system, vulnerability component and measure name
+      .map(measure => ({
+        ...measure,
+        'farming-system': cleanValue(measure['farming-system']),
+        'farm-vulnerability-component': cleanValue(measure['farm-vulnerability-component']),
+        slug: cleanValue(measure['name-of-the-measure']),
+      }));
+
+    await Promise.all(cleanLines.map(async (measure, index) => {
+      const newNode = {
+        id: `adaptation-measures-${node.name}-${index}`,
+        parent: node.id,
+        internal: {
+          contentDigest: createContentDigest(measure),
+          type: 'adaptationMeasures',
+        },
+      };
+
+      // Create node for current measure (adaptation measure)
+      await createNode(newNode);
+
+      // Add custom field to new node
+      await Promise.all([
+        { name: 'slug', value: measure.slug },
+        { name: 'json', value: JSON.stringify(measure) },
+        { name: 'measure', value: measure },
+      ].map(({ name, value }) => createNodeField({ node: newNode, name, value })));
+
+      // Link current measure node to csv file node
+      await createParentChildLink({ parent: node, child: newNode });
+    }));
+  }
+};
+
 exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => {
   const csv = await fs.readFile('content/adaptations/adaptations.csv');
   const allLines = await csvtojson({ delimiter: ',' }).fromString(csv.toString());
