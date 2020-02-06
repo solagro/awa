@@ -18,6 +18,7 @@ exports.onCreateNode = async ({
   node,
   loadNodeContent,
   createContentDigest,
+  getNodesByType,
   actions: { createNode, createParentChildLink, createNodeField },
 }) => {
   /**
@@ -27,18 +28,33 @@ exports.onCreateNode = async ({
     const csv = await loadNodeContent(node);
     const allLines = await csvtojson({ delimiter: ',' }).fromString(csv);
 
-    const cleanLines = allLines
+    const [catalog] = getNodesByType('AdaptationsJson');
+    const getCatalogValue = getValueFrom(catalog);
+
+    /**
+     * Manipulate array created from CSV to remove meaningless lines
+     * and replace some values by proper one
+     */
+    const measures = allLines
       // remove lines with no index
       .filter(({ index }) => Boolean(index))
-      // generate slug for farming system, vulnerability component and measure name
       .map(measure => ({
         ...measure,
+
+        // generate slug for farming system, vulnerability component and measure name
         'farming-system': cleanValue(measure['farming-system']),
         'farm-vulnerability-component': cleanValue(measure['farm-vulnerability-component']),
         slug: cleanValue(measure['name-of-the-measure']),
+
+        // Replace some field ids by corresponding value from catalog
+        'climate-risk-region': getCatalogValue('climate-risk-region', measure['climate-risk-region']),
+        'weather-event': getCatalogValue('weather-event', measure['weather-event']),
       }));
 
-    await Promise.all(cleanLines.map(async (measure, index) => {
+    /**
+     * Actually create measure nodes
+     */
+    await Promise.all(measures.map(async (measure, index) => {
       const newNode = {
         id: `adaptation-measures-${node.name}-${index}`,
         parent: node.id,
@@ -69,17 +85,9 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
    * Get catalog data from GraphQL storage
    */
   const { data: {
-    catalogContainer: { catalog: [catalog] },
     measuresContainer: { measures },
   } } = await graphql(`
     query MyQuery {
-      catalogContainer: allAdaptationsJson {
-        catalog: nodes {
-          weather_event { name id }
-          climate_risk_region { name id }
-        }
-      }
-
       measuresContainer: allAdaptationMeasures {
         measures: nodes {
           fields {
@@ -96,25 +104,17 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     }
   `);
 
-  /**
-   * Replace some field ids by corresponding value from catalog
-   */
-  const getCatalogValue = getValueFrom(catalog);
-  const cleanMeasures = measures.map(({ fields: { measure } }) => ({
-    ...measure,
-    climate_risk_region: getCatalogValue('climate_risk_region', measure.climate_risk_region),
-    weather_event: getCatalogValue('weather_event', measure.weather_event),
-  }));
-
   const createdPathes = new Set();
 
   // en/adaptations/system/vulnerability/zone/action
-  await Promise.all(cleanMeasures.map(async ({
-    farming_system: system,
-    farm_vulnerability_component: vulnerability,
-    climate_risk_region: region,
-    slug,
-  }) => Promise.all(locales.map(async language => {
+  await Promise.all(measures.map(async ({ fields: {
+    measure: {
+      farming_system: system,
+      farm_vulnerability_component: vulnerability,
+      climate_risk_region: region,
+      slug,
+    },
+  } }) => Promise.all(locales.map(async language => {
     const pathElements = [language, 'adaptations', system, vulnerability, region, slug];
 
     const pathSystem = path.join(...pathElements.slice(0, 3));
