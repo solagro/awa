@@ -106,7 +106,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     weather_event: getCatalogValue('weather_event', measure.weather_event),
   }));
 
-  const createPages = new Set();
+  const createdPathes = new Set();
 
   // en/adaptations/system/vulnerability/zone/action
   await Promise.all(cleanMeasures.map(async ({
@@ -122,8 +122,8 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     const pathRegion = path.join(...pathElements.slice(0, 5));
     const pathFull = path.join(...pathElements);
 
-    if (!createPages.has(pathSystem)) {
-      createPages.add(pathSystem);
+    if (!createdPathes.has(pathSystem)) {
+      createdPathes.add(pathSystem);
       await createPage({
         path: pathSystem,
         component: path.resolve('./src/components/Debug.js'),
@@ -131,8 +131,8 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
       });
     }
 
-    if (!createPages.has(pathVulnerability)) {
-      createPages.add(pathVulnerability);
+    if (!createdPathes.has(pathVulnerability)) {
+      createdPathes.add(pathVulnerability);
       await createPage({
         path: pathVulnerability,
         component: path.resolve('./src/components/Debug.js'),
@@ -140,8 +140,8 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
       });
     }
 
-    if (!createPages.has(pathRegion)) {
-      createPages.add(pathRegion);
+    if (!createdPathes.has(pathRegion)) {
+      createdPathes.add(pathRegion);
       await createPage({
         path: pathRegion,
         component: path.resolve('./src/components/Debug.js'),
@@ -149,7 +149,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
       });
     }
 
-    createPages.add(pathFull);
+    createdPathes.add(pathFull);
     await createPage({
       path: pathFull,
       component: path.resolve('./src/components/Debug.js'),
@@ -157,5 +157,5 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     });
   }))));
 
-  reporter.info(`${REPORTER_PREFIX}${createPages.size} adaptation pages created.`);
+  reporter.info(`${REPORTER_PREFIX}${createdPathes.size} adaptation pages created.`);
 };
