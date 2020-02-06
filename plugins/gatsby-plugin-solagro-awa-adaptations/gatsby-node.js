@@ -1,7 +1,4 @@
-
-const fs = require('fs').promises;
 const path = require('path');
-
 const slugify = require('slugify');
 const csvtojson = require('csvtojson');
 
@@ -68,13 +65,13 @@ exports.onCreateNode = async ({
 };
 
 exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => {
-  const csv = await fs.readFile('content/adaptations/adaptations.csv');
-  const allLines = await csvtojson({ delimiter: ',' }).fromString(csv.toString());
-
   /**
    * Get catalog data from GraphQL storage
    */
-  const { data: { catalogContainer: { catalog: [catalog] } } } = await graphql(`
+  const { data: {
+    catalogContainer: { catalog: [catalog] },
+    measuresContainer: { measures },
+  } } = await graphql(`
     query MyQuery {
       catalogContainer: allAdaptationsJson {
         catalog: nodes {
@@ -82,31 +79,40 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
           climate_risk_region { name id }
         }
       }
+
+      measuresContainer: allAdaptationMeasures {
+        measures: nodes {
+          fields {
+            measure {
+              farming_system
+              farm_vulnerability_component
+              climate_risk_region
+              slug
+              weather_event
+            }
+          }
+        }
+      }
     }
   `);
 
+  /**
+   * Replace some field ids by corresponding value from catalog
+   */
   const getCatalogValue = getValueFrom(catalog);
-
-  const cleanLines = allLines
-    // remove lines with no index
-    .filter(({ index }) => Boolean(index))
-    // Populate data table with relational data
-    .map(actionProperties => ({
-      ...actionProperties,
-      'climate-risk-region': getCatalogValue('climate_risk_region', actionProperties['climate-risk-region']),
-      'weather-event': getCatalogValue('weather_event', actionProperties['weather-event']),
-      'farming-system': cleanValue(actionProperties['farming-system']),
-      'farm-vulnerability-component': cleanValue(actionProperties['farm-vulnerability-component']),
-      slug: cleanValue(actionProperties['name-of-the-measure']),
-    }));
+  const cleanMeasures = measures.map(({ fields: { measure } }) => ({
+    ...measure,
+    climate_risk_region: getCatalogValue('climate_risk_region', measure.climate_risk_region),
+    weather_event: getCatalogValue('weather_event', measure.weather_event),
+  }));
 
   const createPages = new Set();
 
   // en/adaptations/system/vulnerability/zone/action
-  await Promise.all(cleanLines.map(async ({
-    'farming-system': system,
-    'farm-vulnerability-component': vulnerability,
-    'climate-risk-region': region,
+  await Promise.all(cleanMeasures.map(async ({
+    farming_system: system,
+    farm_vulnerability_component: vulnerability,
+    climate_risk_region: region,
     slug,
   }) => Promise.all(locales.map(async language => {
     const pathElements = [language, 'adaptations', system, vulnerability, region, slug];
