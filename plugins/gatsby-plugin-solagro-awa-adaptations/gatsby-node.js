@@ -4,7 +4,7 @@ const csvtojson = require('csvtojson');
 
 const { siteMetadata: { locales = [] } = {} } = require('../../gatsby-config.js');
 
-const REPORTER_PREFIX = '[solagro-awa-quiz-map-adaptations] ';
+const REPORTER_PREFIX = '[solagro-awa-adaptations] ';
 
 const cleanValue = str => slugify(str).toLowerCase();
 
