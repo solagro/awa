@@ -4,8 +4,9 @@ const csvtojson = require('csvtojson');
 
 const { siteMetadata: { locales = [] } = {} } = require('../../gatsby-config.js');
 
-const REPORTER_PREFIX = '[solagro-awa-adaptations] ';
+// const REPORTER_PREFIX = '[solagro-awa-adaptations] ';
 
+const buildPath = (...elements) => ['', ...elements].join('/');
 const cleanValue = str => slugify(str).toLowerCase();
 
 const getValueFrom = catalog => (sectionName = '', id = '') => {
@@ -85,14 +86,17 @@ exports.onCreateNode = async ({
   }
 };
 
-exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => {
+exports.createPages = async ({ graphql, actions: { createPage, createRedirect } }) => {
   /**
-   * Get catalog data from GraphQL storage
+   * Get all adaptation measures
+   * Get all farming systems
    */
   const { data: {
     measuresContainer: { measures },
+    allFarmingSystemsContainer: { allFarmingSystems = [] },
   } } = await graphql(`
-    query MyQuery {
+    query {
+      # Get all adaptation measures
       measuresContainer: allAdaptationMeasures {
         measures: nodes {
           fields {
@@ -106,61 +110,82 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
           }
         }
       }
+
+      # Get all farming systems
+      allFarmingSystemsContainer: allAdaptationMeasures {
+        allFarmingSystems: group(field: fields___measure___farming_system) {
+          fieldValue
+        }
+      }
+    }
+  `);
+  // Simplify farming systems array
+  const farmingSystems = allFarmingSystems.map(({ fieldValue }) => fieldValue);
+
+  /**
+   * Get all vulnerability components grouped by farming system
+   */
+  const { data: queryResult } = await graphql(`
+    query {
+      ${farmingSystems.map((farmingSystem, index) => (`
+        system${index}: allAdaptationMeasures(
+          filter: {fields: {measure: {farming_system: {eq: "${farmingSystem}"}}}}
+        ) {
+          group(field: fields___measure___farm_vulnerability_component) {
+            fieldValue
+          }
+        }
+      `))}
     }
   `);
 
-  const createdPathes = new Set();
+  /**
+   * Revamp queryResult as tree
+   */
+  const tree = Object.values(queryResult).map(({ group }, index) => ({
+    system: farmingSystems[index],
+    vulnerabilities: group.map(({ fieldValue }) => fieldValue),
+  }));
 
-  // en/adaptations/system/vulnerability/zone/action
-  await Promise.all(measures.map(async ({ fields: {
-    measure: {
-      farming_system: system,
-      farm_vulnerability_component: vulnerability,
-      climate_risk_region: region,
-      slug,
-    },
-  } }) => Promise.all(locales.map(async language => {
-    const pathElements = [language, 'adaptations', system, vulnerability, region, slug];
-
-    const pathSystem = path.join(...pathElements.slice(0, 3));
-    const pathVulnerability = path.join(...pathElements.slice(0, 4));
-    const pathRegion = path.join(...pathElements.slice(0, 5));
-    const pathFull = path.join(...pathElements);
-
-    if (!createdPathes.has(pathSystem)) {
-      createdPathes.add(pathSystem);
-      await createPage({
-        path: pathSystem,
-        component: path.resolve('./src/components/Debug.js'),
-        context: { language, system },
+  await Promise.all(locales.map(async language => {
+    await Promise.all(tree.map(async ({ system, vulnerabilities }) => {
+      /**
+       * Create redirection from farming system root path
+       * to first available vulnerability component
+       */
+      await createRedirect({
+        fromPath: buildPath(language, 'adaptations', system),
+        toPath: buildPath(language, 'adaptations', system, vulnerabilities[0]),
+        redirectInBrowser: true,
+        // isPermanent: true,
       });
-    }
 
-    if (!createdPathes.has(pathVulnerability)) {
-      createdPathes.add(pathVulnerability);
-      await createPage({
-        path: pathVulnerability,
+      /**
+       * Create page for each adaptation measure
+       */
+      await Promise.all(vulnerabilities.map(async vulnerability =>
+        createPage({
+          path: buildPath(language, 'adaptations', system, vulnerability),
+          component: path.resolve('./src/components/AdaptationMeasures.js'),
+          context: { language, system, vulnerability },
+        })));
+    }));
+
+    /**
+     * Create page for each adaptation measure
+     */
+    await Promise.all(measures.map(async ({ fields: {
+      measure: {
+        farming_system: system,
+        farm_vulnerability_component: vulnerability,
+        climate_risk_region: region,
+        slug,
+      },
+    } }) =>
+      createPage({
+        path: buildPath(language, 'adaptations', system, vulnerability, region, slug),
         component: path.resolve('./src/components/Debug.js'),
-        context: { language, system, vulnerability },
-      });
-    }
-
-    if (!createdPathes.has(pathRegion)) {
-      createdPathes.add(pathRegion);
-      await createPage({
-        path: pathRegion,
-        component: path.resolve('./src/components/Debug.js'),
-        context: { language, system, vulnerability, region },
-      });
-    }
-
-    createdPathes.add(pathFull);
-    await createPage({
-      path: pathFull,
-      component: path.resolve('./src/components/Debug.js'),
-      context: { language, system, vulnerability, region, slug },
-    });
-  }))));
-
-  reporter.info(`${REPORTER_PREFIX}${createdPathes.size} adaptation pages created.`);
+        context: { language, system, vulnerability, region, slug },
+      })));
+  }));
 };
