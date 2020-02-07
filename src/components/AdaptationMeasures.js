@@ -2,96 +2,138 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
-import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import Typography from '@material-ui/core/Typography';
 
-import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
 import SEO from './Seo';
-import TabPanel from './TabPanel';
-import TabsFooter from './TabsFooter';
-
-import {
-  CustomLineChart,
-  CustomStackedBarChart,
-  CustomAreaChart,
-  ChartTitle,
-  ChartText,
-} from './Charts';
+import Link from './Link';
 
 import doRedirect from '../hoc/doRedirect';
-import { parseData } from '../lib/dataTable';
 
-const SecondaryAppBar = withStyles(theme => ({
-  colorPrimary: {
-    backgroundColor: 'transparent',
-    marginBottom: theme.spacing(6),
-    marginTop: theme.spacing(3),
-    boxShadow: 'none',
-    color: theme.palette.text.primary,
+const AdaptationMeasures = ({
+  pageContext: {
+    vulnerability: currentVulnerability,
+    system: currentSystem,
   },
-}))(props => <AppBar {...props} />);
-
-const SecondaryTabs = withStyles(theme => ({
-  root: {
-    marginBottom: theme.spacing(4),
+  data: {
+    farmingSystemsContainer: { farmingSystems },
+    vulnerabilitiesContainer: { vulnerabilities },
+    adaptationMeasuresContainer: { adaptationMeasures },
   },
-  flexContainer: {
-    marginBottom: theme.spacing(0),
-  },
-  indicator: {
-    height: 3,
-  },
-}))(props => <Tabs {...props} centered />);
-
-const SecondaryTab = withStyles(theme => ({
-  root: {
-    fontSize: '.8rem',
-    paddingLeft: theme.spacing(1),
-    paddingRight: theme.spacing(1),
-    '&:hover': {
-      fontWeight: 700,
-      opacity: 1,
-    },
-    '&$selected': {
-      color: '#000',
-      opacity: 1,
-    },
-    '&:focus': {
-      color: '#000',
-      opacity: 1,
-    },
-  },
-  selected: {},
-}))(props => <Tab disableRipple {...props} />);
-
-const AdaptationMeasures = props => {
+}) => {
   const { t, i18n } = useTranslation();
+
+  const systemLinks = farmingSystems.map(({ fieldValue }) => ({
+    id: fieldValue,
+    path: fieldValue,
+    label: t(fieldValue), // i18next-extract-disable-line
+  }));
+
+  const vulnerabilityLinks = vulnerabilities.map(({ fieldValue }) => (fieldValue));
+
+  const measureLinks = adaptationMeasures.map(({
+    fields: { slug, measure: { name, climate_risk_region: region } },
+  }) => ({ slug, name, region }));
 
   return (
     <Layout>
       <SEO title={t('Sustainable adaptation measures')} lang={i18n.language} />
       <Typography variant="h1" gutterBottom align="center">{t('Sustainable adaptation measures')}</Typography>
 
-      {Object.entries(props).map(([propName, propValue]) => (
-        <pre key={propName}>
-          {propName}
-          <hr />
-          {JSON.stringify(propValue, null, 2)}
-        </pre>
-      ))}
+      <AppBar position="static">
+        <Tabs value={currentSystem}>
+          {systemLinks.map(({ id, path, label }) => (
+            <Tab
+              key={id}
+              label={t(label)} // i18next-extract-disable-line
+              value={id}
+              component={Link}
+              to={`/adaptations/${path}`}
+            />
+          ))}
+        </Tabs>
+      </AppBar>
 
+      <AppBar position="static">
+        <Tabs value={currentVulnerability}>
+          {vulnerabilityLinks.map(vulnerability => (
+            <Tab
+              key={vulnerability}
+              label={t(vulnerability)} // i18next-extract-disable-line
+              value={vulnerability}
+              component={Link}
+              to={`/adaptations/${currentSystem}/${vulnerability}`}
+            />
+          ))}
+        </Tabs>
+      </AppBar>
+
+      <ul>
+        {measureLinks.map(({ slug, name, region }) => (
+          <li>
+            <Link to={`/adaptations/${currentSystem}/${currentVulnerability}/${region}/${slug}`}>
+              {name}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </Layout>
   );
 };
 
-// export const query = graphql`
-//   query ($gridCode: String, $sourceType: String, $language: String) {
+export const query = graphql`
+  query ($system: String!, $vulnerability: String!) {
 
-//   }
-// `;
+    # Get all farming systems
+    farmingSystemsContainer: allAdaptationMeasures {
+      farmingSystems: group(field: fields___measure___farming_system) {
+        fieldValue
+      }
+    }
+
+    # Get vulnerabilities for current system
+    vulnerabilitiesContainer: allAdaptationMeasures(
+      filter: {
+        fields: {
+          measure: {
+            farming_system: { eq: $system }
+          }
+        }
+      }
+    ) {
+      vulnerabilities: group(field: fields___measure___farm_vulnerability_component) {
+        fieldValue
+      }
+    }
+
+    # Get all measures for current system/vulnerability
+    adaptationMeasuresContainer: allAdaptationMeasures(
+      filter: {
+        fields: {
+          measure: {
+            farming_system: { eq: $system },
+            farm_vulnerability_component: { eq: $vulnerability }
+          }
+        }
+      }
+    ) {
+      adaptationMeasures: nodes {
+        fields {
+          slug
+          measure {
+            alt_language
+            name
+            alt_name
+            implementation
+            climate_risk_region
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default doRedirect(AdaptationMeasures);
