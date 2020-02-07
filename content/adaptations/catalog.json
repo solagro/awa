@@ -1,4 +1,10 @@
 {
+  "alt-language": [
+    {
+      "id": "3",
+      "value": "es"
+    }
+  ],
   "weather-event": [
     {
       "id": "1",

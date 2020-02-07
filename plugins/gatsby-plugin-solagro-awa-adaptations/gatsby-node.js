@@ -55,6 +55,7 @@ exports.onCreateNode = async ({
         // Replace some field ids by corresponding value from catalog
         'climate-risk-region': getCatalogValue('climate-risk-region', measure['climate-risk-region']),
         'weather-event': getCatalogValue('weather-event', measure['weather-event']),
+        'alt-language': getCatalogValue('alt-language', measure['alt-language']),
       }));
 
     /**
