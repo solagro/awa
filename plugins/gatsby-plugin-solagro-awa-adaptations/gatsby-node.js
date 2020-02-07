@@ -28,13 +28,18 @@ exports.onCreateNode = async ({
     const csv = await loadNodeContent(node);
     const allLines = await csvtojson({ delimiter: ',' }).fromString(csv);
 
-    const [catalog] = getNodesByType('AdaptationsJson');
-    const getCatalogValue = getValueFrom(catalog);
+    const [catalogFromBase] = getNodesByType('AdaptationsJson');
+    /**
+     * Workaround to avoid intermittent bug when AdaptationsJson nodes do not exist
+     */
+    const catalog = catalogFromBase
+      || require('../../content/adaptations/catalog.json'); // eslint-disable-line global-require
 
     /**
      * Manipulate array created from CSV to remove meaningless lines
      * and replace some values by proper one
      */
+    const getCatalogValue = getValueFrom(catalog);
     const measures = allLines
       // remove lines with no index
       .filter(({ index }) => Boolean(index))
