@@ -148,6 +148,17 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect } 
   }));
 
   await Promise.all(locales.map(async language => {
+    /**
+     * Create redirection from adaptations root path
+     * to to first available farming system
+     */
+    await createRedirect({
+      fromPath: buildPath(language, 'adaptations'),
+      toPath: buildPath(language, 'adaptations', tree[0].system, tree[0].vulnerabilities[0]),
+      redirectInBrowser: true,
+      // isPermanent: true,
+    });
+
     await Promise.all(tree.map(async ({ system, vulnerabilities }) => {
       /**
        * Create redirection from farming system root path
