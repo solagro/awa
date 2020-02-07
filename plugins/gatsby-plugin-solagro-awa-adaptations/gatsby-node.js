@@ -195,7 +195,7 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect } 
     } }) =>
       createPage({
         path: buildPath(language, 'adaptations', system, vulnerability, region, slug),
-        component: path.resolve('./src/components/Debug.js'),
+        component: path.resolve('./src/components/DebugPage.js'),
         context: { language, system, vulnerability, region, slug },
       })));
   }));

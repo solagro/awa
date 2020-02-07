@@ -1,7 +1,6 @@
 import React from 'react';
-import doRedirect from '../hoc/doRedirect';
 
-const Debug = props => (
+export default props => (
   Object.entries(props).map(([propName, propValue]) => (
     <pre key={propName}>
       {propName}
@@ -10,5 +9,3 @@ const Debug = props => (
     </pre>
   ))
 );
-
-export default doRedirect(Debug);
