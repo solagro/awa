@@ -12,7 +12,7 @@ const cleanValue = str => slugify(str).toLowerCase();
 const getValueFrom = catalog => (sectionName = '', id = '') => {
   const section = catalog[sectionName] || [];
   const item = section.find(({ id: itemId }) => (itemId === id)) || {};
-  return item.name || id;
+  return item.value || id;
 };
 
 exports.onCreateNode = async ({

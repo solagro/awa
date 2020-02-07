@@ -2,81 +2,81 @@
   "weather-event": [
     {
       "id": "1",
-      "name": "drought"
+      "value": "drought"
     },
     {
       "id": "2",
-      "name": "floods-heavy-rainfall"
+      "value": "floods-heavy-rainfall"
     },
     {
       "id": "3",
-      "name": "very-high-temperatures-heat-wave"
+      "value": "very-high-temperatures-heat-wave"
     },
     {
       "id": "4",
-      "name": "intense-frost-late-frost"
+      "value": "intense-frost-late-frost"
     },
     {
       "id": "5",
-      "name": "snow"
+      "value": "snow"
     },
     {
       "id": "6",
-      "name": "hail"
+      "value": "hail"
     },
     {
       "id": "7",
-      "name": "wind-storms"
+      "value": "wind-storms"
     },
     {
       "id": "8",
-      "name": "all-extreme-weather-events"
+      "value": "all-extreme-weather-events"
     }
   ],
   "climate-risk-region": [
     {
       "id": "1",
-      "name": "northern"
+      "value": "northern"
     },
     {
       "id": "2",
-      "name": "atlantic"
+      "value": "atlantic"
     },
     {
       "id": "3",
-      "name": "continental"
+      "value": "continental"
     },
     {
       "id": "4",
-      "name": "southern"
+      "value": "southern"
     },
     {
       "id": "5",
-      "name": "northern-atlantic-continental-southern"
+      "value": "northern-atlantic-continental-southern"
     },
     {
       "id": "6",
-      "name": "northern-continental-southern"
+      "value": "northern-continental-southern"
     },
     {
       "id": "7",
-      "name": "continental-southern"
+      "value": "continental-southern"
     },
     {
       "id": "8",
-      "name": "atlantic-continental-southern"
+      "value": "atlantic-continental-southern"
     },
     {
       "id": "9",
-      "name": "northern-southern"
+      "value": "northern-southern"
     },
     {
       "id": "10",
-      "name": "northern-atlantic-southern"
+      "value": "northern-atlantic-southern"
     },
     {
       "id": "11",
-      "name": "northern-continental"
+      "value": "northern-continental"
     }
   ]
 }
