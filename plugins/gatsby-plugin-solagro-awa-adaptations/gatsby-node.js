@@ -50,7 +50,7 @@ exports.onCreateNode = async ({
         // generate slug for farming system, vulnerability component and measure name
         'farming-system': cleanValue(measure['farming-system']),
         'farm-vulnerability-component': cleanValue(measure['farm-vulnerability-component']),
-        slug: cleanValue(measure['name-of-the-measure']),
+        slug: cleanValue(measure.name),
 
         // Replace some field ids by corresponding value from catalog
         'climate-risk-region': getCatalogValue('climate-risk-region', measure['climate-risk-region']),
