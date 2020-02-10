@@ -44,7 +44,7 @@ const AdaptationMeasures = ({
   const { t, i18n } = useTranslation();
 
   /**
-   * Farming systems
+   * Array of farming systems for rendering system tabs
    */
   const systemLinks = catalog.farming_system.map(({ value: system }) => ({
     id: system,
@@ -55,7 +55,7 @@ const AdaptationMeasures = ({
   const currentSystemId = catalog.farming_system.find(({ value }) => (value === currentSystem)).id;
 
   /**
-   * Vulnerability components
+   * Array of vulnerabilities for rendering Vulnerability tabs
    */
   const vulnerabilityLinks = catalog.farm_vulnerability_component
     // Keep only vulnerabilities from current system
@@ -67,14 +67,14 @@ const AdaptationMeasures = ({
     }));
 
   /**
-   * Adaptations measures
+   * Array of adaptations measures for rendering it as a list
    */
   const measureLinks = adaptationMeasures.map(({
     fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
   }) => ({ slug, name, region, term }));
 
   /**
-   * Regions & Implementations
+   * Compute lists for found Regions & Implementations
    */
   const {
     regions: foundRegions,
@@ -88,13 +88,16 @@ const AdaptationMeasures = ({
     }), { regions: [], implementations: [] });
 
   /**
-   * Regions state
+   * Array of regions for rendering <Select />
    */
   const regionItems = catalog.climate_risk_region.map(({ value: region }) => ({
     id: region,
     enabled: foundRegions.includes(region),
   }));
 
+  /**
+   * Regions state management
+   */
   const [selectedRegion, setSelectedRegion] = React.useState(foundRegions[0]);
 
   const handleRegionChange = (event, target) => {
@@ -102,13 +105,16 @@ const AdaptationMeasures = ({
   };
 
   /**
-   * Implementations state
+   * Array of implementations for rendering checkboxes
    */
   const implementationItems = catalog.implementation.map(({ value: implementation }) => ({
     id: implementation,
     enabled: foundImplementations.includes(implementation),
   }));
 
+  /**
+   * Implementations state management
+   */
   const [enabledImp, setEnabledImp] = React.useState(new Set(foundImplementations));
 
   const toggleImplementation = implementation => () => {
@@ -124,10 +130,11 @@ const AdaptationMeasures = ({
   };
 
   /**
-   * Measure list filter
+   * Adaptation measure list filter
    */
   const measureFilter = ({ region, term }) => {
     if (!isLive) {
+      // Do not remove any item for html pre-rendering
       return true;
     }
 
