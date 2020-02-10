@@ -35,7 +35,6 @@ const AdaptationMeasures = ({
   const systemLinks = catalog.farming_system.map(({ value: system }) => ({
     id: system,
     path: system,
-    label: t(system), // i18next-extract-disable-line
     enabled: foundFarmingSystems.some(({ fieldValue }) => (fieldValue === system)),
   }));
 
@@ -47,7 +46,6 @@ const AdaptationMeasures = ({
     .map(({ value: vulnerability }) => ({
       id: vulnerability,
       path: vulnerability,
-      label: t(vulnerability), // i18next-extract-disable-line
       enabled: foundVulnerabilities.some(({ fieldValue }) => (fieldValue === vulnerability)),
     }));
 
@@ -62,11 +60,11 @@ const AdaptationMeasures = ({
 
       <CustomAppBar position="static">
         <CustomTabs value={currentSystem}>
-          {systemLinks.map(({ id, path, label, enabled }) => (
+          {systemLinks.map(({ id, path, enabled }) => (
             <CustomTab
               disabled={!enabled}
               key={id}
-              label={t(label)} // i18next-extract-disable-line
+              label={t(id)} // i18next-extract-disable-line
               value={id}
               component={Link}
               to={`/adaptations/${path}`}
@@ -77,11 +75,11 @@ const AdaptationMeasures = ({
 
       <SecondaryAppBar position="static">
         <SecondaryTabs value={currentVulnerability}>
-          {vulnerabilityLinks.map(({ id, path, label, enabled }) => (
+          {vulnerabilityLinks.map(({ id, path, enabled }) => (
             <SecondaryTab
               disabled={!enabled}
               key={id}
-              label={t(label)} // i18next-extract-disable-line
+              label={t(id)} // i18next-extract-disable-line
               value={id}
               component={Link}
               to={`/adaptations/${currentSystem}/${path}`}
