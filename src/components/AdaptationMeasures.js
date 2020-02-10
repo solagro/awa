@@ -40,8 +40,8 @@ const AdaptationMeasures = ({
   const vulnerabilityLinks = vulnerabilities.map(({ fieldValue }) => (fieldValue));
 
   const measureLinks = adaptationMeasures.map(({
-    fields: { slug, measure: { name, climate_risk_region: region } },
-  }) => ({ slug, name, region }));
+    fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
+  }) => ({ slug, name, region, term }));
 
   return (
     <Layout>
@@ -77,10 +77,13 @@ const AdaptationMeasures = ({
       </SecondaryAppBar>
 
       <ul>
-        {measureLinks.map(({ slug, name, region }) => (
+        {measureLinks.map(({ slug, name, region, term }) => (
           <li>
-            <Link to={`/adaptations/${currentSystem}/${currentVulnerability}/${region}/${slug}`}>
-              {name}
+            <Link
+              to={`/adaptations/${currentSystem}/${currentVulnerability}/${region}/${slug}`}
+              state={{ modal: true }}
+            >
+              {name} {term} {region}
             </Link>
           </li>
         ))}
