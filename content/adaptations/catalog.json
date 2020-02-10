@@ -1,8 +1,24 @@
 {
   "alt-language": [
     {
+      "id": "1",
+      "value": "de"
+    },
+    {
+      "id": "2",
+      "value": "en"
+    },
+    {
       "id": "3",
       "value": "es"
+    },
+    {
+      "id": "4",
+      "value": "et"
+    },
+    {
+      "id": "5",
+      "value": "fr"
     }
   ],
   "weather-event": [
@@ -83,6 +99,120 @@
     {
       "id": "11",
       "value": "northern-continental"
+    }
+  ],
+  "farming-system": [
+    {
+      "id": "1",
+      "value": "cereals"
+    },
+    {
+      "id": "2",
+      "value": "animals"
+    },
+    {
+      "id": "3",
+      "value": "fruits-and-vineyards"
+    }
+  ],
+  "farm-vulnerability-component": [
+    {
+      "id": "11",
+      "value": "crop-system"
+    },
+    {
+      "id": "12",
+      "value": "varieties"
+    },
+    {
+      "id": "13",
+      "value": "soil-and-farming-practicies"
+    },
+    {
+      "id": "14",
+      "value": "water-dependency"
+    },
+    {
+      "id": "15",
+      "value": "market"
+    },
+    {
+      "id": "16",
+      "value": "insurance"
+    },
+    {
+      "id": "17",
+      "value": "policies"
+    },
+    {
+      "id": "21",
+      "value": "fodder-system-and-concentrates"
+    },
+    {
+      "id": "22",
+      "value": "herd-management"
+    },
+    {
+      "id": "23",
+      "value": "animal-welfare"
+    },
+    {
+      "id": "24",
+      "value": "water-dependency"
+    },
+    {
+      "id": "25",
+      "value": "market"
+    },
+    {
+      "id": "26",
+      "value": "insurance"
+    },
+    {
+      "id": "27",
+      "value": "policies"
+    },
+    {
+      "id": "31",
+      "value": "plant-and-grape-varieties"
+    },
+    {
+      "id": "32",
+      "value": "management-practicies"
+    },
+    {
+      "id": "33",
+      "value": "soil-management"
+    },
+    {
+      "id": "34",
+      "value": "water-dependency"
+    },
+    {
+      "id": "35",
+      "value": "market"
+    },
+    {
+      "id": "36",
+      "value": "insurance"
+    },
+    {
+      "id": "37",
+      "value": "policies"
+    }
+  ],
+  "implementation": [
+    {
+      "id": "1",
+      "value": "short-term"
+    },
+    {
+      "id": "2",
+      "value": "mid-term"
+    },
+    {
+      "id": "3",
+      "value": "long-term"
     }
   ]
 }
