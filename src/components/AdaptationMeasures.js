@@ -25,7 +25,7 @@ const AdaptationMeasures = ({
   },
   data: {
     farmingSystemsContainer: { farmingSystems: foundFarmingSystems },
-    vulnerabilitiesContainer: { vulnerabilities },
+    vulnerabilitiesContainer: { vulnerabilities: foundVulnerabilities },
     adaptationMeasuresContainer: { adaptationMeasures },
     catalog,
   },
@@ -39,7 +39,17 @@ const AdaptationMeasures = ({
     enabled: foundFarmingSystems.some(({ fieldValue }) => (fieldValue === system)),
   }));
 
-  const vulnerabilityLinks = vulnerabilities.map(({ fieldValue }) => (fieldValue));
+  const currentSystemId = catalog.farming_system.find(({ value }) => (value === currentSystem)).id;
+
+  const vulnerabilityLinks = catalog.farm_vulnerability_component
+    // Keep only vulnerabilities from current system
+    .filter(({ id }) => (id[0] === currentSystemId))
+    .map(({ value: vulnerability }) => ({
+      id: vulnerability,
+      path: vulnerability,
+      label: t(vulnerability), // i18next-extract-disable-line
+      enabled: foundVulnerabilities.some(({ fieldValue }) => (fieldValue === vulnerability)),
+    }));
 
   const measureLinks = adaptationMeasures.map(({
     fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
@@ -67,13 +77,14 @@ const AdaptationMeasures = ({
 
       <SecondaryAppBar position="static">
         <SecondaryTabs value={currentVulnerability}>
-          {vulnerabilityLinks.map(vulnerability => (
+          {vulnerabilityLinks.map(({ id, path, label, enabled }) => (
             <SecondaryTab
-              key={vulnerability}
-              label={t(vulnerability)} // i18next-extract-disable-line
-              value={vulnerability}
+              disabled={!enabled}
+              key={id}
+              label={t(label)} // i18next-extract-disable-line
+              value={id}
               component={Link}
-              to={`/adaptations/${currentSystem}/${vulnerability}`}
+              to={`/adaptations/${currentSystem}/${path}`}
             />
           ))}
         </SecondaryTabs>
