@@ -13,6 +13,7 @@ import Link from '../components/Link';
 import Layout from '../components/Layout';
 import CSVGenerator from '../components/CSVGenerator';
 import doRedirect from '../hoc/doRedirect';
+import AdaptationsCSV from '../components/AdaptationsCSV';
 
 const templateLinks = {
   ods: '/gridcode.ods',
@@ -174,6 +175,19 @@ const HelpPage = () => (
       The first row with no content in first cell is used as comment for
       column headers.
     </Typography>
+
+    <Divider style={{ margin: '2em 0' }} />
+
+    <Typography variant="h2" gutterBottom>
+      Update adaptation measures
+    </Typography>
+
+    <Typography variant="body1" gutterBottom>
+      Data for <Link to="/adaptations">Adaptation measures</Link> have to be contributed
+      through a CSV files:
+    </Typography>
+
+    <AdaptationsCSV />
   </Layout>
 );
 
