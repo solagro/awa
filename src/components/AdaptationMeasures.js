@@ -2,15 +2,19 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
-import AppBar from '@material-ui/core/AppBar';
-import Tab from '@material-ui/core/Tab';
-import Tabs from '@material-ui/core/Tabs';
 import Typography from '@material-ui/core/Typography';
 
 import Layout from './Layout';
 import Link from './Link';
 import SEO from './Seo';
-import { CustomTabs, CustomAppBar, CustomTab } from './StyledTabs';
+import {
+  CustomTabs,
+  CustomAppBar,
+  CustomTab,
+  SecondaryAppBar,
+  SecondaryTabs,
+  SecondaryTab,
+} from './StyledTabs';
 
 import doRedirect from '../hoc/doRedirect';
 
@@ -44,10 +48,10 @@ const AdaptationMeasures = ({
       <SEO title={t('Sustainable adaptation measures')} lang={i18n.language} />
       <Typography variant="h1" gutterBottom align="center">{t('Sustainable adaptation measures')}</Typography>
 
-      <AppBar position="static">
-        <Tabs value={currentSystem}>
+      <CustomAppBar position="static">
+        <CustomTabs value={currentSystem}>
           {systemLinks.map(({ id, path, label }) => (
-            <Tab
+            <CustomTab
               key={id}
               label={t(label)} // i18next-extract-disable-line
               value={id}
@@ -55,13 +59,13 @@ const AdaptationMeasures = ({
               to={`/adaptations/${path}`}
             />
           ))}
-        </Tabs>
-      </AppBar>
+        </CustomTabs>
+      </CustomAppBar>
 
-      <AppBar position="static">
-        <Tabs value={currentVulnerability}>
+      <SecondaryAppBar position="static">
+        <SecondaryTabs value={currentVulnerability}>
           {vulnerabilityLinks.map(vulnerability => (
-            <Tab
+            <SecondaryTab
               key={vulnerability}
               label={t(vulnerability)} // i18next-extract-disable-line
               value={vulnerability}
@@ -69,8 +73,8 @@ const AdaptationMeasures = ({
               to={`/adaptations/${currentSystem}/${vulnerability}`}
             />
           ))}
-        </Tabs>
-      </AppBar>
+        </SecondaryTabs>
+      </SecondaryAppBar>
 
       <ul>
         {measureLinks.map(({ slug, name, region }) => (
