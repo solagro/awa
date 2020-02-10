@@ -8,8 +8,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Typography from '@material-ui/core/Typography';
 
 import Layout from './Layout';
-import SEO from './Seo';
 import Link from './Link';
+import SEO from './Seo';
+import { CustomTabs, CustomAppBar, CustomTab } from './StyledTabs';
 
 import doRedirect from '../hoc/doRedirect';
 
