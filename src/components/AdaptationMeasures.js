@@ -78,7 +78,7 @@ const AdaptationMeasures = ({
 
       <ul>
         {measureLinks.map(({ slug, name, region, term }) => (
-          <li>
+          <li key={slug}>
             <Link
               to={`/adaptations/${currentSystem}/${currentVulnerability}/${region}/${slug}`}
               state={{ modal: true }}
