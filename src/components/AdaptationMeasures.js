@@ -2,6 +2,15 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
+import Checkbox from '@material-ui/core/Checkbox';
+import Divider from '@material-ui/core/Divider';
+import FormControl from '@material-ui/core/FormControl';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormLabel from '@material-ui/core/FormLabel';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import Select from '@material-ui/core/Select';
 import Typography from '@material-ui/core/Typography';
 
 import Layout from './Layout';
@@ -18,6 +27,8 @@ import {
 
 import doRedirect from '../hoc/doRedirect';
 
+const isLive = typeof window !== 'undefined';
+
 const AdaptationMeasures = ({
   pageContext: {
     vulnerability: currentVulnerability,
@@ -32,6 +43,9 @@ const AdaptationMeasures = ({
 }) => {
   const { t, i18n } = useTranslation();
 
+  /**
+   * Farming systems
+   */
   const systemLinks = catalog.farming_system.map(({ value: system }) => ({
     id: system,
     path: system,
@@ -40,6 +54,9 @@ const AdaptationMeasures = ({
 
   const currentSystemId = catalog.farming_system.find(({ value }) => (value === currentSystem)).id;
 
+  /**
+   * Vulnerability components
+   */
   const vulnerabilityLinks = catalog.farm_vulnerability_component
     // Keep only vulnerabilities from current system
     .filter(({ id }) => (id[0] === currentSystemId))
@@ -49,9 +66,81 @@ const AdaptationMeasures = ({
       enabled: foundVulnerabilities.some(({ fieldValue }) => (fieldValue === vulnerability)),
     }));
 
+  /**
+   * Adaptations measures
+   */
   const measureLinks = adaptationMeasures.map(({
     fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
   }) => ({ slug, name, region, term }));
+
+  /**
+   * Regions & Implementations
+   */
+  const {
+    regions: foundRegions,
+    implementations: foundImplementations,
+  } = adaptationMeasures
+    .reduce(({ regions, implementations }, {
+      fields: { measure: { climate_risk_region: region, implementation } },
+    }) => ({
+      regions: Array.from(new Set([...regions, region])),
+      implementations: Array.from(new Set([...implementations, implementation])),
+    }), { regions: [], implementations: [] });
+
+  /**
+   * Regions state
+   */
+  const regionItems = catalog.climate_risk_region.map(({ value: region }) => ({
+    id: region,
+    enabled: foundRegions.includes(region),
+  }));
+
+  const [selectedRegion, setSelectedRegion] = React.useState(foundRegions[0]);
+
+  const handleRegionChange = (event, target) => {
+    setSelectedRegion(target.key);
+  };
+
+  /**
+   * Implementations state
+   */
+  const implementationItems = catalog.implementation.map(({ value: implementation }) => ({
+    id: implementation,
+    enabled: foundImplementations.includes(implementation),
+  }));
+
+  const [enabledImp, setEnabledImp] = React.useState(new Set(foundImplementations));
+
+  const toggleImplementation = implementation => () => {
+    const newSet = new Set(enabledImp);
+
+    if (enabledImp.has(implementation)) {
+      newSet.delete(implementation);
+    } else {
+      newSet.add(implementation);
+    }
+
+    setEnabledImp(newSet);
+  };
+
+  /**
+   * Measure list filter
+   */
+  const measureFilter = ({ region, term }) => {
+    if (!isLive) {
+      return true;
+    }
+
+    if (!enabledImp.has(term)) {
+      return false;
+    }
+
+    if (selectedRegion !== region) {
+      return false;
+    }
+
+    return true;
+  };
 
   return (
     <Layout>
@@ -88,17 +177,65 @@ const AdaptationMeasures = ({
         </SecondaryTabs>
       </SecondaryAppBar>
 
-      <ul>
-        {measureLinks.map(({ slug, name, region, term }) => (
-          <li key={slug}>
-            <Link
-              to={`/adaptations/${currentSystem}/${currentVulnerability}/${region}/${slug}`}
-              state={{ modal: true }}
+      {isLive && (
+        <>
+          <FormControl>
+            <InputLabel id="regionSelect">{t('Region')}</InputLabel>
+            <Select
+              labelId="regionSelect"
+              onChange={handleRegionChange}
+              value={selectedRegion}
             >
-              {name} {term} {region}
-            </Link>
-          </li>
-        ))}
+              {regionItems.map(({ id, enabled }) => (
+                <MenuItem key={id} value={id} disabled={!enabled}>
+                  {t(id)}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+
+          <Divider variant="middle" style={{ margin: '1em' }} />
+
+          <FormControl component="fieldset">
+            <FormLabel component="legend">{t('Implementation')}</FormLabel>
+            <FormGroup>
+              {implementationItems.map(({ id, enabled }) => (
+                <FormControlLabel
+                  control={(
+                    <Checkbox
+                      value={id}
+                      onChange={toggleImplementation(id)}
+                      checked={enabledImp.has(id)}
+                      disabled={!enabled}
+                    />
+                  )}
+                  label={t(id)}
+                  key={id}
+                />
+              ))}
+            </FormGroup>
+          </FormControl>
+
+          <Divider variant="middle" style={{ margin: '1em' }} />
+        </>
+      )}
+
+      <Typography variant="h3">
+        {t('Click on an action to see the detail')}
+      </Typography>
+      <ul>
+        {measureLinks
+          .filter(measureFilter)
+          .map(({ slug, name, region }) => (
+            <li key={slug}>
+              <Link
+                to={`/adaptations/${currentSystem}/${currentVulnerability}/${region}/${slug}`}
+                state={{ modal: true }}
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
       </ul>
     </Layout>
   );
@@ -111,6 +248,8 @@ export const query = graphql`
     catalog: adaptationsJson {
       farming_system { id value }
       farm_vulnerability_component { id value }
+      implementation { id value }
+      climate_risk_region { id value }
     }
 
     # Get all farming systems having at least one measure
