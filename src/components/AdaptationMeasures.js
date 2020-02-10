@@ -24,17 +24,19 @@ const AdaptationMeasures = ({
     system: currentSystem,
   },
   data: {
-    farmingSystemsContainer: { farmingSystems },
+    farmingSystemsContainer: { farmingSystems: foundFarmingSystems },
     vulnerabilitiesContainer: { vulnerabilities },
     adaptationMeasuresContainer: { adaptationMeasures },
+    catalog,
   },
 }) => {
   const { t, i18n } = useTranslation();
 
-  const systemLinks = farmingSystems.map(({ fieldValue }) => ({
-    id: fieldValue,
-    path: fieldValue,
-    label: t(fieldValue), // i18next-extract-disable-line
+  const systemLinks = catalog.farming_system.map(({ value: system }) => ({
+    id: system,
+    path: system,
+    label: t(system), // i18next-extract-disable-line
+    enabled: foundFarmingSystems.some(({ fieldValue }) => (fieldValue === system)),
   }));
 
   const vulnerabilityLinks = vulnerabilities.map(({ fieldValue }) => (fieldValue));
@@ -50,8 +52,9 @@ const AdaptationMeasures = ({
 
       <CustomAppBar position="static">
         <CustomTabs value={currentSystem}>
-          {systemLinks.map(({ id, path, label }) => (
+          {systemLinks.map(({ id, path, label, enabled }) => (
             <CustomTab
+              disabled={!enabled}
               key={id}
               label={t(label)} // i18next-extract-disable-line
               value={id}
@@ -95,14 +98,20 @@ const AdaptationMeasures = ({
 export const query = graphql`
   query ($system: String!, $vulnerability: String!) {
 
-    # Get all farming systems
+    # Get all farming systems & vulnerability components from catalog
+    catalog: adaptationsJson {
+      farming_system { id value }
+      farm_vulnerability_component { id value }
+    }
+
+    # Get all farming systems having at least one measure
     farmingSystemsContainer: allAdaptationMeasures {
       farmingSystems: group(field: fields___measure___farming_system) {
         fieldValue
       }
     }
 
-    # Get vulnerabilities for current system
+    # Get all vulnerabilities for current system having at least one measure
     vulnerabilitiesContainer: allAdaptationMeasures(
       filter: {
         fields: {
