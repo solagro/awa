@@ -47,14 +47,16 @@ exports.onCreateNode = async ({
       .map(measure => ({
         ...measure,
 
-        // generate slug for farming system, vulnerability component and measure name
-        'farming-system': cleanValue(measure['farming-system']),
-        'farm-vulnerability-component': cleanValue(measure['farm-vulnerability-component']),
+        // generate slug for measure name
         slug: cleanValue(measure.name),
 
         // Replace some field ids by corresponding value from catalog
         'climate-risk-region': getCatalogValue('climate-risk-region', measure['climate-risk-region']),
+        'farming-system': getCatalogValue('farming-system', measure['farming-system']),
+        'farm-vulnerability-component': getCatalogValue('farm-vulnerability-component', measure['farm-vulnerability-component']),
         'weather-event': getCatalogValue('weather-event', measure['weather-event']),
+        '2nd-weather-event': getCatalogValue('weather-event', measure['2nd-weather-event']),
+        implementation: getCatalogValue('implementation', measure.implementation),
         'alt-language': getCatalogValue('alt-language', measure['alt-language']),
       }));
 
