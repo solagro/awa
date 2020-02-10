@@ -1,5 +1,14 @@
+import React from 'react';
+
 import Debug from './Debug';
+import Layout from './Layout';
 
 import doRedirect from '../hoc/doRedirect';
 
-export default doRedirect(Debug);
+const DebugPage = props => (
+  <Layout>
+    <Debug {...props} />
+  </Layout>
+);
+
+export default doRedirect(DebugPage);
