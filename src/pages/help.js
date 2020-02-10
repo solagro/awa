@@ -103,61 +103,60 @@ const HelpPage = () => (
       through a CSV files:
     </Typography>
 
-    <Grid container spacing={2}>
-      <Grid item xs={6}>
-        <CSVGenerator />
-      </Grid>
-      <Grid item xs={6}>
-        <List dense>
-          <ListItem>
-            <ListItemText>
-              Create and rename a copy of <strong>workbook template</strong>{' '}
-              <em>(<samp>xlsx</samp> or <samp>ods</samp>)</em> for
-              each grid point to create/update. <em>(i.e. 12345.ods, 43215.xlsx,…)</em>
-            </ListItemText>
-          </ListItem>
-          <ListItem>
-            <ListItemText>
-              Workbook templates :<br />
-              {' '}
-              <TemplateButton href={templateLinks.ods}>gridcode.ods</TemplateButton>
-              {' '}
-              <TemplateButton href={templateLinks.xlsx}>gridcode.xlsx</TemplateButton>
-            </ListItemText>
-          </ListItem>
-          <Divider variant="middle" component="li" />
-          <ListItem>
-            <ListItemText>
-              Contribute data for each spreadsheet of the workbook.{' '}
-              <em>Warning: Do not rename spreadsheets (tabs).</em>
-            </ListItemText>
-          </ListItem>
-          <Divider variant="middle" component="li" />
-          <ListItem>
-            <ListItemText>
-              Use the widget below cons to generate a zip file containing
-              CSV file for each spreadsheet tab, grouped by directories
-              named after orignal files.
-            </ListItemText>
-          </ListItem>
-          <Divider variant="middle" component="li" />
-          <ListItem>
-            <ListItemText>
-              Download and extract generated <samp>zip</samp> file on local
-              computer.
-            </ListItemText>
-          </ListItem>
-          <Divider variant="middle" component="li" />
-          <ListItem>
-            <ListItemText>
-              Use <a href={githubUpload.csv}>Github interface</a> to upload{' '}
-              <strong>every gridpoint directories at once</strong> into{' '}
-              <samp>content/map</samp> directory.
-            </ListItemText>
-          </ListItem>
-        </List>
-      </Grid>
-    </Grid>
+    <List dense>
+      <ListItem>
+        <ListItemText>
+          Create and rename a copy of <strong>workbook template</strong>{' '}
+          <em>(<samp>xlsx</samp> or <samp>ods</samp>)</em> for
+          each grid point to create/update. <em>(i.e. 12345.ods, 43215.xlsx,…)</em>
+        </ListItemText>
+      </ListItem>
+      <ListItem>
+        <ListItemText>
+          Workbook templates :<br />
+          {' '}
+          <TemplateButton href={templateLinks.ods}>gridcode.ods</TemplateButton>
+          {' '}
+          <TemplateButton href={templateLinks.xlsx}>gridcode.xlsx</TemplateButton>
+        </ListItemText>
+      </ListItem>
+      <Divider variant="middle" component="li" />
+      <ListItem>
+        <ListItemText>
+          Contribute data for each spreadsheet of the workbook.{' '}
+          <em>Warning: Do not rename spreadsheets (tabs).</em>
+        </ListItemText>
+      </ListItem>
+      <Divider variant="middle" component="li" />
+      <ListItem>
+        <ListItemText>
+          Use the widget below to generate a zip file containing
+          CSV file for each spreadsheet tab, grouped by directories
+          named after orignal files.
+        </ListItemText>
+      </ListItem>
+      <Divider variant="middle" component="li" />
+      <ListItem>
+        <ListItemText>
+          <CSVGenerator />
+        </ListItemText>
+      </ListItem>
+      <Divider variant="middle" component="li" />
+      <ListItem>
+        <ListItemText>
+          Download and extract generated <samp>zip</samp> file on local
+          computer.
+        </ListItemText>
+      </ListItem>
+      <Divider variant="middle" component="li" />
+      <ListItem>
+        <ListItemText>
+          Use <a href={githubUpload.csv}>Github interface</a> to upload{' '}
+          <strong>every gridpoint directories at once</strong> into{' '}
+          <samp>content/map</samp> directory.
+        </ListItemText>
+      </ListItem>
+    </List>
 
     <Typography variant="h3" gutterBottom>
       CSV files structure
