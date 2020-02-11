@@ -27,9 +27,9 @@ import {
 
 import doRedirect from '../hoc/doRedirect';
 
-const dedup = array => Array.from(new Set(array));
-
 const isLive = typeof window !== 'undefined';
+
+const filterBy = key => value => ({ [key]: property }) => (property === value);
 
 const AdaptationMeasures = ({
   pageContext: {
@@ -91,17 +91,15 @@ const AdaptationMeasures = ({
     enabled: foundRegions.includes(region),
   }));
 
-  const filterByRegion = fRegion => ({ region }) => (region === fRegion);
+  const stateFromRegion = newRegion => {
+    const regionMeasures = allMeasureLinks.filter(filterBy('region')(newRegion));
 
-  const defaultRegion = foundRegions[0];
-
-  const initialState = {
-    selectedRegion: defaultRegion,
-    selectedImplementations: catalog.implementation.map(({ value }) => value),
-    availableImplementations:
-      dedup(allMeasureLinks.filter(filterByRegion(defaultRegion)).map(({ term }) => term)),
-    activeMeasures:
-      allMeasureLinks.filter(({ region }) => (region === defaultRegion)),
+    return {
+      selectedRegion: newRegion,
+      selectedImplementations: new Set(catalog.implementation.map(({ value }) => value)),
+      availableImplementations: new Set(regionMeasures.map(({ term }) => term)),
+      activeMeasures: regionMeasures,
+    };
   };
 
   const measureReducer = (state, action) => {
@@ -111,12 +109,7 @@ const AdaptationMeasures = ({
 
         return {
           ...state,
-          selectedRegion: newRegion,
-          selectedImplementations: initialState.selectedImplementations,
-          availableImplementations:
-            dedup(allMeasureLinks.filter(filterByRegion(newRegion)).map(({ term }) => term)),
-          activeMeasures:
-            allMeasureLinks.filter(({ region }) => (region === newRegion)),
+          ...stateFromRegion(newRegion),
         };
       }
 
@@ -131,11 +124,10 @@ const AdaptationMeasures = ({
         }
         return {
           ...state,
-          selectedImplementations: dedup(newSelection),
-          activeMeasures:
-            allMeasureLinks
-              .filter(({ region }) => (region === state.selectedRegion))
-              .filter(({ term }) => newSelection.has(term)),
+          selectedImplementations: newSelection,
+          activeMeasures: allMeasureLinks
+            .filter(filterBy('region')(state.selectedRegion))
+            .filter(({ term }) => newSelection.has(term)),
         };
       }
 
@@ -144,7 +136,9 @@ const AdaptationMeasures = ({
     }
   };
 
-  const [measuresState, dispatch] = React.useReducer(measureReducer, initialState);
+  const initialAdaptationState = stateFromRegion(foundRegions[0]);
+  const [adaptationState, dispatch] = React.useReducer(measureReducer, initialAdaptationState);
+
   const implementationItems = catalog.implementation.map(({ value }) => value);
 
   return (
@@ -189,7 +183,7 @@ const AdaptationMeasures = ({
             <Select
               labelId="regionSelect"
               onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
-              value={measuresState.selectedRegion}
+              value={adaptationState.selectedRegion}
             >
               {regionItems.map(({ id, enabled }) => (
                 <MenuItem key={id} value={id} disabled={!enabled}>
@@ -210,8 +204,8 @@ const AdaptationMeasures = ({
                     <Checkbox
                       value={id}
                       onChange={() => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
-                      checked={new Set(measuresState.selectedImplementations).has(id)}
-                      disabled={!new Set(measuresState.availableImplementations).has(id)}
+                      checked={adaptationState.selectedImplementations.has(id)}
+                      disabled={!adaptationState.availableImplementations.has(id)}
                     />
                   )}
                   label={t(id)}
@@ -229,10 +223,8 @@ const AdaptationMeasures = ({
         {t('Click on an action to see the detail')}
       </Typography>
 
-      {/* <pre>{JSON.stringify(measuresState, null, 2)}</pre> */}
-
       <ul>
-        {measuresState.activeMeasures
+        {adaptationState.activeMeasures
           .map(({ slug, name, region, term }) => (
             <li key={slug}>
               <Link
