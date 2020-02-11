@@ -50,7 +50,7 @@
     "i18next": "~19.1.0",
     "i18next-browser-languagedetector": "~4.0.1",
     "jszip": "~3.2.2",
-    "mapbox-gl": "~1.6.1",
+    "mapbox-gl": "~1.7.0",
     "netlify-cms-app": "~2.11.15",
     "prop-types": "^15.7.2",
     "react": "~16.12.0",
