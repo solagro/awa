@@ -41,6 +41,7 @@
     "gatsby-plugin-react-helmet": "~3.1.21",
     "gatsby-plugin-remove-serviceworker": "~1.0.0",
     "gatsby-plugin-sharp": "~2.3.13",
+    "gatsby-plugin-uninline-styles": "~0.1.2",
     "gatsby-plugin-web-font-loader": "~1.0.4",
     "gatsby-source-filesystem": "~2.1.46",
     "gatsby-transformer-json": "~2.2.25",
