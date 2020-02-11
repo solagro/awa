@@ -69,10 +69,9 @@ const Layout = ({
   modalProps: { modal, closeTo },
   ...rest
 }) => {
-  const { site: { siteMetadata, buildTime } } = useStaticQuery(graphql`
+  const { site: { siteMetadata } } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
-        buildTime(fromNow: false, formatString: "YYYY-MM-D HH:mm (z)")
         siteMetadata {
           title
         }
@@ -141,7 +140,7 @@ const Layout = ({
 
 
       {footer && (
-        <Footer buildTime={buildTime} />
+        <Footer />
       )}
     </Grid>
   );

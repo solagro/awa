@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Footer = ({ buildTime }) => {
+const Footer = () => {
   const classes = useStyles();
   const { t } = useTranslation();
 
@@ -114,7 +114,6 @@ const Footer = ({ buildTime }) => {
         <Link to="/legal">
           <Typography variant="h2" gutterBottom>{t('Legal')}</Typography>
         </Link>
-        <span>{t('Last build ')}{buildTime}</span>
       </Grid>
     </Grid>
   );
