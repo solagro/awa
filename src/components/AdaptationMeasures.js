@@ -27,6 +27,8 @@ import {
 
 import doRedirect from '../hoc/doRedirect';
 
+const dedup = array => Array.from(new Set(array));
+
 const isLive = typeof window !== 'undefined';
 
 const AdaptationMeasures = ({
@@ -69,23 +71,17 @@ const AdaptationMeasures = ({
   /**
    * Array of adaptations measures for rendering it as a list
    */
-  const measureLinks = adaptationMeasures.map(({
+  const allMeasureLinks = adaptationMeasures.map(({
     fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
   }) => ({ slug, name, region, term }));
 
   /**
-   * Compute lists for found Regions & Implementations
+   * Compute lists for found Regions
    */
-  const {
-    regions: foundRegions,
-    implementations: foundImplementations,
-  } = adaptationMeasures
-    .reduce(({ regions, implementations }, {
-      fields: { measure: { climate_risk_region: region, implementation } },
-    }) => ({
-      regions: Array.from(new Set([...regions, region])),
-      implementations: Array.from(new Set([...implementations, implementation])),
-    }), { regions: [], implementations: [] });
+  const foundRegions = adaptationMeasures
+    .reduce((regions, {
+      fields: { measure: { climate_risk_region: region } },
+    }) => Array.from(new Set([...regions, region])), []);
 
   /**
    * Array of regions for rendering <Select />
@@ -95,59 +91,61 @@ const AdaptationMeasures = ({
     enabled: foundRegions.includes(region),
   }));
 
-  /**
-   * Regions state management
-   */
-  const [selectedRegion, setSelectedRegion] = React.useState(foundRegions[0]);
+  const filterByRegion = fRegion => ({ region }) => (region === fRegion);
 
-  const handleRegionChange = (event, target) => {
-    setSelectedRegion(target.key);
+  const defaultRegion = foundRegions[0];
+
+  const initialState = {
+    selectedRegion: defaultRegion,
+    selectedImplementations: catalog.implementation.map(({ value }) => value),
+    availableImplementations:
+      dedup(allMeasureLinks.filter(filterByRegion(defaultRegion)).map(({ term }) => term)),
+    activeMeasures:
+      allMeasureLinks.filter(({ region }) => (region === defaultRegion)),
   };
 
-  /**
-   * Array of implementations for rendering checkboxes
-   */
-  const implementationItems = catalog.implementation.map(({ value: implementation }) => ({
-    id: implementation,
-    enabled: foundImplementations.includes(implementation),
-  }));
+  const measureReducer = (state, action) => {
+    switch (action.type) {
+      case 'SET_REGION': {
+        const newRegion = action.value;
 
-  /**
-   * Implementations state management
-   */
-  const [enabledImp, setEnabledImp] = React.useState(new Set(foundImplementations));
+        return {
+          ...state,
+          selectedRegion: newRegion,
+          selectedImplementations: initialState.selectedImplementations,
+          availableImplementations:
+            dedup(allMeasureLinks.filter(filterByRegion(newRegion)).map(({ term }) => term)),
+          activeMeasures:
+            allMeasureLinks.filter(({ region }) => (region === newRegion)),
+        };
+      }
 
-  const toggleImplementation = implementation => () => {
-    const newSet = new Set(enabledImp);
+      case 'SET_IMPLEMENTATION': {
+        const newImplementation = action.value;
+        const newSelection = new Set(state.selectedImplementations);
 
-    if (enabledImp.has(implementation)) {
-      newSet.delete(implementation);
-    } else {
-      newSet.add(implementation);
+        if (newSelection.has(newImplementation)) {
+          newSelection.delete(newImplementation);
+        } else {
+          newSelection.add(newImplementation);
+        }
+        return {
+          ...state,
+          selectedImplementations: dedup(newSelection),
+          activeMeasures:
+            allMeasureLinks
+              .filter(({ region }) => (region === state.selectedRegion))
+              .filter(({ term }) => newSelection.has(term)),
+        };
+      }
+
+      default:
+        throw new Error('Unmanaged action');
     }
-
-    setEnabledImp(newSet);
   };
 
-  /**
-   * Adaptation measure list filter
-   */
-  const measureFilter = ({ region, term }) => {
-    if (!isLive) {
-      // Do not remove any item for html pre-rendering
-      return true;
-    }
-
-    if (!enabledImp.has(term)) {
-      return false;
-    }
-
-    if (selectedRegion !== region) {
-      return false;
-    }
-
-    return true;
-  };
+  const [measuresState, dispatch] = React.useReducer(measureReducer, initialState);
+  const implementationItems = catalog.implementation.map(({ value }) => value);
 
   return (
     <Layout>
@@ -190,8 +188,8 @@ const AdaptationMeasures = ({
             <InputLabel id="regionSelect">{t('Region')}</InputLabel>
             <Select
               labelId="regionSelect"
-              onChange={handleRegionChange}
-              value={selectedRegion}
+              onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
+              value={measuresState.selectedRegion}
             >
               {regionItems.map(({ id, enabled }) => (
                 <MenuItem key={id} value={id} disabled={!enabled}>
@@ -206,14 +204,14 @@ const AdaptationMeasures = ({
           <FormControl component="fieldset">
             <FormLabel component="legend">{t('Implementation')}</FormLabel>
             <FormGroup>
-              {implementationItems.map(({ id, enabled }) => (
+              {implementationItems.map(id => (
                 <FormControlLabel
                   control={(
                     <Checkbox
                       value={id}
-                      onChange={toggleImplementation(id)}
-                      checked={enabledImp.has(id)}
-                      disabled={!enabled}
+                      onChange={() => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
+                      checked={new Set(measuresState.selectedImplementations).has(id)}
+                      disabled={!new Set(measuresState.availableImplementations).has(id)}
                     />
                   )}
                   label={t(id)}
@@ -230,16 +228,20 @@ const AdaptationMeasures = ({
       <Typography variant="h3">
         {t('Click on an action to see the detail')}
       </Typography>
+
+      {/* <pre>{JSON.stringify(measuresState, null, 2)}</pre> */}
+
       <ul>
-        {measureLinks
-          .filter(measureFilter)
-          .map(({ slug, name, region }) => (
+        {measuresState.activeMeasures
+          .map(({ slug, name, region, term }) => (
             <li key={slug}>
               <Link
                 to={`/adaptations/${currentSystem}/${currentVulnerability}/${region}/${slug}`}
                 state={{ modal: true }}
               >
                 {name}
+                ({region})
+                ({term})
               </Link>
             </li>
           ))}
@@ -255,8 +257,8 @@ export const query = graphql`
     catalog: adaptationsJson {
       farming_system { id value }
       farm_vulnerability_component { id value }
-      implementation { id value }
       climate_risk_region { id value }
+      implementation { id value }
     }
 
     # Get all farming systems having at least one measure
