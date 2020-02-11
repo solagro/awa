@@ -47,7 +47,7 @@
     "gatsby-transformer-json": "~2.2.26",
     "gatsby-transformer-remark": "~2.6.50",
     "gatsby-transformer-sharp": "~2.3.14",
-    "i18next": "~19.0.3",
+    "i18next": "~19.1.0",
     "i18next-browser-languagedetector": "~4.0.1",
     "jszip": "~3.2.2",
     "mapbox-gl": "~1.6.1",
