@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import clsx from 'clsx';
 
 import Typography from '@material-ui/core/Typography';
@@ -75,31 +75,16 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const QuizPage = ({ location: { pathname } }) => {
+const QuizPage = ({ location: { pathname }, data }) => {
   const { t, i18n } = useTranslation();
   const classes = useStyles();
-
-  const { results: { questions = [] } = {} } = useStaticQuery(graphql`
-    {
-      results: allQuizJson(
-        filter: {theme: {ne: "dummy"}},
-        sort: {fields: order}
-      ) {
-        questions: nodes {
-          theme
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `);
 
   /**
    * Get first question of each theme
    */
-  const firstQuestions = questions.reduce((acc, { theme, fields: { slug } }) =>
-    (acc[theme] ? acc : { ...acc, [theme]: slug }), {});
+  const firstQuestions = Object.entries(data)
+    .reduce((acc, [theme, { questions: [{ fields: { slug } }] }]) =>
+      (acc[theme] ? acc : { ...acc, [theme]: slug }), {});
 
   /**
    * Build array of themes
@@ -121,7 +106,7 @@ const QuizPage = ({ location: { pathname } }) => {
 
         <Typography variant="subtitle1" gutterBottom>
           <Trans>
-        Please select the area in which you would like to test your knowledge
+            Please select the area in which you would like to test your knowledge
           </Trans>
         </Typography>
         <Grid
@@ -160,5 +145,39 @@ const QuizPage = ({ location: { pathname } }) => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    atlantic: allQuizJson(filter: {theme: {eq: "atlantic"}}, sort: {fields: order}, limit: 1) {
+      questions: nodes {
+        fields {
+          slug
+        }
+      }
+    }
+    continental: allQuizJson(filter: {theme: {eq: "continental"}}, sort: {fields: order}, limit: 1) {
+      questions: nodes {
+        fields {
+          slug
+        }
+      }
+    }
+    north: allQuizJson(filter: {theme: {eq: "north"}}, sort: {fields: order}, limit: 1) {
+      questions: nodes {
+        fields {
+          slug
+        }
+      }
+    }
+    meridional: allQuizJson(filter: {theme: {eq: "meridional"}}, sort: {fields: order}, limit: 1) {
+      questions: nodes {
+        fields {
+          slug
+        }
+      }
+    }
+  }
+`;
+
 
 export default doRedirect(QuizPage);
