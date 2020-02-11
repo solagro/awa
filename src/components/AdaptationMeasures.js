@@ -78,19 +78,19 @@ const AdaptationMeasures = ({
     }));
 
   /**
-   * Array of adaptations measures for rendering it as a list
-   */
-  const allMeasureLinks = adaptationMeasures.map(({
-    fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
-  }) => ({ slug, name, region, term }));
-
-  /**
    * Array of regions for rendering <Select />
    */
   const regionItems = catalog.climate_risk_region.map(({ value: region }) => ({
     id: region,
     enabled: foundRegions.includes(region),
   }));
+
+  /**
+   * Array of adaptations measures for rendering it as a list
+   */
+  const allMeasureLinks = adaptationMeasures.map(({
+    fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
+  }) => ({ slug, name, region, term }));
 
   const stateFromRegion = newRegion => {
     const regionMeasures = allMeasureLinks.filter(filterBy('region')(newRegion));
