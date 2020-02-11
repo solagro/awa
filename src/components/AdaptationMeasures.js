@@ -17,13 +17,12 @@ import Layout from './Layout';
 import Link from './Link';
 import SEO from './Seo';
 import {
-  CustomTabs,
-  CustomAppBar,
-  CustomTab,
   SecondaryAppBar,
   SecondaryTabs,
   SecondaryTab,
 } from './StyledTabs';
+
+import FarmingSystemTabs from './FarmingSystemTabs';
 
 import doRedirect from '../hoc/doRedirect';
 
@@ -38,7 +37,6 @@ const AdaptationMeasures = ({
     system: currentSystem,
   },
   data: {
-    farmingSystemsContainer: { farmingSystems: rawFoundFarmingSystems },
     vulnerabilitiesContainer: { vulnerabilities: rawFoundVulnerabilities },
     regionsContainer: { regions: rawFoundRegions },
     adaptationMeasuresContainer: { adaptationMeasures },
@@ -50,18 +48,8 @@ const AdaptationMeasures = ({
   /**
    * Simplify results from GraphQL group queries
    */
-  const foundFarmingSystems = rawFoundFarmingSystems.map(singleKey('fieldValue'));
   const foundVulnerabilities = rawFoundVulnerabilities.map(singleKey('fieldValue'));
   const foundRegions = rawFoundRegions.map(singleKey('fieldValue'));
-
-  /**
-   * Array of farming systems for rendering system tabs
-   */
-  const systemLinks = catalog.farming_system.map(({ value: system }) => ({
-    id: system,
-    path: system,
-    enabled: foundFarmingSystems.includes(system),
-  }));
 
   const currentSystemId = catalog.farming_system.find(({ value }) => (value === currentSystem)).id;
 
@@ -147,20 +135,7 @@ const AdaptationMeasures = ({
       <SEO title={t('Sustainable adaptation measures')} lang={i18n.language} />
       <Typography variant="h1" gutterBottom align="center">{t('Sustainable adaptation measures')}</Typography>
 
-      <CustomAppBar position="static">
-        <CustomTabs value={currentSystem}>
-          {systemLinks.map(({ id, path, enabled }) => (
-            <CustomTab
-              disabled={!enabled}
-              key={id}
-              label={t(id)} // i18next-extract-disable-line
-              value={id}
-              component={Link}
-              to={`/adaptations/${path}`}
-            />
-          ))}
-        </CustomTabs>
-      </CustomAppBar>
+      <FarmingSystemTabs current={currentSystem} />
 
       <SecondaryAppBar position="static">
         <SecondaryTabs value={currentVulnerability}>
@@ -252,13 +227,6 @@ export const query = graphql`
       farm_vulnerability_component { id value }
       climate_risk_region { id value }
       implementation { id value }
-    }
-
-    # Get all farming systems having at least one measure
-    farmingSystemsContainer: allAdaptationMeasures {
-      farmingSystems: group(field: fields___measure___farming_system) {
-        fieldValue
-      }
     }
 
     # Get all vulnerabilities for current system having at least one measure
