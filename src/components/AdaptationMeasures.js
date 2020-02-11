@@ -97,8 +97,8 @@ const AdaptationMeasures = ({
 
     return {
       selectedRegion: newRegion,
-      selectedImplementations: new Set(catalog.implementation.map(({ value }) => value)),
-      availableImplementations: new Set(regionMeasures.map(({ term }) => term)),
+      selectedImplementations: new Set(catalog.implementation.map(singleKey('value'))),
+      availableImplementations: new Set(regionMeasures.map(singleKey('term'))),
       activeMeasures: regionMeasures,
     };
   };
@@ -140,7 +140,7 @@ const AdaptationMeasures = ({
   const initialAdaptationState = stateFromRegion(foundRegions[0]);
   const [adaptationState, dispatch] = React.useReducer(measureReducer, initialAdaptationState);
 
-  const implementationItems = catalog.implementation.map(({ value }) => value);
+  const implementationItems = catalog.implementation.map(singleKey('value'));
 
   return (
     <Layout>
