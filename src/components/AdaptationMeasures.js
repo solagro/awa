@@ -39,6 +39,7 @@ const AdaptationMeasures = ({
   data: {
     farmingSystemsContainer: { farmingSystems: foundFarmingSystems },
     vulnerabilitiesContainer: { vulnerabilities: foundVulnerabilities },
+    regionsContainer: { regions: foundRegions },
     adaptationMeasuresContainer: { adaptationMeasures },
     catalog,
   },
@@ -76,19 +77,11 @@ const AdaptationMeasures = ({
   }) => ({ slug, name, region, term }));
 
   /**
-   * Compute lists for found Regions
-   */
-  const foundRegions = adaptationMeasures
-    .reduce((regions, {
-      fields: { measure: { climate_risk_region: region } },
-    }) => Array.from(new Set([...regions, region])), []);
-
-  /**
    * Array of regions for rendering <Select />
    */
   const regionItems = catalog.climate_risk_region.map(({ value: region }) => ({
     id: region,
-    enabled: foundRegions.includes(region),
+    enabled: foundRegions.some(({ fieldValue }) => (fieldValue === region)),
   }));
 
   const stateFromRegion = newRegion => {
@@ -136,7 +129,7 @@ const AdaptationMeasures = ({
     }
   };
 
-  const initialAdaptationState = stateFromRegion(foundRegions[0]);
+  const initialAdaptationState = stateFromRegion(foundRegions[0].fieldValue);
   const [adaptationState, dispatch] = React.useReducer(measureReducer, initialAdaptationState);
 
   const implementationItems = catalog.implementation.map(({ value }) => value);
@@ -271,6 +264,22 @@ export const query = graphql`
       }
     ) {
       vulnerabilities: group(field: fields___measure___farm_vulnerability_component) {
+        fieldValue
+      }
+    }
+
+    # Get all regions for current system/vulnerability pair
+    regionsContainer: allAdaptationMeasures(
+      filter: {
+        fields: {
+          measure: {
+            farming_system: { eq: $system }
+            farm_vulnerability_component: { eq: $vulnerability }
+          }
+        }
+      }
+    ) {
+      regions: group(field: fields___measure___climate_risk_region) {
         fieldValue
       }
     }
