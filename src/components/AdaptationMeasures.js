@@ -30,6 +30,7 @@ import doRedirect from '../hoc/doRedirect';
 const isLive = typeof window !== 'undefined';
 
 const filterBy = key => value => ({ [key]: property }) => (property === value);
+const singleKey = key => ({ [key]: value }) => value;
 
 const AdaptationMeasures = ({
   pageContext: {
@@ -37,9 +38,9 @@ const AdaptationMeasures = ({
     system: currentSystem,
   },
   data: {
-    farmingSystemsContainer: { farmingSystems: foundFarmingSystems },
-    vulnerabilitiesContainer: { vulnerabilities: foundVulnerabilities },
-    regionsContainer: { regions: foundRegions },
+    farmingSystemsContainer: { farmingSystems: rawFoundFarmingSystems },
+    vulnerabilitiesContainer: { vulnerabilities: rawFoundVulnerabilities },
+    regionsContainer: { regions: rawFoundRegions },
     adaptationMeasuresContainer: { adaptationMeasures },
     catalog,
   },
@@ -47,12 +48,19 @@ const AdaptationMeasures = ({
   const { t, i18n } = useTranslation();
 
   /**
+   * Simplify results from GraphQL group queries
+   */
+  const foundFarmingSystems = rawFoundFarmingSystems.map(singleKey('fieldValue'));
+  const foundVulnerabilities = rawFoundVulnerabilities.map(singleKey('fieldValue'));
+  const foundRegions = rawFoundRegions.map(singleKey('fieldValue'));
+
+  /**
    * Array of farming systems for rendering system tabs
    */
   const systemLinks = catalog.farming_system.map(({ value: system }) => ({
     id: system,
     path: system,
-    enabled: foundFarmingSystems.some(({ fieldValue }) => (fieldValue === system)),
+    enabled: foundFarmingSystems.includes(system),
   }));
 
   const currentSystemId = catalog.farming_system.find(({ value }) => (value === currentSystem)).id;
@@ -66,7 +74,7 @@ const AdaptationMeasures = ({
     .map(({ value: vulnerability }) => ({
       id: vulnerability,
       path: vulnerability,
-      enabled: foundVulnerabilities.some(({ fieldValue }) => (fieldValue === vulnerability)),
+      enabled: foundVulnerabilities.includes(vulnerability),
     }));
 
   /**
@@ -81,7 +89,7 @@ const AdaptationMeasures = ({
    */
   const regionItems = catalog.climate_risk_region.map(({ value: region }) => ({
     id: region,
-    enabled: foundRegions.some(({ fieldValue }) => (fieldValue === region)),
+    enabled: foundRegions.includes(region),
   }));
 
   const stateFromRegion = newRegion => {
@@ -129,7 +137,7 @@ const AdaptationMeasures = ({
     }
   };
 
-  const initialAdaptationState = stateFromRegion(foundRegions[0].fieldValue);
+  const initialAdaptationState = stateFromRegion(foundRegions[0]);
   const [adaptationState, dispatch] = React.useReducer(measureReducer, initialAdaptationState);
 
   const implementationItems = catalog.implementation.map(({ value }) => value);
