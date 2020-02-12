@@ -20,20 +20,20 @@ exports.onCreateNode = async ({
   actions: { createNode, createNodeField },
 }) => {
   if (node.internal.type === 'QuizJson') {
-    createNodeField({
+    await createNodeField({
       node,
       name: 'slug',
       value: slugify(node.title),
     });
 
 
-    ['question', 'explanation'].forEach(element => {
+    await Promise.all(['question', 'explanation'].map(async element => {
       const content = node[element];
 
       if (content) {
         const id = `${node.id}-Markdown${capitalize(element)}En`;
 
-        createNode({
+        await createNode({
           id,
           parent: node.id,
           dir: path.resolve('./'),
@@ -46,7 +46,7 @@ exports.onCreateNode = async ({
         });
 
         // Create relation between source node created node
-        createNodeField({
+        await createNodeField({
           node,
           name: `markdown${capitalize(element)}En___NODE`,
           value: id,
@@ -54,10 +54,10 @@ exports.onCreateNode = async ({
       }
 
       if (node[`${element}-i18n`] && node[`${element}-i18n`].length) {
-        node[`${element}-i18n`].forEach(({ language, [element]: contentInt }) => {
+        await Promise.all(node[`${element}-i18n`].map(async ({ language, [element]: contentInt }) => {
           const id = `${node.id}-Markdown${capitalize(element)}${capitalize(language)}`;
 
-          createNode({
+          await createNode({
             id,
             parent: node.id,
             dir: path.resolve('./'),
@@ -70,13 +70,13 @@ exports.onCreateNode = async ({
           });
 
           // Create relation between source node created node
-          createNodeField({
+          await createNodeField({
             node,
             name: `markdown${capitalize(element)}${capitalize(language)}___NODE`,
             value: id,
           });
-        });
+        }));
       }
-    });
+    }));
   }
 };
