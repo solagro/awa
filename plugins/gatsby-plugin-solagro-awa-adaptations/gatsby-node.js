@@ -102,6 +102,7 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect } 
       # Get all adaptation measures
       measuresContainer: allAdaptationMeasures {
         measures: nodes {
+          id
           fields {
             measure {
               farming_system
@@ -188,7 +189,7 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect } 
     /**
      * Create page for each adaptation measure
      */
-    await Promise.all(measures.map(async ({ fields: {
+    await Promise.all(measures.map(async ({ id, fields: {
       measure: {
         farming_system: system,
         farm_vulnerability_component: vulnerability,
@@ -198,8 +199,8 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect } 
     } }) =>
       createPage({
         path: buildPath(language, 'adaptations', system, vulnerability, region, slug),
-        component: path.resolve('./src/components/DebugPage.js'),
-        context: { language, system, vulnerability, region, slug },
+        component: path.resolve('./src/components/AdaptationMeasure.js'),
+        context: { language, id },
       })));
   }));
 };
