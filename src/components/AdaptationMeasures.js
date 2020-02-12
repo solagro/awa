@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
+import Button from '@material-ui/core/Button';
 import Checkbox from '@material-ui/core/Checkbox';
 import Divider from '@material-ui/core/Divider';
 import FormControl from '@material-ui/core/FormControl';
@@ -186,6 +187,26 @@ const AdaptationMeasures = ({
             </li>
           ))}
       </ul>
+
+      <div style={{ textAlign: 'center' }}>
+        <Button
+          variant="outlined"
+          component={Link}
+          to="/quiz"
+        >
+          {t('Start a quiz')}
+        </Button>
+        {' '}
+        <Button
+          variant="contained"
+          color="secondary"
+          component={Link}
+          to="/map"
+          lang={i18n.language}
+        >
+          {t('Go to the map')}
+        </Button>
+      </div>
     </Layout>
   );
 };
