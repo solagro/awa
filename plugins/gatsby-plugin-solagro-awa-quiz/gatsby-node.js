@@ -52,9 +52,9 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
    * Create page for each theme:
    *  /{lng}/quiz/{theme}
    */
-  locales.forEach(language =>
-    themes.forEach(theme => {
-      createPage({
+  await Promise.all(locales.map(language =>
+    Promise.all(themes.map(async theme => {
+      await createPage({
         path: `/${language}/quiz/${theme}`,
         component: path.resolve('./src/components/QuizTheme.js'),
         context: {
@@ -66,7 +66,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
       /**
        * Create "end of quiz" page
        */
-      createPage({
+      await createPage({
         path: `/${language}/quiz/${theme}/end`,
         component: path.resolve('./src/components/QuizEnd.js'),
         context: {
@@ -74,7 +74,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
           theme,
         },
       });
-    }));
+    }))));
 
   reporter.info(`${REPORTER_PREFIX}${locales.length * themes.length} theme landing pages created`);
 
@@ -82,8 +82,8 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
    * Create page for each question:
    *  /{lng}/quiz/{theme}/{title-slug}
    */
-  locales.forEach(language =>
-    questions.forEach(({ title, theme, id }) => createPage({
+  await Promise.all(locales.map(language =>
+    Promise.all(questions.map(({ title, theme, id }) => createPage({
       path: `/${language}/quiz/${theme}/${slugify(title)}`,
       component: path.resolve('./src/components/QuizQuestion.js'),
       context: {
@@ -92,7 +92,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
         id,
         slug: slugify(title),
       },
-    })));
+    })))));
 
   reporter.info(`${REPORTER_PREFIX}${locales.length * questions.length} question pages created`);
 };
