@@ -138,6 +138,12 @@ const QuizQuestion = ({
   const givenAnswer = givenAnswers && givenAnswers[id] && givenAnswers[id].index;
   const isGivenAnsweredValid = givenAnswers && givenAnswers[id] && givenAnswers[id].valid;
 
+  questions.sort((a, b) => {
+    if (a.order < b.order) return -1;
+    if (a.order > b.order) return 1;
+    return 0;
+  });
+
   const currentIndex = questions.findIndex(({ id: currId }) => (currId === id));
   const previousQuestion = questions[currentIndex - 1];
   const nextQuestion = questions[currentIndex + 1];
@@ -337,11 +343,12 @@ export const query = graphql`
   query ($theme: String, $id: String) {
     questionSeries: allQuizJson(
       filter: {theme: {eq: $theme}},
-      sort: {fields: order, order: ASC}
+      sort: {fields: id, order: ASC}
     ) {
       questions: nodes {
         title
         id
+        order
         fields { slug }
       }
     }
