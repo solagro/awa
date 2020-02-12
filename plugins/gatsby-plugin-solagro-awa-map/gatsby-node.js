@@ -47,8 +47,8 @@ exports.onCreateNode = async ({
       },
     };
 
-    createNode(tableNode);
-    createParentChildLink({
+    await createNode(tableNode);
+    await createParentChildLink({
       parent: node,
       child: tableNode,
     });
@@ -114,16 +114,16 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage, createR
    * Create page for each grid point:
    *  /{lng}/map/{gridCode}
    */
-  locales.forEach(language =>
-    gridCodes.forEach(gridCode => {
-      createRedirect({
+  await Promise.all(locales.map(language =>
+    Promise.all(gridCodes.map(async gridCode => {
+      await createRedirect({
         fromPath: `/${language}/map/${gridCode}/`,
         toPath: `/${language}/map/${gridCode}/${gridPointSubpages[0].slug}`,
         isPermanent: true,
         redirectInBrowser: true,
       });
 
-      gridPointSubpages.forEach(({ slug, component, sourceType }) => createPage({
+      await Promise.all(gridPointSubpages.map(({ slug, component, sourceType }) => createPage({
         path: `/${language}/map/${gridCode}/${slug}`,
         component,
         context: {
@@ -132,8 +132,8 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage, createR
           slug,
           sourceType,
         },
-      }));
-    }));
+      })));
+    }))));
 
   reporter.info(`${REPORTER_PREFIX}${locales.length}(locales)×${gridCodes.length}(gridPoints)×${gridPointSubpages.length}(tabs) grid point pages created.`);
 };
