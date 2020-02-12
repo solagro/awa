@@ -157,19 +157,36 @@ export const CustomAreaChart = ({
   );
 };
 
-export const ChartTitle = ({ main, sub }) => (
-  <>
-    <Typography variant="subtitle1">{main}</Typography>
-    {sub && (
-      <Typography
-        variant="subtitle2"
-        style={{ fontSize: '0.85em', textAlign: 'center', opacity: 0.5 }}
-      >
-        {sub}
-      </Typography>
-    )}
-  </>
-);
+export const ChartTitle = ({ main, sub }) => {
+  let subtitle;
+
+  if (typeof sub === 'string') {
+    subtitle = sub;
+  }
+
+  if (sub instanceof Array) {
+    subtitle = Array.from(new Set(sub)).join(' ');
+  }
+
+  if (typeof sub === 'object') {
+    const { year, ...props } = sub;
+    subtitle = Array.from(new Set(Object.values(props))).join(' ');
+  }
+
+  return (
+    <>
+      <Typography variant="subtitle1">{main}</Typography>
+      {subtitle && (
+        <Typography
+          variant="subtitle2"
+          style={{ fontSize: '0.85em', textAlign: 'center', opacity: 0.5 }}
+        >
+          {subtitle}
+        </Typography>
+      )}
+    </>
+  );
+};
 
 export const ChartText = ({
   content,

@@ -77,7 +77,7 @@ const ClimateProjections = ({
           {dataCharts[group].headers.map(header => (
             <div key={header} style={{ marginTop: '2em' }}>
               {/* i18next-extract-disable-next-line */}
-              <ChartTitle main={`IAC - ${t(header)}`} sub={t(dataCharts[group].meta[header])} />
+              <ChartTitle main={t(header)} sub={t(dataCharts[group].meta[header])} />
               <CustomLineChart {...dataCharts[group]} key={header} dataKeys={[header]} />
             </div>
           ))}

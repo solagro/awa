@@ -81,40 +81,50 @@ const ClimateObservations = ({
       <TabPanel value={currentTab} index="average-temperature">
         <ChartText contents={textNodesByGroup['average-temperature']} />
 
-        {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('averageTempAnnual')} />
+        <ChartTitle
+          main={t('annual-average-temperature') /* i18next-extract-disable-line */}
+          sub={dataCharts.averageTempAnnual.meta}
+        />
         <CustomLineChart {...dataCharts.averageTempAnnual} />
 
-        {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('averageTempSeasonal')} />
+        <ChartTitle
+          main={t('seasonal-average-temperature') /* i18next-extract-disable-line */}
+          sub={dataCharts.averageTempSeasonal.meta}
+        />
         <CustomLineChart {...dataCharts.averageTempSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index="precipitation">
         <ChartText contents={textNodesByGroup['precipitation']} /> {/* eslint-disable-line dot-notation */}
 
-        {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('precipitationAnnual')} />
+        <ChartTitle
+          main={t('precipitationAnnual') /* i18next-extract-disable-line */}
+          sub={dataCharts.precipitationAnnual.meta}
+        />
         <CustomLineChart {...dataCharts.precipitationAnnual} />
 
-        {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('precipitationSeasonal')} />
+        <ChartTitle
+          main={t('precipitationSeasonal')} /* i18next-extract-disable-line */
+          sub={dataCharts.precipitationSeasonal.meta}
+        />
         <CustomStackedBarChart {...dataCharts.precipitationSeasonal} colors={seasonsColors} />
       </TabPanel>
 
       <TabPanel value={currentTab} index="hydric-deficit">
         <ChartText contents={textNodesByGroup['hydric-deficit']} />
 
-        {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('hydricDeficitAnnual')} />
+        <ChartTitle
+          main={t('hydricDeficitAnnual') /* i18next-extract-disable-line */}
+          sub={dataCharts.hydricDeficitAnnual.meta}
+        />
         <CustomAreaChart {...dataCharts.hydricDeficitAnnual} />
 
-        {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('hydricDeficitSeasonal')} />
         {dataCharts.hydricDeficitSeasonal.headers.map((header, idx) => (
           <div key={header} style={{ marginTop: '2em' }}>
-            {/* i18next-extract-disable-next-line */}
-            <ChartTitle main={`IAC - ${t(header)} - ${t(dataCharts.hydricDeficitSeasonal.meta[header])}`} />
+            <ChartTitle
+              main={t(header) /* i18next-extract-disable-line */}
+              sub={dataCharts.hydricDeficitSeasonal.meta[header]}
+            />
             <CustomAreaChart
               {...dataCharts.hydricDeficitSeasonal}
               key={header}
@@ -129,16 +139,20 @@ const ClimateObservations = ({
       <TabPanel value={currentTab} index="frozen-days">
         <ChartText contents={textNodesByGroup['frozen-days']} />
 
-        {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('frozenDays')} />
+        <ChartTitle
+          main={t('frozenDays') /* i18next-extract-disable-line */}
+          sub={dataCharts.frozenDays.meta}
+        />
         <CustomLineChart {...dataCharts.frozenDays} />
       </TabPanel>
 
       <TabPanel value={currentTab} index="estival-days">
         <ChartText contents={textNodesByGroup['estival-days']} />
 
-        {/* i18next-extract-disable-next-line */}
-        <ChartTitle main={t('estivalDays')} />
+        <ChartTitle
+          main={t('estivalDays') /* i18next-extract-disable-line */}
+          sub={dataCharts.estivalDays.meta}
+        />
         <CustomLineChart {...dataCharts.estivalDays} />
       </TabPanel>
 
