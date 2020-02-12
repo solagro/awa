@@ -26,7 +26,7 @@ export const getWorkbook = buffer => XLSX.read(buffer, { type: 'array' });
  * @param {Object} file Resource from an file input field
  * @return {Object} Object with name and content as ArrayBuffer
  */
-export const readFile = file => (
+export const readFile = (file, readerMethod = 'readAsArrayBuffer') => (
   new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onabort = () => reject(new Error('file reading was aborted'));
@@ -35,7 +35,7 @@ export const readFile = file => (
       filename: file.name,
       content: reader.result,
     });
-    reader.readAsArrayBuffer(file);
+    reader[readerMethod](file);
   })
 );
 
@@ -45,8 +45,8 @@ export const readFile = file => (
  * @param {Object[]} fileResources Array of file resources (from file input field)
  * @returns {Object[]} An array of file with name, and content as ArrayBuffer
  */
-export const readFiles = async fileResources => {
-  const promises = fileResources.map(fileResource => readFile(fileResource));
+export const readFiles = async (fileResources, readerMethod) => {
+  const promises = fileResources.map(fileResource => readFile(fileResource, readerMethod));
   const files = await Promise.all(promises);
   return files;
 };

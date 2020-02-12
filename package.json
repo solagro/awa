@@ -25,6 +25,7 @@
     "@material-ui/core": "~4.9.2",
     "@material-ui/icons": "~4.9.1",
     "@material-ui/styles": "~4.9.0",
+    "@tmcw/togeojson": "~3.2.0",
     "camelcase": "~5.3.1",
     "clsx": "~1.1.0",
     "csvtojson": "~2.0.10",
