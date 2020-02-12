@@ -41,6 +41,52 @@ const ClimateProjections = ({
     vineyardFruit: t('vineyardFruit'),
   };
 
+  const getIndicatorColor = iac => {
+    const colors = {
+      G1: '#08519c',
+      G2: '#3f95d3',
+      G3: '#08519c',
+      G4: '#08519c',
+      G5: '#fd8d3c',
+      G6: '#bb0012',
+      G7: '#86530b',
+      G8: '#ffce1a',
+      G9: '#ffce1a',
+      G10: '#749eb6',
+
+      // Crops
+      C1: '#000000',
+      C2: '#000000',
+      C3: '#000000',
+      C12: '#000000',
+
+      M1: '#fd8d3c',
+      M2: '#fd8d3c',
+      M8: '#fd8d3c',
+
+      Co2: '#ffce1a',
+      Co3: '#ffce1a',
+
+      // Fodder
+      F1: '#006700',
+      F3: '#006700',
+      M4: '#006700',
+
+      // Animals
+      A1: '#08519c',
+      A2: '#08519c',
+      A3: '#08519c',
+
+      // Fruits & Vineyards
+      V1: '#6f006c',
+      V2: '#6f006c',
+      V3: '#6f006c',
+      V9: '#6f006c',
+    };
+
+    return colors[iac] || '#8a2542';
+  };
+
   const textNodesByGroup = textNodes.reduce((acc, { html, frontmatter: { dataType } }) => {
     const prevTexts = acc[dataType] || [];
 
@@ -78,7 +124,12 @@ const ClimateProjections = ({
             <div key={header} style={{ marginTop: '2em' }}>
               {/* i18next-extract-disable-next-line */}
               <ChartTitle main={t(header)} sub={t(dataCharts[group].meta[header])} />
-              <CustomLineChart {...dataCharts[group]} key={header} dataKeys={[header]} />
+              <CustomLineChart
+                {...dataCharts[group]}
+                key={header}
+                dataKeys={[header]}
+                color={getIndicatorColor(header)}
+              />
             </div>
           ))}
         </TabPanel>
