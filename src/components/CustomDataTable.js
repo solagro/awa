@@ -25,6 +25,9 @@ const useStyles = makeStyles({
   tableCell: {
     textAlign: 'center',
   },
+  computedCell: {
+    fontWeight: 'bold',
+  },
 });
 
 const ComputedRow = ({
@@ -32,15 +35,36 @@ const ComputedRow = ({
   dataByColumn = {},
   method = 'average',
   formatter = v => v,
+  className,
   ...props
 }) => {
   const { t } = useTranslation();
+  const classes = useStyles();
 
   return (
     <TableRow>
-      <TableCell {...props}>{t(method)}</TableCell>
+      <TableCell
+        className={clsx(
+          className,
+          classes.computedCell,
+          classes.tableCell,
+        )}
+        {...props}
+      >
+        {t(method)}
+      </TableCell>
       {headers.map(header => (
-        <TableCell key={header} {...props}>{formatter(dataByColumn[header][method])}</TableCell>
+        <TableCell
+          key={header}
+          className={clsx(
+            className,
+            classes.computedCell,
+            classes.tableCell,
+          )}
+          {...props}
+        >
+          {formatter(dataByColumn[header][method])}
+        </TableCell>
       ))}
     </TableRow>
   );
@@ -96,6 +120,7 @@ const CustomDataTable = ({
 
           {min && (
             <ComputedRow
+              hover
               headers={headers}
               dataByColumn={dataByColumn}
               className={classes.tableCell}
@@ -105,6 +130,7 @@ const CustomDataTable = ({
 
           {max && (
             <ComputedRow
+              hover
               headers={headers}
               dataByColumn={dataByColumn}
               className={classes.tableCell}
@@ -114,6 +140,7 @@ const CustomDataTable = ({
 
           {average && (
             <ComputedRow
+              hover
               headers={headers}
               dataByColumn={dataByColumn}
               className={classes.tableCell}
