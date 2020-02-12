@@ -47,7 +47,8 @@ const ClimateObservations = ({
     'estival-days': t('estival-days'),
   };
 
-  const seasonsColors = ['#749eb6', '#88b42d', '#db5630', '#79454a'];
+  const seasonsColors = ['#749eb6', '#88b42d', '#ffce1a', '#fd8d3c'];
+
 
   const textNodesByGroup = textNodes.reduce((acc, { html, frontmatter: { dataType } }) => {
     const prevTexts = acc[dataType] || [];
@@ -101,7 +102,7 @@ const ClimateObservations = ({
           main={t('precipitationAnnual') /* i18next-extract-disable-line */}
           sub={dataCharts.precipitationAnnual.meta}
         />
-        <CustomLineChart {...dataCharts.precipitationAnnual} />
+        <CustomLineChart {...dataCharts.precipitationAnnual} color="#08519c" />
 
         <ChartTitle
           main={t('precipitationSeasonal')} /* i18next-extract-disable-line */
@@ -117,7 +118,7 @@ const ClimateObservations = ({
           main={t('hydricDeficitAnnual') /* i18next-extract-disable-line */}
           sub={dataCharts.hydricDeficitAnnual.meta}
         />
-        <CustomAreaChart {...dataCharts.hydricDeficitAnnual} />
+        <CustomAreaChart {...dataCharts.hydricDeficitAnnual} color="#08519c" />
 
         {dataCharts.hydricDeficitSeasonal.headers.map((header, idx) => (
           <div key={header} style={{ marginTop: '2em' }}>
@@ -143,7 +144,7 @@ const ClimateObservations = ({
           main={t('frozenDays') /* i18next-extract-disable-line */}
           sub={dataCharts.frozenDays.meta}
         />
-        <CustomLineChart {...dataCharts.frozenDays} />
+        <CustomLineChart {...dataCharts.frozenDays} color={seasonsColors[0]} />
       </TabPanel>
 
       <TabPanel value={currentTab} index="estival-days">
@@ -153,7 +154,7 @@ const ClimateObservations = ({
           main={t('estivalDays') /* i18next-extract-disable-line */}
           sub={dataCharts.estivalDays.meta}
         />
-        <CustomLineChart {...dataCharts.estivalDays} />
+        <CustomLineChart {...dataCharts.estivalDays} color={seasonsColors[2]} />
       </TabPanel>
 
       <TabsFooter />
