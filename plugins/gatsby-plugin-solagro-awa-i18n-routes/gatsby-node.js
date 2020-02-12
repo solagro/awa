@@ -24,6 +24,6 @@ exports.onCreatePage = async ({ reporter, page, actions: { createPage }, store }
     const i18nPages = generatePagesInfos(page, locales);
 
     // Create custom i18n pages
-    i18nPages.map(i18nPage => createPage(i18nPage));
+    await Promise.all(i18nPages.map(i18nPage => createPage(i18nPage)));
   }
 };
