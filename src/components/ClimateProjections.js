@@ -91,7 +91,10 @@ const ClimateProjections = ({
 
 export const query = graphql`
   query ($gridCode: String, $sourceType: String, $language: String) {
-    allGridPointData(filter: {gridCode: {eq: $gridCode}, sourceType: {eq: $sourceType}}) {
+    allGridPointData(
+      filter: { gridCode: { eq: $gridCode }, sourceType: { eq: $sourceType } }
+      sort: { fields: json, order: ASC }
+    ) {
       nodes {
         dataType
         json
