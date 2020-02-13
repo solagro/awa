@@ -14,19 +14,20 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import Typography from '@material-ui/core/Typography';
 
+import { useTheme } from '@material-ui/core/styles';
+
 import Layout from './Layout';
 import Link from './Link';
 import SEO from './Seo';
 
+import AdaptationMeasureList from './AdaptationMeasureList';
 import FarmingSystemTabs from './FarmingSystemTabs';
 import VulnerabilityComponentTabs from './VulnerabilityComponentTabs';
 
+import { singleKey, filterBy, getImplementationColorProps } from '../lib/adaptationsHelpers';
 import doRedirect from '../hoc/doRedirect';
 
 const isLive = typeof window !== 'undefined';
-
-const filterBy = key => value => ({ [key]: property }) => (property === value);
-const singleKey = key => ({ [key]: value }) => value;
 
 const AdaptationMeasures = ({
   pageContext: {
@@ -40,6 +41,7 @@ const AdaptationMeasures = ({
   },
 }) => {
   const { t, i18n } = useTranslation();
+  const theme = useTheme();
 
   /**
    * Simplify results from GraphQL group queries
@@ -146,21 +148,28 @@ const AdaptationMeasures = ({
 
           <FormControl component="fieldset">
             <FormLabel component="legend">{t('Implementation')}</FormLabel>
+
             <FormGroup>
-              {implementationItems.map(id => (
-                <FormControlLabel
-                  control={(
-                    <Checkbox
-                      value={id}
-                      onChange={() => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
-                      checked={adaptationState.selectedImplementations.has(id)}
-                      disabled={!adaptationState.availableImplementations.has(id)}
-                    />
-                  )}
-                  label={t(id)}
-                  key={id}
-                />
-              ))}
+              {implementationItems.map(id => {
+                const enabled = adaptationState.availableImplementations.has(id);
+                const checked = enabled && adaptationState.selectedImplementations.has(id);
+
+                return (
+                  <FormControlLabel
+                    control={(
+                      <Checkbox
+                        value={id}
+                        onChange={() => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
+                        checked={checked}
+                        disabled={!enabled}
+                        {...getImplementationColorProps(theme)(id)}
+                      />
+                    )}
+                    label={t(id)}
+                    key={id}
+                  />
+                );
+              })}
             </FormGroup>
           </FormControl>
 
@@ -172,21 +181,10 @@ const AdaptationMeasures = ({
         {t('Click on an action to see the detail')}
       </Typography>
 
-      <ul>
-        {adaptationState.activeMeasures
-          .map(({ slug, name, region, term }) => (
-            <li key={slug}>
-              <Link
-                to={`/adaptations/${currentSystem}/${currentVulnerability}/${region}/${slug}`}
-                state={{ modal: true }}
-              >
-                {name}
-                ({region})
-                ({term})
-              </Link>
-            </li>
-          ))}
-      </ul>
+      <AdaptationMeasureList
+        measures={adaptationState.activeMeasures}
+        linkPrefix={`/adaptations/${currentSystem}/${currentVulnerability}`}
+      />
 
       <div style={{ textAlign: 'center' }}>
         <Button
