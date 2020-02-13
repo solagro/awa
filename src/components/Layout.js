@@ -55,10 +55,6 @@ const useStyles = makeStyles(theme => ({
     height: '100vh',
   },
   modal: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
     position: 'relative',
   },
   modal__button: {
