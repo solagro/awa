@@ -38,10 +38,9 @@ const useStyles = makeStyles(theme => ({
       transform: 'translateX(-50%)',
       border: '1px solid rgb(204, 204, 204)',
       background: 'white',
-      overflow: 'auto',
       borderRadius: 4,
       outline: 'none',
-      padding: 20,
+      display: 'flex',
     },
   },
   root: {
@@ -56,6 +55,16 @@ const useStyles = makeStyles(theme => ({
   },
   modal: {
     position: 'relative',
+    flex: '1 1 auto',
+    display: 'flex',
+    maxWidth: '100%',
+  },
+  modalScroll: {
+    padding: 20,
+    flex: '1 1 auto',
+    maxWidth: '100%',
+    overflowX: 'hidden',
+    overflowY: 'auto',
   },
   modal__button: {
     position: 'absolute',
@@ -104,7 +113,9 @@ const Layout = ({
             <CloseIcon />
           </IconButton>
         </Link>
-        {children}
+        <div className={classes.modalScroll}>
+          {children}
+        </div>
       </main>
     );
   }
