@@ -8,9 +8,11 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 import Layout from './Layout';
+import RiskRegion from './RiskRegion';
+import SustainabilityComponents from './SustainabilityComponents';
+import WeatherEvent from './WeatherEvent';
 
 import doRedirect from '../hoc/doRedirect';
-import SustainabilityComponents from './SustainabilityComponents';
 
 const AdaptationMeasure = ({
   data: {
@@ -37,15 +39,23 @@ const AdaptationMeasure = ({
 
         <Typography variant="h2">{t('Climate risk region')}</Typography>
 
+        <RiskRegion
+          region={measure.climate_risk_region}
+          label={t(measure.climate_risk_region)}
+        />
         {t(measure.climate_risk_region)}
 
         <Typography variant="h2">{t('Weather event addressed')}</Typography>
 
-        {t(measure.weather_event)}
-        {t(measure.weather_event_season_or_period)}
+        <WeatherEvent
+          event={measure.weather_event}
+          period={t(measure.weather_event_season_or_period)}
+        />
 
-        {t(measure._2nd_weather_event)}
-        {t(measure._2nd_weather_event_season_or_period)}
+        <WeatherEvent
+          event={measure._2nd_weather_event}
+          period={t(measure._2nd_weather_event_season_or_period)}
+        />
 
         <Typography variant="h2">{t('Farming system')}</Typography>
 
