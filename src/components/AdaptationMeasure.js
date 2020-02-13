@@ -10,18 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Layout from './Layout';
 
 import doRedirect from '../hoc/doRedirect';
-
-const sustainabilityComponents = [
-  'ghg_emissions',
-  'air_quality',
-  'soil',
-  'water',
-  'biodiversity',
-  'animal_welfare',
-  'economic',
-  'social',
-  'technical_feasibility',
-];
+import SustainabilityComponents from './SustainabilityComponents';
 
 const AdaptationMeasure = ({
   data: {
@@ -85,11 +74,7 @@ const AdaptationMeasure = ({
 
             <Typography variant="h3">{t('Sustainability components')}</Typography>
 
-            {sustainabilityComponents.map(sustainabilityComponent => (
-              <div key={sustainabilityComponent}>
-                {t(sustainabilityComponent)} - {measure[sustainabilityComponent]}
-              </div>
-            ))}
+            <SustainabilityComponents measure={measure} />
           </CardContent>
         </Card>
       </div>
