@@ -51,9 +51,10 @@ const AdaptationMeasures = ({
   /**
    * Array of regions for rendering <Select />
    */
-  const regionItems = catalog.climate_risk_region.map(({ value: region }) => ({
-    id: region,
-    enabled: foundRegions.includes(region),
+  const regionItems = catalog.climate_risk_region.map(({ value, ...rest }) => ({
+    ...rest,
+    value,
+    enabled: foundRegions.includes(value),
   }));
 
   /**
@@ -136,9 +137,9 @@ const AdaptationMeasures = ({
               onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
               value={adaptationState.selectedRegion}
             >
-              {regionItems.map(({ id, enabled }) => (
-                <MenuItem key={id} value={id} disabled={!enabled}>
-                  {t(id)}
+              {regionItems.map(({ value, enabled }) => (
+                <MenuItem key={value} value={value} disabled={!enabled}>
+                  {t(value)}
                 </MenuItem>
               ))}
             </Select>
