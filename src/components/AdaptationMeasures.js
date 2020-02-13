@@ -64,6 +64,9 @@ const AdaptationMeasures = ({
     fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
   }) => ({ slug, name, region, term }));
 
+  const getRegionId = region =>
+    catalog.climate_risk_region.find(({ value }) => (value === region)).id;
+
   const stateFromRegion = newRegion => {
     const regionMeasures = allMeasureLinks.filter(filterBy('region')(newRegion));
 
@@ -130,6 +133,12 @@ const AdaptationMeasures = ({
 
       {isLive && (
         <>
+          <img
+            src={`/images/regions/ZONE_${getRegionId(adaptationState.selectedRegion)}.png`}
+            style={{ width: '4em' }}
+            alt=""
+          />
+
           <FormControl>
             <InputLabel id="regionSelect">{t('Region')}</InputLabel>
             <Select
