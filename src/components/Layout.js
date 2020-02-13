@@ -27,6 +27,23 @@ import withModalContext from '../hoc/withModalRoutingContext';
 import './Layout.css';
 
 const useStyles = makeStyles(theme => ({
+  '@global': {
+    '.customModal': {
+      position: 'absolute',
+      top: 40,
+      bottom: 40,
+      left: '50%',
+      right: 'auto',
+      width: ({ width }) => width,
+      transform: 'translateX(-50%)',
+      border: '1px solid rgb(204, 204, 204)',
+      background: 'white',
+      overflow: 'auto',
+      borderRadius: 4,
+      outline: 'none',
+      padding: 20,
+    },
+  },
   root: {
     display: 'flex',
     alignContent: 'center',
@@ -67,6 +84,7 @@ const Layout = ({
   children,
   className,
   modalProps: { modal, closeTo },
+  modalWidth = '75%',
   ...rest
 }) => {
   const { site: { siteMetadata } } = useStaticQuery(graphql`
@@ -79,7 +97,7 @@ const Layout = ({
     }
   `);
 
-  const classes = useStyles();
+  const classes = useStyles({ width: modalWidth });
   const { t } = useTranslation();
 
   if (modal) {

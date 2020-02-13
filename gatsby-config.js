@@ -15,9 +15,7 @@ module.exports = {
       resolve: 'gatsby-plugin-modal-routing',
       options: {
         modalProps: {
-          style: { content: {
-            left: 104,
-          } },
+          className: 'customModal',
         },
       },
     },

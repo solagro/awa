@@ -51,7 +51,7 @@ const AdaptationMeasure = ({
   const measure = useAlt ? { ...measureProps, ...altProperties } : measureProps;
 
   return (
-    <Layout>
+    <Layout modalWidth={800}>
       <div>
         <Typography variant="h1">{measure.name}</Typography>
 
