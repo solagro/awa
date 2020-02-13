@@ -6,7 +6,6 @@ import { graphql } from 'gatsby';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
 
 import Layout from './Layout';
 
@@ -24,20 +23,12 @@ const sustainabilityComponents = [
   'technical_feasibility',
 ];
 
-const useStyles = makeStyles(theme => ({
-  adpatationMeasure: {
-    border: '1px solid red',
-    // maxWidth: 800,
-  },
-}));
-
 const AdaptationMeasure = ({
   data: {
     measure: { fields: { measure: measureProps } },
   },
 }) => {
   const { t, i18n } = useTranslation();
-  const classes = useStyles();
 
   const useAlt = i18n.language === measureProps.alt_language;
 
