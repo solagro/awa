@@ -18,6 +18,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
+  ReferenceLine,
 } from 'recharts';
 
 const getChartDomain = (data, keys) => Object.values(keys.reduce((store, key) => {
@@ -109,15 +110,21 @@ export const CustomLineChart = ({
         const chartColor = colors[idx % colors.length];
         const chartType = types[idx % types.length];
 
-        return (
-          <Line
-            key={key}
-            type={chartType}
-            dataKey={key}
-            stroke={chartColor}
-            strokeWidth={2}
-          />
-        );
+        const yearsWithoutData = data.filter(({ [key]: dataKey }) =>
+          (typeof dataKey === 'undefined')).map(({ year }) => year);
+
+        return [
+          ...yearsWithoutData.map(year => <ReferenceLine x={year} stroke="#555" />),
+          (
+            <Line
+              key={key}
+              type={chartType}
+              dataKey={key}
+              stroke={chartColor}
+              strokeWidth={2}
+            />
+          ),
+        ];
       })}
     </DefaultComposedChart>
   );
