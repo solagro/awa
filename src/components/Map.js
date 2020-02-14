@@ -103,6 +103,16 @@ const Map = () => {
     defaultValue,
   ];
 
+  const activateCursorAccordingAvailability = ({ features, ...rest }) => {
+    const [feature] = features;
+
+    if (feature
+      && feature.properties
+      && availableGridPoints.includes(feature.properties.Grid_Code)) {
+      activateCursor(rest);
+    }
+  };
+
   return (
     <MapboxGL
       style="mapbox://styles/mapbox/satellite-streets-v9" // eslint-disable-line react/style-prop-object
@@ -139,8 +149,8 @@ const Map = () => {
           'line-opacity': GridPointColorExpression(1, 0.5),
           'line-width': GridPointColorExpression(2, 1),
         }}
-        fillOnMouseMove={activateCursor}
-        lineOnMouseMove={activateCursor}
+        fillOnMouseMove={activateCursorAccordingAvailability}
+        lineOnMouseMove={activateCursorAccordingAvailability}
       />
     </MapboxGL>
   );
