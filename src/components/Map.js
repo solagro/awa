@@ -96,6 +96,13 @@ const Map = () => {
     return null;
   }
 
+  const GridPointColorExpression = (value, defaultValue) => [
+    'match',
+    ['get', 'Grid_Code'],
+    ...availableGridPoints.reduce((acc, curr) => ([...acc, curr, value]), []),
+    defaultValue,
+  ];
+
   return (
     <MapboxGL
       style="mapbox://styles/mapbox/satellite-streets-v9" // eslint-disable-line react/style-prop-object
@@ -124,12 +131,13 @@ const Map = () => {
           'line-cap': 'round',
         }}
         fillPaint={{
-          'fill-opacity': 0.8,
-          'fill-color': theme.palette.secondary.main,
+          'fill-opacity': GridPointColorExpression(0.8, 0.1),
+          'fill-color': GridPointColorExpression(theme.palette.secondary.main, '#ccc'),
         }}
         linePaint={{
-          'line-color': theme.palette.secondary.light,
-          'line-width': 3,
+          'line-color': GridPointColorExpression(theme.palette.secondary.main, '#ccc'),
+          'line-opacity': GridPointColorExpression(1, 0.5),
+          'line-width': GridPointColorExpression(2, 1),
         }}
         fillOnMouseMove={activateCursor}
         lineOnMouseMove={activateCursor}
