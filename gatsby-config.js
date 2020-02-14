@@ -93,7 +93,7 @@ module.exports = {
     'gatsby-plugin-solagro-awa-quiz',
     'gatsby-plugin-solagro-awa-map',
     'gatsby-transformer-quiz-markdown',
-    'gatsby-plugin-uninline-styles',
+    // 'gatsby-plugin-uninline-styles',
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues
     'gatsby-plugin-remove-serviceworker',
     // this (optional) plugin enables Progressive Web App + Offline functionality
