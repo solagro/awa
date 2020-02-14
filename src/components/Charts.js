@@ -18,7 +18,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  ReferenceLine,
+  ReferenceArea,
 } from 'recharts';
 
 const getChartDomain = (data, keys) => Object.values(keys.reduce((store, key) => {
@@ -114,7 +114,7 @@ export const CustomLineChart = ({
           (typeof dataKey === 'undefined')).map(({ year }) => year);
 
         return [
-          ...yearsWithoutData.map(year => <ReferenceLine x={year} stroke="#555" />),
+          ...yearsWithoutData.map(year => <ReferenceArea x1={year} x2={year + 1} />),
           (
             <Line
               key={key}
