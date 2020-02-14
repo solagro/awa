@@ -19,7 +19,7 @@ obj.forEach(({ key, ...trans }) => {
     if (!translations[locale]) {
       translations[locale] = {};
     }
-    translations[locale][key.toLowerCase()] = trans[locale];
+    translations[locale][key] = trans[locale];
   });
 });
 
