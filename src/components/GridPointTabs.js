@@ -9,32 +9,33 @@ import withModalContext from '../hoc/withModalRoutingContext';
 const links = [
   {
     path: 'yield-compilation',
-    id: 'yieldCompilation',
-    label: 'Yield Compilation',
+    sourceType: 'yieldCompilation',
   },
   {
     path: 'climate-observations',
-    id: 'climateObservations',
-    label: 'Climate Observations',
+    sourceType: 'climateObservations',
   },
   {
     path: 'climate-projections',
-    id: 'climateProjections',
-    label: 'Climate Projections',
+    sourceType: 'climateProjections',
   },
 ];
 
-const GridPointTabs = ({ sourceType, gridCode, modalProps: { modal, closeTo } }) => {
+const GridPointTabs = ({
+  sourceType: currentSourceType,
+  gridCode,
+  modalProps: { modal, closeTo },
+}) => {
   const { t } = useTranslation();
 
   return (
     <CustomAppBar position="static">
-      <CustomTabs value={sourceType}>
-        {links.map(({ id, path, label }) => (
+      <CustomTabs value={currentSourceType}>
+        {links.map(({ path, sourceType }) => (
           <CustomTab
-            key={id}
-            label={t(label)} // i18next-extract-disable-line
-            value={id}
+            key={path}
+            label={t(path)} // i18next-extract-disable-line
+            value={sourceType}
             component={Link}
             to={`/map/${gridCode}/${path}`}
             state={{ modal, closeTo }}
