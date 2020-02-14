@@ -99,7 +99,8 @@ const Map = () => {
   const GridPointColorExpression = (value, defaultValue) => [
     'match',
     ['get', 'Grid_Code'],
-    ...availableGridPoints.reduce((acc, curr) => ([...acc, curr, value]), []),
+    availableGridPoints,
+    value,
     defaultValue,
   ];
 
