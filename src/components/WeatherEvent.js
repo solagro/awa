@@ -13,6 +13,10 @@ const WeatherEvent = ({ event, period }) => {
     }
   `);
 
+  if (!event) {
+    return null;
+  }
+
   const getEventId = e => {
     const eventObject = catalog.weather_event.find(({ value }) => (value === e));
     if (eventObject) {
@@ -22,10 +26,22 @@ const WeatherEvent = ({ event, period }) => {
     return e;
   };
 
+  const eventId = getEventId(event);
+
+  if (eventId === '8') {
+    return ['2', '3', '4', '7'].map(id => (
+      <img
+        src={`/images/weather-events/STRESS_${id}.png`}
+        alt={event}
+        style={{ width: '4em' }}
+      />
+    ));
+  }
+
   return (
     <div>
       <img
-        src={`/images/weather-events/STRESS_${getEventId(event)}.png`}
+        src={`/images/weather-events/STRESS_${eventId}.png`}
         alt={event}
         style={{ width: '4em' }}
       />
