@@ -28,5 +28,9 @@ Object.keys(translations).forEach(locale => {
   const filename = `./src/locales/${locale}/translation.json`;
   const original = require(`./src/locales/${locale}/translation.json`);
   const merge = { ...original, ...translations[locale] };
-  fs.writeFileSync(filename, JSON.stringify(merge, null, 2));
+
+  const output = Object.keys(merge).sort()
+    .reduce((all, current) => ({ ...all, [current]: merge[current] }), {});
+
+  fs.writeFileSync(filename, JSON.stringify(output, null, 2));
 });
