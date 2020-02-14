@@ -166,7 +166,7 @@ const AdaptationMeasures = ({
                         onChange={() => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
                         checked={checked}
                         disabled={!enabled}
-                        {...getImplementationColorProps(theme)(id)}
+                        {...getImplementationColorProps(theme)(enabled ? id : 'disabled')}
                       />
                     )}
                     label={t(id)}
