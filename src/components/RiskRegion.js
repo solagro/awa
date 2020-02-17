@@ -13,8 +13,10 @@ const RiskRegion = ({ region, label }) => {
     }
   `);
 
-  const getRegionId = r =>
-    catalog.climate_risk_region.find(({ value }) => (value === r)).id;
+  const getRegionId = r => {
+    const foundRegion = catalog.climate_risk_region.find(({ value }) => (value === r))
+    return foundRegion ? foundRegion.id : 0;
+  };
 
   return (
     <img
