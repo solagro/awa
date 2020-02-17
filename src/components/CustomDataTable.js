@@ -42,14 +42,13 @@ const ComputedRow = ({
   const classes = useStyles();
 
   return (
-    <TableRow>
+    <TableRow {...props}>
       <TableCell
         className={clsx(
           className,
           classes.computedCell,
           classes.tableCell,
         )}
-        {...props}
       >
         {t(method)}
       </TableCell>
@@ -61,7 +60,6 @@ const ComputedRow = ({
             classes.computedCell,
             classes.tableCell,
           )}
-          {...props}
         >
           {formatter(dataByColumn[header][method])}
         </TableCell>
