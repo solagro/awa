@@ -133,18 +133,6 @@
       "value": "water-dependency"
     },
     {
-      "id": "15",
-      "value": "market"
-    },
-    {
-      "id": "16",
-      "value": "insurance"
-    },
-    {
-      "id": "17",
-      "value": "policies"
-    },
-    {
       "id": "21",
       "value": "fodder-system-and-concentrates"
     },
@@ -161,18 +149,6 @@
       "value": "water-dependency"
     },
     {
-      "id": "25",
-      "value": "market"
-    },
-    {
-      "id": "26",
-      "value": "insurance"
-    },
-    {
-      "id": "27",
-      "value": "policies"
-    },
-    {
       "id": "31",
       "value": "plant-and-grape-varieties"
     },
@@ -187,18 +163,6 @@
     {
       "id": "34",
       "value": "water-dependency"
-    },
-    {
-      "id": "35",
-      "value": "market"
-    },
-    {
-      "id": "36",
-      "value": "insurance"
-    },
-    {
-      "id": "37",
-      "value": "policies"
     }
   ],
   "implementation": [
