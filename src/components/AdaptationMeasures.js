@@ -129,7 +129,7 @@ const AdaptationMeasures = ({
         current={currentVulnerability}
       />
 
-      {isLive && (
+      {isLive && (currentVulnerability !== 'others') && (
         <>
           <RiskRegion region={adaptationState.selectedRegion} />
 
@@ -181,14 +181,21 @@ const AdaptationMeasures = ({
         </>
       )}
 
-      <Typography variant="h3">
-        {t('Click on an action to see the detail')}
-      </Typography>
+      {currentVulnerability !== 'others' && (
+        <>
+          <Typography variant="h3">
+            {t('Click on an action to see the detail')}
+          </Typography>
+          <AdaptationMeasureList
+            measures={adaptationState.activeMeasures}
+            linkPrefix={`/adaptations/${currentSystem}/${currentVulnerability}`}
+          />
+        </>
+      )}
 
-      <AdaptationMeasureList
-        measures={adaptationState.activeMeasures}
-        linkPrefix={`/adaptations/${currentSystem}/${currentVulnerability}`}
-      />
+      {currentVulnerability === 'others' && (
+        <pre>"others" text for {currentSystem} in {i18n.language}</pre>
+      )}
 
       <div style={{ textAlign: 'center' }}>
         <Button
