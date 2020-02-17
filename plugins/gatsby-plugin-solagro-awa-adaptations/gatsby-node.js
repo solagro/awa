@@ -178,7 +178,7 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect } 
       /**
        * Create page for each adaptation measure
        */
-      await Promise.all(vulnerabilities.map(async vulnerability =>
+      await Promise.all([...vulnerabilities, 'others'].map(async vulnerability =>
         createPage({
           path: buildPath(language, 'adaptations', system, vulnerability),
           component: path.resolve('./src/components/AdaptationMeasures.js'),
