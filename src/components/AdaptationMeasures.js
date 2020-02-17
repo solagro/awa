@@ -27,6 +27,7 @@ import VulnerabilityComponentTabs from './VulnerabilityComponentTabs';
 import { singleKey, filterBy, getImplementationColorProps } from '../lib/adaptationsHelpers';
 import doRedirect from '../hoc/doRedirect';
 import RiskRegion from './RiskRegion';
+import MarkdownText from './MarkdownText';
 
 const isLive = typeof window !== 'undefined';
 
@@ -38,6 +39,7 @@ const AdaptationMeasures = ({
   data: {
     regionsContainer: { regions: rawFoundRegions },
     adaptationMeasuresContainer: { adaptationMeasures },
+    vulnerabilityTextsContainer: { vulnerabilityTexts = [] },
     catalog,
   },
 }) => {
@@ -129,7 +131,17 @@ const AdaptationMeasures = ({
         current={currentVulnerability}
       />
 
-      {isLive && (currentVulnerability !== 'others') && (
+      {Boolean(vulnerabilityTexts.length) && (
+        <>
+          {vulnerabilityTexts.map(({ id, content: { htmlAst } }) => (
+            <MarkdownText key={id} hast={htmlAst} />
+          ))}
+
+          <Divider variant="middle" style={{ margin: '1em' }} />
+        </>
+      )}
+
+      {isLive && Boolean(allMeasureLinks.length) && (
         <>
           <RiskRegion region={adaptationState.selectedRegion} />
 
@@ -181,7 +193,7 @@ const AdaptationMeasures = ({
         </>
       )}
 
-      {currentVulnerability !== 'others' && (
+      {Boolean(allMeasureLinks.length) && (
         <>
           <Typography variant="h3">
             {t('Click on an action to see the detail')}
@@ -191,10 +203,6 @@ const AdaptationMeasures = ({
             linkPrefix={`/adaptations/${currentSystem}/${currentVulnerability}`}
           />
         </>
-      )}
-
-      {currentVulnerability === 'others' && (
-        <pre>"others" text for {currentSystem} in {i18n.language}</pre>
       )}
 
       <div style={{ textAlign: 'center' }}>
@@ -221,7 +229,7 @@ const AdaptationMeasures = ({
 };
 
 export const query = graphql`
-  query ($system: String!, $vulnerability: String!) {
+  query ($system: String!, $vulnerability: String!, $language: String!) {
 
     # Get all farming systems & vulnerability components from catalog
     catalog: adaptationsJson {
@@ -271,6 +279,26 @@ export const query = graphql`
         }
       }
     }
+
+    vulnerabilityTextsContainer: allFile(
+      filter: {
+        sourceInstanceName: { eq: "adaptations" },
+        extension: { eq: "md" },
+        childMarkdownRemark: {
+          frontmatter: {
+            locale: { eq: $language }
+            system: { eq: $system }
+            vulnerability: { eq: $vulnerability }
+          }
+        }
+      }
+    ) {
+      vulnerabilityTexts: nodes {
+        id
+        content: childMarkdownRemark { htmlAst }
+      }
+    }
+
   }
 `;
 
