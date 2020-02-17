@@ -10,7 +10,9 @@ import CustomDataTable from './CustomDataTable';
 import GridPointTabs from './GridPointTabs';
 import Layout from './Layout';
 import Link from './Link';
+import MarkdownText from './MarkdownText';
 import SEO from './Seo';
+
 
 import doRedirect from '../hoc/doRedirect';
 
@@ -18,7 +20,7 @@ const YieldCompilation = ({
   pageContext: { sourceType, gridCode },
   data: {
     gridPointData: { json },
-    markdownRemark: { html } = {},
+    markdownRemark: { htmlAst } = {},
   },
 }) => {
   const { t, i18n } = useTranslation();
@@ -31,7 +33,7 @@ const YieldCompilation = ({
       <Typography variant="h1" gutterBottom align="center">{t('Active site detailed information card')}</Typography>
       <GridPointTabs sourceType={sourceType} gridCode={gridCode} />
 
-      {html && <Typography variant="body2" dangerouslySetInnerHTML={{ __html: html }} />}
+      <MarkdownText hast={htmlAst} />
 
       <CustomDataTable data={data} quartiles min max average />
 
@@ -82,7 +84,7 @@ export const query = graphql`
         locale: { eq: $language}
       }
     ) {
-      html
+      htmlAst
     }
   }
 `;
