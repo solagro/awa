@@ -19,7 +19,8 @@ const templateLinks = {
   xlsx: '/gridcode.xlsx',
 };
 const githubUpload = {
-  csv: 'https://github.com/solagro/awa/upload/master/content/map',
+  mapCsv: 'https://github.com/solagro/awa/upload/master/content/map',
+  measuresCsv: 'https://github.com/solagro/awa/upload/master/content/adaptations',
   geojson: 'https://github.com/solagro/awa/upload/master/static/data',
 };
 
@@ -109,7 +110,7 @@ const HelpPage = () => (
 
 
     <Typography variant="body2" style={{ marginBottom: '2em' }}>
-      Use <a href={githubUpload.csv}>Github interface</a> to upload{' '}
+      Use <a href={githubUpload.mapCsv}>Github interface</a> to upload{' '}
       <strong>every gridpoint directories at once</strong> into{' '}
       <samp>content/map</samp> directory.
     </Typography>
@@ -149,6 +150,13 @@ const HelpPage = () => (
     </Typography>
 
     <AdaptationsCSV />
+
+    <Typography variant="body2" style={{ marginBottom: '2em' }}>
+      Use <a href={githubUpload.measuresCsv}>Github interface</a> to upload{' '}
+      <strong>csv files</strong> into{' '}
+      <samp>content/adaptations</samp> directory.
+    </Typography>
+
   </Layout>
 );
 
