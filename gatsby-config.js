@@ -37,7 +37,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'chartsTexts',
-        path: `${__dirname}/content/charts-texts`,
+        path: `${__dirname}/content/map-texts`,
       },
     },
     {
