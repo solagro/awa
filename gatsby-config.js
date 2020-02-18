@@ -69,6 +69,13 @@ module.exports = {
         path: `${__dirname}/content/adaptations`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/content/pages`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -99,6 +106,7 @@ module.exports = {
     'gatsby-plugin-solagro-awa-adaptations',
     'gatsby-plugin-solagro-awa-quiz',
     'gatsby-plugin-solagro-awa-map',
+    'gatsby-plugin-solagro-awa-pages-md',
     'gatsby-transformer-quiz-markdown',
     // 'gatsby-plugin-uninline-styles',
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues
