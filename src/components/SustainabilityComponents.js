@@ -5,6 +5,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const sustainabilityComponents = [
   'ghg_emissions',
@@ -24,18 +25,20 @@ const SustainabilityComponents = ({ measure }) => {
   return (
     <List dense>
       {sustainabilityComponents.map(sustainabilityComponent => (
-        <ListItem key={sustainabilityComponent}>
-          <ListItemIcon>
-            <img
-              src={`/images/sustainability/impact-${measure[sustainabilityComponent]}.png`}
-              style={{ width: '2em', margin: 0 }}
-              alt=""
-            />
-          </ListItemIcon>
-          <ListItemText>
-            {t(sustainabilityComponent)}
-          </ListItemText>
-        </ListItem>
+        <Tooltip title={t(`${sustainabilityComponent}-explanation`)}>
+          <ListItem key={sustainabilityComponent}>
+            <ListItemIcon>
+              <img
+                src={`/images/sustainability/impact-${measure[sustainabilityComponent]}.png`}
+                style={{ width: '2em', margin: 0 }}
+                alt=""
+              />
+            </ListItemIcon>
+            <ListItemText>
+              {t(sustainabilityComponent)}
+            </ListItemText>
+          </ListItem>
+        </Tooltip>
       ))}
     </List>
   );
