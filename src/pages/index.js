@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
 
@@ -19,6 +19,7 @@ import Roadmap from '../components/Roadmap';
 import SEO from '../components/Seo';
 
 import doRedirect from '../hoc/doRedirect';
+import MarkdownText from '../components/MarkdownText';
 
 const useStyles = makeStyles(theme => ({
   module: {
@@ -66,213 +67,38 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const contentPage = [
-  {
-    id: 'projectPresentation',
-    title: 'Project',
-    hrefAfter: '#quizPresentation',
-    content: (
-      <>
-        <Typography variant="body1" paragraph>
-          Laudantium dolores voluptatum debitis tempora molestiae praesentium
-          omnis nihil modi. Consequuntur qui laboriosam nostrum ratione voluptatum
-          enim ut esse sit. Iste corporis non cupiditate est itaque laudantium
-          recusandae sapiente. Harum sequi voluptatem deserunt distinctio modi
-          ratione. Et accusantium voluptatem architecto.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Culpa fugiat nobis ut. Laborum velit est id cupiditate maxime aut.
-          Incidunt illo provident sed.
-        </Typography>
-      </>
-    ),
-  }, {
-    id: 'quizPresentation',
-    title: 'Farm vulnerability and adaptation Quiz',
-    picto: '/images/pictos/quiz.svg',
-    altPicto: 'quiz',
-    hrefBefore: '#top',
-    hrefAfter: '#mapPresentation',
-    to: '/quiz',
-    buttonText: 'Start quiz',
-    content: (
-      <>
-        <Typography variant="body1" paragraph>
-          Et et corrupti nihil saepe voluptas cumque nihil. Aut nesciunt minima.
-          Minima modi unde sunt deleniti laborum.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Sunt eius autem optio itaque. Facilis consequatur inventore eligendi
-          voluptates. Magnam est enim eos voluptas error dolore ut facere.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Occaecati quia culpa. Ad eum ut voluptate pariatur error odio quae. Eos
-          doloremque et qui. Ab voluptas labore maiores non pariatur voluptas fuga
-          ea nihil. Adipisci nesciunt tempore quisquam aut qui sint. Iure facilis
-          tenetur quis eius molestiae hic laudantium itaque.
-        </Typography>
-      </>
-    ),
-  }, {
-    id: 'mapPresentation',
-    title: 'Yield & Climate (observations and projections)',
-    picto: '/images/pictos/observations.svg',
-    altPicto: 'observations',
-    hrefBefore: '#quizPresentation',
-    hrefAfter: '#adaptationsPresentation',
-    to: '/map',
-    buttonText: 'Go to the map',
-    content: (
-      <>
-        <Typography variant="body1" paragraph>
-          Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
-          Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
-          consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
-          esse amet id. Exercitationem ut consequatur.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
-          sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
-          ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
-          eum aut qui. Corrupti doloremque ut officiis error.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Labore est omnis illum dolor praesentium aut tempora libero.
-          Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
-          hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
-          dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
-          magni nostrum quis autem sapiente quia sequi.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
-          Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
-          consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
-          esse amet id. Exercitationem ut consequatur.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
-          sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
-          ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
-          eum aut qui. Corrupti doloremque ut officiis error.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Labore est omnis illum dolor praesentium aut tempora libero.
-          Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
-          hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
-          dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
-          magni nostrum quis autem sapiente quia sequi.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
-          Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
-          consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
-          esse amet id. Exercitationem ut consequatur.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
-          sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
-          ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
-          eum aut qui. Corrupti doloremque ut officiis error.
-        </Typography>
-      </>
-    ),
-  }, {
-    id: 'adaptationsPresentation',
-    title: 'Sustainable adaptation measures',
-    picto: '/images/pictos/adaptations.svg',
-    altPicto: 'adaptations',
-    hrefBefore: '#mapPresentation',
-    hrefAfter: '#summaryPresentation',
-    to: '/adaptations',
-    buttonText: 'See measures',
-    content: (
-      <>
-        <Typography variant="body1" paragraph>
-          Aut at non veniam quia eum id soluta sit impedit. Ratione optio vel.
-          Consequatur placeat non earum alias et officiis. Iusto est adipisci quis
-          consequatur omnis incidunt. Laborum ut ipsam deserunt maiores numquam
-          esse amet id. Exercitationem ut consequatur.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Distinctio molestiae est eligendi dignissimos iste sed consequatur. Sit
-          sed ullam non facere. Et et expedita ipsam est voluptatem est. Aperiam
-          ipsum earum qui quasi dicta expedita iure quo non. Quibusdam ullam rem
-          eum aut qui. Corrupti doloremque ut officiis error.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Labore est omnis illum dolor praesentium aut tempora libero.
-          Consequuntur et deleniti. A numquam dolor pariatur iure occaecati quia
-          hic ab quasi. Quae corrupti corporis et. Et voluptas dolores ut
-          dignissimos cupiditate quas accusamus neque. Velit consectetur voluptas
-          magni nostrum quis autem sapiente quia sequi.
-        </Typography>
-      </>
-    ),
-  },
-  {
-    id: 'summaryPresentation',
-    title: 'Summary',
-    hrefBefore: '#adaptationsPresentation',
-    to: '/quiz',
-    buttonText: 'Start quiz',
-    content: (
-      <>
-        <Typography variant="body1" paragraph>
-          Qui consequatur sit nesciunt omnis voluptatem consequatur error ut
-          placeat. Rerum accusantium sed est at aut rerum. Totam rem accusamus
-          consequatur assumenda quo voluptatem dolorem excepturi. Ut voluptas eos
-          voluptas laboriosam iure laboriosam qui. Est sed libero quia ut magni
-          vitae aut minus.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Quod totam consequatur incidunt pariatur. Eum et sed quasi cumque
-          tempore. Totam modi cupiditate pariatur aspernatur soluta qui. Minus
-          quae vitae fugiat.
-        </Typography>
-
-        <Typography variant="body1" paragraph>
-          Ut rerum sed a ipsam ut ut voluptates quibusdam voluptas. Consequuntur
-          minus quis. Non placeat dolor aut eos a officiis sunt omnis.
-        </Typography>
-        <Typography variant="h2">Agriadapt roadmap for adaptation </Typography>
-        <Grid container style={{ maxWidth: '75%', margin: '2em auto' }}>
-          <Roadmap />
-        </Grid>
-      </>
-    ),
-  },
-];
-
-const IndexPage = () => {
+const IndexPage = ({
+  data: { allFile: { nodes = [] } = {} } = {},
+}) => {
   const { t, i18n } = useTranslation();
   const classes = useStyles();
+
+  const customMarkdownComponents = {
+    p: props => <Typography variant="body1" paragraph {...props} />,
+    roadmap: props => (
+      <div {...props}>
+        <Roadmap />
+      </div>
+    ),
+  };
 
   return (
     <Layout header footer paper={false}>
       <SEO title={t('Home')} lang={i18n.language} />
-      {contentPage.map(({
-        id,
-        title,
-        picto,
-        altPicto,
-        hrefBefore,
-        hrefAfter,
-        to,
-        buttonText,
-        content,
+      {nodes.map(({
+        childMarkdownRemark: {
+          htmlAst,
+          frontmatter: {
+            id,
+            title,
+            picto,
+            altPicto,
+            hrefBefore,
+            hrefAfter,
+            to,
+            buttonText,
+          },
+        },
       }) => (
         <Grid
           container
@@ -314,7 +140,7 @@ const IndexPage = () => {
               <Typography variant="h1" gutterBottom>{t(title)}</Typography>
             </Box>
             <Grid container className={classes.module__content__text} justify="flex-start">
-              {content}
+              <MarkdownText hast={htmlAst} components={customMarkdownComponents} />
             </Grid>
             {to && (
             <Grid container className={classes.module__content__button} justify="center">
@@ -367,3 +193,24 @@ const IndexPage = () => {
 };
 
 export default doRedirect(IndexPage);
+
+export const query = graphql`
+  query ($language: String! = "en") {
+    allFile(
+      filter: {
+        sourceInstanceName: { eq: "home" },
+        childMarkdownRemark: { frontmatter: { locale: { eq: $language } } }
+      }
+      sort: {
+        fields: childMarkdownRemark___frontmatter___order
+      }
+    ) {
+      nodes {
+        childMarkdownRemark {
+          htmlAst
+          frontmatter { altPicto buttonText id title picto hrefAfter hrefBefore to }
+        }
+      }
+    }
+  }
+`;
