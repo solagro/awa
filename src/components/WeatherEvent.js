@@ -32,13 +32,22 @@ const WeatherEvent = ({ event, period }) => {
     return e;
   };
 
+  const getEventName = e => {
+    const eventObject = catalog.weather_event.find(({ id }) => (id === e));
+    if (eventObject) {
+      return eventObject.value;
+    }
+
+    return e;
+  };
+
   const eventId = getEventId(event);
 
   if (eventId === '8') {
     return ['2', '3', '4', '7'].map(id => (
       <CustomIcon
         src={`/images/weather-events/STRESS_${id}.png`}
-        label={t(event)}
+        label={t(getEventName(id))}
         inline
       />
     ));
