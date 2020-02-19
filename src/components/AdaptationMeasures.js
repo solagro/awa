@@ -3,17 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
 import Button from '@material-ui/core/Button';
-import Checkbox from '@material-ui/core/Checkbox';
 import Divider from '@material-ui/core/Divider';
 import FormControl from '@material-ui/core/FormControl';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
 import FormLabel from '@material-ui/core/FormLabel';
 import Grid from '@material-ui/core/Grid';
 
 import Typography from '@material-ui/core/Typography';
-
-import { useTheme } from '@material-ui/core/styles';
 
 import Layout from './Layout';
 import Link from './Link';
@@ -23,11 +18,12 @@ import AdaptationMeasureList from './AdaptationMeasureList';
 import FarmingSystemTabs from './FarmingSystemTabs';
 import VulnerabilityComponentTabs from './VulnerabilityComponentTabs';
 
-import { singleKey, filterBy, getImplementationColorProps } from '../lib/adaptationsHelpers';
+import { singleKey, filterBy } from '../lib/adaptationsHelpers';
 import doRedirect from '../hoc/doRedirect';
 import RiskRegion from './RiskRegion';
 import MarkdownText from './MarkdownText';
 import RegionSelector from './RegionSelector';
+import ImplementationSelector from './ImplementationSelector';
 
 const isLive = typeof window !== 'undefined';
 
@@ -44,7 +40,6 @@ const AdaptationMeasures = ({
   },
 }) => {
   const { t, i18n } = useTranslation();
-  const theme = useTheme();
 
   /**
    * Simplify results from GraphQL group queries
@@ -157,28 +152,12 @@ const AdaptationMeasures = ({
             <FormControl component="fieldset">
               <FormLabel component="legend">{t('Implementation')}</FormLabel>
 
-              <FormGroup>
-                {implementationItems.map(id => {
-                  const enabled = adaptationState.availableImplementations.has(id);
-                  const checked = enabled && adaptationState.selectedImplementations.has(id);
-
-                  return (
-                    <FormControlLabel
-                      control={(
-                        <Checkbox
-                          value={id}
-                          onChange={() => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
-                          checked={checked}
-                          disabled={!enabled}
-                          {...getImplementationColorProps(theme)(enabled ? id : 'disabled')}
-                        />
-                      )}
-                      label={t(id)}
-                      key={id}
-                    />
-                  );
-                })}
-              </FormGroup>
+              <ImplementationSelector
+                implementations={implementationItems}
+                availableImplementations={adaptationState.availableImplementations}
+                selectedImplementations={adaptationState.selectedImplementations}
+                onChange={id => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
+              />
             </FormControl>
 
             <Divider variant="middle" style={{ margin: '1em' }} />
