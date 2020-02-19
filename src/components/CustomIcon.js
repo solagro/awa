@@ -9,6 +9,9 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
   },
+  inlineWrapper: {
+    display: 'inline-flex',
+  },
   icon: {
     margin: 0,
     width: '4em',
@@ -23,6 +26,7 @@ const CustomIcon = ({
   label,
   showLabel,
   className,
+  inline = false,
   iconProps = {},
   labelProps = {},
   ...props
@@ -31,7 +35,11 @@ const CustomIcon = ({
 
   return (
     <Box
-      className={clsx(classes.wrapper, className)}
+      className={clsx(
+        classes.wrapper,
+        className,
+        { [classes.inlineWrapper]: inline },
+      )}
       {...props}
     >
       <img

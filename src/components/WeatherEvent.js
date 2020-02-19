@@ -1,5 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useStaticQuery, graphql } from 'gatsby';
+
+import Box from '@material-ui/core/Box';
+import CustomIcon from './CustomIcon';
 
 const WeatherEvent = ({ event, period }) => {
   const { catalog } = useStaticQuery(graphql`
@@ -12,6 +16,8 @@ const WeatherEvent = ({ event, period }) => {
       }
     }
   `);
+
+  const { t } = useTranslation();
 
   if (!event) {
     return null;
@@ -30,23 +36,22 @@ const WeatherEvent = ({ event, period }) => {
 
   if (eventId === '8') {
     return ['2', '3', '4', '7'].map(id => (
-      <img
+      <CustomIcon
         src={`/images/weather-events/STRESS_${id}.png`}
-        alt={event}
-        style={{ width: '4em' }}
+        label={t(event)}
+        inline
       />
     ));
   }
 
   return (
-    <div>
-      <img
+    <Box>
+      <CustomIcon
         src={`/images/weather-events/STRESS_${eventId}.png`}
-        alt={event}
-        style={{ width: '4em' }}
+        label={event}
       />
       {period}
-    </div>
+    </Box>
   );
 };
 
