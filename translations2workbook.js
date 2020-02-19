@@ -18,7 +18,7 @@ const keys = Object.values(translations).reduce((acc, curr) => {
 
 const translationsArray = Array.from(keys).sort()
   .map(key => locales.reduce((acc, locale) =>
-    ({ ...acc, [locale]: translations[locale][key], }), { key }), {});
+    ({ ...acc, [locale]: translations[locale][key] }), { key }), {});
 
 const workbook = XLSX.utils.book_new();
 const worksheet = XLSX.utils.json_to_sheet(translationsArray);

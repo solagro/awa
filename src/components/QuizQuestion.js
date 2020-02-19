@@ -21,7 +21,6 @@ import Link from './Link';
 import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
 import { processQuizTexts } from '../lib/quizHelpers';
-import MarkdownText from './MarkdownText';
 
 const useStyles = makeStyles(theme => ({
   module: {

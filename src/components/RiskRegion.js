@@ -22,7 +22,7 @@ const RiskRegion = ({
   `);
 
   const getRegionId = r => {
-    const foundRegion = catalog.climate_risk_region.find(({ value }) => (value === r))
+    const foundRegion = catalog.climate_risk_region.find(({ value }) => (value === r));
     return foundRegion ? foundRegion.id : 0;
   };
 
