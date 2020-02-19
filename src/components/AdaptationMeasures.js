@@ -9,9 +9,8 @@ import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormLabel from '@material-ui/core/FormLabel';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
+import Grid from '@material-ui/core/Grid';
+
 import Typography from '@material-ui/core/Typography';
 
 import { useTheme } from '@material-ui/core/styles';
@@ -28,6 +27,7 @@ import { singleKey, filterBy, getImplementationColorProps } from '../lib/adaptat
 import doRedirect from '../hoc/doRedirect';
 import RiskRegion from './RiskRegion';
 import MarkdownText from './MarkdownText';
+import RegionSelector from './RegionSelector';
 
 const isLive = typeof window !== 'undefined';
 
@@ -141,69 +141,62 @@ const AdaptationMeasures = ({
         </>
       )}
 
-      {isLive && Boolean(allMeasureLinks.length) && (
-        <>
-          <RiskRegion region={adaptationState.selectedRegion} />
+      <Grid container>
+        {isLive && Boolean(allMeasureLinks.length) && (
+          <Grid item xs={12} sm={6}>
+            <RiskRegion region={adaptationState.selectedRegion} />
 
-          <FormControl>
-            <InputLabel id="regionSelect">{t('Region')}</InputLabel>
-            <Select
-              labelId="regionSelect"
+            <RegionSelector
+              regions={regionItems}
               onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
               value={adaptationState.selectedRegion}
-            >
-              {regionItems.map(({ value, enabled }) => (
-                <MenuItem key={value} value={value} disabled={!enabled}>
-                  {t(value)}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
+            />
 
-          <Divider variant="middle" style={{ margin: '1em' }} />
+            <Divider variant="middle" style={{ margin: '1em' }} />
 
-          <FormControl component="fieldset">
-            <FormLabel component="legend">{t('Implementation')}</FormLabel>
+            <FormControl component="fieldset">
+              <FormLabel component="legend">{t('Implementation')}</FormLabel>
 
-            <FormGroup>
-              {implementationItems.map(id => {
-                const enabled = adaptationState.availableImplementations.has(id);
-                const checked = enabled && adaptationState.selectedImplementations.has(id);
+              <FormGroup>
+                {implementationItems.map(id => {
+                  const enabled = adaptationState.availableImplementations.has(id);
+                  const checked = enabled && adaptationState.selectedImplementations.has(id);
 
-                return (
-                  <FormControlLabel
-                    control={(
-                      <Checkbox
-                        value={id}
-                        onChange={() => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
-                        checked={checked}
-                        disabled={!enabled}
-                        {...getImplementationColorProps(theme)(enabled ? id : 'disabled')}
-                      />
-                    )}
-                    label={t(id)}
-                    key={id}
-                  />
-                );
-              })}
-            </FormGroup>
-          </FormControl>
+                  return (
+                    <FormControlLabel
+                      control={(
+                        <Checkbox
+                          value={id}
+                          onChange={() => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
+                          checked={checked}
+                          disabled={!enabled}
+                          {...getImplementationColorProps(theme)(enabled ? id : 'disabled')}
+                        />
+                      )}
+                      label={t(id)}
+                      key={id}
+                    />
+                  );
+                })}
+              </FormGroup>
+            </FormControl>
 
-          <Divider variant="middle" style={{ margin: '1em' }} />
-        </>
-      )}
+            <Divider variant="middle" style={{ margin: '1em' }} />
+          </Grid>
+        )}
 
-      {Boolean(allMeasureLinks.length) && (
-        <>
-          <Typography variant="h3">
-            {t('Click on an action to see the detail')}
-          </Typography>
-          <AdaptationMeasureList
-            measures={adaptationState.activeMeasures}
-            linkPrefix={`/adaptations/${currentSystem}/${currentVulnerability}`}
-          />
-        </>
-      )}
+        {Boolean(allMeasureLinks.length) && (
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h3">
+              {t('Click on an action to see the detail')}
+            </Typography>
+            <AdaptationMeasureList
+              measures={adaptationState.activeMeasures}
+              linkPrefix={`/adaptations/${currentSystem}/${currentVulnerability}`}
+            />
+          </Grid>
+        )}
+      </Grid>
 
       <div style={{ textAlign: 'center' }}>
         <Button
