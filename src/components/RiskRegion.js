@@ -1,23 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import clsx from 'clsx';
 
-import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles(theme => ({
-  wrapper: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  icon: {
-    margin: 0,
-    width: '4em',
-  },
-  label: {
-    marginLeft: theme.spacing(1),
-  },
-}));
+import CustomIcon from './CustomIcon';
 
 const RiskRegion = ({
   region,
@@ -42,24 +26,13 @@ const RiskRegion = ({
     return foundRegion ? foundRegion.id : 0;
   };
 
-  const classes = useStyles();
-
   return (
-    <Box
-      className={clsx(classes.wrapper, className)}
+    <CustomIcon
+      src={`/images/regions/ZONE_${getRegionId(region)}.png`}
+      label={label}
+      showLabel={showName}
       {...props}
-    >
-      <img
-        src={`/images/regions/ZONE_${getRegionId(region)}.png`}
-        alt={label}
-        className={classes.icon}
-      />
-      {showName && (
-        <Box className={classes.label}>
-          {label}
-        </Box>
-      )}
-    </Box>
+    />
   );
 };
 
