@@ -42,8 +42,8 @@ const AdaptationMeasure = ({
         <RiskRegion
           region={measure.climate_risk_region}
           label={t(measure.climate_risk_region)}
+          showName
         />
-        {t(measure.climate_risk_region)}
 
         <Typography variant="h2">{t('Weather event addressed')}</Typography>
 
