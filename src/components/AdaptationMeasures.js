@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
+import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import FormControl from '@material-ui/core/FormControl';
@@ -127,44 +128,44 @@ const AdaptationMeasures = ({
       />
 
       {Boolean(vulnerabilityTexts.length) && (
-        <>
+        <Box>
           {vulnerabilityTexts.map(({ id, content: { htmlAst } }) => (
             <MarkdownText key={id} hast={htmlAst} />
           ))}
 
           <Divider variant="middle" style={{ margin: '1em' }} />
-        </>
+        </Box>
       )}
 
-      <Grid container>
-        {isLive && Boolean(allMeasureLinks.length) && (
-          <Grid item xs={12} sm={6}>
-            <RiskRegion region={adaptationState.selectedRegion} />
+      {Boolean(allMeasureLinks.length) && (
+        <Grid container>
+          {isLive && (
+            <Grid item xs={12} sm={6}>
+              <RiskRegion region={adaptationState.selectedRegion} />
 
-            <RegionSelector
-              regions={regionItems}
-              onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
-              value={adaptationState.selectedRegion}
-            />
-
-            <Divider variant="middle" style={{ margin: '1em' }} />
-
-            <FormControl component="fieldset">
-              <FormLabel component="legend">{t('Implementation')}</FormLabel>
-
-              <ImplementationSelector
-                implementations={implementationItems}
-                availableImplementations={adaptationState.availableImplementations}
-                selectedImplementations={adaptationState.selectedImplementations}
-                onChange={id => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
+              <RegionSelector
+                regions={regionItems}
+                onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
+                value={adaptationState.selectedRegion}
               />
-            </FormControl>
 
-            <Divider variant="middle" style={{ margin: '1em' }} />
-          </Grid>
-        )}
+              <Divider variant="middle" style={{ margin: '1em' }} />
 
-        {Boolean(allMeasureLinks.length) && (
+              <FormControl component="fieldset">
+                <FormLabel component="legend">{t('Implementation')}</FormLabel>
+
+                <ImplementationSelector
+                  implementations={implementationItems}
+                  availableImplementations={adaptationState.availableImplementations}
+                  selectedImplementations={adaptationState.selectedImplementations}
+                  onChange={id => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
+                />
+              </FormControl>
+
+              <Divider variant="middle" style={{ margin: '1em' }} />
+            </Grid>
+          )}
+
           <Grid item xs={12} sm={6}>
             <Typography variant="h3">
               {t('Click on an action to see the detail')}
@@ -174,8 +175,8 @@ const AdaptationMeasures = ({
               linkPrefix={`/adaptations/${currentSystem}/${currentVulnerability}`}
             />
           </Grid>
-        )}
-      </Grid>
+        </Grid>
+      )}
 
       <div style={{ textAlign: 'center' }}>
         <Button
