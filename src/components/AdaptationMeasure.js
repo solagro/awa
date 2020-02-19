@@ -3,9 +3,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
+import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
 
 import Layout from './Layout';
 import RiskRegion from './RiskRegion';
@@ -14,12 +16,60 @@ import WeatherEvent from './WeatherEvent';
 
 import doRedirect from '../hoc/doRedirect';
 
+const useStyles = makeStyles(theme => ({
+  mainTitle: {
+    textAlign: 'center',
+  },
+  card: {
+    float: 'right',
+    background: '#fcf7e9',
+    backgroundImage: 'url(/images/awa-background-2.svg)',
+    backgroundPosition: 'right bottom',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100%',
+    boxShadow: 'none',
+    marginLeft: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+    marginRight: theme.spacing(-2.5),
+    paddingRight: theme.spacing(2.5),
+  },
+  h2: {
+    marginTop: '.5em',
+  },
+}));
+
+const CustomTitle = ({
+  h2 = false,
+  h3 = false,
+  h4 = false,
+  h5 = false,
+  ...props
+}) => {
+  let variant = 'h1';
+  if (h2) variant = 'h2';
+  if (h3) variant = 'h3';
+  if (h4) variant = 'h4';
+  if (h5) variant = 'h5';
+  return (
+    <Typography variant={variant} gutterBottom {...props} />
+  );
+};
+
+const CustomHTML = ({ html, ...props }) => (
+  <Typography
+    variant="body2"
+    dangerouslySetInnerHTML={{ __html: html }}
+    {...props}
+  />
+);
+
 const AdaptationMeasure = ({
   data: {
     measure: { fields: { measure: measureProps } },
   },
 }) => {
   const { t, i18n } = useTranslation();
+  const classes = useStyles();
 
   const useAlt = i18n.language === measureProps.alt_language;
 
@@ -33,11 +83,23 @@ const AdaptationMeasure = ({
   const measure = useAlt ? { ...measureProps, ...altProperties } : measureProps;
 
   return (
-    <Layout modalWidth={800}>
+    <Layout modalWidth={950}>
       <div>
-        <Typography variant="h1">{measure.name}</Typography>
+        <CustomTitle h1 className={classes.mainTitle}>{measure.name}</CustomTitle>
 
-        <Typography variant="h2">{t('Climate risk region')}</Typography>
+        <Card className={classes.card}>
+          <CardContent>
+            <CustomTitle h2>{t('Implementation')}</CustomTitle>
+
+            <Box>{t(measure.implementation)}</Box>
+
+            <CustomTitle h2 className={classes.h2}>{t('Sustainability components')}</CustomTitle>
+
+            <SustainabilityComponents measure={measure} />
+          </CardContent>
+        </Card>
+
+        <CustomTitle h2 className={classes.h2}>{t('Climate risk region')}</CustomTitle>
 
         <RiskRegion
           region={measure.climate_risk_region}
@@ -45,7 +107,7 @@ const AdaptationMeasure = ({
           showName
         />
 
-        <Typography variant="h2">{t('Weather event addressed')}</Typography>
+        <CustomTitle h2 className={classes.h2}>{t('Weather event addressed')}</CustomTitle>
 
         <WeatherEvent
           event={measure.weather_event}
@@ -57,36 +119,18 @@ const AdaptationMeasure = ({
           period={t(measure._2nd_weather_event_season_or_period)}
         />
 
-        <Typography variant="h2">{t('Farming system')}</Typography>
+        <CustomTitle h2 className={classes.h2}>{t('Farming system')}</CustomTitle>
 
-        {t(measure.farming_system)}
-        {t(measure.sub_system)}
+        <Box>{t(measure.farming_system)}</Box>
+        <Box>{t(measure.sub_system)}</Box>
 
-        <Typography variant="h2">{t('Description')}</Typography>
+        <CustomTitle h2 className={classes.h2}>{t('Description')}</CustomTitle>
 
-        <Typography
-          variant="body2"
-          dangerouslySetInnerHTML={{ __html: t(measure.description_of_the_measure) }}
-        />
+        <CustomHTML html={measure.description_of_the_measure} />
 
-        <Typography variant="h2">{t('Comments on sustainability')}</Typography>
+        <CustomTitle h2 className={classes.h2}>{t('Comments on sustainability')}</CustomTitle>
 
-        <Typography
-          variant="body2"
-          dangerouslySetInnerHTML={{ __html: t(measure.comments_on_sustainability) }}
-        />
-
-        <Card>
-          <CardContent>
-            <Typography variant="h2">{t('Implementation')}</Typography>
-
-            {t(measure.implementation)}
-
-            <Typography variant="h3">{t('Sustainability components')}</Typography>
-
-            <SustainabilityComponents measure={measure} />
-          </CardContent>
-        </Card>
+        <CustomHTML html={measure.comments_on_sustainability} />
       </div>
     </Layout>
   );
