@@ -16,9 +16,12 @@ const useStyles = makeStyles({
   root: {
     maxWidth: '100%',
     overflow: 'auto',
+    fontSize: '.8em',
   },
   tableHeader: {
     textAlign: 'center',
+    padding: '0.25em',
+    lineHeight: 1.2,
   },
   tableCell: {
     textAlign: 'center',
