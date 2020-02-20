@@ -7,7 +7,6 @@ const RiskRegion = ({
   region,
   label,
   showName = false,
-  className,
   ...props
 }) => {
   const { catalog } = useStaticQuery(graphql`

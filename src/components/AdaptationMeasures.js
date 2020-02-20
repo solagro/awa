@@ -8,6 +8,7 @@ import Divider from '@material-ui/core/Divider';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles';
 
 import Typography from '@material-ui/core/Typography';
 
@@ -28,6 +29,33 @@ import ImplementationSelector from './ImplementationSelector';
 
 const isLive = typeof window !== 'undefined';
 
+const useStyles = makeStyles(theme => ({
+  region: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  regionIcon: {
+    marginRight: theme.spacing(1),
+  },
+  regionSelect: {
+    padding: theme.spacing(1),
+    minWidth: 120,
+  },
+  regionSelectKnob: {
+    top: '50%',
+    transform: 'translateY(-50%)',
+    width: '1em',
+    height: '1em',
+  },
+  implementation: {
+    marginTop: theme.spacing(4),
+    '& legend': {
+      fontWeight: 500,
+      fontsize: theme.typography.subtitle1,
+    },
+  },
+}));
+
 const AdaptationMeasures = ({
   pageContext: {
     vulnerability: currentVulnerability,
@@ -41,6 +69,8 @@ const AdaptationMeasures = ({
   },
 }) => {
   const { t, i18n } = useTranslation();
+
+  const classes = useStyles();
 
   /**
    * Simplify results from GraphQL group queries
@@ -138,21 +168,29 @@ const AdaptationMeasures = ({
       )}
 
       {Boolean(allMeasureLinks.length) && (
-        <Grid container>
+        <Grid container justify="center" alignItems="flex-start">
           {isLive && (
-            <Grid item xs={12} sm={6}>
-              <RiskRegion region={adaptationState.selectedRegion} />
+            <Grid item xs={12} sm={5}>
 
-              <RegionSelector
-                regions={regionItems}
-                onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
-                value={adaptationState.selectedRegion}
-              />
+              <Box className={classes.region}>
+                <RiskRegion
+                  region={adaptationState.selectedRegion}
+                  className={classes.regionIcon}
+                />
 
-              <Divider variant="middle" style={{ margin: '1em' }} />
+                <RegionSelector
+                  regions={regionItems}
+                  onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
+                  value={adaptationState.selectedRegion}
+                  classes={{
+                    root: classes.regionSelect,
+                    icon: classes.regionSelectKnob,
+                  }}
+                />
+              </Box>
 
-              <FormControl component="fieldset">
-                <FormLabel component="legend">{t('Implementation')}</FormLabel>
+              <FormControl component="fieldset" className={classes.implementation}>
+                <FormLabel component="legend">{t('Filter actions by timing')}</FormLabel>
 
                 <ImplementationSelector
                   implementations={implementationItems}
@@ -161,12 +199,10 @@ const AdaptationMeasures = ({
                   onChange={id => dispatch({ type: 'SET_IMPLEMENTATION', value: id })}
                 />
               </FormControl>
-
-              <Divider variant="middle" style={{ margin: '1em' }} />
             </Grid>
           )}
 
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={5}>
             <Typography variant="h3">
               {t('Click on an action to see the detail')}
             </Typography>
@@ -178,7 +214,7 @@ const AdaptationMeasures = ({
         </Grid>
       )}
 
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: 'center', marginTop: '5em' }}>
         <Button
           variant="outlined"
           component={Link}

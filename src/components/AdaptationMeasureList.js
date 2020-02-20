@@ -1,16 +1,25 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme, makeStyles } from '@material-ui/core/styles';
 
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 import Link from './Link';
 import { getImplementationColorProps } from '../lib/adaptationsHelpers';
+
+const useStyles = makeStyles({
+  button: {
+    lineHeight: 1.2,
+  },
+  icon: {
+    marginRight: 0,
+  },
+});
 
 const AdaptationMeasureList = ({
   measures = [],
@@ -19,33 +28,30 @@ const AdaptationMeasureList = ({
   const theme = useTheme();
   const { t } = useTranslation();
 
-  if (!measures.length) {
-    return (
-      <List>
-        <ListItem
-          dense
-        >
-          <ListItemText primary={t('No measure to show')} />
-        </ListItem>
-      </List>
-    );
-  }
+  const classes = useStyles();
 
   return (
     <List>
+      {!measures.length && (
+        <ListItem dense>
+          <ListItemText primary={t('No measure to show')} />
+        </ListItem>
+      )}
+
       {measures.map(({ slug, name, region, term }) => (
-        <ListItem
-          dense
-          button
-          component={Link}
-          key={slug}
-          to={`${linkPrefix}/${region}/${slug}`}
-          state={{ modal: true }}
-        >
-          <ListItemIcon>
-            <FiberManualRecordIcon fontSize="small" {...getImplementationColorProps(theme)(term)} />
-          </ListItemIcon>
-          <ListItemText primary={name} />
+        <ListItem dense disableGutters key={slug}>
+          <Button
+            className={classes.button}
+            component={Link}
+            variant="outlined"
+            size="small"
+            classes={{ startIcon: classes.icon }}
+            startIcon={<FiberManualRecordIcon {...getImplementationColorProps(theme)(term)} />}
+            to={`${linkPrefix}/${region}/${slug}`}
+            state={{ modal: true }}
+          >
+            {name}
+          </Button>
         </ListItem>
       ))}
     </List>

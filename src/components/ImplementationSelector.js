@@ -32,6 +32,7 @@ const ImplementationSelector = ({
                 onChange={() => onChange(id)}
                 checked={checked}
                 disabled={!enabled}
+                size="small"
                 {...getImplementationColorProps(theme)(enabled ? id : 'disabled')}
               />
             )}
