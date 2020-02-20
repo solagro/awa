@@ -12,8 +12,6 @@ import clsx from 'clsx';
 import { getQuantileGroup } from '../lib/math';
 import { byColumn, toNumber } from '../lib/dataTable';
 
-import './customDataTable.css';
-
 const useStyles = makeStyles({
   root: {
     maxWidth: '100%',
@@ -28,6 +26,11 @@ const useStyles = makeStyles({
   computedCell: {
     fontWeight: 'bold',
   },
+
+  'quartile-1': { background: '#dea8a8' },
+  'quartile-2': { background: '#dac5a0' },
+  'quartile-3': { background: '#c6d799' },
+  'quartile-4': { background: '#97d492' },
 });
 
 const ComputedRow = ({
@@ -87,7 +90,7 @@ const CustomDataTable = ({
 
   return (
     <div className={classes.root}>
-      <Table size="small" className="percentiles">
+      <Table size="small">
         <TableHead>
           <TableRow>
             <TableCell>{t('year')}</TableCell>
@@ -101,18 +104,23 @@ const CustomDataTable = ({
           {data.map(line => (
             <TableRow key={line.year} hover>
               <TableCell className={classes.tableHeader}>{line.year}</TableCell>
-              {headers.map(header => (
-                <TableCell
-                  key={header}
-                  className={clsx({
-                    [classes.tableCell]: true,
-                    [`quartile-${getQuantileGroup(toNumber(line[header]), dataByColumn[header].quartiles)}`]: quartiles,
-                    [`decile-${getQuantileGroup(toNumber(line[header]), dataByColumn[header].deciles)}`]: deciles,
-                  })}
-                >
-                  {line[header]}
-                </TableCell>
-              ))}
+              {headers.map(header => {
+                const value = toNumber(line[header]);
+                const quartileGroup = getQuantileGroup(value, dataByColumn[header].quartiles);
+                const decileGroup = getQuantileGroup(value, dataByColumn[header].deciles);
+                return (
+                  <TableCell
+                    key={header}
+                    className={clsx({
+                      [classes.tableCell]: true,
+                      [classes[`quartile-${quartileGroup}`]]: quartiles,
+                      [classes[`decile-${decileGroup}`]]: deciles,
+                    })}
+                  >
+                    {line[header]}
+                  </TableCell>
+                );
+              })}
             </TableRow>
           ))}
 
