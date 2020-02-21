@@ -1,7 +1,8 @@
 const path = require('path');
 const slugify = require('slugify');
+const camelcase = require('camelcase');
 
-const capitalize = ([f, ...rest]) => `${f.toUpperCase()}${rest.join``}`;
+const capitalize = value => camelcase(value, { pascalCase: true });
 
 /**
  * Transform JSON nodes created through gatsby-transformer-json
@@ -27,7 +28,7 @@ exports.onCreateNode = async ({
     });
 
 
-    await Promise.all(['question', 'explanation'].map(async element => {
+    await Promise.all(['question', 'explanation', 'learn-more'].map(async element => {
       const content = node[element];
 
       if (content) {
