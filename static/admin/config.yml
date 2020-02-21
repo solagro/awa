@@ -2,8 +2,15 @@ backend:
   # name: test-repo
   name: github
   repo: solagro/awa
-media_folder: 'static/media/uploads'
-public_folder: '/media/uploads'
+
+media_library:
+  name: cloudinary
+  output_filename_only: false
+  use_transformations: false
+  use_secure_url: true
+  config:
+    cloud_name: solagro
+    api_key: 511656513188816
 
 .common:
   - &quiz {
