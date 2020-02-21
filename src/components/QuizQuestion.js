@@ -21,6 +21,7 @@ import Link from './Link';
 import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
 import { processQuizTexts } from '../lib/quizHelpers';
+import MarkdownText from './MarkdownText';
 
 const useStyles = makeStyles(theme => ({
   module: {
@@ -119,6 +120,10 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const mdTextPreset = {
+  p: props => <Typography variant="subtitle1" paragraph {...props} />,
+};
+
 const QuizQuestion = ({
   pageContext: { id, theme },
   data: {
@@ -149,6 +154,7 @@ const QuizQuestion = ({
   const nextQuestion = questions[currentIndex + 1];
 
   const { category } = rawQuestion;
+
   const { question, answers, explanation } = processQuizTexts(rawQuestion, i18n);
 
   return (
@@ -173,10 +179,7 @@ const QuizQuestion = ({
           }
         </Typography>
 
-        <Typography
-          variant="subtitle1"
-          dangerouslySetInnerHTML={{ __html: question }}
-        />
+        <MarkdownText hast={question} components={mdTextPreset} style={{ textAlign: 'center' }} />
 
         <Grid
           item
@@ -250,10 +253,7 @@ const QuizQuestion = ({
                   {t('Explanation')}
                 </Typography>
 
-                <Typography
-                  variant="body2"
-                  dangerouslySetInnerHTML={{ __html: explanation }}
-                />
+                <MarkdownText hast={explanation} />
               </CardContent>
               <CardActions className={classes.card__actions}>
                 <Button size="small">{t('Learn More')}</Button>
@@ -360,17 +360,17 @@ export const query = graphql`
       answer_i18n { answers language }
 
       fields {
-        markdownQuestionDe { childMarkdownRemark { html } }
-        markdownQuestionEn { childMarkdownRemark { html } }
-        markdownQuestionEs { childMarkdownRemark { html } }
-        markdownQuestionEt { childMarkdownRemark { html } }
-        markdownQuestionFr { childMarkdownRemark { html } }
+        markdownQuestionDe { childMarkdownRemark { htmlAst } }
+        markdownQuestionEn { childMarkdownRemark { htmlAst } }
+        markdownQuestionEs { childMarkdownRemark { htmlAst } }
+        markdownQuestionEt { childMarkdownRemark { htmlAst } }
+        markdownQuestionFr { childMarkdownRemark { htmlAst } }
 
-        markdownExplanationDe { childMarkdownRemark { html } }
-        markdownExplanationEn { childMarkdownRemark { html } }
-        markdownExplanationEs { childMarkdownRemark { html } }
-        markdownExplanationEt { childMarkdownRemark { html } }
-        markdownExplanationFr { childMarkdownRemark { html } }
+        markdownExplanationDe { childMarkdownRemark { htmlAst } }
+        markdownExplanationEn { childMarkdownRemark { htmlAst } }
+        markdownExplanationEs { childMarkdownRemark { htmlAst } }
+        markdownExplanationEt { childMarkdownRemark { htmlAst } }
+        markdownExplanationFr { childMarkdownRemark { htmlAst } }
       }
     }
   }

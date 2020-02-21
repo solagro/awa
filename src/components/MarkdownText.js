@@ -2,11 +2,13 @@ import React from 'react';
 
 import Rehype2react from 'rehype-react';
 
+import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
-const MarkdownText = ({ hast, components }) => {
+const MarkdownText = ({ hast, components, ...rest }) => {
   const renderAst = new Rehype2react({
     createElement: React.createElement,
+    Fragment: React.Fragment,
     components: {
       h1: props => <Typography variant="h1" paragraph {...props} />,
       h2: props => <Typography variant="h2" paragraph {...props} />,
@@ -19,7 +21,11 @@ const MarkdownText = ({ hast, components }) => {
     },
   }).Compiler;
 
-  return renderAst(hast);
+  return (
+    <Box {...rest}>
+      {renderAst(hast)}
+    </Box>
+  );
 };
 
 export default MarkdownText;

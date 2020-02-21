@@ -39,7 +39,7 @@ export const processQuizTexts = (
       const key = `markdown${capitalize(type)}${capitalize(lang)}`;
       const mainNode = object[key];
       const remarkNode = mainNode.childMarkdownRemark;
-      return remarkNode.html;
+      return remarkNode.htmlAst;
     } catch (e) {
       if (isLive) {
         // eslint-disable-next-line no-console
