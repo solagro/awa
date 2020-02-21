@@ -30,10 +30,12 @@ export const byColumn = (data = []) => {
       dataByColumn[header].quartiles = getQuartiles(values);
       dataByColumn[header].deciles = getDeciles(values);
 
-      dataByColumn[header].min = Math.min(...cleanValues);
-      dataByColumn[header].max = Math.max(...cleanValues);
-      dataByColumn[header].average = cleanValues
-        .reduce((acc, curr) => (acc + curr)) / cleanValues.length;
+      if (cleanValues.length) {
+        dataByColumn[header].min = Math.min(...cleanValues);
+        dataByColumn[header].max = Math.max(...cleanValues);
+        dataByColumn[header].average = cleanValues
+          .reduce((acc, curr) => (acc + curr)) / cleanValues.length;
+      }
     }
   }
 

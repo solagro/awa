@@ -154,7 +154,7 @@ const CustomDataTable = ({
               dataByColumn={dataByColumn}
               className={classes.tableCell}
               method="average"
-              formatter={value => value.toFixed(2)}
+              formatter={value => (value ? value.toFixed(2) : '')}
             />
           )}
         </TableBody>
