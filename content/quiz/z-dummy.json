@@ -23,5 +23,12 @@
     { "language": "es", "explanation": "dummy" },
     { "language": "et", "explanation": "dummy" },
     { "language": "fr", "explanation": "dummy" }
+  ],
+  "learn-more": "dummy",
+  "learn-more-i18n": [
+    { "language": "de", "learn-more": "dummy" },
+    { "language": "es", "learn-more": "dummy" },
+    { "language": "et", "learn-more": "dummy" },
+    { "language": "fr", "learn-more": "dummy" }
   ]
 }

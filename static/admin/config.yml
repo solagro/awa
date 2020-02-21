@@ -36,12 +36,20 @@ public_folder: '/media/uploads'
           { label: 'Answers', name: 'answers', widget: 'text' }
         ]
       },
-      { label: 'Explanation', name: 'explanation', widget: 'markdown' },
+      { label: 'Explanation (en)', name: 'explanation', widget: 'markdown' },
       {
         label: 'Explanation translations', name: 'explanation-i18n', widget: 'list',
         fields: [
           { label: 'Language', name: 'language', widget: 'select', options: ['fr', 'de', 'et', 'es'] },
           { label: 'Explanation', name: 'explanation', widget: 'markdown' },
+        ]
+      },
+      { label: 'Learn more (en)', name: 'learn-more', widget: 'markdown', required: false },
+      {
+        label: 'Learn more translations', name: 'learn-more-i18n', widget: 'list',
+        fields: [
+          { label: 'Language', name: 'language', widget: 'select', options: ['fr', 'de', 'et', 'es'] },
+          { label: 'Learn more', name: 'learn-more', widget: 'markdown' },
         ]
       },
     ]
