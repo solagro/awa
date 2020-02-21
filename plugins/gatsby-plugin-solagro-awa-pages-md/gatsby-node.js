@@ -1,6 +1,6 @@
 const path = require('path');
 
-exports.onCreateNode = async ({
+exports.onCreateNode = ({
   node,
   actions: { createPage },
 }) => {
