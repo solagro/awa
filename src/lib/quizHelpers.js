@@ -97,4 +97,11 @@ export const processQuizTexts = (
   };
 };
 
-export default processQuizTexts;
+export const checkLearnMore = ({ fields }, language) => {
+  const a = Object.entries(fields).filter(([key, value]) =>
+    ([
+      'markdownLearnMoreEn',
+      `markdownLearnMore${capitalize(language)}`,
+    ].includes(key) && value));
+  return Boolean(a.length);
+};

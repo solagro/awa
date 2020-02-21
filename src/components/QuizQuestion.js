@@ -20,7 +20,7 @@ import Link from './Link';
 
 import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
-import { processQuizTexts } from '../lib/quizHelpers';
+import { processQuizTexts, checkLearnMore } from '../lib/quizHelpers';
 import MarkdownText from './MarkdownText';
 
 const useStyles = makeStyles(theme => ({
@@ -153,9 +153,10 @@ const QuizQuestion = ({
   const previousQuestion = questions[currentIndex - 1];
   const nextQuestion = questions[currentIndex + 1];
 
-  const { category } = rawQuestion;
+  const { category, fields: { slug: currentSlug } } = rawQuestion;
 
   const { question, answers, explanation } = processQuizTexts(rawQuestion, i18n);
+  const hasLearnMore = checkLearnMore(rawQuestion, i18n.language);
 
   return (
     <Layout>
@@ -255,9 +256,18 @@ const QuizQuestion = ({
 
                 <MarkdownText hast={explanation} />
               </CardContent>
-              <CardActions className={classes.card__actions}>
-                <Button size="small">{t('Learn More')}</Button>
-              </CardActions>
+              {hasLearnMore && (
+                <CardActions className={classes.card__actions}>
+                  <Button
+                    size="small"
+                    component={Link}
+                    to={`/quiz/${theme}/${currentSlug}/learn-more`}
+                    state={{ modal: true }}
+                  >
+                    {t('Learn More')}
+                  </Button>
+                </CardActions>
+              )}
             </Card>
           </Grid>
         </Grid>
@@ -359,7 +369,10 @@ export const query = graphql`
       answers
       answer_i18n { answers language }
 
+
       fields {
+        slug
+
         markdownQuestionDe { childMarkdownRemark { htmlAst } }
         markdownQuestionEn { childMarkdownRemark { htmlAst } }
         markdownQuestionEs { childMarkdownRemark { htmlAst } }
@@ -371,6 +384,12 @@ export const query = graphql`
         markdownExplanationEs { childMarkdownRemark { htmlAst } }
         markdownExplanationEt { childMarkdownRemark { htmlAst } }
         markdownExplanationFr { childMarkdownRemark { htmlAst } }
+
+        markdownLearnMoreDe { id }
+        markdownLearnMoreEn { id }
+        markdownLearnMoreEs { id }
+        markdownLearnMoreEt { id }
+        markdownLearnMoreFr { id }
       }
     }
   }
