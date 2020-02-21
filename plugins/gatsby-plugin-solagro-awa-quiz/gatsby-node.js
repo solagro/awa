@@ -111,6 +111,7 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
             ... on QuizJson {
               theme
               title
+              id
             }
           }
         }
@@ -120,13 +121,14 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
   const items = queryRawResults.reduce((store, { data }) => ({ ...store, ...data }), {});
 
   Object.entries(items).forEach(([language, { nodes = [] }]) => {
-    nodes.forEach(({ parent: { theme, title } }) => {
+    nodes.forEach(({ parent: { theme, title, id } }) => {
       createPage({
         path: `/${language}/quiz/${theme}/${slugify(title)}/learn-more`,
-        component: path.resolve('./src/components/DebugPage.js'),
+        component: path.resolve('./src/components/LearnMorePage.js'),
         context: {
           language,
           theme,
+          id,
           slug: slugify(title),
         },
       });
