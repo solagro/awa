@@ -95,4 +95,41 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     })))));
 
   reporter.info(`${REPORTER_PREFIX}${locales.length * questions.length} question pages created`);
+
+
+  const cap = ([init, ...rest]) => `${init.toUpperCase()}${rest}`;
+
+  /**
+   * Create page for each LearnMore:
+   *  /{lng}/quiz/{theme}/{title-slug}/learn-more
+   */
+  const queryRawResults = await Promise.all(locales.map(language => graphql(`
+    {
+      ${language}: allQuizJsonMarkdownLearnMore${cap(language)} {
+        nodes {
+          parent {
+            ... on QuizJson {
+              theme
+              title
+            }
+          }
+        }
+      }
+    }
+  `)));
+  const items = queryRawResults.reduce((store, { data }) => ({ ...store, ...data }), {});
+
+  Object.entries(items).forEach(([language, { nodes = [] }]) => {
+    nodes.forEach(({ parent: { theme, title } }) => {
+      createPage({
+        path: `/${language}/quiz/${theme}/${slugify(title)}/learn-more`,
+        component: path.resolve('./src/components/DebugPage.js'),
+        context: {
+          language,
+          theme,
+          slug: slugify(title),
+        },
+      });
+    });
+  });
 };
