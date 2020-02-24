@@ -7,6 +7,12 @@
   ],
   "question": "The thermal comfort zone for cattle is between 10 and 20 °C. What would be the impact of a moderate heat wave on milk production?",
   "theme": "atlantic",
+  "learn-more-i18n": [
+    {
+      "language": "fr",
+      "learn-more": "La zone de thermo-neutralité des bovins se situe entre 10 et 20°C.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554978/learn_more/q18_1_bjugfl.png)\n\n*Graphe : zones de confort et d’inconfort thermiques des vaches laitières et des veaux (source :**BTPL**)*\n\nAu-delà de 25°C., on peut constater :\n\n* Altération du **comportement** physiologique et de la balance énergétique\n* Conséquences sur la **reproduction** et la **longévité**\n* Conséquences sur la quantité et qualité de la **production laitière**\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554978/learn_more/q18_2_g7eloy.png)\n\nLa réaction au stress thermique dépend:\n\n* Des caractéristiques physiologiques (vaches à poils courts régulent mieux leurs températures)\n* du stade de lactation et du niveau de production\n* de la**composition de la ration**et la consommation d’aliments\n* **du bâtiment (aération – ventilation, …)**\n\nLa mise en place d’un nouvel indicateur agro-climatique, l**’Indice Température-Humidité**(ITH) permet d’évaluer le stress thermique de l’animal par le couple « température, hygrométrie ». Le tableau ci-après présente les 5 zones de stress « hygro-thermique » pour les bovins :\n\n* zone de confort, en vert\n* zone de seuil de stress, en jaune (dès 20°C. pour de forte humidité relative)\n* zone de stress léger à modéré, en orange\n* zone de stress modéré à majeur, en orange foncé (dès 27°C. pour des humidité dépassant les 70%)\n* zone de stress majeur en rouge\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554979/learn_more/q18_3_rxl3jx.png)\n\n*Figure : l**’Indice Température-Humidité** (ITH) pour les vaches laitières (Source : FIDOCL)*"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "fr",
