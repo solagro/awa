@@ -7,6 +7,12 @@
   ],
   "question": "Currently, the dynamics of grass growth in France is mainly close of an oceanic climate one. For the Near Future, grass growth for French grasslands is expected to look to what kind of dynamic?",
   "theme": "atlantic",
+  "learn-more-i18n": [
+    {
+      "language": "fr",
+      "learn-more": "Les effets du changement climatique sur la croissance de l’herbe tout au long de l’année ont été décrits de la façon suivante par le programme**CLIMFOUREL**:\n\n* Une avancée de la phénologie des plantes au printemps et un raccourcissement de la période de production.\n* Une augmentation de la biomasse disponible au printemps, à récolter en un temps plus court.\n* Une croissance des prairies naturelles stoppée en été́ sur une période qui peut atteindre plusieurs semaines.\n* Une repousse d’automne qui peut se révéler important\n\nPour résumer ces changements, on parle d’un accroissement de la saisonnalité́ de la production.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554978/learn_more/q19_1_tkqlod.png)\n\n*Figure : Croissance nette journalière (kg MS/ha/j) sur l’année d’une prairie naturelle, soumise au climat des années 2000 (vert) et 2050 (rouge)*\n\nCe programme CLIMFOUREL dont l’objectif était d’accompagner l’adaptation des systèmes d’élevage péri-méditerranéens aux changements et aléas climatiques, a également modélisé la production fourragère pour une prairie cultivée. Globalement sur l’année, la baisse de production est de 11 % entre 1980 et 2008.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554979/learn_more/q19_2_abzq21.png)\n\n*Figure : Tendance de la production d’une prairie moyenne péri-méditerranéenne de 1980 à 2008*\n\nCette modélisation confirme les différents effets du changement climatique : pousse un peu plus forte au printemps, forte baisse de la production estivale, et à l’automne, les effets de la sécheresse sont compensés par les effets de l’augmentation du CO2 et de la température."
+    }
+  ],
   "answer-i18n": [
     {
       "language": "fr",
