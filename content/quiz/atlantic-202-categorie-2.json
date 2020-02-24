@@ -7,6 +7,12 @@
   ],
   "question": "Water stress (during summer) is a major climate hazard for crops sown in the spring (sugar beet, corn, etc.). For the Near Future, what would be the frequency of years with a very severe water deficit in summer?",
   "theme": "atlantic",
+  "learn-more-i18n": [
+    {
+      "language": "fr",
+      "learn-more": "L’indicateur agro-climatique M2, présenté ci-après, illustre l’augmentation du déficit hydrique (différence entre les Précipitation et l’évapotranspiration potentiel) calculé de mai à aout.\n\n**Dans le Sud-Ouest** de **la France** (Cf. Graphe ci-après présentant la situation en Haute-Garonne), le déficit hydrique passerait, en moyenne de -350 mm à -450 mm (entre le passé récent et le futur proche), et 10 années sur 30 (soit 1 année sur 3) dépasserait le seuil des -500 mm.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554976/learn_more/q13_1_xurwoi.png)\n\n*Graphe : le déficit hydrique (différence entre les Précipitation et l’évapotranspiration potentiel), calculé entre mai et aout pour le département de la **Haute-Garonne**, pour le passé récent (période 1985-2015) et le futur proche (période 2015-2045)*\n\nDans le futur proche, le **Nord de la France** (Cf. Graphe ci-après présentant la situation dans la Marne), serait dans la même situation que le Sud aujourd’hui. Une année sur trois le seuil des\n\n\\-350 mm serait dépassé. Sans adaptation, le déficit hydrique affecterait négativement les rendements (y compris dans les sols présentant d’importantes réserves utiles)\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554976/learn_more/q13_2_iow8pt.png)\n\n*Graphe : le déficit hydrique (différence entre les Précipitation et l’évapotranspiration potentiel), calculé entre mai et aout pour le département de la **Marne,** pour le passé récent (période 1985-2015) et le futur proche (période 2015-2045)*"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "fr",
