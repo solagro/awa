@@ -7,6 +7,12 @@
   ],
   "question": "The advance of harvest dates is a well-known impact of climate change on the vine. On which other components of the vine and wine, will climate change also have an impact?",
   "theme": "atlantic",
+  "learn-more-i18n": [
+    {
+      "language": "fr",
+      "learn-more": "Outre la date des vendanges, la vinification et les vins vont changer, puisque sous un climat différent, la composition des raisins se modifie. De nouveaux équilibres aromatiques devront donc être trouvés par les œnologues pour élaborer les vins de 2050. Afin d’aider tous ces acteurs à se préparer au climat de demain, le projet **LACCAVE**, « Adaptation à long terme au changement climatique pour la viticulture et l’œnologie », a réuni les savoirs, diffusé les connaissances et anticipé quatre scénarios pour les régions viticoles de France.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554977/learn_more/q16_1_u2cccp.png)\n\n*Figure : Les effets du changement climatiques sur la vigne et le vin (source **LACCAVE**).*"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "fr",
