@@ -27,6 +27,35 @@ exports.onCreateNode = async ({
       value: slugify(node.title),
     });
 
+    const contents = [];
+    ['question', 'explanation', 'learn-more'].forEach(type => {
+      if (node[type]) {
+        contents.push({ language: 'en', type, content: node[type] });
+      }
+
+      const translations = node[`${type}-i18n`];
+      if (translations && translations.length) {
+        translations.forEach(({ language, [type]: content }) => {
+          contents.push({ language, content, type });
+        });
+      }
+    });
+
+    contents.forEach(({ language, content, type }) => {
+      createNode({
+        id: `${node.id}-${type}-${language}`,
+        parent: node.id,
+        language,
+        type,
+        dir: path.resolve('./'),
+        internal: {
+          type: `${node.internal.type}Markdown`,
+          mediaType: 'text/markdown',
+          content,
+          contentDigest: createContentDigest(content),
+        },
+      });
+    });
 
     await Promise.all(['question', 'explanation', 'learn-more'].map(async element => {
       const content = node[element];
