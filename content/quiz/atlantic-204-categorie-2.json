@@ -7,6 +7,12 @@
   ],
   "question": "The average increase in temperature accelerates the ripening of grains, fruits and berries. Between 1980 and 2010, how many days earlier was the harvest for vineyard?",
   "theme": "atlantic",
+  "learn-more-i18n": [
+    {
+      "language": "fr",
+      "learn-more": "Comme toute production agricole, la viticulture se prépare à un climat plus chaud, plus sec, ainsi qu’aux conséquences que cela aura sur la vie de la vigne. L’enregistrement de la date des vendanges depuis des siècles a permis d’observer les premiers impacts du changement climatique en agriculture. Le **projet de recherche LACCAVE** conduit par l’INRA, a élargi la vision de l’impact du changement climatique sur la vigne et le vin. L’avancée de la date des vendanges fait partie des résultats publiés.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554976/learn_more/q15_1_tbun9f.png)\n\n*Graphe : évolution de la date des vendanges entre 1950 et 2010 pour 3 vignobles français (source : **LACCAVE**).*\n\nEn plus de l’avancée de la date des vendanges, l’autre effet notable de l’augmentation des températures, est l’augmentation de surface où la vigne sera potentiellement capable de se développer. En France, en 2050, mis à part l’arc alpin, toutes les régions sont susceptibles d’accueillir des vignobles.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554976/learn_more/q15_2_nvfcls.png)\n\n*Carte : évolution des zones favorables à la vigne entre 1950 et 2010 pour 3 vignobles français (source : **LACCAVE**).*"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "fr",
