@@ -96,17 +96,19 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
 
   reporter.info(`${REPORTER_PREFIX}${locales.length * questions.length} question pages created`);
 
-
-  const cap = ([init, ...rest]) => `${init.toUpperCase()}${rest}`;
-
   /**
    * Create page for each LearnMore:
    *  /{lng}/quiz/{theme}/{title-slug}/learn-more
    */
-  const queryRawResults = await Promise.all(locales.map(language => graphql(`
+  const { data: { allQuizJsonMarkdown: { nodes } } } = await graphql(`
     {
-      ${language}: allQuizJsonMarkdownLearnMore${cap(language)} {
+      allQuizJsonMarkdown(
+        filter: {
+          type: { eq: "learn-more" }
+        }
+      ) {
         nodes {
+          language
           parent {
             ... on QuizJson {
               theme
@@ -117,21 +119,20 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
         }
       }
     }
-  `)));
-  const items = queryRawResults.reduce((store, { data }) => ({ ...store, ...data }), {});
+  `);
 
-  Object.entries(items).forEach(([language, { nodes = [] }]) => {
-    nodes.forEach(({ parent: { theme, title, id } }) => {
-      createPage({
-        path: `/${language}/quiz/${theme}/${slugify(title)}/learn-more`,
-        component: path.resolve('./src/components/LearnMorePage.js'),
-        context: {
-          language,
-          theme,
-          id,
-          slug: slugify(title),
-        },
-      });
+  nodes.forEach(({ language, parent: { theme, title, id } }) => {
+    if (theme === 'dummy') { return; }
+
+    createPage({
+      path: `/${language}/quiz/${theme}/${slugify(title)}/learn-more`,
+      component: path.resolve('./src/components/LearnMorePage.js'),
+      context: {
+        language,
+        theme,
+        id,
+        slug: slugify(title),
+      },
     });
   });
 };
