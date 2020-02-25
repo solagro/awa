@@ -82,6 +82,11 @@ const IndexPage = ({
     ),
   };
 
+  nodes.sort((
+    { childMarkdownRemark: { frontmatter: { order: a } } },
+    { childMarkdownRemark: { frontmatter: { order: b } } },
+  ) => (a - b));
+
   return (
     <Layout header footer paper={false}>
       <SEO title={t('Home')} lang={i18n.language} />
@@ -195,20 +200,20 @@ const IndexPage = ({
 export default doRedirect(IndexPage);
 
 export const query = graphql`
-  query ($language: String! = "en") {
+  query ($language: String = "en") {
     allFile(
       filter: {
         sourceInstanceName: { eq: "home" },
         childMarkdownRemark: { frontmatter: { locale: { eq: $language } } }
       }
       sort: {
-        fields: childMarkdownRemark___frontmatter___order
+        fields: [childMarkdownRemark___frontmatter___order, relativePath]
       }
     ) {
       nodes {
         childMarkdownRemark {
           htmlAst
-          frontmatter { altPicto buttonText id title picto hrefAfter hrefBefore to }
+          frontmatter { altPicto buttonText id title picto hrefAfter hrefBefore to order }
         }
       }
     }

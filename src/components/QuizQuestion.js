@@ -357,7 +357,7 @@ export const query = graphql`
   query ($theme: String, $id: String, $language: String) {
     questionSeries: allQuizJson(
       filter: {theme: {eq: $theme}},
-      sort: {fields: id, order: ASC}
+      sort: { fields: [order, id] }
     ) {
       questions: nodes {
         title
@@ -368,6 +368,7 @@ export const query = graphql`
     }
 
     allQuizJsonMarkdown(
+      sort: { fields: id }
       filter: {
         parent: { id: { eq: $id } },
         language: { in: ["en", $language] }
@@ -382,6 +383,7 @@ export const query = graphql`
     }
 
     learnMoreContainer: allQuizJsonMarkdown(
+      sort: { fields: id }
       filter: {
         parent: { id: { eq: $id } },
         language: { in: ["en", $language] }

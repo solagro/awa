@@ -250,6 +250,7 @@ export const query = graphql`
 
     # Get all regions for current system/vulnerability pair
     regionsContainer: allAdaptationMeasures(
+      sort: { fields: fields___slug }
       filter: {
         fields: {
           measure: {
@@ -266,6 +267,7 @@ export const query = graphql`
 
     # Get all measures for current system/vulnerability
     adaptationMeasuresContainer: allAdaptationMeasures(
+      sort: { fields: fields___slug }
       filter: {
         fields: {
           measure: {
@@ -290,6 +292,7 @@ export const query = graphql`
     }
 
     vulnerabilityTextsContainer: allFile(
+      sort: { fields: relativePath }
       filter: {
         sourceInstanceName: { eq: "adaptations" },
         extension: { eq: "md" },

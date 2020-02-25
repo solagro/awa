@@ -144,7 +144,7 @@ export const query = graphql`
   query ($gridCode: String, $sourceType: String, $language: String) {
     allGridPointData(
       filter: { gridCode: { eq: $gridCode }, sourceType: { eq: $sourceType } }
-      sort: { fields: json, order: ASC }
+      sort: { fields: gridCode }
     ) {
       nodes {
         dataType
@@ -158,6 +158,7 @@ export const query = graphql`
     }
 
     allTexts: allMarkdownRemark(
+      sort: { fields: fileAbsolutePath }
       filter: {
         frontmatter: {
           sourceType: { eq: $sourceType},

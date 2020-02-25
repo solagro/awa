@@ -40,7 +40,7 @@ export const query = graphql`
   query questionsQuery($theme: String) {
     allQuizJson(
       filter: {theme: {eq: $theme}},
-      sort: {fields: order, order: ASC}
+      sort: { fields: [order, id] }
     ) {
       questions: nodes {
         theme

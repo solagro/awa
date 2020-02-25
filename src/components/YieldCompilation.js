@@ -80,8 +80,8 @@ export const query = graphql`
 
     markdownRemark(
       frontmatter: {
-        sourceType: { eq: $sourceType},
-        locale: { eq: $language}
+        sourceType: { eq: $sourceType },
+        locale: { eq: $language }
       }
     ) {
       htmlAst
