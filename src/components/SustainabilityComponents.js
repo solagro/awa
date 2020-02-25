@@ -25,8 +25,12 @@ const SustainabilityComponents = ({ measure }) => {
   return (
     <List dense>
       {sustainabilityComponents.map(sustainabilityComponent => (
-        <Tooltip title={t(`${sustainabilityComponent}-explanation`)} arrow>
-          <ListItem key={sustainabilityComponent}>
+        <Tooltip
+          key={sustainabilityComponent}
+          title={t(`${sustainabilityComponent}-explanation`)}
+          arrow
+        >
+          <ListItem>
             <ListItemIcon>
               <img
                 src={`/images/sustainability/impact-${measure[sustainabilityComponent]}.png`}

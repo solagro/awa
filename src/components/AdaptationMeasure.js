@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const CustomTitle = ({
+  h1,
   h2 = false,
   h3 = false,
   h4 = false,
