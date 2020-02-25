@@ -129,6 +129,7 @@ const QuizQuestion = ({
   data: {
     questionSeries: { questions = [] } = {},
     allQuizJsonMarkdown: { questionTexts },
+    learnMoreContainer: { learnMore },
     quizJson: {
       category,
       fields: { slug: currentSlug },
@@ -159,7 +160,7 @@ const QuizQuestion = ({
   const nextQuestion = questions[currentIndex + 1];
 
   const properTexts = processQuizTexts(answers, questionTexts, i18n.language);
-  const hasLearnMore = Boolean(properTexts['learn-more']);
+  const hasLearnMore = Boolean(learnMore.map(({ language }) => language).includes(i18n.language));
 
   return (
     <Layout>
@@ -370,6 +371,7 @@ export const query = graphql`
       filter: {
         parent: { id: { eq: $id } },
         language: { in: ["en", $language] }
+        type: { ne: "learn-more" }
       }
     ) {
       questionTexts: nodes {
@@ -377,6 +379,16 @@ export const query = graphql`
         type
         markdown: childMarkdownRemark { htmlAst }
       }
+    }
+
+    learnMoreContainer: allQuizJsonMarkdown(
+      filter: {
+        parent: { id: { eq: $id } },
+        language: { in: ["en", $language] }
+        type: { eq: "learn-more" }
+      }
+    ) {
+      learnMore: nodes { language }
     }
 
     quizJson(id: {eq: $id}) {

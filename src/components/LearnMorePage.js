@@ -13,8 +13,6 @@ import MarkdownText from './MarkdownText';
 
 import doRedirect from '../hoc/doRedirect';
 
-const capitalize = text => text[0].toUpperCase() + text.slice(1);
-
 const useStyles = makeStyles({
   layout: {
     padding: '0 4em',
@@ -26,21 +24,16 @@ const useStyles = makeStyles({
 });
 
 const LearnMorePage = ({
-  data: { question: { fields } },
+  data: { quizJsonMarkdown: { markdown: { htmlAst: content = {} } = {} } = {} },
   pageContext: { theme, slug },
 }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const classes = useStyles();
-
-  let content = fields.markdownLearnMoreEn;
-  if (fields[`markdownLearnMore${capitalize(i18n.language)}`]) {
-    content = fields[`markdownLearnMore${capitalize(i18n.language)}`];
-  }
 
   return (
     <Layout modalWidth={950}>
       <MarkdownText
-        hast={content.childMarkdownRemark.htmlAst}
+        hast={content}
         className={classes.layout}
       />
 
@@ -60,15 +53,13 @@ const LearnMorePage = ({
 export default doRedirect(LearnMorePage);
 
 export const query = graphql`
-  query ($id: String!) {
-    question: quizJson(id: {eq: $id}) {
-      fields {
-        markdownLearnMoreDe { childMarkdownRemark { htmlAst } }
-        markdownLearnMoreEn { childMarkdownRemark { htmlAst } }
-        markdownLearnMoreEs { childMarkdownRemark { htmlAst } }
-        markdownLearnMoreEt { childMarkdownRemark { htmlAst } }
-        markdownLearnMoreFr { childMarkdownRemark { htmlAst } }
-      }
+  query ($id: String, $language: String) {
+    quizJsonMarkdown(
+      parent: { id: { eq: $id } },
+      language: { eq: $language },
+      type: { eq: "learn-more" }
+    ) {
+      markdown: childMarkdownRemark { html htmlAst }
     }
   }
 `;

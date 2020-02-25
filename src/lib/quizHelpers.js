@@ -67,6 +67,5 @@ export const processQuizTexts = (
     question: getLocalTextOrEn(lang)('question')(textTree),
     answers: parseQuestions(getLocalTextOrEn(lang)('answers')(textTree)),
     explanation: getLocalTextOrEn(lang)('explanation')(textTree),
-    'learn-more': getLocalText(lang)('learn-more')(textTree),
   };
 };
