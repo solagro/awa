@@ -166,17 +166,11 @@ export const query = graphql`
   query ($gridCode: String, $sourceType: String, $language: String) {
     allGridPointData(
       filter: { gridCode: { eq: $gridCode }, sourceType: { eq: $sourceType } }
-      sort: { fields: gridCode }
+      sort: { fields: [gridCode, dataType] }
     ) {
       nodes {
         dataType
         json
-      }
-    }
-
-    allDataTypes: allGridPointData(filter: {sourceType: {eq: $sourceType}}) {
-      group(field: dataType) {
-        dataType: fieldValue
       }
     }
 
