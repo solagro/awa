@@ -1,5 +1,4 @@
-const capitalize = text => text[0].toUpperCase() + text.slice(1);
-const isLive = typeof window !== 'undefined';
+/* eslint-disable import/prefer-default-export */
 
 /**
  * Transform raw questions String into array of qualified answers
@@ -19,9 +18,9 @@ export const processQuizTexts = (
   {
     answers: answersEn,
     answer_i18n: answersI18n,
-    fields,
   },
-  i18n,
+  texts = [],
+  lang,
 ) => {
   /**
    * Create an unique object with all answers translations
@@ -30,26 +29,6 @@ export const processQuizTexts = (
     { language: 'en', answers: answersEn },
     ...(answersI18n || []),
   ].reduce((acc, curr) => ({ ...acc, [curr.language]: curr.answers }), {});
-
-  /**
-   * Avoid to throw when field does not exists
-   */
-  const getHtmlFromNodeFields = (object, type, lang) => {
-    try {
-      const key = `markdown${capitalize(type)}${capitalize(lang)}`;
-      const mainNode = object[key];
-      const remarkNode = mainNode.childMarkdownRemark;
-      return remarkNode.htmlAst;
-    } catch (e) {
-      if (isLive) {
-        // eslint-disable-next-line no-console
-        console.error(`No "${type}" for current node`, object);
-        // eslint-disable-next-line no-console
-        console.error(e);
-      }
-      return undefined;
-    }
-  };
 
   /**
    * Get Markdown version of each text:
@@ -67,41 +46,27 @@ export const processQuizTexts = (
    *   ...
    * }
    */
-  const allTexts = ['en', 'fr', 'es', 'et', 'de']
-    .reduce((acc, lang) => (fields[`markdownQuestion${capitalize(lang)}`]
-      ? {
-        ...acc,
-        [lang]: {
-          question: getHtmlFromNodeFields(fields, 'question', lang),
-          explanation: getHtmlFromNodeFields(fields, 'explanation', lang),
-          answers: allAnswers[lang],
-        },
-      } : acc), {});
+  const textTree = texts.reduce((acc, { language, type, markdown: { htmlAst } }) => ({
+    ...acc,
+    [language]: {
+      ...acc[language],
+      [type]: htmlAst,
+      answers: allAnswers[language],
+    },
+  }), {});
 
   /**
    * Get right texts according current language and available translations.
    */
-  const [question, rawAnswers, explanation] = ['question', 'answers', 'explanation']
-    .map(textElement => (
-      (allTexts[i18n.language] && allTexts[i18n.language][textElement])
-        ? allTexts[i18n.language][textElement]
-        : allTexts.en[textElement]
-    ));
-
-  const answers = parseQuestions(rawAnswers);
+  const getLocalText = lng => el => tree =>
+    ((tree[lng] && tree[lng][el]) ? tree[lng][el] : undefined);
+  const getLocalTextOrEn = lng => el => tree =>
+    (getLocalText(lng)(el)(tree) || tree.en[el]);
 
   return {
-    question,
-    answers,
-    explanation,
+    question: getLocalTextOrEn(lang)('question')(textTree),
+    answers: parseQuestions(getLocalTextOrEn(lang)('answers')(textTree)),
+    explanation: getLocalTextOrEn(lang)('explanation')(textTree),
+    'learn-more': getLocalText(lang)('learn-more')(textTree),
   };
-};
-
-export const checkLearnMore = ({ fields }, language) => {
-  const a = Object.entries(fields).filter(([key, value]) =>
-    ([
-      'markdownLearnMoreEn',
-      `markdownLearnMore${capitalize(language)}`,
-    ].includes(key) && value));
-  return Boolean(a.length);
 };

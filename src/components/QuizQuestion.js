@@ -20,7 +20,7 @@ import Link from './Link';
 
 import doRedirect from '../hoc/doRedirect';
 import { GlobalDispatchContext, GlobalStateContext } from './GlobalContextProvider';
-import { processQuizTexts, checkLearnMore } from '../lib/quizHelpers';
+import { processQuizTexts } from '../lib/quizHelpers';
 import MarkdownText from './MarkdownText';
 
 const useStyles = makeStyles(theme => ({
@@ -128,7 +128,12 @@ const QuizQuestion = ({
   pageContext: { id, theme },
   data: {
     questionSeries: { questions = [] } = {},
-    question: rawQuestion,
+    allQuizJsonMarkdown: { questionTexts },
+    quizJson: {
+      category,
+      fields: { slug: currentSlug },
+      ...answers
+    },
   },
 }) => {
   const { t, i18n } = useTranslation();
@@ -153,10 +158,8 @@ const QuizQuestion = ({
   const previousQuestion = questions[currentIndex - 1];
   const nextQuestion = questions[currentIndex + 1];
 
-  const { category, fields: { slug: currentSlug } } = rawQuestion;
-
-  const { question, answers, explanation } = processQuizTexts(rawQuestion, i18n);
-  const hasLearnMore = checkLearnMore(rawQuestion, i18n.language);
+  const properTexts = processQuizTexts(answers, questionTexts, i18n.language);
+  const hasLearnMore = Boolean(properTexts['learn-more']);
 
   return (
     <Layout>
@@ -180,7 +183,7 @@ const QuizQuestion = ({
           }
         </Typography>
 
-        <MarkdownText hast={question} components={mdTextPreset} style={{ textAlign: 'center' }} />
+        <MarkdownText hast={properTexts.question} components={mdTextPreset} style={{ textAlign: 'center' }} />
 
         <Grid
           item
@@ -189,7 +192,7 @@ const QuizQuestion = ({
           md={9}
           xl={8}
         >
-          {answers.map(({ text, valid }, index) => (
+          {properTexts.answers.map(({ text, valid }, index) => (
             <Grid
               container
               direction="column"
@@ -254,7 +257,7 @@ const QuizQuestion = ({
                   {t('Explanation')}
                 </Typography>
 
-                <MarkdownText hast={explanation} />
+                <MarkdownText hast={properTexts.explanation} />
               </CardContent>
               {hasLearnMore && (
                 <CardActions className={classes.card__actions}>
@@ -350,7 +353,7 @@ const QuizQuestion = ({
 };
 
 export const query = graphql`
-  query ($theme: String, $id: String) {
+  query ($theme: String, $id: String, $language: String) {
     questionSeries: allQuizJson(
       filter: {theme: {eq: $theme}},
       sort: {fields: id, order: ASC}
@@ -363,34 +366,25 @@ export const query = graphql`
       }
     }
 
-    question: quizJson(id: {eq: $id}) {
+    allQuizJsonMarkdown(
+      filter: {
+        parent: { id: { eq: $id } },
+        language: { in: ["en", $language] }
+      }
+    ) {
+      questionTexts: nodes {
+        language
+        type
+        markdown: childMarkdownRemark { htmlAst }
+      }
+    }
+
+    quizJson(id: {eq: $id}) {
       category
+      fields { slug }
 
       answers
       answer_i18n { answers language }
-
-
-      fields {
-        slug
-
-        markdownQuestionDe { childMarkdownRemark { htmlAst } }
-        markdownQuestionEn { childMarkdownRemark { htmlAst } }
-        markdownQuestionEs { childMarkdownRemark { htmlAst } }
-        markdownQuestionEt { childMarkdownRemark { htmlAst } }
-        markdownQuestionFr { childMarkdownRemark { htmlAst } }
-
-        markdownExplanationDe { childMarkdownRemark { htmlAst } }
-        markdownExplanationEn { childMarkdownRemark { htmlAst } }
-        markdownExplanationEs { childMarkdownRemark { htmlAst } }
-        markdownExplanationEt { childMarkdownRemark { htmlAst } }
-        markdownExplanationFr { childMarkdownRemark { htmlAst } }
-
-        markdownLearnMoreDe { id }
-        markdownLearnMoreEn { id }
-        markdownLearnMoreEs { id }
-        markdownLearnMoreEt { id }
-        markdownLearnMoreFr { id }
-      }
     }
   }
 `;
