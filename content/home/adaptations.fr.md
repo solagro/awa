@@ -1,13 +1,13 @@
 ---
 locale: fr
 id: adaptationsPresentation
-title: Sustainable adaptation measures
+title: Mesures d'adaptation durables
 picto: "/images/pictos/adaptations.svg"
 altPicto: adaptations
 hrefBefore: "#mapPresentation"
 hrefAfter: "#summaryPresentation"
 to: "/adaptations"
-buttonText: See measures
+buttonText: Voir les mesures
 order: 3
 ---
 
