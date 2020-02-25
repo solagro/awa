@@ -1,7 +1,7 @@
 ---
 locale: fr
 id: projectPresentation
-title: Project
+title: Projet
 hrefAfter: "#quizPresentation"
 order: 0
 ---
