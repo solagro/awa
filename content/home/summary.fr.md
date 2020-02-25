@@ -1,10 +1,10 @@
 ---
 locale: fr
 id: summaryPresentation
-title: Summary
+title: Synthèse
 hrefBefore: "#adaptationsPresentation"
 to: "/quiz"
-buttonText: Start quiz
+buttonText: Démarrer le quiz
 order: 4
 ---
 
