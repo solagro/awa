@@ -1,13 +1,13 @@
 ---
 locale: fr
 id: quizPresentation
-title: Farm vulnerability and adaptation Quiz
+title: Quiz sur la vulnérabilité et l'adaptation des exploitations agricoles
 picto: "/images/pictos/quiz.svg"
 altPicto: quiz
 hrefBefore: "#top"
 hrefAfter: "#mapPresentation"
 to: "/quiz"
-buttonText: Start quiz
+buttonText: Démarrer le quiz
 order: 1
 ---
 
