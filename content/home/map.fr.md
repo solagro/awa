@@ -1,13 +1,13 @@
 ---
 locale: fr
 id: mapPresentation
-title: Yield & Climate (observations and projections)
+title: Visualisation des sites (observations et projections climatique)
 picto: "/images/pictos/observations.svg"
 altPicto: observations
 hrefBefore: "#quizPresentation"
 hrefAfter: "#adaptationsPresentation"
 to: "/map"
-buttonText: Go to the map
+buttonText: Aller à la carte
 order: 2
 ---
 
