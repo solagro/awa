@@ -21,6 +21,8 @@ import {
   ReferenceArea,
 } from 'recharts';
 
+const isLive = typeof window !== 'undefined';
+
 const getChartDomain = (data, keys) => Object.values(keys.reduce((store, key) => {
   const [min, max] = getDomainOfDataByKey(data, key, 'number');
   return {
@@ -38,6 +40,10 @@ export const DefaultComposedChart = ({
   ...props
 }) => {
   const { t } = useTranslation();
+
+  if (!isLive) {
+    return null;
+  }
 
   return (
     <ComposedChart
