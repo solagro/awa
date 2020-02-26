@@ -7,8 +7,9 @@
  * @returns {number} Percentile value
  */
 export const getQuantile = (values, percentile = 50) => {
-  const sortedValues = [...values].sort((a, b) => (a - b));
-  const index = percentile / 100.0 * (values.length - 1);
+  const sortedValues = [...values.filter(value => (typeof value === 'number'))]
+    .sort((a, b) => (a - b));
+  const index = percentile / 100.0 * (sortedValues.length - 1);
 
   if (Math.floor(index) === index) {
     return sortedValues[index];
