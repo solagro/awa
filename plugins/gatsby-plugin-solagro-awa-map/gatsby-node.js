@@ -5,7 +5,7 @@ const camelcase = require('camelcase');
 
 const gridcodeTemplate = require('./gridcode.json');
 
-const REPORTER_PREFIX = '[solagro-awa-quiz-map] ';
+const REPORTER_PREFIX = '[solagro-awa-map] ';
 
 const sourceTypes = {
   yc: 'yieldCompilation',
@@ -135,7 +135,9 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage, createR
       })));
     }))));
 
-  reporter.info(`${REPORTER_PREFIX}${locales.length}(locales)×${gridCodes.length}(gridPoints)×${gridPointSubpages.length}(tabs) grid point pages created.`);
+  const multiplier = locales.length * gridPointSubpages.length;
+  const total = multiplier * gridCodes.length;
+  reporter.info(`${REPORTER_PREFIX}${total} grid point pages created. (${multiplier}×${gridCodes.length})`);
 };
 
 /**

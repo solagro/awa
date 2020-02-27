@@ -4,7 +4,7 @@ const csvtojson = require('csvtojson');
 
 const { siteMetadata: { locales = [] } = {} } = require('../../gatsby-config.js');
 
-// const REPORTER_PREFIX = '[solagro-awa-adaptations] ';
+const REPORTER_PREFIX = '[solagro-awa-adaptations] ';
 
 const buildPath = (...elements) => ['', ...elements].join('/');
 const cleanValue = str => slugify(str).toLowerCase();
@@ -89,7 +89,7 @@ exports.onCreateNode = async ({
   }
 };
 
-exports.createPages = async ({ graphql, actions: { createPage, createRedirect } }) => {
+exports.createPages = async ({ graphql, actions: { createPage, createRedirect }, reporter }) => {
   /**
    * Get all adaptation measures
    * Get all farming systems
@@ -125,6 +125,8 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect } 
   `);
   // Simplify farming systems array
   const farmingSystems = allFarmingSystems.map(({ fieldValue }) => fieldValue);
+
+  reporter.info(`${REPORTER_PREFIX}${measures.length} measures found.`);
 
   /**
    * Get all vulnerability components grouped by farming system
@@ -203,4 +205,7 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect } 
         context: { language, id },
       })));
   }));
+
+  const total = measures.length * locales.length;
+  reporter.info(`${REPORTER_PREFIX}${total} measure pages created. (${locales.length}×${measures.length})`);
 };

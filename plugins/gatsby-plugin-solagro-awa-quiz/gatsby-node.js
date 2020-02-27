@@ -45,7 +45,6 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
     reporter.warn(`${REPORTER_PREFIX}No question found.`);
   } else {
     reporter.info(`${REPORTER_PREFIX}${questions.length} questions found.`);
-    reporter.info(`${REPORTER_PREFIX}Creating langing pages for ${themes.length} themes. (${themes.join(', ')})`);
   }
 
   /**
@@ -76,8 +75,6 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
       });
     }))));
 
-  reporter.info(`${REPORTER_PREFIX}${locales.length * themes.length} theme landing pages created`);
-
   /**
    * Create page for each question:
    *  /{lng}/quiz/{theme}/{title-slug}
@@ -94,7 +91,8 @@ exports.createPages = async ({ reporter, graphql, actions: { createPage } }) => 
       },
     })))));
 
-  reporter.info(`${REPORTER_PREFIX}${locales.length * questions.length} question pages created`);
+  const total = locales.length * questions.length;
+  reporter.info(`${REPORTER_PREFIX}${total} question pages created. (${locales.length}×${questions.length})`);
 
   /**
    * Create page for each LearnMore:
