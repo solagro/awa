@@ -1,7 +1,7 @@
 ---
 locale: fr
 id: quizPresentation
-title: Quiz sur la vulnérabilité et l'adaptation des exploitations agricoles
+title: Quizz : vulnérabilité climatique et adaptation des exploitations agricoles
 picto: "/images/pictos/quiz.svg"
 altPicto: quiz
 hrefBefore: "#top"
