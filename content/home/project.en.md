@@ -1,12 +1,10 @@
 ---
 locale: en
 id: projectPresentation
-title: Project
+title: AWA - AgriAdapt Webtool for Adaptation
 hrefAfter: "#quizPresentation"
 order: 0
 ---
-
-**AWA - AgriAdapt Webtool for Adaptation**
 
 One of the main challenges facing the world, and the agricultural sector in particular, is climate change. 
 Even if some of the changes in climate could be beneficial for some European agricultural production, most of the changes have had negative impacts and disproportionately affect regions already concerned by other environmental problems. 
