@@ -80,11 +80,13 @@ const AdaptationMeasures = ({
   /**
    * Array of regions for rendering <Select />
    */
-  const regionItems = catalog.climate_risk_region.map(({ value, ...rest }) => ({
-    ...rest,
-    value,
-    enabled: foundRegions.includes(value),
-  }));
+  const regionItems = catalog.climate_risk_region
+    .filter(({ value }) => foundRegions.includes(value))
+    .map(({ value, ...rest }) => ({
+      ...rest,
+      value,
+      enabled: foundRegions.includes(value),
+    }));
 
   /**
    * Array of adaptations measures for rendering it as a list
