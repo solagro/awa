@@ -1,12 +1,10 @@
 ---
 locale: fr
 id: projectPresentation
-title: Projet
+title: AWA - Plateforme web AgriAdapt pour l’adaptation
 hrefAfter: "#quizPresentation"
 order: 0
 ---
-
-**AWA - Plateforme web AgriAdapt pour l’adaptation**
 
 Le changement climatique est l’un des principaux défis auquel le monde, et le secteur agricole en particulier, est confronté. Même si certaines des modifications du climat pourraient être bénéfiques pour quelques productions agricoles européennes, la plupart des changements auront des impacts négatifs et affecteront de façon disproportionnée les régions déjà concernées par d’autres problématiques environnementales. Les agriculteurs européens doivent et devront s’adapter à un climat en changement, par des mesures qui dépassent les simples ajustements de pratiques ponctuels. Afin de limiter la vulnérabilité de leurs exploitations face à des aléas climatiques toujours plus variables, l’adaptation devra avant tout être conçue et entreprise de façon durable.
 
