@@ -3,7 +3,17 @@ import { useTranslation } from 'react-i18next';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
+
 import CustomIcon from './CustomIcon';
+
+const useStyles = makeStyles({
+  box: {
+    // border: '1px solid red',
+    textAlign: 'center',
+    marginRight: '.5em',
+  },
+});
 
 const WeatherEvent = ({ event, period }) => {
   const { catalog } = useStaticQuery(graphql`
@@ -18,6 +28,7 @@ const WeatherEvent = ({ event, period }) => {
   `);
 
   const { t } = useTranslation();
+  const classes = useStyles();
 
   if (!event) {
     return null;
@@ -45,24 +56,26 @@ const WeatherEvent = ({ event, period }) => {
 
   if (eventId === '8') {
     return (
-      <Box>
+      <Box className={classes.box}>
         {['2', '3', '4', '7'].map(id => (
           <CustomIcon
+            key={id}
             src={`/images/weather-events/STRESS_${id}.png`}
             label={t(getEventName(id))}
             showTooltip
             inline
           />
         ))}
+        <Box>{period}</Box>
       </Box>
     );
   }
 
   return (
-    <Box>
+    <Box className={classes.box}>
       <CustomIcon
         src={`/images/weather-events/STRESS_${eventId}.png`}
-        label={event}
+        label={t(event)}
         showTooltip
       />
       {period}
