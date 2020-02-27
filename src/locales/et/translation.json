@@ -127,6 +127,8 @@
   "chickpea": "Kikerhernes",
   "choose your language": "choose your language",
   "climate-change": "climate-change",
+  "climate-observations": "climate-observations",
+  "climate-projections": "climate-projections",
   "climate-risk-region": "Kliimariski piirkond",
   "climate_risk_region": "Kliimariski piirkond",
   "close": "close",
@@ -292,6 +294,7 @@
   "winter-soft-wheat": "Talinisu",
   "winter-wheat": "winter-wheat",
   "year": "year",
+  "yield-compilation": "yield-compilation",
   "zone selection": "zone selection",
   "{{country}}. Available languages: English standard or {{language}} by changing the language of the site": "{{country}}. Available languages: English standard or {{language}} by changing the language of the site"
 }

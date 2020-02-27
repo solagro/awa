@@ -52,6 +52,8 @@ export default [
   t('Climate Projections'),
   t('climate_risk_region'),
   t('climate-change'),
+  t('climate-observations'),
+  t('climate-projections'),
   t('climate-risk-region'),
   t('Co2'),
   t('Co3'),
@@ -222,4 +224,5 @@ export default [
   t('winter-wheat'),
   t('year'),
   t('Yield Compilation'),
+  t('yield-compilation'),
 ];
