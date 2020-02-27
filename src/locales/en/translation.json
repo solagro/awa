@@ -122,11 +122,13 @@
   "buckwheat": "Buckwheat",
   "cauliflower": "Cauliflower",
   "cereal-crops": "CEREAL CROPS",
-  "cereals": "cereals",
+  "cereals": "CROPS",
   "cereals-mixed-and-only-cereals": "Cereals mixed and only cereals",
   "chickpea": "Chickpea",
   "choose your language": "choose your language",
   "climate-change": "climate-change",
+  "climate-observations": "Climate observations",
+  "climate-projections": "Climate projections",
   "climate-risk-region": "Climate Risk Region",
   "climate_risk_region": "Climate Risk Region",
   "close": "close",
@@ -292,6 +294,7 @@
   "winter-soft-wheat": "Winter soft wheat",
   "winter-wheat": "winter-wheat",
   "year": "year",
+  "yield-compilation": "Yield compilation",
   "zone selection": "zone selection",
   "{{country}}. Available languages: English standard or {{language}} by changing the language of the site": "{{country}}. Available languages: English standard or {{language}} by changing the language of the site"
 }
