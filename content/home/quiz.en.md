@@ -1,7 +1,7 @@
 ---
 locale: en
 id: quizPresentation
-title: Farm vulnerability and adaptation Quiz
+title: Farm vulnerability and adaptation Quiz 
 picto: "/images/pictos/quiz.svg"
 altPicto: quiz
 hrefBefore: "#top"
@@ -10,15 +10,10 @@ to: "/quiz"
 buttonText: Start quiz
 order: 1
 ---
+Through around thirty different questions, you will be able to test your knowledge of climate change, agricultural impacts of the climate on different agricultural productions and possible adaptation measures at farm scale.
 
-Molestiae reprehenderit cupiditate cupiditate rerum in aperiam ipsam nemo. Omnis
-quod beatae nobis dignissimos molestiae illum eos ea. Ut qui perferendis.
-Nostrum error sit animi iusto omnis aut fuga quo unde.
+4 different quizzes are offered, each corresponding to the geographic location of the 4 countries involved in the project (France, Germany, Spain and Estonia), all representative of a major climatic influence in Europe: Mediterranean, Atlantic, continental, and Nordic areas. Each quiz is systematically available in English as well as in the language of the country it represents.
 
-Dolorem vel numquam laboriosam voluptatum unde. Rerum et ea blanditiis et qui ut
-illum. Hic et corporis sequi. Praesentium incidunt voluptatem est qui. Natus eum
-perspiciatis et. Voluptate tempora et veniam occaecati et inventore esse earum
-vel.
+For each question, one or more correct answers are possible among the 4 proposals. Just click on your choice (only one possible) to know if your answer is correct. An explanation will then appear at the bottom of the screen and you can deepen the subject even further if you wish by clicking on "Learn more".
 
-Harum et corrupti. Ipsa debitis corrupti dicta culpa. Praesentium sed occaecati
-occaecati a.
+At any time during the quiz, you can continue to the next question if you do not wish to answer any of the questions. Once the quiz is finished, a summary will indicate the number of correct answers obtained for each of the 3 categories: climate change, agricultural impacts and adaptation measures.
