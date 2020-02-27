@@ -18,6 +18,9 @@ const useStyles = makeStyles({
     overflow: 'auto',
     fontSize: '.8em',
   },
+  table: {
+    marginBottom: 0,
+  },
   tableHeader: {
     textAlign: 'center',
     padding: '0.25em',
@@ -93,7 +96,7 @@ const CustomDataTable = ({
 
   return (
     <div className={classes.root}>
-      <Table size="small">
+      <Table size="small" className={classes.table}>
         <TableHead>
           <TableRow>
             <TableCell>{t('year')}</TableCell>

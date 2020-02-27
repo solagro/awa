@@ -43,6 +43,7 @@ const YieldCompilation = ({
         justify="center"
         alignItems="center"
         spacing={2}
+        style={{ margin: '1em 0' }}
       >
         <Grid item>
           <Button
