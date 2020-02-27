@@ -179,6 +179,44 @@
       "value": "long-term"
     }
   ],
+  "sustainability-component": [
+    {
+      "id": "1",
+      "value": "ghg_emissions"
+    },
+    {
+      "id": "2",
+      "value": "air_quality"
+    },
+    {
+      "id": "3",
+      "value": "soil"
+    },
+    {
+      "id": "4",
+      "value": "water"
+    },
+    {
+      "id": "5",
+      "value": "biodiversity"
+    },
+    {
+      "id": "6",
+      "value": "animal_welfare"
+    },
+    {
+      "id": "7",
+      "value": "economic"
+    },
+    {
+      "id": "8",
+      "value": "social"
+    },
+    {
+      "id": "9",
+      "value": "technical_feasibility"
+    }
+  ],
   "sustainability-impact": [
     {
       "id": "1",

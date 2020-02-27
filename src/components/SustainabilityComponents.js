@@ -8,24 +8,16 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Tooltip from '@material-ui/core/Tooltip';
 
-const sustainabilityComponents = [
-  'ghg_emissions',
-  'air_quality',
-  'soil',
-  'water',
-  'biodiversity',
-  'animal_welfare',
-  'economic',
-  'social',
-  'technical_feasibility',
-];
-
 const SustainabilityComponents = ({ measure }) => {
   const { t } = useTranslation();
 
   const { catalog } = useStaticQuery(graphql`
     query {
       catalog: adaptationsJson {
+        components: sustainability_component {
+          value
+        }
+
         impacts: sustainability_impact {
           id
           value
@@ -35,6 +27,7 @@ const SustainabilityComponents = ({ measure }) => {
   `);
 
   const impacts = catalog.impacts.reduce((store, { id, value }) => ({ ...store, [id]: value }), {});
+  const sustainabilityComponents = catalog.components.map(({ value }) => value);
 
   return (
     <List dense>
