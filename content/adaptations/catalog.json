@@ -178,5 +178,27 @@
       "id": "3",
       "value": "long-term"
     }
+  ],
+  "sustainability-impact": [
+    {
+      "id": "1",
+      "value": "positive"
+    },
+    {
+      "id": "2",
+      "value": "neutral"
+    },
+    {
+      "id": "3",
+      "value": "negative"
+    },
+    {
+      "id": "4",
+      "value": "money"
+    },
+    {
+      "id": "5",
+      "value": "moneybox"
+    }
   ]
 }
