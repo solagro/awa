@@ -92,6 +92,6 @@
     "url": "https://github.com/solagro/awa/issues"
   },
   "devDependencies": {
-    "babel-plugin-i18next-extract": "~0.5.0"
+    "babel-plugin-i18next-extract": "~0.6.1"
   }
 }
