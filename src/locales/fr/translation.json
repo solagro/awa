@@ -127,6 +127,8 @@
   "chickpea": "Pois chiche",
   "choose your language": "Choisissez votre langue",
   "climate-change": "Changement climatique",
+  "climate-observations": "Observations climatiques",
+  "climate-projections": "Projections climatiques",
   "climate-risk-region": "Région à risque climatique",
   "climate_risk_region": "Région à risque climatique",
   "close": "fermer",
@@ -292,6 +294,7 @@
   "winter-soft-wheat": "Blé tendre d'hiver",
   "winter-wheat": "Blé dur",
   "year": "Année",
+  "yield-compilation": "Historique de rendements",
   "zone selection": "Sélection de zone",
   "{{country}}. Available languages: English standard or {{language}} by changing the language of the site": "{{country}}. Langues disponibles: Anglais par défaut ou {{language}} en changeant la langue du site"
 }
