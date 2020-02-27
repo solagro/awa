@@ -110,15 +110,17 @@ const AdaptationMeasure = ({
 
         <CustomTitle h2 className={classes.h2}>{t('Weather event addressed')}</CustomTitle>
 
-        <WeatherEvent
-          event={measure.weather_event}
-          period={t(measure.weather_event_season_or_period)}
-        />
+        <Box style={{ display: 'flex' }}>
+          <WeatherEvent
+            event={measure.weather_event}
+            period={t(measure.weather_event_season_or_period)}
+          />
 
-        <WeatherEvent
-          event={measure._2nd_weather_event}
-          period={t(measure._2nd_weather_event_season_or_period)}
-        />
+          <WeatherEvent
+            event={measure._2nd_weather_event}
+            period={t(measure._2nd_weather_event_season_or_period)}
+          />
+        </Box>
 
         <CustomTitle h2 className={classes.h2}>{t('Farming system')}</CustomTitle>
 

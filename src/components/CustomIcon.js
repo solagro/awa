@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 
 import Box from '@material-ui/core/Box';
+import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -21,17 +22,27 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const CustomIcon = ({
+const condition = enable => WrappedComponent => props => (
+  enable
+    ? <WrappedComponent {...props} />
+    : <>{props.children}</>
+);
+
+const CustomIcon = React.forwardRef(({
   src,
   label,
-  showLabel,
   className,
+  showLabel = false,
+  showTooltip = false,
+  tooltipProps = {},
   inline = false,
   iconProps = {},
   labelProps = {},
   ...props
-}) => {
+}, ref) => {
   const classes = useStyles();
+
+  const Wrapper = condition(showTooltip)(Tooltip);
 
   return (
     <Box
@@ -40,14 +51,17 @@ const CustomIcon = ({
         className,
         { [classes.inlineWrapper]: inline },
       )}
+      ref={ref}
       {...props}
     >
-      <img
-        src={src}
-        alt={label}
-        className={classes.icon}
-        {...iconProps}
-      />
+      <Wrapper title={label} {...tooltipProps}>
+        <img
+          src={src}
+          alt={label}
+          className={classes.icon}
+          {...iconProps}
+        />
+      </Wrapper>
       {showLabel && (
         <Box
           className={classes.label}
@@ -58,6 +72,6 @@ const CustomIcon = ({
       )}
     </Box>
   );
-};
+});
 
 export default CustomIcon;

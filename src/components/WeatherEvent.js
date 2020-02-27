@@ -44,13 +44,18 @@ const WeatherEvent = ({ event, period }) => {
   const eventId = getEventId(event);
 
   if (eventId === '8') {
-    return ['2', '3', '4', '7'].map(id => (
-      <CustomIcon
-        src={`/images/weather-events/STRESS_${id}.png`}
-        label={t(getEventName(id))}
-        inline
-      />
-    ));
+    return (
+      <Box>
+        {['2', '3', '4', '7'].map(id => (
+          <CustomIcon
+            src={`/images/weather-events/STRESS_${id}.png`}
+            label={t(getEventName(id))}
+            showTooltip
+            inline
+          />
+        ))}
+      </Box>
+    );
   }
 
   return (
@@ -58,6 +63,7 @@ const WeatherEvent = ({ event, period }) => {
       <CustomIcon
         src={`/images/weather-events/STRESS_${eventId}.png`}
         label={event}
+        showTooltip
       />
       {period}
     </Box>
