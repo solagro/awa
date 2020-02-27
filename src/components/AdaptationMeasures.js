@@ -30,6 +30,14 @@ import ImplementationSelector from './ImplementationSelector';
 const isLive = typeof window !== 'undefined';
 
 const useStyles = makeStyles(theme => ({
+  regionWrapper: {
+    display: 'block',
+    '& legend': {
+      fontWeight: 500,
+      fontsize: theme.typography.subtitle1,
+      marginBottom: '.5em',
+    },
+  },
   region: {
     display: 'flex',
     alignItems: 'center',
@@ -172,24 +180,29 @@ const AdaptationMeasures = ({
       {Boolean(allMeasureLinks.length) && (
         <Grid container justify="center" alignItems="flex-start">
           {isLive && (
-            <Grid item xs={12} sm={5}>
+            <Grid item xs={12} sm={4}>
 
-              <Box className={classes.region}>
-                <RiskRegion
-                  region={adaptationState.selectedRegion}
-                  className={classes.regionIcon}
-                />
+              <FormControl component="fieldset" className={classes.regionWrapper}>
+                <FormLabel component="legend">{t('Filter actions by risk region')}</FormLabel>
 
-                <RegionSelector
-                  regions={regionItems}
-                  onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
-                  value={adaptationState.selectedRegion}
-                  classes={{
-                    root: classes.regionSelect,
-                    icon: classes.regionSelectKnob,
-                  }}
-                />
-              </Box>
+                <Box className={classes.region}>
+
+                  <RiskRegion
+                    region={adaptationState.selectedRegion}
+                    className={classes.regionIcon}
+                  />
+
+                  <RegionSelector
+                    regions={regionItems}
+                    onChange={(event, target) => dispatch({ type: 'SET_REGION', value: target.key })}
+                    value={adaptationState.selectedRegion}
+                    classes={{
+                      root: classes.regionSelect,
+                      icon: classes.regionSelectKnob,
+                    }}
+                  />
+                </Box>
+              </FormControl>
 
               <FormControl component="fieldset" className={classes.implementation}>
                 <FormLabel component="legend">{t('Filter actions by timing')}</FormLabel>
@@ -204,7 +217,9 @@ const AdaptationMeasures = ({
             </Grid>
           )}
 
-          <Grid item xs={12} sm={5}>
+          <Grid item><Divider orientation="vertical" style={{ margin: '1em' }} /></Grid>
+
+          <Grid item xs={12} sm={4}>
             <Typography variant="h3">
               {t('Click on an action to see the detail')}
             </Typography>
