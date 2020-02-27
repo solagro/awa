@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Box from '@material-ui/core/Box';
+import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableHead from '@material-ui/core/TableHead';
@@ -17,6 +19,15 @@ const useStyles = makeStyles({
     maxWidth: '100%',
     overflow: 'auto',
     fontSize: '.8em',
+  },
+  legend: {
+    justifyContent: 'flex-end',
+    display: 'flex',
+  },
+  legendItem: {
+    display: 'flex',
+    alignItems: 'center',
+    marginLeft: '2em',
   },
   table: {
     marginBottom: 0,
@@ -96,6 +107,22 @@ const CustomDataTable = ({
 
   return (
     <div className={classes.root}>
+
+      <Box className={classes.legend}>
+        <Box className={classes.legendItem}>
+          <FiberManualRecordIcon style={{ color: '#dea8a8' }} /> {t('Bad')}
+        </Box>
+        <Box className={classes.legendItem}>
+          <FiberManualRecordIcon style={{ color: '#dac5a0' }} /> {t('Fair')}
+        </Box>
+        <Box className={classes.legendItem}>
+          <FiberManualRecordIcon style={{ color: '#c6d799' }} /> {t('Good')}
+        </Box>
+        <Box className={classes.legendItem}>
+          <FiberManualRecordIcon style={{ color: '#97d492' }} /> {t('Excellent')}
+        </Box>
+      </Box>
+
       <Table size="small" className={classes.table}>
         <TableHead>
           <TableRow>
