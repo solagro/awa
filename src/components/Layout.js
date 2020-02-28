@@ -25,6 +25,7 @@ import Footer from './Footer';
 import withModalContext from '../hoc/withModalRoutingContext';
 
 import './Layout.css';
+import CookieNotice from './CookieNotice';
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -129,6 +130,7 @@ const Layout = ({
       alignContent="center"
       {...rest}
     >
+      <CookieNotice />
       <CssBaseline />
 
       {navigation && (
