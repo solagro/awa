@@ -130,7 +130,6 @@ const Layout = ({
       alignContent="center"
       {...rest}
     >
-      <CookieNotice />
       <CssBaseline />
 
       {navigation && (
@@ -169,6 +168,7 @@ const Layout = ({
       {footer && (
         <Footer />
       )}
+      <CookieNotice />
     </Grid>
   );
 };

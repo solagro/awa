@@ -8,6 +8,8 @@ import CloseIcon from '@material-ui/icons/Close';
 import { useTranslation } from 'react-i18next';
 import { makeStyles } from '@material-ui/core/styles';
 
+import { useCookies } from 'react-cookie';
+
 const isLive = typeof window !== 'undefined';
 
 const useStyles = makeStyles({
@@ -25,8 +27,14 @@ const useStyles = makeStyles({
   },
 });
 
+const cookieName = 'tracking';
+const cookieOptions = { path: '/' };
+
 const CookieNotice = () => {
-  const [open, setOpen] = React.useState(true);
+  const [cookies, setCookie, removeCookie] = useCookies([cookieName]);
+  const trackingCookie = cookies[cookieName];
+
+  const [open, setOpen] = React.useState(!trackingCookie);
   const { t } = useTranslation();
 
   const classes = useStyles();
@@ -35,18 +43,37 @@ const CookieNotice = () => {
     return null;
   }
 
+  const clearGA = () => {
+    const regexp = /.*/;
+    if (!Array.isArray(window.excludeGAPaths)) {
+      window.excludeGAPaths = [];
+    }
+
+    if (!window.excludeGAPaths.includes(regexp)) {
+      window.excludeGAPaths.push(regexp);
+    }
+
+    [
+      '_ga',
+      '_gid',
+      '_gat',
+    ].forEach(name => removeCookie(name, cookieOptions));
+  };
+
   const handleApproval = () => {
+    setCookie(cookieName, 'allow', cookieOptions);
     setOpen(false);
   };
 
   const handleRefusal = () => {
-    if (!Array.isArray(window.excludeGAPaths)) {
-      window.excludeGAPaths = [];
-    }
-    window.excludeGAPaths.push(/.*/);
-
+    clearGA();
+    setCookie(cookieName, 'deny', cookieOptions);
     setOpen(false);
   };
+
+  if (trackingCookie === 'deny') {
+    clearGA();
+  }
 
   const handleClose = () => setOpen(false);
 

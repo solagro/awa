@@ -124,7 +124,7 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true,
+        // respectDNT: false,
         // Avoids sending pageview hits from custom paths
         // exclude: ['/preview/**', '/do-not-track/me/too/'],
         // Delays sending pageview hits on route update (in milliseconds)
@@ -136,9 +136,9 @@ module.exports = {
         // Set Variation ID. 0 for original 1,2,3....
         // variationId: 'YOUR_GOOGLE_OPTIMIZE_VARIATION_ID',
         // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: 'solagro-awa.netlify.com',
+        // sampleRate: 5,
+        // siteSpeedSampleRate: 10,
+        // cookieDomain: 'awa.agridapt.eu',
       },
     },
     // this plugin will uninstall any previous serviceworker for current site avoiding cache issues
