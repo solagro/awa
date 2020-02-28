@@ -113,7 +113,7 @@ module.exports = {
     'gatsby-plugin-solagro-awa-map',
     'gatsby-plugin-solagro-awa-pages-md',
     'gatsby-transformer-quiz-markdown',
-    // 'gatsby-plugin-uninline-styles',
+    'gatsby-plugin-uninline-styles',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
