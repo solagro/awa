@@ -19,8 +19,9 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    opacity: 0,
 
-    animation: '$fadein 2s',
+    animation: '2s $fadein 2s both',
   },
   '@keyframes fadein': {
     from: { opacity: 0 },
