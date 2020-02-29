@@ -1,11 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: 'AWA',
-    description: '',
-    author: '@makinacorpus',
+    description: 'Plateforme web AgriAdapt pour l’adaptation',
+    author: 'Solagro',
+    siteUrl: 'https://solagro-awa.netlify.com',
+    // siteUrl: 'https://awa.agriadapt.eu',
     locales: ['en', 'de', 'es', 'et', 'fr'],
   },
   plugins: [
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify',
     {
