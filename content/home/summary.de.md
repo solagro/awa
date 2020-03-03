@@ -8,18 +8,11 @@ buttonText: Start quiz
 order: 4
 ---
 
-Omnis rem optio voluptas. Consequatur et tempora veritatis ipsum odit occaecati
-et. Est nostrum est ut placeat occaecati. Et molestiae aut nobis dolore nisi
-minus quasi sint aliquid. In libero libero quae atque perspiciatis error et
-exercitationem sunt.
+The implementation of an adaptation strategy is a real learning process in which a progressive advance respecting several steps is necessary. First, defining and understanding the vulnerability of farming is a necessary prerequisite for any adaptation process. 
+It is imperative to identify the weaknesses and / or climatic forces of the agricultural system currently deployed and to be aware of what climate change is and its agricultural impacts.
 
-Et aut officiis in iure deserunt inventore. Quasi tempore ex. Voluptatem
-laboriosam quae dolorem repellendus totam reiciendis ut ipsum enim. Neque error
-maxime quod rerum eveniet dolorem. Et ab ullam et. Sunt sed harum id asperiores
-assumenda molestias et repellat et.
-
-Ipsum odit ipsum esse id mollitia aut non minus sed. Soluta ipsam quisquam
-pariatur ipsa. Molestiae totam sit eligendi id. Nulla voluptas occaecati totam
-et quis unde sint sunt.
+In a second step, agro-climatic projections for the near future period will offer a reading of new climate opportunities and / or threats defining the new context of the farm. 
+The implementation of an adaptation strategy must therefore envisage improving climate weaknesses and threats to the farm, by mobilizing levers for a wide range of vulnerability components. 
+Planning for adaptation measures must then be carried out to distinguish what can be implemented in the short, medium or long term.
 
 <roadmap style="text-align: center;" />

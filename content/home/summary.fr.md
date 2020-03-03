@@ -8,18 +8,10 @@ buttonText: Démarrer le quiz
 order: 4
 ---
 
-Omnis rem optio voluptas. Consequatur et tempora veritatis ipsum odit occaecati
-et. Est nostrum est ut placeat occaecati. Et molestiae aut nobis dolore nisi
-minus quasi sint aliquid. In libero libero quae atque perspiciatis error et
-exercitationem sunt.
+La mise en place d’une stratégie d’adaptation est un véritable processus d’apprentissage dans lequel une avancée progressive respectant plusieurs étapes est nécessaire. 
+Dans un premier temps, la définition et la compréhension de la vulnérabilité de l’exploitation agricole est un préalable nécessaire à toute démarche d’adaptation. Il faut impérativement identifier les faiblesses et/ou forces climatiques du système agricole déployé actuellement et avoir connaissance de ce qu’est le changement climatique et de ses impacts agricoles.
 
-Et aut officiis in iure deserunt inventore. Quasi tempore ex. Voluptatem
-laboriosam quae dolorem repellendus totam reiciendis ut ipsum enim. Neque error
-maxime quod rerum eveniet dolorem. Et ab ullam et. Sunt sed harum id asperiores
-assumenda molestias et repellat et.
-
-Ipsum odit ipsum esse id mollitia aut non minus sed. Soluta ipsam quisquam
-pariatur ipsa. Molestiae totam sit eligendi id. Nulla voluptas occaecati totam
-et quis unde sint sunt.
+Dans un second temps, les projections agro-climatiques pour la période du futur proche offrira une lecture de nouvelles opportunités et/ou menaces climatiques définissant le nouveau contexte de la ferme. La mise en place d’une stratégie d’adaptation doit donc envisager une amélioration des faiblesses et menaces climatiques pour la ferme, en mobilisant des leviers pour un large panel de composantes de vulnérabilité. 
+Une planification des mesures d’adaptation doit ensuite être effectuée pour distinguer ce qui peut être mis en place à court, moyen ou long terme.
 
 <roadmap style="text-align: center;" />
