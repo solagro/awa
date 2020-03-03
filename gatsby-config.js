@@ -3,8 +3,7 @@ module.exports = {
     title: 'AWA',
     description: 'Plateforme web AgriAdapt pour l’adaptation',
     author: 'Solagro',
-    siteUrl: 'https://solagro-awa.netlify.com',
-    // siteUrl: 'https://awa.agriadapt.eu',
+    siteUrl: 'https://awa.agriadapt.eu',
     locales: ['en', 'de', 'es', 'et', 'fr'],
   },
   plugins: [
@@ -90,7 +89,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'solagro-awa',
+        name: 'awa.agriadapt.eu',
         short_name: 'awa',
         start_url: '/',
         background_color: '#663399',
