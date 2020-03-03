@@ -9,7 +9,7 @@ Adresse du siège social : 75 Voie du TOEC – CS 27608 – 31076 TOULOUSE Cedex
 Tél : +33 (0)5 67 69 69 69
 Courriel : solagro(at)solagro.asso(.)fr
 
-Le site [www.awa.agriadapt.eu](http://www.awa.agriadapt.eu)  est mis à la disposition des utilisateurs sous réserve de leur acceptation inconditionnelle des conditions et des avertissements rappelés ci-dessous.
+Le site [awa.agriadapt.eu](awa.agriadapt.eu)  est mis à la disposition des utilisateurs sous réserve de leur acceptation inconditionnelle des conditions et des avertissements rappelés ci-dessous.
 
 ## Réalisation et développement
 
@@ -41,4 +41,4 @@ En vertu de l'article 34 de la loi "Informatique et Libertés" du 6 janvier 1978
 Solagro
 75 voie du TOEC CS 27608
 31076 TOULOUSE CEDEX 3
-Tél. + 33 (0)5 67 69 69 69 – email : solagro(at)solagro.asso(.)fr
+– Tél. + 33 (0)5 67 69 69 69 – email : solagro(at)solagro.asso(.)fr

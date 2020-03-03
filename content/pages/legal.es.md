@@ -12,7 +12,7 @@ Tel : +33 (0)5 67 69 69 69
 
 Email: solagro(at)solagro.asso(.)fr
 
-The website [www.awa.agriadapt.eu](http://www.awa.agriadapt.eu)  is accessible to users subject to their unconditional acceptance of the conditions and warnings recalled below.
+The website [awa.agriadapt.eu](awa.agriadapt.eu)  is accessible to users subject to their unconditional acceptance of the conditions and warnings recalled below.
 
 ## Conception and development
 
@@ -44,4 +44,4 @@ Under article 34 of the law "Informatique et Libertés" of January 6, 1978 "You 
 Solagro
 75 voie du TOEC CS 27608
 31076 TOULOUSE CEDEX 3
-Tel. + 33 (0)5 67 69 69 69 – Email: solagro(at)solagro.asso(.)fr
+– Tél. + 33 (0)5 67 69 69 69 – email : solagro(at)solagro.asso(.)fr
