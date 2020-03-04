@@ -1,5 +1,5 @@
 year,winter-wheat,winter-barley,maize-for-grain,soybean,triticale,winter-rapeseed,sunflower,linseed-oild,field-peas,winter-field-bean,sorghum,maize-for-grain-rainfed,temporary-grasslands,permanent-grasslands
-,(q/ha),(q/ha),(q/ha),(q/ha),(q/ha),(q/ha),(q/ha),(q/ha),,(q/ha),(q/ha),(QMS/ha),(qMS/ha),(qMS/ha)
+,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha,100-kg-ha
 2000,"58,00","47,00","93,30","25,00","44,00",28.00,"24,00","18,00","37,00","25,00","71,00","128,00","64,00","27,00"
 2001,"51,00","43,00","86,40","27,00","40,00",26.00,"22,00","18,00","31,00","21,00","64,00","115,00","60,00","26,00"
 2002,"60,00","49,00","96,20","31,00","47,00",29.000,"23,00","20,00","42,00","24,00","68,00","130,00","59,00","26,00"
