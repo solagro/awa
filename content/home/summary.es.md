@@ -1,19 +1,15 @@
 ---
 locale: es
 id: summaryPresentation
-title: Summary
+title: Resumen
 hrefBefore: "#adaptationsPresentation"
 to: "/quiz"
 buttonText: Start quiz
 order: 4
 ---
 
+La implementación de una estrategia de adaptación es un proceso de aprendizaje  en el que es necesario un avance progresivo que respete varios pasos. Primero, definir y comprender la vulnerabilidad del sector agrario es un requisito previo necesario para cualquier proceso de adaptación. Es imperativo identificar las debilidades y / o fuerzas climáticas del sistema agrario y estar al tanto de lo que es el cambio climático y sus impactos agrícolas.
 
-The implementation of an adaptation strategy is a real learning process in which a progressive advance respecting several steps is necessary. First, defining and understanding the vulnerability of farming is a necessary prerequisite for any adaptation process. 
-It is imperative to identify the weaknesses and / or climatic forces of the agricultural system currently deployed and to be aware of what climate change is and its agricultural impacts.
-
-In a second step, agro-climatic projections for the near future period will offer a reading of new climate opportunities and / or threats defining the new context of the farm. 
-The implementation of an adaptation strategy must therefore envisage improving climate weaknesses and threats to the farm, by mobilizing levers for a wide range of vulnerability components. 
-Planning for adaptation measures must then be carried out to distinguish what can be implemented in the short, medium or long term.
+En un segundo paso, las proyecciones agroclimáticas para el futuro cercano ofrecerán una lectura de las nuevas oportunidades climáticas y/o amenazas que definen el nuevo contexto para la explotación agraria. Por lo tanto, la implementación de una estrategia de adaptación debe contemplar la mejora de las debilidades climáticas y las amenazas a la explotación, mediante la puesta en marcha de mejoras para una amplia gama de componentes de vulnerabilidad. La planificación de las medidas de adaptación debe llevarse a cabo distinguiendo entre lo que se puede implementar a corto, mediano o largo plazo.
 
 <roadmap style="text-align: center;" />

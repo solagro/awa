@@ -1,7 +1,7 @@
 ---
 locale: es
 id: adaptationsPresentation
-title: Sustainable adaptation measures
+title: Medidas de adaptación sostenible
 picto: "/images/pictos/adaptations.svg"
 altPicto: adaptations
 hrefBefore: "#mapPresentation"
@@ -13,11 +13,12 @@ order: 3
 
 ![alt text](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/weather_events_bpmfaq.png "Weather events")
 
-This module is devoted to sustainable adaptation measures that can be envisaged at farm scale. The agro-climatic vulnerability of a farm often depends on several climatic factors, so it is necessary to imagine the implementation of differentiated adaptation measures. 
-Thus, for each of the 3 agricultural systems studied, sustainable adaptation measures are classified according to 4 components of farm vulnerability. For example, in arable crops, the measures proposed will seek to improve the resilience of the cropping system, the varieties cultivated, the water dependency or even the soil and farming practices.
-The implementation of a strategy for sustainable adaptation to climate change takes place over time. 
+Este módulo está dedicado a medidas de adaptación sostenibles que se pueden prever a escala de explotación agraria. La vulnerabilidad agroclimática de una explotación a menudo depende de varios factores climáticos, por lo que es necesario percibir la implementación de medidas de adaptación diferenciadas. Por lo tanto, para cada uno de los 3 sistemas agrarios  estudiados, las medidas de adaptación sostenible se clasifican de acuerdo con 4 componentes de la vulnerabilidad agrícola. Por ejemplo, en cultivos herbáceos, las medidas propuestas buscarán mejorar la capacidad de recuperación del sistema de cultivo, las variedades cultivadas, la dependencia del agua o incluso el suelo y las prácticas agrícolas.
 
-The proposed measures are therefore distinguished according to the possibility of implementation in the short, medium or long term. For each adaptation measure, it is possible to know more by a simple click: a summary sheet then appears, offering an overview of its overall durability through its possible impact (neutral, positive or adverse) on a set of 9 components: emission of greenhouse gases, air quality, soil, water etc.
+La implementación de una estrategia para la adaptación sostenible al cambio climático tiene lugar a lo largo del tiempo. Por lo tanto, las medidas propuestas se distinguen de acuerdo con la posibilidad de implementación a corto, mediano o largo plazo. Para cada medida de adaptación, es posible saber más con un simple clic: luego aparece una hoja de resumen, que ofrece una visión general de su durabilidad general a través de su posible impacto (neutral, positivo o adverso) en un conjunto de 9 componentes: emisión de invernadero gases, calidad del aire, suelo, agua, etc.
+
 The sustainable adaptation measures are specific to each of the 4 climate zones proposed. For each zone, the measures are systematically available in English as well as in the language of the country it represents.
+
+Las medidas de adaptación sostenible son específicas para cada una de las 4 regiones de riesgo climático propuestas. Para cada zona, las medidas están sistemáticamente disponibles en inglés y en el idioma del país que representa.
 
 ![alt text](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Climate regions"){style="float:right"}
