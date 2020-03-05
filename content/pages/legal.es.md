@@ -1,47 +1,42 @@
-# Legal notices
+# Aspectos legales
 
-## Information about the website awa.agriadapt.eu 
+## Información sobre el sitio web awa.agriadapt.eu 
 
-This website has been created by the project partners of [Life AgriAdapt](https://agriadapt.eu/?lang=fr)  : Solagro, Lake Constance Foundation, Fundación Global Nature and Estonian University of Life Sciences).
+Esta página web ha sido creada por los socios del proyecto [Life AgriAdapt](https://agriadapt.eu/?lang=fr) : Solagro, Lake Constance Foundation, Fundación Global Nature y Estonian University of Life Sciences.
 
-It is the property of [Solagro](https://solagro.org/), Association Loi 1901
- 
-Address of the head office: 75 Voie du TOEC – CS 27608 – 31076 TOULOUSE Cedex 3 
-
+Es propiedad de [Solagro](https://solagro.org/), asociación lega por Ley 1901. 
+Sede central: 75 Voie du TOEC – CS 27608 – 31076 TOULOUSE Cedex 3 
 Tel : +33 (0)5 67 69 69 69
-
 Email: solagro(at)solagro.asso(.)fr
 
-The website [https://awa.agriadapt.eu/fr](https://awa.agriadapt.eu/fr)  is accessible to users subject to their unconditional acceptance of the conditions and warnings recalled below.
+La página web [https://awa.agriadapt.eu](https://awa.agriadapt.eu)  es accesible para cualquier usuario pero está sujeta a la aceptación incondicional de las condiciones y avisos especificados. 
 
-## Conception and development
+## Concepción y desarrollo
 
-Conception and development: [Makina Corpus](https://makina-corpus.com/)
-Hosting: [Makina Corpus](https://makina-corpus.com/) 
+Concepción y desarrollo: [Makina Corpus](https://makina-corpus.com/) 
+Alojamiento:  [Makina Corpus](https://makina-corpus.com/) 
 
 Makina Corpus
 52 rue Jacques Babinet
 31100 Toulouse
 
-## Photo and illustration credits
+## Créditos de las fotos e ilustraciones 
 
-Photo: Unless otherwise stated, the rights to the photographs and documents on the site are the property of Solagro or of the partners of the [Life AgriAdapt](https://agriadapt.eu/?lang=fr) project. Any total or partial reproduction of the content of the site is therefore prohibited, within the meaning of article L.713-2 of the Intellectual Property Code.
+Fotos: excepto si se indica de otro modo, los derechos de las fotografías y documentos de esta página web son propiedad de Solagro o de los socios del proyecto Life AgriAdapt. Por tanto, cualquier reproducción total o parcial está prohibida por el artículo L.713-2 del Código de Propiedad Intelectual.
 
-## Responsibility
+## Responsabilidades
 
-Solagro makes every effort to ensure the accuracy and updating of all the information provided on its site but cannot guarantee that the information it contains is complete, precise, exact, exhaustive and free of any errors.
-Solagro reserves the right to correct or modify the content of the website at any time and without prior notice. Any attempt to transfer information to a third-party site or to modify the information contained on this site is prohibited and may result in civil or criminal proceedings on the part of Solagro.
-Solagro cannot be held responsible for all hypertext links or any other computer element used, directly or indirectly, from the "site", the existence of a link not having the effect of transferring responsibility to Solagro.
-Solagro does not guarantee or make any commitment concerning third party sites and will not be responsible for their content.
-Solagro cannot and does not guarantee that the server hosting the "site" is virus free and that the files accessible for download on this website or any other third-party site are free from viruses or operating errors. Since viruses can be transmitted over the Internet, we recommend that users take the necessary measures to protect their computer against intrusion, against any technical problem that could damage the components of the user's computer or data. that could be stored there.
-In any event Solagro or one of its subcontractors cannot be held liable for any damage that may occur during connection and navigation on the site.
+Solagro realiza un esfuerzo por asegurar una información actualizada y precisa en esta página web pero no puede garantizar que sea complete, precisa, exacta, exhaustiva y libre de errores. 
+Solagro se reserve el derecho de corregir o modificar el contenido de la página web sin previo aviso y en cualquier momento. Cualquier intento de trasferir esta información a terceros o modificarla queda prohibido y sujeto a un procedimiento legal por parte de Solagro.
+Solagro no es responsable de los hiperlinks (o cualquier otra formula) que se puedan incluir en otras páginas web y no se puede considerar como una transferencia de información. 
+Solagro no puede garantizar que el servidor que aloja la página web esté libre de virus y que los archivos descargables estén libres de virus o errores. Dado que los virus se transmiten fácilmente por internet, se recomienda a los usuarios utilizar los mecanismos necesarios para proteger sus equipos de cualquier intrusión o daño en los componentes de sus equipos o datos almacenados. En ningún caso, ni Solagro ni sus subcontratados son responsables de cualquier daño que se produzca al conectarse o navegar por la página web. 
 
-## Protection of personal data
+## Protección de datos personales
 
-We use cookies to provide the services and features offered on our site and to improve the experience of our users. Cookies are data that is downloaded or stored on your computer or any other device.
+Utilizamos cookies para optimizar los servicios ofrecidos en esta página web y para mejorar la experiencia de navegación. Las Cookies son datos que se descargan o almacenan en tu ordenador u otros dispositivos.
 
-Under article 34 of the law "Informatique et Libertés" of January 6, 1978 "You have the right to access, modify, rectify and delete data concerning you". To exercise this right, please contact:
+En función del artículo 34 de la Ley "Informatique et Libertés" del 6 de de 1978 "Tienes el derecho para acceder, modificar, rectificar y eliminar datos personales". Para ejercitar este derecho, por favor contacta con:
 Solagro
 75 voie du TOEC CS 27608
 31076 TOULOUSE CEDEX 3
-– Tél. + 33 (0)5 67 69 69 69 – email : solagro(at)solagro.asso(.)fr
+- Tel. + 33 (0)5 67 69 69 69 – Email: solagro(at)solagro.asso(.)fr
