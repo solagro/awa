@@ -152,8 +152,8 @@
   "chickpea-irrigated": "Garbanzo regadío",
   "choose your language": "choose your language",
   "climate-change": "climate-change",
-  "climate-observations": "climate-observations",
-  "climate-projections": "climate-projections",
+  "climate-observations": "Climate observations",
+  "climate-projections": "Climate projections",
   "climate-risk-region": "Región de riesgo climático",
   "climate_risk_region": "Región de riesgo climático",
   "close": "close",
@@ -176,7 +176,7 @@
   "ervil-irrigated": "Yeros regadío",
   "es": "es",
   "estival-days": "estival-days",
-  "estivalDays": "Durchschnittliche Sommertage pro Jahr (Anzahl Tage/Jahr)",
+  "estivalDays": "Días estivales media anual (nº días/año)",
   "et": "et",
   "farm-vulnerability-component": "Componente de vulnerabilidad de la explotación",
   "farm_vulnerability_component": "Componente de vulnerabilidad de la explotación",
@@ -394,7 +394,7 @@
   "winter-soft-wheat": "Trigo blando de invierno",
   "winter-wheat": "winter-wheat",
   "year": "year",
-  "yield-compilation": "yield-compilation",
+  "yield-compilation": "Yield compilation",
   "zone selection": "zone selection",
   "{{country}}. Available languages: English standard or {{language}} by changing the language of the site": "{{country}}. Available languages: English standard or {{language}} by changing the language of the site"
 }

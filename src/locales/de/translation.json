@@ -152,8 +152,8 @@
   "chickpea-irrigated": "Kichererbsen (bewässert)",
   "choose your language": "choose your language",
   "climate-change": "climate-change",
-  "climate-observations": "climate-observations",
-  "climate-projections": "climate-projections",
+  "climate-observations": "Climate observations",
+  "climate-projections": "Climate projections",
   "climate-risk-region": "Klimarisikoregion",
   "climate_risk_region": "Klimarisikoregion",
   "close": "close",
@@ -394,7 +394,7 @@
   "winter-soft-wheat": "Winterweizen",
   "winter-wheat": "winter-wheat",
   "year": "year",
-  "yield-compilation": "yield-compilation",
+  "yield-compilation": "Yield compilation",
   "zone selection": "zone selection",
   "{{country}}. Available languages: English standard or {{language}} by changing the language of the site": "{{country}}. Available languages: English standard or {{language}} by changing the language of the site"
 }
