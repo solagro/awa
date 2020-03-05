@@ -20,4 +20,4 @@ The implementation of a strategy for sustainable adaptation to climate change ta
 The proposed measures are therefore distinguished according to the possibility of implementation in the short, medium or long term. For each adaptation measure, it is possible to know more by a simple click: a summary sheet then appears, offering an overview of its overall durability through its possible impact (neutral, positive or adverse) on a set of 9 components: emission of greenhouse gases, air quality, soil, water etc.
 The sustainable adaptation measures are specific to each of the 4 climate zones proposed. For each zone, the measures are systematically available in English as well as in the language of the country it represents.
 
-![alt text](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Climate regions"){: style="float:right"}
+![alt text](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Climate regions"){style="float:right"}

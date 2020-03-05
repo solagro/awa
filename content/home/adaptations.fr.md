@@ -19,6 +19,6 @@ Ainsi, pour chacun des 3 systèmes agricoles étudiés, les mesures d’adaptati
 La mise en place d’une stratégie d’adaptation durable au changement climatique s’inscrit dans le temps. Les mesures proposées sont donc distinguées selon la possibilité d’une mise en œuvre à court, moyen ou long terme. Pour chaque mesure d’adaptation, il est possible d’en savoir plus par un simple clic : une fiche apparait alors, offrant une lecture une lecture de sa durabilité globale au travers de son impact possible (neutre, positif ou négatif) sur un ensemble de 9 composantes : émission de gaz à effet de serre, qualité de l’air, le sol, l’eau etc.
 Les mesures d’adaptations durables sont spécifiques de chacun des 4 zones climatiques proposées. Pour chaque zone, les mesures sont disponibles systématiquement en anglais ainsi que dans la langue du pays qu’il représente.
 
-![alt text](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Régions climatiques"){: style="float:right"}
+![alt text](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Régions climatiques"){style="float:right"}
 
 
