@@ -4,7 +4,6 @@ system: fruits-and-vineyards
 vulnerability: others
 ---
 
-Beyond the 4 main vulnerability components proposed, it is also possible to imagine adaptation measures related to other components of the farm. 
-Whether through the crop insurance system, the marketing schemes for the products implemented or even through the mobilization of current climate policies. 
-The implementation of an ambitious adaptation strategy must therefore also be open to these reflections.
-
+Über die 4 vorgeschlagenen Hauptanfälligkeitskomponenten hinaus ist es möglich, sich Anpassungsmaßnahmen in Bezug auf andere Komponenten des Betriebs vorzustellen. 
+Sei es durch die Einführung von Ernteversicherungen, Teilnahme an Marketingprogrammne für die Produkte oder sogar durch die Mobilisierung der aktuellen Klimapolitik. 
+Die Umsetzung einer ehrgeizigen Anpassungsstrategie muss daher auch für diese Überlegungen offen sein.

@@ -11,7 +11,7 @@ Los agricultores y ganaderos europeos tienen y tendrán que adaptarse a un clima
 
 Fue en este contexto que nació el proyecto europeo  AgriAdapt, respaldado por el programa LIFE de la Comisión Europea. Reúne a socios franceses, españoles, alemanes y estonios, que representan cuatro áreas afectadas por diferentes riesgos climáticos.
 
-![alt text](https://res.cloudinary.com/solagro/image/upload/v1582789041/homepage/5_Francais_letyqy.jpg "Principaux risques climatiques pour l'agriculture Européenne")
+![alt text](https://res.cloudinary.com/solagro/image/upload/v1582789041/homepage/3_Espagnol_mfb9tx.jpg "Sector agrario y Europeo y risegos climaticos")
 
 El objetivo del proyecto LIFE AgriAdapt es doble: evaluar la vulnerabilidad de los principales productos agrícolas europeos al cambio climático; pero también proponer planes de adaptación sostenibles que permitan que estos sistemas se vuelvan más resilientes. 
 Esta herramienta web de adaptación de AgriAdapt tiene como objetivo destacar los principales resultados del seguimiento de más de 120 granjas piloto en 4 países, compartiéndolas con el mayor número de usuarios en Europa. 

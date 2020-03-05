@@ -2,7 +2,7 @@
 
 ## Information about the website awa.agriadapt.eu 
 
-This website has been created by the project partners of [Life AgriAdapt](https://agriadapt.eu/?lang=fr)  : Solagro, Lake Constance Foundation, Fundación Global Nature and Estonian University of Life Sciences).
+This website has been created by the project partners of [Life AgriAdapt](https://agriadapt.eu/)  : Solagro, Lake Constance Foundation, Fundación Global Nature and Estonian University of Life Sciences).
 
 It is the property of [Solagro](https://solagro.org/), Association Loi 1901
  
@@ -12,7 +12,7 @@ Tel : +33 (0)5 67 69 69 69
 
 Email: solagro(at)solagro.asso(.)fr
 
-The website [https://awa.agriadapt.eu/fr](https://awa.agriadapt.eu/fr)  is accessible to users subject to their unconditional acceptance of the conditions and warnings recalled below.
+The website [https://awa.agriadapt.eu](https://awa.agriadapt.eu/)  is accessible to users subject to their unconditional acceptance of the conditions and warnings recalled below.
 
 ## Conception and development
 

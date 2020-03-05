@@ -1,7 +1,7 @@
 ---
 locale: de
 id: mapPresentation
-title: Yield & Climate (observations and projections)
+title: Erträge und Klima (Beobachtung, Projektionen)
 picto: "/images/pictos/observations.svg"
 altPicto: observations
 hrefBefore: "#quizPresentation"
@@ -11,15 +11,8 @@ buttonText: Go to the map
 order: 2
 ---
 
-Explicabo maiores corporis repellendus. Nemo vel aut perferendis similique sunt
-aliquid. Nulla ut similique a error est quasi et ex repellendus. Tempore
-molestiae et minus nobis placeat facilis omnis. Et perferendis sapiente. Nulla
-voluptatem ipsum.
+Dieses Modul besteht aus einem Karteneintrag, der agronomische (Erträge) und klimatische (Beobachtungen und Projektionen) Daten für verschiedene geographische Standorte in ganz Europa vorschlägt.
 
-Voluptates quis in. Porro occaecati fugiat delectus. Exercitationem ipsum ut
-porro consequatur. Et aut et quidem nostrum. Quaerat non numquam dicta quisquam
-voluptas ut commodi.
+Bewegen Sie die Karte einfach auf das gewünschte Gebiet und zoomen Sie dann heran, um den gewünschten Ort genauer zu identifizieren. Jedes kleine orangefarbene Quadrat (oder Gitterpunkt) auf der Karte ermöglicht es Ihnen dann, lokale Daten mit einem einzigen Klick anzuzeigen.
 
-Nisi sunt veniam quia asperiores. Ut odio ut officiis et illum adipisci corrupti
-quae. Est eveniet aut possimus optio occaecati est et dolores voluptate. Nostrum
-aut omnis odio eum sunt. Velit autem deleniti.
+Für jeden Rasterpunkt zeigt eine Zusammenstellung der Jahreserträge verschiedener Kulturen (Zeitraum 2000-2017) zunächst die Variabilität der Leistung in Bezug auf die Erträge auf. Dann wird eine Beschreibung des vergangenen Klimas (Beobachtungen für den Zeitraum 1987-2016) durch verschiedene Graphiken für verschiedene Variablen dargestellt: Temperatur, Niederschlag, Anzahl der Frosttage, usw. Die Klimaprojektionen veranschaulichen schließlich in Form von 10 Grafiken die Klimaveränderungen für die nahe Zukunft (2017-2046), die dann durch 19 agroklimatische Indikatoren für Ackerbaukulturen, Tierhaltung, Wein- und Obstbau ergänzt werden.

@@ -2,7 +2,7 @@
 
 ## Información sobre el sitio web awa.agriadapt.eu 
 
-Esta página web ha sido creada por los socios del proyecto [Life AgriAdapt](https://agriadapt.eu/?lang=fr) : Solagro, Lake Constance Foundation, Fundación Global Nature y Estonian University of Life Sciences.
+Esta página web ha sido creada por los socios del proyecto [Life AgriAdapt](https://agriadapt.eu/) : Solagro, Lake Constance Foundation, Fundación Global Nature y Estonian University of Life Sciences.
 
 Es propiedad de [Solagro](https://solagro.org/), asociación lega por Ley 1901. 
 Sede central: 75 Voie du TOEC – CS 27608 – 31076 TOULOUSE Cedex 3 
@@ -39,4 +39,4 @@ En función del artículo 34 de la Ley "Informatique et Libertés" del 6 de de 1
 Solagro
 75 voie du TOEC CS 27608
 31076 TOULOUSE CEDEX 3
-- Tel. + 33 (0)5 67 69 69 69 – Email: solagro(at)solagro.asso(.)fr
+– Tel. + 33 (0)5 67 69 69 69 – Email: solagro(at)solagro.asso(.)fr
