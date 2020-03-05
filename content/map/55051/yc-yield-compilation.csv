@@ -1,10 +1,10 @@
-year,wheat,maize-for-grain-irrigated,triticale,processing-tomato-irrigated,permanent-grasslands,pepper,winter-durum--wheat,spring-durum-wheat,winter-soft-wheat,spring-soft-wheat,cereals-mixed-and-only-cereals,fodder-kale,cauliflower,winter-rapeseed,spring-rapeseed,fodder-green-rape,spelt,winter-field-bean,spring-field-bean,bean,lentils,flax-fibre,linseed-oild,seed-flax,lupine,lucerne,sweet-maize,maize-silage,maize-silage-irrigated,maize-for-grain-irrigated,maize-for-grain-rainfed,seed-maize,meslin,millet,miscanthus,forage-turnip,spring-barley,winter-barley,poppy,pear,chickpea,winter-field-peas,spring-field-peas,pepper,apple,potatoes,temporary-grasslands,permanent-grasslands,rice,buckwheat,rye,soybean,fodder-sorghum,grain-sorghum,switchgrass,brown-tobacco,bright-tobacco,tomatoe,sunflower,triticale,vetch,vineyards,vineyards-irrigated
-,kg/ha,kg/ha,kg/ha,tn/ha,Kg DM/ha,kg/ha
-2000,5052,10200,3200,,1422.67,16667
-2001,4203,12000,3100,,878.40,19333
-2002,3877,10100,4000,,1608.67,19826
-2003,,9530,2500,59.07,1585.33,22095
-2004,,,,64.19,885.59
+year,wheat,maize-for-grain-irrigated,triticale,processing-tomato-irrigated,permanent-grasslands,pepper
+,Kg-ha,Kg-ha,Kg-ha,Tons-ha,Q-DM-ha,Kg-ha
+2000,5052,10200,3200,,14.23,16667
+2001,4203,12000,3100,,8.78,19333
+2002,3877,10100,4000,,16.09,19826
+2003,,9530,2500,59.07,15.85,22095
+2004,,,,64.19,8.86
 2005,2546,10200,1905,64.24,,21500
 2006,4600,9300,2800,70.88,,23223
 2007,3860,11520,2650,89.34,,27391
@@ -18,3 +18,10 @@ year,wheat,maize-for-grain-irrigated,triticale,processing-tomato-irrigated,perma
 2015,,,,101.45
 2016,,,,84.96
 2017,,,,97.85
+
+
+
+
+
+
+
