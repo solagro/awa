@@ -7,6 +7,12 @@
   ],
   "question": "More crop diversity at farm level leads to:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "En relación a los **cultivos leñosos**, éstos pueden ser mucho más rentables y sufrirían menos problemas por erosión si se combinaran con otros cultivos, como oleaginosas o plantas aromáticas.\n\nEn concreto en el caso del olivar, existen experiencias piloto en las que se utilizan **oleaginosas para el ganado, plantas aromáticas, medicinales o, incluso, aloe vera entre las calles del olivar**. Intercalar los citados cultivos con el olivar es, por tanto, una técnica clave para facilitar el anclaje de la población en zonas rurales y el relevo generacional, sobre todo en zonas de olivar de montaña o pendiente, donde el abandono de la tierra suele ser más acusado.\n\nPor otro lado, intercalar **tomillo, lavanda o romero entre las calles de los almendros, o cultivos hortícolas como las lechugas o el brócoli entre los árboles frutales**, son otros ejemplos de diversificación.\n\nComo ejemplo de **diversificación en cultivos herbáceos**, los efectos negativos del monocultivo de cereales en secano bien podrían salvarse con rotación y diversificación de cultivos introduciendo **habas, veza, alfalfa, lentejas o garbanzos, entre muchos otros** (dependiendo de la región).\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583519509/learn_more/FGN39_fttrye.png \"Ejemplo de diversificación en olivar: introducción de cebada entre líneas\")\n\nFuente: ABC de Sevilla y Fundación Global Nature\n\n<https://sevilla.abc.es/economia/sevi-olivar-mas-rentable-si-intercala-otros-cultivos-201803190740_noticia.html>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
@@ -23,5 +29,6 @@
   "answers": "X Higher risks of pests and diseases attacks\nV Lower economic risks\nX Less biodiversity\nX Answers 2 and 3 are both correct",
   "title": "306 Categorie 3",
   "explanation": "If the size of the farm allows it, crop diversification helps to overcome the changing conditions of the market. Also, the impact of certain climatic events won’t affect all crops equally, avoiding high yield losses at farm level.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "In relation to **permanent crops**, these can be much more profitable and would suffer less erosion problems if combined with other crops, such as oilseeds or aromatic plants.\n\nIn the case of olive groves in particular, there are pilot experiments in which **oilseeds for livestock, aromatic plants, medicinal plants, or even aloe vera are sown or planted between the tree lines**. Interspersing the above-mentioned crops within the olive grove can be a good measure to halt depopulation in rural areas and facilitate the generational change, especially in hilly or sloping olive grove areas, where the abandonment of the land is usually higher.\n\nAlso, intercalating **thyme, lavender or rosemary between the lines of the almond trees**, or **horticultural crops such as lettuce or broccoli between the fruit trees**, can be a good example of diversification.\n\nAs for **diversification in arable crops**, the negative effects of rain-fed cereal monoculture could well be overcome with crop rotation and diversification by introducing **fava beans, vetch, alfalfa, lentils or chickpeas, among many others** (depending on the region).\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583519509/learn_more/FGN39_fttrye.png \"Example of diversification in olive grove: growing barley between tree lines  \")\n\nSource: ABC de Sevilla and Fundación Global Nature\n\n<https://sevilla.abc.es/economia/sevi-olivar-mas-rentable-si-intercala-otros-cultivos-201803190740_noticia.html>"
 }
