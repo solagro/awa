@@ -7,6 +7,12 @@
   ],
   "question": "In lentil crops, a higher number of days with temperatures above 30 degrees Celsius between April and June can cause:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "Tras la evaluación de riesgos climáticos llevada a cabo con la herramienta ACZ (desarrollada en el marco del proyecto AgriAdapt) en diferentes países de la Región meridional europea, se obtuvo que unos de los Indicadores Agroclimáticos que afectan a la producción de lenteja es el **número de días con temperaturas por encima de los 30º C**. Según la bibliografía científica, **esta disminución en los rendimientos se debe, entre otras causas, al menor número de flores producidas y las menores tasas de fertilización**.\n\nLas proyecciones para los próximos 30 años muestran que este número de días va a aumentar en el futuro próximo. A continuación, se muestra uno de los gráficos obtenidos para Castilla-La mancha (España), con la evolución de este indicador.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583517527/learn_more/FGN29_jkr93q.png \"Número de días con temperaturas por encima de los 30º C entre abril y junio\")\n\nLos impactos productivos asociados ya se están notando en países como España, donde en el año 2017 cayó la producción de leguminosas entre un 40% y un 100% con respecto al año anterior.\n\nFuente: AgriAdapt y Elperiodico.com\n\n<https://www.elperiodico.com/es/economia/20170622/la-ola-de-calor-impacta-en-la-actividad-economica-6119271>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
@@ -23,5 +29,6 @@
   "answers": "V Fewer flowers and lower yields\nX Increase in yields \nX Higher fertility of flowers \nX Answers 2 and 3 are both correct",
   "title": "208 Categorie 2",
   "explanation": "The lower flower production in lentils due to the thermal stress comes along inevitably with lower yields.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "After the climate risks assessment carried out with the ACZ Tool (developed within the frame of the AgriAdapt project) in different countries of the Meridional region, one of the Agro-Climatic Indicators identified for lentils was **the amount of days with temperatures above 30 degrees Celsius**. According to several scientific publications, **this yield reduction comes as a consequence of, among other things, the lower number of flowers and lower fertility rates**. \n\nThe projections for the coming 30 years show that this number of days is going to increase in a near future. Below, one of the graphics obtained for Castilla-La Mancha (Spain) with the evolution of this indicator can be seen.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583517527/learn_more/FGN29_jkr93q.png \"Number of days with temperatures above 30 degrees Celsius between April and June \")\n\nThe associated impacts on production can already be noticed in countries such as Spain, in which the production of legumes dropped between 40% and 100% compared to the previous year in 2017.\n\nSource: AgriAdapt and Elperiodico.com\n\n<https://www.elperiodico.com/es/economia/20170622/la-ola-de-calor-impacta-en-la-actividad-economica-6119271>"
 }
