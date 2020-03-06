@@ -7,6 +7,12 @@
   ],
   "question": "In vineyards, strong rainfall events in August can lead to:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "Las proyecciones climáticas muestran que las **precipitaciones diarias intensas en verano tenderán a aumentar en la mayor parte de Europa, aunque se verán reducidas en algunas regiones del sur y suroeste**. En las regiones en las que aumentan, **los daños en viñedo pueden ser significativos**.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583517758/learn_more/FGN30_rhfn1x.png \"Proyección de los cambios en las precipitaciones intensas en invierno y verano. Fuente: EEA, 2016.\")\n\n**Con respecto a las granizadas, éstas están sujetas a grandes incertidumbres**, pues en los modelos climáticos globales y regionales no se pueden representar directamente las granizadas a pequeña escala. \n\nLos daños económicos en viñedos asociados a episodios de fuertes lluvias en verano se hacen notar cada vez con más frecuencia en algunas zonas de la Región meridional europea, como fue el caso de 2018 en la localidad de Montilla (Córdoba, España), donde unas 500 hectáreas de viña y 500.000 kilos de uva se perdieron por un evento puntual de lluvia y granizo en el mes de agosto. \n\nFuente: Informe de Referencia AgriAdapt y ABC Córdoba\n\n<https://agriadapt.eu/wp-content/uploads/2017/04/Informe-de-referencia-Meridional-FINAL_V2.pdf>\n\n<https://sevilla.abc.es/andalucia/cordoba/sevi-tormentas-provocan-graves-danos-olivar-y-vina-montilla-cordoba-201808211239_noticia.html>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
@@ -23,5 +29,6 @@
   "answers": "V Damage of grapes and lower yields\nX Fewer fungal diseases and higher yields\nX Higher water deficit\nX Lower erosion rates",
   "title": "209 Categorie 2",
   "explanation": "Either due to the water accumulated between the grapes that causes fungal diseases, or mechanical damage due to hail, yield losses can be very high in this period.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Either due to the water accumulated between the grapes that causes fungal diseases, or mechanical damage due to hail, yield losses can be very high in this period.\n\nClimate projections show that heavy rainfall events during the summer will tend to increase in Europe, although they will be reduced in certain areas of the South. In the regions where heavy rainfall events increase, great damage in vineyards can be expected. \n\n![](https://res.cloudinary.com/solagro/image/upload/v1583517758/learn_more/FGN30_rhfn1x.png \"Projections of the changes of heavy rainfall events during the summer and Winter. Source: EEA, 2016.\")\n\n**Regarding hail events, there are high uncertainties**, since global and regional climatic models cannot represent directly hail events at a small scale. \n\nEconomic damages in vineyards associated to heavy rainfall events can be noticed in greater frequency in certain areas of the European Southern region, as it was the case of the municipality Montilla in 2018 (Córdoba, Spain), in which 500 hectares of vineyards and 500,000 kilos of grapes were lost due to an occasional hail and heavy rainfall event in August. \n\nSource: Baseline Report AgriAdapt and ABC Córdoba\n\n<https://agriadapt.eu/wp-content/uploads/2017/04/A1_Baseline-report_Full-version_V3.pdf>\n\n<https://sevilla.abc.es/andalucia/cordoba/sevi-tormentas-provocan-graves-danos-olivar-y-vina-montilla-cordoba-201808211239_noticia.html>"
 }
