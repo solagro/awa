@@ -11,7 +11,7 @@ buttonText: See measures
 order: 3
 ---
 
-![alt text](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/weather_events_bpmfaq.png "Weather events")
+![](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/weather_events_bpmfaq.png "Weather events")
 
 Este módulo está dedicado a medidas de adaptación sostenibles que se pueden prever a escala de explotación agraria. La vulnerabilidad agroclimática de una explotación a menudo depende de varios factores climáticos, por lo que es necesario percibir la implementación de medidas de adaptación diferenciadas. Por lo tanto, para cada uno de los 3 sistemas agrarios  estudiados, las medidas de adaptación sostenible se clasifican de acuerdo con 4 componentes de la vulnerabilidad agrícola. Por ejemplo, en cultivos herbáceos, las medidas propuestas buscarán mejorar la capacidad de recuperación del sistema de cultivo, las variedades cultivadas, la dependencia del agua o incluso el suelo y las prácticas agrícolas.
 
@@ -21,4 +21,5 @@ The sustainable adaptation measures are specific to each of the 4 climate zones 
 
 Las medidas de adaptación sostenible son específicas para cada una de las 4 regiones de riesgo climático propuestas. Para cada zona, las medidas están sistemáticamente disponibles en inglés y en el idioma del país que representa.
 
-![alt text](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Climate regions"){style="float:right"}
+![](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Climate regions")
+
