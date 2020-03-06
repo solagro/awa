@@ -4,7 +4,6 @@ system: cereals
 vulnerability: others
 ---
 
-Beyond the 4 main vulnerability components proposed, it is also possible to imagine adaptation measures related to other components of the farm. 
-Whether through the crop insurance system, the marketing schemes for the products implemented or even through the mobilization of current climate policies. 
-The implementation of an ambitious adaptation strategy must therefore also be open to these reflections.
-
+Además de los 4 componentes de vulnerabilidad propuestos, el usuario también debería plantearse medidas de adaptación relacionadas con otros aspectos de la explotación. 
+Por ejemplo, la utilización de seguros agrarios, ciertas estrategias de elaboración y marketing o la adopción de medidas recogidas en políticas agroambientales, pueden ayudar a la adaptación. 
+En definitiva, se trata de darle un enfoque ambicioso a cualquier estrategia de adaptación que se contemple.
