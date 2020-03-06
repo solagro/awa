@@ -7,6 +7,12 @@
   ],
   "question": "In permanent crops, the implementation of cover crops during the winter can:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "**El uso de la cubierta vegetal en los cultivos permanentes se ha demostrado como una herramienta imprescindible en la lucha contra la erosión del suelo**, que también beneficia a los árboles y al propio cultivo. Las cubiertas vegetales son claves para mantener la capacidad productiva de los suelos a largo plazo, debido no solo a la conservación del propio suelo, sino también en su capacidad para almacenar agua.\n\nUna de las principales ventajas de mantener esta vegetación es que **evitan las escorrentías**, que favorecen la erosión del suelo y la desertificación. Otro gran beneficio es que las hierbas atraen pequeños animales que realizan un control natural de las plagas.\n\nAdemás, la cubierta vegetal en cultivos leñosos tiene la **capacidad de actuar como un sumidero natural de carbono**, secuestrándolo del CO2 presente en la atmósfera que causa en gran parte del efecto invernadero y del calentamiento global.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583518380/learn_more/FGN34_krohor.png \"Olivar con y sin cubierta vegetal dentro del proyecto GO Leñosost\")\n\nFuente: Olivocongreso.com y GO Leñosost\n\n<https://olivecongreso.com/la-cubierta-vegetal-del-olivar-ayuda-a-retener-el-agua-frena-la-desertificacion-y-la-erosion/>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
@@ -23,5 +29,6 @@
   "answers": "V Reduce erosion rates\nX Reduce the water storing capacity of the soil\nX Worsen soil structure\nX Answers 1 and 2 are both correct",
   "title": "301 Categorie 3",
   "explanation": "A soil covered during the period of higher precipitations (autumn/winter/spring) is less prone to erosion. Sometimes, in order to avoid the competition of the cover crop with the main crop in rainfed farms, this cover is mown or incorporated into the soil in spring. In autumn, the cover will develop itself again or will be re-sown.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "**The use of cover crops on permanent crops has proven to be an indispensable tool in the fight against soil erosion**, which also benefits the trees and the crop itself. Ground cover is key to maintaining the long-term productive capacity of soils, due not only to the conservation of the soil itself, but also in its capacity to store water.\n\nOne of the main advantages of maintaining this vegetation is that **it prevents water run-off**, which encourages soil erosion and desertification. Another great benefit is that the herbs attract small animals that perform a natural control of pests.\n\nIn addition, **the cover crops in permanent crops have the capacity to act as a natural sink for carbon**, sequestrating it from the CO2 present in the atmosphere, which causes a great deal of the greenhouse effect and global warming.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583518380/learn_more/FGN34_krohor.png \"Olive grove with and without soil cover. GO Leñosost project \")\n\nSource: Olivocongreso.com and GO Leñosost\n\n<https://olivecongreso.com/la-cubierta-vegetal-del-olivar-ayuda-a-retener-el-agua-frena-la-desertificacion-y-la-erosion/>"
 }
