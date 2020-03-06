@@ -7,6 +7,12 @@
   ],
   "question": "In the Southern region, rainfall episodes in a near future will be:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "Las proyecciones muestran un **aumento en las precipitaciones diarias intensas en la mayor parte de Europa en invierno**, hasta un 35% durante el siglo XXI. Se prevé que las precipitaciones intensas en invierno aumenten en la mayor parte de Europa, con incrementos de hasta un 30% en el noroeste. En verano, se prevé también un aumento en la mayor parte de Europa, pero se prevén reducciones en algunas regiones del sur y suroeste (EEA, 2016).\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583512653/learn_more/FGN20_ew7qlg.png \"Proyección de los cambios en las precipitaciones intensas en invierno y verano. Fuente: EEA, 2016.\")\n\nLas proyecciones climáticas también indican que el calentamiento global **intensificará el ciclo hidrológico** e incrementará el número de inundaciones y su frecuencia en grandes regiones de Europa. Es probable que las **crecidas repentinas y las inundaciones**, que vienen desencadenadas por episodios locales de precipitaciones intensas, se vuelvan más frecuentes en toda Europa. En regiones donde la proyección indica una reducción de la acumulación de nieve durante el invierno, el riesgo de inundaciones en primavera temprana podría disminuir. Sin embargo, las proyecciones cuantitativas de los cambios en la frecuencia y la magnitud de las inundaciones siguen siendo inciertas (EEA, 2012).\n\nFuente: Informe de Referencia AgriAdapt\n\n[https://agriadapt.eu/wp-content/uploads/2017/04/Informe-de-referencia-Meridional-FINAL_V2.pdf ](https://agriadapt.eu/wp-content/uploads/2017/04/Informe-de-referencia-Meridional-FINAL_V2.pdf)"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
@@ -23,5 +29,6 @@
   "answers": "V More intense but less frequent\nX Less intense but more frequent\nX Less intense and less frequent\nX They won’t change compared to the current period",
   "title": "200 Categorie 2",
   "explanation": "In the Southern region, more frequent and less intense rainfalls will lead to more flood events and higher erosion rates. Soil must be prepared to infiltrate and store water more effectively, making it available for the crop until the next rainfall event takes place.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Projections show **an increase in heavy daily precipitation in most parts of Europe in winter**, but up to 35% during the 21st century. Heavy precipitation in winter is projected to increase over most of Europe, with increase of up to 30% in north-eastern Europe. In summer, an increase is also projected in most parts of Europe, but decreases are projected for some regions in southern and south-western Europe 8EEA, 2016).\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583512653/learn_more/FGN20_ew7qlg.png \"Projected changes in heavy precipitation in Winter and summer. Source: EEA, 2016.\")\n\nGlobal warming is projected to intensify the hydrological cycle and increase the occurrence and frequency of flood events in large parts of Europe. Flash floods and pluvial floods, which are triggered by local intense precipitation events, are likely to become more frequent throughout Europe. In regions with projected reduced snow accumulation during the winter, the risk of early spring flooding could decrease. However, quantitative projections of changes in flood frequency and magnitude remain highly uncertain (EEA, 2012).\n\nSource: Baseline Report AgriAdapt\n\n[https://agriadapt.eu/wp-content/uploads/2017/04/A1_Baseline-report_Full-version_V3.pdf ](https://agriadapt.eu/wp-content/uploads/2017/04/A1_Baseline-report_Full-version_V3.pdf)"
 }
