@@ -7,6 +7,12 @@
   ],
   "question": "In pastures, drought periods between April and June can lead to:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "**Sobretodo en el caso de los tréboles, muchas especies detienen o ralentizan mucho su crecimiento en condiciones secas y cálidas.** Aunque son especies generalmente tolerantes a la sequía, se verán amenazadas por otras especies de monocotiledóneas que compiten mejor en estas condiciones, desplazando a las leguminosas de la mezcla en el pasto.\n\nEn el siguiente gráfico se pueden ver los cambios proyectados a nivel de precipitación anual y durante el verano en Europa en el periodo 2071 - 2100, con respecto al periodo de referencia 1971 – 2000. En este escenario, el fenómeno descrito anteriormente se acentuará.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583517049/learn_more/FGN27_jwbptw.png \"Proyección de los cambios en las precipitaciones anuales y estivales (EEA, 2016)\")\n\nFuente: Informe de Referencia AgriAdapt y FAO\n\n<https://agriadapt.eu/wp-content/uploads/2017/04/Informe-de-referencia-Meridional-FINAL_V2.pdf>\n\n<http://www.fao.org/3/x7660s/x7660s0a.htm>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
@@ -23,5 +29,6 @@
   "answers": "X More development of legume species \nV Less development of legume species\nX More biomass production\nX Better germination rate ",
   "title": "206 Categorie 2",
   "explanation": "Certain legumes with a more superficial root system in pastures of the Southern region grow mostly during the Spring. These legumes are very important to increase the protein content of the pasture. In dry periods, they will grow less, with a negative impact on animal nutrition.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "**Especially in the case of clover, many species stop or slow down their growth in dry and hot conditions**. Although these are generally drought-tolerant species, they will be threatened by other monocotyledon species which thrive better under these conditions, displacing legumes from pastures. \n\nIn the following graphic, the projected changes for annual and summer precipitations in Europe in the period 2071 – 2100 can be seen, compared to the baseline period 1971 – 2000. In this scenario, the phenomena described above will be enhanced. \n\n![](https://res.cloudinary.com/solagro/image/upload/v1583517049/learn_more/FGN27_jwbptw.png \"Projections of changes in anual and summer precipitations (EEA, 2016)\")\n\nSource: Baseline Report AgriAdapt and FAO\n\n<https://agriadapt.eu/wp-content/uploads/2017/04/A1_Baseline-report_Full-version_V3.pdf>\n\n<http://www.fao.org/3/x7660s/x7660s0a.htm>"
 }
