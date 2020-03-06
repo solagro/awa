@@ -7,6 +7,12 @@
   ],
   "question": "Traditional and local varieties are, generally:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "**Las variedades tradicionales destacan como la mejor herencia de nuestros antepasados**, que domesticaron y modelaron los cultivos actuales a partir de formas silvestres. Sin embargo, desde hace algunas décadas, se están olvidando, marginando y perdiendo de forma irreversible algunas de ellas. Una de las causas es la **sustitución por otras variedades que responden mejor ante una agricultura intensiva**, proporcionando mayores rendimientos. \n\nNo obstante, diversas experiencias demuestran que las variedades locales adaptadas a las condiciones específicas de cultivo en una zona determinada presentan algunas ventajas como un mayor porcentaje de materia seca, una calidad organoléptica muchas veces superior y una **producción más estable en el tiempo**.\n\nAsimismo, las variedades locales poseen dos características que les hacen especialmente interesantes:\n\n* Son poblaciones heterogéneas, lo cual les confiere una mayor estabilidad frente a las perturbaciones\n* Se han desarrollado a partir de la selección hecha por agricultores\n\nFuente: Agroecología.net\n\n<https://www.agroecologia.net/wp-content/uploads/2016/10/variedades-locales-rosello-vd.pdf>[](https://www.agroecologia.net/wp-content/uploads/2016/10/variedades-locales-rosello-vd.pdf)"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
@@ -23,5 +29,6 @@
   "answers": "X More productive\nV Less productive but with a productivity more stable in time\nX More prone to pests and diseases attacks\nX Less appropriate for adaptation to climate change",
   "title": "304 Categorie 3",
   "explanation": "Traditional varieties behave, generally, as long-distance runners. They don’t have very high picks of productivity but it remains more stable in time, being less affected by certain climatic parameters.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "**Traditional varieties stand out as the best heritage of our ancestors**, who domesticated and shaped today's crops from wild species. However, for some decades now, some of them are being forgotten, marginalized and irreversibly lost. One of the causes is the **replacement by other varieties that respond better to intensive agriculture**, providing higher yields. \n\nHowever, various experiences show that local varieties adapted to the specific growing conditions in a given area have some advantages such as a higher percentage of dry matter, an organoleptic quality that is sometimes higher, and **a more stable production over time**.\n\nThe local varieties also have two characteristics that make them particularly interesting:\n\n* They are heterogeneous populations, which gives them greater stability against disturbances\n* They have been developed from the selection made by farmers\n\nSource: Agroecología.net\n\n<https://www.agroecologia.net/wp-content/uploads/2016/10/variedades-locales-rosello-vd.pdf>"
 }
