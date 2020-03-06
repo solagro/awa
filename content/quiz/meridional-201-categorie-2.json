@@ -7,6 +7,12 @@
   ],
   "question": "Maximum temperatures above 30 degrees Celsius in May can cause:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "Un análisis global del **rendimiento de los cultivos de cereales** ha demostrado **descensos de rendimiento debido al incremento de temperaturas medias**. Al incremento de temperaturas también se ha atribuido una de las principales causas de la **falta de incremento de rendimiento** en el trigo en Francia, a pesar de las mejoras en las técnicas de cultivo.\n\nDurante las olas de calor estival de los años 2003 y 2010, las pérdidas en las cosechas de cereales alcanzaron el **20%** en las regiones afectadas de Europa. En 2004/2005, la producción de cereales en la Península Ibérica cayó un **40%** (IPCC, 2014).\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583512901/learn_more/FGN20_pv0b2w.png \"Impacto en la producción agrícola de 2003 e impacto financiero. Adaptado de UNEP/DEWA (2004); datos de COPA-COGECA (2003)\")\n\n**El asurado del grano** se produce durante el último tercio del periodo de maduración, cuando coincide con vientos calurosos y secantes. La circulación de agua en la planta se realiza con dificultad, y si la desecación producida por el viento no puede reponerse, se anticipa la desecación del grano, quedando éste mermado, arrugado y con poco peso.\n\nPara controlar el asurado se debe aumentar las reservas de agua en el suelo y emplear variedades resistentes a la sequía, sobre todo las precoces, que pueden estar ya maduras al comenzar el asurado.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583512983/learn_more/FGN21_wp1uoo.png \"Efecto de vientos secos y cálidos en el último tercio del ciclo del trigo\")\n\nFuente: Informe de Referencia AgriAdapt e Infoagro\n\n<https://agriadapt.eu/wp-content/uploads/2017/04/Informe-de-referencia-Meridional-FINAL_V2.pdf>\n\n<https://www.infoagro.com/herbaceos/cereales/trigo3.htm>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
