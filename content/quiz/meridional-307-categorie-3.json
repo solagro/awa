@@ -7,6 +7,12 @@
   ],
   "question": "Low tillage (fewer tillage operations and at a maximum of 20 cm depth) entails:",
   "theme": "meridional",
+  "learn-more-i18n": [
+    {
+      "language": "es",
+      "learn-more": "El laboreo de conservación se refiere a la superficie de cultivo trabajado con un laboreo de conservación (bajo), que es una práctica o sistema de prácticas de laboreo que deja parte de los residuos vegetales (al menos el 30%) en la superficie del suelo para el control de la erosión y la conservación de la humedad, normalmente no volteando el terreno.\n\nEl laboreo de conservación puede incluir los siguientes sistemas: \n\n* **Laboreo en franjas**: se refiere a un sistema en el que se preparan franjas de 5 a 20 cm de ancho para recibir la semilla mientras el suelo a lo largo de las franjas intermedias no es perturbado y permanece cubierto de residuos. \n* **El laboreo vertical**: se refiere a un sistema en el que la superficie de cultivo se prepara con equipos que no voltean el terreno y que causan poca compactación. Por esta razón, la superficie normalmente permanece con una buena cobertura de residuos vegetales en la superficie. \n* **El laboreo en cresta**: es un sistema de crestas y surcos. Las crestas pueden ser estrechas o anchas y los surcos pueden ser paralelos a las curvas de nivel o construidos con una ligera pendiente, según se trate de conservar la humedad o de drenar el exceso de humedad. Las crestas pueden ser semipermanentes o construirse cada año, lo condicionará la cantidad de material residual que quede en la superficie.\n\nFuente: Comisión Europea[](<  https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Conservational_tillage>)\n\n[https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Conservational_tillage](<  https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Conservational_tillage>)"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "es",
@@ -23,5 +29,6 @@
   "answers": "X Worse soil structure\nX Less water retention capacity of the soil\nV Better soil structure \nX More erosion",
   "title": "307 Categorie 3",
   "explanation": "A superficial tillage without turning the soil over helps to improve soil structure preventing different soil horizons from mixing and enhancing the development of diverse beneficial organisms such as arthropods or worms, which enhance pores formation and aeration. A reduction in the number of operations per year reduces soil compaction.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "**Conservational tillage** refers to the arable land treated by conservation (low) tillage, which is a tillage practice or system of practices that leaves plant residues (at least 30 %) on the soil surface for erosion control and moisture conservation, normally by not inverting the soil.\n\nConservation tillage can include the following systems: \n\n* **Strip tillage or zonal tillage** refers to a system where strips 5 to 20 cm in width are prepared to receive the seed whilst the soil along the intervening bands is not disturbed and remains covered with residues. The system causes more soil disturbance and provides less cover along the rows than zero tillage. \n* **Tined tillage or vertical tillage** refers to a system where the arable land is prepared with equipment which does not invert the soil and which cause little compaction. For this reason, the surface normally remains with a good cover of residues on the surface. \n* **Ridge tillage** is a system of ridges and furrows. The ridges may be narrow or wide and the furrows can be parallel to the contour lines or constructed with a slight slope, depending on whether the objective is to conserve moisture or to drain excess moisture. The ridges can be semi-permanent or be constructed each year which will govern the amount of residue material that remains on the surface.\n\nSource: European Commission\n\n<https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Conservational_tillage>"
 }
