@@ -7,6 +7,12 @@
   ],
   "question": "What is climate change?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Klimaabweichungen und deren Auswirkungen betreffen die Erde als Ganzes und alle klimatischen Parameter, jedoch sind bestimmte Regionen in unterschiedlichem Maße davon betroffen.\n\nBeobachtungen des Klimasystems beruhen auf direkten Messungen und Fernerkundung durch Satelliten und andere Plattformen. Beobachtungen im globalen Maßstab aus der Zeit der instrumentellen Messungen begannen Mitte des 19. Jahrhunderts bezüglich Temperatur und anderen Messgrößen, wobei umfassendere und unterschiedliche Beobachtungsdatensätze in der Zeit von 1950 an verfügbar sind.\n\nDie Erwärmung des Klimasystems ist eindeutig, und viele der seit den 1950er Jahren beobachteten Veränderungen waren vorher über Jahrzehnte bis Jahrtausende nie aufgetreten. Die Atmosphäre und der Ozean haben sich erwärmt, die Schnee- und Eismengen sind zurückgegangen, der Meeresspiegel ist angestiegen und die Konzentrationen der Treibhausgase haben zugenommen.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583688157/learn_more/LCF4_azwjnt.png)\n\n<https://www.de-ipcc.de/224.php>\n\n<https://www.de-ipcc.de/media/content/AR5-WGI_SPM.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "X A normal change in the weather that occurs at a certain time, e.g. heat waves in July.\nV A global deviation of the earth's climate. This is due both to natural causes and, above all, to human activity and occurs in very different time scales and on all climatic parameters: temperature, precipitation, cloud cover etc.\nX A small rise in temperature that will occur in the distant future due to natural phenomena such as the greenhouse effect.\nX Climate change is the fluctuation of the weather that occurs at a certain time in a certain place.",
   "title": "102 Categorie 1",
   "explanation": "It is certain that the rapidly changing climate is mainly altered by human influence. A significant factor is the emission of so-called greenhouse gases (GHG), which contribute to the steady warming of the atmosphere.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "Climate variability and its effects affect the earth as a whole and all climatic parameters, but some regions are affected to varying degrees.\n\nObservations of the climate system are based on direct measurements and remote sensing from satellites and other platforms. Global-scale observations from the instrumental era began in the mid-19th century for temperature and other variables, with more comprehensive and diverse sets of observations available for the period 1950 onwards.\n\nWarming of the climate system is unequivocal, and since the 1950s, many of the observed changes are unprecedented over decades to millennia. The atmosphere and ocean have warmed, the amounts of snow and ice have diminished, sea level has risen, and the concentrations of greenhouse gases have increased.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583688157/learn_more/LCF4_azwjnt.png)\n\n<https://www.ipcc.ch/site/assets/uploads/2018/02/FigSPM-01.jpg>\n\n<https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-climate-change-k4.html>"
 }
