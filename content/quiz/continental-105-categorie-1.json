@@ -7,6 +7,12 @@
   ],
   "question": "How does climate change affect heavy precipitation?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Höhere Verdunstung und gleichzeitig eine höhere Wasseraufnahmekapazität der wärmeren Luft können zu häufigeren bzw. zu verstärkten Niederschlägen führen.\n\nBei der Wettervorhersage hat zum Beispiel der Deutsche Wetterdienst (DWD) die Warnkriterien für Starkniederschlag folgendermaßen festgelegt: 25 mm in 1 Stunde und 35 mm in 6 Stunden.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583688870/learn_more/LCF11_wgmu1t.png)\n\n<https://www.eea.europa.eu/data-and-maps/figures/projected-changes-in-20-year-2>\n\nDie globale Erwärmung wird voraussichtlich zu einer höheren Niederschlagsintensität und längeren Trockenperioden in Europa führen (IPCC, 2012; Hov et al., 2013). Die Prognosen zeigen eine Zunahme der täglichen Starkniederschläge in den meisten Teilen Europas im Winter, um bis zu 35 % im 21. Jahrhundert. Die Starkniederschläge im Winter werden voraussichtlich in den meisten Teilen Europas zunehmen, mit einer Zunahme von bis zu 30 % in Nordosteuropa (Karte 3.10, links). Auch im Sommer wird in den meisten Teilen Europas eine Zunahme prognostiziert, während für einige Regionen in Süd- und Südwesteuropa ein Rückgang prognostiziert wird (Karte 3.10, rechts) (Jacob et al., 2014). Ähnliche Muster wurden für andere Starkniederschlagsindizes gefunden (Rajczak et al., 2013; Sillmann et al., 2013; Giorgi, Coppola und Raffaele, 2014).\n\n<https://www.eea.europa.eu/publications/climate-change-impacts-and-vulnerability-2016>[](<  https://www.dwd.de/DE/leistungen/klimastatusbericht/klimastatusbericht.html>)\n\n[https://www.dwd.de/DE/leistungen/klimastatusbericht/klimastatusbericht.html](<  https://www.dwd.de/DE/leistungen/klimastatusbericht/klimastatusbericht.html>)\n\n<https://www.helmholtz.de/erde_und_umwelt/welche-folgen-hat-der-klimawandel-fuer-deutschland/>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "V Heavy precipitation events will increase\nX Heavy precipitation events will decrease\nX Heavy precipitation events will occur especially in autumn\nV Heavy precipitation events will become more extreme",
   "title": "105 Categorie 1",
   "explanation": "Higher evaporation and a higher water absorption capacity of the warmer air can lead to increased and heavier precipitation. For the weather forecast, the German Weather Service (DWD) has set the warning criteria for heavy precipitation as follows: to 25 mm in 1 hour and 35 mm in 6 hours.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "Higher evaporation and a higher water absorption capacity of the warmer air can lead to increased and heavier precipitation.\n\nFor the weather forecast, the German Weather Service (DWD) has set the warning criteria for heavy precipitation as follows: 25 mm in 1 hour and 35 mm in 6 hours. \n\n![](https://res.cloudinary.com/solagro/image/upload/v1583688870/learn_more/LCF11_wgmu1t.png)\n\n<https://www.eea.europa.eu/data-and-maps/figures/projected-changes-in-20-year-2>\n\nGlobal warming is projected to lead to a higher intensity of precipitation and longer dry periods in Europe (IPCC, 2012; Hov et al., 2013). Projections show an increase in heavy daily precipitation in most parts of Europe in winter, by up to 35 % during the 21st century. Heavy precipitation in winter is projected to increase over most of Europe, with increases of up to 30 % in northeastern Europe (Map 3.10, left). In summer, an increase is also projected in most parts of Europe, but decreases are projected for some regions in southern and south‑western Europe (Map 3.10, right) (Jacob et al., 2014). Similar patterns were found for other heavy precipitation indices (Rajczak et al., 2013; Sillmann et al., 2013; Giorgi, Coppola and Raffaele, 2014).\n\n<https://www.eea.europa.eu/publications/climate-change-impacts-and-vulnerability-2016>"
 }
