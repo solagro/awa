@@ -7,6 +7,12 @@
   ],
   "question": "What are greenhouse gases?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "**Treibhauseffekt macht menschliches Leben erst möglich**\n\nDie \"Treibhausgase\" wie Wasserdampf (H2O), Kohlendioxid (CO2), Methan (CH4) und Lachgas (N2O) - um nur die wichtigsten zu nennen - absorbieren Strahlung im langwelligen Bereich des Spektrums stärker als die kurzwellige Sonneneinstrahlung. Dadurch kommt es zu einer Erwärmung der unteren Atmosphäre. Ohne die natürlich vorhandenen Spurengase mit Treibhauseffekt wäre die Mitteltemperatur auf der Erde etwa 32 °C niedriger als wir es gegenwärtig beobachten. Es gäbe dann zumindest kein menschliches Leben auf unserem Planeten.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583687743/learn_more/LCF3_rjn8te.png \"(Bild: DWD)\")\n\nDurch menschliche Aktivitäten kommt es nun zu einer Konzentrationszunahme von Treibhausgasen. Gegenwärtig werden jährlich etwa 30 Milliarden Tonnen CO2 in die Atmosphäre emittiert. Davon entfallen 75 % auf die Verbrennung fossiler Energieträger. Der Rest ist im Wesentlichen auf Waldrodungen zurückzuführen. Aufgrund der langen Verweildauer von CO2 und anderen Treibhausgasen (Methan, Lachgas, ...) in der Atmosphäre kommt es im Laufe von Jahrzehnten zu deutlichen Konzentrationsanstiegen von CO2 und auch anderen Treibhausgasen.\n\n[https://www.dwd.de/DE/klimaumwelt/klimawandel/ueberblick/ueberblick_node.html ](https://www.dwd.de/DE/klimaumwelt/klimawandel/ueberblick/ueberblick_node.html)\n\n**Emissionen aus der Landwirtschaft im Jahr 2017**\n\nRund 60 % der gesamten Methan (CH4)-Emissionen und 80 % der Lachgas (N2O)-Emissionen in Deutschland stammen aus der Landwirtschaft. Im Jahr 2017 war die deutsche Landwirtschaft somit insgesamt für 66,3 Millionen Tonnen (Mio. t) Kohlendioxid (CO2)-Äquivalente verantwortlich (siehe Abb. „Treibhausgas-Emissionen der Landwirtschaft nach Kategorien“). Das sind 7,3 % der gesamten Treibhausgas -Emissionen des Jahres. Die Emissionen aus der Landwirtschaft tragen somit nach den energiebedingten Emissionen aus der stationären und mobilen Verbrennung (84,5 %) und vor den prozessbedingten Emissionen der Industrie (7,1 %) einen höheren Anteil an Treibhausgasen in Deutschland bei.\n\n<https://www.umweltbundesamt.de/daten/land-forstwirtschaft/beitrag-der-landwirtschaft-zu-den-treibhausgas#textpart-1>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "X Gases in the atmosphere that prevent solar radiation from reaching the surface of our planet, such as methane and carbon dioxide.\nX Gases in the atmosphere that absorb and emit radiation, such as oxygen.\nX Gases in the atmosphere that absorb and emit radiation, such as ozone and helium.\nV Gases in the atmosphere that absorb the  radiation returning from the Earth (terrestrial), such as carbon dioxide, nitrous oxide and methane.",
   "title": "101 Categorie 1",
   "explanation": "These gases allow sunlight to reach and warm the Earth's surface. The Earth's surface then returns energy in the form of infrared radiation, which is absorbed by greenhouse gases such as carbon dioxide, methane or ozone (among others). Oxygen and helium are not greenhouse gases.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "The greenhouse effect is a warming of the Earth’s surface and troposphere (the lowest layer of the atmosphere) caused by the presence of water vapour, carbon dioxide, methane, and certain other gases in the air. Of those gases, which are known as greenhouse gases, water vapour has the greatest effect.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583687740/learn_more/LCF2_adlk0c.png)\n\n<https://www.britannica.com/science/greenhouse-effect>"
 }
