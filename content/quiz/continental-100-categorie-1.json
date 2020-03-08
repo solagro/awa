@@ -7,6 +7,12 @@
   ],
   "question": "How will the precipitation pattern change with climate change?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Die prognostizierte Abnahme der Niederschläge im Sommer und die zu erwartenden höheren Niederschläge im Winterhalbjahr führen im Sommer voraussichtlich zu mehr Trockenheit und erhöhen im Winter das Risiko von Überschwemmungen. Ebenfalls steigt das Risiko für Starkniederschläge – sowohl im Sommer-, wie auch im Winterhalbjahr. \n\n![](https://res.cloudinary.com/solagro/image/upload/v1583687738/learn_more/LCF1_ex2cjo.png)\n\n<https://www.lubw.baden-wuerttemberg.de/klimawandel-und-anpassung/niederschlag>\n\nIm Deutschen Klimaatlas des DWD werden die klimatischen Parameter wie Niederschlag, Temperatur anschaulich dargestellt, wie sich diese in Zukunft entwickeln werden. \n\n<https://www.dwd.de/DE/klimaumwelt/klimaatlas/klimaatlas_node.html>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "X There will be no changes\nX The precipitation will increase in summer\nV There will be a redistribution of precipitation from the summer months to the winter months\nX The precipitation will decrease in winter",
   "title": "100 Categorie 1",
   "explanation": "The annual precipitation sum will hardly change in most regions, but the distribution of precipitation will. Most projections assume that precipitation will decrease in the summer months, while more precipitation is expected in the winter.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "The forecasted decrease in summer precipitation and the expected increase in winter precipitation will probably lead to more drought in summer and increase the risk of flooding in winter. The risk of heavy precipitation will also increase - both in the summer and winter months. [](<  https://www.lubw.baden-wuerttemberg.de/klimawandel-und-anpassung/niederschlag>)\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583687738/learn_more/LCF1_ex2cjo.png)\n\n[https://www.lubw.baden-wuerttemberg.de/klimawandel-und-anpassung/niederschlag](<  https://www.lubw.baden-wuerttemberg.de/klimawandel-und-anpassung/niederschlag>)\n\nIn the German Climate Atlas of the DWD (German meteorological association), climatic parameters such as precipitation and temperature are clearly presented, showing how they will develop in the future. <https://www.dwd.de/DE/klimaumwelt/klimaatlas/klimaatlas_node.html>"
 }
