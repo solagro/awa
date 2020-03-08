@@ -7,6 +7,12 @@
   ],
   "question": "Which statement(s) about heat waves in summer is (are) correct?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Der Weltklimarat geht in seinem Sonderbericht von 2012 \"Management des Risikos von Extremereignissen und Katastrophen zur Förderung der Anpassung an den Klimawandel\" davon aus, dass die Dauer, Häufigkeit und/oder Intensität von warmen Perioden oder Hitzewellen über den meisten Landflächen zunehmen wird. Auf Grundlage von Zukunftsszenarien (SRES A1B und A2) wird ein Hitzeereignis, dass gegenwärtig in seiner Intensität ca. alle 20 Jahren auftritt bis zum Ende des 21. Jahrhunderts global gesehen in den meisten Regionen wahrscheinlich zu einem 2-jährigen Hitzeereignis. Ausgenommen sind die hohen Breiten auf der Nordhalbkugel, wo es wahrscheinlich zu einem 5-jährigen Hitzeereignis wird.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583688865/learn_more/LCF10_hnkox2.png)\n\n<https://www.eea.europa.eu/data-and-maps/figures/number-of-extreme-heat-waves-1>\n\n<https://www.de-ipcc.de/media/content/IPCC-SREX-SPM_vorlaeufige-Uebersetzung_Jan2016.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "V Heat waves will occur more frequently and last longer \nX Heat waves will occur less often but last longer\nX A heat wave is a phase of several days with more than 25°C\nV The probability of a heat wave occurring has more than doubled in some areas",
   "title": "104 Categorie 1",
   "explanation": "In Central Europe, a heat wave occurs when the maximum temperature of 30 °C is exceeded for at least three consecutive days, lasts as long as the maximum temperature remains above 30 °C and never falls below a maximum temperature of 25 °C on a single day. Long lasting heat waves can lead to long heat / drought periods.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "According the IPCC Reort 2012 \"Managing the risks of extreme events and disasters to advance climate change adaptation\", it is very likely that the length, frequency, and/or intensity of warm spells or heat waves will increase over most land areas. Based on the A1B and A2 emissions scenarios, a heat event which currently occurs every 20 years is likely to occur every second year by the end of the 21st century in most regions, except in the high latitudes of the Northern Hemisphere, where it is likely to occur every 5 years. \n\n![](https://res.cloudinary.com/solagro/image/upload/v1583688865/learn_more/LCF10_hnkox2.png)\n\n<https://www.eea.europa.eu/data-and-maps/figures/number-of-extreme-heat-waves-1>\n\n<https://www.ipcc.ch/site/assets/uploads/2018/03/SREX_FD_SPM_final-2.pdf>"
 }
