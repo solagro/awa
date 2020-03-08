@@ -7,6 +7,12 @@
   ],
   "question": "What is the greenhouse effect?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Treibhauseffekt macht menschliches Leben erst möglich\n\nDie \"Treibhausgase\" wie Wasserdampf (H2O), Kohlendioxid (CO2), Methan (CH4) und Lachgas (N2O) - um nur die wichtigsten zu nennen - absorbieren Strahlung im langwelligen Bereich des Spektrums stärker als die kurzwellige Sonneneinstrahlung. Dadurch kommt es zu einer Erwärmung der unteren Atmosphäre. Ohne die natürlich vorhandenen Spurengase mit Treibhauseffekt wäre die Mitteltemperatur auf der Erde etwa 32 °C niedriger als wir es gegenwärtig beobachten. Es gäbe dann zumindest kein menschliches Leben auf unserem Planeten.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583687743/learn_more/LCF3_rjn8te.png \"Bild: DWD\")\n\nDurch menschliche Aktivitäten kommt es nun zu einer Konzentrationszunahme von Treibhausgasen. Gegenwärtig werden jährlich etwa 30 Milliarden Tonnen CO2 in die Atmosphäre emittiert. Davon entfallen 75 % auf die Verbrennung fossiler Energieträger. Der Rest ist im Wesentlichen auf Waldrodungen zurückzuführen. Aufgrund der langen Verweildauer von CO2 und anderen Treibhausgasen (Methan, Lachgas, ...) in der Atmosphäre kommt es im Laufe von Jahrzehnten zu deutlichen Konzentrationsanstiegen von CO2 und auch anderen Treibhausgasen.\n\n<https://www.dwd.de/DE/klimaumwelt/klimawandel/ueberblick/ueberblick_node.html>\n\n<https://www.umweltbundesamt.de/themen/klima-energie/klimawandel/klima-treibhauseffekt>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "X The increase of air humidity due to heavy rainfalls \nV The greenhouse gases in the earth´s atmosphere prevent the complete loss of reflected warmth from the earth´s surface into space\nX The atmosphere of a planet that focuses sunlight and creates a magnifying glass effect\nX The greenhouse effect is the increase in annual average temperature caused by the human-induced increase in CO2",
   "title": "109 Categorie 1",
   "explanation": "The Earth's atmosphere allows short-waved sunlight to penetrate, warming the Earth's surface. The earth then reflects long-waved radiation, which only partially penetrates the atmosphere.  The retained natural radiation warms the earth.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "**The greenhouse effect** is a warming of the Earth’s surface and troposphere (the lowest layer of the atmosphere) caused by the presence of water vapour, carbon dioxide, methane, and certain other gases in the air. Of those gases, which are known as greenhouse gases, water vapour has the greatest effect.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1583687740/learn_more/LCF2_adlk0c.png)\n\n**Greenhouse effect on Earth**\n\nSome incoming sunlight is reflected by the Earth's atmosphere and surface, but most is absorbed, which then warms the surface.  Infrared (IR) radiation is then emitted from the surface. Some IR radiation escapes to space, but some is absorbed by the atmosphere's greenhouse gases (especially water vapour, carbon dioxide, and methane) and reradiated in all directions. The IR radiation reradiated back towards the surface further warms it and the lower atmosphere. Encyclopædia Britannica, Inc.\n\n<https://www.britannica.com/science/greenhouse-effect>"
 }
