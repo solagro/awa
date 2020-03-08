@@ -7,6 +7,12 @@
   ],
   "question": "Which statement on the effects of climate change is correct?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "**Klimafolgen: Welche Bereiche sind betroffen?**\n\nDas Klima ändert sich und wird sich auch in Zukunft weiter wandeln. Die beobachteten und berechneten Veränderungen lassen sich direkt mit dem Ausstoß von Treibhausgasen durch den Menschen in Verbindung bringen. Der Klimawandel manifestiert sich dabei sowohl in langfristigen Klimaänderungen wie steigenden Durchschnittstemperaturen oder einem höheren Meeresspiegel, als auch in einer veränderten Klimavariabilität , also stärkeren kurzfristigen Klimaschwankungen und häufigeren Extremwetterereignissen wie Starkregen , Dürren oder Hitzesommern.\n\nDie Klimafolgen sind vielfältig und haben Einfluss auf unser tägliches Leben. Dabei sind ganz unterschiedliche Bereiche betroffen. Beispiele (…) für die Landwirtschaft sind: Eine Verschiebung der Vegetationsperioden – jener Zeiträume, in denen Pflanzen wachsen, blühen und Früchte tragen – hat Einfluss auf die landwirtschaftliche Produktion. Extreme Hitze und Trockenheit können zu Ernteausfällen führen.\n\nDer Klimawandel bietet regional auch Chancen. Vor allem für den Anbau von „neuen“, wärmeliebenden Kulturen/ Sorten, z.B. Mais- und Weinanbau in höheren Regionen. <https://www.umweltbundesamt.de/themen/klima-energie/klimafolgen-anpassung/folgen-des-klimawandels-0#textpart-1>\n\n<https://www.dwd.de/DE/klimaumwelt/klimawandel/ueberblick/ueberblick_node.html>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "X Through climate change, all summers will become hotter\nV Climate change is exacerbating weather extremes. Dry periods can last longer, heavy precipitation leads to more rainfall in less time\nX The sea-level is rising slower than fifty years ago\nX The climate is changing much slower than previous model calculations suggested",
   "title": "106 Categorie 1",
   "explanation": "In most regions, however, the threat of longer heat periods, heavy precipitation, flooding, etc. is increasing. The continuing warming of the atmosphere influences a wide range of climate-relevant factors.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "**Climate impact: Which areas are affected?**\n\nThe climate is changing and will continue to change in the future. The observed and projected changes can be directly linked to the emission of greenhouse gases by humans. Climate change manifests itself both in long-term climate changes, such as rising average temperatures or a higher sea level, and in altered climate variability, i.e. greater short-term climate fluctuations and more frequent extreme weather events such as heavy rainfall, droughts or hot summers.\n\nThe consequences of climate change are manifold and influence our daily life. Very different areas are affected. Examples (...) for agriculture are: A shift in the vegetation periods - the periods when plants grow, flower and bear fruit - has an impact on agricultural production. Extreme heat and drought can lead to crop failures.\n\nClimate change also offers regional opportunities. Above all for the cultivation of \"new\", warmth-loving crops/ varieties, e.g. maize and wine in higher regions.\n\n<https://www.umweltbundesamt.de/themen/klima-energie/klimafolgen-anpassung/folgen-des-klimawandels-0#textpart-1>"
 }
