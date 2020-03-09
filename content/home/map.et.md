@@ -1,7 +1,7 @@
 ---
 locale: et
 id: mapPresentation
-title: Yield & Climate (observations and projections)
+title: Saagikus ja kliima (vaatlused ja prognoosid)
 picto: "/images/pictos/observations.svg"
 altPicto: observations
 hrefBefore: "#quizPresentation"
@@ -11,15 +11,8 @@ buttonText: Go to the map
 order: 2
 ---
 
-Explicabo maiores corporis repellendus. Nemo vel aut perferendis similique sunt
-aliquid. Nulla ut similique a error est quasi et ex repellendus. Tempore
-molestiae et minus nobis placeat facilis omnis. Et perferendis sapiente. Nulla
-voluptatem ipsum.
+See moodul koosneb kaardist kuhu on koondatud saagikuse ja kliima (vaatlused ja prognoosid) andmed erinevates geograafilistes asukohtades üle Euroopa.
 
-Voluptates quis in. Porro occaecati fugiat delectus. Exercitationem ipsum ut
-porro consequatur. Et aut et quidem nostrum. Quaerat non numquam dicta quisquam
-voluptas ut commodi.
+Liikuge kaardil huvipakkuvale alale ja suumige vaade sobivale tasemele, et piirkonna andmeid täpsemalt uurida. Seejärel võimaldab iga väike oranž ruut (või ruudustiku punkt) kaardil vaadata selle koha andmeid ühe klõpsuga.
 
-Nisi sunt veniam quia asperiores. Ut odio ut officiis et illum adipisci corrupti
-quae. Est eveniet aut possimus optio occaecati est et dolores voluptate. Nostrum
-aut omnis odio eum sunt. Velit autem deleniti.
+Iga punkti kohta kuvatakse esmalt erinevate kultuuride saagikuse varieeruvus aastatel 2000–2017. Seejärel esitatakse lähimineviku kliimaandmed (registreeritud ajavahemikul 1987–2016) erinevate graafikute kaudu ja mitme erineva näitaja kohta: temperatuur, sademed, külmade päevade arv jne. Kliimaprognoosid illustreerivad 10 graafiku kaudu kliima muutusi lähitulevikus (perioodil 2017-2046) ja lõpuks on esitatud 19 agroklimaatilist näitajat, mis on seotud teraviljade, söödakultuuride, loomade, viinamarjade ja puuviljade kasvatamisega.

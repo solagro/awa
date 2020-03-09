@@ -1,19 +1,15 @@
 ---
 locale: et
 id: summaryPresentation
-title: Summary
+title: Kokkuvõte
 hrefBefore: "#adaptationsPresentation"
 to: "/quiz"
 buttonText: Start quiz
 order: 4
 ---
 
+Kohanemisstrateegia rakendamine on tõeline õppeprotsess, mille käigus on vaja järk-järgult edasi liikuda ja järgida seejuures mitut etappi. Esiteks on põllumajanduse haavatavuse määratlemine ja mõistmine mis tahes kohanemisprotsessi eeltingimus. Oluline on tuvastada hetkel kasutatava põllumajandussüsteemi nõrgad kohad ja/või valdavad kliimategurid ning olla teadlik kliimamuutustest ja nende võimalikust mõjust oma ettevõtte tootmisele.
 
-The implementation of an adaptation strategy is a real learning process in which a progressive advance respecting several steps is necessary. First, defining and understanding the vulnerability of farming is a necessary prerequisite for any adaptation process. 
-It is imperative to identify the weaknesses and / or climatic forces of the agricultural system currently deployed and to be aware of what climate change is and its agricultural impacts.
-
-In a second step, agro-climatic projections for the near future period will offer a reading of new climate opportunities and / or threats defining the new context of the farm. 
-The implementation of an adaptation strategy must therefore envisage improving climate weaknesses and threats to the farm, by mobilizing levers for a wide range of vulnerability components. 
-Planning for adaptation measures must then be carried out to distinguish what can be implemented in the short, medium or long term.
+Lähituleviku agroklimaatilised prognoosid viitavad uutele võimalustele ja/või ohtudele, mis võivad ettevõtte tegevust mõjutada. Kohanemisstrateegia rakendamine peab seepärast ette nägema kliimamuutustega seotud nõrkade külgede ja riskide vähendamise ning kasutama selleks mitmeid vahendeid. Seejärel tuleb kavandada kohanemismeetmed, mida saab lühikese, keskmise või pika aja jooksul rakendada.
 
 <roadmap style="text-align: center;" />

@@ -1,7 +1,7 @@
 ---
 locale: et
 id: quizPresentation
-title: Farm vulnerability and adaptation Quiz
+title: Ettevõtte haavatavuse ja kohanemise küsimustik
 picto: "/images/pictos/quiz.svg"
 altPicto: quiz
 hrefBefore: "#top"
@@ -11,14 +11,10 @@ buttonText: Start quiz
 order: 1
 ---
 
-Molestiae reprehenderit cupiditate cupiditate rerum in aperiam ipsam nemo. Omnis
-quod beatae nobis dignissimos molestiae illum eos ea. Ut qui perferendis.
-Nostrum error sit animi iusto omnis aut fuga quo unde.
+Kolmekümne erineva küsimuse kaudu saab hinnata oma teadmisi kliimamuutuste teemal ja uurida, milline on nende muutuste mõju põllumajandusele ning millised on ettevõtete võimalikud kohanemismeetmeid.
 
-Dolorem vel numquam laboriosam voluptatum unde. Rerum et ea blanditiis et qui ut
-illum. Hic et corporis sequi. Praesentium incidunt voluptatem est qui. Natus eum
-perspiciatis et. Voluptate tempora et veniam occaecati et inventore esse earum
-vel.
+Küsimustikke on neli, millest igaüks vastab projektiga seotud 4 riigi (Prantsusmaa, Saksamaa, Hispaania ja Eesti) geograafilisele asukohale ja esindavad erinevaid kliimariski piirkondi Euroopas: Lõuna-, Atlandi-, Kontinentaalne- ja Põhja-piirkond. Iga küsimustik on saadaval nii inglise keeles kui ka selle riigi keeles, mida see esindab.
 
-Harum et corrupti. Ipsa debitis corrupti dicta culpa. Praesentium sed occaecati
-occaecati a.
+Iga küsimuse kohta on 4 valikvastust, mille hulgast on võimalik valida üks või mitu õiget vastust. Selleks, et teada saada, kas teie vastus on õige, klõpsake lihtsalt oma valitud vastusevariandil. Seejärel kuvatakse ekraani allosas selgitus ja soovi korral võite teema kohta pisut rohkem teavet saada klõpsates väljal "Lisateave".
+
+Kui te ei soovi mõnele küsimusele vastata, siis võite selle vahele jätta ja jätkata järgmise küsimusega. Kui olete küsimustikuga lõpule jõudnud, siis esitatakse kokkuvõtlikult iga kolme kategooria (kliimamuutused, mõju põllumajandusele ja kohanemismeetmed) kohta saadud õigete vastuste arv.
