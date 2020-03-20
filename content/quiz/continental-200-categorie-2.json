@@ -7,6 +7,12 @@
   ],
   "question": "How does the altered rainfall pattern affect agriculture?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Vermehrte Starkniederschläge im Herbst, bzw. Winterhalbjahr bergen die Gefahr von Verschlämmung und Überschwemmungen, aber auch von Staunässe. Das kann die Wintersaat ausspülen. Ein mit Wasser übersättigter Boden kann das (Wurzel-)Wachstum der ausgesäten Winterkulturen bzw. die Feldbearbeitung einschränken. Zudem steigt die Gefahr von Erosion und Nährstoffauswaschungen.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584720512/learn_more/LCF13_v314lc.png)\n\nBild: <https://www.eea.europa.eu/data-and-maps/figures/projected-changes-in-annual-and-5>\n\n\n\nQuelle:\n\n<https://agriadapt.eu/wp-content/uploads/2017/05/Grundlagenbericht.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "V Higher risk for floods\nX The rain comes when it is needed \nV Higher risk of erosion and nutrient loss\nX There is no altered rainfall pattern",
   "title": "200 Categorie 2",
   "explanation": "Less rainfall in (early) summer during the growth/development period of the plants can lead to lower yields. Increased precipitation in the winter months presents a risk for the quantity and quality of the harvest. The risk of erosion and nutrient loss increases as a result of precipitation for dormant growth.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Increased heavy precipitation in the autumn or winter months brings with it the danger of silting up and flooding, as well asof waterlogging. This can wash out seeds sown in the winter. A water-saturated soil can restrict the (root) growth of the sown winter crops or the cultivation on the field. The risk of erosion and  nutrient leaching also increases.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584720512/learn_more/LCF13_v314lc.png)\n\nPicture: <https://www.eea.europa.eu/data-and-maps/figures/projected-changes-in-annual-and-5>\n\n\n\nSource: \n\n[https://agriadapt.eu/wp-content/uploads/2017/05/Grundlagenbericht.pdf ](https://agriadapt.eu/wp-content/uploads/2017/05/Grundlagenbericht.pdf)"
 }
