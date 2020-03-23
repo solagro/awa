@@ -7,6 +7,12 @@
   ],
   "question": "Since 1880 the average global temperature on Earth has been increased. How much?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "19. sajandi teises pooles lõppes peaaegu 600 aastat kestnud jahedama kliimaga periood ning atmosfääri keskmine temperatuur hakkas aeglaselt kasvama. 20. sajandi keskel soojenemise tempo kasvas järsult. 1950-ndatest tõusis hüppeliselt ka inimtekkelise CO2 atmosfääri paiskamine, temperatuuri tõus ongi reaktsioon suurenenud süsinikuheitele. Süsihappegaasi kontsentratsioon on küll tõusnud ja langenud juba miljoneid aastaid, kuid Maa ajaloos ei ole teada ühtegi teist nii äkilise soojenemise perioodi.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584973682/learn_more/EMU1_ijqypj.png)\n\nMaakera kuumeneb üle - võrreldes aastaga 1880 on maa keskmine temperatuur tõusnud pea 1°C võrra. Alates 2001. a on registreeritud ajaloo 18 kõige kuumemat aastat. ÜRO 2018. a lõpus avaldatud kliimaraport hoiatab, et üle 1.5°C tõus võib tuua kaasa selliseid tagajärgi, millega toimetulek käib inimestele üle jõu.\n\nEesti kliima soojeneb kiiremini kui maailm keskmiselt, kuna asume põhjapoolkeral. Arktilised piirkonnad soojenevad praegu kuni kaks korda\n\nkiiremini, võrreldes maakera keskmise temperatuuritõusuga. Eesti keskmine õhutemperatuur on viimase 50 aasta jooksul tõusnud keskmiselt 0,03 kraadi võrra aastas (Luhamaa et al. 2014).\n\n\n\nAllikas: Keskkonnaministeerium; Riigikogu Toimetised 38/2018\n\nLoe edasi:<https://www.kliimamuutused.ee/kliimamuutusest>\n\nLoe veel:<https://climate.nasa.gov/>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X By 0,5 °C\nV By 1,0 °C\nX By 1,5 °C\nX By 2,0 °C",
   "title": "100 Categorie 1",
   "explanation": "According to scientists, human activity is the main cause of the global climate change that began with the 1880 Industrial Revolution. Greenhouse gases have caused the global average temperature to rise by almost 1 ° C, which, in turn, is causing many changes around the globe.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "The planet's average surface temperature has risen about 0.9 degrees Celsius since the late 19th century, a change driven largely by increased carbon dioxide and other human-made emissions into the atmosphere.Most of the warming occurred in the past 35 years, with the five warmest years on record taking place since 2010. Not only was 2016 the warmest year on record, but eight of the 12 months that make up the year — from January through September, with the exception of June — were the warmest on record for those respective months.\n\nNext graph illustrates the change in global surface temperature relative to 1951-1980 average temperatures. Nineteen of the 20 warmest years all have occurred since 2001, with the exception of 1998. The year 2016 ranks as the warmest on record. (Source:[NASA/GISS](https://data.giss.nasa.gov/gistemp/graphs/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.txt)).\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584973682/learn_more/EMU1_ijqypj.png)\n\nEstonia's climate is warming faster than the world average as Estonia is located in the northern hemisphere. Arctic regions are currently warming up to twice as fast as the global average temperature increase. The average air temperature in Estonia has risen by 0.03°C per year over the last 50 years.\n\n\n\nRead more:<https://climate.nasa.gov/>\n\nRead more:<https://www.envir.ee/en/climate>"
 }
