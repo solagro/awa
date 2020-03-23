@@ -7,6 +7,12 @@
   ],
   "question": "On a global scale, livestock production, especially beef production, is considered a major risk factor for freshwater resources. On what does the amount of water needed to produce one kilo of beef depend most (directly and indirectly)?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Keskmine vee kogus, mis kulub ühe kilogrammi veiseliha tootmiseks saadakse otseste ja kaudsete veekulu allikate summana. Otseseks kuluks on vesi, mida loomad tarbivad joogiveena. Kaudseteks kulu allikateks on aga vesi, mida kasutatakse loomapidamishoonetes ja liha töötlemisel (tehnoloogiline vesi loomaruumide, rümpade ja inventari puhastamine jne) ning sööda tootmisel.\n\nParasvöötme merelise kliimaga piirkondades (näiteks Eesti) on peamiseks vee kogust mõjutavaks faktoriks veiseliha tootmisel loomade joogivesi (arvestuslikult jääb see 25-30 liitri piiridesse ühe kilogrammi toodetud liha kohta). Samas suurusjärgus on ka tehnoloogilise vee hulk. Kuna nimetatud kliimavöötmes puudub vajadus karjamaid (rohumaid) niisutada (piisavas koguses looduslikke sademeid) ja seda tavapäraselt ka ei tehta, siis söötade tootmiseks kasutatava vee kogus on praktiliselt null. Kontinentaalse kliimaga kliimavöötmetes, kus ka keskmine temperatuur vegetatsiooniperioodil on kõrgem ning ka õhk kuivem (sademeid vähem) kasutatakse laialdaselt rohumaade niisutamist. Seetõttu võib veiseliha tootmiseks vajalik summaarne veekulu kasvada mitmeid tuhandeid kordi.\n\n\n\nAllikas: Livestock's long shadow environmental issues and options\n\nLoe lisaks:\n\n<http://www.fao.org/3/a0701e/a0701e04.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X On the breed of the  animals\nX On the keeping technology \nX On the way the meat is processed\nV On the region (climate zone) where the animals are kept",
   "title": "205 Categorie 2",
   "explanation": "While the variation in drinking water consumption and technological water consumption is relatively small on a global scale, the difference in the amount of water used for feed production across climate zones is enormous.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "The average amount of water needed to produce one kilogram of beef is the sum of the direct and indirect sources of water consumption. The direct cost is the water that the animals consume as drinking water. Indirect sources of cost, however, are water used in livestock buildings and meat processing (process water for cleaning animal rooms, carcasses and equipment, etc.) and feed production.\n\nIn areas with a temperate marine climate (Estonia, for example), drinking water for animals is the major factor influencing the amount of water in beef production (estimated at 25-30 liters per kilogram of meat produced). The amount of technological water is also of the same order. As there is no need to irrigate pastures (grasslands) and exist sufficient amounts of natural precipitation in this climate zone, the amount of water used to produce feed is practically zero. In continental climate zones where the average temperature during the growing season is higher and the air drier (less rainfall), grassland irrigation is widely used. As a result, the total water consumption required for beef production can increase several thousands of times.\n\n\n\nSource: Livestock's long shadow environmental issues and options\n\nRead more:\n\n<http://www.fao.org/3/a0701e/a0701e04.pdf>"
 }
