@@ -7,6 +7,12 @@
   ],
   "question": "Which of the following options do you consider appropriate for adapting to climate change?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Auf Ebene des Betriebs sind die Auswirkungen steigender Klimarisiken geringer und die Anpassungspotenziale größer als auf Ebene einzelner Kulturen (Lehmann et al. 2013b). Die Diversität spielt dabei eine entscheiden Rolle. Eine breite Abstützung auf verschiedene Sorten, Kulturen und Einkommenszweige puffert die Effekte von Extremereignissen oft ab (Finger und Buchmann 2015, Di Falco und Chavas 2006, Lehmann et al. 2013b). Auf betrieblicher Ebene kann zudem der Aufbau von Reservekapazitäten oder die Aufnahme außerlandwirtschaftlicher Aktivitäten dazu beitragen, Einkommensschwankungen zu reduzieren (Briner et al. 2015). Vernachlässigt man diese Anpassungspotenztiale, werden negative Effekte des Klimawandels auf Erträge, aber auch Einkommen, überschätzt (Challinor et al. 2014). Dennoch sind viele Anpassungsmaßnahmen mit Kosten verbunden, entweder direkt, zum Beispiel für die Installation einer Bewässerungsanlage, oder indirekt, als sogenannte Opportunitätskosten. (…)Zusätzlich zum Umgang mit steigenden Risiken auf dem Betrieb werden Versicherungen eine immer größere Rolle spielen. Dies ist insbesondere dann sinnvoll, wenn existenzgefährdende Risiken abgedeckt werden. Versicherungen erlauben es unternehmerische Risiken einzugehen und machen Investitionen attraktiver. Sie stärken daher eine produzierende Landwirtschaft und reduzieren die Notwendigkeit staatlicher Eingriffe bei klimatischen Extremereignissen.\n\n\n\nQuelle:\n\n<https://www.ktbl.de/fileadmin/user_upload/Allgemeines/Download/Tagungen_2019/KTBL-Tagung/KTBL-Tage_2019_Folien.pdf ab S. 277>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "X Specialization in a specific production area\nV Diversification of the farm e.g. through the cultivation of different crops and thus risk diversification\nV Development of further income pillars (direct marketing, holidays on the farm)\nX Intensive crop production with a maximum of 3 main crops",
   "title": "306 Categorie 3",
   "explanation": "Since climate change can also lead to annually changing weather conditions with a tendency towards more extreme forms, risk diversification is an essential adaptation measure that can be implemented both on the land and at farm level (diverse crop rotation, different income levels).",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "At the farm level, the effects of rising climate risks are smaller and adaptation potentials greater than at the level of individual crops (Lehmann et al. 2013b). Diversity plays a decisive role here. A broad base of different varieties, crops and income branches often buffers the effects of extreme events (Finger and Buchmann 2015, Di Falco and Chavas 2006, Lehmann et al. 2013b). At the farm level, building reserve capacities or taking up non-agricultural activities can also help to reduce income fluctuations (Briner et al. 2015). If these adaptation potentials are neglected, negative effects of climate change on yields, but also on income, are overestimated (Challinor et al. 2014). Nevertheless, many adaptation measures are associated with costs, either directly, e.g. for the installation of an irrigation system, or indirectly, as so-called opportunity costs. (...)In addition to dealing with increasing risks on the farm, insurance will play an increasingly important role. This is particularly useful if risks threatening the company's existence are covered. Insurance policies allow entrepreneurial risks to be taken and make investments more attractive. They therefore strengthen a productive agriculture and reduce the need for state intervention in the event of extreme climatic events.\n\n\n\nSource:\n\n<https://www.ktbl.de/fileadmin/user_upload/Allgemeines/Download/Tagungen_2019/KTBL-Tagung/KTBL-Tage_2019_Folien.pdf from p. 277>"
 }
