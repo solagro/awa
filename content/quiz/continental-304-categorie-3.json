@@ -7,6 +7,12 @@
   ],
   "question": "What measures can be taken to improve soil structure (improved water uptake and storage)?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "![](https://res.cloudinary.com/solagro/image/upload/v1584965895/learn_more/LCF22_qd6lq1.png \"Humusreiche Schwarzerde, Quelle: Thünen-Institut\")\n\nHumus besteht zur Hälfte aus Kohlenstoff, der aus dem Kohlendioxid der Luft stammt. Durch eine Erhöhung des Humusgehalts im Boden wird daher die Atmosphäre vom Treibhausgas Kohlendioxid entlastet. Dies kann ein Beitrag zum Klimaschutz sein, wenn es gelingt, Humus stärker als zuvor zu speichern.\n\nHumus hat außerdem einen positiven Einfluss auf eine Reihe von Bodeneigenschaften wie die Wasserhaltekapazität und die Bodenfruchtbarkeit im Allgemeinen. Humus ist deshalb ein Gut, das es zu erhalten und zu vermehren gilt. \n\n(…)\n\nZur Humusbildung sind ausreichend Pflanzenreste in Form von Wurzeln, Stoppeln, Stroh oder Blättern nötig, die nicht abgeerntet werden, sondern als Reststoffe auf dem Acker verbleiben. Diese führen nicht nur zu mehr Humus, es profitieren auch alle Bodenlebewesen, da sich 99 Prozent aller Bodenlebewesen von diesen Pflanzenresten ernähren. Der Auf- und Abbau von Humus im Boden ist also ein natürlicher Prozess, der nicht aufzuhalten ist. Humusaufbau lässt sich auch fördern, etwa durch den Anbau von Zwischenfrüchten im Winter, die im Frühjahr untergearbeitet werden. Permanente Begrünung nimmt eine wichtige Rolle ein (…)\n\n\n\nQuelle:\n\n[https://www.bmel.de/DE/Landwirtschaft/Pflanzenbau/Boden/_Texte/HumusaufbaufuerdenKlimaschutz.html](https://www.bmel.de/DE/Landwirtschaft/Pflanzenbau/Boden/_Texte/HumusaufbaufuerdenKlimaschutz.html)"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "V Reduced soil tillage, mulch sowing, reduced ploughing depth\nX Deep ploughing\nV Organic fertilization, compost application\nX \"Winter furrow\" (ploughed field remains uncovered over the winter)",
   "title": "304 Categorie 3",
   "explanation": "The focus is on promoting soil life, which contributes to a good soil structure. The supply of organic matter such as plant residues, incorporated intercropping mixtures, undersowing or composting contributes to this. The soil should be covered all year round if possible. In addition, the soil structure should be disturbed as little as possible.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "![](https://res.cloudinary.com/solagro/image/upload/v1584965895/learn_more/LCF22_qd6lq1.png \"Black earth rich in humus, Source: Thuenen-Institut\")\n\nHumus is made up to 50 % out of carbon, which comes from the carbon dioxide in the air. By increasing the humus content of the soil, the atmosphere is therefore relieved of the greenhouse gas carbon dioxide. This can be a contribution to climate protection if it is possible to store more humus than before.\n\nHumus also has a positive influence on a number of soil properties such as water retention capacity and soil fertility in general. Humus is therefore a commodity that must be preserved and propagated. \n\n(…)\n\nFor humus formation, sufficient plant remains in the form of roots, stubble, straw or leaves are necessary, which are not harvested but remain on the field as residues. These not only lead to more humus, but also benefit all soil organisms, since 99 percent of all soil organisms feed on these plant residues. The build-up and breakdown of humus in the soil is therefore a natural process that cannot be stopped. Humus build-up can also be promoted, for example by growing catch crops in winter, which are undercut in spring. \n\n(…)\n\n\n\nSource:\n\n[https://www.bmel.de/DE/Landwirtschaft/Pflanzenbau/Boden/_Texte/HumusaufbaufuerdenKlimaschutz.html](https://www.bmel.de/DE/Landwirtschaft/Pflanzenbau/Boden/_Texte/HumusaufbaufuerdenKlimaschutz.html)"
 }
