@@ -7,6 +7,12 @@
   ],
   "question": "Which of the following measures are appropriate to ensure that animals have enough feed also during drought years?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Maisi kasvatamine on üks võimalusi ilmastikuolude mõju minimeerida, sest\n\nüldiselt on mais põuakindel kultuur, mistõttu ka põuasel suvel võib\n\nsaada korraliku saagi. Lutsern talub väga hästi kuiva ja põuda. Soovitavalt võiks ühes ettevõtte rohumaadel kasvatada 6-7 erinevat liiki. Rohumaasegud võiksid sisaldada näiteks timutit, mis on hea talvekindlusega ja roog-aruheina, mis on hästi põuakindel.\n\n\\\nLoe lisaks:\n\n<https://www.fwi.co.uk/livestock/grassland-management/finnish-farmers-doubled-grass-growth-short-challenging-growing-season>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Grasslands should be daily and properly irrigated\nV Different species and varieties must be grown as fodder plants\nX In the drought period, forage crops must be more fertilized\nX None of the measures listed above is appropriate",
   "title": "307 Categorie 3",
   "explanation": "In order to reduce and disperse the risks posed by the weather, it is necessary to grow different forage crops. If the yield of grassland decreases due to drought and other forage crops are not grown on the farm, then there is a high probability that fodder shortage will occur.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "Cultivating maize for silage is one way of minimizing the impact of weather conditions, since maize is generally a drought-tolerant crop, which also allows for a good harvest after a dry summer. Lucerne is very resistant to dry and drought conditions. Preferably 6-7 different species could be grown in the same grasslands. For example, grassland mixtures could include timothyfor improved winter hardiness and tall fescues for drought survival.\n\n\\\nRead more:\n\n<https://www.fwi.co.uk/livestock/grassland-management/finnish-farmers-doubled-grass-growth-short-challenging-growing-season>"
 }
