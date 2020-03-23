@@ -7,6 +7,12 @@
   ],
   "question": "Reduction of climate risks may be enchanced by:",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "**Koristuskonveier.**\n\nKoristusmasinate täielikuks koormamiseks ja tööde paremaks korraldamiseks on pikk koristusperiood parem, kuid iga sordi valmimisperiood vahaküpsuse lõpust täieliku täisküpsuseni vältab normaalsetes tingimustes 7–10 päeva. Selle aja jooksul ei ületa kaod tavaliselt 100 kg/ha ning seda perioodi võib lugeda sordile omaseks koristusajaks. Koristusaja sujuvaks kulgemiseks peaksid kultuurid ja sordid valmima järjekorras, siis jõutakse nad koristada optimaalsel ajal. Enam-vähem keskmiste meteoroloogiliste tingimustega aastatel saavad varajased teraviljasordid Eestis täisküpsuseks juuli lõpul või augusti algul. Ilmastikutingimused võivad valmimisperioodi kümme või rohkem päeva varasemale või hilisemale ajale nihutada. Koristusmasinate ja kuivatite võimsusest olenevalt tuleb reguleerida kultuurirühmade külvipinda nii, et koristamine toimuks katkematult. Seepärast on juba kevadkülvil vaja kavandada koristuskonveier. Koristuskonveieri kavandamine on võimalik siis, kui kasvatatakse erineva kasvuajaga sorte. Mõningal määral saab viljade valmimist mõjutada ka agrotehniliste võtetega (külviaja reguleerimisega). (Taimekasvatus. Koostaja E. Reimets. 1986)."
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Cultivation of monoculture\nX Cultivation of wide range of varieties of a single crop\nX Cultivation of wide range of crops, each one variety\nV Cultivation of a range of crops represented by optimal range of varieties",
   "title": "301 Categorie 3",
   "explanation": "Diversification of crops and varieties helps to lower certain weather risks (certain cultivars are more drought resistant, certain crops mature before the autumn rains etc.), as well as reduce the pressure on labour intensity by optimization of harvesting sequence.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "Scheduling harvesting operations\n\nClimate change and projected temperature increase is expected to have significant effects on agricultural production and crop phenology. Establishment of crop systems with phenological responses that avoid overlapping in the harvesting phase is a key stage for better adaptation as it helps to secure a quality yield. Crop production and quality in low nutrient/water availability conditions can be improved through ecological interactions such as facilitation of resource acquisition. However, species or varieties must be selected to ensure that their functional traits and resource acquisition are complementary and the overlap of accelerated sowing and harvest dates are avoided in multiple cropping systems.\n\nFurther reading:\n\nKumar, R. Singh, V.P., Jhajharia, D., Mirabbasi, R. 2019. Applied Agricultural Practices for Mitigating Climate Change; CRC Press, 282 pp."
 }
