@@ -7,6 +7,12 @@
   ],
   "question": "Which farm animals are most affected by long drought periods?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "2018. aasta suve põud avaldas tohutut mõju enamikule Põhjamaade piimatootmisettevõtetele. Paljudes taludes oli silo otsas ja nad pidid ostma lisasööta. Mõned loomakasvatajad kompenseerisid sööda puudust teravilja tervikkoristusega, kuid nüüd peavad nad kandma teravilja ostmise kulud väga kõrgete hindadega. Suve jooksul ja pärast seda arutasid paljud põllumehed veeteemat: räägiti kastmisest, aga ka loomade joogiveele juurdepääsu tagamisest. Karja suurenemisega muutub nõudlus üksikutele kaevudele üsna kõrgeks. Enamikes põhjamaades on põllumehed harjunud hea juurdepääsuga veele, kuid kliimamuutuste mõjul ei pruugi see tulevikus enam nii olla.\n\n\n\nLoe lisaks ja vaata videot ”Lambakasvataja sõnul võib tänavune söödapuudus viia loomade tapamajja saatmiseni”:\n\n<https://www.err.ee/858475/lambakasvataja-sonul-voib-tanavune-soodapuudus-viia-loomade-tapamajja-saatmiseni>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Laying hens\nV Herbivorous animals\nX Broilers\nX Pigs",
   "title": "207 Categorie 2",
   "explanation": "The feeding of herbivorous animals (including cattle, sheep, goats, horses, etc.) is based on grass/forage, which is more difficult and expensive to import from drought-free areas. Due to a shortage of feed as a result of longer drought period, many producers have had to send some animals to slaughterhouse.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "The drought during the summer 2018 has had a huge impact on most Nordic dairy farms. Many farms were lacking silage and needed to buy extra feed. Some have compensated by cutting grain as a whole crop, but they had to take the cost of buying grain at very high prices. During and after the summer, many farmers discussed the topic of water: they talked about water for irrigation, but also about ensuring access to drinking water for the animals. With increasing herd size, the pressure on the individual wells became quite high. In most parts of Nordic countries, farmers are used to having good access to water, but with climate change this may not be the situation of the future.\n\n\n\nRead more:\n\n<https://www.maitoyrittajat.fi/wp-content/uploads/2019/02/dairy-situation-REPORT-2019.pdf>\n\nWatch a short video “Swedish farmers in distress due to a historic drought”:\n\n<https://youtu.be/s5HwZPelxTA>"
 }
