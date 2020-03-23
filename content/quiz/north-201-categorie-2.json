@@ -7,6 +7,12 @@
   ],
   "question": "Climate affects the distribution area of species. If:",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Loe lisaks: Kruus, E. (2016). Uus ilm Eesti aias. Maakodu, 4, 80−82.\n\n<https://www.etis.ee/File/DownloadPublic/f2c0fcf6-54b1-4852-90c2-091c6f3cfa7c?name=Uus%20ilm%20Eesti%20aias.pdf&type=application%2Fpdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V The abundance of crop pests will be increasing on account of the influx of Southern species?\nX The abundance of crop pests will be increasing on account of the influx of Northern species?\nX The abundance of crop pests will be decreasing on account of the outflux of local species to the North?\nV The abundance of crop pests will be increasing due to faster development and higher fertility/fecundity of generations?",
   "title": "201 Categorie 2",
   "explanation": "The insect pests undergo faster development with certain species turning from monovoltine into multivoltine (several generations per year). Others will not change voltinism, but temperatures closer to developmental optimum cause an increase in fitness. Southern species may adapt in northern area if fitting conditions can be found.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Most dominant responses to climate change by insects are changes in abundance, distribution/range shift, interactions, assemblage composition, and phenology. For review see: Andrew, N.R., Hill, S.J., Binns, M., Bahar, M.H., Ridley, E.V., Jung, M.-P., Fyfe, C., Yates, M. and Khusro, M. (2013) Assessing insect responses to climate change: What are we testing for? Where should we be heading? PeerJ 1: e11.\n\n\n\nRead more:[](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3628384/)\n\n<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3628384/>"
 }
