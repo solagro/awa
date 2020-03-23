@@ -7,6 +7,12 @@
   ],
   "question": "Increasing frequency of extreme climatic events (eg strong winds, storms, clot, etc.) increases power failures and malfunctions of automation equipment. How should livestock farms ensure themselves against such problems?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Varugeneraatoritena on kasutusel bensiini-, diisel-, gaasi- või traktori jõuvõtuvõllilt toimivad generaatorid. Diiselgeneraatorid tuleb suurematel võimsustel lugeda parimaks variandiks. Maapiirkondades tuleb arvestada võimalusega, et läheduses asuvast tanklast ei pruugi katkestuse ajal kütust saada ja seega pikeneb tankimisele kuluv aeg. Varugeneraatorite puhul tuleb kütusevaru hindamisel arvestada vähemalt 8-24 tunniste, abikaugetes piirkondades aga kuni 72 tunniste katkestustega.\n\n\n\nAllikas: Elektrivõrgu klientide elektripaigaldiste ühe ja kahepoolse toite mõju analüüs varustuskindlusele\n\nLoe lisaks:\n\n<https://www.elektrilevi.ee/-/doc/6305157/ettevottest/uuringud/Elektrivorgu_klientide_elektripaigaldiste_yhe_ja_kahepoolse_toite_moju_analyys_varustuskindlusele.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Avoid or reduce the use of electrical and automation equipment in the stable buildings\nX In the event of a power failure, you must immediately call your electricity supplier and request an immediate re-connection\nV Purchase a backup power generator with sufficient performance to ensure the operation of major equipment until the end of power failure\nX Extreme climate events do not pose any major problems for livestock farms",
   "title": "306 Categorie 3",
   "explanation": "All livestock farms where the keeping, care and health of the animals are directly dependent on the operation of the electrical equipment must have a backup generator with sufficient capacity to ensure the operation of the essential equipment until the power failure is eliminated.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "Many livestock farmers raise their animals in indoor conditions where life support systems depend on electrically powered automation. Live creatures in close quarters are at the mercy of mechanical components. Most livestock can’t survive for long when an electrical failure happens. Back-up generators are a livestock lifesaver.\n\nThe generators are petrol, diesel, gas or tractorpower takeoffwhich are used as backup generators. Diesel generators at higher power levels should be considered the best option. In rural areas, it is important to consider the possibility that a nearby gas station may not be able to get fuel during the interruption, thus increasing refueling time. For backup generators, interruptions of at least 8 to 24 hours shall be taken into account in the assessment of fuel stocks and up to 72 hours in auxiliary areas.\n\n\n\nRead more:\n\n<https://woodstockpower.com/blog/farm-generator-for-agriculture-purpose/>"
 }
