@@ -7,6 +7,12 @@
   ],
   "question": "The sum of precipitation is projected to be increasing locally. Does it cause the even distribution of moisture during the vegetative period?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Kontrast kuivade ja niiskete regioonide ning kuivade ja niiskete aastaaegade sademete hulkade vahel suureneb. Eestis kasvab keskmine aastane sademete hulk 19%, suurimat kasvu on oodata kevadel (24%) ja talvel (22%).\n\nSellest tulenevalt on rohkem ette näha rannikualade üleujutusi ja erosiooni.\n\nSuure intensiivsuse ja sademete hulgaga sajud võivad hakata põhjustama lokaalseid üleujutusi. Sademete hulga kasv suurendab toitainete väljakandmise riski mullast pinna- ja põhjavette. Pehmed talved vähendavad mullaveevaru vegetatsiooniperioodi esimesel poolel, mis tingib omakorda niisutusvajaduse suurenemise. Maaparandussüsteemide töökindluse tagamine vajab senisest suuremaid ja järjepidevaid investeeringuid, mis nõuavad asukohatundlikke valikotsuseid. Kuna paljude varasematel kümnenditel rajatud maaparandusobjektide renoveerimine on väga ressursikulukas, aga vajadus 13 ületab investeerimisvõimet mitu korda, tuleb lähitulevikus otsustada, millised kuivendussüsteemid on Eesti majandusele olulised ja millised tuleb hüljata.\n\nAllikas: Kliimamuutustega kohanemise arengukava aastani 2030.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584974650/learn_more/EMU5_upuaxb.png \"Allikas: Eesti kliima 2100, sademed (infograafika)\")\n\nLoe lisaks:<https://www.envir.ee/sites/default/files/kliimamuutustega_kohanemise_arengukava_aastani_2030_0.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V No, the increase has been projected on account of short heavy showers.\nX Yes, there will be plenty of rain in every summer month.\nX Yes, the precipitation is increasing in spring which reduces the drought risk.\nX No changes in distribution of precipitation is occurring.",
   "title": "107 Categorie 1",
   "explanation": "Increase of the sum of precipitation (in average + 20%) has been projected to occur mostly in the winter season. Various models indicate increasing extreme heavy rains; however, due to low probability, they might be significant only in summer period. Thus, the workload of hydrological systems may increase.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "The contrast between dry and wet regions and between the amount of precipitation in the dry and wet seasons will increase. In Estonia, the average annual amount of precipitation will increase by 19% and the greatest increase is predicted for spring (24%) and winter (22%).\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584974732/learn_more/EMU6_hpq59w.png \"Source: Estonian Climate 2100, Precipitation (infographics)\")\n\nRead more:\n\n<https://www.envir.ee/sites/default/files/estonian_climate_2100_precipitation.pdf>"
 }
