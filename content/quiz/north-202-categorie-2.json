@@ -7,6 +7,12 @@
   ],
   "question": "What is going to change in winter crops, due to reducing permanent snow cover and increasing number of freeze and thaw cycles?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Tulevikuprognoosid näevad ette, et lumikatte kestvuspäevade arv väheneb, kuid seoses sellega suureneb oht, et talvituv talivili saab kahjustatud siis, kui lumikatte puudub ja temperatuur langeb oluliselt alla 0 °C. Külmumus-sulamistsüklite sagenemine vähendab taliviljade talvitumiskindlust ning põhjustab talvitumishaigusi, kuna tekkiv lumekoorik loob tingimused nt lumiseene tekkeks.\n\nAllikas: BioClim: Kliimamuutuste mõjuanalüüs, kohanemisstrateegia ja rakenduskava looduskeskkonna ja biomajanduse teemavaldkondades.\n\n(<https://www.kik.ee/sites/default/files/uuringud/bioclim_a_lopparuanne_19.01.16.pdf>).\n\n\\\nLoe lisaks:\n\n<https://www.envir.ee/et/muutused-prognoosid>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X The risk of snow mold increases\nX The risk of frost heaving is reducing\nV Plants get exposed to frost damage in the period of beginning of growth and vital functions.\nX Plant intensifies the active use of nutrients thus remaining weak by spring",
   "title": "202 Categorie 2",
   "explanation": "The projections foresee almost no permanent snow cover for the future. Changing conditions of freezing and thawing cause higher risk of frost heaving. Snowless frost can severely damage in spring, when the sunshine has restarted the active vital processes in aboveground parts of plants, but the frozen soil allows no moisture for the root system. Plants wither and die due to the physiological drought.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "The vegetation period has recently been showing signs of prolongation – spring has been arriving earlier and the harvest can take place at a later date, although it can be difficult due to excessive moisture. Repeated freeze-thaw cycles worsen the overwintering of the cover crops. The risk of snow mold is growing.\n\n\n\nSource: BioClim: Kliimamuutuste mõjuanalüüs, kohanemisstrateegia ja rakenduskava looduskeskkonna ja biomajanduse teemavaldkondades. Summary in English on pages 40-55:\n\n(<https://www.kik.ee/sites/default/files/uuringud/bioclim_a_lopparuanne_19.01.16.pdf>).\n\n\\\nRead more:\n\n<https://www.envir.ee/en/news-goals-activities/climate/climate-change-adaptation>"
 }
