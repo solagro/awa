@@ -7,6 +7,12 @@
   ],
   "question": "What are the consequences of less late frost in April and May?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "**Das Problem verschärft sich**\n\nDas Risiko von Spätfrostschäden steigt in den nächsten Jah-ren weiter an, weil bei tendenziell immer früherem Austrieb der meisten Rebsorten der Termin gleich bleibt, an dem Spätfröste auftreten. Immer häufiger sind in der kritischen Phase Ende April/Anfang Mai schon grüne Blätter entwickelt. Nur solange jedoch kein grünes Ge-webe vorhanden ist, verfügt die Rebe über eine gute Frosthärte. Sind erst einmal Blätter entfaltet und Triebe gewachsen, kommt es schon bei Temperaturen knapp unter dem Gefrierpunkt zu Frostschäden. Deshalb ist es sinnvoll, sich über Schutz- oder Vorbeugemaßnahmen Gedanken zu machen. \n\n**Am häufigsten: Strahlungsfrost**\n\nSpätfröste können vor allem dann auftreten, wenn sich bei Hochdruckwetter eine Inversionslage entwickelt. Während normalerweise die bodennahe Luft wärmer ist als die darüber liegenden Schichten, kehrt sich das in kalten Frostnächten um. Ohne eine schützende Wolkenschicht kann die aus dem Boden aufsteigende Warmluft nach oben entweichen. Gleichzeitig fließt Kaltluft von den Höhenlagen ins Tal. So entsteht die Inversionsschichtung: In Bodennähe ist die Temperatur am kältesten und je höher man steigt, desto wärmer sind die Luftmassen. In dieser Situation gibt es keinen Luftaustausch durch Wind, weil die kalten und schwereren Luftmassen unter leichteren Luftschichten liegen. Das führt zu den gefürchteten Spätfrostschäden.\n\nQuellen:\n\n<https://www.lwg.bayern.de/mam/cms06/weinbau/dateien/r_w-kampf_den_sp%C3%A4tfr%C3%B6sten-schwappach.pdf>\n\n<https://www.lwg.bayern.de/weinbau/087592/index.php>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "V Less frost damage to young leaves in vineyards and fruit blossoms\nX Increased aroma formation in the grapes\nX Later ripening of the apples\nX Reduction of cereal yields",
   "title": "209 Categorie 2",
   "explanation": "Less late frost in the bud phase and at the beginning of vegetative growth in permanent crops, reduces damage from freezing of the plants. Fewer late frost days require less effort to prevent damage. \n\nHowever, the tendency of an earlier vegetation start and thus earlier flowering increases the damage potential during late frost events.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "**The problem is getting worse**\n\nThe risk of late frost damage will continue to increase in the coming years, because the date on which late frosts occur remains the same for most grape varieties, which tend to sprout earlier and earlier. More and more often, green leaves are already developed in the critical phase at the end of April/beginning of May. Only as long as there is no green tissue, however, the vine have a good frost resistance. Once leaves have unfolded and shoots have grown, frost damage occurs even at temperatures just below freezing point. It is therefore advisable to think about protective or preventive measures. \n\n**Most frequent: radiation frost**\n\nLate frosts can occur above all when an inversion layer develops during high pressure weather. While the air near the ground is normally warmer than the layers above, this is reversed in cold frost nights. Without a protective cloud layer, the warm air rising from the ground can escape upwards. At the same time, cold air flows from the higher altitudes into the valley. This is how the inversion stratification is created: near the ground, the temperature is the coldest and the higher you climb, the warmer the air masses are. In this situation, there is no air exchange by wind, because the cold and heavier air masses are under lighter layers of air. This leads to the dreaded late frost damage.\n\nSources:\n\n<https://www.lwg.bayern.de/mam/cms06/weinbau/dateien/r_w-kampf_den_sp%C3%A4tfr%C3%B6sten-schwappach.pdf>\n\n<https://www.lwg.bayern.de/weinbau/087592/index.php>"
 }
