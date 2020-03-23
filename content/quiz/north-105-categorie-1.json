@@ -7,6 +7,12 @@
   ],
   "question": "According to scientists, what is the maximum threshold for temperature rise compared to the pre-industrial era, above which there is a much greater risk of dangerous changes in the earth's environment.",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "PCC raport tõestab, et tuleviku kahjud sõltuvad oluliselt sellest, kui kiiresti meil õnnestub süsiniku õhku paiskamist vähendada ning kui suurel määral me suudame soojenemist tulevikus ära hoida. Igasugusel soojenemisel on olulised mõjud, ent on oluline vahe, kas soojenemist õnnestub hoida 1,5°C ja 2°C piires või üle 3°C, mis on globaalse soojenemise praegune trajektoor.\n\n2°C ei ole raporti kohaselt enam vastuvõetav piir, kuna IPCC hinnangul on selle tagajärjed palju ohtlikumad, kui eelnevalt ennustatud ning see tähendaks meie tsivilisatsiooni laiaulatuslikku laastamist.\n\nSoojenemine alla 1,5°C tähendab tõsiste kuumalainete, vihmahoogude, tormide ja üleujutuste väiksemat mõju, samuti on selle piires võimalik päästa kliimamuutuse mõjudest enamikku maailma taime- ja loomaliikidest.\n\n\n\nAllikas:<http://www.kliimamuutused.ee/uudised/raport-kliimamuutuste-pidurdamine-nouab-drastilisi-samme>\n\nLoe lisaks:<https://www.ipcc.ch/sr15/>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V 1,5 °C\nX 2,0 °C\nX 2,5 °C\nX 3,0 °C",
   "title": "106 Categorie 1",
   "explanation": "A 2018 report by the IPCC shows that rising temperatures should be kept below 1.5°C, since only within this range can many of the serious consequences of future warming be prevented. Half degrees warming makes a big difference.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "The IPCC report proves that futureconsequencesdepend greatly on how quickly we manage to reduce carbon emissions and to what extent we can prevent warming in the future. Any warming has significant effects, but there is a significant difference between keeping it at 1.5°C and 2°C or above 3°C, which is the current trajectory of global warming.\n\n2°C is no longer an acceptable limit, according to the report, because the IPCC estimates that its consequences are far more dangerous than previously predicted and would mean widespread devastation of our civilization.\n\nWarming below 1.5°C means less exposure to severe heat waves, rainstorms, storms and floods, as well as saving most of the world's plant and animal species from the effects of climate change.\n\n\n\nSource:<http://www.kliimamuutused.ee/uudised/raport-kliimamuutuste-pidurdamine-nouab-drastilisi-samme>\n\nRead more:<https://www.ipcc.ch/sr15/>"
 }
