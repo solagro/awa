@@ -7,6 +7,12 @@
   ],
   "question": "The projections foresee possible increase in late frosts and droughts. Whether:",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Suvised temperatuurid võivad väga kiiresti asenduda jahedate päevade ja öökülmadega. Enamike herbitsiidide, kasvuregulaatorite ja fungitsiidide optimaalne kasutusaeg on siis, kui ööpäeva keskmine temperatuur on +5°C. Kuid siiski tasuks jälgida ilmateadet ja kui on öökülmaoht, siis tuleb pritsimine edasi lükata. Vastasel juhul võib taim stressi langeda ja kasutatav herbitsiid ei pruugi lubatud tulemust anda.\n\nAllikas:\n\n<https://www.balticagro.ee/1905-taliviljade-torje>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Application of biostimulants during the growth helps to reduce the drought stress\nV Application of pesticides and other agrochemicals may harm plants due to additional stress\nX Pesticides and other agrochemicals increase the plant resistance and alleviates the stress\nX Pesticides have no effect on plant fitness neither in drought nor in frost stress.",
   "title": "300 Categorie 3",
   "explanation": "In suboptimal climate conditions, application of any agrochemicals shall be avoided due to additional stress caused by them. Despite the fact there may be no negative effect of biostimulants in such conditions, the absence of sufficient scientific evidence can’t confirm their positive effect in field.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "Simultaneous occurrence of several abiotic stresses has been shown to be more destructive to crop production than these stresses occurring separately at different crop growth stages. Treatment after the late forst or drought incidence increases the abiotic stress by the pesticide.\n\nFor review, see:\n\n<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5394115/>"
 }
