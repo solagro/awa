@@ -7,6 +7,12 @@
   ],
   "question": "How is it possible to improve winter-hardiness of grapes?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Loe lisaks viinapuude katmisest ja vaata videost:\n\nLife Agriadapt projekti ekspert ja Eesti Maaülikooli aianduse õppetooli professor Kadri Karp annab käesolevas intervjuus ülevaate missuguste probleemidega seisavad silmitsi viinamarjakasvatajad põhjamaades.\n\n\n\nVideo:\n\n[Viinapuud Eesti heitlikes kliima- ja tootmistingimustes.](https://agriadapt.eu/vineyards-in-estonias-volatile-climate-and-production-conditions/?lang=et)\n\nLoe lisaks:\n\n[Viinapuude katmine ja talvekindlad viinapuud](http://ak.rapina.ee/jaan/puuv11/art/12/12,01,03talvekindlad_viinapuud.pdf)"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V The branches should be bent down and covered with garden soil or spruce branches\nV Winter covers can be used\nX The whole part of the vine above the ground is cut off\nX The vine is completely winter resistant and there is no need to use any covers",
   "title": "308 Categorie 3",
   "explanation": "In order to minimize winter damage, the vine branches should be bent close to the ground for the winter and covered with garden soil or spruce branches. If the branches cannot be bent well, winter coverings may also be used. Some cultivars are also winter resistant and do not need to be covered.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "Read more about covering of grapes and watch the video:\n\nIn the video Professor Kadri Karp, expert of LIFE AgriAdapt project from the Chair of Horticulture of the Estonian University of Life Sciences gives an overview about problems of grape growers from the Nordic countries.\n\n\n\nVideo:\n\n[Grapes in Estonia](https://agriadapt.eu/vineyards-in-estonias-volatile-climate-and-production-conditions/?lang=et)\n\nRead more:\n\n<http://ak.rapina.ee/jaan/puuv11/art/12/12,01,03talvekindlad_viinapuud.pdf>"
 }
