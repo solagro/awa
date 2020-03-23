@@ -7,6 +7,12 @@
   ],
   "question": "Which of the following measures can be implemented to better store moisture in the soil?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Im Zuge des Klimawandels nimmt die Bedeutung der Bodenstruktur zu. Der Boden muss während Trockenzeiten die Bodenfeuchte möglichst lange halten und bei starken Niederschlägen gut aufnehmen. Gefördert wird dies durch eine reduzierte Bodenbearbeitung, den Anbau von vielseitigen Zwischenfruchtmischungen, eine möglichst ganzjährige Bodenbedeckung und eine vielseitige Fruchtfolge. \n\n\n\nQuelle:\n\n<https://www.thuenen.de/media/publikationen/thuenen-workingpaper/ThuenenWorkingPaper_112.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "V Cultivation of a diverse intercropping mixture\nV Cultivation of legumes \nX Use of the plough \nX Crop rotation with fewer crops in the crop rotation",
   "title": "300 Categorie 3",
   "explanation": "A fertile humus-rich soil with a good crumb structure is more resilient against silting up, absorbs water faster and can store it better. Measures to improve soil fertility promote soil water retention and are suitable measures for adapting to climate change.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "In the course of climate change, the importance of soil structure is increasing. During dry seasons, the soil must retain soil moisture for as long as possible and absorb it well during heavy precipitation. This is promoted by reduced tillage, the cultivation of versatile intercropping mixtures, year-round soil cover and versatile crop rotation. \n\n\n\nSource:\n\n<https://www.thuenen.de/media/publikationen/thuenen-workingpaper/ThuenenWorkingPaper_112.pdf>"
 }
