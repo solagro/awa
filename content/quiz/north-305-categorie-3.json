@@ -7,6 +7,12 @@
   ],
   "question": "How to protect animals from heat stress?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Loomade karjatamisel on soovitatav kuumastressi vältimiseks rajada looduslike varjualuste puudumise korral ajutised kergehitised. Kuigi senised uurimused ei kinnita üheselt looma heaolu vähenemist varjualuse puudumise tõttu, on täheldatud, et loomad eelistavad pigem varju. Lisaks on soovitatav paigutada joogianumad varjualuste alla või lähedusse.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584978336/learn_more/EMU25_djkqlz.png \"Foto: Looduslik varjualune lihaveiste karjamaal\")\n\nAllikas: Loomade heaolu. Õpik kõrgkoolidele\n\nLoe edasi:\n\n<https://dspace.emu.ee/xmlui/bitstream/handle/10492/3857/Loomade%20heaolu%20170%20X%20240%20veeb.pdf?sequence=1&isAllowed=y>\n\nVaata lühivideot - Managing Heat Stress in Dairy Cows:[](https://youtu.be/4scOZg5DzU8)\n\n<https://youtu.be/4scOZg5DzU8>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Animals need to be sheared more often\nX The amount of bedding must be increased\nV Ventilation/cooling equipment must be provided in the barn, natural and/or artificial sheds must be provided on the pastures\nX There is no need to protect animals from heat stress in the Nordic climate",
   "title": "305 Categorie 3",
   "explanation": "Whenever new barns are being constructed, they should, where possible, be built in open areas to allow good natural ventilation. The eaves heights of the roof are designed in such a way that good air inflow is possible. In addition, mechanical ventilation to provide additional cooling should be considered in some barns during the summer months.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "In the absence of natural shelters, temporary lightweight structures are recommended for grazing animals in order to avoid heat stress. Although previous studies do not unequivocally confirm a reduction in animal welfare due to the lack of a shelter, animals have been shown to prefer shade. In addition, it is advisable to place the drinking vessels under or near the sheds.\n\nSource: Animal Welfare. Textbook for colleges\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584978336/learn_more/EMU25_djkqlz.png \"Photo: Natural shelter on the grassland for beef cattle\")\n\nRead more:\n\n<https://www.nadis.org.uk/disease-a-z/cattle/managing-heat-stress-in-dairy-cows/>\n\nWatch a short video - Managing Heat Stress in Dairy Cows:\n\n<https://youtu.be/4scOZg5DzU8>"
 }
