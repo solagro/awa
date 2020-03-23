@@ -7,6 +7,12 @@
   ],
   "question": "Which strategic orientation is suitable to lead the company stably into the future?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Quelle:\n\n<https://www.umweltbundesamt.de/themen/klima-energie/klimafolgen-anpassung/anpassung-an-den-klimawandel/anpassung-auf-laenderebene/handlungsfeld-landwirtschaft>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "X Profit maximisation by exploiting the maximum yield potential in climatically favourable years\nV Target stable good yields over long-term average (e.g. 10 years) as operating target\nX You can't react because the weather will be different every year\nV Insurances for relevant crops",
   "title": "307 Categorie 3",
   "explanation": "A focus on maximising the yields of a few high-input crops makes the agricultural system vulnerable to more irregular but also more extreme weather conditions, which will increase due to climate change. Farm risk diversification can reduce losses and lead to more stable, albeit somewhat reduced, yields.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "<https://www.umweltbundesamt.de/themen/klima-energie/klimafolgen-anpassung/anpassung-an-den-klimawandel/anpassung-auf-laenderebene/handlungsfeld-landwirtschaft>"
 }
