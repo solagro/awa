@@ -7,6 +7,12 @@
   ],
   "question": "Whether the incorporation of the organic matter into the soil would:",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Orgaaniline aine muldaviimine suurendab mullaviljakust:\n\n\\*Paraneb taimede toitainetega varustatus (mineraliseerumine)\n\n\\*Bioloogiline aktiivsus suureneb. Paraneb struktuursus ja struktuuri stabiilsus\n\nStruktuuri tekkes on olulised makroorganismid (eelkõige hooghännalised ja vihmaussid), eriti aga mikroorganismid (seened, bakterid).\n\nGlomaliin – glükoproteiin (arbuskulaarne mükoriisa,Glomales)\n\n\\*Paraneb mulla filtreerimis- ja puhverdusvõime\n\n\\*Poorsus suureneb\n\n\\*Veemahutavus suureneb (orgaanilise aine vee sidumisvõime on tunduvalt suurem, kui mulla mineraalosal)\n\n\\*Neelamismahutavus suureneb (seega paraneb toitainete sidumine ja väljaleostumine väheneb)\n\n\\*Toimub bioloogiline murenemine\n\n\\*Lisanduvad huumusained kasvustimulaatoritena."
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V Increases the soil fertility\nX Increases soil erosion\nV Increases the soil water capacity\nX Increases the bulk density of soil",
   "title": "302 Categorie 3",
   "explanation": "Incorporation of soil organics:\n\n* improves the filtration and buffering capacity of soil,\n* increases the porosity\n* increases the soil water capacity, since the water capacity of organic matter is better than that of mineral particles of the soil.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "Organic matter affects both the chemical and physical properties of the soil and its overall health. Properties influenced by organic matter include: soil structure; moisture holding capacity; diversity and activity of soil organisms, both those that are beneficial and harmful to crop production; and nutrient availability. It also influences the effects of chemical amendments, fertilizers, pesticides and herbicides.\n\n\n\nSource: FAO SOILS BULLETIN 80. The importance of soil organic matter.\n\nRead more:\n\n<http://www.fao.org/3/a0100e/a0100e00.htm#Contents>"
 }
