@@ -7,6 +7,12 @@
   ],
   "question": "The Montreal Protocol proved that the world can come together and take effective action to combat climate change. What kind of agreement was signed under this protocol?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Osoonikihti kahandavate ainete Montreali protokolli raames tehtud ülemaailmsed jõupingutused osoonikihti kahandavate ainete järkjärguliseks kasutuselt kõrvaldamiseks on viinud CFC-de ja haloonide asendamisele HCFC-dega, HFC-dega, PFC-de ning teiste alternatiivide ja/või protsessidega.\n\nMontreali protokolli täitmine on olnud sedavõrd tulemuslik, et teadlased prognoosivad hõrenenud osoonikihi taastumist 1980ndate aastate tasemeni veel selle sajandi keskpaigaks.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584974995/learn_more/EMU8_ul3vd0.png \"Joonis: Osoonikihi paksus Arktika kohal 2011. aastal (paremal) ja ilma Montreali keskkonnaleppeta (vasakul) Autor/allikas: Sandip Dhomse\")\n\nLoe lisaks:\n\n<https://keskkonnatehnika.ee/montreali-protokoll-keskkonnakokkulepe/>\n\nVaata videot - Climate 101: Ozone Depletion | National Geographic:\n\n<https://youtu.be/aU6pxSNDPhs>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X An agreement restricting the use of air transportation to a large extent\nX An agreement restricting the use of land transportation to a large extent\nX An agreement restricting the production and use of fossil fuels to a large extent\nV An agreement restricting the production and use of ozone depleting substances to a large extent",
   "title": "109 Categorie 1",
   "explanation": "The Montreal Protocol is an international agreement on time limits for the reduction or cessation of production and use of ozone-depleting substances and regulates trade of these substances between countries. Protocol was adopted in 1987, more than 30 years ago, and today about 99% of ozone-depleting substances have been withdrawn from circulation.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "Global efforts to phase out ozone-depleting substances under the Montreal Protocol have led to the replacement of CFCs and halons with HCFCs, HFCs, PFCs and other alternatives and / or processes.\n\nCompliance with the Montreal Protocol has been so successful that scientists are predicting that the depleted ozone layer will recover to the levels of the 1980s by the middle of this century.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584974995/learn_more/EMU8_ul3vd0.png \"Figure above: Ozone layer thickness over the Arctic in 2011 (right) and without Montreal Environmental Agreement (left) Author/Source: Sandip Dhomse\")\n\nRead more:\n\n<https://wattsupwiththat.com/2015/05/26/claim-severe-ozone-depletion-avoided/>\n\nWatch a short video - Climate 101: Ozone Depletion | National Geographic:\n\n<https://youtu.be/aU6pxSNDPhs>"
 }
