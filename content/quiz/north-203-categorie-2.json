@@ -7,6 +7,12 @@
   ],
   "question": "What elicits the need for winter soil cover, from the perspective of climate change?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Soojad talved soodustavad ka toitainete leostumist põhjavette, suurendades toitainete kadusid mullast ja suurendades vajadust väetiste järgi.\n\n\n\nLoe lisaks: Kaye, J. P., & Quemada, M. (2017). Using cover crops to mitigate and adapt to climate change. A review. Agronomy for Sustainable Development, 37(1), \\[4].\n\n<https://doi.org/10.1007/s13593-016-0410-x>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V Reduction of nutrient leaching\nV Reduction of emission of CO2\nX Decomposition of soil organics\nX Increasing effect of plant exudates and breakdown products",
   "title": "203 Categorie 2",
   "explanation": "In unfrozen soil, biological processes remain active. Thus, soil water becomes enriched with nutrients and some of the nutrients may drift away. Winter soil cover binds the free nutrients. In fields without winter cash crops, alternative cover crop can be cultivated in winter season.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Warmer winters with saturated soils are well known for their property to cause nitrogen leaching, and thus increase fertilizer demand.\n\n\n\nFor review, see: Kaye, J. P., & Quemada, M. (2017). Using cover crops to mitigate and adapt to climate change. A review. Agronomy for Sustainable Development, 37(1), \\[4].\n\n<https://doi.org/10.1007/s13593-016-0410-x>"
 }
