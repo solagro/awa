@@ -7,6 +7,12 @@
   ],
   "question": "The vegetation period extends to both spring and autumn. How does it affect the forage?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Sademed ja temperatuur mõjutavad sööda kogust ja kvaliteeti .Söödataimede puhul põhjustab veepuudus vegetatiivse kasvu ajal väiksemat saagikust ja võib muuta püsirohumaa taimekooslust. Ka liigne vesi on igal juhul risk, sest võib takistada karjatamist ja masinate ligipääsu. Kui liigse vee tõttu tuleb edasi lükata koristusaega, võib halveneda sööda kvaliteet. Proteiinisisaldus on aasta sademetega märkimisväärselt ja negatiivselt seotud. Allikas: ELi nelja peamise kliimariskipiirkonna lähteolukorra aruanded\n\nLoe lisaks:\n\n<https://agriadapt.eu/wp-content/uploads/2017/05/L%C3%A4hteolukorra-aruanne.pdf>\n\n\n\nLoe lisaks:\n\nDumont, B., Andueza, D., Niderkorn, V., Lüscher, A., Porqueddu, C., Picon-Cochard, C. (2015) A meta‐analysis of climate change effects on forage quality in grasslands: specificities of mountain and Mediterranean areas. Grass and Forage Science, 70, 239-254.\n\n<https://onlinelibrary.wiley.com/doi/10.1111/gfs.12169>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V Positively. The number of cuts/year increases.\nX Negatively. The number of cuts/year decreases.\nX Positively. The quality of forage increases.\nV Negatively. The quality of forage decreases.",
   "title": "204 Categorie 2",
   "explanation": "Plant growth accelerates, leaves / stems ratio decreases and NDF, ADF, lignin levels increase - digestibility decreases; N decreases (with exceptions). In hot and dry conditions, CO2 is normally limiting. It is generally believed that the yield will increase (3-4 cuts possible), but the quality of the last cut will decrease.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "For the fodder crops, a water deficit during the vegetative phase results in lower yields, and can change the plant composition in permanent grasslands. Excess water also imposes a risk in all cases (Table 20) as grazing might not be possible and machinery access is impaired as well. If harvesting time points need to be shifted, due to excess water, this may result in a reduction of feed quality. Source:Baseline report for the 4 main EU Climate Risk Regions\n\nRead more:\n\n<https://agriadapt.eu/wp-content/uploads/2017/04/A1_Baseline-report_Full-version_V3.pdf>\n\n\n\nRainfall and temperature affect the quantity and quality of the forage. Protein content is significantly and negatively correlated with the annual precipitation. Also, one can expect variation in nitrogen content if legume abundance varies.\n\nFor review, see: Dumont, B., Andueza, D., Niderkorn, V., Lüscher, A., Porqueddu, C., Picon-Cochard, C. (2015) A meta‐analysis of climate change effects on forage quality in grasslands: specificities of mountain and Mediterranean areas. Grass and Forage Science, 70, 239-254.\n\n<https://onlinelibrary.wiley.com/doi/10.1111/gfs.12169>"
 }
