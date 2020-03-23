@@ -7,6 +7,12 @@
   ],
   "question": "Which advantages does a diverse crop rotation offer in terms of climate change?",
   "theme": "continental",
+  "learn-more-i18n": [
+    {
+      "language": "de",
+      "learn-more": "Die Pflanzen scheiden unterschiedliche Wurzelexsudate aus, die das Bodenleben füttern. Dies führt zu einem vielseitigen und vitalem Bodenleben, das den Pflanzen Nährstoffe bereitstellt und Krankheitserreger unterdrückt. \n\n\n\nQuelle:\n\n<http://www.zalf.de/de/aktuelles/Seiten/Pressemitteilungen/Hitzestress.aspx>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "de",
@@ -23,5 +29,6 @@
   "answers": "V Greater diversity reduces the risk of crop failures\nV A diverse crop rotation allows us to strategically reduce weed and disease pressure\nX You can grow lemon trees\nX There are no advantages",
   "title": "301 Categorie 3",
   "explanation": "Each crop has different cultivation characteristics or requirements. The cultivation risk, which is influenced by the weather, pests or plant diseases, is spread over several crops. In addition, various crop rotations have a positive effect on soil fertility and thus on the soil's ability to retain water.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "The plants excrete different root exudates, which feed the soil life. This leads to a versatile and vital soil life that provides the plants with nutrients and suppresses pathogens. \n\n\n\nSource:\n\n<http://www.zalf.de/de/aktuelles/Seiten/Pressemitteilungen/Hitzestress.aspx>"
 }
