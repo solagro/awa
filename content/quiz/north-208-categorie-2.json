@@ -7,6 +7,12 @@
   ],
   "question": "How is climate change affecting fruit and grape production?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Loe lisaks ülevaadet Põhja-Euroopa kliimatrendidest ja agroklimaatilistest näitajatest:\n\n<https://agriadapt.eu/wp-content/uploads/2017/05/L%C3%A4hteolukorra-aruanne.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Yields increase significantly\nX Climate change does not affect fruit and grape production\nV Increasing extreme weather events can result crop loss and quality degradation\nV The pressure of pests and pathogens will increase",
   "title": "208 Categorie 2",
   "explanation": "Increase in extreme weather events ( ie.  hail damage) may cause loss of quality, and the need to use protective winter or hail covers would increase direct production costs. Increased abundance of pests and diseases - higher pest pressure, introduction of new emerging pests and pathogens may result in direct and indirect crop losses.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Read more about the climate trends and agro-climatic characteristics of Northern Europe:\n\n<https://agriadapt.eu/wp-content/uploads/2017/05/L%C3%A4hteolukorra-aruanne.pdf>"
 }
