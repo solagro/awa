@@ -7,6 +7,12 @@
   ],
   "question": "One important source of anthropogenic methane emissions is considered to be livestock production (methane emissions from the digestive system of animals, especially ruminants, and manure management). What is another, globally important, agricultural sector with high methane emissions?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Looduslik metaani teke on eelkõige mikrobioloogiline protsess. Selleks, et bakterid toimiksid peab olema tagatud piisava koguse toitainete, niiskuse, sobiliku temperatuuri ning sõltuvalt bakteri liigist hapniku olemasolu või puudumine.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584974447/learn_more/EMU4_innlua.png \"Allikas: Rise cultivation information guide\")\n\nLoe lisaks:<https://www.agrifarming.in/rice-cultivation-information-guide>\n\nja<http://www.ghgonline.org/methanerice.htm>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Citrus production\nX Deforestation to increase arable land\nX Palm oil production\nV Rice cultivation",
   "title": "105 Categorie 1",
   "explanation": "Methane is formed as a result of the activity of specific methanobacteria. Methanobacteria do not tolerate oxygen, i.e., in order for methanobacteria to function, the environment must be oxygen-free (anaerobic). These conditions are met, for example, in bogs (important sources of natural methane formation), but also in the intestines of animals and in rice fields.",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "Natural methane production is primarily a microbiological process. In order for the bacteria to function, the presence or absence of sufficient nutrients, humidity, appropriate temperature and, depending on the species of bacterium, oxygen must be ensured.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1584974447/learn_more/EMU4_innlua.png \"Source: Rise cultivation information guide\")\n\nRead more:<https://www.agrifarming.in/rice-cultivation-information-guide>\n\nand<http://www.ghgonline.org/methanerice.htm>"
 }
