@@ -7,6 +7,12 @@
   ],
   "question": "Most of the greenhouse gases emitted in Estonia come from:",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Transpordisektor moodustas 2016. aastal Eesti koguheitmest umbes 11 protsenti, põllumajandus 6,6 protsenti, teised sektorid (keemiatööstus, jäätmekäitlus jt) veelgi vähem. Seega on kõige mõjusam viis kasvuhoonegaaside koguse vähendamiseks Eestis muuta seda, kuidas me oma riigis elektrit ja toasooja toodame. Eesti majanduse tugisammas on põlevkivi: 2016. aastal pärines kaks kolmandikku meil toodetud energiast just põlevkivist. Põlevkivi on olemuselt väga CO2-intensiivne kütus: kui mõelda, et kindla koguse energia (näiteks 1 kWh elektrienergia) tootmisel tekib põlevkivi kasutades 10 ühikut süsihappegaasi, siis sama koguse energia\n\ntootmisel maagaasist tuleks atmosfääri paisata üksnes veidi üle viie ühiku diisli või bensiini kasutamisel umbes seitse ühikut ja kivisöe kasutamisel natuke üle üheksa ühiku CO2. Põlevkivi kasutamine on Eestis 1990. aastaga võrreldes kahekordistunud. Naaberriikide Soome, Rootsi ja Lätiga võrreldes on meie majandus väga CO2-intensiivne.\n\n\n\nAllikas: Riigikogu Toimetised 38/2018\n\nLoe edasi:<https://rito.riigikogu.ee/wordpress/wp-content/uploads/2018/12/Kust-sa-tead-et-kliima-soojeneb.-Sepp-K%C3%B6ster-K%C3%BCngas.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Transport sector\nX Chemical sector\nX Agricultural sector\nV Energy sector",
   "title": "102 Categorie 1",
   "explanation": "The Energy sector accounted for 88.74% of total GHG emissions in 2017, followed by Agriculture (6.6%), Industrial processes and product use (3.08%) (including indirect CO2) and Waste (1.58%).",
-  "category": "climate-change"
+  "category": "climate-change",
+  "learn-more": "In 2017, the most important GHG in Estonia was carbon dioxide (CO2), contributing 89.22% to total national GHG emissions expressed in CO2 eq. (including indirect CO2), followed by methane (CH4), 5.26%, and nitrous oxide (N2O), 4.36%. Fluorocarbons (so-called ‘F-gases’) account for about 1.16% of total emissions. The Energy sector accounted for 88.74% of total GHG emissions, followed by Agriculture (6.6%), Industrial processes and product use (3.08%) (including indirect CO2) and Waste (1.58%).\n\nThe Energy sector is the most significant source of greenhouse gas emissions in Estonia with 88.74% share of the total emissions in 2017. Since the base year (1990), total GHG emissions in Estonia have decreased by 48.52%. The key driver for the fall in emissions is the transition from a planned economy to a market economy.\n\nAgriculture is the second most significant source of greenhouse gas emissions in Estonia. In 2017 the Agriculture sector contributed 6.6% of the total emissions. Since the base year emissions have decreased by 49.16%, mostly due to the decreasing livestock population and quantities of synthetic fertilizers and manure applied to agricultural fields.\n\nSource: Estonian Ministry of the Environment\n\nRead more:<https://www.envir.ee/sites/default/files/content-editors/Kliima/nir_est_1990-2017_15.01.2019.pdf>"
 }
