@@ -16,19 +16,19 @@
   "answer-i18n": [
     {
       "language": "de",
-      "answers": "V Weniger Frostschäden an jungen Blättern in Weinbergen und an den Obstblüten\nX Vermehrte Aromabildung in den Weintrauben\nX Späteres Abreifen der Apfelernte\nX Verringerung der Getreideerträge"
+      "answers": "V Weniger Frostschäden an jungen Blättern in Weinbergen und an den Obstblüten\nX Vermehrte Aromabildung in den Weintrauben\nX Späteres Abreifen der Apfelernte\nV Trotzdem vermehrte Frostschäden an jungen Blättern in Weinbergen und an den Obstblüten"
     }
   ],
   "order": 205,
   "explanation-i18n": [
     {
       "language": "de",
-      "explanation": "Weniger Spätfrost in der Knospenphase und zu Beginn des vegetativen Wachstums in Dauerkulturen vermindert Schäden durch Einfrieren der Pflanze. Weniger Spätfrosttage erfordern weniger Aufwand zur Schadensverhinderung. \n\nDer tendenziell frühere Vegetationsbeginn und somit frühere Blühbeginn erhöht jedoch das Schadenspotential bei Spätfrostereignissen."
+      "explanation": "Weniger Spätfrost verringert die Gefahr von Schäden an Blüten und jungen Blättern. Jedoch führt ein früherer Vegetationsbeginn und dazu, dass in der kritischen Phase Ende April/Anfang Mai bei Obstkulturen bereits Blüten und bei Weinreben junge Blätter entwickelt sind und somiterhöht jedoch das Schadenspotential bei Spätfrostereignissen erhöht ist."
     }
   ],
-  "answers": "V Less frost damage to young leaves in vineyards and fruit blossoms\nX Increased aroma formation in the grapes\nX Later ripening of the apples\nX Reduction of cereal yields",
+  "answers": "V Less frost damage to young leaves in vineyards and fruit blossoms\nX Increased aroma formation in the grapes\nX Later ripening of the apples\nV Nevertheless increased frost damage to young leaves in vineyards and to fruit blossoms",
   "title": "209 Categorie 2",
-  "explanation": "Less late frost in the bud phase and at the beginning of vegetative growth in permanent crops, reduces damage from freezing of the plants. Fewer late frost days require less effort to prevent damage. \n\nHowever, the tendency of an earlier vegetation start and thus earlier flowering increases the damage potential during late frost events.",
+  "explanation": "Less late frost reduces the risk of damage to flowers and young leaves. However, an earlier start of vegetation and the fact that in the critical phase at the end of April/beginning of May, flowers are already developed in fruit crops and young leaves in grapevines, may increase the damage potential of late frost events.",
   "category": "agricultural-impacts",
   "learn-more": "**The problem is getting worse**\n\nThe risk of late frost damage will continue to increase in the coming years, because the date on which late frosts occur remains the same for most grape varieties, which tend to sprout earlier and earlier. More and more often, green leaves are already developed in the critical phase at the end of April/beginning of May. Only as long as there is no green tissue, however, the vine have a good frost resistance. Once leaves have unfolded and shoots have grown, frost damage occurs even at temperatures just below freezing point. It is therefore advisable to think about protective or preventive measures. \n\n**Most frequent: radiation frost**\n\nLate frosts can occur above all when an inversion layer develops during high pressure weather. While the air near the ground is normally warmer than the layers above, this is reversed in cold frost nights. Without a protective cloud layer, the warm air rising from the ground can escape upwards. At the same time, cold air flows from the higher altitudes into the valley. This is how the inversion stratification is created: near the ground, the temperature is the coldest and the higher you climb, the warmer the air masses are. In this situation, there is no air exchange by wind, because the cold and heavier air masses are under lighter layers of air. This leads to the dreaded late frost damage.\n\nSources:\n\n<https://www.lwg.bayern.de/mam/cms06/weinbau/dateien/r_w-kampf_den_sp%C3%A4tfr%C3%B6sten-schwappach.pdf>\n\n<https://www.lwg.bayern.de/weinbau/087592/index.php>"
 }
