@@ -7,6 +7,12 @@
   ],
   "question": "How are the cows affected by heat stress?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Temperatuuri muutus keskkonnas mõjutab oluliselt looma käitumist. Lüpsilehmale sobiv temperatuuride vahemik (termoneutraalne tsoon) on −5 °C kuni +21 °C ning kui tegu on madalamate või kõrgemate temperatuuridega, toob see kaasa muutusi tavapärases käitumises – keha energeetiline tasakaal häirub. Seega on tavaline, et suvised õhutemperatuurid põhjustavad lüpsilehmale kuumastressi, millega kaasneb ka toodangu vähenemine. Kuumastress tekib siis, kui väline õhutemperatuur on kõrgem (samal ajal on suur ka õhuniiskus) looma termilisest mugavustsoonist, st välistemperatuuri „koormus“ on suurem kui looma võime liigsest kehasoojusest vabaneda. Arvatakse, et kuumastressi suhtes on eriti tundlikud suuretoodangulised ja multipaarsed lüpsilehmad. Kuumastress tekib loomal siis, kui õhutemperatuur on vahemikus 24−27 °C.\n\nÜhe kraadi (°C) õhutemperatuuri tõusuga (optimaalsest kõrgema õhutemperatuuri korral) kasvab lehma veetarve ligikaudu 1,5 liitrit.\n\n\n\nAllikas: Loomade heaolu. Õpik kõrgkoolidele\n\nLoe edasi:\n\n<https://dspace.emu.ee/xmlui/bitstream/handle/10492/3857/Loomade%20heaolu%20170%20X%20240%20veeb.pdf?sequence=1&isAllowed=y>\n\nVaata lühivideot - Managing Heat Stress in Dairy Cows:\n\n<https://youtu.be/4scOZg5DzU8>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X Feed intake reduces and water intake increases\nX Changes in metabolism and nutrient requirements\nX Increased body fluid loss and respiratory rate\nV Heat stress is expressed in all of the ways listed above",
   "title": "206 Categorie 2",
   "explanation": "In cows, heat stress is manifested in many ways: decreased feed intake and increased water intake, changes in metabolism and nutrient intake, increased body fluid loss and respiratory rate, increased body temperature and changes in blood hormones.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Changes in temperature in the environment significantly influence the behaviour of the animal. The temperature range (thermoneutral zone) for a dairy cow is -5°C to +21°C, and at lower or higher temperatures, this causes changes in normal behavior - the body's energy balance is disturbed. Thus, it is common that summer air temperatures can cause heat stress to the dairy cow, which also results in reduced production. Heat stress occurs when the outside air temperature is higher (and at the same time the humidity is high) out of the animal's thermal comfort zone, i.e. the outside temperature \"load\" is greater than the animal's ability to get rid of excess body heat. High-yielding and multiparous dairy cows are thought to be particularly sensitive to heat stress. Heat stress in an animal occurs when the air temperature is between 24°C and 27°C.\n\nWith one degree (°C) rise in air temperature (at sub-optimal air temperature) the cow's water consumption increases by about 1.5 liters.\n\n\n\nSource: Loomade heaolu. Õpik kõrgkoolidele\n\nRead more:\n\n<https://www.nadis.org.uk/disease-a-z/cattle/managing-heat-stress-in-dairy-cows/>\n\nWatch a short video ‘Managing Heat Stress in Dairy Cows’:\n\n<https://youtu.be/4scOZg5DzU8>"
 }
