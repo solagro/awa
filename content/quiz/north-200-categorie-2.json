@@ -7,6 +7,12 @@
   ],
   "question": "The climate change scenarios indicate higher spring temperatures in Estonia.",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "T. Saue, 2011. Doktoritöö \"Simulated potato crop yield as an indicator of climate variability in Estonia \" (Modelleeritud kartulisaak kui kliima varieeruvuse näitaja Eestis) doctor philosophiae kraadi saamiseks geograafia erialal. Juhendajad: prof Jaak Jaagus, PhD (TÜ geograafia osakond), Jüri Kadaja, PhD (Eesti Maaviljeluse Instituut).\n\nLoe lisaks:\n\n<http://hdl.handle.net/10062/17257>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "X No effect\nX Increase in yield potential of early varieties\nV Increase in yield potential of late varieties\nX Yield potential of both early and late maturing varieties is decreasing.\n",
   "title": "200 Categorie 2",
   "explanation": "Higher temperatures cause plants complete their physiological development faster, hence less time for growth phases. Too high temperatures may inhibit the formation of tubers. First of all, the early varieties reduce the number of shoots and tubers.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Triin Saue, 2011. Dissertation “Simulated potato crop yield as an indicator of climate variability in Estonia” for the commencement of the degree of Doctor of philosophiae in Geography at the University of Tartu. Supervisors: Jaak Jaagus, University of Tartu, Jüri Kadaja, Estonian Research Institute of Agriculture.\n\nRead more:\n\n<http://hdl.handle.net/10062/17257>"
 }
