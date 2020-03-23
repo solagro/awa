@@ -7,6 +7,12 @@
   ],
   "question": "What is the effect of legume crops on soil?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Liblikõielised on keskkonnasäästliku põllumajanduse võtmekultuurid, mida tuleks kasvatada majandis 30% pindalal. Tavatootmises on tulukultuuride kasvatamisele keskendumisega ja külvikorra põhimõtete eiramisega seonduvalt avaldunud mitmeid probleeme, nagu huumusesisalduse vähenemine, mullaerosioon, toitainete ja agrokemikaalide leostumine jne. Liblikõieliste kasvatamine aitab neid riske vähendada.\n\n\n\nStein-Bachinger, K. Reckling, M., Granstedt, A. 2013. Ökoloogiline taaskasutav põllumajandus. Juhend tootjatele ja nõustajatele."
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V Increasing Nitrogen and Carbon storage\nX Increasing the density of the soil\nX Reducing the permeability of soil by water\nX Inhibits the diversity of soil microbiota ",
   "title": "303 Categorie 3",
   "explanation": "A strategy to reduce dependence on synthetic fertilizers is cultivation of legume crops, which fix atmospheric nitrogen by symbiosis with nitrogen-fixing bacteria.",
-  "category": "adaptation"
+  "category": "adaptation",
+  "learn-more": "Legumes contribute to reduce the emission of greenhouse gases, as they release 5–7 times less GHG per unit area compared with other crops; allow the sequestration of carbon in soils and induce a saving of fossil energy inputs in the system thanks to N fertilizer reduction. Legumes could also be competitive crops and, due to their environmental and socioeconomic benefits, could be introduced in modern cropping systems to increase crop diversity and reduce use of external inputs. Legumes fix the atmospheric nitrogen, release in the soil high-quality organic matter and facilitate soil nutrients’ circulation and water retention.\n\n\n\nSource: Stagnari, F., Maggio, A., Galieni, A.et al.Multiple benefits of legumes for agriculture sustainability: an overview.Chem. Biol. Technol. Agric.4, 2 (2017).\n\n<https://doi.org/10.1186/s40538-016-0085-1>"
 }
