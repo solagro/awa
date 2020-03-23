@@ -7,6 +7,12 @@
   ],
   "question": "Can climate change offer positive opportunities for growing permanent crops in Estonia?",
   "theme": "north",
+  "learn-more-i18n": [
+    {
+      "language": "et",
+      "learn-more": "Loe lisaks ülevaadet Põhja-Euroopa kliimatrendidest ja agroklimaatilistest näitajatest:\n\n<https://agriadapt.eu/wp-content/uploads/2017/05/L%C3%A4hteolukorra-aruanne.pdf>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "et",
@@ -23,5 +29,6 @@
   "answers": "V Yes, higher temperatures make it possible to grow varieties adapted to warmer climate.\nX No, climate change is worsening the growing conditions for permanent crops\nV Yes, higher temperatures allow table grapes to be grown outdoors\nX Yes, higher temperatures and higher rainfall during the winter period shorten the dormancy period of permanent crops and start growing earlier",
   "title": "209 Categorie 2",
   "explanation": "Higher temperatures and longer vegetation period allow the cultivation of grape and apple cultivars (eg 'Royal Gala', 'Red Prince') adapted to warmer climate.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "Read more about the climate trends and agro-climatic characteristics of Northern Europe:\n\n<https://agriadapt.eu/wp-content/uploads/2017/05/L%C3%A4hteolukorra-aruanne.pdf>"
 }
