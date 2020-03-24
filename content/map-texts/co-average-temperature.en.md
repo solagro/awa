@@ -5,7 +5,7 @@ dataType: average-temperature
 ---
 
 The **annual average of daily temperatures (°C)** is available for the period
-**1986-2016**.
+**1987-2016**.
 
 The results are presented for **an entire calendar year**, then by season
 according to the following approach: **winter** (January - February - March),
