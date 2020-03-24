@@ -17,8 +17,6 @@ Este módulo está dedicado a medidas de adaptación sostenibles que se pueden p
 
 La implementación de una estrategia para la adaptación sostenible al cambio climático tiene lugar a lo largo del tiempo. Por lo tanto, las medidas propuestas se distinguen de acuerdo con la posibilidad de implementación a corto, mediano o largo plazo. Para cada medida de adaptación, es posible saber más con un simple clic: luego aparece una hoja de resumen, que ofrece una visión general de su durabilidad general a través de su posible impacto (neutral, positivo o adverso) en un conjunto de 9 componentes: emisión de invernadero gases, calidad del aire, suelo, agua, etc.
 
-The sustainable adaptation measures are specific to each of the 4 climate zones proposed. For each zone, the measures are systematically available in English as well as in the language of the country it represents.
-
 Las medidas de adaptación sostenible son específicas para cada una de las 4 regiones de riesgo climático propuestas. Para cada zona, las medidas están sistemáticamente disponibles en inglés y en el idioma del país que representa.
 
 ![](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Climate regions")
