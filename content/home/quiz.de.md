@@ -13,7 +13,7 @@ order: 1
 
 Anhand von etwa 30 verschiedenen Fragen können Sie Ihr Wissen über den Klimawandel, die Auswirkungen des Klimas auf verschiedene landwirtschaftliche Betriebstypen und mögliche Anpassungsmaßnahmen auf betrieblicher Ebene testen.
 
-Es werden 4 verschiedene Quiz angeboten, jeweils angepasst an die geographische Lage bzw. Klimarisikoregion der 4 am Projekt beteiligten Länder (Frankreich, Deutschland, Spanien und Estland). Diese stehen repräsentativ für einen bestimmte Klimaregion in Europa: mediterran, atlantisch, kontinental und nordisch. Jedes Quiz ist systematisch sowohl auf Englisch als auch in der Sprache des Landes, das es repräsentiert, erhältlich.
+Es werden 4 verschiedene Quiz angeboten, jeweils angepasst an die geographische Lage bzw. Klimarisikoregion der 4 am Projekt beteiligten Länder (Frankreich, Deutschland, Spanien und Estland). Diese stehen repräsentativ für eine bestimmte Klimaregion in Europa: südliche, atlantische, kontinentale und nördliche Region.  Jedes Quiz ist sowohl auf Englisch als auch in der Sprache des Landes, das es repräsentiert, verfügbar.
 
 Für jede Frage sind unter den 4 Vorschlägen eine oder mehrere richtige Antworten möglich. Klicken Sie einfach auf Ihre Wahl (nur eine möglich), um zu wissen, ob Ihre Antwort richtig ist. Am unteren Bildschirmrand erscheint dann eine Erklärung. Wenn Sie möchten, können Sie das Thema noch weiter vertiefen, indem Sie auf "Mehr erfahren" klicken.
 
