@@ -3,6 +3,8 @@ sourceType: climateProjections
 dataType: vineyardFruit
 locale: es
 ---
+A continuación se incluyen las **proyecciones climáticas** que caracterizan el clima para los próximos 30 años, período correspondiente al **futuro cercano** (NF). Estas proyecciones provienen de modelos climáticos que simulan el clima y su posible evolución (Agri4Cast, JRC).
+Una primera serie de indicadores generales describe las variables del clima para el Futuro Cercano. Y después se incluyen gráficos sobre indicadores más específicos, que ofrecen infromación sobre las condiciones de producción de : cultivos herbáceos, forraje, manejo del ganado y cultivos permanentes (viñedos y frutales).
 
 Los siguientes indicadores agroclimáticos están dedicados a **frutales y
 viñedos**.
