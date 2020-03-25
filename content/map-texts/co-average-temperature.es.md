@@ -15,4 +15,4 @@ agosto - septiembre) y finalmente **otoño** (octubre - noviembre - diciembre).
 Para cada grupo de datos, se resumen los valores **mínimos**, **máximos** y la
 **mediana**.
 
-Fuente: Agri4Cast
+Fuente: Agri4Cast, JRC
