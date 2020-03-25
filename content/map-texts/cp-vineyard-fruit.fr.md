@@ -3,12 +3,14 @@ sourceType: climateProjections
 dataType: vineyardFruit
 locale: fr
 ---
+Vous allez maintenant découvrir des **projections climatiques** permettant de caractériser le climat des 30 prochaines années, période correspondant au **Futur Proche** (FP). Ces projections proviennent de modèles climatiques simulant le climat et son évolution possible (Agri4Cast, JRC).
+Une première série d’indicateurs généraux permettent de décrire les variables de ce climat pour le FP. Puis, vous pourrez parcourir des indicateurs plus spécifiques, éclairant les conditions de production de grandes cultures, de production de fourrages, de conduite de l’élevage, et enfin de production de plantes pérennes (vignes et fruits).
 
 Les indicateurs agro climatiques suivant sont tous consacrés aux **arbres
 fruitiers et à la vigne**.
 
 Les évolutions possibles des conditions agronomiques sont illustrées au travers
-de **4 indicateurs** : Indice héliothermique de Huglin (IH), indice de
+de **4 indicateurs** : Indice héliothermique de Huglin (IH), Indice de
 fraîcheur des nuits, déficit hydrique durant la phase végétative ou bien risque
 de gel tardif.
 
