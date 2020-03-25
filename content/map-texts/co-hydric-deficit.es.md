@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: hydric-deficit
 locale: es
 ---
+El clima se describe mediante un conjunto de variables climáticas (temperaturas, precipitaciones, etc.) durante un período de **al menos 30 años**, el tiempo necesario para vislumbrar la variabilidad y los cambios en ciertos parámetros.
 
 El **déficit (o balance) hídrico** se calcula mediante la diferencia entre la
 lluvia y la evapotranspiración potencial durante un período determinado. Los
