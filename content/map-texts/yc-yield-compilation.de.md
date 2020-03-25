@@ -14,3 +14,10 @@ zusammengestellt. Eine farbliche Darstellung von Grün bis Rot erleichtert es,
 die jährliche Ertragsleistung visuell zu erkennen. Für die schlechtesten Jahre,
 deren Erträge in Rot erscheinen, stellt sich dann die Frage, welche
 limitierenden klimatischen Faktoren dafür verantwortlich waren.
+
+Quellen für Erträge:
+Estland (Statistics Estonia),
+Frankreich (Agreste, SAA),
+Deutschland(Statistisches Landesamt Baden-Württemberg, Bayrisches Landesamt für Statistik, Amt für Statistik Berlin-Brandenburg, Hessisches, Statistisches Landesamt, Landesamt für innere Verwaltung, Statistisches Amt, Landesamt für Statistik Niedersachsen, Statistisches Landesamt Nordrhein-Westfalen, Statistisches Landesamt Nordrhein-Westfalen, Statistische Landesamt Rheinland-Pfalz, Statistisches Landesamt des Freistaates Sachsen, Statistisches Landesamt Sachsen-Anhalt, Statistisches Amt für Hamburg und Schleswig-Holstein, Thüringer Landesamt für Statistik),
+Spanien (MAPA),
+Andere Länder (FAO Stat).
