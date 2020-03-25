@@ -12,3 +12,5 @@ selon l’approche suivante : **hiver** (janvier – février – mars), **prin
 (octobre - novembre - décembre).
 
 Pour chaque représentation graphique, le détail de la valeur annuelle est disponible par un simple survol avec le curseur. Ainsi, pourrez encadrer les valeurs **minimales** et **maximales** de la série chronologique proposée, mais aussi **repérer d'éventuelles évolutions** sur la période.
+
+Source : Agri4Cast, JRC
