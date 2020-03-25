@@ -9,8 +9,8 @@ La **media anual de temperaturas diarias (°C)** está disponible para el perío
 
 Los resultados se presentan para el calendario anual completo y a continuación
 por estaciones de acuerdo con el siguiente enfoque: **invierno** (enero -
-febrero - marzo), **primavera** (abril - mayo - junio), **verano** (julio,
-agosto, septiembre) y finalmente **otoño** (octubre Noviembre-Diciembre).
+febrero - marzo), **primavera** (abril - mayo - junio), **verano** (julio -
+agosto - septiembre) y finalmente **otoño** (octubre - noviembre - diciembre).
 
 Para cada grupo de datos, se resumen los valores **mínimos**, **máximos** y la
 **mediana**.
