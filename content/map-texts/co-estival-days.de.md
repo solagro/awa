@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: estival-days
 locale: de
 ---
+Das Klima wird durch eine Reihe klimatischer Variablen (Temperaturen, Niederschläge usw.) über einen Zeitraum von mindestens **30 Jahren** beschrieben, die Zeit, die notwendig ist, um die Variabilität und die Veränderungen bestimmter Parameter zu erkennen.
 
 Anzahl der Tage pro Jahr mit Höchsttemperaturen über 25°C für den Zeitraum
 **1987-2016**.
