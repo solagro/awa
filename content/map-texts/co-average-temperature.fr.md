@@ -3,6 +3,8 @@ locale: fr
 sourceType: climateObservations
 dataType: average-temperature
 ---
+Un climat est décrit par un ensemble de variables climatiques (températures, pluviométrie, etc.) sur une période **d’au moins 30 ans**, durée nécessaire pour entrevoir la variabilité et les évolutions de certains paramètres.
+
 La **température moyenne journalière (°C)** est disponible pour la période
 **1987-2016**.
 
