@@ -8,3 +8,5 @@ Número de días al año con **temperaturas máximas** superiores a 25 ° C para
 período **1987-2016**.
 
 Se resumen los valores **mínimos**, **máximos** y la **mediana**.
+
+Fuente: Agri4Cast, JRC
