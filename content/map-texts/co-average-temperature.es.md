@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: average-temperature
 locale: es
 ---
+El clima se describe mediante un conjunto de variables climáticas (temperaturas, precipitaciones, etc.) durante un período de **al menos 30 años**, el tiempo necesario para vislumbrar la variabilidad y los cambios en ciertos parámetros.
 
 La **media anual de temperaturas diarias (°C)** está disponible para el período
 **1987-2016**.
