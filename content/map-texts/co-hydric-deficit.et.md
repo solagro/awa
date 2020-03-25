@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: hydric-deficit
 locale: et
 ---
+Kliimat kirjeldatakse ilmastikumuutujatega (temperatuurid, sademed jne) vähemalt **30-aastase** perioodi jooksul, mis on vajalik varieeruvuse ja teatud parameetrite muutuste registreerimiseks.
 
 Veepuudus (või bilanss) arvutatakse sademete hulga ja potentsiaalse aurumise
 erinevusena konkreetsel perioodil. Väärtused (mm) hõlmavad siin ajavahemikku
