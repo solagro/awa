@@ -11,7 +11,7 @@ vineyards**.
 
 The possible changes in agronomic conditions are illustrated through **4
 indicators**: Huglin heat sum Index (HI), cold Night Index, hydric deficit
-during growing season or late frost risk.
+during growing season or late spring frost risk.
 
 Like the climate general indicators, the simulations offer a reading of the
 **Recent Past** (i.e. the past 30 years) as well as the **Near Future** (i.e.
