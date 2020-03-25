@@ -4,7 +4,7 @@ sourceType: climateObservations
 dataType: average-temperature
 ---
 
-A climate is described by a set of climatic variables (temperatures, rainfall, etc.) over a period of at least 30 years, the time necessary to glimpse the variability and changes in certain parameters.
+A climate is described by a set of climatic variables (temperatures, rainfall, etc.) over a period of **at least 30 years**, the time necessary to glimpse the variability and changes in certain parameters.
 
 The **annual average of daily temperatures (°C)** is available for the period
 **1987-2016**.
