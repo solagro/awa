@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: average-temperature
 locale: et
 ---
+Kliimat kirjeldatakse ilmastikumuutujatega (temperatuurid, sademed jne) vähemalt **30-aastase** perioodi jooksul, mis on vajalik varieeruvuse ja teatud parameetrite muutuste registreerimiseks.
 
 Aasta keskmised temperatuurid (°C) on saadaval ajavahemikus **1987-2016**.
 
