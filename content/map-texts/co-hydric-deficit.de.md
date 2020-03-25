@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: hydric-deficit
 locale: de
 ---
+Das Klima wird durch eine Reihe klimatischer Variablen (Temperaturen, Niederschläge usw.) über einen Zeitraum von mindestens **30 Jahren** beschrieben, die Zeit, die notwendig ist, um die Variabilität und die Veränderungen bestimmter Parameter zu erkennen.
 
 Das **Wasserdefizit (oder die klimatische Wasserbilanz)** wird durch die
 Differenz zwischen Niederschlag und potentieller Evapotranspiration über einen
