@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: precipitation
 locale: et
 ---
+Kliimat kirjeldatakse ilmastikumuutujatega (temperatuurid, sademed jne) vähemalt **30-aastase** perioodi jooksul, mis on vajalik varieeruvuse ja teatud parameetrite muutuste registreerimiseks.
 
 Kumulatiivne sademete hulk ( mm) on saadaval ajavahemikus **1987-2016**.
 
