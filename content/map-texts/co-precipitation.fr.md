@@ -3,6 +3,7 @@ locale: fr
 sourceType: climateObservations
 dataType: precipitation
 ---
+Un climat est décrit par un ensemble de variables climatiques (températures, pluviométrie, etc.) sur une période **d’au moins 30 ans**, durée nécessaire pour entrevoir la variabilité et les évolutions de certains paramètres.
 
 Le **cumul de précipitations (mm)** est disponible pour la période
 **1987-2016**.
