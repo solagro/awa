@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: average-temperature
 locale: de
 ---
+Das Klima wird durch eine Reihe klimatischer Variablen (Temperaturen, Niederschläge usw.) über einen Zeitraum von mindestens **30 Jahren** beschrieben, die Zeit, die notwendig ist, um die Variabilität und die Veränderungen bestimmter Parameter zu erkennen.
 
 Der **Jahresdurchschnitt der Tagestemperaturen (°C)** ist für den Zeitraum
 **1987-2016** verfügbar.
