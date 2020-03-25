@@ -14,3 +14,10 @@ ou rouge permet de distinguer visuellement le niveau de **performance
 annuelle**. Pour les moins bonnes années apparaissant en rouge, il est alors
 possible de s’interroger sur les facteurs climatiques limitants ainsi que leurs
 évolutions tendancielles.
+
+Sources de rendements:
+Estonie (Statistiques Estonie), 
+France (Agreste, SAA),
+Allemagne (Statistisches Landesamt Baden-Württemberg, Bayrisches Landesamt für Statistik, Amt für Statistik Berlin-Brandenburg, Hessisches, Statistisches Landesamt, Landesamt für innere Verwaltung, Statistisches Amt, Landesamt für Statistik Niedersachsen, Statistisches Landesamt Nordrhein-Westfalen, Statistisches Landesamt Nordrhein-Westfalen, Statistische Landesamt Rheinland-Pfalz, Statistisches Landesamt des Freistaates Sachsen, Statistisches Landesamt Sachsen-Anhalt, Statistisches Amt für Hamburg und Schleswig-Holstein, Thüringer Landesamt für Statistik),
+Espagne (MAPA),
+Autres pays (FAO, Stat).
