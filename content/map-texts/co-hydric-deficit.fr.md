@@ -3,6 +3,7 @@ sourceType: climateObservations
 dataType: hydric-deficit
 locale: fr
 ---
+Un climat est décrit par un ensemble de variables climatiques (températures, pluviométrie, etc.) sur une période **d’au moins 30 ans**, durée nécessaire pour entrevoir la variabilité et les évolutions de certains paramètres.
 
 Le **déficit (ou bilan) hydrique** est calculé par la différence entre les
 précipitations et l’évapotranspiration potentielle sur une période donnée. Les
@@ -16,4 +17,3 @@ selon l’approche suivante : **hiver** (janvier – février – mars), **prin
 Pour chaque représentation graphique, le détail de la valeur annuelle est disponible par un simple survol avec le curseur. Ainsi, pourrez encadrer les valeurs **minimales** et **maximales** de la série chronologique proposée, mais aussi **repérer d'éventuelles évolutions** sur la période.
 
 Source : Agri4Cast, JRC
-
