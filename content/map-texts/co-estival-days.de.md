@@ -9,3 +9,5 @@ Anzahl der Tage pro Jahr mit Höchsttemperaturen über 25°C für den Zeitraum
 
 Die **Minimal**- und **Maximalwerte** sowie der **Median** werden
 zusammengefasst.
+
+Quelle: Agri4Cast, JRC
