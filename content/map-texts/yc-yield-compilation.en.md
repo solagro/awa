@@ -9,11 +9,11 @@ to use **yield compilations over several years**.
 
 Below, the average annual yields of different categories of crops are compiled
 from the **harvest 2000 to harvest 2017**. A color gradient ranging from green to
-red helps to detect visually the level of annual performance. For the worst
+red helps to detect visually the level of **annual performance**. For the worst
 years appearing in red, it is then possible to wonder about the limiting
 climatic factors as well as their current trends.
 
-Sources for yields:
+**Sources for yields:**
 Estoni (Statistics Estonia), 
 France (Agreste, SAA), 
 Germany (Statistisches Landesamt Baden-Württemberg, Bayrisches Landesamt für Statistik, Amt für Statistik Berlin-Brandenburg, Hessisches, Statistisches Landesamt, Landesamt für innere Verwaltung, Statistisches Amt, Landesamt für Statistik Niedersachsen, Statistisches Landesamt Nordrhein-Westfalen, Statistisches Landesamt Nordrhein-Westfalen, Statistische Landesamt Rheinland-Pfalz, Statistisches Landesamt des Freistaates Sachsen, Statistisches Landesamt Sachsen-Anhalt, Statistisches Amt für Hamburg und Schleswig-Holstein, Thüringer Landesamt für Statistik),
