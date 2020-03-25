@@ -14,3 +14,5 @@ Jahreszeiten nach folgendem Ansatz: **Winter** (Januar - Februar - März),
 
 Für jede Darstellung werden die **Minimal**- und **Maximalwerte** sowie der
 **Median** zusammengefasst.
+
+Quelle: Agri4Cast, JRC
