@@ -9,8 +9,7 @@ A first series of general indicators describe the variables of this climate for 
 The following agro climatic indicators are all devoted to **fodder**.
 
 The possible changes in agronomic conditions are illustrated through **3
-indicators**: Day of beginning of grass regrowth, first day of early mowing
-(silage) or summer drought.
+indicators**: Day of beginning of grass regrowth, Mowing of first silage or Summer drought.
 
 Like the climate general indicators, the simulations offer a reading of the
 **Recent Past** (i.e. the past 30 years) as well as the **Near Future** (i.e.
