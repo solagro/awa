@@ -8,7 +8,7 @@ Esimene, üldiste indikaatorite, seeria kirjeldab kliimamuutujaid lähitulevikus
 
 Järgmised agroklimaatilised näitajad on seotud loomakasvatusega.
 
-Klimaatiliste tingimuste võimalikke muutusi illustreerib 3 indikaatorit:
+Klimaatiliste tingimuste võimalikke muutusi illustreerib **3 indikaatorit**:
 kuumastressi esinemise risk veistel, loomakasvatushoonete soojustamise ja
 jahutamise vajadus.
 
