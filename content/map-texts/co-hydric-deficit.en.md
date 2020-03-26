@@ -15,6 +15,6 @@ according to the following approach: **winter** (January - February - March),
 **spring** (April - May - June), **summer** (July - August - September) and
 finally **autumn** (October - November - December).
 
-For each graphical representation, the detail of the annual value is available by a simple hover with the cursor. Thus, you will be able to frame the **minimum** and **maximum** values of the proposed time series, but also **identify possible developments** over the period.
+For each graphical representation, the detail of the annual value is available by a simple hover with the cursor. Thus, you will be able to frame the **minimum** and **maximum** values of the proposed time series, but also **identify possible changes** over the period.
 
 Source: Agri4Cast, JRC
