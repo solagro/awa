@@ -14,7 +14,6 @@ por estaciones de acuerdo con el siguiente enfoque: **invierno** (enero -
 febrero - marzo), **primavera** (abril - mayo - junio), **verano** (julio -
 agosto - septiembre) y finalmente **otoño** (octubre - noviembre - diciembre).
 
-Para cada grupo de datos, se resumen los valores **mínimos**, **máximos** y la
-**mediana**.
+Para cada representación gráfica, el dato de cada valor anual se puede consultar con un simple clic pinchando con el cursor. Por tanto, podrá consultar el rango de valores **mínimos** y **máximos** de la serie temporal representada, pero además, podrá **identificar los diferentes cambios** que hayan ocurrido a lo largo de este periodo. 
 
 Fuente: Agri4Cast, JRC
