@@ -9,7 +9,7 @@ cette variabilité, il est nécessaire de faire appel à des **historiques de
 rendements sur plusieurs années**.
 
 Ci-dessous, les rendements moyens annuels de différentes catégories de cultures
-compilés de la récolte **2000 à 2017**. Un gradient de couleur allant du vert
+compilés de la récolte **2000 à 2017**. Un dégradé de couleur allant du vert
 ou rouge permet de distinguer visuellement le niveau de **performance
 annuelle**. Pour les moins bonnes années qui apparaissant en rouge, il est alors
 possible de s’interroger sur les facteurs climatiques limitants ainsi que leurs
