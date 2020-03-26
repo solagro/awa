@@ -9,6 +9,6 @@ A climate is described by a set of climatic variables (temperatures, rainfall, e
 The number of days per year with **minimal temperatures** strictly below 0°C is available for
 the period **1987-2016**.
 
-The detail of the annual value is available by a simple hover with the cursor on the graph. Thus, you will be able to frame the **minimum** and **maximum** values of the proposed time series, but also **identify possible developments** over the period.
+The detail of the annual value is available by a simple hover with the cursor on the graph. Thus, you will be able to frame the **minimum** and **maximum** values of the proposed time series, but also **identify possible changes** over the period.
 
 Source: Agri4Cast, JRC
