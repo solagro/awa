@@ -1,7 +1,7 @@
 ---
 locale: fr
 id: summaryPresentation
-title: Synthèse
+title: Synthèse : démarche d'adaptation
 hrefBefore: "#adaptationsPresentation"
 to: "/quiz"
 buttonText: Démarrer le quiz
