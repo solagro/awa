@@ -10,7 +10,7 @@
   "learn-more-i18n": [
     {
       "language": "fr",
-      "learn-more": "Outre la date des vendanges, la vinification et les vins vont changer, puisque sous un climat différent, la composition des raisins se modifie. De nouveaux équilibres aromatiques devront donc être trouvés par les œnologues pour élaborer les vins de 2050. Afin d’aider tous ces acteurs à se préparer au climat de demain, le projet **LACCAVE**, « Adaptation à long terme au changement climatique pour la viticulture et l’œnologie », a réuni les savoirs, diffusé les connaissances et anticipé quatre scénarios pour les régions viticoles de France.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554977/learn_more/q16_1_u2cccp.png)\n\n*Figure : Les effets du changement climatiques sur la vigne et le vin (source **LACCAVE**).*"
+      "learn-more": "Outre la date des vendanges, la vinification et les vins vont changer, puisque sous un climat différent, la composition des raisins se modifie. De nouveaux équilibres aromatiques devront donc être trouvés par les œnologues pour élaborer les vins de 2050. Afin d’aider tous ces acteurs à se préparer au climat de demain, le projet **LACCAVE**, « Adaptation à long terme au changement climatique pour la viticulture et l’œnologie », a réuni les savoirs, diffusé les connaissances et anticipé quatre scénarios pour les régions viticoles de France.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554977/learn_more/q16_1_u2cccp.png \"Les effets du changement climatiques sur la vigne et le vin (source LACCAVE)\")"
     }
   ],
   "answer-i18n": [
@@ -29,5 +29,6 @@
   "answers": "V Yields?\nV The degree of alcohol and acidity?\nV Aroma and color?\nX Effervescence? ",
   "title": "205 Categorie 2",
   "explanation": "Climate change (increase in CO2 concentration, average temperature, frequency and severity of thermal and water stress) will negatively and positively affect yields, alcohol content, acidity, aroma and color. The effects will depend on the grape varieties and the regions.",
-  "category": "agricultural-impacts"
+  "category": "agricultural-impacts",
+  "learn-more": "In addition to the harvest date, the vinification and the wines will change, since under a different climate, the composition of the grapes changes. New aromatic balances will therefore have to be found by the oenologists to develop the wines of 2050. In order to help all these actors to prepare for the climate of tomorrow, the **LACCAVE project**, \"Long-term adaptation to climate change for viticulture and oenology ”, gathered knowledge, disseminated knowledge and anticipated four scenarios for the wine regions of France.\n\n\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554977/learn_more/q16_1_u2cccp.png \"The effects of climate change on the vine and wine (source LACCAVE)\")"
 }
