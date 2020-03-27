@@ -1,7 +1,7 @@
 ---
 locale: es
 id: adaptationsPresentation
-title: Medidas de adaptación sostenible
+title: Medidas Sostenibles de Adaptación
 picto: "/images/pictos/adaptations.svg"
 altPicto: adaptations
 hrefBefore: "#mapPresentation"
