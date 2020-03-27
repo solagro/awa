@@ -1,7 +1,7 @@
 ---
 locale: et
 id: summaryPresentation
-title: Kokkuvõte
+title: Kokkuvõte: kohanemisprotsess
 hrefBefore: "#adaptationsPresentation"
 to: "/quiz"
 buttonText: Start quiz
