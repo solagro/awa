@@ -1,7 +1,7 @@
 ---
 locale: es
 id: summaryPresentation
-title: Resumen
+title: Resumen: proceso de adaptación
 hrefBefore: "#adaptationsPresentation"
 to: "/quiz"
 buttonText: Start quiz
