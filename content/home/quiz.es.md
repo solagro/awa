@@ -1,7 +1,7 @@
 ---
 locale: es
 id: quizPresentation
-title: Cuestionarios de vulnerabilidad y adaptación de la explotación agraria
+title: Encuesta sobre vulnerabilidad y adaptación de la explotación
 picto: "/images/pictos/quiz.svg"
 altPicto: quiz
 hrefBefore: "#top"
