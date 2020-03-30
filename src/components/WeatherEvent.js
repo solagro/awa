@@ -60,7 +60,7 @@ const WeatherEvent = ({ event, period }) => {
         {['2', '3', '4', '7'].map(id => (
           <CustomIcon
             key={id}
-            src={`/images/weather-events/STRESS_${id}.png`}
+            src={`/images/weather-events/STRESS_${id}.svg`}
             label={t(getEventName(id))}
             showTooltip
             inline
@@ -74,7 +74,7 @@ const WeatherEvent = ({ event, period }) => {
   return (
     <Box className={classes.box}>
       <CustomIcon
-        src={`/images/weather-events/STRESS_${eventId}.png`}
+        src={`/images/weather-events/STRESS_${eventId}.svg`}
         label={t(event)}
         showTooltip
       />

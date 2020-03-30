@@ -27,7 +27,7 @@ const RiskRegion = ({
 
   return (
     <CustomIcon
-      src={`/images/regions/ZONE_${getRegionId(region)}.png`}
+      src={`/images/regions/ZONE_${getRegionId(region)}.svg`}
       label={label}
       showLabel={showName}
       {...props}

@@ -40,7 +40,7 @@ const SustainabilityComponents = ({ measure }) => {
           >
             <ListItemIcon>
               <img
-                src={`/images/sustainability/impact-${measure[sustainabilityComponent]}.png`}
+                src={`/images/sustainability/impact-${measure[sustainabilityComponent]}.svg`}
                 style={{ width: '2em', margin: 0 }}
                 alt=""
               />
