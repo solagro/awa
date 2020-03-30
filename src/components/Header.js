@@ -25,7 +25,7 @@ const Header = ({ siteTitle, parentSite, logo, preventDefault }) => {
 
   return (
     <Grid container direction="row" justify="space-between" alignItems="flex-start" className={classes.header}>
-      <a href={parentSite} onClick={preventDefault}>
+      <a target="_blank" rel="noopener noreferrer nofollow" href={parentSite} onClick={preventDefault}>
         <img
           className={classes.logo}
           src={logo}

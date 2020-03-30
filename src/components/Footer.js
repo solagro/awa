@@ -46,7 +46,7 @@ const Footer = () => {
       <Grid item xs={12} md={4}>
         <Grid container spacing={2}>
           <Grid item xs={6} lg={5} className={classes.footer__partnership_life}>
-            <a href="https://ec.europa.eu/easme/en/life">
+            <a target="_blank" rel="noopener noreferrer nofollow" href="https://ec.europa.eu/easme/en/life">
               <img className={classes.footer__logo} src="/images/logos/Life.jpg" alt="life logo" />
             </a>
           </Grid>
@@ -59,22 +59,22 @@ const Footer = () => {
         <Typography variant="h2" gutterBottom className={classes.footer__title}>{t('Partnership')} </Typography>
         <Grid container spacing={6} className={classes.footer__partnership}>
           <Grid item xs={6} lg={5} className={classes.footer__logo}>
-            <a href="http://www.bodensee-stiftung.org">
+            <a target="_blank" rel="noopener noreferrer nofollow" href="http://www.bodensee-stiftung.org">
               <img src="/images/logos/LCF.jpg" alt="LCF logo" />
             </a>
           </Grid>
           <Grid item xs={6} lg={5} className={classes.footer__logo}>
-            <a href="https://www.emu.ee/en">
+            <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.emu.ee/en">
               <img src="/images/logos/EMU.jpg" alt="EMU logo" />
             </a>
           </Grid>
           <Grid item xs={6} lg={5} className={classes.footer__logo}>
-            <a href="https://fundacionglobalnature.org">
+            <a target="_blank" rel="noopener noreferrer nofollow" href="https://fundacionglobalnature.org">
               <img src="/images/logos/FGN.jpg" alt="FGN logo" />
             </a>
           </Grid>
           <Grid item xs={6} lg={5} className={classes.footer__logo}>
-            <a href="https://solagro.org">
+            <a target="_blank" rel="noopener noreferrer nofollow" href="https://solagro.org">
               <img src="/images/logos/Solagro.jpg" alt="Solagro logo" />
             </a>
           </Grid>
