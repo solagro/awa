@@ -153,6 +153,17 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect },
     vulnerabilities: group.map(({ fieldValue }) => fieldValue),
   }));
 
+  // eslint-disable-next-line global-require
+  const catalog = require('../../content/adaptations/catalog.json');
+
+  const firstSystem = getValueFrom(catalog)('farming-system', '1');
+
+  const firstVulnerabilities = {
+    cereals: getValueFrom(catalog)('farm-vulnerability-component', '11'),
+    animals: getValueFrom(catalog)('farm-vulnerability-component', '21'),
+    'fruits-and-vineyards': getValueFrom(catalog)('farm-vulnerability-component', '31'),
+  };
+
   await Promise.all(locales.map(async language => {
     /**
      * Create redirection from adaptations root path
@@ -160,7 +171,7 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect },
      */
     await createRedirect({
       fromPath: buildPath(language, 'adaptations'),
-      toPath: buildPath(language, 'adaptations', tree[0].system, tree[0].vulnerabilities[0]),
+      toPath: buildPath(language, 'adaptations', firstSystem, firstVulnerabilities[firstSystem]),
       redirectInBrowser: true,
       // isPermanent: true,
     });
@@ -172,7 +183,7 @@ exports.createPages = async ({ graphql, actions: { createPage, createRedirect },
        */
       await createRedirect({
         fromPath: buildPath(language, 'adaptations', system),
-        toPath: buildPath(language, 'adaptations', system, vulnerabilities[0]),
+        toPath: buildPath(language, 'adaptations', system, firstVulnerabilities[system]),
         redirectInBrowser: true,
         // isPermanent: true,
       });
