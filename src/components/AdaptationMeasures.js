@@ -100,8 +100,14 @@ const AdaptationMeasures = ({
    * Array of adaptations measures for rendering it as a list
    */
   const allMeasureLinks = adaptationMeasures.map(({
-    fields: { slug, measure: { name, climate_risk_region: region, implementation: term } },
-  }) => ({ slug, name, region, term }));
+    fields: { slug, measure: {
+      name,
+      alt_name: altName,
+      alt_language: altLanguage,
+      climate_risk_region: region,
+      implementation: term,
+    } },
+  }) => ({ slug, name, region, term, altName, altLanguage }));
 
   const stateFromRegion = newRegion => {
     const regionMeasures = allMeasureLinks.filter(filterBy('region')(newRegion));

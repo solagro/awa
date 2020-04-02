@@ -26,7 +26,7 @@ const AdaptationMeasureList = ({
   linkPrefix = '',
 }) => {
   const theme = useTheme();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const classes = useStyles();
 
@@ -38,8 +38,8 @@ const AdaptationMeasureList = ({
         </ListItem>
       )}
 
-      {measures.map(({ slug, name, region, term }) => (
-        <ListItem dense disableGutters key={slug}>
+      {measures.map(({ slug, name, region, term, altName, altLanguage }) => (
+        <ListItem dense disableGutters key={`${name}${altName}`}>
           <Button
             className={classes.button}
             component={Link}
@@ -50,7 +50,7 @@ const AdaptationMeasureList = ({
             to={`${linkPrefix}/${region}/${slug}`}
             state={{ modal: true }}
           >
-            {name}
+            {altLanguage === i18n.language ? altName : name}
           </Button>
         </ListItem>
       ))}
