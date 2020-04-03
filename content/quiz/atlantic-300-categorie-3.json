@@ -1,0 +1,29 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "Parmi ces propositions, quels sont selon vous les trois leviers majeurs de l’adaptation aux changements climatiques ?"
+    }
+  ],
+  "question": "Among these proposals, what do you think are the three major levers for adapting to climate change?",
+  "theme": "atlantic",
+  "learn-more-i18n": [],
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "V La diversification\nV L'extensification\nX L'irrigation\nV La qualité et la santé des sols"
+    }
+  ],
+  "order": 300,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Le plus grand défi de l’adaptation aux changements climatiques réside dans **l’augmentation de la** **variabilité intra et inter annuelle**. Les 3 concepts clés de l’adaptation sont : **diversification** (ne pas mettre tous ses œufs dans le même panier), **extensification** (ne pas miser sur de hauts rendements), **les sols** (capables de tamponner certains excès)."
+    }
+  ],
+  "answers": "V Diversification\nV Extensification\nX Irrigation\nV Quality and healthy soils",
+  "title": "300 categorie 3",
+  "explanation": "The biggest challenge of adapting to climate change lies in **increasing the intra and inter annual variability**. The 3 key concepts of adaptation are: **diversification** (do not put all your eggs in one basket), **extensification** (do not bet on high yields), and **soils** ( able to buffer certain excesses).",
+  "category": "adaptation",
+  "learn-more": ""
+}
