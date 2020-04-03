@@ -11,7 +11,7 @@ buttonText: See measures
 order: 3
 ---
 
-![](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/weather_events_bpmfaq.png "Weather events")
+<img src = https://res.cloudinary.com/solagro/image/upload/v1585924820/homepage/climate_events_adrkd4.svg alt = "Weather events" width = "900">
 
 See moodul tutvustab jätkusuutlikke kohanemismeetmeid, mida ettevõtetel oleks võimalik kasutada. Agroklimaatiline haavatavus sõltub sageli mitmest kliimategurist, seetõttu on vaja kaaluda mitme erineva kohanemismeetme rakendamist. Jätkusuutlikud kohanemismeetmed on iga kolme põllumajandussüsteemi kohta jaotatud veel omakorda ettevõtte haavatavuse nelja valdkonna järgi. Näiteks põllukultuuride kasvatamise puhul soovitakse kavandatavate meetmetega parandada viljelussüsteemide, taimmaterjalide, veemajanduse ning mullaharimise ja agrotehnika kohanemist kliimamuutustele.
 
@@ -19,4 +19,4 @@ Jätkusuutliku kliimamuutustega kohanemise strateegia rakendamine toimub teatud 
 
 Jätkusuutlikud kohanemismeetmed on kõigi nelja kliimavööndi jaoks spetsiifilised. Iga vööndi meetmed on saadaval nii inglise keeles kui ka selle riigi keeles, mida see esindab.
 
-![](https://res.cloudinary.com/solagro/image/upload/v1583238492/homepage/climate_regions_qgfyo4.png "Climate regions")
+<img src = https://res.cloudinary.com/solagro/image/upload/v1585924650/homepage/climate_regions_whhi8a.svg alt = "Climate regions" width = "900" align="left">
