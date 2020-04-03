@@ -2,6 +2,14 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { graphql } from 'gatsby';
 
+/* eslint-disable import/no-extraneous-dependencies */
+import moment from 'moment';
+import 'moment/locale/de';
+import 'moment/locale/es';
+import 'moment/locale/et';
+import 'moment/locale/fr';
+/* eslint-enable */
+
 import Typography from '@material-ui/core/Typography';
 
 import GridPointTabs from './GridPointTabs';
@@ -25,6 +33,10 @@ const ClimateProjections = ({
 }) => {
   const { t, i18n } = useTranslation();
 
+  React.useEffect(() => {
+    moment.locale(i18n.language);
+  }, [i18n.language]);
+
   const [currentTab, setCurrentTab] = React.useState('generalities');
   const handleTabChange = (event, newValue) => setCurrentTab(newValue);
 
@@ -39,6 +51,13 @@ const ClimateProjections = ({
     fodder: t('fodder'),
     animal: t('animal'),
     vineyardFruit: t('vineyardFruit'),
+  };
+
+  const dayIndexToDate = index => moment().dayOfYear(index).format('D MMM');
+
+  const customChartProps = {
+    F1: { valueFormatter: dayIndexToDate },
+    F3: { valueFormatter: dayIndexToDate },
   };
 
   const getIndicatorColor = iac => {
@@ -129,6 +148,7 @@ const ClimateProjections = ({
                 key={header}
                 dataKeys={[header]}
                 color={getIndicatorColor(header)}
+                {...(customChartProps[header] || {})}
               />
             </div>
           ))}

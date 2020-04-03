@@ -37,6 +37,7 @@ export const DefaultComposedChart = ({
   gridProps = {},
   xAxisProps = {},
   yAxisProps = {},
+  valueFormatter = v => v,
   ...props
 }) => {
   const { t } = useTranslation();
@@ -54,13 +55,16 @@ export const DefaultComposedChart = ({
       {...props}
     >
       {/* i18next-extract-disable-next-line */}
-      <Tooltip formatter={(value, name) => ([value, t(name)])} {...tooltipProps} />
+      <Tooltip formatter={(value, name) => ([valueFormatter(value), t(name)])} {...tooltipProps} />
       {/* i18next-extract-disable-next-line */}
       <Legend formatter={value => t(value)} />
 
       <CartesianGrid {...gridProps} />
       <XAxis dataKey="year" type="number" scale="time" domain={['dataMin', 'dataMax']} {...xAxisProps} />
-      <YAxis {...yAxisProps} />
+      <YAxis
+        tickFormatter={valueFormatter}
+        {...yAxisProps}
+      />
 
 
       {children}
