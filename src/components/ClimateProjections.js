@@ -56,8 +56,14 @@ const ClimateProjections = ({
   const dayIndexToDate = index => moment().dayOfYear(index).format('D MMM');
 
   const customChartProps = {
-    F1: { valueFormatter: dayIndexToDate },
-    F3: { valueFormatter: dayIndexToDate },
+    F1: {
+      valueFormatter: dayIndexToDate,
+      yAxisProps: { tick: { fontSize: 11 } },
+    },
+    F3: {
+      valueFormatter: dayIndexToDate,
+      yAxisProps: { tick: { fontSize: 11 } },
+    },
   };
 
   const getIndicatorColor = iac => {
