@@ -108,6 +108,7 @@ export const CustomLineChart = ({
   colors = [color],
   type = 'monotone',
   types = [type],
+  yAxisProps = {},
   ...props
 }) => {
   const chartDomain = getChartDomain(data, dataKeys);
@@ -115,7 +116,7 @@ export const CustomLineChart = ({
   const ticks = getNiceTickValues(ticksDomain, 11, false);
 
   return (
-    <DefaultComposedChart data={data} yAxisProps={{ ticks }} {...props}>
+    <DefaultComposedChart data={data} yAxisProps={{ ticks, ...yAxisProps }} {...props}>
       {dataKeys.map((key, idx) => {
         const chartColor = colors[idx % colors.length];
         const chartType = types[idx % types.length];
