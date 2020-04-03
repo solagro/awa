@@ -150,7 +150,7 @@ const CustomDataTable = ({
                       [classes[`decile-${decileGroup}`]]: deciles,
                     })}
                   >
-                    {line[header]}
+                    {line.year ? line[header] : t(line[header])}
                   </TableCell>
                 );
               })}
