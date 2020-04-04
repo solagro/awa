@@ -2,7 +2,7 @@
   "question-i18n": [
     {
       "language": "fr",
-      "question": "Au cours des 20 derniers années, le rendement moyen du blé tendre en France :"
+      "question": "Au cours des 20 derniers années, le rendement moyen du blé tendre en France a ?"
     }
   ],
   "question": "Over the last 20 years, what was the trend of the average yield of common wheat?",
@@ -16,19 +16,19 @@
   "answer-i18n": [
     {
       "language": "fr",
-      "answers": "X a augmenté de 10% ? \nX a augmenté de 5% ?\nV n’a pas augmenté? \nX a baissé de 10% ? "
+      "answers": "X augmenté de 10% \nX augmenté de 5%\nV stagné\nX baissé de 10%"
     }
   ],
   "order": 200,
   "explanation-i18n": [
     {
       "language": "fr",
-      "explanation": "Les deux dernières décennies voient le déclin de la tendance à la hausse du rendement céréalier dans de nombreux pays européens. Le changement climatique (stress thermique, sécheresse) étant l’un des facteurs explicatifs majeur. Récemment, l’année 2016 vient compléter la liste des années ou le climat a affecté sévèrement les rendements."
+      "explanation": "Les deux dernières décennies voient le déclin de la tendance à la hausse du rendement céréalier dans de nombreux pays européens. Le changement climatique (stress thermique, sécheresse) étant l’un des facteurs explicatifs majeur de la **stagnation des rendements**. Récemment, l’année 2016 vient compléter la liste des années ou le climat a affecté sévèrement les rendements."
     }
   ],
   "answers": "X Increased by 10%\nX Increased by 5% \nV Stagnation\nX Reduced by 10%",
   "title": "200 Categorie 2",
-  "explanation": "The past two decades have seen a decline in the upward trend in cereal yields in many European countries. Climate change (heat stress, drought) being one of the major explanatory factors. The harvest 2016 being one of the worst years in recent past, in which climate severely impacted yields.",
+  "explanation": "The past two decades have seen a decline in the upward trend in cereal yields in many European countries. Climate change (heat stress, drought) being one of the major explanatory factors of the **stagnation of yields**. The harvest 2016 being one of the worst years in recent past, in which climate severely impacted yields.",
   "category": "agricultural-impacts",
   "learn-more": "The **yield cap observed on common wheat in France** and in Europe has been the subject of an in-depth study to explore the main explanatory factors. The authors of the study calculated so-called phenoclimatic indicators: these are climatic indicators on specific phases of the wheat growing cycle.\\\n\\\nWe note that two phenoclimatic indicators, **water deficit during the ascent and filling, and number of days with excessive temperatures during filling (scalding phenomenon)**, explain very well the interannual variations of yield observed in most of the regions of France.\\\n\\\nIn addition, the authors show that these indicators have known an evolution during the last years: water deficit like excessive temperatures are on the rise, in spite of an advance of the stages, which was not enough to avoid these stresses. The authors come to the conclusion of the major role of recent climate change in the observed stagnation of wheat yields in France: this observation is convergent with other studies carried out in the world, on wheat and rice.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554975/learn_more/q11_1_zhggjq.png \"Trend in yields for common wheat in France with an inflection of stagnation in 1996 (Brisson et al, 2010)\")\n\nThis recent trend of stagnation in common wheat yields is also observed elsewhere in Europe, where the phenomenon began in the late 1980s.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554975/learn_more/q11_2_kri6ig.png \"Stagnation of common wheat yields in Europe\")\n\n**Source**: Gate, Philippe & Brisson, Nadine & Gouache, David. (2010). Les causes du plafonnement du rendement du blé en France : d'abord une origine climatique. Compte-Rendu de l'Académie d'Agriculture de France. 96. 17.\n\nThe physiology of plants is affected by abiotic stresses (drought, heat). Studies have shown that drought mainly causes the height of the plant, the number of ears and the weight of the grains to decrease. On the other hand, heat stress causes an increase in aborted stamens and a decrease in the number of grains. In reproductive tissues, dryness mainly affects the development of the pistil, while heat stress mainly affects the development of pollen (indicated in dark gray). The different individual effects of drought and heat stress affect plants simultaneously when these stresses are combined. These general effects, described for corn and wheat, could be different depending on the intensity and duration of stress and the plant species involved.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554975/learn_more/q11_3_ibdlmb.png \"The effects of drought, heat stress and their combination on the growth and development of corn and wheat (Sources: Suzuki et al., 2014 Abiotic and biotic stress combinations. New Phytol. 2014 Jul; 203 (1): 32-43.)\")\n\nIn addition, recent research has confirmed the negative correlation between climatic stresses that a plant may have to face (water stress, thermal stress) and its resistance to diseases. In other words, **a plant undergoing climatic stress sees its immune system collapsed** and it becomes more sensitive to all biotic stresses (diseases, pests, ...).\n\n![Different combinations of potential environmental stresses that can affect crops are presented in the form of a matrix. The matrix is color coded to indicate the stress combinations studied and their overall effect on plant growth and yield.](https://res.cloudinary.com/solagro/image/upload/v1582554976/learn_more/q11_4_nr4qwo.png \"The stress matrix\")\n\nSource: Suzuki et al.,2014 Abiotic and biotic stress combinations. New Phytol.2014 Jul;203(1):32-43."
 }
