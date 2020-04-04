@@ -1,0 +1,29 @@
+{
+  "question-i18n": [
+    {
+      "language": "fr",
+      "question": "**Cultures permanentes**\n\nEn viticulture quelles sont les adaptations systémiques envisageables ?"
+    }
+  ],
+  "question": "**Permanent crops**\n\nIn viticulture what are the possible systemic adaptations?",
+  "theme": "atlantic",
+  "learn-more-i18n": [],
+  "answer-i18n": [
+    {
+      "language": "fr",
+      "answers": "V Modifier les cahiers des charges des AOP ?\nV Investir de nouveaux territoires (versant nord, altitude, …) ?\nX Modifier la vinification ? \nX Couvrir les vignes avec des panneaux solaires ?"
+    }
+  ],
+  "order": 309,
+  "explanation-i18n": [
+    {
+      "language": "fr",
+      "explanation": "Au-delà de modification des pratiques viti-vinicoles, il possible d’envisager des modifications plus profondes à l’échelle des filières et/ou de territoires : assouplir/modifier les **cahiers des charges des AOP** (cépages autorisés, degrés d’alcool, …), **investir de nouvelles parcelles** (parcelles exposées au nord, …) ou de **nouveaux territoires**."
+    }
+  ],
+  "answers": "V Modify the specifications of the PDOs?\nV Invest in new territories (north slope, altitude, etc.)?\nX Modify winemaking?\nX Cover the vines with solar panels?",
+  "title": "309 categorie 3",
+  "explanation": "Beyond modification of wine-making practices, it is possible to envisage deeper modifications at the sector and / or territory scale: soften / modify the **specifications of PDOs** (grape varieties authorized, degrees alcohol,…), **invest in new plots** (plots exposed to the north,…) or **new territories**.",
+  "category": "adaptation",
+  "learn-more": ""
+}
