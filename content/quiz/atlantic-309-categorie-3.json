@@ -7,7 +7,12 @@
   ],
   "question": "**Permanent crops**\n\nIn viticulture what are the possible systemic adaptations?",
   "theme": "atlantic",
-  "learn-more-i18n": [],
+  "learn-more-i18n": [
+    {
+      "language": "fr",
+      "learn-more": "**Projet LACCAVE :** **Une prospective  pour le secteur vigne et vin dans le contexte du changement climatique**\n\nPour étudier les impacts du changement climatique et les adaptations potentielles du secteur vitivinicole français, l’INRA a soutenu entre 2012 et 2016 le projet LACCAVE, au sein d’un programme plus large sur l’Adaptation au Changement Climatique de l’Agriculture et de la Forêt (métaprogramme ACCAF). Ce projet a associé des chercheurs de plusieurs disciplines (climatologie, génétique, agronomie, œnologie, économie, sociologie...), issus de vingt-trois équipes de l’INRA, du CNRS, d’universités et d’écoles d’ingénieurs. Une des opérations phare du projet LACCAVE a été la conduite d’un exercice de prospective. Ses objectifs étaient :\n\n* identifier et explorer différentes stratégies d’adaptation pour la viticulture française dans un contexte de changement climatique, à l’horizon 2050 ;\n* tester une méthode pour élaborer des « chemins » favorisant la mise en œuvre de ces stratégies d’adaptation ;\n* développer une vision commune et des pratiques de travail en réseau entre chercheurs et organisations de la filière.\n\nDans ce contexte, le projet LACCAVE a exploré plusieurs voies d’adaptation à diverses échelles de temps et d’espace : \n\n* sélection variétale (création de génotypes adaptés aux nouvelles conditions) et changement de variété ou de porte-greffe ; \n* pratiques culturales à la parcelle (**modification de la taille et du rapport feuille/fruit**, introduction de l’**irrigation**, meilleure gestion du **sol**) ou à la cave (gestion des températures, méthode de désalcoolisation du vin, acidification, levures moins productives en alcool) ;\n* voire relocalisation des parcelles au sein d’une petite région.\n\nDes modifications d’organisation de la filière et de réglementation ont également été considérées, tout comme les investissements à réaliser en recherche, appui technique ou information. Enfin les perceptions des changements par les acteurs du secteur ont été prises en compte, qu’il s’agisse des consommateurs (le vin du « changement climatique » sera-t-il apprécié ?) ou des producteurs (quelles adaptations peuvent être mises en œuvre, et à quelle échéance ?).\n\nSource : <https://www6.inrae.fr/laccave/Prospective>"
+    }
+  ],
   "answer-i18n": [
     {
       "language": "fr",
