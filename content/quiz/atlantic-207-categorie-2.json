@@ -16,19 +16,19 @@
   "answer-i18n": [
     {
       "language": "fr",
-      "answers": "X Pas d’impact \nX Réduction de la production de moins de10%\nX Réduction de la production de 10 à 20%\nV Réduction de la production de 20 à 30%"
+      "answers": "X Pas d’impact \nX Réduction de la production de moins de 10%\nX Réduction de la production de 10 à 20%\nV Réduction de la production de 20 à 30%"
     }
   ],
   "order": 207,
   "explanation-i18n": [
     {
       "language": "fr",
-      "explanation": "Une vague de chaleur modérée (5 jours consécutifs à plus de 30°C.) peut entrainer une baisse de 20 à 30% de la production journalière de lait. En cas de stress thermique les ruminants vont chercher en premier lieu à réduire leur métabolisme alimentaire (producteur de beaucoup de chaleur) et par la même réduiront leur production de lait."
+      "explanation": "Une vague de chaleur modérée (5 jours consécutifs à plus de 30°C.) peut entrainer une baisse de **20 à 30%** de la production journalière de lait. En cas de stress thermique les ruminants vont chercher en premier lieu à réduire leur métabolisme alimentaire (producteur de beaucoup de chaleur) et par la même réduiront leur production de lait."
     }
   ],
   "answers": "X No impact\nX Reduction of production less than 10%\nX Reduction of production from 10 to 20%\nV Reduction of production by 20 to 30%",
   "title": "207 Categorie 2",
-  "explanation": "A moderate heat wave (5 consecutive days above 30 °C.) can cause a 20 to 30% drop in daily milk production. In case of thermal stress, ruminants will first seek to reduce their food metabolism (as it also induces a lot of heat production for the animal) and by the same will reduce their milk production.",
+  "explanation": "A moderate heat wave (5 consecutive days above 30 °C.) can cause a **20 to 30%** drop in daily milk production. In case of thermal stress, ruminants will first seek to reduce their food metabolism (as it also induces a lot of heat production for the animal) and by the same will reduce their milk production.",
   "category": "agricultural-impacts",
   "learn-more": "The cow **thermo-neutrality** zone is between 10 and 20 ° C.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554978/learn_more/q18_1_bjugfl.png \"Thermal comfort and discomfort zones for dairy cows and calves (source: BTPL)\")\n\nAbove 25 ° C., you can observe: \n\n* Alteration of physiological **behavior** and energy balance\n* Consequences for **reproduction** and **longevity**\n* Consequences on the quantity and quality of **milk production**\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554978/learn_more/q18_2_g7eloy.png)\n\nThe reaction to heat stress depends on:\n\n* Physiological characteristics (short-haired cows regulate their temperatures better) \n* lactation stage and production level\n* the **composition of the ration** and the consumption of food\n* **Animal building (ventilation - ventilation, etc.)**\n\nThe implementation of a new agro-climatic indicator, the **Temperature-Humidity Index** (ITH) allows the thermal stress of the animal to be assessed by the pair \"temperature, humidity\". The table below presents the 5 “hygro-thermal” stress zones for cattle:\n\n* comfort zone, in green\n* stress threshold zone, in yellow (from 20 ° C. for high relative humidity)\n* light to moderate stress area, orange\n* zone of moderate to major stress, in dark orange (from 27 ° C. for humidity exceeding 70%)\n* major stress area in red\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554979/learn_more/q18_3_rxl3jx.png \"Temperature-Humidity Index (ITH) for dairy cows (Source: FIDOCL)\")"
 }
