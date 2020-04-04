@@ -23,12 +23,12 @@
   "explanation-i18n": [
     {
       "language": "fr",
-      "explanation": "Dans le futur proche, le déficit hydrique (différence entre les Précipitation et l’évapotranspiration potentiel), calculé entre mai et aout, dépasserait une année sur trois, le seuil de – 350 mm dans le Nord-Est de la France et de – 500 mm dans le Sud-Ouest de la France."
+      "explanation": "Dans le futur proche, le déficit hydrique (différence entre les Précipitation et l’évapotranspiration potentielle), calculé entre mai et aout, dépasserait **une année sur trois**, le seuil de – 350 mm dans le Nord-Est de la France et de – 500 mm dans le Sud-Ouest de la France."
     }
   ],
   "answers": "X one year about 12 \nX one year about 9\nX one year about 6\nV one year about 3",
   "title": "202 Categorie 2",
-  "explanation": "For the Near Future, the water deficit (difference between precipitation and potential evapotranspiration) calculated between May and August, would exceed one year in three, the threshold of - 350 mm in the North East of France and - 500 mm in the South West of France.",
+  "explanation": "For the Near Future, the water deficit (difference between precipitation and potential evapotranspiration) calculated between May and August, would exceed **one year over three**, the threshold of - 350 mm in the North East of France and - 500 mm in the South West of France.",
   "category": "agricultural-impacts",
   "learn-more": "The M2 agro-climatic indicator, presented below, illustrates the increase in the **water deficit** (difference between precipitation and potential evapotranspiration) calculated over the period May to August.\\\n\\\n**In the South-West of France** (Cf. Graph below presenting the situation in **Haute-Garonne department**), the water deficit would decrease, **on average from -350 mm to -450 mm** (between the recent past and the near future), and 10 years out of 30 (or 1 year out of 3) would exceed the threshold of -500 mm.\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554976/learn_more/q13_1_xurwoi.png \"Water deficit calculated from May and August for the Haute-Garonne department, for the recent past (period 1985-2015) and the near future (period 2015-2045)\")\n\nIn the near future, the **North of France** (see graph below presenting the situation in **Marne department**), would be in the **same situation as the South today**. One year in three the threshold of -350 mm would be exceeded. Without adaptation, the water deficit would negatively affect yields (including in deepth soils presenting high water capacity storage).\n\n![](https://res.cloudinary.com/solagro/image/upload/v1582554976/learn_more/q13_2_iow8pt.png \"Water deficit calculated between May and August for the department of Marne, for the recent past (period 1985-2015) and the near future (period 2015-2045)\")\n\nSource: indicators supporting climate projections calculated from the Agri4Cast portail (JRC)."
 }
