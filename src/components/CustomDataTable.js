@@ -19,6 +19,7 @@ const useStyles = makeStyles({
     maxWidth: '100%',
     overflow: 'auto',
     fontSize: '.8em',
+    marginBottom: '2em',
   },
   legend: {
     justifyContent: 'flex-end',
