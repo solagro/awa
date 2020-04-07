@@ -7,6 +7,6 @@ Kliimat kirjeldatakse ilmastikumuutujatega (temperatuurid, sademed jne) vähemal
 
 Päevade arv aastas temperatuuriga üle 25 °C perioodil **1987-2016**.
 
-Välja tuuakse minimaalsed ja maksimaalsed väärtused ning mediaan.
+Kursorit kasutades on graafikul võimalik vaadata erinevate aastate detailsemaid väärtusi. Nii saab näiteks võrrelda **miinimum- ja maksimumväärtusi** erinevate aastate jooksul, samuti võimaldab see näha, **millised on olnud muutused** vaadeldud perioodil.
 
 Allikas: Agri4Cast, JRC
