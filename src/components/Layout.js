@@ -66,10 +66,15 @@ const useStyles = makeStyles(theme => ({
     maxWidth: '100%',
     overflowX: 'hidden',
     overflowY: 'auto',
+    zIndex: 0,
   },
   modal__button: {
     position: 'absolute',
-    right: theme.spacing(1),
+    right: theme.spacing(1.5),
+    top: theme.spacing(1),
+    background: 'rgba(220, 220, 220, .2)',
+    borderRadius: '50%',
+    zIndex: 1,
   },
   content: {
     flexGrow: 1,
@@ -109,8 +114,8 @@ const Layout = ({
   if (modal) {
     return (
       <main className={classes.modal}>
-        <Link to={closeTo}>
-          <IconButton size="small" aria-label={t('close')} className={classes.modal__button}>
+        <Link to={closeTo} className={classes.modal__button}>
+          <IconButton size="small" aria-label={t('close')}>
             <CloseIcon />
           </IconButton>
         </Link>
