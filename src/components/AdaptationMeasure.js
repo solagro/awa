@@ -64,6 +64,15 @@ const CustomHTML = ({ html, ...props }) => (
   />
 );
 
+/**
+ * Remove prefix of specified length to produce a valid variable name
+ */
+const removePrefix = (string, prefixLength = 4) => {
+  const newString = string.substr(prefixLength);
+  const letterOrLowdash = /[a-zA-Z_]/;
+  return letterOrLowdash.test(newString[0]) ? newString : `_${newString}`;
+};
+
 const AdaptationMeasure = ({
   data: {
     measure: { fields: { measure: measureProps } },
@@ -78,7 +87,7 @@ const AdaptationMeasure = ({
     .filter(([key]) => (key.substr(0, 4) === 'alt_'))
     .reduce((acc, [key, value]) => ({
       ...acc,
-      [key.substr(4)]: value,
+      [removePrefix(key, 4)]: value,
     }), {});
 
   const measure = useAlt ? { ...measureProps, ...altProperties } : measureProps;
