@@ -50,8 +50,8 @@ export const columnsWithNumericValues = columns => Object.entries(columns)
 
 export const parseData = json => {
   const rawData = JSON.parse(json);
-  const validData = rawData.filter(({ year }) => year);
-  const numericData = validData.map(({ year, id, ...columns }) => ({
+  const validYear = rawData.filter(({ year }) => (!!year && toNumber(year)));
+  const numericData = validYear.map(({ year, id, ...columns }) => ({
     year: toNumber(year),
     ...columnsWithNumericValues(columns),
   }));
