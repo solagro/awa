@@ -242,6 +242,7 @@ export default [
   t('Region'),
   t('rice'),
   t('rye-irrigated'),
+  t('rye-rainfed'),
   t('rye'),
   t('seed-flax'),
   t('seed-maize'),
