@@ -59,9 +59,18 @@ export const parseData = json => {
   const [firstItem] = numericData;
   const headers = Object.keys(firstItem).filter(key => (key !== 'year'));
   const meta = rawData.find(({ year }) => !year) || {};
+
+  const fields = rawData
+    .filter(({ year }) => !toNumber(year))
+    .map(({ year, ...rest }) => ({
+      ...rest,
+      name: year,
+    }));
+
   return {
     data: numericData,
     headers,
     meta,
+    fields,
   };
 };
