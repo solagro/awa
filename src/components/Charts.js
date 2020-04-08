@@ -31,6 +31,83 @@ const getChartDomain = (data, keys) => Object.values(keys.reduce((store, key) =>
   };
 }, { min: +Infinity, max: -Infinity }));
 
+/**
+ * For specified `keys`, get Math.min or Math.max of keys in object[tip]
+ */
+const getCustomTip = (tip = 'min') => object => (keys = []) => {
+  /**
+   * `tip` should be 'min' OR 'max'
+   */
+  if (!['min', 'max'].includes(tip)) {
+    return undefined;
+  }
+
+  /**
+   * `object` must be an Object having tip property
+   */
+  if (typeof object !== 'object' || !object[tip]) {
+    return undefined;
+  }
+
+  /**
+   * `keys` should have at least one key
+   */
+  if (!keys.length) {
+    return undefined;
+  }
+
+  /**
+   * At least one key should match between `object[tip]` & `keys`
+   */
+  if (!Object.keys(object[tip]).some(key => keys.includes(key))) {
+    return undefined;
+  }
+
+  const initValue = { min: Infinity, max: -Infinity };
+
+  return keys.reduce((store, key) => (
+    typeof object[tip][key] !== 'undefined'
+      ? Math[tip](store, object[tip][key])
+      : store
+  ), initValue[tip]);
+};
+
+const getCustomMin = getCustomTip('min');
+const getCustomMax = getCustomTip('max');
+
+const getAxisProps = (fields, dataKeys, data) => {
+  const customMin = getCustomMin(fields)(dataKeys);
+  const customMax = getCustomMax(fields)(dataKeys);
+
+  const stepCount = fields.steps
+    ? +fields.steps[dataKeys.find(key => fields.steps[key])]
+    : 11;
+
+  const allowDecimalStep = fields.decimal
+    ? Boolean(+fields.decimal[dataKeys.find(key => fields.decimal[key])])
+    : false;
+
+  const [dataMin, dataMax] = getChartDomain(data, dataKeys);
+
+  const customDomain = [
+    typeof customMin === 'number' ? customMin : Math.min(0, dataMin),
+    typeof customMax === 'number' ? customMax : dataMax,
+  ];
+
+  const ticks = getNiceTickValues(
+    customDomain,
+    stepCount,
+    allowDecimalStep,
+  );
+
+  const domain = [
+    ticks[0],
+    ticks[ticks.length - 1],
+  ];
+
+  return { ticks, domain };
+};
+
 export const DefaultComposedChart = ({
   children,
   tooltipProps = {},
@@ -109,14 +186,13 @@ export const CustomLineChart = ({
   type = 'monotone',
   types = [type],
   yAxisProps = {},
+  fields = {},
   ...props
 }) => {
-  const chartDomain = getChartDomain(data, dataKeys);
-  const ticksDomain = [Math.min(0, chartDomain[0]), chartDomain[1]];
-  const ticks = getNiceTickValues(ticksDomain, 11, false);
+  const { ticks, domain } = getAxisProps(fields, dataKeys, data);
 
   return (
-    <DefaultComposedChart data={data} yAxisProps={{ ticks, ...yAxisProps }} {...props}>
+    <DefaultComposedChart data={data} yAxisProps={{ domain, ticks, ...yAxisProps }} {...props}>
       {dataKeys.map((key, idx) => {
         const chartColor = colors[idx % colors.length];
         const chartType = types[idx % types.length];
@@ -149,14 +225,18 @@ export const CustomAreaChart = ({
   colors = [color],
   type = 'monotone',
   types = [type],
+  yAxisProps = {},
+  fields = {},
   ...props
 }) => {
-  const chartDomain = getChartDomain(data, dataKeys);
-  const ticksDomain = [Math.min(0, chartDomain[0]), Math.max(0, chartDomain[1])];
-  const ticks = getNiceTickValues(ticksDomain, 11, false);
+  // const chartDomain = getChartDomain(data, dataKeys);
+  // const ticksDomain = [Math.min(0, chartDomain[0]), Math.max(0, chartDomain[1])];
+  // const ticks = getNiceTickValues(ticksDomain, 11, false);
+
+  const { ticks, domain } = getAxisProps(fields, dataKeys, data);
 
   return (
-    <DefaultComposedChart data={data} yAxisProps={{ ticks }} {...props}>
+    <DefaultComposedChart data={data} yAxisProps={{ ticks, domain, ...yAxisProps }} {...props}>
       {dataKeys.map((key, idx) => {
         const chartColor = colors[idx % colors.length];
         const chartType = types[idx % types.length];

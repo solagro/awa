@@ -61,15 +61,16 @@ export const parseData = json => {
   const meta = rawData.find(({ year }) => !year) || {};
 
   const fields = rawData
-    .filter(({ year }) => !toNumber(year))
-    .map(({ year, ...rest }) => ({
-      ...rest,
-      name: year,
-    }));
+    .filter(({ year }) => (!toNumber(year) && year))
+    .reduce((store, { year, ...rest }) => ({
+      ...store,
+      [year]: rest,
+    }), {});
 
   return {
     data: numericData,
     headers,
+
     meta,
     fields,
   };
