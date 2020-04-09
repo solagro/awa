@@ -4,7 +4,7 @@ id: summaryPresentation
 title: "Kokkuvõte: kohanemisprotsess"
 hrefBefore: "#adaptationsPresentation"
 to: "/quiz"
-buttonText: Start quiz
+buttonText: ALUSTAGE VIKTORIINI
 order: 4
 ---
 
