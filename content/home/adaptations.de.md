@@ -7,7 +7,7 @@ altPicto: adaptations
 hrefBefore: "#mapPresentation"
 hrefAfter: "#summaryPresentation"
 to: "/adaptations"
-buttonText: Zu den maßnahmen
+buttonText: ZU DEN MAßNAHMEN
 order: 3
 ---
 
