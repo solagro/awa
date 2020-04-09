@@ -140,6 +140,7 @@ export const DefaultComposedChart = ({
       <XAxis dataKey="year" type="number" scale="time" domain={['dataMin', 'dataMax']} {...xAxisProps} />
       <YAxis
         tickFormatter={valueFormatter}
+        interval={0}
         {...yAxisProps}
       />
 

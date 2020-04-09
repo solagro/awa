@@ -12,6 +12,7 @@ import Layout from '../components/Layout';
 import CSVGenerator from '../components/CSVGenerator';
 import AdaptationsCSV from '../components/AdaptationsCSV';
 import Kml2Geojson from '../components/Kml2Geojson';
+import TicksSimulator from '../components/TicksSimulator';
 import doRedirect from '../hoc/doRedirect';
 
 const templateLinks = {
@@ -135,6 +136,37 @@ const HelpPage = () => (
           The first row with no content in first cell is used as comment for
           column headers.
         </Typography>
+
+        <Typography variant="h3" gutterBottom style={{ marginTop: '1em' }}>
+          Custom parameters
+        </Typography>
+
+        <Typography variant="body2" gutterBottom>
+          You may also have lines that are not <strong>data lines</strong>.
+          We define them as parameter lines.
+        </Typography>
+
+        <Typography variant="body2" gutterBottom>
+          The first cell of each of these lines contain the name of the
+          parameter. Each other column may contain it own value for each
+          parameter.
+        </Typography>
+
+        <Typography variant="body2" gutterBottom>
+          Current available parameter are <var>min</var>,{' '}
+          <var>max</var>, <var>steps</var>, and <var>decimal</var>.
+        </Typography>
+
+        <Typography variant="body2" gutterBottom style={{ fontWeight: 'bold' }}>
+          Fill value only if you <u>want to change</u> the behavior of current
+          data column.
+        </Typography>
+
+        <Typography variant="h3" style={{ marginTop: '1em', marginBottom: '1em' }}>
+          Custom parameters simulator
+        </Typography>
+
+        <TicksSimulator />
       </CardContent>
     </Card>
 
