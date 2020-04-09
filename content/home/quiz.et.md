@@ -7,7 +7,7 @@ altPicto: quiz
 hrefBefore: "#top"
 hrefAfter: "#mapPresentation"
 to: "/quiz"
-buttonText: Alustage viktoriini
+buttonText: ALUSTAGE KÜSIMUSTIKUGA
 order: 1
 ---
 
