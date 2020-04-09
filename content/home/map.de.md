@@ -7,7 +7,7 @@ altPicto: observations
 hrefBefore: "#quizPresentation"
 hrefAfter: "#adaptationsPresentation"
 to: "/map"
-buttonText: Go to the map
+buttonText: GEHE ZUR KARTE
 order: 2
 ---
 
