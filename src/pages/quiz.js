@@ -128,7 +128,13 @@ const QuizPage = ({ location: { pathname }, data }) => {
               xl={4}
             >
               <Tooltip
-                title={t('{{country}}. Available languages: English standard or {{language}} by changing the language of the site', { country: themesConfig[theme].mainCountry, theme, language: themesConfig[theme].mainLanguage, lang: i18n.language })}
+                title={t(
+                  '{{country}}. Available languages: English standard or {{language}} by changing the language of the site',
+                  {
+                    country: t(themesConfig[theme].mainCountry),
+                    language: t(themesConfig[theme].mainLanguage),
+                  },
+                )}
               >
                 <ButtonBase
                   key={theme}
