@@ -4,7 +4,7 @@ id: summaryPresentation
 title: "Zusammenfassung: Anpassungsprozess"
 hrefBefore: "#adaptationsPresentation"
 to: "/quiz"
-buttonText: Start quiz
+buttonText: QUIZ STARTEN
 order: 4
 ---
 
