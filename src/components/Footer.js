@@ -52,7 +52,7 @@ const Footer = () => {
           </Grid>
           <Grid item xs={6} lg={5} className={classes.footer__logo}>
             <Typography variant="body1" paragraph>
-              With the contribution of the LIFE financial instrument of the European Union
+              {t('With the contribution of the LIFE financial instrument of the European Union')}
             </Typography>
           </Grid>
         </Grid>
