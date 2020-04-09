@@ -7,7 +7,7 @@ altPicto: quiz
 hrefBefore: "#top"
 hrefAfter: "#mapPresentation"
 to: "/quiz"
-buttonText: Start quiz
+buttonText: Comenzar encuesta
 order: 1
 ---
 
