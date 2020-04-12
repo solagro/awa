@@ -23,7 +23,7 @@
   "explanation-i18n": [
     {
       "language": "fr",
-      "explanation": "La notion de climat renvoie à l’ensemble des éléments qui caractérisent l’état moyen de l’atmosphère. Elle se définit à partir de statistiques sur une \\*\\*longue période (souvent trente ans)\\*\\* alors que la notion de « temps qu’il fait » renvoie aux conditions météorologiques d’un instant donné ou d’une courte période (une journée, une semaine, etc.)."
+      "explanation": "La notion de climat renvoie à l’ensemble des éléments qui caractérisent l’état moyen de l’atmosphère. Elle se définit à partir de statistiques sur une **longue période (souvent trente ans)** alors que la notion de « temps qu’il fait » renvoie aux conditions météorologiques d’un instant donné ou d’une courte période (une journée, une semaine, etc.)."
     }
   ],
   "answers": "X 10 years\nV 30 years\nX 50 years\nX 100 years",
