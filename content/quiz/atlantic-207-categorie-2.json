@@ -23,7 +23,7 @@
   "explanation-i18n": [
     {
       "language": "fr",
-      "explanation": "Une vague de chaleur modérée (5 jours consécutifs à plus de 30°C.) peut entrainer une baisse de **20 à 30%** de la production journalière de lait. En cas de stress thermique les ruminants vont chercher en premier lieu à réduire leur métabolisme alimentaire (producteur de beaucoup de chaleur) et par la même réduiront leur production de lait."
+      "explanation": "Une vague de chaleur modérée (5 jours consécutifs à plus de 30°C.) peut entraîner une baisse de **20 à 30%** de la production journalière de lait. En cas de stress thermique les ruminants vont chercher en premier lieu à réduire leur métabolisme alimentaire (producteur de beaucoup de chaleur) et par la même réduiront leur production de lait."
     }
   ],
   "answers": "X No impact\nX Reduction of production less than 10%\nX Reduction of production from 10 to 20%\nV Reduction of production by 20 to 30%",
