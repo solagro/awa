@@ -79,9 +79,13 @@ const getAxisProps = (fields, dataKeys, data) => {
   const customMin = getCustomMin(fields)(dataKeys);
   const customMax = getCustomMax(fields)(dataKeys);
 
-  const stepCount = fields.steps
-    ? +fields.steps[dataKeys.find(key => fields.steps[key])]
-    : 11;
+  const [stepCount = 11] = fields.steps
+    ? Object.entries(fields.steps)
+      // Keep only value for current chart
+      .filter(([key, value]) => dataKeys.includes(key) && value)
+      // Keep only value values
+      .map(([, value]) => +value)
+    : [];
 
   const allowDecimalStep = fields.decimal
     ? Boolean(+fields.decimal[dataKeys.find(key => fields.decimal[key])])
