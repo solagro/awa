@@ -71,7 +71,7 @@ const QuizQuestion = ({ pageContext: { theme } }) => {
         {Object.keys(answersCount).map(category => (
           <li key={category}>
             <span className={classes.category__subtitle_cat}>
-              {category}{' - '}
+              {t(category)}{' - '}
             </span>
 
             <span className={classes.category__subtitle_score}>
