@@ -65,8 +65,9 @@ const HelpPage = () => (
 
         <Typography variant="body2">
           Each geometry inside <samp>.kml</samp> file <strong>must</strong> have
-          a <samp>Grid_Code</samp> property matching the ID number of corresponding
-          gridpoint.
+          a <samp>Grid_Code</samp> property matching the ID of corresponding
+          gridpoint. Every other property will be removed from generated
+          <samp>geojson</samp> file.
         </Typography>
       </CardContent>
     </Card>
