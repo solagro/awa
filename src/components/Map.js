@@ -90,7 +90,7 @@ const Map = () => {
       }
     }
   `);
-  const availableGridPoints = gridPoints.map(({ gridCode }) => +gridCode);
+  const availableGridPoints = gridPoints.map(({ gridCode }) => `${gridCode}`);
 
   if (!isLive) {
     return null;
