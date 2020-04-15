@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { kml } from '@tmcw/togeojson';
+import geojsonPrecision from 'geojson-precision';
 
 import Button from '@material-ui/core/Button';
 import Chip from '@material-ui/core/Chip';
@@ -9,6 +10,35 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import FileDrop from './FileDrop';
 import { readFiles } from '../lib/files';
+
+const compose = (...funcs) => {
+  if (funcs.length === 0) { return arg => arg; }
+  if (funcs.length === 1) { return funcs[0]; }
+  return funcs.reduce((a, b) => (...args) => a(b(...args)));
+};
+
+const sortFeaturesBy = property => ({ features, ...fRest }) => ({
+  ...fRest,
+  features: features.sort(
+    (
+      { properties: { [property]: a } },
+      { properties: { [property]: b } },
+    ) => a.localeCompare(b),
+  ),
+});
+
+const filterFeaturesProperties = (whiteList = [], transformValue = v => v) =>
+  ({ features, ...fRest }) => ({
+    ...fRest,
+    features: features.map(({ properties, ...pRest }) => ({
+      ...pRest,
+      properties: Object.fromEntries(
+        Object.entries(properties)
+          .filter(([key]) => whiteList.includes(key))
+          .map(([key, value]) => [key, transformValue(value)]),
+      ),
+    })),
+  });
 
 const useStyles = makeStyles(theme => ({
   chipContainer: {
@@ -56,10 +86,29 @@ const Kml2Geojson = () => {
       const processedFiles = await readFiles(sourceFiles, 'readAsText');
 
       const newDownloads = processedFiles.map(({ filename, content, ...rest }) => {
-        const XMLDOM = new DOMParser().parseFromString(content, 'application/xml');
-        const geojson = JSON.stringify(kml(XMLDOM), null, 2);
+        // From xml raw strong to geojson blob, the functionnal way.
+        const fileData = compose(
+          // Convert String to Blob
+          string => new Blob([string], { type: 'text/csv;charset=utf-8;' }),
 
-        const fileData = new Blob([geojson], { type: 'text/csv;charset=utf-8;' });
+          // Serialize to JSON
+          object => JSON.stringify(object, null, 2),
+
+          // Sort geojson feature by given property
+          sortFeaturesBy('Grid_Code'),
+
+          // Keep only Grid_Code property, transform value to String
+          filterFeaturesProperties(['Grid_Code'], v => `${v}`),
+
+          // Limit coords precision to 8 decimals with `geojson-precision`
+          geojson => geojsonPrecision(geojson, 6),
+
+          // Convert kml data to geojson with `@tmcw/togeojson`
+          kml,
+
+          // Parse file content as XML with native DOMParser
+          xmlString => new DOMParser().parseFromString(xmlString, 'application/xml'),
+        )(content);
 
         return {
           ...rest,
