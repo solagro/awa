@@ -59,7 +59,11 @@ const getCustomTip = (tip = 'min') => object => (keys = []) => {
   /**
    * At least one key should match between `object[tip]` & `keys`
    */
-  if (!Object.keys(object[tip]).some(key => keys.includes(key))) {
+  if (
+    !Object.entries(object[tip])
+      .filter(([, value]) => value.length) // ignore key with empty string as value
+      .some(([key]) => keys.includes(key))
+  ) {
     return undefined;
   }
 
