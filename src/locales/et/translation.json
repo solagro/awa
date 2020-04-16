@@ -425,5 +425,5 @@
   "year": "Aasta",
   "yield-compilation": "Saagikuse andmed",
   "zone selection": "Piirkonna valik",
-  "{{country}}. Available languages: English standard or {{language}} by changing the language of the site": "{{country}}. Saadaolevad keeled: inglise standard või {{language}} keeles, muutes saidi keelt"
+  "{{country}}. Available languages: English standard or {{language}} by changing the language of the site": "{{country}}: inglise või {{language}} keeles, keelt saab muuta saidi avalehel"
 }
