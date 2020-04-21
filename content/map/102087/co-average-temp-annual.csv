@@ -29,3 +29,8 @@ year,annual-average-temperature
 2014,12.2
 2015,11.6
 2016,11.2
+
+min,7
+max,13
+steps,7
+decimal
