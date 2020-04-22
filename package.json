@@ -37,7 +37,7 @@
     "gatsby-plugin-manifest": "~2.3.6",
     "gatsby-plugin-material-ui": "~2.1.6",
     "gatsby-plugin-modal-routing": "^1.1.0",
-    "gatsby-plugin-netlify": "~2.1.35",
+    "gatsby-plugin-netlify": "~2.2.3",
     "gatsby-plugin-netlify-cms": "~4.1.44",
     "gatsby-plugin-offline": "~3.0.42",
     "gatsby-plugin-react-helmet": "~3.1.24",
