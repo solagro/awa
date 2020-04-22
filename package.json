@@ -38,7 +38,7 @@
     "gatsby-plugin-material-ui": "~2.1.6",
     "gatsby-plugin-modal-routing": "^1.1.0",
     "gatsby-plugin-netlify": "~2.2.3",
-    "gatsby-plugin-netlify-cms": "~4.1.44",
+    "gatsby-plugin-netlify-cms": "~4.2.4",
     "gatsby-plugin-offline": "~3.0.42",
     "gatsby-plugin-react-helmet": "~3.1.24",
     "gatsby-plugin-remove-serviceworker": "~1.0.0",
