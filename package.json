@@ -50,7 +50,7 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-source-filesystem": "~2.2.4",
     "gatsby-transformer-json": "~2.3.3",
-    "gatsby-transformer-remark": "~2.6.59",
+    "gatsby-transformer-remark": "2.7.3",
     "gatsby-transformer-sharp": "~2.4.6",
     "geojson-precision": "~1.0.0",
     "i18next": "~19.4.3",
