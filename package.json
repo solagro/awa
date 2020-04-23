@@ -24,7 +24,7 @@
   "dependencies": {
     "@material-ui/core": "~4.9.11",
     "@material-ui/icons": "~4.9.1",
-    "@material-ui/styles": "~4.9.6",
+    "@material-ui/styles": "~4.9.10",
     "@tmcw/togeojson": "~3.2.0",
     "camelcase": "~5.3.1",
     "clsx": "~1.1.0",
