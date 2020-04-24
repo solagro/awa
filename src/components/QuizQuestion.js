@@ -180,8 +180,7 @@ const QuizQuestion = ({
         <Typography className={classes.category__title} variant="h2" gutterBottom>
           {category
             ? t(category) // i18next-extract-disable-line
-            : t('Question')
-          }
+            : t('Question')}
         </Typography>
 
         <MarkdownText hast={properTexts.question} components={mdTextPreset} style={{ textAlign: 'center' }} />

@@ -99,7 +99,7 @@ const StyleguidePage = () => {
         </BottomNavigation>
       </div>
 
-      <React.Fragment>
+      <>
         <div className={classes.root}>
           <Button className={classes.button}>Default</Button>
           <Button color="primary" className={classes.button}>
@@ -159,7 +159,7 @@ const StyleguidePage = () => {
             Link
           </Fab>
         </div>
-      </React.Fragment>
+      </>
 
     </Layout>
   );
