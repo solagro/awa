@@ -1,4 +1,10 @@
 
+1.3.0 / 2020-04-24
+==================
+
+  * Upgrade gatsby from 2.19.50 to 2.20.31
+  * Fix material-ui/core/styles imports
+
 1.2.0 / 2020-04-23
 ==================
 
