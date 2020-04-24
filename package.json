@@ -87,6 +87,7 @@
     "translate": "npm run translate:parse && npm run translate:sort",
     "translate:parse": "i18next src/**/*.js",
     "translate:sort": "node sort-translations.js",
+    "deploy": "npx netlify-cli deploy -d public --prod",
     "version": "git changelog -n -t $npm_package_version && git add CHANGELOG.md"
   },
   "repository": {
