@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 const condition = enable => WrappedComponent => props => (
   enable
     ? <WrappedComponent {...props} />
-    : <>{props.children}</>
+    : <>{props.children}</> // eslint-disable-line react/destructuring-assignment
 );
 
 const CustomIcon = React.forwardRef(({
@@ -42,7 +42,7 @@ const CustomIcon = React.forwardRef(({
 }, ref) => {
   const classes = useStyles();
 
-  const Wrapper = condition(showTooltip)(Tooltip);
+  const Wrapper = React.useMemo(() => condition(showTooltip)(Tooltip), [showTooltip]);
 
   return (
     <Box
