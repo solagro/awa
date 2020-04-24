@@ -1,4 +1,16 @@
 
+1.4.0 / 2020-04-24
+==================
+
+  * Upgrade and enforce latest linting rules
+  * Upgrade gatsby from 2.20.31 to 2.20.32
+  * Fix CustomIcon tooltip management
+  * Add typescript to devDep to restore linting
+  * Upgrade @tmcw/togeojson from 3.2.0 to 4.0.0
+  * Upgrade jszip from 3.2.2 to 3.4.0
+  * Upgrade mapbox-gl from 1.8.1 to 1.9.1
+  * Upgrade slugify from 1.3.6 to 1.4.0
+
 1.3.0 / 2020-04-24
 ==================
 
