@@ -30,7 +30,6 @@
     "clsx": "~1.1.0",
     "csvtojson": "~2.0.10",
     "deepmerge": "~4.2.2",
-    "eslint-config-makina": "~2.1.0",
     "gatsby": "~2.20.32",
     "gatsby-image": "~2.2.45",
     "gatsby-plugin-google-analytics": "~2.1.38",
@@ -98,7 +97,14 @@
     "url": "https://github.com/solagro/awa/issues"
   },
   "devDependencies": {
+    "babel-eslint": "~10.1.0",
     "babel-plugin-i18next-extract": "~0.6.1",
+    "eslint": "~6.8.0",
+    "eslint-config-makina": "~3.0.1",
+    "eslint-plugin-import": "~2.20.2",
+    "eslint-plugin-jsx-a11y": "~6.2.3",
+    "eslint-plugin-react": "~7.19.0",
+    "eslint-plugin-react-hooks": "~2.3.0",
     "typescript": "~3.8.3"
   }
 }
