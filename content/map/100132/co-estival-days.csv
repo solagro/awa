@@ -29,3 +29,8 @@ year,annual-estival-days
 2014,43
 2015,59
 2016,58
+
+min,16
+max,130
+steps,9
+decimal
