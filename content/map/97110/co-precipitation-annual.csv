@@ -29,3 +29,8 @@ year,annual-precipitations
 2014,540
 2015,458
 2016,554
+
+min,300
+max,2000
+steps,10
+decimal
