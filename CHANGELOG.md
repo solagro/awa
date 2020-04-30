@@ -1,4 +1,13 @@
 
+1.5.0 / 2020-04-30
+==================
+
+  * Upgrade eslint-config-makina from 2.1.0 to 3.0.1
+  * Import avec nouveaux points de grille
+  * Add empty YC data file for gridPoint 65063
+  * Add current commit description to netlify deploy message
+  * Add npm script for deployment
+
 1.4.0 / 2020-04-24
 ==================
 
