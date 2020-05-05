@@ -29,3 +29,8 @@ year,annual-frozen-days
 2014,109
 2015,83
 2016,130
+
+min,30
+max,210
+steps,7
+decimal
