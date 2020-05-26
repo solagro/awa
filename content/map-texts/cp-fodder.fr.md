@@ -3,7 +3,7 @@ sourceType: climateProjections
 dataType: fodder
 locale: fr
 ---
-Vous allez maintenant découvrir des **projections climatiques** permettant de caractériser le climat des 30 prochaines années, période correspondant au **Futur Proche** (FP). Ces projections proviennent de modèles climatiques simulant le climat et son évolution possible (Agri4Cast, JRC).
+Vous allez maintenant découvrir des **projections climatiques** permettant de caractériser le climat des 30 prochaines années, période correspondant au **Futur Proche** (FP). Ces projections proviennent de modèles climatiques simulant le climat et son évolution possible (Modèle ETHZ-CLM-HadCM3Q0, A1B SRES scenario, Agri4Cast JRC).
 Une première série d’indicateurs généraux permettent de décrire les variables de ce climat pour le FP. Puis, vous pourrez parcourir des indicateurs plus spécifiques, éclairant les conditions de production de grandes cultures, de production de fourrages, de conduite de l’élevage, et enfin de production de plantes pérennes (vignes et fruits).
 
 Les indicateurs agro climatiques suivant sont tous consacrés aux **fourrages**.
