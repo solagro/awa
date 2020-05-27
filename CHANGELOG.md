@@ -1,4 +1,12 @@
 
+1.6.0 / 2020-05-28
+==================
+
+  * Move quiz data in each theme directory
+  * Generate CMS config with plugin
+  * Get quiz questions from individual theme directories
+  * Upgrade netlify-cms package
+
 1.5.2 / 2020-05-27
 ==================
 
