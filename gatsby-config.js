@@ -72,10 +72,23 @@ module.exports = {
     },
     {
       resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'quiz',
-        path: `${__dirname}/content/quiz`,
-      },
+      options: { name: 'quiz', path: `${__dirname}/content/quiz` },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: { name: 'quiz', path: `${__dirname}/content/quiz/north` },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: { name: 'quiz', path: `${__dirname}/content/quiz/atlantic` },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: { name: 'quiz', path: `${__dirname}/content/quiz/meridional` },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: { name: 'quiz', path: `${__dirname}/content/quiz/continental` },
     },
     {
       resolve: 'gatsby-source-filesystem',
