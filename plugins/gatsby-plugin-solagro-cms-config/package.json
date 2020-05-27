@@ -1,0 +1,7 @@
+{
+  "name": "gatsby-plugin-solagro-cms-config",
+  "peerDependencies": {
+    "mkdirp": "*",
+    "yaml": "*"
+  }
+}

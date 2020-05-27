@@ -70,6 +70,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    'gatsby-plugin-solagro-cms-config',
     {
       resolve: 'gatsby-source-filesystem',
       options: { name: 'quiz', path: `${__dirname}/content/quiz` },
