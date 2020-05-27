@@ -1,3 +1,7 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+const _ = require('lodash');
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: 'AWA',
@@ -17,7 +21,26 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    'gatsby-transformer-json',
+    {
+      resolve: 'gatsby-transformer-json',
+      options: {
+        typeName: ({ node, object, isArray }) => {
+          if (object && object.order && object.question) {
+            return 'QuizJson';
+          }
+
+          if (node.internal.type !== 'File') {
+            return _.upperFirst(_.camelCase(`${node.internal.type} Json`));
+          }
+
+          if (isArray) {
+            return _.upperFirst(_.camelCase(`${node.name} Json`));
+          }
+
+          return _.upperFirst(_.camelCase(`${path.basename(node.dir)} Json`));
+        },
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
