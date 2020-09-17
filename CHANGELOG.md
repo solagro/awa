@@ -1,4 +1,11 @@
 
+1.6.2 / 2020-09-17
+==================
+
+  * Delete map.geojson and rename map(1).geojson
+  * Add files via upload
+  * Update Quiz: Continental “continental-209-categorie-2”
+
 1.6.1 / 2020-06-22
 ==================
 
