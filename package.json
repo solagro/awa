@@ -70,7 +70,7 @@
     "rehype-react": "~4.0.1",
     "slugify": "~1.4.0",
     "typeface-roboto": "0.0.75",
-    "xlsx": "~0.15.6"
+    "xlsx": "~0.17.0"
   },
   "keywords": [
     "gatsby"
