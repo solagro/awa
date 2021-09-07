@@ -1,7 +1,7 @@
 ---
 locale: fr
 id: projectPresentation
-title: AWA - Plateforme web AgriAdapt pour l’adaptation
+title: AWA- Plateforme AgriAdapt d’adaptation des exploitations agricoles au dérèglement climatique
 hrefAfter: "#quizPresentation"
 order: 0
 ---
