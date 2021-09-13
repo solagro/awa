@@ -1,8 +1,16 @@
 {
   "description": {
     "fr": "AWA AgriAdapt - La plateforme propose un quizz sur la vulnérabilité climatique des exploitations agricoles, des indicateurs agro-climatiques locaux, et des mesures d’adaptation durables pour les différents systèmes agricoles."
+    "en": "AWA AgriAdapt - The platform offers a quiz on climate change vulnerability at farm level, local agro-climate indicators and adaptation measures for different farming systems."
+    "es": "AWA - AgriAdapt - La plataforma que ofrece un cuestionario sobre vulnerabilidad al cambio climático a nivel de explotación agraria, Indicadores Agro-Climáticos locales y medidas de adaptación para diferentes sistemas agrarios."
+    "de": "AWA AgriAdapt – Die Plattform bietet landwirtschaftsrelevante Informationen zum Klimawandel und zur nachhaltigen Anpassung auf betrieblicher Ebene, lokale agrarbezogene Klima-Indikatoren und nachhaltige Anpassungsmaßnahmen für verschiedene Betriebstypen."
+    "et": "AWA AgriAdapt – Platvorm sisaldab kliimamuutuste haavatavuse teemalist küsimustikku, kohalike agroklimaatiliste indikaatorite iseloomustust ja erinevatele põllumajandussüsteemidele sobivate kohanemismeetmete tutvustust."
   },
   "title": {
     "fr": "AWA - Plateforme AgriAdapt d’adaptation des exploitations agricoles au dérèglement climatique."
+    "en": "AWA- AgriAdapt platform for adapting farms to climate change"
+    "es": "AWA- Plataforma AgriAdapt para la adaptación al cambio climático de explotaciones agrarias"
+    "de": "AWA - AgriAdapt-Plattform zur nachhaltigen Anpassung landwirtschaftlicher Betriebe an den Klimawandel"
+    "et": "AWA – AgriAdapt platvorm põllumajandusettevõtete kohanemisest kliimamuutustega"
   }
 }
