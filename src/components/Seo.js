@@ -10,6 +10,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import metaJSON from '../../content/meta.json';
+
 function SEO ({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -24,13 +26,18 @@ function SEO ({ description, lang, meta, title }) {
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description
+    || metaJSON?.description?.[lang]
+    || site.siteMetadata.description;
+
+  const titleSuffix = metaJSON?.title?.[lang]
+    || site.siteMetadata.title;
 
   return (
     <Helmet
       htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${titleSuffix}`}
       meta={[
         {
           name: 'viewport',
