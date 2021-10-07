@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "AWA_GIS_2021-09-30_WGS84",
+"name": "map",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Grid_Code": 55047 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -7.89939612821109, 38.917433149148998 ], [ -7.83901593249036, 38.697788268680299 ], [ -8.11898492021049, 38.644693732323603 ], [ -8.180216927079661, 38.864133835016297 ], [ -7.89939612821109, 38.917433149148998 ] ] ] ] } },
