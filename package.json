@@ -97,6 +97,7 @@
     "url": "https://github.com/solagro/awa/issues"
   },
   "devDependencies": {
+    "@netlify/plugin-gatsby": "^1.0.3",
     "babel-eslint": "~10.1.0",
     "babel-plugin-i18next-extract": "~0.6.1",
     "eslint": "~6.8.0",
