@@ -12,6 +12,7 @@ import Layout from '../components/Layout';
 import CSVGenerator from '../components/CSVGenerator';
 import AdaptationsCSV from '../components/AdaptationsCSV';
 import Kml2Geojson from '../components/Kml2Geojson';
+import GeojsonCleanup from '../components/GeojsonCleanup';
 import TicksSimulator from '../components/TicksSimulator';
 import doRedirect from '../hoc/doRedirect';
 
@@ -47,10 +48,17 @@ const HelpPage = () => (
     </Typography>
 
     <Typography variant="body2" style={{ marginBottom: '1em' }}>
-      Use the widget below to generate a geojson file.
+      Use the widget below to generate
+      a <strong>geojson</strong> file <strong>from KML</strong>.
     </Typography>
 
     <Kml2Geojson />
+
+    <Typography variant="body2" style={{ marginBottom: '1em' }}>
+      You can also cleanup an <strong>existing geojson</strong>.
+    </Typography>
+
+    <GeojsonCleanup />
 
     <Typography variant="body2" style={{ marginBottom: '2em' }}>
       Then use <a href={githubUpload.geojson}>Github interface</a> to upload{' '}
@@ -65,9 +73,10 @@ const HelpPage = () => (
 
         <Typography variant="body2">
           Each geometry inside <samp>.kml</samp> file <strong>must</strong> have
-          a <samp>Grid_Code</samp> property matching the ID of corresponding
-          gridpoint. Every other property will be removed from generated
-          <samp>geojson</samp> file.
+          a <samp>Grid_Code</samp> (<samp>string</samp>) property matching the
+          ID of corresponding gridpoint.<br />
+          Every other property will be removed from
+          generated <samp>geojson</samp> file.
         </Typography>
       </CardContent>
     </Card>
