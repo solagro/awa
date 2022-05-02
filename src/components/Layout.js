@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
     alignContent: 'center',
     background: 'url("/images/awa-background.svg") center -10% / cover no-repeat',
     minHeight: '100vh',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       marginTop: 64,
     },
   },
@@ -81,10 +81,11 @@ const useStyles = makeStyles(theme => ({
   },
   content: {
     flexGrow: 1,
+    marginLeft: theme.spacing(8),
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0,
-      paddingRight: 0,
-      paddingLeft: 0,
+      paddingRight: theme.spacing(4),
+      paddingLeft: theme.spacing(4),
     },
   },
   content__paper: {
