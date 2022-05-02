@@ -35,13 +35,20 @@ const useStyles = makeStyles(theme => ({
       bottom: 40,
       left: '50%',
       right: 'auto',
-      width: ({ width }) => width,
+      width: '80%',
       transform: 'translateX(-50%)',
       border: '1px solid rgb(204, 204, 204)',
       background: 'white',
       borderRadius: 4,
       outline: 'none',
       display: 'flex',
+      [theme.breakpoints.down('sm')]: {
+        top: 0,
+        height: '100%',
+        width: '100%',
+        border: 'none',
+        marginTop: '64px',
+      },
     },
   },
   root: {
@@ -78,14 +85,16 @@ const useStyles = makeStyles(theme => ({
     background: 'rgba(220, 220, 220, .2)',
     borderRadius: '50%',
     zIndex: 1,
+    [theme.breakpoints.down('sm')]: {
+      top: '-64px',
+    },
   },
   content: {
     flexGrow: 1,
-    marginLeft: theme.spacing(8),
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0,
-      paddingRight: theme.spacing(4),
-      paddingLeft: theme.spacing(4),
+      paddingRight: theme.spacing(2),
+      paddingLeft: theme.spacing(2),
     },
   },
   content__paper: {
