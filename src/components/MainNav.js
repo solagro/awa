@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       width: '100%',
     },
   },
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     width: drawerWidth,
     justifyContent: 'center',
     alignItems: 'center',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       width: '100%',
       height: '64px',
       flexDirection: 'row',
@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.primary.main,
     backgroundColor: '#fff',
     boxShadow: 'none',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(0),
     },
   },
