@@ -49,6 +49,9 @@ const useStyles = makeStyles(theme => ({
     alignContent: 'center',
     background: 'url("/images/awa-background.svg") center -10% / cover no-repeat',
     minHeight: '100vh',
+    [theme.breakpoints.down('md')]: {
+      marginTop: '64px',
+    },
   },
   maximize: {
     flex: '1',
@@ -79,6 +82,9 @@ const useStyles = makeStyles(theme => ({
   content: {
     flexGrow: 1,
     marginLeft: theme.spacing(8),
+    [theme.breakpoints.down('md')]: {
+      marginLeft: '0px',
+    },
   },
   content__paper: {
     padding: theme.spacing(3),
