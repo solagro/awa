@@ -13,6 +13,11 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(10),
     marginTop: theme.spacing(2),
     marginRight: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      height: 'auto',
+      marginRight: theme.spacing(2),
+      marginLeft: theme.spacing(2),
+    },
   },
   logo: {
     width: 112,
