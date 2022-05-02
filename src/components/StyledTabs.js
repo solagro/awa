@@ -35,6 +35,9 @@ export const CustomTab = withStyles(theme => ({
   root: {
     textTransform: 'none',
     height: theme.spacing(12),
+    [theme.breakpoints.down('sm')]: {
+      flexShrink: '1',
+    },
   },
   selected: {},
 }))(props => <Tab {...props} />);
@@ -56,6 +59,12 @@ export const SecondaryTabs = withStyles(theme => ({
   },
   flexContainer: {
     marginBottom: theme.spacing(0),
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+      '& > a': {
+        maxWidth: '100%',
+      },
+    },
   },
   indicator: {
     height: 3,

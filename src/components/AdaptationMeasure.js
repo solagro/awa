@@ -32,6 +32,11 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(2),
     marginRight: theme.spacing(-2.5),
     paddingRight: theme.spacing(2.5),
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      float: 'none',
+      margin: 0,
+    },
   },
   h2: {
     marginTop: '.5em',
