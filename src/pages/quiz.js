@@ -45,6 +45,10 @@ const useStyles = makeStyles(theme => ({
     order: 2,
     textAlign: 'right',
     alignSelf: 'center',
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '100%',
+      textAlign: 'center',
+    },
   },
   north: {
     minWidth: '100%',
@@ -64,6 +68,10 @@ const useStyles = makeStyles(theme => ({
     order: 4,
     textAlign: 'left',
     alignSelf: 'center',
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '100%',
+      textAlign: 'center',
+    },
   },
   meridional: {
     minWidth: '100%',
