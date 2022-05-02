@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 /**
  * https://material-ui.com/customization/default-theme/
@@ -9,7 +9,7 @@ import { createMuiTheme } from '@material-ui/core';
  *
  * https://material-ui.com/customization/color/
  */
-const theme = createMuiTheme({
+const theme = responsiveFontSizes(createMuiTheme({
   palette: {
     primary: { main: '#8a2542' },
     secondary: {
@@ -67,6 +67,6 @@ const theme = createMuiTheme({
       },
     },
   },
-});
+}));
 
 export default theme;
