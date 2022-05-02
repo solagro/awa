@@ -19,17 +19,30 @@ const useStyles = makeStyles(theme => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+    },
   },
   drawerPaper: {
     width: drawerWidth,
     justifyContent: 'center',
     alignItems: 'center',
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+      height: '64px',
+      flexDirection: 'row',
+      borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
+    },
   },
   fab: {
     marginTop: theme.spacing(3),
     color: theme.palette.primary.main,
     backgroundColor: '#fff',
     boxShadow: 'none',
+    [theme.breakpoints.down('md')]: {
+      marginTop: theme.spacing(0),
+      marginRight: theme.spacing(1),
+    },
   },
   fab__active: {
     backgroundColor: theme.palette.primary.main,
