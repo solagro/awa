@@ -20,6 +20,7 @@ import SEO from '../components/Seo';
 
 import doRedirect from '../hoc/doRedirect';
 import MarkdownText from '../components/MarkdownText';
+import { NoEncryption } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   module: {
