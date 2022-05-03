@@ -11,6 +11,12 @@ export const CustomAppBar = withStyles(theme => ({
     backgroundColor: 'none',
     marginBottom: theme.spacing(6),
     marginTop: theme.spacing(3),
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: theme.spacing(2),
+      marginLeft: theme.spacing(-3),
+      marginRight: theme.spacing(-3),
+      width: `calc(100% + ${theme.spacing(6)}px)`,
+    },
   },
 }))(props => <AppBar {...props} />);
 
@@ -37,6 +43,7 @@ export const CustomTab = withStyles(theme => ({
     height: theme.spacing(12),
     [theme.breakpoints.down('sm')]: {
       flexShrink: '1',
+      height: theme.spacing(8),
     },
   },
   selected: {},
@@ -50,17 +57,23 @@ export const SecondaryAppBar = withStyles(theme => ({
     marginTop: theme.spacing(3),
     boxShadow: 'none',
     color: theme.palette.text.primary,
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: theme.spacing(2),
+    },
   },
 }))(props => <AppBar {...props} />);
 
 export const SecondaryTabs = withStyles(theme => ({
   root: {
     marginBottom: theme.spacing(4),
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: theme.spacing(2),
+    },
   },
   flexContainer: {
     marginBottom: theme.spacing(0),
-    [theme.breakpoints.down('sm')]: {
-      flexDirection: 'column',
+    [theme.breakpoints.down('md')]: {
+      flexWrap: 'wrap',
       '& > a': {
         maxWidth: '100%',
       },
@@ -68,6 +81,9 @@ export const SecondaryTabs = withStyles(theme => ({
   },
   indicator: {
     height: 3,
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
   },
 }))(props => <Tabs {...props} centered />);
 
