@@ -15,6 +15,9 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(8),
     marginTop: theme.spacing(2),
     marginRight: theme.spacing(0),
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: 0,
+    },
   },
   footer__partnership: {
     flexWrap: 'wrap',
