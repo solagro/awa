@@ -48,6 +48,10 @@ const theme = responsiveFontSizes(createMuiTheme({
     body1: {
       color: '#212121',
     },
+    alignCenter: {
+      alignItems: 'center',
+      display: 'flex',
+    },
     fontSize: 14,
     lineHeight: 1,
     fontFamily: 'roboto, helvetica, arial, sans-serif',
