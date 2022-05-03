@@ -70,7 +70,7 @@ info gatsby serve running at: http://localhost:9000/
 ## Built With
 
 - [Gatsby](https://www.gatsbyjs.org/)
-- [Material UI](https://www.gatsbyjs.org/)
+- [Material UI](https://v4.mui.com/)
 
 <!--
 ## Contributing
