@@ -29,6 +29,11 @@ const useStyles = makeStyles(theme => ({
     alignContent: 'center',
     justifyContent: 'space-between',
     marginBottom: theme.spacing(10),
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: theme.spacing(3),
+      paddingRight: theme.spacing(3),
+      marginBottom: theme.spacing(2),
+    },
     // minHeight: '100vh', // waiting more realistic content
   },
   module__content__title: {
@@ -37,6 +42,12 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     paddingBottom: theme.spacing(7),
+    paddingRight: '15px',
+    [theme.breakpoints.down('sm')]: {
+      paddingBottom: theme.spacing(3),
+      textAlign: 'center',
+      flexDirection: 'column',
+    },
   },
   module__content__title_picto: {
     width: 64,
@@ -44,6 +55,10 @@ const useStyles = makeStyles(theme => ({
   },
   module__content__button: {
     paddingTop: theme.spacing(7),
+    [theme.breakpoints.down('sm')]: {
+      paddingTop: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
+    },
   },
   module__innernav: {
     display: 'flex',
@@ -55,15 +70,20 @@ const useStyles = makeStyles(theme => ({
     '&:hover': {
       opacity: 1,
     },
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
   module__innernav__button: {
     backgroundColor: '#ACD9E9',
     boxShadow: 'none',
-
   },
   module__innernav__top_button: {
     backgroundColor: '#fff',
     opacity: '.65',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
 }));
 
