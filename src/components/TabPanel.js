@@ -13,7 +13,7 @@ export default ({ children, value, index, ...props }) => {
       {...props}
     >
       {!hidden && (
-        <Box p={3}>
+        <Box>
           {children}
         </Box>
       )}
