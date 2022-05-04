@@ -50,8 +50,14 @@ const useStyles = makeStyles(theme => ({
         marginTop: theme.spacing(8),
         paddingBottom: theme.spacing(8),
       },
+      [theme.breakpoints.up('md')]: {
+        width: '90%',
+        minHeight: 'auto',
+        border: '1px solid rgb(204, 204, 204)',
+        padding: 0,
+      },
       [theme.breakpoints.up(1000)]: {
-        width: ({ width }) => width,
+        width: 950,
       },
     },
   },
