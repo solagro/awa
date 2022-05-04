@@ -35,21 +35,23 @@ const useStyles = makeStyles(theme => ({
       bottom: 40,
       left: '50%',
       right: 'auto',
-      width: ({ width }) => width,
+      width: '75%',
       transform: 'translateX(-50%)',
       border: '1px solid rgb(204, 204, 204)',
       background: 'white',
       borderRadius: 4,
       outline: 'none',
       display: 'flex',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         top: 0,
-        height: '100%',
+        minHeight: '100%',
         width: '100%',
         border: 'none',
         marginTop: theme.spacing(8),
-        paddingBottom: theme.spacing(4),
-        marginBottom: theme.spacing(4),
+        paddingBottom: theme.spacing(8),
+      },
+      [theme.breakpoints.up('lg')]: {
+        width: ({ width }) => width,
       },
     },
   },
@@ -88,7 +90,7 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '50%',
     zIndex: 1,
     [theme.breakpoints.down('sm')]: {
-      top: '-64px',
+      top: '-55px',
     },
   },
   content: {
