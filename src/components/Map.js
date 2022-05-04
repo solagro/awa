@@ -3,7 +3,7 @@ import { navigate, useStaticQuery, graphql } from 'gatsby';
 import ReactMapboxGl, { MapContext, GeoJSONLayer, ZoomControl, RotationControl } from 'react-mapbox-gl';
 import { useTranslation } from 'react-i18next';
 
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme, useMediaQuery } from '@material-ui/core';
 
 const isLive = typeof window !== 'undefined';
 
@@ -50,29 +50,6 @@ const getFirstGridCode = ([feature]) => {
   return undefined;
 };
 
-/**
- * @function
- * Navigate to first feature page
- *
- * @param {string} lng Language used as localized route prefix
- * @param {Map} map MapboxGL map instance
- * @param {Object} event.point Mapbox Point instance
- */
-const gotoGridCode = (lng, availableGridPoints = []) => (map, { point }) => {
-  if (!availableGridPoints || !availableGridPoints.length) {
-    return;
-  }
-
-  const features = map.queryRenderedFeatures(point);
-  const gridCode = getFirstGridCode(features);
-
-  if (gridCode && availableGridPoints.includes(gridCode)) {
-    navigate(`/${lng}/map/${gridCode}/yield-compilation/`, { state: { modal: true } });
-  } else {
-    // eslint-disable-next-line no-console
-    console.info('No page available for gridCode:', gridCode);
-  }
-};
 
 /**
  * Map component
@@ -80,6 +57,30 @@ const gotoGridCode = (lng, availableGridPoints = []) => (map, { point }) => {
 const Map = () => {
   const theme = useTheme();
   const { i18n } = useTranslation();
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up('sm'));
+  /**
+   * @function
+   * Navigate to first feature page
+   *
+   * @param {string} lng Language used as localized route prefix
+   * @param {Map} map MapboxGL map instance
+   * @param {Object} event.point Mapbox Point instance
+   */
+  const gotoGridCode = (lng, availableGridPoints = []) => (map, { point }) => {
+    if (!availableGridPoints || !availableGridPoints.length) {
+      return;
+    }
+
+    const features = map.queryRenderedFeatures(point);
+    const gridCode = getFirstGridCode(features);
+
+    if (gridCode && availableGridPoints.includes(gridCode)) {
+      navigate(`/${lng}/map/${gridCode}/yield-compilation/`, { state: { modal: isLargeScreen } });
+    } else {
+      // eslint-disable-next-line no-console
+      console.info('No page available for gridCode:', gridCode);
+    }
+  };
 
   const { allGridPointData: { group: gridPoints } } = useStaticQuery(graphql`
     query {
