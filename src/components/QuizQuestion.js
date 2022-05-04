@@ -48,6 +48,9 @@ const useStyles = makeStyles(theme => ({
     minWidth: 400,
     borderRadius: '7px',
     border: '4px solid transparent',
+    [theme.breakpoints.down('sm')]: {
+      minWidth: '100%',
+    },
   },
   valid: {
     border: '4px solid #fafafa',
