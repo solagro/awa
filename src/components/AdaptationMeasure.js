@@ -98,7 +98,7 @@ const AdaptationMeasure = ({
   const measure = useAlt ? { ...measureProps, ...altProperties } : measureProps;
 
   return (
-    <Layout modalWidth={950}>
+    <Layout>
       <div>
         <CustomTitle h1 className={classes.mainTitle}>{measure.name}</CustomTitle>
 
