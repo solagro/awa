@@ -12,14 +12,19 @@ import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import Link from './Link';
 import { getImplementationColorProps } from '../lib/adaptationsHelpers';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
+  listElement: {
+    [theme.breakpoints.down('sm')]: {
+      paddingBottom: 0,
+    },
+  },
   button: {
     lineHeight: 1.2,
   },
   icon: {
     marginRight: 0,
   },
-});
+}));
 
 const AdaptationMeasureList = ({
   measures = [],
@@ -39,7 +44,7 @@ const AdaptationMeasureList = ({
       )}
 
       {measures.map(({ slug, name, region, term, altName, altLanguage }) => (
-        <ListItem dense disableGutters key={`${name}${altName}`}>
+        <ListItem dense disableGutters key={`${name}${altName}`} className={classes.listElement}>
           <Button
             className={classes.button}
             component={Link}
