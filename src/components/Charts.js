@@ -19,6 +19,7 @@ import {
   CartesianGrid,
   Tooltip,
   ReferenceArea,
+  ResponsiveContainer,
 } from 'recharts';
 
 const isLive = typeof window !== 'undefined';
@@ -132,29 +133,32 @@ export const DefaultComposedChart = ({
   }
 
   return (
-    <ComposedChart
-      width={900}
-      height={400}
-      margin={{ top: 8, right: 16, left: 0, bottom: 8 }}
-      style={{ margin: '0 auto' }}
-      {...props}
-    >
-      {/* i18next-extract-disable-next-line */}
-      <Tooltip formatter={(value, name) => ([valueFormatter(value), t(name)])} {...tooltipProps} />
-      {/* i18next-extract-disable-next-line */}
-      <Legend formatter={value => t(value)} />
+    <ResponsiveContainer width="100%" height={400}>
+      <ComposedChart
+        margin={{ top: 8, right: 16, left: 0, bottom: 8 }}
+        style={{ margin: '0 auto' }}
+        {...props}
+      >
+        {/* i18next-extract-disable-next-line */}
+        <Tooltip
+          formatter={(value, name) => ([valueFormatter(value), t(name)])}
+          {...tooltipProps}
+        />
+        {/* i18next-extract-disable-next-line */}
+        <Legend formatter={value => t(value)} />
 
-      <CartesianGrid {...gridProps} />
-      <XAxis dataKey="year" type="number" scale="time" domain={['dataMin', 'dataMax']} {...xAxisProps} />
-      <YAxis
-        tickFormatter={valueFormatter}
-        interval={0}
-        {...yAxisProps}
-      />
+        <CartesianGrid {...gridProps} />
+        <XAxis dataKey="year" type="number" scale="time" domain={['dataMin', 'dataMax']} {...xAxisProps} />
+        <YAxis
+          tickFormatter={valueFormatter}
+          interval={0}
+          {...yAxisProps}
+        />
 
 
-      {children}
-    </ComposedChart>
+        {children}
+      </ComposedChart>
+    </ResponsiveContainer>
   );
 };
 

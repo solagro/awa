@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
       marginBottom: 0,
     },
   },
-  footer__partnership_text: {
+  footer__partnership_text: {
     display: 'flex',
     alignItems: 'center',
   },
@@ -120,7 +120,7 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} lg={11} className={classes.footer__logo}>
             <Typography variant="body1" paragraph>
-                {t('Funding for the revision of the AWA Webtool within the framework')}
+              {t('Funding for the revision of the AWA Webtool within the framework')}
             </Typography>
             <Link to="/legal">
               <Typography variant="h2" gutterBottom className={classes.footer__title}>{t('Legal')}</Typography>
