@@ -61,6 +61,9 @@ const useStyles = makeStyles(theme => ({
       fontWeight: 500,
       fontsize: theme.typography.subtitle1,
     },
+    [theme.breakpoints.down('sm')]: {
+      marginTop: theme.spacing(2),
+    },
   },
 }));
 

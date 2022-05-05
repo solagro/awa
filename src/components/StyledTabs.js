@@ -58,7 +58,8 @@ export const SecondaryAppBar = withStyles(theme => ({
     boxShadow: 'none',
     color: theme.palette.text.primary,
     [theme.breakpoints.down('sm')]: {
-      marginBottom: theme.spacing(2),
+      marginTop: theme.spacing(1),
+      marginBottom: theme.spacing(0),
     },
   },
 }))(props => <AppBar {...props} />);
@@ -76,6 +77,7 @@ export const SecondaryTabs = withStyles(theme => ({
       flexWrap: 'wrap',
       '& > a': {
         maxWidth: '100%',
+        padding: theme.spacing(0.5),
       },
     },
   },
