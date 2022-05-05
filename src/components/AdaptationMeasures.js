@@ -62,6 +62,18 @@ const useStyles = makeStyles(theme => ({
       fontsize: theme.typography.subtitle1,
     },
   },
+  buttonBottom: {
+    textAlign: 'center',
+    marginTop: '5em',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: theme.spacing(1),
+    },
+  },
+  buttonQuizz: {
+    [theme.breakpoints.down('sm')]: {
+      marginBottom: theme.spacing(1),
+    },
+  },
 }));
 
 const AdaptationMeasures = ({
@@ -237,10 +249,11 @@ const AdaptationMeasures = ({
         </Grid>
       )}
 
-      <div style={{ textAlign: 'center', marginTop: '5em' }}>
+      <div className={classes.buttonBottom}>
         <Button
           variant="outlined"
           component={Link}
+          className={classes.buttonQuizz}
           to="/quiz"
         >
           {t('Start a quiz')}

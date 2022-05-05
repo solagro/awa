@@ -51,14 +51,13 @@ const useStyles = makeStyles(theme => ({
         paddingBottom: theme.spacing(8),
       },
       [theme.breakpoints.up('md')]: {
-        width: '75%',
-        left: `calc(50% + ${theme.spacing(4)}px)`,
+        width: '90%',
         minHeight: 'auto',
         border: '1px solid rgb(204, 204, 204)',
         padding: 0,
       },
-      [theme.breakpoints.up('lg')]: {
-        width: '950px',
+      [theme.breakpoints.up('1000')]: {
+        width: 950,
       },
     },
   },
@@ -68,7 +67,7 @@ const useStyles = makeStyles(theme => ({
     background: 'url("/images/awa-background.svg") center -10% / cover no-repeat',
     minHeight: '100vh',
     [theme.breakpoints.down('sm')]: {
-      marginTop: '64px',
+      marginTop: 64,
     },
   },
   maximize: {
@@ -97,13 +96,13 @@ const useStyles = makeStyles(theme => ({
     borderRadius: '50%',
     zIndex: 1,
     [theme.breakpoints.down('sm')]: {
-      top: '-55px',
+      top: -55,
     },
   },
   content: {
     flexGrow: 1,
     [theme.breakpoints.down('sm')]: {
-      marginLeft: '0px',
+      marginLeft: 0,
       paddingRight: 0,
       paddingLeft: 0,
     },

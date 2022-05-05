@@ -13,8 +13,8 @@ export const CustomAppBar = withStyles(theme => ({
     marginTop: theme.spacing(3),
     [theme.breakpoints.down('sm')]: {
       marginBottom: theme.spacing(2),
-      marginLeft: -theme.spacing(3),
-      marginRight: -theme.spacing(3),
+      marginLeft: theme.spacing(-3),
+      marginRight: theme.spacing(-3),
       width: `calc(100% + ${theme.spacing(6)}px)`,
     },
   },

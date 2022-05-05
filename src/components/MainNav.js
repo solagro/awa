@@ -41,6 +41,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow: 'none',
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(0),
+      marginRight: theme.spacing(1),
     },
   },
   fab__active: {
