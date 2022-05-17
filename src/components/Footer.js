@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
 import Link from './Link';
@@ -38,7 +39,7 @@ const useStyles = makeStyles(theme => ({
 
 const Footer = () => {
   const classes = useStyles();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Grid
@@ -122,6 +123,16 @@ const Footer = () => {
             <Typography variant="body1" paragraph>
                 {t('Funding for the revision of the AWA Webtool within the framework')}
             </Typography>
+            <Box style={{ textAlign: 'center' }}>
+              <img
+                src={
+                  i18n.language === 'de'
+                    ? '/images/logos/BMUV.png'
+                    : '/images/logos/BMUV-en.png'
+                }
+                alt="BMUV logo"
+              />
+            </Box>
             <Link to="/legal">
               <Typography variant="h2" gutterBottom className={classes.footer__title}>{t('Legal')}</Typography>
             </Link>
