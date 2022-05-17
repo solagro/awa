@@ -68,13 +68,11 @@ const useStyles = makeStyles(theme => ({
   buttonBottom: {
     textAlign: 'center',
     marginTop: '5em',
-    [theme.breakpoints.down('sm')]: {
+    '& > .MuiButton-root': {
       marginTop: theme.spacing(1),
     },
-  },
-  buttonQuizz: {
     [theme.breakpoints.down('sm')]: {
-      marginBottom: theme.spacing(1),
+      marginTop: theme.spacing(1),
     },
   },
 }));
@@ -256,7 +254,6 @@ const AdaptationMeasures = ({
         <Button
           variant="outlined"
           component={Link}
-          className={classes.buttonQuizz}
           to="/quiz"
         >
           {t('Start a quiz')}

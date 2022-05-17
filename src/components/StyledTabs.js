@@ -42,6 +42,7 @@ export const CustomTab = withStyles(theme => ({
     textTransform: 'none',
     height: theme.spacing(12),
     [theme.breakpoints.down('sm')]: {
+      lineHeight: 1.4,
       flexShrink: '1',
       height: theme.spacing(8),
     },
@@ -67,23 +68,22 @@ export const SecondaryAppBar = withStyles(theme => ({
 export const SecondaryTabs = withStyles(theme => ({
   root: {
     marginBottom: theme.spacing(4),
-    [theme.breakpoints.down('sm')]: {
-      marginBottom: theme.spacing(2),
-    },
   },
   flexContainer: {
     marginBottom: theme.spacing(0),
-    [theme.breakpoints.down('md')]: {
-      flexWrap: 'wrap',
-      '& > a': {
-        maxWidth: '100%',
-        padding: theme.spacing(0.5),
-      },
-    },
   },
   indicator: {
     height: 3,
-    [theme.breakpoints.down('md')]: {
+  },
+
+  [theme.breakpoints.down('md')]: {
+    root: {
+      marginBottom: theme.spacing(3),
+    },
+    flexContainer: {
+      flexWrap: 'wrap',
+    },
+    indicator: {
       display: 'none',
     },
   },
@@ -94,6 +94,7 @@ export const SecondaryTab = withStyles(theme => ({
     fontSize: '.8rem',
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
+
     '&:hover': {
       fontWeight: 700,
       opacity: 1,
@@ -107,5 +108,18 @@ export const SecondaryTab = withStyles(theme => ({
       opacity: 1,
     },
   },
-  selected: {},
+
+  [theme.breakpoints.down('md')]: {
+    root: {
+      minWidth: 0,
+      minHeight: 0,
+      padding: 0,
+      borderBottom: '3px solid transparent',
+      margin: theme.spacing(0.5, 1),
+      lineHeight: 1.4,
+    },
+    selected: {
+      borderBottomColor: theme.palette.secondary.main,
+    },
+  },
 }))(props => <Tab disableRipple {...props} />);
