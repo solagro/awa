@@ -16,6 +16,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify',
     {
+      resolve: 'gatsby-plugin-plausible',
+      options: {
+        domain: 'agriadapt.eu',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
