@@ -71,7 +71,7 @@ Les partenaires du projet [Life AgriAdapt](https://agriadapt.eu/?lang=fr) garant
 
 Conformément au règlement général sur la protection des données, toute personne à la possibilité d&#39;exercer son droit d&#39;accès, de rectification, d&#39;effacement, d&#39;opposition, à la limitation, à la portabilité de ses données personnelles et de révocation de son consentement concernant les données personnelles qu&#39;il a fourni.
 
-Pour exercer l&#39;ensemble des droits afférents aux données personnelles, il convient de contacter le délégué à la protection des données (DPO) de Solagro. Solagro a nommé comme délégué à la protection des données, Julie Mothes.
+Pour exercer l&#39;ensemble des droits afférents aux données personnelles, il convient de contacter le délégué à la protection des données (DPO) de Solagro. Solagro a nommé comme délégué à la protection des données, Laure Trillat.
 
 Le délégué à la protection des données de Solagro peut être contacté :
 
